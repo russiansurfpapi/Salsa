@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Class Notes — Salsa</title>
+<style>
+  :root {
+    --bg:#1a1a2e; --fg:#e0e0e0; --muted:#8888aa;
+    --accent:#e94560; --accent-dim:rgba(233,69,96,0.15);
+    --ok:#00b894; --panel:#16213e; --border:#2a2a4a;
+  }
+  * { box-sizing:border-box; }
+  html, body { margin:0; padding:0; background:var(--bg); color:var(--fg); min-height:100vh; }
+  body { font:15px/1.55 -apple-system, BlinkMacSystemFont, system-ui, sans-serif; }
+  a { color:var(--accent); text-decoration:none; }
+
+  nav.top {
+    position:sticky; top:0; z-index:10; display:flex; align-items:center; gap:24px;
+    padding:12px 40px; background:rgba(26,26,46,0.95); backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--border); font-size:13px;
+  }
+  nav.top .brand { font-weight:700; color:var(--accent); font-size:16px; }
+  nav.top a { color:var(--muted); } nav.top a.active { color:var(--fg); }
+  nav.top .spacer { flex:1; }
+
+  main { max-width:740px; margin:0 auto; padding:40px 24px 100px; }
+  h1 { font-size:28px; font-weight:400; margin:0 0 6px; } h1 em { color:var(--accent); font-style:normal; }
+  .subtitle { color:var(--muted); font-size:14px; margin:0 0 24px; }
+
+  textarea {
+    width:100%; min-height:180px; padding:14px; border:1px solid var(--border);
+    border-radius:8px; background:var(--panel); color:var(--fg); font:inherit; font-size:14px;
+    line-height:1.6; resize:vertical;
+  }
+  textarea:focus { outline:none; border-color:var(--accent); }
+  .row { display:flex; gap:10px; margin:12px 0; align-items:center; }
+  .row input { padding:8px 12px; border:1px solid var(--border); border-radius:6px; background:var(--panel); color:var(--fg); font:inherit; font-size:14px; }
+  .btn { padding:10px 24px; border:none; border-radius:6px; font:600 14px/1 inherit; cursor:pointer; }
+  .btn-accent { background:var(--accent); color:#fff; } .btn-accent:hover { filter:brightness(1.1); }
+
+  .section-label {
+    font-size:11px; text-transform:uppercase; letter-spacing:0.15em;
+    color:var(--accent); font-weight:600; margin:28px 0 12px;
+    padding-bottom:6px; border-bottom:1px solid var(--border);
+  }
+
+  .result { background:var(--panel); border:1px solid var(--border); border-radius:8px; padding:16px; margin-top:16px; }
+  .result .r-label { font-size:11px; text-transform:uppercase; letter-spacing:0.08em; color:var(--muted); margin-bottom:6px; }
+  .tech-chip { display:inline-block; padding:4px 12px; border-radius:16px; font-size:12px; font-weight:600; background:var(--accent-dim); color:var(--accent); margin:2px; }
+  .topic-chip { display:inline-block; padding:4px 10px; border-radius:12px; font-size:11px; background:rgba(0,184,148,0.15); color:var(--ok); margin:2px; }
+  .tip-item { padding:8px 12px; background:rgba(0,184,148,0.06); border-left:3px solid var(--ok); border-radius:0 6px 6px 0; margin-bottom:6px; font-size:14px; }
+
+  .past-note { background:var(--panel); border:1px solid var(--border); border-radius:8px; padding:14px 16px; margin-bottom:10px; }
+  .past-note .pn-date { font-size:12px; color:var(--accent); font-weight:600; }
+  .past-note .pn-techs { margin-top:6px; }
+  .past-note .pn-preview { font-size:13px; color:var(--muted); margin-top:6px; }
+</style>
+</head>
+<body>
+
+<nav class="top">
+  <span class="brand">salsa.</span>
+  <a href="/">Home</a> <a href="/practice">Practice</a> <a href="/quiz">Quiz</a> <a href="/notes" class="active">Notes</a>
+  <span class="spacer"></span>
+</nav>
+
+<main>
+  <h1><em>Class</em> Notes</h1>
+  <p class="subtitle">Paste your voice memo transcript from class. It maps what your instructor said to your practice curriculum.</p>
+
+  <textarea id="memo" placeholder="Paste your voice memo transcript here...&#10;&#10;e.g., 'Today we worked on the basic step and then the inside turn. The instructor said to make sure you lift your hand on count 1, not push. Don't look at your feet...'"></textarea>
+  <div class="row">
+    <input type="date" id="class-date" value="">
+    <input type="number" id="class-num" placeholder="Class #" min="1" style="width:80px">
+    <button class="btn btn-accent" onclick="ingest()">Process notes</button>
+  </div>
+
+  <div id="result"></div>
+
+  <div id="past-notes"></div>
+</main>
+
+<script>
+async function ingest() {
+  const transcript = document.getElementById('memo').value;
+  if (!transcript.trim()) return;
+  const classDate = document.getElementById('class-date').value;
+  const classNum = parseInt(document.getElementById('class-num').value) || null;
+
+  const res = await fetch('/api/notes/ingest', {
+    method: 'POST', headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({ transcript, class_date: classDate, class_number: classNum })
+  });
+  const data = await res.json();
+  renderResult(data);
+  loadPastNotes();
+}
+
+function renderResult(d) {
+  let html = '<div class="result">';
+
+  if (d.matched_techniques && d.matched_techniques.length) {
+    html += '<div class="r-label">Techniques mentioned</div>';
+    for (const t of d.matched_techniques) {
+      html += `<a href="/technique/${t.slug}" class="tech-chip">${esc(t.name)}</a>`;
+    }
+    html += '<br><br>';
+  }
+
+  if (d.topics && d.topics.length) {
+    html += '<div class="r-label">Topics covered</div>';
+    for (const t of d.topics) html += `<span class="topic-chip">${esc(t.replace('_', ' '))}</span>`;
+    html += '<br><br>';
+  }
+
+  if (d.extracted_tips && d.extracted_tips.length) {
+    html += '<div class="r-label">Key tips from your instructor</div>';
+    for (const tip of d.extracted_tips) html += `<div class="tip-item">${esc(tip)}</div>`;
+  }
+
+  html += '</div>';
+  document.getElementById('result').innerHTML = html;
+}
+
+async function loadPastNotes() {
+  const res = await fetch('/api/notes');
+  const notes = await res.json();
+  if (!notes.length) return;
+
+  let html = '<div class="section-label">Past class notes</div>';
+  for (const n of notes.reverse()) {
+    html += `<div class="past-note">`;
+    html += `<div class="pn-date">Class ${n.class_number || '?'} — ${n.class_date || 'unknown date'}</div>`;
+    if (n.matched_techniques && n.matched_techniques.length) {
+      html += '<div class="pn-techs">';
+      for (const t of n.matched_techniques) html += `<a href="/technique/${t.slug}" class="tech-chip">${esc(t.name)}</a>`;
+      html += '</div>';
+    }
+    html += `<div class="pn-preview">${esc((n.transcript || '').slice(0, 150))}...</div>`;
+    html += '</div>';
+  }
+  document.getElementById('past-notes').innerHTML = html;
+}
+
+function esc(s) { if (!s) return ''; const d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+
+// Set default date to today
+document.getElementById('class-date').value = new Date().toISOString().split('T')[0];
+loadPastNotes();
+</script>
+</body>
+</html>

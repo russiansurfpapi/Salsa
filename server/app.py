@@ -212,6 +212,78 @@ def get_quiz(slug: str) -> dict:
     }
 
 
+# ── Voice memo ingestion ───────────────────────────────────────────────
+
+@app.get("/notes", response_class=HTMLResponse)
+def notes_page() -> FileResponse:
+    return FileResponse(WEB / "notes.html")
+
+
+class VoiceMemoReq(BaseModel):
+    transcript: str
+    class_date: str = ""
+    class_number: Optional[int] = None
+
+
+@app.post("/api/notes/ingest")
+def ingest_voice_memo(req: VoiceMemoReq) -> dict:
+    techniques = _load_json("techniques.json") or {}
+    content = _get_content()
+
+    tech_names = [t["name"].lower() for t in techniques.get("techniques", [])]
+    tech_lookup = {t["name"].lower(): t for t in techniques.get("techniques", [])}
+
+    transcript_lower = req.transcript.lower()
+
+    matched = []
+    for name in tech_names:
+        if name in transcript_lower:
+            t = tech_lookup[name]
+            matched.append({"id": t["id"], "name": t["name"], "slug": t["name"].lower().replace(" ", "_")})
+
+    keywords = {
+        "timing": ["count", "beat", "on2", "on 2", "1-2-3", "5-6-7", "rhythm", "break"],
+        "footwork": ["step", "foot", "feet", "weight", "heel", "toe", "ball"],
+        "frame": ["frame", "arm", "elbow", "shoulder", "hand", "grip", "hold"],
+        "lead_follow": ["lead", "follow", "signal", "push", "pull", "connection", "tension"],
+        "turns": ["turn", "spin", "spot", "spotting", "rotate", "pivot"],
+        "posture": ["posture", "straight", "core", "hip", "center", "balance"],
+    }
+
+    topics = []
+    for topic, words in keywords.items():
+        if any(w in transcript_lower for w in words):
+            topics.append(topic)
+
+    sentences = [s.strip() for s in req.transcript.replace(".", "\n").replace("!", "\n").replace("?", "\n").split("\n") if s.strip()]
+    tips = []
+    tip_keywords = ["remember", "don't", "make sure", "important", "always", "never", "key", "trick", "tip", "mistake"]
+    for s in sentences:
+        if any(k in s.lower() for k in tip_keywords):
+            tips.append(s.strip())
+
+    note = {
+        "class_date": req.class_date or datetime.now(timezone.utc).strftime("%Y-%m-%d"),
+        "class_number": req.class_number,
+        "transcript": req.transcript,
+        "matched_techniques": matched,
+        "topics": topics,
+        "extracted_tips": tips[:10],
+    }
+
+    notes_file = DATA / "class_notes.json"
+    existing = json.loads(notes_file.read_text()) if notes_file.exists() else []
+    existing.append(note)
+    notes_file.write_text(json.dumps(existing, indent=2))
+
+    return note
+
+
+@app.get("/api/notes")
+def get_notes() -> list:
+    return _load_json("class_notes.json") or []
+
+
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8788)
