@@ -1,0 +1,408 @@
+{
+  "basic_step": {
+    "instructor_breakdowns": [
+      {
+        "instructor": "TheDanceDojo (Herman Alvarez)",
+        "transcript_slug": "salsa-basic-step-for-ny-style-on2-beginner-tutorial",
+        "steps": [
+          "Follower timing: Starting with the right foot in the same place, step together on 1",
+          "On 2: go forward",
+          "On 3: step in the same place",
+          "On 5: bring it back together",
+          "On 6: step back",
+          "On 7: step in place",
+          "Leader timing: Starting with the left leg in the same place. Left, right, left, right, left, right"
+        ],
+        "tips": [
+          "Count 1, 2, 3, leaving a pause, then 5, 6, 7, leaving another pause -- three steps and three steps",
+          "You are NOT stepping continuously -- you take 3 steps, pause, 3 steps, pause",
+          "When stepping to the music, we count 8 beats but only step on 6 out of the 8 beats",
+          "Before you even step, identify the count of the music -- listen first",
+          "Rhythm is quick-quick-slow, quick-quick-slow",
+          "Make your steps shorter as you get comfortable"
+        ],
+        "key_sections": [1, 2, 3, 6, 7]
+      },
+      {
+        "instructor": "Salsa On2",
+        "transcript_slug": "salsa-on2-partnerwork-basics-lesson-1-basic-step",
+        "steps": [
+          "Stand nice and straight, face your partner, take your partner's hand",
+          "Guys step back first since guys are leading -- step back with your left foot on 1",
+          "On 1: step back with left foot",
+          "On 2: step back with the right foot",
+          "On 3: left foot in place",
+          "On 5: right foot forward",
+          "On 6: left foot forward",
+          "On 7: right foot in place",
+          "Ladies mirror: forward right, forward left, right in place, then left back, right back, left in place"
+        ],
+        "tips": [
+          "Most of the weight is on your toes when stepping",
+          "In salsa it is the opposite of walking -- start with your toe touching the ground, then gradually transfer weight down",
+          "Never fully put your weight on your heel",
+          "You will be spinning on the ball of your foot, so keep weight there for easy and effective spins",
+          "Step with toes first, not the heel"
+        ],
+        "key_sections": [0, 1, 4, 5]
+      },
+      {
+        "instructor": "Eddie Torres (Mambo On2)",
+        "transcript_slug": "basic-steps-eddie-torres-instrucional-de-salsa-on2",
+        "steps": [
+          "Count 8 beats: 1, 2, 3, 4, 5, 6, 7, 8",
+          "There is an action on the 2 and the 6 as we count from 1 to 8",
+          "Men break back on the second beat with the right foot",
+          "Men break forward on the left foot on 6",
+          "Right foot breaking on 2 (back), left foot breaking forward on 6 -- this is dancing on 2"
+        ],
+        "tips": [
+          "Dance precisely with the correct tempo",
+          "Notice the action on beats 2 and 6 -- these are the break steps",
+          "This is known as dancing on 2",
+          "If the music speeds up, your steps speed up with it"
+        ],
+        "key_sections": [0, 1]
+      }
+    ],
+    "combined_steps": [
+      "Count 1: Step in place with your right foot (leader: left foot back). This is the prep step -- not a big movement, just establishing the rhythm.",
+      "Count 2: Step forward with your left foot (leader: right foot back). This is the 'break' -- the key defining beat of On2 dancing.",
+      "Count 3: Step in place with your right foot (leader: left foot in place), collecting your weight. Slight pause follows.",
+      "Count 4: HOLD -- no step. Weight settles, body prepares to reverse direction.",
+      "Count 5: Step in place with your left foot (leader: right foot forward). Begin the second half of the basic.",
+      "Count 6: Step back with your right foot (leader: left foot forward). This is the second 'break' step.",
+      "Count 7: Step in place with your left foot (leader: right foot in place), collecting your weight.",
+      "Count 8: HOLD -- no step. Weight settles, cycle repeats."
+    ],
+    "visual_cues": [
+      "Your posture should be tall and straight -- shoulders down and back, no hunching",
+      "Knees should be slightly bent throughout, never locked",
+      "Weight should be on the balls of your feet (toes), never sinking into the heels",
+      "Steps should be small and compact -- no wider than shoulder width",
+      "On counts 4 and 8 (the holds), both feet should be roughly under your body, weight centered",
+      "Arms should be relaxed at your sides, elbows bent naturally like a light jog"
+    ],
+    "practice_drill": "Start by counting out loud: 1-2-3-hold-5-6-7-hold, clapping on 2 and 6 to internalize the break beats. Then do 20 basics counting aloud with steps, focusing on toe-first contact. Next do 20 basics with the rhythm 'quick-quick-slow, quick-quick-slow' to feel the timing. Finally, put on a salsa song and do 2 full minutes of basics without stopping, finding the 2 in the music before you start stepping."
+  },
+  "inside_turn": {
+    "instructor_breakdowns": [
+      {
+        "instructor": "TheDanceDojo",
+        "transcript_slug": "inside-turn-beginner-salsa-turns-and-spins-on2-thedancedojo",
+        "steps": [
+          "Start in closed position just like the cross body lead",
+          "Guys: your footwork is the same as the cross body lead",
+          "The only difference: lift your arm up on 3 and turn the follower on 5, 6, 7",
+          "Leader drew a counterclockwise circle with left hand to guide the girl into the turn",
+          "Ladies: since the guy's arm is above yours, that signals the turn -- continue turning until you see him on 7",
+          "Follower footwork: turn your right, left, right step, your left, right, left to get to the inside turn and face your partner at the end"
+        ],
+        "tips": [
+          "Guy's footwork is identical to cross body lead -- only the arm lead changes",
+          "Leader draws a counterclockwise circle with leading (left) hand to guide the turn",
+          "In cross body lead, follower turns on 3 to face partner -- in inside turn, the arm above signals a full turn",
+          "Follower continues turning until she sees the leader on 7",
+          "Also known as a traveling left turn"
+        ],
+        "key_sections": [1, 2, 3, 4]
+      },
+      {
+        "instructor": "Salsa On2",
+        "transcript_slug": "salsa-on2-partnerwork-basics-lesson-3-traveling-left",
+        "steps": [
+          "Start in closed position",
+          "Guys: footwork same as cross body lead -- open up on 1, 2",
+          "On 3: lift arm up and turn the follower",
+          "On 5, 6, 7: follower completes the turn",
+          "Leader demonstrates with count: 1, 2, 3, 5, 6, 7"
+        ],
+        "tips": [
+          "Same footwork as cross body lead for the leader",
+          "Leader drew a counterclockwise circle with left hand, the leading hand, to guide the girl into the turn",
+          "Ladies: in the cross body lead you turn on 3 to face partner; now since the guy's arm is above yours that signals the turn",
+          "Continue turning until you see him on the 7",
+          "Also known as a traveling left turn"
+        ],
+        "key_sections": [1, 2, 3]
+      },
+      {
+        "instructor": "Salsa On2 (Free Spin Lesson 9)",
+        "transcript_slug": "free-spin-inside-turn-salsa-on2-adv-beginner-partnerwork-lesson-9",
+        "steps": [
+          "Open on 5, 6, 7",
+          "Start the free spin on 1, 2",
+          "Turn on 3, 5, 6, 7",
+          "Recover into cross body lead"
+        ],
+        "tips": [
+          "Very important for followers to remember their track (slot)",
+          "As you start the turn, maintain your track/frame throughout",
+          "The free spin variation: leader releases the hand and follower spins freely",
+          "After the free spin, recover by reconnecting hands and going into cross body lead",
+          "NOTE: This transcript was mostly in Spanish with poor transcription quality -- the English portions provide the count structure"
+        ],
+        "key_sections": [3, 4]
+      }
+    ],
+    "combined_steps": [
+      "Count 1: Leader steps back with left foot (same as CBL). Leader begins to open up, creating space for the follower.",
+      "Count 2: Leader steps to the side/back with right foot, continuing to clear the slot. Follower steps forward.",
+      "Count 3: Leader steps forward with left foot and LIFTS the left arm up above the follower's head, drawing a counterclockwise circle. Follower begins the turn to her left (inside).",
+      "Count 4: HOLD -- follower is mid-turn.",
+      "Count 5: Follower continues turning. Leader steps in place, maintaining the arm guide above. Follower steps as she turns (right foot).",
+      "Count 6: Follower completes the turn, stepping with left foot. Leader steps forward.",
+      "Count 7: Both collect -- follower should be facing the leader again. Return to basic position.",
+      "Count 8: HOLD -- back to neutral."
+    ],
+    "visual_cues": [
+      "Leader's left arm should rise smoothly on count 3 -- not jerky, just a gentle lift above follower's head",
+      "The arm draws a small counterclockwise circle (from leader's perspective) above the follower's head",
+      "Follower should spot the leader: look at leader, turn head first, body follows, find leader again on 7",
+      "Leader's feet trace the same path as a cross body lead -- only the arm action changes",
+      "After the turn, both partners should be facing each other squarely on 7"
+    ],
+    "practice_drill": "Solo: Practice the cross body lead footwork 10 times, then add the arm lift on 3 (raise your left hand above your own head as a placeholder). For the turn itself, stand in place and practice a slow left (counterclockwise) turn: step on the ball of your foot, spot a point on the wall, turn 360 degrees and find that point again. Do 10 solo left turns, then combine with the CBL footwork for 10 reps."
+  },
+  "cross_body_lead": {
+    "instructor_breakdowns": [
+      {
+        "instructor": "TheDanceDojo (Aida Lena & Ywen - Simply Salsa)",
+        "transcript_slug": "how-to-do-cross-body-lead-ny-on2-salsa",
+        "steps": [
+          "Start with basic backwards: 1, 2, 3, 5, 6, 7",
+          "On 7: when you go back, go a little bit towards your right to clear out of the way for ladies",
+          "On 1: open up and face the direction the lady will travel. Spot that direction, make sure there's nothing in the way",
+          "On 2: don't turn your body yet, but point your toe in the direction you're traveling",
+          "On 3: turn back. Now you have lady on the other side",
+          "Back to basic 5, 6, 7",
+          "Ladies: traveling in a straight line. On 1, 2 go forward. Pivot on your left foot. Step your right leg back on 3. Finish basic 5, 6, 7"
+        ],
+        "tips": [
+          "In one song you probably do around 50 cross body leads -- it's the most fundamental connected move",
+          "This hand (lead hand) is just for decoration in closed position -- you're leading through her back using your right hand",
+          "Lead using your frame, your body, and your footwork -- no pushing or pulling involved",
+          "Keep a good frame. Don't collapse it",
+          "At the cross position, gentlemen and ladies are perpendicular (90 degrees), not parallel",
+          "Ladies travel a straight line and only turn 180 degrees -- no halfway turns",
+          "Common mistake: guys crossing themselves instead of the lady",
+          "Common mistake for girls: the crab walk (stepping sideways instead of straight)",
+          "Get out of the way soon enough so the lady doesn't have to walk around you",
+          "It's like opening a door and inviting the lady to walk through",
+          "No pushing or pulling -- you gently ask, like a gentleman"
+        ],
+        "key_sections": [0, 1, 2, 3, 4, 5]
+      },
+      {
+        "instructor": "Salsa On2",
+        "transcript_slug": "salsa-on2-partnerwork-basics-lesson-2-cross-body-lead",
+        "steps": [
+          "The cross body lead is essentially the basic step but you're turning as you do it",
+          "Come into closed position (different from open)",
+          "Do the basic: 1, 2, 3, 5, 6, 7",
+          "CBL: guys open up and let the girls walk through",
+          "Guys: stepping back on left, back with right, step with left, then forward right, left, right -- same footwork as basic",
+          "Girls: your basic step but you turn on the 3. Step forward 1, 2, turn on 3, then continue basic steps"
+        ],
+        "tips": [
+          "Cross body lead is essentially the basic step but turning",
+          "The footwork pattern for the leader is the same as the basic: back-back-place, forward-forward-place",
+          "For followers: it is really just your basic step; the only difference is you turn on the 3",
+          "The turn on 3 and the rest is just the continuation of the basic steps"
+        ],
+        "key_sections": [1, 2, 3, 4]
+      },
+      {
+        "instructor": "TheDanceDojo",
+        "transcript_slug": "cross-body-lead-beginner-salsa-steps-on2-thedancedojo-com",
+        "steps": [
+          "Transcript was empty (music-only video)"
+        ],
+        "tips": [
+          "SKIPPED: This transcript had 0 chars of meaningful text (empty transcript)"
+        ],
+        "key_sections": []
+      }
+    ],
+    "combined_steps": [
+      "Count 1: Leader steps back with left foot, beginning to shift slightly to the right to clear the lane. Follower steps forward with right foot.",
+      "Count 2: Leader steps back/side with right foot, now opening the body to face the direction the follower will travel. Point your toe in that direction. Follower steps forward with left foot.",
+      "Count 3: Leader steps with left foot, turning to face forward again. The lane is now clear. Follower pivots on her left foot and steps right foot back, turning 180 degrees to face the opposite direction.",
+      "Count 4: HOLD -- leader has cleared the slot, follower has completed the pivot.",
+      "Count 5: Leader steps forward with right foot. Follower steps back with left foot (now doing the second half of her basic in the new position).",
+      "Count 6: Leader steps forward with left foot, closing back to face the follower. Follower steps back with right foot.",
+      "Count 7: Leader steps in place with right foot, returning to basic position facing follower. Follower steps in place with left foot.",
+      "Count 8: HOLD -- both partners now face each other in the new orientation. Follower has crossed the leader's body line."
+    ],
+    "visual_cues": [
+      "On count 1-2, the leader should visibly shift to the right, creating a clear lane on the left for the follower",
+      "At count 2, the leader's body should face the direction the follower will travel -- like opening a door",
+      "At count 3, leader and follower should be perpendicular (90 degrees) to each other, never parallel",
+      "The follower travels in a straight line -- if she's crab-walking sideways, the lead is off",
+      "Leader should NEVER cross himself -- only the follower crosses the leader's body line",
+      "After count 7, both partners should be facing each other in the mirror, in the opposite orientation from where they started"
+    ],
+    "practice_drill": "Leader solo drill: Do 10 basic steps, then on the next cycle, practice stepping to the right on 1 and opening your body on 2, then closing on 3. Alternate: basic, CBL footwork, basic, CBL footwork. Follower solo drill: Do basics, then on a designated cycle, step forward 1-2, pivot 180 on 3, and continue your basic in the new direction. Both: do 20 CBL footwork patterns solo with counts, then pair up and do 10 together at slow tempo before adding music."
+  },
+  "right_turn": {
+    "instructor_breakdowns": [
+      {
+        "instructor": "Salsa On2",
+        "transcript_slug": "salsa-on2-partnerwork-basics-lesson-4-single-right-turn",
+        "steps": [
+          "Start with basic 1, 2, 3",
+          "Guys: on the 5-6-7, start your turn: 5, 6, 7",
+          "Then 1, 2, 3 back into basic (nose = back into facing partner)",
+          "Girls turn: 1, 2, 3, 5, 6, 7 -- same exact footwork, same steps, just on different counts",
+          "Guys go under their own arm on 5, 6, 7; girls turn on 1, 2, 3 (she pivots 5, 6, 7)",
+          "Arms: palm facing up, hers resting on top of yours",
+          "When turning ladies: draw a small clockwise circle about the size of a halo above her head",
+          "When guys go under: just skim the top of your head"
+        ],
+        "tips": [
+          "Same exact footwork for both leader and follower -- only difference is the counts are offset",
+          "Bend your wrists like you're holding a plate when leading",
+          "When you go under, skim the top of your head -- don't duck way down",
+          "When turning the ladies, draw a SMALL circle, about the size of a halo, above her head",
+          "The circle for the follower's turn is CLOCKWISE (from leader's perspective)"
+        ],
+        "key_sections": [1, 2, 3, 4]
+      },
+      {
+        "instructor": "Salsa On2 (Solo Right Turn - Lesson 5)",
+        "transcript_slug": "salsa-solo-right-turn-lesson-5-beginners-ny-on2",
+        "steps": [
+          "From basic: 1, 2, 3 and 5, 6, 7",
+          "From basic now side, basic",
+          "Right turn: Hey, two, three. Five. Base six",
+          "One, two, three, five, six, seven (with turn incorporated)"
+        ],
+        "tips": [
+          "NOTE: This transcript was very noisy (in-class recording with poor audio), but the visible structure shows basics transitioning into right turns",
+          "Number 3 is back arm (arm behind on count 3)",
+          "The solo right turn uses the same fundamental footwork pattern"
+        ],
+        "key_sections": [1, 2]
+      },
+      {
+        "instructor": "Unknown Mambo/On2 Instructor",
+        "transcript_slug": "fundamental-salsa-on2-mambo-shine-salsa-basic-steps-four-corners-right-turn-hook-step",
+        "steps": [
+          "Transcript was empty (music-only video)"
+        ],
+        "tips": [
+          "SKIPPED: This transcript had 0 chars of meaningful text (empty transcript)"
+        ],
+        "key_sections": []
+      }
+    ],
+    "combined_steps": [
+      "Count 1: Step in place with right foot (basic prep). Begin preparing for the turn -- slight body wind-up.",
+      "Count 2: Step forward with left foot, beginning the turn to the right (clockwise). Weight transfers to ball of left foot as pivot point.",
+      "Count 3: Step with right foot, completing the first half of the turn (~180 degrees). You should be facing away from your starting position.",
+      "Count 4: HOLD -- momentum carries you through the turn.",
+      "Count 5: Step in place with left foot, collecting. If turning, complete the remaining rotation to face forward again.",
+      "Count 6: Step back with right foot, returning to basic timing.",
+      "Count 7: Step in place with left foot, collecting weight.",
+      "Count 8: HOLD -- turn complete, back in basic rhythm."
+    ],
+    "visual_cues": [
+      "On the prep (count 1), your body should show a slight wind-up -- shoulders angled slightly against the turn direction",
+      "During the turn, spot a point: look at it, turn your head first, let body follow, find the point again",
+      "Stay on the ball of your pivot foot throughout the turn -- heel should not touch the ground",
+      "Keep your core tight and arms close to your body during the spin for stability",
+      "After the turn, you should be facing the same direction you started, feet under your body",
+      "Leader's lead hand: bend wrist like holding a plate; draw a small clockwise halo circle above follower's head"
+    ],
+    "practice_drill": "Solo right turn drill: Stand in place, step with left foot and pivot 360 degrees to the right on the ball of your foot. Do 10 turns slowly, spotting a point on the wall. Then add the timing: say '1' (prep), '2' (step and start turn), '3' (complete turn), 'hold', '5-6-7' (basic). Do 10 reps integrating the basic step before and after the turn. Finally, alternate basic-basic-turn-basic-basic-turn for 2 minutes."
+  },
+  "prep_step": {
+    "instructor_breakdowns": [
+      {
+        "instructor": "Salsa On2",
+        "transcript_slug": "salsa-on2-partnerwork-basics-lesson-8-open-break",
+        "steps": [
+          "The open break is very similar to the basic",
+          "In the basic: guys step forward with left foot on 6, ladies step back with right foot on 6",
+          "In the open break: guys step BACK with left foot on 6 instead of forward",
+          "5, 6, 7 -- 1, 2, 3 (basic first half), then on 5, 6, 7 the open break happens",
+          "After the open break: lift arm up and let her turn on 1, 2, 3, then 5, 6, 7 back to basic",
+          "After the open break, what you did with your feet was just go back into the basic",
+          "Adding into CBL: cross 1, 2, then open break 6, 7. Since you gave her the open break, that signals a turn -- lead her into the catwalk"
+        ],
+        "tips": [
+          "The reason we do this is to prep the girls for their turn",
+          "You are going AWAY from her rather than towards her -- this signals that you want her to turn",
+          "It's a signal: stepping back instead of forward tells the follower a turn is coming",
+          "After the open break, your feet just go back into the basic",
+          "The open break can be added into the cross body lead to set up turns",
+          "Can combine: CBL -> open break -> turn -> back to basic"
+        ],
+        "key_sections": [1, 2, 3, 4]
+      },
+      {
+        "instructor": "Dance With Rasa",
+        "transcript_slug": "5-simple-basic-steps-for-on2-salsa-beginners-dance-with-rasa",
+        "steps": [
+          "First step is on the right foot -- small step forward, a preparation to go into your basic",
+          "Without that first little step, you can't go into your basic -- you need to prepare to dance on 2",
+          "That first step is your 1 (one), then actual basic is 2, 3, 6, 7",
+          "Step right foot forward on 1 (preparation), then go into basic: 2, 3 and 6, 7",
+          "Forwards 2, backwards on the right 6"
+        ],
+        "tips": [
+          "On 2 you need to PREPARE before starting your basic -- the first step on 1 is a preparation",
+          "It feels slower than dancing on 1 because the transition in the pause becomes transitional, but technically it is the same rhythm",
+          "The prep is super duper important -- the steps themselves are not complicated at all",
+          "When you want to finish a pattern, step forward into your basic",
+          "Whether you lead or follow, everybody learns footwork on the follower's timing (going forward) for solo work"
+        ],
+        "key_sections": [3, 4, 5, 6]
+      },
+      {
+        "instructor": "TheDanceDojo",
+        "transcript_slug": "salsa-s-core-basic-steps-on2-salsa",
+        "steps": [
+          "On 1: step in place with right foot -- this is the prep. Strong step to get you back if you step off time",
+          "On 2: step left foot forward (or backward for open break)",
+          "On 3: step right foot in place",
+          "On 5: left foot in place",
+          "On 6: right foot back (for open break: go backwards instead of forward)",
+          "On 7: left foot in place",
+          "Open break: instead of going forward on the second half, go backwards -- effectively a rock step without the rotation",
+          "In place 1, on 2 backwards, 2 together 3, now back to home base 5, open break 6, 7"
+        ],
+        "tips": [
+          "When finding the beat, use the 1 -- it's your strong step to get back if you step off time",
+          "Stay nice and compact -- don't take big steps, stay centered",
+          "Good posture: shoulders down and back, knees bent, stay on your toes",
+          "Don't put your heel down -- keep pressure on your toe for more responsiveness",
+          "Step with the toe when transferring forward, not going onto the heel when going back",
+          "The open break is effectively a rock step -- you go backward instead of forward",
+          "Keep your weight on your toes as you go backwards, not leaning back, keeping nice posture and centeredness",
+          "Nice and responsive on the toes"
+        ],
+        "key_sections": [0, 1, 2, 3, 4, 5]
+      }
+    ],
+    "combined_steps": [
+      "Count 1: Step in place with right foot -- this is the PREPARATION. Use this to find the beat and establish your rhythm. It's your anchor step.",
+      "Count 2: For the open break, step BACKWARD with your left foot (instead of forward as in the basic). This backward motion signals to the follower that a turn is coming.",
+      "Count 3: Step in place with right foot, collecting weight. You've created tension by moving away.",
+      "Count 4: HOLD -- the tension from the backward step preps the follower.",
+      "Count 5: Step in place with left foot, returning to home base. Begin to settle back into basic position.",
+      "Count 6: Step backward with right foot (the open break). Leader goes away from the follower instead of toward, creating the signal.",
+      "Count 7: Step in place with left foot, collecting.",
+      "Count 8: HOLD -- the follower now knows a turn is coming on the next cycle."
+    ],
+    "visual_cues": [
+      "The key visual difference from a basic: on the second half (5-6-7), the leader moves BACKWARD instead of forward",
+      "Your body should be leaning slightly away from your partner on the open break -- creating visible space between you",
+      "Your arm connection should stretch slightly but not break -- the follower feels the gentle pull-away",
+      "After the open break, the leader's arm should lift to signal the coming turn",
+      "Keep your weight on your toes even when stepping backward -- do not sink into your heels",
+      "Posture stays tall throughout -- no leaning back excessively"
+    ],
+    "practice_drill": "Solo drill: Do 4 basic steps counting aloud, then on the 5th cycle replace the forward step with a backward step (the open break). Feel how your body rocks back instead of forward. Do 10 reps alternating: basic-basic-open break-basic-basic-open break. With a partner: do basic-basic-open break, then on the next cycle lift your lead hand and let the follower turn. Practice the sequence: 2 basics -> open break -> inside turn -> 2 basics, repeated 10 times."
+  }
+}

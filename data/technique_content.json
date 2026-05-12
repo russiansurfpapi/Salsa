@@ -1,0 +1,403 @@
+{
+  "techniques": {
+    "basic_step": {
+      "name": "Basic Step",
+      "slug": "basic_step",
+      "level": 1,
+      "order": 1,
+      "description": "The foundation of NY On2 mambo. Every other move starts and ends here. The leader breaks back on 1, changes direction on 2, and breaks forward on 5, changing direction on 6. Counts 4 and 8 are holds.",
+      "breakdown": [
+        "Count 1: Step BACK with your LEFT foot (this is the prep/rock step). Weight shifts onto the left foot. Your right foot stays planted in place.",
+        "Count 2: REPLACE weight forward onto your RIGHT foot, which has not moved. This is the BREAK — the moment you change direction from backward to forward. In On2, this is where the clave accent lands.",
+        "Count 3: Step FORWARD with your LEFT foot, bringing it next to or slightly past your right foot, returning to neutral stance. Weight is on the left.",
+        "Count 4: HOLD. Do not step. Weight stays on the left foot. Right foot is free.",
+        "Count 5: Step FORWARD with your RIGHT foot (mirror of count 1 going the other direction). Weight shifts onto the right foot.",
+        "Count 6: REPLACE weight back onto your LEFT foot, which has not moved. This is the second BREAK — direction changes from forward to backward.",
+        "Count 7: Step BACK with your RIGHT foot, returning toward neutral stance. Weight is on the right.",
+        "Count 8: HOLD. Do not step. Weight stays on the right foot. Left foot is free, ready to start the cycle again on count 1."
+      ],
+      "common_mistakes": [
+        "Stepping on the holds (counts 4 and 8). These are rests — no foot movement. Beginners often rush through them or add an extra step.",
+        "Breaking on 1 and 5 instead of 2 and 6. This is On1 timing (LA style), not On2. In On2, the direction change happens on 2 and 6.",
+        "Taking huge steps. The basic step is compact — your feet should stay roughly shoulder-width apart. Big steps kill your balance and make it impossible to lead or follow transitions.",
+        "Flat-footed stepping. You should be on the balls of your feet, not stomping heel-first. The ball of the foot contacts the floor first, then the heel lowers."
+      ],
+      "key_details": [
+        "Weight transfer is everything. Each step must be a FULL weight transfer — 100% of your weight moves to the stepping foot. If you're 50/50, you can't free the other foot for the next step.",
+        "Stay on the balls of your feet. Heels can touch the ground but you push off from the ball.",
+        "Keep your frame: elbows slightly bent, hands at waist-to-chest height, shoulders relaxed and down. Don't let your arms go limp or lock stiff.",
+        "Upper body stays relatively quiet. The movement comes from the hips and feet, not from bouncing your shoulders or torso.",
+        "Knees stay slightly bent at all times. Locked knees make you stiff and kill your ability to absorb and generate movement.",
+        "The hold on 4 and 8 is not dead time — it's where you settle your weight and prepare for the next half of the pattern."
+      ],
+      "flashcards": [
+        {
+          "question": "On count 1, which foot steps back for the leader?",
+          "answer": "Left foot",
+          "type": "recall"
+        },
+        {
+          "question": "In NY On2, on which counts do the 'breaks' (direction changes) happen?",
+          "answer": "Counts 2 and 6 — these are where you reverse direction",
+          "type": "recall"
+        },
+        {
+          "question": "What happens on counts 4 and 8?",
+          "answer": "Hold/pause — no foot movement. These are the rests.",
+          "type": "recall"
+        },
+        {
+          "question": "True or false: In NY On2, the break step happens on count 2.",
+          "answer": "True. The first break (direction change from back to forward) is on count 2. The second break is on count 6.",
+          "type": "true_false"
+        },
+        {
+          "question": "On count 5, which foot steps forward for the leader?",
+          "answer": "Right foot",
+          "type": "recall"
+        },
+        {
+          "question": "What is the difference between On1 and On2 timing?",
+          "answer": "In On1, the break happens on counts 1 and 5. In On2 (NY mambo), the break happens on counts 2 and 6, aligning with the clave rhythm.",
+          "type": "recall"
+        },
+        {
+          "question": "Which of these is a common beginner mistake? (a) Stepping on the balls of your feet (b) Stepping on counts 4 and 8 (c) Keeping your knees slightly bent",
+          "answer": "(b) Stepping on counts 4 and 8 — these are holds where no foot movement should happen",
+          "type": "choice"
+        },
+        {
+          "question": "True or false: During the basic step, you should take large steps to cover more ground.",
+          "answer": "False. The basic step should be compact, roughly shoulder-width. Large steps destroy balance and make transitions impossible.",
+          "type": "true_false"
+        }
+      ],
+      "connects_to": ["inside_turn", "cross_body_lead", "right_turn", "prep_step"],
+      "video_keys": ["basic_step_demo", "basic_step_timing"]
+    },
+
+    "inside_turn": {
+      "name": "Inside Turn",
+      "slug": "inside_turn",
+      "level": 1,
+      "order": 2,
+      "description": "The follower turns to her left (toward the leader) while the leader continues his basic step. Called 'inside' because she turns inward, toward the leader. The prep happens on count 1 and the turn executes on 5-6-7.",
+      "breakdown": [
+        "Count 1: Leader steps BACK with LEFT foot (same as basic). Simultaneously, LIFT the follower's right hand with your left hand — raise it above her head level. This is the signal/prep for the turn. The lift is gentle and guides upward, not a yank.",
+        "Count 2: Leader REPLACES weight onto RIGHT foot (the break). Your left hand stays elevated, maintaining the frame above her head.",
+        "Count 3: Leader steps FORWARD with LEFT foot, returning to neutral. Hand is still raised. The follower has received the signal and is preparing to turn.",
+        "Count 4: HOLD. Hand remains up. The follower is about to begin her turn.",
+        "Count 5: Leader steps FORWARD with RIGHT foot (same as basic). The follower begins her LEFT turn (she turns to her left / counterclockwise when viewed from above). Your left hand acts as a post — she turns underneath it. Do NOT push her around; let her turn herself.",
+        "Count 6: Leader REPLACES weight onto LEFT foot (the break). The follower is mid-turn, passing through the halfway point. Keep your hand relaxed — let the connection be loose enough that she can rotate freely.",
+        "Count 7: Leader steps BACK with RIGHT foot. The follower completes her turn, coming back to face you. Gently lower your left hand back to normal hold position as she finishes.",
+        "Count 8: HOLD. Both partners are back in basic position, ready for the next pattern."
+      ],
+      "common_mistakes": [
+        "Cranking or pushing the follower through the turn with your hand. Your raised hand is a signpost, not a steering wheel. She provides her own rotational energy. If you muscle her through, you'll throw off her balance.",
+        "Lifting the hand too late (on 5 instead of 1). The hand lift on count 1 is the PREP — it gives the follower 4 counts of warning that a turn is coming. Without the prep, she gets surprised and the turn is rushed.",
+        "Stopping your own basic step during the turn. The leader's feet keep doing the basic throughout. If you freeze to 'watch' her turn, you lose your timing and both of you get off beat.",
+        "Gripping her hand tightly during the turn. Use a loose, open grip so her hand can rotate freely in yours. A death grip on her fingers will hurt her and block the rotation."
+      ],
+      "key_details": [
+        "The hand lift on count 1 is the prep/signal. This is the most important moment — it tells the follower what's coming. No prep = no lead.",
+        "Your left hand holds her right hand. Raise it smoothly above her head height. Think of it like placing a crown, not throwing a ball.",
+        "The follower turns on 5-6-7. She is executing the turn during the second half of the basic. You are doing your normal forward-and-back on the same counts.",
+        "Keep your hand directly above or slightly in front of her head — not behind her or off to the side. If your hand drifts, she'll be pulled off axis.",
+        "After the turn completes on 7, lower your hand back to normal hold so you're ready for whatever comes next on the next count 1.",
+        "Eye contact: look at her face, not at her feet or your hand. Trust the connection."
+      ],
+      "flashcards": [
+        {
+          "question": "When does the leader lift the follower's hand to signal an inside turn?",
+          "answer": "On count 1 — this is the prep that tells the follower a turn is coming",
+          "type": "recall"
+        },
+        {
+          "question": "During an inside turn, which direction does the follower rotate?",
+          "answer": "To her left (counterclockwise when viewed from above) — she turns inward, toward the leader",
+          "type": "recall"
+        },
+        {
+          "question": "On which counts does the follower execute the inside turn?",
+          "answer": "Counts 5-6-7. The prep happens on 1, but the actual turn is on the second half of the basic.",
+          "type": "recall"
+        },
+        {
+          "question": "True or false: The leader should stop his basic step while the follower is turning.",
+          "answer": "False. The leader continues his basic step throughout the entire turn. Stopping breaks the timing.",
+          "type": "true_false"
+        },
+        {
+          "question": "Which hand does the leader use to lead the inside turn?",
+          "answer": "Left hand (holding the follower's right hand)",
+          "type": "recall"
+        },
+        {
+          "question": "What is the biggest mistake beginners make when leading an inside turn? (a) Stepping too small (b) Pushing/cranking the follower through the turn (c) Looking at the follower's feet",
+          "answer": "(b) Pushing or cranking. The raised hand is a signpost, not a steering wheel. The follower provides her own rotational energy.",
+          "type": "choice"
+        },
+        {
+          "question": "Why is the inside turn called 'inside'?",
+          "answer": "Because the follower turns inward, toward the leader, rather than away from the leader (which would be an outside turn).",
+          "type": "recall"
+        },
+        {
+          "question": "True or false: You should grip the follower's hand tightly during the turn to maintain control.",
+          "answer": "False. Use a loose, open grip so her hand can rotate freely. A tight grip blocks the rotation and can hurt her fingers.",
+          "type": "true_false"
+        }
+      ],
+      "connects_to": ["basic_step", "cross_body_lead", "cross_body_lead_with_inside_turn"],
+      "video_keys": ["inside_turn_demo", "inside_turn_lead_technique"]
+    },
+
+    "cross_body_lead": {
+      "name": "Cross Body Lead (CBL)",
+      "slug": "cross_body_lead",
+      "level": 1,
+      "order": 3,
+      "description": "The most important move after the basic. The leader steps to his left on 1-2-3 to open a 'slot' or lane, and the follower walks across from one side to the other on 5-6-7. After the CBL, the follower has switched sides — she's now where the leader was and vice versa. This move is the gateway to almost every intermediate and advanced pattern.",
+      "breakdown": [
+        "Count 1: Leader steps BACK with LEFT foot, same as the basic. As you step back, begin to rotate your body slightly to the LEFT (counterclockwise) to start opening the lane. Your right hand (on her back/shoulder blade) gently guides her to begin moving forward.",
+        "Count 2: Leader REPLACES weight onto RIGHT foot (the break). Continue rotating your body to the left. You are now starting to face roughly perpendicular to your original facing — opening the slot for her to walk through.",
+        "Count 3: Leader steps to the LEFT with LEFT foot — this is the key difference from the basic. Instead of stepping forward, you step sideways to your left, clearing completely out of the follower's path. You are now standing to the side with the 'slot' wide open in front of you.",
+        "Count 4: HOLD. You have created the lane. The follower is about to walk through it.",
+        "Count 5: Leader steps FORWARD with RIGHT foot, beginning to close back to face the follower. The follower is now walking across — she steps forward into the slot you created. Your body starts rotating back to the right (clockwise) to face her new position.",
+        "Count 6: Leader REPLACES weight onto LEFT foot (the break). Continue rotating to face the follower, who is now crossing through the slot. You're guiding her path with your right hand on her back.",
+        "Count 7: Leader steps BACK with RIGHT foot, completing the rotation. You and the follower have now effectively switched places. She is where you were, you are where she was. You're both facing each other again.",
+        "Count 8: HOLD. You're back in basic position but on opposite sides from where you started. The next pattern starts fresh from here."
+      ],
+      "common_mistakes": [
+        "Not stepping far enough to the left on count 3. If you don't clear out of the slot, the follower has nowhere to walk. She'll crash into you or have to squeeze past. Commit to a full side step on 3.",
+        "Pushing the follower across with your arms. The lead comes from your body rotation and the opening of the slot, not from shoving her with your right hand. Your hand guides; your body creates the space.",
+        "Forgetting to rotate your body. The CBL requires a significant upper body rotation to the left on 1-2-3 (opening) and back to the right on 5-6-7 (closing). Without it, you're just stepping sideways and the follower doesn't know what to do.",
+        "Losing connection with the right hand. Your right hand stays in contact with her back/shoulder blade area throughout the move. This is how she knows the path and speed. If you drop it, she loses the guide."
+      ],
+      "key_details": [
+        "The leader's job on 1-2-3 is to GET OUT OF THE WAY. Step left, rotate left, create the slot. Think of yourself as opening a door for her.",
+        "Your right hand (on her back) does the guiding. It stays connected throughout and traces her movement path. Light, consistent pressure — not pushing.",
+        "After the CBL, you've switched places. This is important to internalize — the move resets your spatial orientation. Many combination patterns use the CBL as a reset.",
+        "The follower walks in a straight line across the slot. She's not turning. She walks forward on 5-6-7 along the lane you created.",
+        "Keep your frame intact even as you rotate. Your arms maintain their relative position to your torso — the rotation comes from your core, not from swinging your arms.",
+        "The CBL is the foundation for 80% of salsa patterns. Master it until it's automatic."
+      ],
+      "flashcards": [
+        {
+          "question": "On count 3 of a cross body lead, where does the leader step?",
+          "answer": "To the LEFT with the left foot — stepping sideways to clear the slot for the follower to walk through",
+          "type": "recall"
+        },
+        {
+          "question": "What is the leader's main job on counts 1-2-3 of a CBL?",
+          "answer": "Get out of the way. Step to the left and rotate your body to open a clear lane (slot) for the follower to walk across.",
+          "type": "recall"
+        },
+        {
+          "question": "On which counts does the follower walk across in a CBL?",
+          "answer": "Counts 5-6-7. The leader opens the slot on 1-2-3, and the follower crosses through it on 5-6-7.",
+          "type": "recall"
+        },
+        {
+          "question": "True or false: After a cross body lead, the leader and follower are on the same sides where they started.",
+          "answer": "False. They have switched places — the follower is now where the leader was, and the leader is where the follower was.",
+          "type": "true_false"
+        },
+        {
+          "question": "Which hand guides the follower through the CBL? (a) Left hand (b) Right hand (c) Both equally",
+          "answer": "(b) Right hand — it stays on her back/shoulder blade area and guides her path through the slot",
+          "type": "choice"
+        },
+        {
+          "question": "What makes count 3 of the CBL different from count 3 of the basic step?",
+          "answer": "In the basic, the leader steps FORWARD with the left foot. In the CBL, the leader steps to the LEFT (sideways) with the left foot to clear the slot.",
+          "type": "recall"
+        },
+        {
+          "question": "True or false: The leader should push the follower across the slot with their arms.",
+          "answer": "False. The lead comes from body rotation and opening the slot. The right hand guides gently but does not push.",
+          "type": "true_false"
+        },
+        {
+          "question": "Why is the cross body lead considered the most important move after the basic?",
+          "answer": "Because it's the foundation for roughly 80% of salsa patterns. Almost every intermediate and advanced combination uses or builds on the CBL.",
+          "type": "recall"
+        }
+      ],
+      "connects_to": ["basic_step", "inside_turn", "cross_body_lead_with_inside_turn", "cross_body_lead_with_right_turn", "copa"],
+      "video_keys": ["cbl_demo", "cbl_footwork_detail"]
+    },
+
+    "right_turn": {
+      "name": "Right Turn",
+      "slug": "right_turn",
+      "level": 1,
+      "order": 4,
+      "description": "The leader turns himself to the right (clockwise). This is the leader's first solo turn. It typically happens within the basic step framework — the leader initiates the turn on the first half and completes it on the second half, all while maintaining timing.",
+      "breakdown": [
+        "Count 1: Leader steps BACK with LEFT foot, same as the basic. As you step back, begin to wind up your body slightly — think of coiling your torso to prep for the turn. Your left shoulder pulls back a bit.",
+        "Count 2: Leader REPLACES weight onto RIGHT foot (the break). Begin the rotation to the RIGHT (clockwise). Push off your left foot to generate the turn momentum. Your head spots — pick a point (usually your partner's face) and keep looking at it as long as possible.",
+        "Count 3: Leader steps FORWARD with LEFT foot while continuing the clockwise rotation. You should be roughly halfway through the turn (about 180 degrees) by the end of count 3. Your weight is on the left foot.",
+        "Count 4: HOLD. You're mid-rotation or have completed about half the turn. Settle your weight.",
+        "Count 5: Leader steps FORWARD with RIGHT foot, continuing or completing the rotation to the right. You should be coming around to face your partner again. Spot your partner — your head whips around to find them.",
+        "Count 6: Leader REPLACES weight onto LEFT foot (the break). The turn is completing — you should be facing your partner again or very close to it.",
+        "Count 7: Leader steps BACK with RIGHT foot, finishing the turn and settling back into the basic step position. You should now be facing your partner squarely, fully returned to neutral.",
+        "Count 8: HOLD. You're back in basic position. The turn is complete."
+      ],
+      "common_mistakes": [
+        "Looking down at your feet during the turn. Your eyes should spot — find your partner before the turn, let them go mid-turn, and snap your head around to find them again. Looking down kills your balance and you lose your orientation.",
+        "Using your arms to generate the turn. The rotation comes from your CORE and your push-off foot, not from swinging your arms. Flailing arms break your frame and can hit your partner.",
+        "Turning too fast or too slow relative to the music. The turn must fit within the 8-count phrase. Practice at slow tempos first. If you're still turning when count 5 hits, you started too late or turned too wide.",
+        "Stepping off the line. In On2, you should be turning roughly in place — not traveling sideways or forward. If you're drifting, it means your weight isn't centered over your standing foot."
+      ],
+      "key_details": [
+        "SPOTTING: Pick a focal point (your partner's face or a point on the wall). Keep your eyes on it as your body starts to turn. When your neck can't twist any further, whip your head around FAST to find the same spot. This prevents dizziness and keeps you oriented.",
+        "The turn is generated from the core and the push-off foot, not from the arms. Keep your arms in frame position close to your body during the turn — don't let them fly out.",
+        "Keep your weight over the balls of your feet throughout the turn. If you're on your heels, you'll wobble and lose balance.",
+        "The turn should be compact — think of turning on a dime. You shouldn't travel across the floor. Spin in place on the ball of one foot.",
+        "Start with half turns (180 degrees) before attempting full 360s. Get the timing and balance right at half speed first.",
+        "Your frame tightens slightly during a turn — bring your elbows a bit closer to your body so you have a smaller rotational radius and spin faster."
+      ],
+      "flashcards": [
+        {
+          "question": "In a right turn, which direction does the leader rotate?",
+          "answer": "To the RIGHT — clockwise when viewed from above",
+          "type": "recall"
+        },
+        {
+          "question": "What is 'spotting' in a turn?",
+          "answer": "Keeping your eyes fixed on a focal point (partner's face) as long as possible, then whipping your head around quickly to find it again. This prevents dizziness and maintains orientation.",
+          "type": "recall"
+        },
+        {
+          "question": "Where does the rotational energy for a turn come from? (a) Swinging your arms (b) Your core and push-off foot (c) Leaning your upper body",
+          "answer": "(b) Your core and push-off foot. Arms stay in frame position close to the body — swinging them breaks your frame and balance.",
+          "type": "choice"
+        },
+        {
+          "question": "True or false: During a right turn, the leader should take large steps to cover the rotation.",
+          "answer": "False. The turn should be compact — you spin roughly in place on the ball of your foot, not traveling across the floor.",
+          "type": "true_false"
+        },
+        {
+          "question": "On which part of the foot should you balance during a turn?",
+          "answer": "The balls of your feet. Being on your heels causes wobbling and loss of balance.",
+          "type": "recall"
+        },
+        {
+          "question": "By count 3 of a right turn, approximately how far through the rotation should the leader be?",
+          "answer": "About halfway — roughly 180 degrees. The turn completes on 5-6-7.",
+          "type": "recall"
+        },
+        {
+          "question": "True or false: You should swing your arms out wide during a turn to help generate momentum.",
+          "answer": "False. Keep your arms in frame position, elbows close to your body. A smaller radius makes you spin faster and more controlled.",
+          "type": "true_false"
+        },
+        {
+          "question": "What should you practice before attempting full 360-degree right turns?",
+          "answer": "Half turns (180 degrees). Get the timing, spotting, and balance right at half rotation before going for the full turn.",
+          "type": "recall"
+        }
+      ],
+      "connects_to": ["basic_step", "cross_body_lead_with_right_turn", "combination_turns"],
+      "video_keys": ["right_turn_demo", "turn_technique_spotting"]
+    },
+
+    "prep_step": {
+      "name": "Prep Step (Open Break)",
+      "slug": "prep_step",
+      "level": 1,
+      "order": 5,
+      "description": "Also called the 'open break.' Done from open position (holding one or both hands, but not in closed hold). The leader steps back on 1-2-3 to create tension/stretch in the arm connection, then uses that elastic energy on 5-6-7 to initiate the next move. This is how you set up turns, cross body leads, and combinations from open position.",
+      "breakdown": [
+        "Count 1: From open position (facing partner, holding her right hand with your left hand), step BACK with your LEFT foot. As you step back, your arm extends forward — you're creating distance and stretch in the connection. Don't pull her toward you; you're moving away from her while maintaining hand contact.",
+        "Count 2: REPLACE weight onto your RIGHT foot (the break). You've reached maximum stretch — your arm is extended, and you can feel gentle tension in the hand connection. This is the elastic moment.",
+        "Count 3: Step FORWARD with your LEFT foot, beginning to close the distance. You're not yanking her — you're returning to neutral while the connection stays taut.",
+        "Count 4: HOLD. You're back to neutral distance. The tension you created is about to be used.",
+        "Count 5: Step FORWARD with your RIGHT foot. This is where you USE the tension — the elastic connection pulls both of you together slightly. Whatever move comes next (turn, CBL, combination) is initiated here using the stored energy from the stretch. Your hand/arm redirects the follower into the next pattern.",
+        "Count 6: REPLACE weight onto your LEFT foot (the break). The follower is now responding to whatever lead you initiated on 5 — she might be starting a turn, walking into a CBL, etc.",
+        "Count 7: Step BACK with your RIGHT foot. Complete whatever transition you led on 5-6. Return to a neutral basic-compatible position.",
+        "Count 8: HOLD. Reset. You're ready for the next pattern."
+      ],
+      "common_mistakes": [
+        "Pulling the follower toward you on count 1 instead of stepping away from her. YOU move back. She stays. The stretch happens because you're creating distance, not because you're yanking her arm.",
+        "Creating too much tension (pulling hard) or too little (limp noodle arm). The stretch should be firm but elastic — think of a rubber band, not a tug of war rope. Both partners should feel a gentle, comfortable stretch.",
+        "Forgetting to use the tension on 5-6-7. The whole point of the prep step is to load energy on 1-2-3 and USE it on 5-6-7. If you stretch and then just go back to basic without leading anything, you've created a false signal — the follower was expecting a pattern.",
+        "Losing hand connection during the stretch. Keep a secure but relaxed grip. If you let go during the stretch, the connection breaks and the energy is lost. Fingers should hook naturally, not death-grip."
+      ],
+      "key_details": [
+        "The prep step is a COMMUNICATION tool. Stepping back on 1-2-3 tells the follower: 'Something is coming on 5-6-7.' It's the setup before the payoff.",
+        "Open position means you're holding one or both hands at arm's length. You're not in closed hold (hand on back). This gives you room to create the stretch.",
+        "The connection is in the HANDS AND ARMS, not the whole body. When you step back, your arm extends. The follower should feel a gentle stretch through the hand connection. She does NOT step forward — she stays in place.",
+        "Think 'rubber band' not 'tow truck.' The tension should be elastic and comfortable. If the follower's shoulder is getting pulled forward, you're using too much force.",
+        "The prep step can be done with left-to-right hand hold, right-to-left hand hold, or double hand hold. The mechanics are the same — step back to create stretch, use the stretch to initiate the next move.",
+        "Almost every open-position combination starts with a prep step. It's the universal 'get ready' signal in partner dancing."
+      ],
+      "flashcards": [
+        {
+          "question": "What is the purpose of the prep step (open break)?",
+          "answer": "To create tension/stretch in the arm connection on 1-2-3, then use that elastic energy on 5-6-7 to initiate the next move (turn, CBL, combination).",
+          "type": "recall"
+        },
+        {
+          "question": "On count 1 of the prep step, who moves backward?",
+          "answer": "The LEADER steps back. The follower stays in place. The leader creates the distance, not by pulling the follower forward.",
+          "type": "recall"
+        },
+        {
+          "question": "True or false: During a prep step, the follower should step forward to meet the leader.",
+          "answer": "False. The follower stays in place. The stretch is created by the leader stepping back, not by both partners moving.",
+          "type": "true_false"
+        },
+        {
+          "question": "The tension in a prep step should feel like: (a) A tug of war rope (b) A rubber band (c) A limp noodle",
+          "answer": "(b) A rubber band — elastic, firm but comfortable. Not a hard pull, not a dead connection.",
+          "type": "choice"
+        },
+        {
+          "question": "On which counts do you USE the energy stored from the prep?",
+          "answer": "Counts 5-6-7. The stretch is loaded on 1-2-3, and the energy is released/redirected into the next move on 5-6-7.",
+          "type": "recall"
+        },
+        {
+          "question": "What position are you in when doing a prep step?",
+          "answer": "Open position — holding one or both hands at arm's length, NOT in closed hold. You need the distance to create the stretch.",
+          "type": "recall"
+        },
+        {
+          "question": "True or false: It's fine to do a prep step and then go back to basic without leading any follow-up move.",
+          "answer": "False. The prep step signals to the follower that something is coming on 5-6-7. Prepping without following through creates a false signal and confuses the follower.",
+          "type": "true_false"
+        },
+        {
+          "question": "What is another name for the prep step?",
+          "answer": "Open break",
+          "type": "recall"
+        }
+      ],
+      "connects_to": ["basic_step", "inside_turn", "cross_body_lead", "right_turn", "combination_patterns"],
+      "video_keys": ["prep_step_demo", "open_position_basics"]
+    }
+  },
+
+  "meta": {
+    "style": "NY On2 / Eddie Torres Mambo",
+    "timing_system": "On2",
+    "timing_notes": {
+      "breaks_on": [2, 6],
+      "holds_on": [4, 8],
+      "prep_on": [1, 5],
+      "beat_pattern": "1-2-3-hold-5-6-7-hold"
+    },
+    "level_order": [
+      "basic_step",
+      "inside_turn",
+      "cross_body_lead",
+      "right_turn",
+      "prep_step"
+    ],
+    "total_flashcards": 40,
+    "perspective": "leader"
+  }
+}

@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Technique — Salsa</title>
+<style>
+  :root {
+    --bg:#1a1a2e; --fg:#e0e0e0; --muted:#8888aa;
+    --accent:#e94560; --accent-dim:rgba(233,69,96,0.15);
+    --ok:#00b894; --panel:#16213e; --panel-2:#1a1a3e; --border:#2a2a4a;
+  }
+  * { box-sizing:border-box; }
+  html, body { margin:0; padding:0; background:var(--bg); color:var(--fg); min-height:100vh; }
+  body { font:15px/1.55 -apple-system, BlinkMacSystemFont, system-ui, sans-serif; -webkit-font-smoothing:antialiased; }
+  a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:underline; }
+
+  nav.top {
+    position:sticky; top:0; z-index:10; display:flex; align-items:center; gap:24px;
+    padding:12px 40px; background:rgba(26,26,46,0.95); backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--border); font-size:13px;
+  }
+  nav.top .brand { font-weight:700; color:var(--accent); font-size:16px; }
+  nav.top a { color:var(--muted); } nav.top a:hover { color:var(--fg); }
+  nav.top .spacer { flex:1; }
+
+  main { max-width:840px; margin:0 auto; padding:40px 24px 100px; }
+  .back { font-size:13px; color:var(--muted); margin-bottom:16px; display:inline-block; }
+  h1 { font-size:28px; font-weight:400; margin:0 0 6px; } h1 em { color:var(--accent); font-style:normal; }
+
+  .section-label {
+    font-size:11px; text-transform:uppercase; letter-spacing:0.15em;
+    color:var(--accent); font-weight:600; margin:28px 0 12px;
+    padding-bottom:6px; border-bottom:1px solid var(--border);
+  }
+
+  /* Steps */
+  .step-list { list-style:none; padding:0; margin:0; counter-reset:step; }
+  .step-list li {
+    counter-increment:step; padding:10px 14px 10px 48px; position:relative;
+    background:var(--panel); border-radius:6px; margin-bottom:6px; font-size:14px; line-height:1.6;
+  }
+  .step-list li::before {
+    content:counter(step); position:absolute; left:14px; top:10px;
+    width:24px; height:24px; border-radius:50%; background:var(--accent);
+    color:#fff; font-weight:700; font-size:12px;
+    display:flex; align-items:center; justify-content:center;
+  }
+
+  /* Mistakes / details */
+  .detail-card { background:var(--panel); border-radius:8px; padding:12px 16px; margin-bottom:8px; font-size:14px; }
+  .detail-card.mistake { border-left:3px solid #e94560; }
+  .detail-card.tip { border-left:3px solid var(--ok); }
+  .detail-card .label { font-size:11px; text-transform:uppercase; letter-spacing:0.08em; color:var(--muted); margin-bottom:4px; }
+
+  /* Videos */
+  .video-card { background:var(--panel); border-radius:8px; overflow:hidden; margin-bottom:12px; cursor:pointer; border:1px solid var(--border); }
+  .video-card:hover { border-color:var(--accent); }
+  .video-card .vc-header { padding:12px 16px; display:flex; align-items:center; gap:10px; }
+  .video-card .vc-channel { font-size:11px; color:var(--muted); background:var(--panel-2); padding:2px 8px; border-radius:4px; }
+  .video-card .vc-title { font-weight:600; font-size:14px; flex:1; }
+  .video-card .vc-body { display:none; padding:0 16px 16px; }
+  .video-card.open .vc-body { display:block; }
+  .video-card video, .video-card iframe { width:100%; border-radius:6px; background:#000; }
+  .video-card .vc-note { font-size:13px; color:var(--muted); margin-top:8px; }
+
+  /* Quiz inline */
+  .quiz-card {
+    background:var(--panel); border:1px solid var(--border); border-radius:8px;
+    padding:16px; margin-bottom:10px;
+  }
+  .quiz-card .q { font-weight:600; font-size:15px; margin-bottom:10px; }
+  .quiz-card .a { display:none; padding:10px 14px; background:var(--accent-dim); border-radius:6px; font-size:14px; }
+  .quiz-card.revealed .a { display:block; }
+  .quiz-card .reveal-btn {
+    background:var(--accent); color:#fff; border:none; padding:6px 16px;
+    border-radius:4px; font:600 12px/1 inherit; cursor:pointer;
+  }
+  .quiz-card.revealed .reveal-btn { display:none; }
+  .quiz-card .rate-btns { display:none; margin-top:8px; gap:6px; }
+  .quiz-card.revealed .rate-btns { display:flex; }
+  .rate-btn { padding:4px 12px; border:1px solid var(--border); border-radius:4px; background:transparent; color:var(--fg); font:12px/1 inherit; cursor:pointer; }
+  .rate-btn:hover { background:var(--panel-2); }
+  .rate-btn.good { border-color:var(--ok); color:var(--ok); }
+  .rate-btn.bad { border-color:var(--accent); color:var(--accent); }
+
+  /* Connections */
+  .connect-chip {
+    display:inline-block; padding:4px 12px; border-radius:16px; font-size:12px; font-weight:500;
+    background:var(--accent-dim); color:var(--accent); margin:2px;
+  }
+</style>
+</head>
+<body>
+
+<nav class="top">
+  <span class="brand">salsa.</span>
+  <a href="/">Home</a> <a href="/practice">Practice</a> <a href="/quiz">Quiz</a>
+  <span class="spacer"></span>
+</nav>
+
+<main><div id="app"><p style="color:var(--muted)">Loading...</p></div></main>
+
+<script>
+const slug = location.pathname.split('/').pop();
+
+async function load() {
+  try {
+    const res = await fetch(`/api/technique/${slug}`);
+    if (!res.ok) throw new Error();
+    render(await res.json());
+  } catch {
+    document.getElementById('app').innerHTML = '<p style="color:var(--accent)">Technique not found.</p>';
+  }
+}
+
+function render(d) {
+  let html = `<a class="back" href="/">&larr; All techniques</a>`;
+  html += `<h1><em>${esc(d.name)}</em></h1>`;
+
+  // Breakdown
+  if (d.breakdown && d.breakdown.length) {
+    html += '<div class="section-label">Step by step</div>';
+    html += '<ol class="step-list">';
+    for (const step of d.breakdown) html += `<li>${esc(step)}</li>`;
+    html += '</ol>';
+  }
+
+  // Key details
+  if (d.key_details && d.key_details.length) {
+    html += '<div class="section-label">Key details</div>';
+    for (const tip of d.key_details) html += `<div class="detail-card tip"><div class="label">Remember</div>${esc(tip)}</div>`;
+  }
+
+  // Common mistakes
+  if (d.common_mistakes && d.common_mistakes.length) {
+    html += '<div class="section-label">Common mistakes</div>';
+    for (const m of d.common_mistakes) html += `<div class="detail-card mistake"><div class="label">Watch out</div>${esc(m)}</div>`;
+  }
+
+  // Videos
+  if (d.videos && d.videos.length) {
+    html += '<div class="section-label">Watch & learn</div>';
+    for (const v of d.videos) {
+      const vid = 'v-' + Math.random().toString(36).slice(2,6);
+      const ytId = v.url?.match(/v=([^&]+)/)?.[1];
+      html += `<div class="video-card" id="${vid}" onclick="toggleVideo('${vid}')">`;
+      html += `<div class="vc-header"><span class="vc-title">${esc(v.title)}</span><span class="vc-channel">${esc(v.channel)}</span></div>`;
+      html += '<div class="vc-body">';
+      if (v.local_url) {
+        html += `<video controls preload="none"><source src="${v.local_url}" type="video/mp4"></video>`;
+      } else if (ytId) {
+        html += `<iframe width="100%" height="360" src="https://www.youtube.com/embed/${ytId}" frameborder="0" allowfullscreen></iframe>`;
+      }
+      if (v.note) html += `<div class="vc-note">${esc(v.note)}</div>`;
+      html += '</div></div>';
+    }
+  }
+
+  // Quiz
+  if (d.flashcards && d.flashcards.length) {
+    html += '<div class="section-label">Test yourself</div>';
+    for (let i = 0; i < d.flashcards.length; i++) {
+      const fc = d.flashcards[i];
+      const cid = 'fc-' + i;
+      html += `<div class="quiz-card" id="${cid}">
+        <div class="q">${esc(fc.question)}</div>
+        <button class="reveal-btn" onclick="event.stopPropagation();document.getElementById('${cid}').classList.add('revealed')">Show answer</button>
+        <div class="a">${esc(fc.answer)}</div>
+        <div class="rate-btns">
+          <button class="rate-btn good" onclick="event.stopPropagation()">Got it</button>
+          <button class="rate-btn bad" onclick="event.stopPropagation()">Missed it</button>
+        </div>
+      </div>`;
+    }
+  }
+
+  // Multi-instructor transcript walkthrough with screenshots
+  if (d.transcripts && d.transcripts.length) {
+    html += '<div class="section-label">Instructor walkthroughs (with screenshots)</div>';
+    for (const tr of d.transcripts) {
+      if (!tr.sections || !tr.sections.length) continue;
+      html += `<div style="margin-bottom:24px">`;
+      html += `<div style="font-weight:600;font-size:15px;margin-bottom:8px">${esc(tr.instructor)} — ${esc(tr.title)}</div>`;
+      for (let i = 0; i < tr.sections.length; i++) {
+        const sec = tr.sections[i];
+        if (!sec.text || sec.text.length < 20) continue;
+        html += `<div style="margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid var(--border)">`;
+        html += `<div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">`;
+        html += `<span style="font-size:11px;font-weight:700;color:var(--accent);background:var(--accent-dim);padding:2px 8px;border-radius:4px">${i + 1}</span>`;
+        if (sec.start) html += `<span style="font-size:12px;color:var(--muted)">${fmtTime(sec.start)}</span>`;
+        html += '</div>';
+        if (sec.frame_url) html += `<img src="${sec.frame_url}" alt="Step ${i+1}" loading="lazy" style="width:100%;max-width:520px;border-radius:6px;margin-bottom:8px">`;
+        html += `<div style="font-size:14px;line-height:1.7;color:var(--fg)">${esc(sec.text)}</div>`;
+        html += '</div>';
+      }
+      html += '</div>';
+    }
+  }
+
+  // Visual cues (from breakdown_detail)
+  if (d.breakdown_detail) {
+    const bd = d.breakdown_detail;
+    if (bd.visual_cues && bd.visual_cues.length) {
+      html += '<div class="section-label">Mirror check — what to look for</div>';
+      for (const vc of bd.visual_cues) html += `<div class="detail-card tip"><div class="label">Check</div>${esc(vc)}</div>`;
+    }
+    if (bd.practice_drill) {
+      html += '<div class="section-label">Practice drill</div>';
+      html += `<div class="detail-card tip" style="border-left-color:var(--accent)"><div class="label">Drill</div>${esc(bd.practice_drill)}</div>`;
+    }
+    if (bd.instructor_breakdowns && bd.instructor_breakdowns.length) {
+      html += '<div class="section-label">What each instructor emphasizes</div>';
+      for (const ib of bd.instructor_breakdowns) {
+        html += `<div style="margin-bottom:12px"><div style="font-weight:600;font-size:14px;color:var(--accent);margin-bottom:6px">${esc(ib.instructor)}</div>`;
+        if (ib.tips && ib.tips.length) {
+          for (const tip of ib.tips) html += `<div class="detail-card" style="border-left:3px solid var(--border);margin-bottom:4px">${esc(tip)}</div>`;
+        }
+        html += '</div>';
+      }
+    }
+  }
+
+  // Connects to
+  if (d.connects_to && d.connects_to.length) {
+    html += '<div class="section-label">Builds into</div>';
+    for (const c of d.connects_to) {
+      const cslug = c.toLowerCase().replace(/ /g, '_');
+      html += `<a href="/technique/${cslug}" class="connect-chip">${esc(c)}</a>`;
+    }
+  }
+
+  document.getElementById('app').innerHTML = html;
+}
+
+function toggleVideo(id) {
+  const el = document.getElementById(id);
+  const wasOpen = el.classList.contains('open');
+  el.classList.toggle('open');
+  if (wasOpen) {
+    const vid = el.querySelector('video');
+    if (vid) vid.pause();
+  }
+}
+
+function fmtTime(s) { return `${Math.floor(s/60)}:${Math.floor(s%60).toString().padStart(2,'0')}`; }
+function esc(s) { if (!s) return ''; const d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+load();
+</script>
+</body>
+</html>

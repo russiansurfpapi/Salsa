@@ -1,0 +1,84 @@
+{
+  "style": "NY On2",
+  "practice_days": "every_other_day",
+  "goal": "Be comfortable at salsa socials — know enough techniques, combine them, lead confidently",
+  "current_phase": 0,
+  "phases": [
+    {
+      "id": 0,
+      "name": "Foundation",
+      "why": "The basic is EVERYTHING. If your timing is off, nothing works. Drill the count until it's automatic — 1-2-3, 5-6-7 — so you can think about leading, not counting.",
+      "techniques": ["Basic Step", "Inside Turn"],
+      "practice_sessions": [
+        {
+          "day": 1,
+          "date": "2026-05-12",
+          "focus": "Basic Step solo",
+          "drill": "Stand in front of a mirror. Count out loud: 1-2-3, 5-6-7. Back on left on 1. Do 50 reps until you stop thinking about your feet.",
+          "video_focus": "basic_step",
+          "completed": null
+        },
+        {
+          "day": 2,
+          "date": "2026-05-14",
+          "focus": "Basic Step + Inside Turn",
+          "drill": "20 basics, then practice the turn signal: lift hand on 1. Visualize the follower turning. Do 10 turns each direction (air partner is fine).",
+          "video_focus": "inside_turn",
+          "completed": null
+        },
+        {
+          "day": 3,
+          "date": "2026-05-16",
+          "focus": "Basic + Turn with music",
+          "drill": "Put on a slow salsa song. Do basics for 8 bars, then an inside turn. Repeat. Don't rush — stay on the 2.",
+          "video_focus": "basic_step",
+          "completed": null
+        },
+        {
+          "day": 4,
+          "date": "2026-05-18",
+          "focus": "Review before next class",
+          "drill": "Run through everything: 20 basics, 10 inside turns, then alternate. This is your pre-class warmup pattern going forward.",
+          "video_focus": "inside_turn",
+          "completed": null
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Cross Body Lead",
+      "why": "The cross body lead is how you move the follower from one side to the other. It's the second most important move after the basic — almost everything builds on it.",
+      "techniques": ["Cross Body Lead", "Prep Step"],
+      "practice_sessions": [
+        {
+          "day": 1,
+          "focus": "Cross body lead breakdown",
+          "drill": "Learn the footwork: open on 1-2-3, she crosses on 5-6-7. Practice solo — step to the side to open the slot, then step back.",
+          "video_focus": "cross_body_lead",
+          "completed": null
+        },
+        {
+          "day": 2,
+          "focus": "Cross body lead + basic combo",
+          "drill": "4 basics → cross body lead → 4 basics → cross body lead. Repeat 10 times.",
+          "video_focus": "cross_body_lead",
+          "completed": null
+        },
+        {
+          "day": 3,
+          "focus": "CBL + inside turn combo",
+          "drill": "Basic → CBL → inside turn → basic → CBL. You now have a 3-move vocabulary — combine them freely.",
+          "video_focus": "cross_body_lead",
+          "completed": null
+        },
+        {
+          "day": 4,
+          "focus": "Full combo with music",
+          "drill": "Slow song. Mix basic, CBL, inside turn randomly. Goal: never break timing, smooth transitions.",
+          "video_focus": "cross_body_lead",
+          "completed": null
+        }
+      ]
+    }
+  ]
+}

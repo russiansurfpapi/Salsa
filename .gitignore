@@ -1,0 +1,9 @@
+*.pyc
+__pycache__/
+.venv/
+.env*
+*.log
+.claude/
+videos/
+*.m4a
+*.small.m4a

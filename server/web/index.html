@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Salsa — Learn</title>
+<style>
+  :root {
+    --bg:#1a1a2e; --fg:#e0e0e0; --muted:#8888aa; --muted-2:#6666888;
+    --accent:#e94560; --accent-dim:rgba(233,69,96,0.15);
+    --ok:#00b894; --panel:#16213e; --panel-2:#1a1a3e; --border:#2a2a4a;
+    --gold:#f39c12; --blue:#0984e3;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin:0; padding:0; background:var(--bg); color:var(--fg); min-height:100vh; }
+  body { font: 15px/1.55 -apple-system, BlinkMacSystemFont, 'Inter', system-ui, sans-serif; -webkit-font-smoothing:antialiased; }
+  a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:underline; }
+
+  nav.top {
+    position:sticky; top:0; z-index:10; display:flex; align-items:center; gap:24px;
+    padding:12px 40px; background:rgba(26,26,46,0.95); backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--border); font-size:13px;
+  }
+  nav.top .brand { font-weight:700; color:var(--accent); font-size:16px; }
+  nav.top a { color:var(--muted); } nav.top a.active { color:var(--fg); }
+  nav.top .spacer { flex:1; }
+
+  main { max-width:840px; margin:0 auto; padding:40px 24px 100px; }
+
+  h1 { font-size:32px; font-weight:400; letter-spacing:-0.02em; margin:0 0 6px; }
+  h1 em { color:var(--accent); font-style:normal; }
+  .subtitle { color:var(--muted); font-size:14px; margin:0 0 32px; }
+
+  .section-label {
+    font-size:11px; text-transform:uppercase; letter-spacing:0.15em;
+    color:var(--accent); font-weight:600; margin:32px 0 12px;
+    padding-bottom:6px; border-bottom:1px solid var(--border);
+  }
+
+  /* Today's practice card */
+  .practice-card {
+    border:2px solid var(--accent); border-radius:12px; background:var(--panel);
+    overflow:hidden; margin-bottom:24px;
+  }
+  .practice-card-header {
+    padding:16px 20px; background:var(--accent-dim);
+    display:flex; align-items:center; gap:12px;
+  }
+  .practice-card-header .day-badge {
+    background:var(--accent); color:#fff; font-weight:700; font-size:13px;
+    padding:4px 12px; border-radius:20px;
+  }
+  .practice-card-header .title { font-weight:600; font-size:16px; }
+  .practice-card-body { padding:16px 20px; }
+  .practice-card-body .drill { font-size:14px; line-height:1.7; color:var(--fg); }
+  .practice-card-body .actions { margin-top:16px; display:flex; gap:8px; }
+  .btn { padding:8px 20px; border:none; border-radius:6px; font:600 13px/1 inherit; cursor:pointer; }
+  .btn-accent { background:var(--accent); color:#fff; } .btn-accent:hover { filter:brightness(1.1); }
+  .btn-outline { background:transparent; color:var(--fg); border:1px solid var(--border); }
+  .btn-outline:hover { background:var(--panel-2); }
+  .btn-ok { background:var(--ok); color:#fff; } .btn-ok:hover { filter:brightness(1.1); }
+
+  /* Technique grid */
+  .tech-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(240px,1fr)); gap:10px; }
+  .tech-card {
+    background:var(--panel); border:1px solid var(--border); border-radius:8px;
+    padding:14px 16px; cursor:pointer; transition:border-color 0.15s;
+  }
+  .tech-card:hover { border-color:var(--accent); }
+  .tech-card .tc-name { font-weight:600; font-size:14px; margin-bottom:4px; }
+  .tech-card .tc-cat { font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:0.08em; }
+  .tech-card.learned { border-left:3px solid var(--ok); }
+  .tech-card.has-content .tc-name { color:var(--accent); }
+  .tech-card .tc-badge { font-size:10px; padding:2px 6px; border-radius:8px; font-weight:600; }
+  .tc-badge.done { background:rgba(0,184,148,0.2); color:var(--ok); }
+  .tc-badge.ready { background:var(--accent-dim); color:var(--accent); }
+
+  /* Progress bar */
+  .progress-row { display:flex; gap:4px; margin-bottom:24px; }
+  .progress-dot {
+    flex:1; height:6px; border-radius:3px; background:var(--border);
+  }
+  .progress-dot.done { background:var(--ok); }
+  .progress-dot.current { background:var(--accent); }
+</style>
+</head>
+<body>
+
+<nav class="top">
+  <span class="brand">salsa.</span>
+  <a href="/" class="active">Home</a>
+  <a href="/practice">Practice</a>
+  <a href="/quiz">Quiz</a>
+  <span class="spacer"></span>
+</nav>
+
+<main>
+  <div id="app"><p style="color:var(--muted)">Loading...</p></div>
+</main>
+
+<script>
+async function load() {
+  const [techRes, progRes] = await Promise.all([
+    fetch('/api/techniques'), fetch('/api/progression')
+  ]);
+  const techniques = await techRes.json();
+  const prog = await progRes.json();
+  render(techniques, prog);
+}
+
+function render(techniques, prog) {
+  let html = '';
+  html += `<h1><em>Salsa</em> On2</h1>`;
+  html += `<p class="subtitle">NY style mambo — ${techniques.techniques?.length || 0} techniques to learn</p>`;
+
+  // Current phase + today's practice
+  const phase = prog.phases?.[prog.current_phase];
+  if (phase) {
+    const nextSession = phase.practice_sessions?.find(s => !s.completed);
+    const completedCount = phase.practice_sessions?.filter(s => s.completed).length || 0;
+    const totalSessions = phase.practice_sessions?.length || 0;
+
+    html += `<div class="section-label">Phase ${prog.current_phase + 1}: ${esc(phase.name)}</div>`;
+    html += `<p style="color:var(--muted);font-size:13px;margin:0 0 12px">${esc(phase.why)}</p>`;
+
+    // Progress dots
+    html += '<div class="progress-row">';
+    for (let i = 0; i < totalSessions; i++) {
+      const s = phase.practice_sessions[i];
+      const cls = s.completed ? 'done' : i === completedCount ? 'current' : '';
+      html += `<div class="progress-dot ${cls}"></div>`;
+    }
+    html += '</div>';
+
+    if (nextSession) {
+      html += `<div class="practice-card">
+        <div class="practice-card-header">
+          <span class="day-badge">Day ${completedCount + 1}</span>
+          <span class="title">${esc(nextSession.focus)}</span>
+        </div>
+        <div class="practice-card-body">
+          <div class="drill">${esc(nextSession.drill)}</div>
+          <div class="actions">
+            <button class="btn btn-accent" onclick="location.href='/technique/${esc(nextSession.video_focus)}'">Watch videos</button>
+            <button class="btn btn-outline" onclick="location.href='/quiz?t=${esc(nextSession.video_focus)}'">Quiz me</button>
+            <button class="btn btn-ok" onclick="markDone(${prog.current_phase}, ${completedCount})">Done for today</button>
+          </div>
+        </div>
+      </div>`;
+    }
+  }
+
+  // All techniques
+  html += '<div class="section-label">Level 1 — Beginner</div>';
+  html += '<div class="tech-grid">';
+  for (const t of (techniques.techniques || [])) {
+    const cls = [t.learned ? 'learned' : '', t.has_content ? 'has-content' : ''].join(' ');
+    const badge = t.learned ? '<span class="tc-badge done">learned</span>' :
+                  t.has_content ? '<span class="tc-badge ready">ready</span>' : '';
+    const href = t.has_content ? `/technique/${t.slug}` : '#';
+    html += `<a href="${href}" style="text-decoration:none"><div class="tech-card ${cls}">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <span class="tc-name">${t.id}. ${esc(t.name)}</span>${badge}
+      </div>
+      <div class="tc-cat">${esc(t.category.replace(/_/g, ' '))}</div>
+    </div></a>`;
+  }
+  html += '</div>';
+
+  document.getElementById('app').innerHTML = html;
+}
+
+async function markDone(phase, session) {
+  const notes = prompt('Quick notes from this practice (or leave empty):') || '';
+  await fetch('/api/progression/complete', {
+    method: 'POST', headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({ phase, session, notes })
+  });
+  load();
+}
+
+function esc(s) { if (!s) return ''; const d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+load();
+</script>
+</body>
+</html>

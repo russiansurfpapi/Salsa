@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Practice — Salsa</title>
+<style>
+  :root {
+    --bg:#1a1a2e; --fg:#e0e0e0; --muted:#8888aa;
+    --accent:#e94560; --accent-dim:rgba(233,69,96,0.15);
+    --ok:#00b894; --panel:#16213e; --border:#2a2a4a;
+  }
+  * { box-sizing:border-box; }
+  html, body { margin:0; padding:0; background:var(--bg); color:var(--fg); min-height:100vh; }
+  body { font:15px/1.55 -apple-system, BlinkMacSystemFont, system-ui, sans-serif; }
+  a { color:var(--accent); text-decoration:none; }
+
+  nav.top {
+    position:sticky; top:0; z-index:10; display:flex; align-items:center; gap:24px;
+    padding:12px 40px; background:rgba(26,26,46,0.95); backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--border); font-size:13px;
+  }
+  nav.top .brand { font-weight:700; color:var(--accent); font-size:16px; }
+  nav.top a { color:var(--muted); } nav.top a.active { color:var(--fg); }
+  nav.top .spacer { flex:1; }
+
+  main { max-width:700px; margin:0 auto; padding:40px 24px 100px; }
+  h1 { font-size:28px; font-weight:400; margin:0 0 6px; } h1 em { color:var(--accent); font-style:normal; }
+
+  .session {
+    background:var(--panel); border:1px solid var(--border); border-radius:10px;
+    padding:16px 20px; margin-bottom:12px; display:flex; align-items:center; gap:14px;
+  }
+  .session.done { opacity:0.5; }
+  .session.current { border-color:var(--accent); border-width:2px; }
+  .session .day { width:36px; height:36px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:14px; flex-shrink:0; }
+  .session.done .day { background:var(--ok); color:#fff; }
+  .session.current .day { background:var(--accent); color:#fff; }
+  .session .day.upcoming { background:var(--border); color:var(--muted); }
+  .session .info { flex:1; }
+  .session .focus { font-weight:600; font-size:15px; }
+  .session .drill { font-size:13px; color:var(--muted); margin-top:4px; }
+  .session .date { font-size:12px; color:var(--muted); }
+
+  .phase-header { margin:24px 0 12px; font-size:12px; text-transform:uppercase; letter-spacing:0.12em; color:var(--accent); font-weight:600; }
+</style>
+</head>
+<body>
+
+<nav class="top">
+  <span class="brand">salsa.</span>
+  <a href="/">Home</a> <a href="/practice" class="active">Practice</a> <a href="/quiz">Quiz</a>
+  <span class="spacer"></span>
+</nav>
+
+<main>
+  <h1><em>Practice</em> schedule</h1>
+  <div id="app"><p style="color:var(--muted)">Loading...</p></div>
+</main>
+
+<script>
+async function load() {
+  const res = await fetch('/api/progression');
+  const prog = await res.json();
+  let html = '';
+
+  for (const phase of (prog.phases || [])) {
+    html += `<div class="phase-header">Phase ${phase.id + 1}: ${esc(phase.name)}</div>`;
+    const sessions = phase.practice_sessions || [];
+    let foundCurrent = false;
+
+    for (let i = 0; i < sessions.length; i++) {
+      const s = sessions[i];
+      const isDone = !!s.completed;
+      const isCurrent = !isDone && !foundCurrent && phase.id === prog.current_phase;
+      if (isCurrent) foundCurrent = true;
+      const cls = isDone ? 'done' : isCurrent ? 'current' : '';
+      const dayCls = isDone ? '' : isCurrent ? '' : 'upcoming';
+
+      html += `<div class="session ${cls}">
+        <div class="day ${dayCls}">${isDone ? '✓' : i + 1}</div>
+        <div class="info">
+          <div class="focus">${esc(s.focus)}</div>
+          <div class="drill">${esc(s.drill)}</div>
+          ${s.date ? '<div class="date">' + esc(s.date) + '</div>' : ''}
+          ${s.notes ? '<div class="date" style="color:var(--ok)">Notes: ' + esc(s.notes) + '</div>' : ''}
+        </div>
+      </div>`;
+    }
+  }
+
+  document.getElementById('app').innerHTML = html;
+}
+
+function esc(s) { if (!s) return ''; const d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+load();
+</script>
+</body>
+</html>

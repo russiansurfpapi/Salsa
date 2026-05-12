@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quiz — Salsa</title>
+<style>
+  :root {
+    --bg:#1a1a2e; --fg:#e0e0e0; --muted:#8888aa;
+    --accent:#e94560; --accent-dim:rgba(233,69,96,0.15);
+    --ok:#00b894; --panel:#16213e; --border:#2a2a4a;
+  }
+  * { box-sizing:border-box; }
+  html, body { margin:0; padding:0; background:var(--bg); color:var(--fg); min-height:100vh; }
+  body { font:15px/1.55 -apple-system, BlinkMacSystemFont, system-ui, sans-serif; }
+  a { color:var(--accent); text-decoration:none; }
+
+  nav.top {
+    position:sticky; top:0; z-index:10; display:flex; align-items:center; gap:24px;
+    padding:12px 40px; background:rgba(26,26,46,0.95); backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--border); font-size:13px;
+  }
+  nav.top .brand { font-weight:700; color:var(--accent); font-size:16px; }
+  nav.top a { color:var(--muted); } nav.top a.active { color:var(--fg); }
+  nav.top .spacer { flex:1; }
+
+  main { max-width:600px; margin:0 auto; padding:60px 24px 100px; text-align:center; }
+
+  .card-container { perspective:1000px; margin:40px auto; max-width:500px; }
+  .card {
+    background:var(--panel); border:2px solid var(--border); border-radius:16px;
+    padding:40px 32px; min-height:200px; display:flex; flex-direction:column;
+    align-items:center; justify-content:center; transition:border-color 0.2s;
+  }
+  .card.revealed { border-color:var(--ok); }
+  .card .tech-label { font-size:11px; color:var(--accent); text-transform:uppercase; letter-spacing:0.1em; margin-bottom:16px; }
+  .card .question { font-size:20px; font-weight:600; line-height:1.4; }
+  .card .answer {
+    display:none; margin-top:20px; padding:16px 20px; background:rgba(0,184,148,0.1);
+    border-radius:8px; font-size:16px; line-height:1.5; text-align:left; width:100%;
+  }
+  .card.revealed .answer { display:block; }
+  .card .type-badge { font-size:10px; padding:2px 8px; border-radius:8px; background:var(--accent-dim); color:var(--accent); margin-bottom:12px; }
+
+  .controls { margin-top:24px; display:flex; gap:10px; justify-content:center; }
+  .btn {
+    padding:10px 28px; border:none; border-radius:8px; font:600 14px/1 inherit; cursor:pointer;
+  }
+  .btn-reveal { background:var(--accent); color:#fff; }
+  .btn-reveal:hover { filter:brightness(1.1); }
+  .btn-good { background:var(--ok); color:#fff; }
+  .btn-again { background:transparent; border:1px solid var(--accent); color:var(--accent); }
+  .btn-skip { background:transparent; border:1px solid var(--border); color:var(--muted); }
+
+  .progress { margin-top:32px; font-size:13px; color:var(--muted); }
+  .score { font-size:14px; color:var(--ok); font-weight:600; }
+</style>
+</head>
+<body>
+
+<nav class="top">
+  <span class="brand">salsa.</span>
+  <a href="/">Home</a> <a href="/practice">Practice</a> <a href="/quiz" class="active">Quiz</a>
+  <span class="spacer"></span>
+</nav>
+
+<main><div id="app"><p style="color:var(--muted)">Loading cards...</p></div></main>
+
+<script>
+let cards = [];
+let current = 0;
+let correct = 0;
+let total = 0;
+
+async function load() {
+  const params = new URLSearchParams(location.search);
+  const technique = params.get('t');
+  let url = '/api/quiz/all/cards';
+  if (technique) url = `/api/quiz/${technique}`;
+
+  const res = await fetch(url);
+  const data = await res.json();
+
+  if (Array.isArray(data)) {
+    cards = data;
+  } else {
+    cards = (data.flashcards || []).map(c => ({...c, technique: data.technique, technique_name: data.name}));
+  }
+
+  // Shuffle
+  for (let i = cards.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [cards[i], cards[j]] = [cards[j], cards[i]];
+  }
+
+  current = 0; correct = 0; total = 0;
+  renderCard();
+}
+
+function renderCard() {
+  if (current >= cards.length) {
+    document.getElementById('app').innerHTML = `
+      <h2 style="margin-top:60px">Session complete!</h2>
+      <p class="score">${correct} / ${total} correct</p>
+      <button class="btn btn-reveal" onclick="current=0;correct=0;total=0;renderCard()" style="margin-top:20px">Go again</button>
+      <br><a href="/" style="font-size:13px;margin-top:16px;display:inline-block">Back to home</a>
+    `;
+    return;
+  }
+
+  const c = cards[current];
+  document.getElementById('app').innerHTML = `
+    <div class="card-container">
+      <div class="card" id="qcard">
+        <div class="tech-label">${esc(c.technique_name || c.technique || '')}</div>
+        <div class="type-badge">${esc(c.type || 'recall')}</div>
+        <div class="question">${esc(c.question)}</div>
+        <div class="answer">${esc(c.answer)}</div>
+      </div>
+    </div>
+    <div class="controls" id="ctrl">
+      <button class="btn btn-reveal" onclick="reveal()">Show Answer</button>
+    </div>
+    <div class="progress">${current + 1} / ${cards.length}${total > 0 ? ' — ' + correct + '/' + total + ' correct' : ''}</div>
+  `;
+}
+
+function reveal() {
+  document.getElementById('qcard').classList.add('revealed');
+  document.getElementById('ctrl').innerHTML = `
+    <button class="btn btn-good" onclick="answer(true)">Got it</button>
+    <button class="btn btn-again" onclick="answer(false)">Missed it</button>
+  `;
+}
+
+function answer(gotIt) {
+  total++;
+  if (gotIt) correct++;
+  else cards.push(cards[current]); // re-add missed cards
+  current++;
+  renderCard();
+}
+
+function esc(s) { if (!s) return ''; const d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+load();
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+{
+  "level": 1,
+  "name": "Beginner",
+  "style": "NY On2",
+  "techniques": [
+    {"id": 1, "name": "Basic Step", "category": "fundamentals", "description": "1-2-3, 5-6-7. Back on left foot as leader. Foundation of everything."},
+    {"id": 2, "name": "Angle Basic", "category": "fundamentals"},
+    {"id": 3, "name": "Side Step", "category": "fundamentals"},
+    {"id": 4, "name": "Back Step", "category": "fundamentals"},
+    {"id": 5, "name": "Side to Side", "category": "fundamentals"},
+    {"id": 6, "name": "Suzy Q", "category": "footwork"},
+    {"id": 7, "name": "Prep Step", "category": "fundamentals"},
+    {"id": 8, "name": "Transition Basic", "category": "fundamentals"},
+    {"id": 9, "name": "Cross Body Lead", "category": "crossbody_leads"},
+    {"id": 10, "name": "Fancy Basic", "category": "footwork"},
+    {"id": 11, "name": "Check Basic", "category": "fundamentals"},
+    {"id": 12, "name": "Inside Turn", "category": "stationary_turns"},
+    {"id": 13, "name": "She Goes", "category": "crossbody_leads"},
+    {"id": 14, "name": "He Goes", "category": "crossbody_leads"},
+    {"id": 15, "name": "Tic Toc", "category": "footwork"},
+    {"id": 16, "name": "Net Toe", "category": "footwork"},
+    {"id": 17, "name": "Copa", "category": "stationary_turns"},
+    {"id": 18, "name": "Sombrero Crossover", "category": "crossbody_leads"},
+    {"id": 19, "name": "Sail Rights", "category": "stationary_turns"},
+    {"id": 20, "name": "Sail Lefts", "category": "stationary_turns"}
+  ],
+  "learned_today": ["Basic Step", "Inside Turn"],
+  "notes_from_class": {
+    "basic_step": "Back on left foot. Count: 1-2-3, 5-6-7. Left, left, forward as leader.",
+    "inside_turn": "On the basic (1-2-3, 5-6-7), lift her hand up on the 1 to signal the turn. She turns on 1-2. Leader's right turn: go 1-2-3 then quick turn, 5-6-7."
+  }
+}
