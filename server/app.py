@@ -135,33 +135,35 @@ def get_technique(slug: str) -> dict:
     transcripts_with_frames = []
     tdir = DATA / "transcripts"
     fdir = DATA / "frames"
+    all_steps = _load_json("transcript_steps.json") or {}
+    generic = {"salsa", "beginner", "lesson", "tutorial", "partnerwork", "basics"}
     for v in video_list:
         title = v.get("title", "")
-        # Find matching transcript
+        content_words = [w.lower() for w in title.split() if len(w) > 3 and w.lower() not in generic]
+        best_file, best_score = None, 0
         for tf in tdir.glob("*.json"):
-            title_words = [w.lower() for w in title.split() if len(w) > 3]
-            if sum(1 for w in title_words if w in tf.stem.lower()) >= 2:
-                t = json.loads(tf.read_text())
-                sections = t.get("sections", [])
-                frame_slug = tf.stem
-                for i, sec in enumerate(sections):
-                    frame_path = fdir / frame_slug / f"section_{i}.jpg"
-                    sec["frame_url"] = f"/frames/{frame_slug}/section_{i}.jpg" if frame_path.exists() else None
-                # Attach bullets if available
-                all_steps = _load_json("transcript_steps.json") or {}
-                step_entry = all_steps.get(f"{frame_slug}.json", {})
-                step_bullets = step_entry.get("steps", [])
-                for i, sec in enumerate(sections):
-                    if i < len(step_bullets):
-                        sec["steps"] = step_bullets[i]
-
-                transcripts_with_frames.append({
-                    "instructor": v.get("channel", ""),
-                    "title": title,
-                    "sections": sections,
-                    "slug": frame_slug,
-                })
-                break
+            score = sum(1 for w in content_words if w in tf.stem.lower())
+            if score > best_score:
+                best_score = score
+                best_file = tf
+        if best_file and best_score >= 2:
+            t = json.loads(best_file.read_text())
+            sections = t.get("sections", [])
+            frame_slug = best_file.stem
+            for i, sec in enumerate(sections):
+                frame_path = fdir / frame_slug / f"section_{i}.jpg"
+                sec["frame_url"] = f"/frames/{frame_slug}/section_{i}.jpg" if frame_path.exists() else None
+            step_entry = all_steps.get(f"{frame_slug}.json", {})
+            step_bullets = step_entry.get("steps", [])
+            for i, sec in enumerate(sections):
+                if i < len(step_bullets):
+                    sec["steps"] = step_bullets[i]
+            transcripts_with_frames.append({
+                "instructor": v.get("channel", ""),
+                "title": title,
+                "sections": sections,
+                "slug": frame_slug,
+            })
     tech["transcripts"] = transcripts_with_frames
 
     # Add detailed breakdowns if available
