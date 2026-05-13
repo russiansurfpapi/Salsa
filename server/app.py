@@ -20,11 +20,18 @@ VIDEOS = ROOT / "videos"
 app = FastAPI(title="Salsa Learning")
 
 if VIDEOS.exists():
-    app.mount("/video", StaticFiles(directory=VIDEOS), name="videos")
+    try:
+        app.mount("/video", StaticFiles(directory=VIDEOS), name="videos")
+    except Exception:
+        pass
 _frames_dir = DATA / "frames"
 if _frames_dir.exists():
-    app.mount("/frames", StaticFiles(directory=_frames_dir), name="frames")
-app.mount("/web", StaticFiles(directory=WEB), name="web")
+    try:
+        app.mount("/frames", StaticFiles(directory=_frames_dir), name="frames")
+    except Exception:
+        pass
+if WEB.exists():
+    app.mount("/web", StaticFiles(directory=WEB), name="web")
 
 
 def _load_json(name: str) -> Any:
@@ -140,6 +147,14 @@ def get_technique(slug: str) -> dict:
                 for i, sec in enumerate(sections):
                     frame_path = fdir / frame_slug / f"section_{i}.jpg"
                     sec["frame_url"] = f"/frames/{frame_slug}/section_{i}.jpg" if frame_path.exists() else None
+                # Attach bullets if available
+                all_steps = _load_json("transcript_steps.json") or {}
+                step_entry = all_steps.get(f"{frame_slug}.json", {})
+                step_bullets = step_entry.get("steps", [])
+                for i, sec in enumerate(sections):
+                    if i < len(step_bullets):
+                        sec["steps"] = step_bullets[i]
+
                 transcripts_with_frames.append({
                     "instructor": v.get("channel", ""),
                     "title": title,

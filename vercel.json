@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "api/index.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    { "src": "/api/(.*)", "dest": "api/index.py" },
+    { "src": "/frames/(.*)", "dest": "/data/frames/$1" },
+    { "src": "/(technique|practice|quiz|notes)/?(.*)", "dest": "api/index.py" },
+    { "src": "/", "dest": "api/index.py" }
+  ]
+}
