@@ -8,7 +8,7 @@
       "id": 0,
       "name": "Foundation",
       "why": "The basic is EVERYTHING. If your timing is off, nothing works. Drill the count until it's automatic — 1-2-3, 5-6-7 — so you can think about leading, not counting.",
-      "techniques": ["Basic Step", "Inside Turn"],
+      "techniques": ["Basic Step", "Inside Turn", "Right Turn"],
       "practice_sessions": [
         {
           "day": 1,
@@ -16,7 +16,7 @@
           "focus": "Basic Step solo",
           "drill": "Stand in front of a mirror. Count out loud: 1-2-3, 5-6-7. Back on left on 1. Do 50 reps until you stop thinking about your feet.",
           "video_focus": "basic_step",
-          "completed": null
+          "completed": "2026-05-12T20:00:00+00:00"
         },
         {
           "day": 2,
@@ -24,7 +24,7 @@
           "focus": "Basic Step + Inside Turn",
           "drill": "20 basics, then practice the turn signal: lift hand on 1. Visualize the follower turning. Do 10 turns each direction (air partner is fine).",
           "video_focus": "inside_turn",
-          "completed": null
+          "completed": "2026-05-14T20:00:00+00:00"
         },
         {
           "day": 3,
@@ -32,23 +32,47 @@
           "focus": "Basic + Turn with music",
           "drill": "Put on a slow salsa song. Do basics for 8 bars, then an inside turn. Repeat. Don't rush — stay on the 2.",
           "video_focus": "basic_step",
-          "completed": null
+          "completed": "2026-05-16T20:00:00+00:00"
         },
         {
           "day": 4,
           "date": "2026-05-18",
-          "focus": "Review before next class",
-          "drill": "Run through everything: 20 basics, 10 inside turns, then alternate. This is your pre-class warmup pattern going forward.",
-          "video_focus": "inside_turn",
-          "completed": null,
-          "notes": "Class #2 attended. Covered: basic step review (quick-quick-slow, knees up, drum beat rhythm), partner hand hold (palms up/over, 2 fingers not thumbs), right turn footwork (forward-forward-turn, stay on the line, spotting), leader signaling follower's turn (one hand, lift on second bar), leader's own right turn (left hand down, rotate fingers, switch hand)."
+          "focus": "Class #2 — Basic step, right turn, hand holds, leader turn",
+          "drill": "Attended class. Instructor covered: basic step (quick-quick-slow, knees up), partner hand hold (palms up/over, 2 fingers not thumbs), right turn footwork (forward-forward-turn, stay on the line, spotting), leader signaling (one hand, lift on second bar), leader's own right turn (left hand down, rotate fingers, switch hand).",
+          "video_focus": "right_turn",
+          "completed": "2026-05-18T20:00:00+00:00",
+          "notes": "Class #2 attended. Full transcript ingested. 12 teaching points extracted."
         },
         {
           "day": 5,
+          "date": "2026-05-19",
+          "focus": "Post-class: Basic step rhythm + right turn footwork (solo)",
+          "drill": "WARM UP (5 min):\n- 20 basics counting 'quick, quick, slow' out loud. Knees UP — 'up, up, up' not flat.\n- Think drum beat: every foot hit = a beat.\n\nRIGHT TURN FOOTWORK (10 min):\n- 10 right turns solo: forward, forward, turn RIGHT. Land on right foot.\n- KEY: Stay on the line — turn right but DON'T drift forward. Go right, back to center.\n- After each turn, immediately basic: 'ta-ta-po' (back, back, forward).\n- Full pattern: right turn → basic → right turn → basic. 10 reps.\n\nSPOTTING (5 min):\n- Pick a target on the wall. Eyes stay on it. Turn, bring head back to target.\n- Do 10 right turns focusing ONLY on spotting. Don't worry about feet for these.\n\nCOOL DOWN:\n- 10 basics with music, slow song. Just feel the rhythm.",
+          "video_focus": "right_turn",
+          "completed": null
+        },
+        {
+          "day": 6,
           "date": "2026-05-20",
-          "focus": "Drill right turn + leader signaling from class #2",
-          "drill": "Solo: 10 basics with 'quick, quick, slow' out loud, knees up. Then 10 right turns (forward, forward, turn — stay on the line, spot a target). With air partner: practice the signal — basic, lift hand on second bar, partner turns, basic. Practice hand flip (2 fingers, flip wrist back). 5 reps of leader's own turn (left hand down, rotate, switch).",
-          "video_focus": "inside_turn",
+          "focus": "Leader signaling + hand technique (air partner)",
+          "drill": "BASICS WITH INTENT (5 min):\n- 20 basics. On each one, say the count: 'back, back, forward, forward, forward, back' (leader timing).\n- Make sure you're doing PART 2 FIRST as the leader.\n\nLEADER SIGNAL DRILL (10 min):\n- Air partner. Hold left hand up, 2 fingers (middle + ring, Spider-Man grip).\n- Pattern: 1 basic → LIFT hand on second bar (this is the signal) → follower turns → 1 basic.\n- Do 15 reps. Focus: the lift happens on count 1 of the second bar.\n- Your forward does NOT change — you keep doing your basic while she turns.\n\nHAND FLIP (5 min):\n- Slow motion: cuff around fingers → flip wrist back as she turns → flip back down.\n- 10 reps, just the hand movement. Then combine with the full signal drill.\n\nLEADER'S OWN TURN (5 min):\n- Forward, forward, turn. Left hand comes DOWN.\n- Turn around, fingers rotate behind back, switch hand.\n- 10 reps solo. Follower just does basic (imagine it).",
+          "video_focus": "right_turn",
+          "completed": null
+        },
+        {
+          "day": 7,
+          "date": "2026-05-22",
+          "focus": "Full combo with music — basic + right turn + leader turn",
+          "drill": "SLOW SONG (15 min total):\n- Put on a slow salsa song.\n- Do 4 bars of basic.\n- Right turn → basic.\n- 4 more bars of basic.\n- Leader's own turn → basic.\n- Repeat the whole pattern for the full song.\n\nGOAL: Never break timing. If you lose the count, stop, find the 1, restart.\n\nCHECKLIST — ask yourself after each song:\n- Was I on 'quick, quick, slow' the whole time?\n- Did I stay on the line during turns?\n- Did I spot a target?\n- Was my hand hold relaxed (2 fingers, no death grip)?\n\nDo 3 songs. If you nail all 3, you're ready for the next class.",
+          "video_focus": "right_turn",
+          "completed": null
+        },
+        {
+          "day": 8,
+          "date": "2026-05-24",
+          "focus": "Pre-class warmup — full review",
+          "drill": "THIS IS YOUR PRE-CLASS WARMUP (do before every class going forward):\n\n1. 20 basics — 'quick, quick, slow', knees up (2 min)\n2. 10 right turns solo — stay on the line, spot target (2 min)\n3. 10 leader signals with air partner — lift on second bar (3 min)\n4. 5 leader's own turns — left hand down, rotate, switch (2 min)\n5. 1 slow song combining everything freely (3 min)\n\nTotal: ~12 min. If anything feels shaky, double the reps on that one.",
+          "video_focus": "right_turn",
           "completed": null
         }
       ]
