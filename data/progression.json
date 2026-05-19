@@ -40,6 +40,15 @@
           "focus": "Review before next class",
           "drill": "Run through everything: 20 basics, 10 inside turns, then alternate. This is your pre-class warmup pattern going forward.",
           "video_focus": "inside_turn",
+          "completed": null,
+          "notes": "Class #2 attended. Covered: basic step review (quick-quick-slow, knees up, drum beat rhythm), partner hand hold (palms up/over, 2 fingers not thumbs), right turn footwork (forward-forward-turn, stay on the line, spotting), leader signaling follower's turn (one hand, lift on second bar), leader's own right turn (left hand down, rotate fingers, switch hand)."
+        },
+        {
+          "day": 5,
+          "date": "2026-05-20",
+          "focus": "Drill right turn + leader signaling from class #2",
+          "drill": "Solo: 10 basics with 'quick, quick, slow' out loud, knees up. Then 10 right turns (forward, forward, turn — stay on the line, spot a target). With air partner: practice the signal — basic, lift hand on second bar, partner turns, basic. Practice hand flip (2 fingers, flip wrist back). 5 reps of leader's own turn (left hand down, rotate, switch).",
+          "video_focus": "inside_turn",
           "completed": null
         }
       ]

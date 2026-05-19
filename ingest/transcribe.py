@@ -35,7 +35,7 @@ def slugify(s: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")
 
 
-def transcribe_video(video_path: Path) -> dict:
+def transcribe_video(video_path: Path, model: str = "nova-2") -> dict:
     audio_path = video_path.with_suffix(".m4a")
     if not audio_path.exists():
         subprocess.run([
@@ -43,19 +43,23 @@ def transcribe_video(video_path: Path) -> dict:
             "-b:a", "64k", str(audio_path), "-y"
         ], capture_output=True)
 
+    params = {
+        "model": model,
+        "smart_format": "true",
+        "utterances": "true",
+        "punctuate": "true",
+        "language": "en",
+    }
+    if model.startswith("nova"):
+        params["paragraphs"] = "true"
+
     with open(audio_path, "rb") as f:
         resp = requests.post(
             DG_URL,
             headers={"Authorization": f"Token {DG_KEY}", "Content-Type": "audio/m4a"},
-            params={
-                "model": "nova-2",
-                "smart_format": "true",
-                "utterances": "true",
-                "punctuate": "true",
-                "paragraphs": "true",
-            },
+            params=params,
             data=f,
-            timeout=300,
+            timeout=600,
         )
     resp.raise_for_status()
     return resp.json()
@@ -193,9 +197,15 @@ def main():
         return
 
     video_files = sorted(VIDEOS.glob("*.mp4"))
-    print(f"Found {len(video_files)} videos to transcribe")
+    # Also pick up standalone .m4a files (class recordings) that have no .mp4
+    mp4_stems = {f.stem for f in video_files}
+    class_recordings = sorted(
+        f for f in VIDEOS.glob("*.m4a") if f.stem not in mp4_stems
+    )
+    all_files = video_files + class_recordings
+    print(f"Found {len(video_files)} videos + {len(class_recordings)} class recordings")
 
-    for vf in video_files:
+    for vf in all_files:
         slug = slugify(vf.stem)
         out_file = TRANSCRIPTS / f"{slug}.json"
 
@@ -209,9 +219,11 @@ def main():
                 extract_frames(vf, sections, frame_dir)
             continue
 
-        print(f"  Transcribing: {vf.stem[:50]}...")
+        is_class = vf.suffix == ".m4a" and vf.stem not in mp4_stems
+        model = "whisper-large" if is_class else "nova-2"
+        print(f"  Transcribing ({model}): {vf.stem[:50]}...")
         try:
-            result = transcribe_video(vf)
+            result = transcribe_video(vf, model=model)
 
             alt = result.get("results", {}).get("channels", [{}])[0].get("alternatives", [{}])[0]
             full_text = alt.get("transcript", "")

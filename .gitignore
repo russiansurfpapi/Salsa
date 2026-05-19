@@ -8,3 +8,4 @@ videos/
 *.m4a
 *.small.m4a
 .vercel
+.env.secrets

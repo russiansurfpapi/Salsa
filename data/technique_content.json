@@ -72,6 +72,12 @@
           "type": "true_false"
         }
       ],
+      "class_tips": [
+        "Mirror patterns: leader goes back-back-forward / forward-forward-back, follower opposite.",
+        "'Quick, quick, slow' — think of it as a drum beat, every floor hit is a beat.",
+        "Pick up your feet — knees up, 'up, up, up'. Don't flat-foot or you can't move fast enough.",
+        "One bar = 1-2-3, 5-6-7. Count bars once the basic is automatic."
+      ],
       "connects_to": ["inside_turn", "cross_body_lead", "right_turn", "prep_step"],
       "video_keys": ["basic_step_demo", "basic_step_timing"]
     },
@@ -147,6 +153,12 @@
           "answer": "False. Use a loose, open grip so her hand can rotate freely. A tight grip blocks the rotation and can hurt her fingers.",
           "type": "true_false"
         }
+      ],
+      "class_tips": [
+        "During the follower's turn, the leader keeps doing their normal basic — your forward direction doesn't change because you're not turning.",
+        "The follower does 'part two first' during a turn — they enter the second half of their pattern early.",
+        "After the turn, re-sync with your partner by picking it up on the second bar.",
+        "Stop cleanly on rotation — don't let momentum carry you past the landing."
       ],
       "connects_to": ["basic_step", "cross_body_lead", "cross_body_lead_with_inside_turn"],
       "video_keys": ["inside_turn_demo", "inside_turn_lead_technique"]
@@ -299,6 +311,18 @@
           "answer": "Half turns (180 degrees). Get the timing, spotting, and balance right at half rotation before going for the full turn.",
           "type": "recall"
         }
+      ],
+      "class_tips": [
+        "Right turn footwork: forward, forward, turn to the right. 'Quick, quick, slow' — turn happens on the slow.",
+        "Always end on right foot after the turn. 'We are always going right, left, right.'",
+        "Stay on the line when turning — turn right but don't drift forward off the line. Go right, then back to center.",
+        "After the turn, immediately basic: 'ta-ta-po' (back, back, forward). Full pattern: right turn → basic → right turn → basic.",
+        "Leader signals the follower's turn by lifting the hand on the second bar. Leader does 3 basics — 'your forward does not change because you're not turning.'",
+        "One hand only for the right turn — left hand holding follower's right. Do NOT hold with 2 hands.",
+        "Hand grip: 2 fingers (middle + ring), not thumbs. Cuff around follower's fingers. Flip wrist back during the turn.",
+        "Signal on count 1, turn happens on counts 2-3.",
+        "Spotting: pick a target, eyes stay on it, bring head back to target after rotation.",
+        "Leader's own right turn: forward, forward, turn. Left hand comes down, turn around, fingers rotate, switch hand behind back."
       ],
       "connects_to": ["basic_step", "cross_body_lead_with_right_turn", "combination_turns"],
       "video_keys": ["right_turn_demo", "turn_technique_spotting"]

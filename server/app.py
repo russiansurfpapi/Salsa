@@ -12,6 +12,8 @@ from fastapi.responses import FileResponse, HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
+from server import mongo
+
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 WEB = Path(__file__).resolve().parent / "web"
@@ -299,6 +301,61 @@ def ingest_voice_memo(req: VoiceMemoReq) -> dict:
 @app.get("/api/notes")
 def get_notes() -> list:
     return _load_json("class_notes.json") or []
+
+
+# ── Classes (MongoDB-backed) ──────────────────────────────────────────
+
+@app.get("/classes", response_class=HTMLResponse)
+def classes_page() -> FileResponse:
+    return FileResponse(WEB / "classes.html")
+
+
+@app.get("/classes/{class_date}", response_class=HTMLResponse)
+def class_detail_page(class_date: str) -> FileResponse:
+    return FileResponse(WEB / "classes.html")
+
+
+@app.get("/api/classes")
+def list_classes() -> list:
+    try:
+        rows = list(mongo.classes().find({}, {"_id": 0}).sort("class_date", -1))
+        for r in rows:
+            r.pop("transcript_text", None)
+            r.pop("words", None)
+            r["teaching_point_count"] = len(r.get("teaching_points", []))
+        return rows
+    except Exception:
+        notes = _load_json("class_notes.json") or []
+        return notes
+
+
+@app.get("/api/classes/{class_date}")
+def get_class(class_date: str) -> dict:
+    try:
+        doc = mongo.classes().find_one({"class_date": class_date}, {"_id": 0})
+        if doc:
+            return doc
+    except Exception:
+        pass
+    notes = _load_json("class_notes.json") or []
+    match = next((n for n in notes if n.get("class_date") == class_date), None)
+    if not match:
+        raise HTTPException(404, f"no class for {class_date}")
+    return match
+
+
+@app.get("/api/technique/{slug}/class-tips")
+def technique_class_tips(slug: str) -> list:
+    try:
+        tips = list(mongo.class_tips().find(
+            {"technique": slug}, {"_id": 0}
+        ).sort("class_date", -1))
+        return tips
+    except Exception:
+        content = _get_content()
+        if slug in content:
+            return [{"tip": t, "technique": slug} for t in content[slug].get("class_tips", [])]
+        return []
 
 
 if __name__ == "__main__":

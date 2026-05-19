@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Classes — Salsa</title>
+<style>
+  :root {
+    --bg:#1a1a2e; --fg:#e0e0e0; --muted:#8888aa;
+    --accent:#e94560; --accent-dim:rgba(233,69,96,0.15);
+    --ok:#00b894; --ok-dim:rgba(0,184,148,0.12);
+    --panel:#16213e; --border:#2a2a4a;
+    --warn:#f0a500;
+  }
+  * { box-sizing:border-box; }
+  html, body { margin:0; padding:0; background:var(--bg); color:var(--fg); min-height:100vh; }
+  body { font:15px/1.55 -apple-system, BlinkMacSystemFont, system-ui, sans-serif; }
+  a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:underline; }
+
+  nav.top {
+    position:sticky; top:0; z-index:10; display:flex; align-items:center; gap:24px;
+    padding:12px 40px; background:rgba(26,26,46,0.95); backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--border); font-size:13px;
+  }
+  nav.top .brand { font-weight:700; color:var(--accent); font-size:16px; }
+  nav.top a { color:var(--muted); } nav.top a.active { color:var(--fg); }
+  nav.top .spacer { flex:1; }
+
+  main { max-width:800px; margin:0 auto; padding:40px 24px 100px; }
+  h1 { font-size:28px; font-weight:400; margin:0 0 6px; } h1 em { color:var(--accent); font-style:normal; }
+  .subtitle { color:var(--muted); font-size:14px; margin:0 0 28px; }
+  .back { font-size:13px; color:var(--muted); margin-bottom:16px; display:inline-block; }
+
+  .section-label {
+    font-size:11px; text-transform:uppercase; letter-spacing:0.15em;
+    color:var(--accent); font-weight:600; margin:28px 0 12px;
+    padding-bottom:6px; border-bottom:1px solid var(--border);
+  }
+
+  .class-card {
+    background:var(--panel); border:1px solid var(--border); border-radius:8px;
+    padding:16px 20px; margin-bottom:12px; cursor:pointer; transition:border-color 0.15s;
+  }
+  .class-card:hover { border-color:var(--accent); }
+  .class-card .cc-header { display:flex; align-items:center; gap:12px; margin-bottom:8px; }
+  .class-card .cc-date { font-weight:600; color:var(--accent); font-size:14px; }
+  .class-card .cc-num { font-size:11px; background:var(--accent-dim); color:var(--accent); padding:2px 8px; border-radius:10px; font-weight:600; }
+  .class-card .cc-summary { font-size:14px; color:var(--muted); line-height:1.5; }
+  .class-card .cc-meta { display:flex; gap:8px; flex-wrap:wrap; margin-top:8px; }
+
+  .tech-chip { display:inline-block; padding:4px 12px; border-radius:16px; font-size:12px; font-weight:600; background:var(--accent-dim); color:var(--accent); margin:2px; }
+  .topic-chip { display:inline-block; padding:3px 10px; border-radius:12px; font-size:11px; background:var(--ok-dim); color:var(--ok); margin:2px; }
+  .phrase-chip { display:inline-block; padding:4px 12px; border-radius:16px; font-size:12px; font-weight:600; background:rgba(240,165,0,0.12); color:var(--warn); margin:2px; font-style:italic; }
+  .tip-count { font-size:11px; color:var(--muted); }
+
+  .detail { margin-top:16px; }
+  .tip-item { padding:10px 14px; background:var(--ok-dim); border-left:3px solid var(--ok); border-radius:0 6px 6px 0; margin-bottom:8px; font-size:14px; line-height:1.5; }
+  .tip-tech { font-size:11px; text-transform:uppercase; letter-spacing:0.08em; color:var(--accent); font-weight:600; margin-bottom:2px; }
+  .tip-context { font-size:12px; color:var(--muted); margin-top:4px; }
+
+  .structure-item { display:flex; gap:12px; padding:10px 14px; background:var(--panel); border-radius:6px; margin-bottom:6px; border:1px solid var(--border); }
+  .structure-item .si-time { font-size:12px; color:var(--accent); font-weight:600; min-width:50px; }
+  .structure-item .si-name { font-weight:600; font-size:14px; }
+  .structure-item .si-desc { font-size:13px; color:var(--muted); }
+
+  .transcript-toggle { margin-top:16px; }
+  .transcript-toggle summary { font-size:12px; color:var(--muted); cursor:pointer; font-weight:600; text-transform:uppercase; letter-spacing:0.08em; }
+  .transcript-toggle .t-text { margin-top:8px; font-size:13px; line-height:1.7; color:var(--muted); white-space:pre-wrap; max-height:400px; overflow-y:auto; }
+
+  .loading { text-align:center; padding:40px; color:var(--muted); }
+  .empty { text-align:center; padding:60px 20px; color:var(--muted); }
+  .empty code { background:var(--panel); padding:4px 10px; border-radius:4px; font-size:13px; }
+</style>
+</head>
+<body>
+
+<nav class="top">
+  <span class="brand">salsa.</span>
+  <a href="/">Home</a> <a href="/practice">Practice</a> <a href="/quiz">Quiz</a>
+  <a href="/notes">Notes</a> <a href="/classes" class="active">Classes</a>
+  <span class="spacer"></span>
+</nav>
+
+<main>
+  <div id="app"><div class="loading">Loading classes...</div></div>
+</main>
+
+<script>
+const pathDate = location.pathname.match(/\/classes\/(\d{4}-\d{2}-\d{2})/)?.[1];
+
+async function load() {
+  if (pathDate) {
+    await loadDetail(pathDate);
+  } else {
+    await loadList();
+  }
+}
+
+async function loadList() {
+  const res = await fetch('/api/classes');
+  const classes = await res.json();
+  if (!classes.length) {
+    document.getElementById('app').innerHTML = `
+      <h1><em>Classes</em></h1>
+      <div class="empty">
+        <p>No class recordings ingested yet.</p>
+        <p>Run the pipeline:</p>
+        <code>python -m ingest.pipeline ~/Desktop/recording.m4a --date 2026-05-18 --class-number 2</code>
+      </div>`;
+    return;
+  }
+
+  let html = '<h1><em>Classes</em></h1>';
+  html += `<p class="subtitle">${classes.length} class${classes.length > 1 ? 'es' : ''} recorded</p>`;
+
+  for (const c of classes) {
+    html += `<div class="class-card" onclick="location.href='/classes/${c.class_date}'">`;
+    html += `<div class="cc-header">`;
+    html += `<span class="cc-date">${c.class_date}</span>`;
+    if (c.class_number) html += `<span class="cc-num">Class #${c.class_number}</span>`;
+    html += `<span class="tip-count">${c.teaching_point_count || c.extracted_tips?.length || 0} tips</span>`;
+    html += `</div>`;
+    if (c.summary) html += `<div class="cc-summary">${esc(c.summary)}</div>`;
+    html += `<div class="cc-meta">`;
+    const techs = c.techniques_covered || c.matched_techniques?.map(t => t.slug) || [];
+    for (const t of techs) html += `<span class="tech-chip">${esc(t.replace(/_/g, ' '))}</span>`;
+    html += `</div></div>`;
+  }
+
+  document.getElementById('app').innerHTML = html;
+}
+
+async function loadDetail(date) {
+  const res = await fetch(`/api/classes/${date}`);
+  if (!res.ok) {
+    document.getElementById('app').innerHTML = '<p style="color:var(--accent)">Class not found.</p>';
+    return;
+  }
+  const d = await res.json();
+  render(d);
+}
+
+function render(d) {
+  let html = `<a class="back" href="/classes">&larr; All classes</a>`;
+  html += `<h1><em>Class ${d.class_number || ''}</em> — ${d.class_date}</h1>`;
+  if (d.summary) html += `<p class="subtitle">${esc(d.summary)}</p>`;
+
+  // Techniques + topics
+  html += '<div style="margin-bottom:20px">';
+  const techs = d.techniques_covered || d.matched_techniques?.map(t => t.slug) || [];
+  for (const t of techs) html += `<a href="/technique/${t}" class="tech-chip">${esc(t.replace(/_/g, ' '))}</a>`;
+  const topics = d.topics || [];
+  for (const t of topics) html += `<span class="topic-chip">${esc(t.replace(/_/g, ' '))}</span>`;
+  html += '</div>';
+
+  // Key phrases
+  const phrases = d.key_phrases || [];
+  if (phrases.length) {
+    html += '<div class="section-label">Instructor phrases</div>';
+    for (const p of phrases) html += `<span class="phrase-chip">"${esc(p)}"</span>`;
+  }
+
+  // Class structure
+  const structure = d.class_structure || [];
+  if (structure.length) {
+    html += '<div class="section-label">Class structure</div>';
+    for (const s of structure) {
+      html += `<div class="structure-item">`;
+      html += `<div class="si-time">${s.approx_minutes || '?'}m</div>`;
+      html += `<div><div class="si-name">${esc(s.section)}</div><div class="si-desc">${esc(s.description)}</div></div>`;
+      html += `</div>`;
+    }
+  }
+
+  // Teaching points grouped by technique
+  const points = d.teaching_points || [];
+  const tips = d.extracted_tips || [];
+  if (points.length) {
+    html += '<div class="section-label">Teaching points</div>';
+    const grouped = {};
+    for (const p of points) {
+      const t = p.technique || 'general';
+      (grouped[t] = grouped[t] || []).push(p);
+    }
+    for (const [tech, tps] of Object.entries(grouped)) {
+      html += `<div style="margin-bottom:16px">`;
+      html += `<a href="/technique/${tech}" class="tech-chip" style="margin-bottom:8px;display:inline-block">${esc(tech.replace(/_/g, ' '))}</a>`;
+      for (const tp of tps) {
+        html += `<div class="tip-item">${esc(tp.tip)}`;
+        if (tp.context) html += `<div class="tip-context">${esc(tp.context)}</div>`;
+        html += `</div>`;
+      }
+      html += `</div>`;
+    }
+  } else if (tips.length) {
+    html += '<div class="section-label">Extracted tips</div>';
+    for (const tip of tips) html += `<div class="tip-item">${esc(tip)}</div>`;
+  }
+
+  // Full transcript
+  if (d.transcript_text) {
+    html += `<details class="transcript-toggle"><summary>Full transcript (${d.transcript_text.length} chars)</summary>`;
+    html += `<div class="t-text">${esc(d.transcript_text)}</div></details>`;
+  }
+
+  document.getElementById('app').innerHTML = html;
+}
+
+function esc(s) { if (!s) return ''; const d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+
+load();
+</script>
+</body>
+</html>

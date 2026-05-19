@@ -1,0 +1,27 @@
+[
+  {
+    "class_date": "2026-05-18",
+    "class_number": 2,
+    "transcript_file": "salsa518.json",
+    "matched_techniques": [
+      {"name": "Basic Step", "slug": "basic_step"},
+      {"name": "Right Turn", "slug": "right_turn"},
+      {"name": "Inside Turn", "slug": "inside_turn"}
+    ],
+    "topics": ["timing", "footwork", "lead_follow", "turns", "frame", "posture"],
+    "extracted_tips": [
+      "Basic step rhythm is 'quick, quick, slow' — think of it like a drum beat where every time your foot hits the floor it's a beat.",
+      "Pick up your feet with knees up ('up, up, up'). Don't flat-foot or you can't move fast enough for the quick steps.",
+      "Every step is a weight change — you take a step and immediately commit your weight so you're ready for the next move.",
+      "Partner hand hold: leaders palms UP, followers palms OVER. Never use thumbs — use 2 fingers (middle + ring, like Spider-Man) to cuff around the follower's fingers. Just relax, don't grip.",
+      "Right turn footwork: forward, forward, turn to the right. The turn happens on the slow count. Always end on the right foot because footwork is always right, left, right.",
+      "Stay on the line when turning right — turn right but don't drift forward off the line. Go right, then come back to center.",
+      "After the right turn, immediately go into basic: 'ta-ta-po' (back, back, forward). Full pattern is right turn then basic, repeating.",
+      "Leader signals the follower's right turn by lifting/picking up the hand on the second bar. Leader does 3 basics throughout — your forward does not change because you're not turning.",
+      "Use only ONE hand for the right turn — left hand holding follower's right. Do not hold with 2 hands. Signal on count 1, the turn happens on counts 2-3.",
+      "Hand flip trick during the turn: with the 2-finger Spider-Man grip, flip your wrist back as the follower turns, then flip it back down after. Cuff around her fingers, then release and re-catch.",
+      "Spotting during turns: pick a target, keep your eyes on it, bring your head right back to that target after rotation.",
+      "Leader's own right turn: forward, forward, turn. Left hand comes down, turn around, fingers rotate behind back, switch hand. Follower just keeps doing her basic."
+    ]
+  }
+]
