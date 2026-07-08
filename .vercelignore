@@ -1,4 +1,6 @@
 data/frames/
 videos/
+uploads/
 *.m4a
 *.mp4
+*.MOV

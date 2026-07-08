@@ -6,21 +6,21 @@
 <title>Quiz — Salsa</title>
 <style>
   :root {
-    --bg:#1a1a2e; --fg:#e0e0e0; --muted:#8888aa;
-    --accent:#e94560; --accent-dim:rgba(233,69,96,0.15);
-    --ok:#00b894; --panel:#16213e; --border:#2a2a4a;
+    --bg:#ffffff; --fg:#1e293b; --muted:#64748b;
+    --accent:#e11d48; --accent-dim:rgba(225,29,72,0.08);
+    --ok:#059669; --panel:#f8fafc; --border:#e2e8f0;
   }
   * { box-sizing:border-box; }
   html, body { margin:0; padding:0; background:var(--bg); color:var(--fg); min-height:100vh; }
-  body { font:15px/1.55 -apple-system, BlinkMacSystemFont, system-ui, sans-serif; }
+  body { font:17px/1.6 -apple-system, BlinkMacSystemFont, system-ui, sans-serif; }
   a { color:var(--accent); text-decoration:none; }
 
   nav.top {
     position:sticky; top:0; z-index:10; display:flex; align-items:center; gap:24px;
-    padding:12px 40px; background:rgba(26,26,46,0.95); backdrop-filter:blur(8px);
-    border-bottom:1px solid var(--border); font-size:13px;
+    padding:12px 40px; background:rgba(255,255,255,0.95); backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--border); font-size:15px;
   }
-  nav.top .brand { font-weight:700; color:var(--accent); font-size:16px; }
+  nav.top .brand { font-weight:700; color:var(--accent); font-size:18px; }
   nav.top a { color:var(--muted); } nav.top a.active { color:var(--fg); }
   nav.top .spacer { flex:1; }
 
@@ -33,34 +33,34 @@
     align-items:center; justify-content:center; transition:border-color 0.2s;
   }
   .card.revealed { border-color:var(--ok); }
-  .card .tech-label { font-size:11px; color:var(--accent); text-transform:uppercase; letter-spacing:0.1em; margin-bottom:16px; }
+  .card .tech-label { font-size:13px; color:var(--accent); text-transform:uppercase; letter-spacing:0.1em; margin-bottom:16px; }
   .card .question { font-size:20px; font-weight:600; line-height:1.4; }
   .card .answer {
-    display:none; margin-top:20px; padding:16px 20px; background:rgba(0,184,148,0.1);
+    display:none; margin-top:20px; padding:16px 20px; background:rgba(5,150,105,0.08);
     border-radius:8px; font-size:16px; line-height:1.5; text-align:left; width:100%;
   }
   .card.revealed .answer { display:block; }
-  .card .type-badge { font-size:10px; padding:2px 8px; border-radius:8px; background:var(--accent-dim); color:var(--accent); margin-bottom:12px; }
+  .card .type-badge { font-size:12px; padding:3px 10px; border-radius:8px; background:var(--accent-dim); color:var(--accent); margin-bottom:12px; }
 
   .controls { margin-top:24px; display:flex; gap:10px; justify-content:center; }
   .btn {
-    padding:10px 28px; border:none; border-radius:8px; font:600 14px/1 inherit; cursor:pointer;
+    padding:10px 28px; border:none; border-radius:8px; font:600 15px/1 inherit; cursor:pointer;
   }
   .btn-reveal { background:var(--accent); color:#fff; }
   .btn-reveal:hover { filter:brightness(1.1); }
-  .btn-good { background:var(--ok); color:#fff; }
+  .btn-good { background:var(--ok); color:#fff; font-weight:700; }
   .btn-again { background:transparent; border:1px solid var(--accent); color:var(--accent); }
   .btn-skip { background:transparent; border:1px solid var(--border); color:var(--muted); }
 
-  .progress { margin-top:32px; font-size:13px; color:var(--muted); }
-  .score { font-size:14px; color:var(--ok); font-weight:600; }
+  .progress { margin-top:32px; font-size:14px; color:var(--muted); }
+  .score { font-size:15px; color:var(--ok); font-weight:600; }
 </style>
 </head>
 <body>
 
 <nav class="top">
   <span class="brand">salsa.</span>
-  <a href="/">Home</a> <a href="/practice">Practice</a> <a href="/quiz">Quiz</a> <a href="/notes">Notes</a> <a href="/classes">Classes</a>
+  <a href="/">Home</a> <a href="/practice">Practice</a> <a href="/quiz">Quiz</a> <a href="/notes">Notes</a> <a href="/classes">Classes</a> <a href="/progress">Progress</a>
   <span class="spacer"></span>
 </nav>
 
@@ -87,7 +87,6 @@ async function load() {
     cards = (data.flashcards || []).map(c => ({...c, technique: data.technique, technique_name: data.name}));
   }
 
-  // Shuffle
   for (let i = cards.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [cards[i], cards[j]] = [cards[j], cards[i]];
@@ -103,7 +102,7 @@ function renderCard() {
       <h2 style="margin-top:60px">Session complete!</h2>
       <p class="score">${correct} / ${total} correct</p>
       <button class="btn btn-reveal" onclick="current=0;correct=0;total=0;renderCard()" style="margin-top:20px">Go again</button>
-      <br><a href="/" style="font-size:13px;margin-top:16px;display:inline-block">Back to home</a>
+      <br><a href="/" style="font-size:14px;margin-top:16px;display:inline-block">Back to home</a>
     `;
     return;
   }
@@ -136,7 +135,7 @@ function reveal() {
 function answer(gotIt) {
   total++;
   if (gotIt) correct++;
-  else cards.push(cards[current]); // re-add missed cards
+  else cards.push(cards[current]);
   current++;
   renderCard();
 }

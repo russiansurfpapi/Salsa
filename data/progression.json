@@ -6,53 +6,21 @@
   "phases": [
     {
       "id": 0,
-      "name": "Foundation",
-      "why": "The basic is EVERYTHING. If your timing is off, nothing works. Drill the count until it's automatic — 1-2-3, 5-6-7 — so you can think about leading, not counting.",
+      "name": "Foundation — Basic Step, Right Turn, Hand Holds",
+      "source": "Class #2 (2026-05-18)",
+      "why": "Everything starts here. Your instructor drilled quick-quick-slow rhythm, right turn footwork (forward-forward-turn, stay on the line), Spider-Man grip (2 fingers, no thumbs), leader signaling (lift on second bar), and spotting. Lock these in before adding anything new.",
       "techniques": ["Basic Step", "Inside Turn", "Right Turn"],
       "practice_sessions": [
         {
           "day": 1,
-          "date": "2026-05-12",
-          "focus": "Basic Step solo",
-          "drill": "Stand in front of a mirror. Count out loud: 1-2-3, 5-6-7. Back on left on 1. Do 50 reps until you stop thinking about your feet.",
-          "video_focus": "basic_step",
-          "completed": "2026-05-12T20:00:00+00:00"
-        },
-        {
-          "day": 2,
-          "date": "2026-05-14",
-          "focus": "Basic Step + Inside Turn",
-          "drill": "20 basics, then practice the turn signal: lift hand on 1. Visualize the follower turning. Do 10 turns each direction (air partner is fine).",
-          "video_focus": "inside_turn",
-          "completed": "2026-05-14T20:00:00+00:00"
-        },
-        {
-          "day": 3,
-          "date": "2026-05-16",
-          "focus": "Basic + Turn with music",
-          "drill": "Put on a slow salsa song. Do basics for 8 bars, then an inside turn. Repeat. Don't rush — stay on the 2.",
-          "video_focus": "basic_step",
-          "completed": "2026-05-16T20:00:00+00:00"
-        },
-        {
-          "day": 4,
-          "date": "2026-05-18",
-          "focus": "Class #2 — Basic step, right turn, hand holds, leader turn",
-          "drill": "Attended class. Instructor covered: basic step (quick-quick-slow, knees up), partner hand hold (palms up/over, 2 fingers not thumbs), right turn footwork (forward-forward-turn, stay on the line, spotting), leader signaling (one hand, lift on second bar), leader's own right turn (left hand down, rotate fingers, switch hand).",
-          "video_focus": "right_turn",
-          "completed": "2026-05-18T20:00:00+00:00",
-          "notes": "Class #2 attended. Full transcript ingested. 12 teaching points extracted."
-        },
-        {
-          "day": 5,
           "date": "2026-05-19",
-          "focus": "Post-class: Basic step rhythm + right turn footwork (solo)",
+          "focus": "Basic step rhythm + right turn footwork (solo)",
           "drill": "WARM UP (5 min):\n- 20 basics counting 'quick, quick, slow' out loud. Knees UP — 'up, up, up' not flat.\n- Think drum beat: every foot hit = a beat.\n\nRIGHT TURN FOOTWORK (10 min):\n- 10 right turns solo: forward, forward, turn RIGHT. Land on right foot.\n- KEY: Stay on the line — turn right but DON'T drift forward. Go right, back to center.\n- After each turn, immediately basic: 'ta-ta-po' (back, back, forward).\n- Full pattern: right turn → basic → right turn → basic. 10 reps.\n\nSPOTTING (5 min):\n- Pick a target on the wall. Eyes stay on it. Turn, bring head back to target.\n- Do 10 right turns focusing ONLY on spotting. Don't worry about feet for these.\n\nCOOL DOWN:\n- 10 basics with music, slow song. Just feel the rhythm.",
           "video_focus": "right_turn",
           "completed": null
         },
         {
-          "day": 6,
+          "day": 2,
           "date": "2026-05-20",
           "focus": "Leader signaling + hand technique (air partner)",
           "drill": "BASICS WITH INTENT (5 min):\n- 20 basics. On each one, say the count: 'back, back, forward, forward, forward, back' (leader timing).\n- Make sure you're doing PART 2 FIRST as the leader.\n\nLEADER SIGNAL DRILL (10 min):\n- Air partner. Hold left hand up, 2 fingers (middle + ring, Spider-Man grip).\n- Pattern: 1 basic → LIFT hand on second bar (this is the signal) → follower turns → 1 basic.\n- Do 15 reps. Focus: the lift happens on count 1 of the second bar.\n- Your forward does NOT change — you keep doing your basic while she turns.\n\nHAND FLIP (5 min):\n- Slow motion: cuff around fingers → flip wrist back as she turns → flip back down.\n- 10 reps, just the hand movement. Then combine with the full signal drill.\n\nLEADER'S OWN TURN (5 min):\n- Forward, forward, turn. Left hand comes DOWN.\n- Turn around, fingers rotate behind back, switch hand.\n- 10 reps solo. Follower just does basic (imagine it).",
@@ -60,18 +28,10 @@
           "completed": null
         },
         {
-          "day": 7,
+          "day": 3,
           "date": "2026-05-22",
           "focus": "Full combo with music — basic + right turn + leader turn",
-          "drill": "SLOW SONG (15 min total):\n- Put on a slow salsa song.\n- Do 4 bars of basic.\n- Right turn → basic.\n- 4 more bars of basic.\n- Leader's own turn → basic.\n- Repeat the whole pattern for the full song.\n\nGOAL: Never break timing. If you lose the count, stop, find the 1, restart.\n\nCHECKLIST — ask yourself after each song:\n- Was I on 'quick, quick, slow' the whole time?\n- Did I stay on the line during turns?\n- Did I spot a target?\n- Was my hand hold relaxed (2 fingers, no death grip)?\n\nDo 3 songs. If you nail all 3, you're ready for the next class.",
-          "video_focus": "right_turn",
-          "completed": null
-        },
-        {
-          "day": 8,
-          "date": "2026-05-24",
-          "focus": "Pre-class warmup — full review",
-          "drill": "THIS IS YOUR PRE-CLASS WARMUP (do before every class going forward):\n\n1. 20 basics — 'quick, quick, slow', knees up (2 min)\n2. 10 right turns solo — stay on the line, spot target (2 min)\n3. 10 leader signals with air partner — lift on second bar (3 min)\n4. 5 leader's own turns — left hand down, rotate, switch (2 min)\n5. 1 slow song combining everything freely (3 min)\n\nTotal: ~12 min. If anything feels shaky, double the reps on that one.",
+          "drill": "SLOW SONG (15 min total):\n- Put on a slow salsa song.\n- Do 4 bars of basic.\n- Right turn → basic.\n- 4 more bars of basic.\n- Leader's own turn → basic.\n- Repeat the whole pattern for the full song.\n\nGOAL: Never break timing. If you lose the count, stop, find the 1, restart.\n\nCHECKLIST — ask yourself after each song:\n- Was I on 'quick, quick, slow' the whole time?\n- Did I stay on the line during turns?\n- Did I spot a target?\n- Was my hand hold relaxed (2 fingers, no death grip)?\n\nDo 3 songs. If you nail all 3, you're ready for the next phase.",
           "video_focus": "right_turn",
           "completed": null
         }
@@ -79,36 +39,144 @@
     },
     {
       "id": 1,
-      "name": "Cross Body Lead",
-      "why": "The cross body lead is how you move the follower from one side to the other. It's the second most important move after the basic — almost everything builds on it.",
-      "techniques": ["Cross Body Lead", "Prep Step"],
+      "name": "Fundamental Variations — Angle, Side, Back",
+      "why": "These are variations on your basic step that give you more movement options on the dance floor. Same timing, different directions. They make your dancing look less robotic.",
+      "techniques": ["Angle Basic", "Side Step", "Back Step", "Side to Side"],
       "practice_sessions": [
         {
           "day": 1,
-          "focus": "Cross body lead breakdown",
-          "drill": "Learn the footwork: open on 1-2-3, she crosses on 5-6-7. Practice solo — step to the side to open the slot, then step back.",
+          "date": "2026-05-24",
+          "focus": "Angle basic + side step breakdown",
+          "drill": "REVIEW (3 min):\n- 10 basics to warm up. Quick, quick, slow.\n\nANGLE BASIC (10 min):\n- Same timing as regular basic but step at a 45-degree angle instead of straight back.\n- 10 reps angling left, 10 reps angling right.\n- Alternate: left angle → right angle → straight basic. 10 cycles.\n\nSIDE STEP (10 min):\n- Step to the side instead of back. Same quick-quick-slow timing.\n- 10 reps stepping left, 10 reps stepping right.\n- Combo: 2 basics → side step left → 2 basics → side step right. 10 cycles.",
+          "video_focus": "basic_step",
+          "completed": null
+        },
+        {
+          "day": 2,
+          "date": "2026-05-26",
+          "focus": "Back step + side to side",
+          "drill": "BACK STEP (10 min):\n- Extended back step — reach further back than normal basic.\n- 10 reps. Focus on full weight transfer.\n- Combo: 2 basics → back step → basic. 10 cycles.\n\nSIDE TO SIDE (10 min):\n- Step side to side on the quick counts, hold on the slow.\n- 10 reps each direction.\n- This is a great fill move when you're not sure what to do next.\n\nMIX IT UP (5 min):\n- Slow song. Freestyle using ONLY basic + angle + side + back + side-to-side.\n- Goal: smooth transitions, never break timing.",
+          "video_focus": "basic_step",
+          "completed": null
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Prep Step + Cross Body Lead",
+      "why": "The cross body lead is the second most important move after the basic — almost everything builds on it. The prep step sets it up. Once you have CBL, your vocabulary doubles.",
+      "techniques": ["Prep Step", "Cross Body Lead"],
+      "practice_sessions": [
+        {
+          "day": 1,
+          "date": "2026-05-28",
+          "focus": "Prep step + cross body lead breakdown",
+          "drill": "PREP STEP (10 min):\n- The prep step is how you signal the follower that a cross body lead is coming.\n- Step to the side on count 1 to open the slot.\n- 10 reps solo. Feel the difference from a straight basic.\n\nCROSS BODY LEAD (15 min):\n- Open on 1-2-3, she crosses on 5-6-7.\n- Practice solo: step to the side to open the slot, then step back.\n- 20 reps. Focus on creating a clear lane for the follower to walk through.\n- Your feet: step side (1), collect (2), step back (3), then 5-6-7 basic.",
           "video_focus": "cross_body_lead",
           "completed": null
         },
         {
           "day": 2,
-          "focus": "Cross body lead + basic combo",
-          "drill": "4 basics → cross body lead → 4 basics → cross body lead. Repeat 10 times.",
+          "date": "2026-05-30",
+          "focus": "CBL combos — basic + CBL + turn",
+          "drill": "CBL + BASIC COMBO (10 min):\n- 4 basics → cross body lead → 4 basics → cross body lead.\n- 10 cycles. Smooth transitions, don't rush the opening.\n\nCBL + TURN COMBO (10 min):\n- Basic → CBL → inside turn → basic → CBL.\n- You now have a 4-move vocabulary. Combine freely.\n\nFULL FREESTYLE (5 min):\n- Slow song. Use everything: basic, angle, side, CBL, inside turn, right turn.\n- Goal: never repeat the same pattern twice in a row.",
           "video_focus": "cross_body_lead",
+          "completed": null
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Footwork — Suzy Q, Fancy Basic, Tic Toc, Net Toe",
+      "why": "Footwork moves are what you do when you're not connected to a partner — shines. They make you look like you know what you're doing even when you're dancing solo. Great for musicality.",
+      "techniques": ["Suzy Q", "Fancy Basic", "Tic Toc", "Net Toe"],
+      "practice_sessions": [
+        {
+          "day": 1,
+          "date": "2026-06-01",
+          "focus": "Suzy Q + fancy basic",
+          "drill": "SUZY Q (10 min):\n- Cross one foot behind the other, swivel, repeat.\n- Start slow: cross, swivel, cross, swivel. 10 reps each direction.\n- Key: the swivel comes from your hips, not your feet.\n\nFANCY BASIC (10 min):\n- Adds a kick or flick to the basic step.\n- Do 10 regular basics, then 10 fancy basics. Feel the difference.\n- Don't overdo the flair — keep it subtle.\n\nCOMBO (5 min):\n- 4 basics → Suzy Q (4 counts) → fancy basic → back to regular basic.\n- 5 cycles with music.",
+          "video_focus": "basic_step",
+          "completed": null
+        },
+        {
+          "day": 2,
+          "date": "2026-06-03",
+          "focus": "Tic toc + net toe",
+          "drill": "TIC TOC (10 min):\n- Weight shifts side to side, like a pendulum.\n- 20 reps. Keep upper body still — movement is in the hips.\n- Try with music: tic on the 1, toc on the 5.\n\nNET TOE (10 min):\n- Touch the toe out, bring it back. Alternating feet.\n- 10 reps each side. Stay on time.\n\nSHINE FREESTYLE (5 min):\n- Song plays. No partner. Use all 4 footwork moves + basic.\n- Goal: look comfortable, hit the breaks in the music.",
+          "video_focus": "basic_step",
+          "completed": null
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Transition + Check Basic",
+      "why": "Transition basic lets you switch between open and closed position smoothly. Check basic adds a pause-and-redirect move. These are connector techniques that make your combos flow.",
+      "techniques": ["Transition Basic", "Check Basic"],
+      "practice_sessions": [
+        {
+          "day": 1,
+          "date": "2026-06-05",
+          "focus": "Transition basic + check basic",
+          "drill": "TRANSITION BASIC (10 min):\n- Practice moving from closed position to open position mid-basic.\n- 10 reps: closed → open. 10 reps: open → closed.\n- Air partner. Focus on which hand releases and when.\n\nCHECK BASIC (10 min):\n- Step forward as if doing a CBL, then check (stop) and go back.\n- 10 reps. The check is a clear signal — commit to the stop.\n- Think of it as a fake-out: you start a move, then redirect.\n\nCOMBO (5 min):\n- Basic → CBL → check basic → transition to open → basic.\n- 5 cycles. Slow song.",
+          "video_focus": "basic_step",
+          "completed": null
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Crossbody Variations — She Goes, He Goes",
+      "why": "She Goes and He Goes are variations on the cross body lead where only one person crosses. They add variety and let you play with the follower's and leader's movement independently.",
+      "techniques": ["She Goes", "He Goes"],
+      "practice_sessions": [
+        {
+          "day": 1,
+          "date": "2026-06-07",
+          "focus": "She goes + he goes breakdown",
+          "drill": "SHE GOES (10 min):\n- Like a CBL but only the follower moves across. Leader stays.\n- 10 reps with air partner. Focus on the lead hand guiding her path.\n- Signal is similar to CBL but your body stays in place.\n\nHE GOES (10 min):\n- Now YOU cross and she stays. Mirror of She Goes.\n- 10 reps. The footwork is the same as CBL but you're the one walking through.\n\nCOMBO (5 min):\n- Basic → She Goes → basic → He Goes → basic → regular CBL.\n- 5 cycles. Slow song.",
+          "video_focus": "cross_body_lead",
+          "completed": null
+        },
+        {
+          "day": 2,
+          "date": "2026-06-09",
+          "focus": "Crossbody family freestyle",
+          "drill": "FULL CROSSBODY VOCAB (15 min):\n- Slow song. You now have 4 crossbody moves: CBL, She Goes, He Goes, Check Basic.\n- Freestyle: use all 4 plus basics, turns, and footwork.\n- Goal: string together 3+ different moves without breaking timing.\n- Try to use each crossbody variation at least twice per song.\n- Do 3 songs.",
+          "video_focus": "cross_body_lead",
+          "completed": null
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Turns — Copa, Sail Rights, Sail Lefts",
+      "why": "Copa is a direction change. Sail Rights and Sail Lefts are traveling turns that move the follower along the line. These are your Level 1 finale — once you have these, you have the full beginner vocabulary.",
+      "techniques": ["Copa", "Sombrero Crossover", "Sail Rights", "Sail Lefts"],
+      "practice_sessions": [
+        {
+          "day": 1,
+          "date": "2026-06-11",
+          "focus": "Copa + sombrero crossover",
+          "drill": "COPA (10 min):\n- The copa is a turn where the follower changes direction.\n- Leader opens the door, follower walks in and turns back.\n- 10 reps with air partner. Focus on clear hand signal.\n\nSOMBRERO CROSSOVER (10 min):\n- Arms go over the head (like putting on a sombrero) during a CBL.\n- 10 reps. The arm goes over on the cross, comes back down after.\n- Go SLOW — this is the most complex move so far.",
+          "video_focus": "cross_body_lead",
+          "completed": null
+        },
+        {
+          "day": 2,
+          "date": "2026-06-13",
+          "focus": "Sail rights + sail lefts",
+          "drill": "SAIL RIGHTS (10 min):\n- Traveling turn to the right. The follower moves along the line while turning.\n- 10 reps. Keep the connection light — guide, don't pull.\n\nSAIL LEFTS (10 min):\n- Same concept but traveling left.\n- 10 reps. Mirror image of sail rights.\n\nCOMBO (5 min):\n- Basic → sail right → basic → sail left → copa → basic.\n- 5 cycles.",
+          "video_focus": "basic_step",
           "completed": null
         },
         {
           "day": 3,
-          "focus": "CBL + inside turn combo",
-          "drill": "Basic → CBL → inside turn → basic → CBL. You now have a 3-move vocabulary — combine them freely.",
-          "video_focus": "cross_body_lead",
-          "completed": null
-        },
-        {
-          "day": 4,
-          "focus": "Full combo with music",
-          "drill": "Slow song. Mix basic, CBL, inside turn randomly. Goal: never break timing, smooth transitions.",
-          "video_focus": "cross_body_lead",
+          "date": "2026-06-15",
+          "focus": "Full Level 1 freestyle — all 20 techniques",
+          "drill": "THE FINAL DRILL (20 min):\n- Put on 4 full salsa songs.\n- Use EVERYTHING: basics (regular, angle, side, back, side-to-side, fancy), footwork (Suzy Q, tic toc, net toe), CBL family (CBL, she goes, he goes, check, sombrero), turns (inside, right, copa, sail right, sail left).\n- Goal: never repeat the same 3-move sequence.\n- Between songs, pick 2 moves that felt awkward and drill them 5 reps each.\n\nYOU'RE READY FOR SOCIALS:\n- If you can get through all 4 songs without losing timing, you have the vocabulary.\n- At a social, you'll only use 5-6 of these per song. But knowing all 20 means you always have options.",
+          "video_focus": "basic_step",
           "completed": null
         }
       ]

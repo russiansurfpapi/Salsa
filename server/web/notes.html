@@ -6,62 +6,62 @@
 <title>Class Notes — Salsa</title>
 <style>
   :root {
-    --bg:#1a1a2e; --fg:#e0e0e0; --muted:#8888aa;
-    --accent:#e94560; --accent-dim:rgba(233,69,96,0.15);
-    --ok:#00b894; --panel:#16213e; --border:#2a2a4a;
+    --bg:#ffffff; --fg:#1e293b; --muted:#64748b;
+    --accent:#e11d48; --accent-dim:rgba(225,29,72,0.08);
+    --ok:#059669; --panel:#f8fafc; --border:#e2e8f0;
   }
   * { box-sizing:border-box; }
   html, body { margin:0; padding:0; background:var(--bg); color:var(--fg); min-height:100vh; }
-  body { font:15px/1.55 -apple-system, BlinkMacSystemFont, system-ui, sans-serif; }
+  body { font:17px/1.6 -apple-system, BlinkMacSystemFont, system-ui, sans-serif; }
   a { color:var(--accent); text-decoration:none; }
 
   nav.top {
     position:sticky; top:0; z-index:10; display:flex; align-items:center; gap:24px;
-    padding:12px 40px; background:rgba(26,26,46,0.95); backdrop-filter:blur(8px);
-    border-bottom:1px solid var(--border); font-size:13px;
+    padding:12px 40px; background:rgba(255,255,255,0.95); backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--border); font-size:15px;
   }
-  nav.top .brand { font-weight:700; color:var(--accent); font-size:16px; }
+  nav.top .brand { font-weight:700; color:var(--accent); font-size:18px; }
   nav.top a { color:var(--muted); } nav.top a.active { color:var(--fg); }
   nav.top .spacer { flex:1; }
 
   main { max-width:740px; margin:0 auto; padding:40px 24px 100px; }
   h1 { font-size:28px; font-weight:400; margin:0 0 6px; } h1 em { color:var(--accent); font-style:normal; }
-  .subtitle { color:var(--muted); font-size:14px; margin:0 0 24px; }
+  .subtitle { color:var(--muted); font-size:15px; margin:0 0 24px; }
 
   textarea {
     width:100%; min-height:180px; padding:14px; border:1px solid var(--border);
-    border-radius:8px; background:var(--panel); color:var(--fg); font:inherit; font-size:14px;
+    border-radius:8px; background:var(--panel); color:var(--fg); font:inherit; font-size:15px;
     line-height:1.6; resize:vertical;
   }
   textarea:focus { outline:none; border-color:var(--accent); }
   .row { display:flex; gap:10px; margin:12px 0; align-items:center; }
-  .row input { padding:8px 12px; border:1px solid var(--border); border-radius:6px; background:var(--panel); color:var(--fg); font:inherit; font-size:14px; }
-  .btn { padding:10px 24px; border:none; border-radius:6px; font:600 14px/1 inherit; cursor:pointer; }
+  .row input { padding:8px 12px; border:1px solid var(--border); border-radius:6px; background:var(--panel); color:var(--fg); font:inherit; font-size:15px; }
+  .btn { padding:10px 24px; border:none; border-radius:6px; font:600 15px/1 inherit; cursor:pointer; }
   .btn-accent { background:var(--accent); color:#fff; } .btn-accent:hover { filter:brightness(1.1); }
 
   .section-label {
-    font-size:11px; text-transform:uppercase; letter-spacing:0.15em;
+    font-size:13px; text-transform:uppercase; letter-spacing:0.12em;
     color:var(--accent); font-weight:600; margin:28px 0 12px;
     padding-bottom:6px; border-bottom:1px solid var(--border);
   }
 
   .result { background:var(--panel); border:1px solid var(--border); border-radius:8px; padding:16px; margin-top:16px; }
-  .result .r-label { font-size:11px; text-transform:uppercase; letter-spacing:0.08em; color:var(--muted); margin-bottom:6px; }
-  .tech-chip { display:inline-block; padding:4px 12px; border-radius:16px; font-size:12px; font-weight:600; background:var(--accent-dim); color:var(--accent); margin:2px; }
-  .topic-chip { display:inline-block; padding:4px 10px; border-radius:12px; font-size:11px; background:rgba(0,184,148,0.15); color:var(--ok); margin:2px; }
-  .tip-item { padding:8px 12px; background:rgba(0,184,148,0.06); border-left:3px solid var(--ok); border-radius:0 6px 6px 0; margin-bottom:6px; font-size:14px; }
+  .result .r-label { font-size:13px; text-transform:uppercase; letter-spacing:0.08em; color:var(--muted); margin-bottom:6px; }
+  .tech-chip { display:inline-block; padding:4px 12px; border-radius:16px; font-size:14px; font-weight:600; background:var(--accent-dim); color:var(--accent); margin:2px; }
+  .topic-chip { display:inline-block; padding:4px 10px; border-radius:12px; font-size:13px; background:rgba(5,150,105,0.08); color:var(--ok); margin:2px; }
+  .tip-item { padding:8px 12px; background:rgba(5,150,105,0.06); border-left:3px solid var(--ok); border-radius:0 6px 6px 0; margin-bottom:6px; font-size:15px; }
 
   .past-note { background:var(--panel); border:1px solid var(--border); border-radius:8px; padding:14px 16px; margin-bottom:10px; }
-  .past-note .pn-date { font-size:12px; color:var(--accent); font-weight:600; }
+  .past-note .pn-date { font-size:14px; color:var(--accent); font-weight:600; }
   .past-note .pn-techs { margin-top:6px; }
-  .past-note .pn-preview { font-size:13px; color:var(--muted); margin-top:6px; }
+  .past-note .pn-preview { font-size:14px; color:var(--muted); margin-top:6px; }
 </style>
 </head>
 <body>
 
 <nav class="top">
   <span class="brand">salsa.</span>
-  <a href="/">Home</a> <a href="/practice">Practice</a> <a href="/quiz">Quiz</a> <a href="/notes" class="active">Notes</a> <a href="/classes">Classes</a>
+  <a href="/">Home</a> <a href="/practice">Practice</a> <a href="/quiz">Quiz</a> <a href="/notes" class="active">Notes</a> <a href="/classes">Classes</a> <a href="/progress">Progress</a>
   <span class="spacer"></span>
 </nav>
 
@@ -145,7 +145,6 @@ async function loadPastNotes() {
 
 function esc(s) { if (!s) return ''; const d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
 
-// Set default date to today
 document.getElementById('class-date').value = new Date().toISOString().split('T')[0];
 loadPastNotes();
 </script>

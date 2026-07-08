@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Upload — Salsa</title>
+<style>
+  :root {
+    --bg:#ffffff; --fg:#1e293b; --muted:#64748b;
+    --accent:#e11d48; --accent-dim:rgba(225,29,72,0.08);
+    --ok:#059669; --ok-dim:rgba(5,150,105,0.08);
+    --panel:#f8fafc; --border:#e2e8f0;
+  }
+  * { box-sizing:border-box; }
+  html, body { margin:0; padding:0; background:var(--bg); color:var(--fg); min-height:100vh; }
+  body { font:17px/1.6 -apple-system, BlinkMacSystemFont, system-ui, sans-serif; }
+  a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:underline; }
+
+  nav.top {
+    position:sticky; top:0; z-index:10; display:flex; align-items:center; gap:24px;
+    padding:12px 40px; background:rgba(255,255,255,0.95); backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--border); font-size:15px;
+  }
+  nav.top .brand { font-weight:700; color:var(--accent); font-size:18px; }
+  nav.top a { color:var(--muted); } nav.top a.active { color:var(--fg); }
+  nav.top .spacer { flex:1; }
+
+  @media (max-width:600px) {
+    nav.top { padding:12px 16px; gap:14px; font-size:14px; }
+  }
+
+  main { max-width:520px; margin:0 auto; padding:40px 20px 100px; }
+  h1 { font-size:28px; font-weight:400; margin:0 0 6px; } h1 em { color:var(--accent); font-style:normal; }
+  .subtitle { color:var(--muted); font-size:15px; margin:0 0 28px; }
+
+  .field { margin-bottom:20px; }
+  .field label { display:block; font-size:14px; font-weight:600; color:var(--muted); text-transform:uppercase; letter-spacing:0.08em; margin-bottom:6px; }
+
+  .file-btn {
+    display:flex; align-items:center; justify-content:center; gap:10px;
+    width:100%; padding:18px; border:2px dashed var(--border); border-radius:10px;
+    background:var(--panel); color:var(--muted); font-size:16px; font-weight:500;
+    cursor:pointer; transition:all 0.15s; min-height:70px;
+  }
+  .file-btn:active { transform:scale(0.98); }
+  .file-btn.has-file { border-color:var(--ok); color:var(--ok); border-style:solid; background:var(--ok-dim); }
+  .file-btn .icon { font-size:24px; }
+  input[type=file] { display:none; }
+
+  input[type=date], select, input[type=password] {
+    width:100%; padding:12px 14px; border:1px solid var(--border); border-radius:8px;
+    font-size:16px; background:var(--panel); color:var(--fg);
+    -webkit-appearance:none;
+  }
+
+  .row { display:flex; gap:12px; }
+  .row .field { flex:1; }
+
+  .submit-btn {
+    width:100%; padding:16px; border:none; border-radius:10px;
+    background:var(--accent); color:#fff; font-size:17px; font-weight:600;
+    cursor:pointer; transition:opacity 0.15s; margin-top:8px;
+  }
+  .submit-btn:disabled { opacity:0.4; cursor:not-allowed; }
+  .submit-btn:active:not(:disabled) { opacity:0.8; }
+
+  .status-box {
+    display:none; margin-top:24px; padding:20px; border-radius:10px;
+    background:var(--panel); border:1px solid var(--border); text-align:center;
+  }
+  .status-box.visible { display:block; }
+  .status-box .step { font-size:16px; font-weight:500; margin-bottom:8px; }
+  .status-box .detail { font-size:14px; color:var(--muted); }
+
+  .progress-bar {
+    height:6px; background:var(--border); border-radius:3px; margin-top:12px; overflow:hidden;
+  }
+  .progress-bar .fill {
+    height:100%; background:var(--accent); border-radius:3px;
+    transition:width 0.5s ease;
+  }
+
+  .status-box.done { border-color:var(--ok); }
+  .status-box.done .step { color:var(--ok); }
+  .status-box.error { border-color:var(--accent); }
+  .status-box.error .step { color:var(--accent); }
+
+  .result-links { margin-top:16px; display:flex; gap:12px; justify-content:center; }
+  .result-links a {
+    padding:10px 20px; border-radius:8px; background:var(--ok); color:#fff;
+    font-weight:600; font-size:15px; text-decoration:none;
+  }
+</style>
+</head>
+<body>
+
+<nav class="top">
+  <a href="/" class="brand">Salsa</a>
+  <a href="/classes">Classes</a>
+  <a href="/practice">Practice</a>
+  <a href="/upload" class="active">Upload</a>
+  <span class="spacer"></span>
+</nav>
+
+<main>
+  <h1>Upload <em>Recording</em></h1>
+  <p class="subtitle">Voice memo, class video, or both. Processing takes 2-5 minutes.</p>
+
+  <form id="upload-form">
+    <div class="field">
+      <label>Voice Memo</label>
+      <label class="file-btn" id="audio-btn">
+        <span class="icon">🎙️</span>
+        <span class="text">Tap to select audio</span>
+        <input type="file" id="audio-file" accept="audio/*,.m4a,.mp3,.wav,.aac">
+      </label>
+    </div>
+
+    <div class="field">
+      <label>Class Video</label>
+      <label class="file-btn" id="video-btn">
+        <span class="icon">🎥</span>
+        <span class="text">Tap to select video</span>
+        <input type="file" id="video-file" accept="video/*,.mov,.mp4">
+      </label>
+    </div>
+
+    <div class="row">
+      <div class="field">
+        <label>Class Date</label>
+        <input type="date" id="class-date">
+      </div>
+      <div class="field">
+        <label>Class #</label>
+        <select id="class-number">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="field">
+      <label>PIN</label>
+      <input type="password" id="pin" placeholder="Upload PIN" inputmode="numeric" pattern="[0-9]*" autocomplete="off">
+    </div>
+
+    <button type="submit" class="submit-btn" id="submit-btn" disabled>Upload & Process</button>
+  </form>
+
+  <div class="status-box" id="status-box">
+    <div class="step" id="status-step">Uploading...</div>
+    <div class="detail" id="status-detail"></div>
+    <div class="progress-bar"><div class="fill" id="progress-fill" style="width:0%"></div></div>
+    <div class="result-links" id="result-links" style="display:none"></div>
+  </div>
+</main>
+
+<script>
+const audioInput = document.getElementById('audio-file');
+const videoInput = document.getElementById('video-file');
+const audioBtn = document.getElementById('audio-btn');
+const videoBtn = document.getElementById('video-btn');
+const dateInput = document.getElementById('class-date');
+const numInput = document.getElementById('class-number');
+const pinInput = document.getElementById('pin');
+const submitBtn = document.getElementById('submit-btn');
+const form = document.getElementById('upload-form');
+const statusBox = document.getElementById('status-box');
+const statusStep = document.getElementById('status-step');
+const statusDetail = document.getElementById('status-detail');
+const progressFill = document.getElementById('progress-fill');
+const resultLinks = document.getElementById('result-links');
+
+dateInput.value = new Date().toISOString().split('T')[0];
+
+function checkReady() {
+  const hasFile = audioInput.files.length > 0 || videoInput.files.length > 0;
+  const hasPin = pinInput.value.length >= 4;
+  submitBtn.disabled = !(hasFile && hasPin);
+}
+
+function formatSize(bytes) {
+  if (bytes < 1024 * 1024) return (bytes / 1024).toFixed(0) + ' KB';
+  return (bytes / (1024 * 1024)).toFixed(1) + ' MB';
+}
+
+audioInput.addEventListener('change', () => {
+  const f = audioInput.files[0];
+  if (f) {
+    audioBtn.classList.add('has-file');
+    audioBtn.querySelector('.text').textContent = f.name.substring(0, 30) + ' (' + formatSize(f.size) + ')';
+  } else {
+    audioBtn.classList.remove('has-file');
+    audioBtn.querySelector('.text').textContent = 'Tap to select audio';
+  }
+  checkReady();
+});
+
+videoInput.addEventListener('change', () => {
+  const f = videoInput.files[0];
+  if (f) {
+    videoBtn.classList.add('has-file');
+    videoBtn.querySelector('.text').textContent = f.name.substring(0, 30) + ' (' + formatSize(f.size) + ')';
+  } else {
+    videoBtn.classList.remove('has-file');
+    videoBtn.querySelector('.text').textContent = 'Tap to select video';
+  }
+  checkReady();
+});
+
+pinInput.addEventListener('input', checkReady);
+
+const STEP_PROGRESS = {
+  'uploading': 10,
+  'queued': 15,
+  'waiting': 15,
+  'transcribing audio': 30,
+  'analyzing transcript': 50,
+  'saving to database': 60,
+  'extracting frames': 40,
+  'transcribing video audio': 55,
+  'analyzing frames with Claude Vision': 75,
+  'saving study guide': 90,
+  'complete': 100,
+  'failed': 100,
+};
+
+function setProgress(step) {
+  const pct = STEP_PROGRESS[step] || 20;
+  progressFill.style.width = pct + '%';
+}
+
+async function pollStatus(jobId) {
+  while (true) {
+    try {
+      const resp = await fetch('/api/ingest/status/' + jobId);
+      const job = await resp.json();
+
+      statusStep.textContent = job.step || 'processing...';
+      setProgress(job.step);
+
+      if (job.status === 'done') {
+        statusBox.className = 'status-box visible done';
+        statusStep.textContent = 'Done!';
+        progressFill.style.width = '100%';
+
+        let links = '';
+        if (job.result && job.result.lesson_url)
+          links += '<a href="' + job.result.lesson_url + '">View Lesson</a>';
+        if (job.result && job.result.study_url)
+          links += '<a href="' + job.result.study_url + '">Study Guide</a>';
+        if (links) {
+          resultLinks.innerHTML = links;
+          resultLinks.style.display = 'flex';
+        }
+        return;
+      }
+
+      if (job.status === 'error') {
+        statusBox.className = 'status-box visible error';
+        statusStep.textContent = 'Error';
+        statusDetail.textContent = job.error || 'Unknown error';
+        return;
+      }
+    } catch (e) {
+      statusDetail.textContent = 'Checking...';
+    }
+    await new Promise(r => setTimeout(r, 3000));
+  }
+}
+
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+
+  const fd = new FormData();
+  if (audioInput.files[0]) fd.append('audio', audioInput.files[0]);
+  if (videoInput.files[0]) fd.append('video', videoInput.files[0]);
+  fd.append('class_date', dateInput.value);
+  fd.append('class_number', numInput.value);
+  fd.append('pin', pinInput.value);
+
+  submitBtn.disabled = true;
+  submitBtn.textContent = 'Uploading...';
+  statusBox.className = 'status-box visible';
+  statusStep.textContent = 'Uploading files...';
+  statusDetail.textContent = '';
+  resultLinks.style.display = 'none';
+  setProgress('uploading');
+
+  try {
+    const resp = await fetch('/api/ingest/upload', { method: 'POST', body: fd });
+    const data = await resp.json();
+
+    if (!resp.ok) {
+      statusBox.className = 'status-box visible error';
+      statusStep.textContent = 'Upload failed';
+      statusDetail.textContent = data.detail || data.error || 'Unknown error';
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Upload & Process';
+      return;
+    }
+
+    statusStep.textContent = 'Processing...';
+    setProgress('queued');
+    pollStatus(data.job_id);
+
+  } catch (err) {
+    statusBox.className = 'status-box visible error';
+    statusStep.textContent = 'Upload failed';
+    statusDetail.textContent = err.message;
+    submitBtn.disabled = false;
+    submitBtn.textContent = 'Upload & Process';
+  }
+});
+</script>
+
+</body>
+</html>

@@ -59,3 +59,20 @@ def classes():
 
 def class_tips():
     return get_db()["class_tips"]
+
+
+def skill_ratings():
+    coll = get_db()["skill_ratings"]
+    try:
+        coll.create_index("skill_id", unique=True)
+    except Exception:
+        pass
+    return coll
+
+
+def skill_rating_history():
+    return get_db()["skill_rating_history"]
+
+
+def frames():
+    return get_db()["frames"]

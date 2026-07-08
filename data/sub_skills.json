@@ -1,0 +1,217 @@
+{
+  "basic_step": [
+    {
+      "id": "footwork_pattern",
+      "name": "Footwork Pattern",
+      "description": "Correct foot sequence: right-left-right (forward-forward-back), then left-right-left (back-back-forward). 6 steps total per 8-count.",
+      "drill_template": "Stand in place, no music. Say aloud: 'forward-forward-back, back-back-forward' while stepping. Do 16 reps. Then add slow music. If you lose the pattern, stop, reset, start over.",
+      "video_focus": "basic_step"
+    },
+    {
+      "id": "weight_transfer",
+      "name": "Weight Transfer",
+      "description": "Full 100% weight shift on every step. After each step you should be able to lift the other foot without wobbling.",
+      "drill_template": "Do the basic step slowly. On EVERY step, pause and lift the free foot off the floor. If you wobble, you didn't commit. Do 8 reps, pausing on each step. Then do 8 reps without pausing but with the same commitment.",
+      "video_focus": "basic_step"
+    },
+    {
+      "id": "timing",
+      "name": "Timing / Counting",
+      "description": "Step on 1-2-3, hold 4, step on 5-6-7, hold 8. 'Quick, quick, slow' rhythm. Stay behind the music, don't rush.",
+      "drill_template": "Count aloud: '1-2-3-BREAK-5-6-7-BREAK' while stepping. Do 2 minutes. The BREAKs on 4 and 8 are where you do NOT step. Then add music at half speed. If you step on 4 or 8, you're off.",
+      "video_focus": "basic_step"
+    },
+    {
+      "id": "hand_hold",
+      "name": "Hand Hold / Connection",
+      "description": "Spider-Man grip: leaders use 2 fingers (middle + ring), palms up. Followers place hand over, palms down. Never use thumbs — hook, don't clamp.",
+      "drill_template": "Practice the grip with a partner or a towel draped over your fingers. Hold with only middle and ring finger. Pull gently — if the towel slides out easily, your grip is right. If it sticks, you're clamping.",
+      "video_focus": "basic_step"
+    },
+    {
+      "id": "posture",
+      "name": "Posture / Knee Lift",
+      "description": "Knees slightly bent, stay on balls of feet, pick up knees before stepping ('up, up, up'). Upper body quiet. No shuffling.",
+      "drill_template": "Do the basic in front of a mirror. Watch your knees — they should visibly lift on each step, not drag. Exaggerate the lift for 8 reps (marching), then bring it down to normal height for 8 reps. You should still see the lift.",
+      "video_focus": "basic_step"
+    }
+  ],
+  "right_turn": [
+    {
+      "id": "turn_footwork",
+      "name": "Turn Footwork",
+      "description": "Forward-forward-turn: step forward twice, then rotate 180° on the third step. Always end on the right foot.",
+      "drill_template": "No music. Step forward (right), forward (left), turn right 180° (right). Then immediately basic: back-back-forward. Repeat 12x. Check: are you ending the turn on your right foot every time?",
+      "video_focus": "right_turn"
+    },
+    {
+      "id": "timing",
+      "name": "Turn Timing",
+      "description": "Quick-quick-slow: two quick steps forward, the turn happens on the slow (count 3). Don't rush into the turn.",
+      "drill_template": "Say 'quick-quick-SLOW' while doing the right turn. The turn is the SLOW part — give it time. Do 8 reps with the verbal cue, then 8 without. The turn should feel unhurried.",
+      "video_focus": "right_turn"
+    },
+    {
+      "id": "spotting",
+      "name": "Spotting",
+      "description": "Pick a target on the wall. Eyes stay on it as long as possible. Head snaps around last and finds the target again before body finishes rotating.",
+      "drill_template": "Pick a spot on the wall at eye level. Do the right turn slowly: let your body start turning but keep your eyes on the spot. When your neck can't twist anymore, snap your head around and find the spot again. Do 10 reps. You should never feel dizzy.",
+      "video_focus": "right_turn"
+    },
+    {
+      "id": "staying_on_line",
+      "name": "Staying on the Line",
+      "description": "Turn in place on the slot — don't drift forward, backward, or sideways during the rotation. Start and end in the same spot.",
+      "drill_template": "Put a piece of tape on the floor. Start with your feet on it. Do the right turn. Check: are your feet still on the tape? If you drifted, you're stepping too far forward before turning. The turn is a rotation, not a travel.",
+      "video_focus": "right_turn"
+    },
+    {
+      "id": "hand_technique",
+      "name": "Hand Technique",
+      "description": "One hand only (left holding follower's right). Wrist flip during turn: flip over as she turns, flip back after. 2-finger cuff, release and re-catch.",
+      "drill_template": "Hold a pen loosely between your middle and ring fingers (Spider-Man grip). Practice the wrist flip: rotate your wrist 180° outward, then back inward. The pen should stay loosely hooked the whole time. Do 20 flips. Then try it while doing the right turn footwork.",
+      "video_focus": "right_turn"
+    }
+  ],
+  "inside_turn": [
+    {
+      "id": "turn_footwork",
+      "name": "Turn Footwork",
+      "description": "Left turn foot sequence: step back (R), break forward (L), step forward and pivot counter-clockwise on count 3 (R). Continue rotation on 5-6, face forward by count 6.",
+      "drill_template": "No music. Step back (right), forward (left), pivot left 180° (right). Then step back (left), forward (right), settle (left). That's one full left turn. Do 12 reps. Check: are you facing forward again by the 6th step?",
+      "video_focus": "inside_turn"
+    },
+    {
+      "id": "turn_timing",
+      "name": "Turn Timing",
+      "description": "The turn happens on count 3. Weight shifts and you pivot. Count 7 stays in place — just shift weight, don't move the foot.",
+      "drill_template": "Count aloud while turning: '1-2-TURN-hold-5-6-7-hold'. The word TURN replaces count 3. If you're turning on any other count, reset. Do 8 reps with counting, then 8 without.",
+      "video_focus": "inside_turn"
+    },
+    {
+      "id": "lead_signal",
+      "name": "Leading the Turn",
+      "description": "Leader: lift left hand on count 1 to create the doorway. Twist torso slightly left on count 2 (the 'twist on 2'). Right hand gives gentle push on follower's shoulder blade. Arms stay shoulder-width around her head.",
+      "drill_template": "With a partner: do 4 basics, then lead a left turn. Focus ONLY on the hand lift timing — it starts on 1, not 2 or 3. Your body keeps the same basic. After the turn, ask your partner: 'Did you feel the signal clearly?' Do 8 reps.",
+      "video_focus": "inside_turn"
+    },
+    {
+      "id": "spotting",
+      "name": "Spotting",
+      "description": "Same principle as right turn: eyes stay on target, head snaps last. For partner dancing, spot your partner's face or chest.",
+      "drill_template": "Same as right turn spotting drill but turning LEFT. Pick a wall spot, do the left turn, keep eyes locked, snap head. 10 reps. Then try with a partner — your spot is their chest.",
+      "video_focus": "inside_turn"
+    },
+    {
+      "id": "arm_styling",
+      "name": "Arm Styling",
+      "description": "Counts 1-2-3: arm close to right ear (tight, not flailing). Count 5: hand behind neck. Counts 5-7: trace down the body. Count 7-1: sweep back up. Do it with intention.",
+      "drill_template": "Forget the feet. Stand still and just do the arm path: hand to right ear (hold 3 counts), hand behind neck, trace down your body slowly, sweep up. Do this 10x to music, focusing on smooth continuous motion. Then add the left turn footwork underneath.",
+      "video_focus": "inside_turn"
+    },
+    {
+      "id": "hand_technique",
+      "name": "Hand Flip / Release",
+      "description": "Leader's wrist flip during the follower's turn. Loose 2-finger grip that allows rotation without trapping the follower's hand.",
+      "drill_template": "Same pen drill as right turn hand technique, but practice during the left turn lead. The flip direction is opposite — wrist rotates inward as she turns left. 10 reps with a partner, checking that she can rotate freely.",
+      "video_focus": "inside_turn"
+    }
+  ],
+  "cross_body_lead": [
+    {
+      "id": "slot_creation",
+      "name": "Slot Creation",
+      "description": "On counts 2-3, leader rotates body 90° left and steps to the side, clearing a lane for the follower to walk across. The 'door opens'.",
+      "drill_template": "Solo drill: do a basic, then on the next 1-2-3, step forward on 2 while rotating your body 90° left, then step to the side on 3. You should now be perpendicular to where you started. Repeat 10x until the rotation feels automatic.",
+      "video_focus": "cross_body_lead"
+    },
+    {
+      "id": "body_rotation",
+      "name": "Body Rotation",
+      "description": "Rotate left on 1-2-3 to open the slot, then rotate back right on 5-6-7 to close and face partner again. Smooth, not jerky.",
+      "drill_template": "Stand with feet shoulder-width. Rotate torso 90° left (arms follow naturally), hold, rotate back to center. Do this 20x to a slow count. Then add the footwork: step forward on 2 as you rotate left, step side on 3, step back on 5-6-7 as you rotate right.",
+      "video_focus": "cross_body_lead"
+    },
+    {
+      "id": "lead_signal",
+      "name": "Lead Signal / Twist-on-2",
+      "description": "Subtle torso twist on count 2 signals the follower. Comes from the core (hips/obliques), not the arms. ~15-20° rotation. Frame transmits it to the follower.",
+      "drill_template": "With a partner in closed hold: do 4 basics. On the 5th bar, add a subtle torso twist left on count 2. Ask your partner: 'Did you feel that?' If not, add more tone to your frame (firm arms, not floppy). The signal should travel through the connection without being a push.",
+      "video_focus": "cross_body_lead"
+    },
+    {
+      "id": "frame",
+      "name": "Frame / Assertiveness",
+      "description": "Arms at shoulder width around follower's head during turns. Right hand on her back guides with gentle pressure. Be assertive — don't let her guess. Guide, don't push.",
+      "drill_template": "With a partner: lead 4 cross body leads in a row. After each one, ask: 'Was the direction clear?' If she hesitated at any point, your frame was too soft. Add tone (not force) to your arms. Think 'firm but elastic' — a taut rubber band, not a steel rod.",
+      "video_focus": "cross_body_lead"
+    },
+    {
+      "id": "spatial_awareness",
+      "name": "Spatial Awareness",
+      "description": "Don't step into the follower's space. Your forward step on count 2 is normal-sized — the twist adds rotational info, it doesn't make the step bigger.",
+      "drill_template": "Put tape on the floor marking your starting position and your partner's. Lead a cross body lead. Check: did you step past your tape line? If yes, you're invading her space. Keep your step size the same as a regular basic, just add the body rotation.",
+      "video_focus": "cross_body_lead"
+    }
+  ],
+  "suzy_q": [
+    {
+      "id": "footwork",
+      "name": "Cross-Step-Cross Pattern",
+      "description": "Cross right over left (5), small side step left (6), replace right (7). Then cross left over right (1), small side step right (2), replace left (3). Back foot stays behind front foot — don't overextend.",
+      "drill_template": "Stand in place. Cross right over left, tiny side step left, replace right. Cross left over right, tiny side step right, replace left. Do 16 reps with NO music. Key check: is your side step small? If your feet are more than 6 inches apart on the side step, it's too wide.",
+      "video_focus": "suzy_q"
+    },
+    {
+      "id": "hip_styling",
+      "name": "Hip Styling",
+      "description": "The hip twist comes from the crosses — when right crosses over left, hips naturally rotate left. Don't force it. Stay on balls of feet so the swivel is smooth. Upper body stays quiet.",
+      "drill_template": "Do the cross-step-cross pattern in front of a mirror. Watch your hips, not your feet. They should twist alternately left-right with each cross. If they're not moving, you're not fully transferring weight. Exaggerate the weight transfer for 8 reps, then let it settle to natural.",
+      "video_focus": "suzy_q"
+    },
+    {
+      "id": "prep",
+      "name": "Prep / Leg Lift",
+      "description": "Before starting the Suzy Q, lift your right knee on counts 5-6-7-1. This telegraphs the transition and gives you a beat to set your balance.",
+      "drill_template": "From basic position: on counts 5-6-7-1, lift your right knee (small, subtle — not a kick). On the next 1-2-3/5-6-7, go straight into the Suzy Q cross pattern. Do 8 reps: basic → prep lift → Suzy Q → basic. The lift should feel like a signal, not a gymnastics move.",
+      "video_focus": "suzy_q"
+    },
+    {
+      "id": "quarter_beats",
+      "name": "Quarter Beats (Chord Beats)",
+      "description": "Step only on the 4 downbeats: 1, 3, 5, 7. Hold on 2, 4, 6, 8. Half as many steps as normal. Creates a grounded, slower feel. Locks into the cowbell/piano chords in the music.",
+      "drill_template": "Stand in place. Count '1-hold-3-hold-5-hold-7-hold' aloud. Step on 1, 3, 5, 7 only — walk forward slowly. Do 2 minutes. Then try it with music: listen for the cowbell or piano chords on 1-3-5-7 and step WITH them. You should feel like you're dancing at half speed.",
+      "video_focus": "suzy_q"
+    }
+  ],
+  "prep_step": [
+    {
+      "id": "stretch_creation",
+      "name": "Creating the Stretch",
+      "description": "Step back on counts 1-2-3 to create elastic tension in the connection with your partner. Like stretching a rubber band — you're storing energy.",
+      "drill_template": "With a partner in open hold: step back on 1-2-3, feeling the connection stretch (not pull). Your arms should feel like a taut rubber band, not a rope. If the connection goes slack, you're stepping too close. If she gets yanked, you're stepping too far. Find the sweet spot. 10 reps.",
+      "video_focus": "prep_step"
+    },
+    {
+      "id": "energy_release",
+      "name": "Using the Energy",
+      "description": "On counts 5-6-7, redirect the stored elastic energy into the next move. The prep builds momentum that fuels the turn or cross body lead that follows.",
+      "drill_template": "Do a prep step (back on 1-2-3), then immediately lead a left turn or cross body lead on 5-6-7. Feel how the stored tension helps initiate the move — you shouldn't need to push or pull. The energy from the stretch does the work. 8 reps of prep → left turn, then 8 reps of prep → CBL.",
+      "video_focus": "prep_step"
+    },
+    {
+      "id": "connection",
+      "name": "Hand/Arm Connection",
+      "description": "Maintain firm but elastic grip during the prep. Rubber-band tension, not tug-of-war. Both partners contribute to the stretch — it's mutual.",
+      "drill_template": "Hold a resistance band with a partner (or a towel). Step back and feel it stretch. That elastic tension is what your arms should feel like during the prep. Now try with actual hand hold: do 8 prep steps, checking that the tension feels like the band, not like you're pulling her toward you.",
+      "video_focus": "prep_step"
+    },
+    {
+      "id": "body_twist",
+      "name": "Body Twist Prep",
+      "description": "Before a left turn, twist torso right (~45°) on the prep. This stores rotational energy in your core that releases into the counter-clockwise turn on count 3.",
+      "drill_template": "Stand alone. Twist your torso right (shoulders turn, hips stay relatively still). Hold. Now release — let your torso unwind to the left. Feel the momentum? That's what powers the left turn. Do 10 twist-and-release reps, then add the left turn footwork underneath.",
+      "video_focus": "prep_step"
+    }
+  ]
+}

@@ -7,8 +7,10 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any, Optional
 
-from fastapi import FastAPI, HTTPException
-from fastapi.responses import FileResponse, HTMLResponse
+import base64
+
+from fastapi import FastAPI, File, Form, HTTPException, UploadFile
+from fastapi.responses import FileResponse, HTMLResponse, Response
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
@@ -26,12 +28,7 @@ if VIDEOS.exists():
         app.mount("/video", StaticFiles(directory=VIDEOS), name="videos")
     except Exception:
         pass
-_frames_dir = DATA / "frames"
-if _frames_dir.exists():
-    try:
-        app.mount("/frames", StaticFiles(directory=_frames_dir), name="frames")
-    except Exception:
-        pass
+# Frames served via /api/frames/{slug}/{filename} endpoint (disk + MongoDB fallback)
 if WEB.exists():
     app.mount("/web", StaticFiles(directory=WEB), name="web")
 
@@ -154,7 +151,7 @@ def get_technique(slug: str) -> dict:
             frame_slug = best_file.stem
             for i, sec in enumerate(sections):
                 frame_path = fdir / frame_slug / f"section_{i}.jpg"
-                sec["frame_url"] = f"/frames/{frame_slug}/section_{i}.jpg" if frame_path.exists() else None
+                sec["frame_url"] = f"/api/frames/{frame_slug}/section_{i}.jpg" if frame_path.exists() else None
             step_entry = all_steps.get(f"{frame_slug}.json", {})
             step_bullets = step_entry.get("steps", [])
             for i, sec in enumerate(sections):
@@ -172,6 +169,27 @@ def get_technique(slug: str) -> dict:
     breakdowns = _load_json("technique_breakdowns.json") or {}
     if slug in breakdowns:
         tech["breakdown_detail"] = breakdowns[slug]
+
+    # If this technique has a class video breakdown, attach the combo steps
+    bd = breakdowns.get(slug, {})
+    class_vid = bd.get("class_video")
+    if class_vid:
+        combo = breakdowns.get(class_vid.get("combo_key", ""), {})
+        vb = combo.get("video_breakdown", {})
+        if vb:
+            frame_slug = vb.get("frame_slug", "")
+            steps = vb.get("steps", [])
+            relevant = [s for s in steps if s.get("technique") == slug]
+            for s in relevant:
+                s["frame_url"] = f"/api/frames/{frame_slug}/{s['frame']}"
+            tech["class_video_breakdown"] = {
+                "class_date": class_vid.get("class_date", ""),
+                "frame_slug": frame_slug,
+                "source": vb.get("source", ""),
+                "description": vb.get("description", ""),
+                "steps": relevant,
+                "all_steps": [{**s, "frame_url": f"/api/frames/{frame_slug}/{s['frame']}"} for s in steps],
+            }
 
     return tech
 
@@ -344,6 +362,38 @@ def get_class(class_date: str) -> dict:
     return match
 
 
+@app.get("/study/{class_date}", response_class=HTMLResponse)
+def study_page(class_date: str) -> FileResponse:
+    return FileResponse(WEB / "study.html")
+
+
+@app.get("/api/study/{class_date}")
+def get_study_guide(class_date: str) -> dict:
+    guides = _load_json("study_guides.json") or {}
+    if class_date not in guides:
+        raise HTTPException(404, f"no study guide for {class_date}")
+    return guides[class_date]
+
+
+@app.get("/api/classes/{class_date}/video-breakdown")
+def get_class_video_breakdown(class_date: str) -> list:
+    breakdowns = _load_json("technique_breakdowns.json") or {}
+    results = []
+    for key, bd in breakdowns.items():
+        vb = bd.get("video_breakdown")
+        if vb and vb.get("class_date") == class_date:
+            frame_slug = vb.get("frame_slug", "")
+            steps = [{**s, "frame_url": f"/api/frames/{frame_slug}/{s['frame']}"} for s in vb.get("steps", [])]
+            results.append({
+                "key": key,
+                "description": vb.get("description", ""),
+                "source": vb.get("source", ""),
+                "frame_slug": frame_slug,
+                "steps": steps,
+            })
+    return results
+
+
 @app.get("/api/technique/{slug}/class-tips")
 def technique_class_tips(slug: str) -> list:
     try:
@@ -356,6 +406,257 @@ def technique_class_tips(slug: str) -> list:
         if slug in content:
             return [{"tip": t, "technique": slug} for t in content[slug].get("class_tips", [])]
         return []
+
+
+# ── Skills / Sub-skill ratings ───────────────────────────────────────
+
+@app.get("/progress", response_class=HTMLResponse)
+def progress_page() -> FileResponse:
+    return FileResponse(WEB / "progress.html")
+
+
+def _get_sub_skills() -> dict:
+    return _load_json("sub_skills.json") or {}
+
+
+def _get_skill_ratings_json() -> dict:
+    return _load_json("skill_ratings.json") or {"ratings": {}, "history": []}
+
+
+def _save_skill_ratings_json(data: dict) -> None:
+    _save_json("skill_ratings.json", data)
+
+
+@app.get("/api/skills")
+def list_skills() -> dict:
+    taxonomy = _get_sub_skills()
+    try:
+        ratings = {r["skill_id"]: r for r in mongo.skill_ratings().find({}, {"_id": 0})}
+    except Exception:
+        sr = _get_skill_ratings_json()
+        ratings = {k: {"rating": v["rating"], "notes": v.get("notes", ""), "updated_at": v.get("updated_at", "")} for k, v in sr.get("ratings", {}).items()}
+
+    result = {}
+    for tech, skills in taxonomy.items():
+        sub_skills = []
+        for s in skills:
+            sid = f"{tech}.{s['id']}"
+            r = ratings.get(sid, {})
+            sub_skills.append({
+                **s,
+                "skill_id": sid,
+                "rating": r.get("rating", 0),
+                "notes": r.get("notes", ""),
+                "updated_at": r.get("updated_at", ""),
+            })
+        rated = [s["rating"] for s in sub_skills if s["rating"] > 0]
+        result[tech] = {
+            "sub_skills": sub_skills,
+            "avg_rating": round(sum(rated) / len(rated), 1) if rated else 0,
+        }
+    return {"techniques": result}
+
+
+@app.get("/api/skills/weak")
+def get_weak_skills() -> dict:
+    taxonomy = _get_sub_skills()
+    try:
+        weak_docs = list(mongo.skill_ratings().find({"rating": {"$lte": 2}}, {"_id": 0}))
+    except Exception:
+        sr = _get_skill_ratings_json()
+        weak_docs = [{"skill_id": k, "rating": v["rating"], "notes": v.get("notes", "")} for k, v in sr.get("ratings", {}).items() if v["rating"] <= 2]
+
+    weak_skills = []
+    for doc in weak_docs:
+        parts = doc["skill_id"].split(".", 1)
+        if len(parts) != 2:
+            continue
+        technique, sub_skill_id = parts
+        skills = taxonomy.get(technique, [])
+        match = next((s for s in skills if s["id"] == sub_skill_id), None)
+        if match:
+            weak_skills.append({
+                "skill_id": doc["skill_id"],
+                "technique": technique,
+                "name": match["name"],
+                "rating": doc["rating"],
+                "drill": match.get("drill_template", ""),
+                "video_focus": match.get("video_focus", technique),
+            })
+
+    return {"weak_skills": weak_skills}
+
+
+@app.get("/api/skills/progress")
+def get_skill_progress() -> dict:
+    try:
+        history = list(mongo.skill_rating_history().find({}, {"_id": 0}).sort("rated_at", 1))
+    except Exception:
+        sr = _get_skill_ratings_json()
+        history = sr.get("history", [])
+    return {"history": history}
+
+
+@app.get("/api/skills/{technique}")
+def get_skill_detail(technique: str) -> dict:
+    taxonomy = _get_sub_skills()
+    if technique not in taxonomy:
+        raise HTTPException(404, f"no skills for {technique}")
+
+    skills = taxonomy[technique]
+    try:
+        ratings = {r["skill_id"]: r for r in mongo.skill_ratings().find({"technique": technique}, {"_id": 0})}
+    except Exception:
+        sr = _get_skill_ratings_json()
+        ratings = {k: {"rating": v["rating"], "notes": v.get("notes", ""), "updated_at": v.get("updated_at", "")} for k, v in sr.get("ratings", {}).items() if k.startswith(f"{technique}.")}
+
+    try:
+        tips = list(mongo.class_tips().find({"technique": technique}, {"_id": 0}))
+    except Exception:
+        tips = []
+
+    sub_skills = []
+    for s in skills:
+        sid = f"{technique}.{s['id']}"
+        r = ratings.get(sid, {})
+        sub_skills.append({
+            **s,
+            "skill_id": sid,
+            "rating": r.get("rating", 0),
+            "notes": r.get("notes", ""),
+            "updated_at": r.get("updated_at", ""),
+        })
+
+    rated = [s["rating"] for s in sub_skills if s["rating"] > 0]
+    return {
+        "technique": technique,
+        "sub_skills": sub_skills,
+        "avg_rating": round(sum(rated) / len(rated), 1) if rated else 0,
+        "class_tips": tips,
+    }
+
+
+class SkillRating(BaseModel):
+    skill_id: str
+    rating: int
+    notes: str = ""
+
+
+class RateRequest(BaseModel):
+    ratings: list[SkillRating]
+    source: str = "self_assessment"
+
+
+@app.post("/api/skills/rate")
+def rate_skills(req: RateRequest) -> dict:
+    now = datetime.now(timezone.utc).isoformat()
+    sr = _get_skill_ratings_json()
+
+    for r in req.ratings:
+        parts = r.skill_id.split(".", 1)
+        if len(parts) != 2:
+            continue
+        technique, sub_skill = parts
+
+        doc = {
+            "skill_id": r.skill_id,
+            "technique": technique,
+            "sub_skill": sub_skill,
+            "rating": r.rating,
+            "notes": r.notes,
+            "updated_at": now,
+            "source": req.source,
+        }
+
+        try:
+            mongo.skill_ratings().update_one(
+                {"skill_id": r.skill_id}, {"$set": doc}, upsert=True,
+            )
+            mongo.skill_rating_history().insert_one({
+                **doc, "rated_at": now,
+            })
+        except Exception:
+            pass
+
+        sr["ratings"][r.skill_id] = {"rating": r.rating, "notes": r.notes, "updated_at": now}
+        sr["history"].append({"skill_id": r.skill_id, "rating": r.rating, "rated_at": now})
+
+    _save_skill_ratings_json(sr)
+    return {"ok": True, "updated": len(req.ratings)}
+
+
+# ── Frames (MongoDB-backed for cloud, filesystem fallback) ────────────
+
+@app.get("/api/frames/{slug}/{filename}")
+def get_frame_from_db(slug: str, filename: str) -> Response:
+    frame_path = DATA / "frames" / slug / filename
+    if frame_path.exists():
+        return FileResponse(frame_path, media_type="image/jpeg")
+    try:
+        doc = mongo.frames().find_one({"slug": slug, "filename": filename})
+        if doc:
+            data = base64.b64decode(doc["data"])
+            return Response(content=data, media_type="image/jpeg")
+    except Exception:
+        pass
+    raise HTTPException(404, "Frame not found")
+
+
+# ── Upload & Cloud Ingest ─────────────────────────────────────────────
+
+UPLOAD_PIN = os.environ.get("UPLOAD_PIN", "")
+UPLOADS = ROOT / "uploads"
+UPLOADS.mkdir(exist_ok=True)
+
+
+@app.get("/upload", response_class=HTMLResponse)
+def upload_page() -> FileResponse:
+    return FileResponse(WEB / "upload.html")
+
+
+@app.post("/api/ingest/upload")
+async def ingest_upload(
+    class_date: str = Form(...),
+    class_number: int = Form(1),
+    pin: str = Form(...),
+    audio: Optional[UploadFile] = File(None),
+    video: Optional[UploadFile] = File(None),
+) -> dict:
+    if not UPLOAD_PIN or pin != UPLOAD_PIN:
+        raise HTTPException(403, "Invalid PIN")
+
+    if not audio and not video:
+        raise HTTPException(400, "No file uploaded")
+
+    audio_path = None
+    video_path = None
+
+    if audio and audio.filename:
+        dest = UPLOADS / f"{class_date}_audio_{audio.filename}"
+        with open(dest, "wb") as f:
+            while chunk := await audio.read(1024 * 1024):
+                f.write(chunk)
+        audio_path = dest
+
+    if video and video.filename:
+        dest = UPLOADS / f"{class_date}_video_{video.filename}"
+        with open(dest, "wb") as f:
+            while chunk := await video.read(1024 * 1024):
+                f.write(chunk)
+        video_path = dest
+
+    from server.ingest_worker import start_ingest
+    job_id = start_ingest(audio_path, video_path, class_date, class_number)
+    return {"job_id": job_id}
+
+
+@app.get("/api/ingest/status/{job_id}")
+def ingest_status(job_id: str) -> dict:
+    from server.ingest_worker import get_job
+    job = get_job(job_id)
+    if not job:
+        raise HTTPException(404, "Job not found")
+    return job
 
 
 if __name__ == "__main__":

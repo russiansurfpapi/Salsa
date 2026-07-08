@@ -6,96 +6,120 @@
 <title>Technique — Salsa</title>
 <style>
   :root {
-    --bg:#1a1a2e; --fg:#e0e0e0; --muted:#8888aa;
-    --accent:#e94560; --accent-dim:rgba(233,69,96,0.15);
-    --ok:#00b894; --panel:#16213e; --panel-2:#1a1a3e; --border:#2a2a4a;
+    --bg:#ffffff; --fg:#1e293b; --muted:#64748b;
+    --accent:#e11d48; --accent-dim:rgba(225,29,72,0.08);
+    --ok:#059669; --panel:#f8fafc; --panel-2:#f1f5f9; --border:#e2e8f0;
   }
   * { box-sizing:border-box; }
   html, body { margin:0; padding:0; background:var(--bg); color:var(--fg); min-height:100vh; }
-  body { font:15px/1.55 -apple-system, BlinkMacSystemFont, system-ui, sans-serif; -webkit-font-smoothing:antialiased; }
+  body { font:17px/1.6 -apple-system, BlinkMacSystemFont, system-ui, sans-serif; -webkit-font-smoothing:antialiased; }
   a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:underline; }
 
   nav.top {
     position:sticky; top:0; z-index:10; display:flex; align-items:center; gap:24px;
-    padding:12px 40px; background:rgba(26,26,46,0.95); backdrop-filter:blur(8px);
-    border-bottom:1px solid var(--border); font-size:13px;
+    padding:12px 40px; background:rgba(255,255,255,0.95); backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--border); font-size:15px;
   }
-  nav.top .brand { font-weight:700; color:var(--accent); font-size:16px; }
+  nav.top .brand { font-weight:700; color:var(--accent); font-size:18px; }
   nav.top a { color:var(--muted); } nav.top a:hover { color:var(--fg); }
   nav.top .spacer { flex:1; }
 
   main { max-width:840px; margin:0 auto; padding:40px 24px 100px; }
-  .back { font-size:13px; color:var(--muted); margin-bottom:16px; display:inline-block; }
+  .back { font-size:14px; color:var(--muted); margin-bottom:16px; display:inline-block; }
   h1 { font-size:28px; font-weight:400; margin:0 0 6px; } h1 em { color:var(--accent); font-style:normal; }
 
   .section-label {
-    font-size:11px; text-transform:uppercase; letter-spacing:0.15em;
+    font-size:13px; text-transform:uppercase; letter-spacing:0.12em;
     color:var(--accent); font-weight:600; margin:28px 0 12px;
     padding-bottom:6px; border-bottom:1px solid var(--border);
   }
 
-  /* Steps */
   .step-list { list-style:none; padding:0; margin:0; counter-reset:step; }
   .step-list li {
     counter-increment:step; padding:10px 14px 10px 48px; position:relative;
-    background:var(--panel); border-radius:6px; margin-bottom:6px; font-size:14px; line-height:1.6;
+    background:var(--panel); border-radius:6px; margin-bottom:6px; font-size:15px; line-height:1.6;
   }
   .step-list li::before {
     content:counter(step); position:absolute; left:14px; top:10px;
     width:24px; height:24px; border-radius:50%; background:var(--accent);
-    color:#fff; font-weight:700; font-size:12px;
+    color:#fff; font-weight:700; font-size:13px;
     display:flex; align-items:center; justify-content:center;
   }
 
-  /* Mistakes / details */
-  .detail-card { background:var(--panel); border-radius:8px; padding:12px 16px; margin-bottom:8px; font-size:14px; }
-  .detail-card.mistake { border-left:3px solid #e94560; }
+  .detail-card { background:var(--panel); border-radius:8px; padding:12px 16px; margin-bottom:8px; font-size:15px; }
+  .detail-card.mistake { border-left:3px solid var(--accent); }
   .detail-card.tip { border-left:3px solid var(--ok); }
-  .detail-card .label { font-size:11px; text-transform:uppercase; letter-spacing:0.08em; color:var(--muted); margin-bottom:4px; }
+  .detail-card .label { font-size:12px; text-transform:uppercase; letter-spacing:0.08em; color:var(--muted); margin-bottom:4px; }
 
-  /* Videos */
-  .video-card { background:var(--panel); border-radius:8px; overflow:hidden; margin-bottom:12px; cursor:pointer; border:1px solid var(--border); }
-  .video-card:hover { border-color:var(--accent); }
-  .video-card .vc-header { padding:12px 16px; display:flex; align-items:center; gap:10px; }
-  .video-card .vc-channel { font-size:11px; color:var(--muted); background:var(--panel-2); padding:2px 8px; border-radius:4px; }
-  .video-card .vc-title { font-weight:600; font-size:14px; flex:1; }
-  .video-card .vc-body { display:none; padding:0 16px 16px; }
-  .video-card.open .vc-body { display:block; }
-  .video-card video, .video-card iframe { width:100%; border-radius:6px; background:#000; }
-  .video-card .vc-note { font-size:13px; color:var(--muted); margin-top:8px; }
+  .video-card { background:var(--panel); border-radius:8px; overflow:hidden; margin-bottom:12px; border:1px solid var(--border); }
+  .video-card iframe { width:100%; aspect-ratio:16/9; border:none; display:block; }
+  .video-card video { width:100%; border:none; display:block; background:#000; }
+  .video-card .vc-info { padding:12px 16px; }
+  .video-card .vc-channel { font-size:13px; color:var(--muted); background:var(--panel-2); padding:2px 8px; border-radius:4px; display:inline-block; margin-left:8px; }
+  .video-card .vc-title { font-weight:600; font-size:15px; }
+  .video-card .vc-note { font-size:14px; color:var(--muted); margin-top:4px; }
 
-  /* Quiz inline */
   .quiz-card {
     background:var(--panel); border:1px solid var(--border); border-radius:8px;
     padding:16px; margin-bottom:10px;
   }
-  .quiz-card .q { font-weight:600; font-size:15px; margin-bottom:10px; }
-  .quiz-card .a { display:none; padding:10px 14px; background:var(--accent-dim); border-radius:6px; font-size:14px; }
+  .quiz-card .q { font-weight:600; font-size:16px; margin-bottom:10px; }
+  .quiz-card .a { display:none; padding:10px 14px; background:rgba(5,150,105,0.08); border-radius:6px; font-size:15px; }
   .quiz-card.revealed .a { display:block; }
   .quiz-card .reveal-btn {
     background:var(--accent); color:#fff; border:none; padding:6px 16px;
-    border-radius:4px; font:600 12px/1 inherit; cursor:pointer;
+    border-radius:4px; font:600 13px/1 inherit; cursor:pointer;
   }
   .quiz-card.revealed .reveal-btn { display:none; }
   .quiz-card .rate-btns { display:none; margin-top:8px; gap:6px; }
   .quiz-card.revealed .rate-btns { display:flex; }
-  .rate-btn { padding:4px 12px; border:1px solid var(--border); border-radius:4px; background:transparent; color:var(--fg); font:12px/1 inherit; cursor:pointer; }
+  .rate-btn { padding:4px 12px; border:1px solid var(--border); border-radius:4px; background:transparent; color:var(--fg); font:13px/1 inherit; cursor:pointer; }
   .rate-btn:hover { background:var(--panel-2); }
   .rate-btn.good { border-color:var(--ok); color:var(--ok); }
   .rate-btn.bad { border-color:var(--accent); color:var(--accent); }
 
-  /* Connections */
   .connect-chip {
-    display:inline-block; padding:4px 12px; border-radius:16px; font-size:12px; font-weight:500;
+    display:inline-block; padding:4px 12px; border-radius:16px; font-size:14px; font-weight:500;
     background:var(--accent-dim); color:var(--accent); margin:2px;
   }
+
+  .skill-section { margin:28px 0; }
+  .skill-avg { font-size:14px; color:var(--muted); margin-bottom:12px; }
+  .skill-avg strong { color:var(--fg); font-size:16px; }
+  .skill-row { display:flex; align-items:center; gap:12px; padding:10px 14px; background:var(--panel); border-radius:8px; margin-bottom:6px; }
+  .skill-info { flex:1; min-width:0; }
+  .skill-name { font-weight:600; font-size:15px; }
+  .skill-desc { font-size:13px; color:var(--muted); line-height:1.4; }
+  .skill-dots { display:flex; gap:5px; flex-shrink:0; }
+  .skill-dot {
+    width:22px; height:22px; border-radius:50%; border:2px solid var(--border);
+    cursor:pointer; transition:all 0.15s; position:relative;
+  }
+  .skill-dot:hover { border-color:var(--ok); transform:scale(1.15); }
+  .skill-dot.filled { background:var(--ok); border-color:var(--ok); }
+  .skill-dot.filled-weak { background:var(--accent); border-color:var(--accent); }
+  .skill-dot.filled-mid { background:var(--warn, #d97706); border-color:var(--warn, #d97706); }
+  .skill-drill { margin:6px 0 0 0; padding:8px 12px; background:rgba(225,29,72,0.06); border-left:3px solid var(--accent); border-radius:0 6px 6px 0; font-size:14px; line-height:1.5; color:var(--fg); }
+  .skill-drill-label { font-size:11px; text-transform:uppercase; letter-spacing:0.08em; color:var(--accent); font-weight:700; margin-bottom:2px; }
+
+  .class-tip { background:var(--panel); border-left:3px solid #7c3aed; border-radius:0 6px 6px 0; padding:10px 14px; margin-bottom:8px; font-size:15px; line-height:1.6; }
+  .class-tip .ct-meta { font-size:12px; color:var(--muted); margin-top:4px; }
+  .class-tip .ct-context { font-size:14px; color:var(--muted); margin-top:4px; }
+  .class-group-date { font-size:14px; font-weight:600; color:#7c3aed; margin:16px 0 8px; }
+
+  .cvb-step { display:flex; gap:14px; padding:12px; background:var(--panel); border:1px solid var(--border); border-radius:8px; margin-bottom:8px; }
+  .cvb-step img { width:140px; height:105px; object-fit:cover; border-radius:6px; flex-shrink:0; }
+  .cvb-step .cvb-num { width:26px; height:26px; border-radius:50%; background:#7c3aed; color:#fff; font-weight:700; font-size:12px; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+  .cvb-step .cvb-instr { font-size:15px; line-height:1.5; margin-top:4px; }
+  .cvb-step .cvb-tip { font-size:14px; color:var(--ok); margin-top:3px; font-style:italic; }
+  .cvb-combo-link { display:inline-block; padding:6px 14px; border-radius:6px; font-size:13px; font-weight:600; background:rgba(124,58,237,0.08); color:#7c3aed; margin-top:8px; }
 </style>
 </head>
 <body>
 
 <nav class="top">
   <span class="brand">salsa.</span>
-  <a href="/">Home</a> <a href="/practice">Practice</a> <a href="/quiz">Quiz</a> <a href="/notes">Notes</a> <a href="/classes">Classes</a>
+  <a href="/">Home</a> <a href="/practice">Practice</a> <a href="/quiz">Quiz</a> <a href="/notes">Notes</a> <a href="/classes">Classes</a> <a href="/progress">Progress</a>
   <span class="spacer"></span>
 </nav>
 
@@ -106,19 +130,25 @@ const slug = location.pathname.split('/').pop();
 
 async function load() {
   try {
-    const res = await fetch(`/api/technique/${slug}`);
-    if (!res.ok) throw new Error();
-    render(await res.json());
+    const [techRes, tipsRes, skillsRes] = await Promise.all([
+      fetch(`/api/technique/${slug}`),
+      fetch(`/api/technique/${slug}/class-tips`).catch(() => null),
+      fetch(`/api/skills/${slug}`).catch(() => null),
+    ]);
+    if (!techRes.ok) throw new Error();
+    const tech = await techRes.json();
+    const classTips = tipsRes && tipsRes.ok ? await tipsRes.json() : [];
+    const skills = skillsRes && skillsRes.ok ? await skillsRes.json() : null;
+    render(tech, classTips, skills);
   } catch {
     document.getElementById('app').innerHTML = '<p style="color:var(--accent)">Technique not found.</p>';
   }
 }
 
-function render(d) {
+function render(d, classTips, skills) {
   let html = `<a class="back" href="/">&larr; All techniques</a>`;
   html += `<h1><em>${esc(d.name)}</em></h1>`;
 
-  // Breakdown
   if (d.breakdown && d.breakdown.length) {
     html += '<div class="section-label">Step by step</div>';
     html += '<ol class="step-list">';
@@ -126,38 +156,95 @@ function render(d) {
     html += '</ol>';
   }
 
-  // Key details
   if (d.key_details && d.key_details.length) {
     html += '<div class="section-label">Key details</div>';
     for (const tip of d.key_details) html += `<div class="detail-card tip"><div class="label">Remember</div>${esc(tip)}</div>`;
   }
 
-  // Common mistakes
+  if (skills && skills.sub_skills && skills.sub_skills.length) {
+    html += '<div class="section-label">Your skill ratings</div>';
+    if (skills.avg_rating > 0) {
+      html += `<div class="skill-avg">Overall: <strong>${skills.avg_rating}</strong> / 5</div>`;
+    }
+    html += '<div class="skill-section">';
+    for (const s of skills.sub_skills) {
+      const r = s.rating || 0;
+      html += `<div class="skill-row" id="sr-${esc(s.skill_id)}">`;
+      html += '<div class="skill-info">';
+      html += `<div class="skill-name">${esc(s.name)}</div>`;
+      html += `<div class="skill-desc">${esc(s.description)}</div>`;
+      html += '</div>';
+      html += '<div class="skill-dots">';
+      for (let i = 1; i <= 5; i++) {
+        let cls = 'skill-dot';
+        if (i <= r) cls += r <= 2 ? ' filled-weak' : r <= 3 ? ' filled-mid' : ' filled';
+        html += `<div class="${cls}" data-skill="${esc(s.skill_id)}" data-val="${i}" onclick="rateSkill(this)" title="${['','Haven\\'t tried','Know but can\\'t execute','Getting it sometimes','Feels natural','Automatic'][i]}"></div>`;
+      }
+      html += '</div></div>';
+      if (r > 0 && r <= 2 && s.drill_template) {
+        html += `<div class="skill-drill"><div class="skill-drill-label">Practice this</div>${esc(s.drill_template)}</div>`;
+      }
+    }
+    html += '</div>';
+  }
+
+  if (classTips && classTips.length) {
+    html += '<div class="section-label" style="color:#7c3aed;border-bottom-color:#7c3aed">From your classes</div>';
+    const byDate = {};
+    for (const t of classTips) {
+      const key = t.class_date || 'unknown';
+      (byDate[key] = byDate[key] || []).push(t);
+    }
+    for (const [date, tips] of Object.entries(byDate)) {
+      const num = tips[0]?.class_number;
+      html += `<div class="class-group-date"><a href="/classes/${esc(date)}">Class ${num ? '#' + num + ' — ' : ''}${esc(date)}</a></div>`;
+      for (const t of tips) {
+        html += `<div class="class-tip">${esc(t.tip)}`;
+        if (t.context) html += `<div class="ct-context">${esc(t.context)}</div>`;
+        html += '</div>';
+      }
+    }
+  }
+
+  if (d.class_video_breakdown) {
+    const cvb = d.class_video_breakdown;
+    html += '<div class="section-label" style="color:#7c3aed;border-bottom-color:#7c3aed">From your class video</div>';
+    html += `<div style="font-size:14px;color:var(--muted);margin-bottom:12px"><a href="/classes/${esc(cvb.class_date)}" style="color:#7c3aed">${esc(cvb.class_date)}</a> — ${esc(cvb.description || '')}</div>`;
+    for (const s of (cvb.steps || [])) {
+      html += '<div class="cvb-step">';
+      if (s.frame_url) html += `<img src="${s.frame_url}" alt="Step ${s.step_number}" loading="lazy">`;
+      html += '<div>';
+      html += `<div style="display:flex;align-items:center;gap:8px"><span class="cvb-num">${s.step_number}</span><span style="font-size:13px;color:var(--muted)">${esc(s.timestamp)} — count ${esc(s.count)}</span></div>`;
+      html += `<div class="cvb-instr">${esc(s.instruction)}</div>`;
+      if (s.instructor_tip) html += `<div class="cvb-tip">"${esc(s.instructor_tip)}"</div>`;
+      html += '</div></div>';
+    }
+    if (cvb.all_steps && cvb.all_steps.length > (cvb.steps || []).length) {
+      html += `<a class="cvb-combo-link" href="/classes/${esc(cvb.class_date)}">See full combo (${cvb.all_steps.length} steps) &rarr;</a>`;
+    }
+  }
+
   if (d.common_mistakes && d.common_mistakes.length) {
     html += '<div class="section-label">Common mistakes</div>';
     for (const m of d.common_mistakes) html += `<div class="detail-card mistake"><div class="label">Watch out</div>${esc(m)}</div>`;
   }
 
-  // Videos
   if (d.videos && d.videos.length) {
     html += '<div class="section-label">Watch & learn</div>';
     for (const v of d.videos) {
-      const vid = 'v-' + Math.random().toString(36).slice(2,6);
       const ytId = v.url?.match(/v=([^&]+)/)?.[1];
-      html += `<div class="video-card" id="${vid}" onclick="toggleVideo('${vid}')">`;
-      html += `<div class="vc-header"><span class="vc-title">${esc(v.title)}</span><span class="vc-channel">${esc(v.channel)}</span></div>`;
-      html += '<div class="vc-body">';
+      html += '<div class="video-card">';
       if (v.local_url) {
         html += `<video controls preload="none"><source src="${v.local_url}" type="video/mp4"></video>`;
       } else if (ytId) {
-        html += `<iframe width="100%" height="360" src="https://www.youtube.com/embed/${ytId}" frameborder="0" allowfullscreen></iframe>`;
+        html += `<iframe src="https://www.youtube.com/embed/${ytId}" allowfullscreen loading="lazy"></iframe>`;
       }
+      html += `<div class="vc-info"><span class="vc-title">${esc(v.title)}</span><span class="vc-channel">${esc(v.channel)}</span>`;
       if (v.note) html += `<div class="vc-note">${esc(v.note)}</div>`;
       html += '</div></div>';
     }
   }
 
-  // Quiz
   if (d.flashcards && d.flashcards.length) {
     html += '<div class="section-label">Test yourself</div>';
     for (let i = 0; i < d.flashcards.length; i++) {
@@ -175,32 +262,31 @@ function render(d) {
     }
   }
 
-  // Multi-instructor transcript walkthrough with screenshots
   if (d.transcripts && d.transcripts.length) {
-    html += '<div class="section-label">Instructor walkthroughs (with screenshots)</div>';
+    html += '<div class="section-label">Instructor walkthroughs</div>';
     for (const tr of d.transcripts) {
       if (!tr.sections || !tr.sections.length) continue;
       html += `<div style="margin-bottom:24px">`;
-      html += `<div style="font-weight:600;font-size:15px;margin-bottom:8px">${esc(tr.instructor)} — ${esc(tr.title)}</div>`;
+      html += `<div style="font-weight:600;font-size:16px;margin-bottom:8px">${esc(tr.instructor)} — ${esc(tr.title)}</div>`;
       for (let i = 0; i < tr.sections.length; i++) {
         const sec = tr.sections[i];
         if (!sec.text || sec.text.length < 20) continue;
         html += `<div style="margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid var(--border)">`;
         html += `<div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">`;
-        html += `<span style="font-size:11px;font-weight:700;color:var(--accent);background:var(--accent-dim);padding:2px 8px;border-radius:4px">${i + 1}</span>`;
-        if (sec.start) html += `<span style="font-size:12px;color:var(--muted)">${fmtTime(sec.start)}</span>`;
+        html += `<span style="font-size:13px;font-weight:700;color:var(--accent);background:var(--accent-dim);padding:2px 8px;border-radius:4px">${i + 1}</span>`;
+        if (sec.start) html += `<span style="font-size:14px;color:var(--muted)">${fmtTime(sec.start)}</span>`;
         html += '</div>';
         if (sec.steps && sec.steps.length) {
-          html += '<ul style="margin:6px 0 10px;padding-left:20px;font-size:14px;line-height:1.7">';
+          html += '<ul style="margin:6px 0 10px;padding-left:20px;font-size:15px;line-height:1.7">';
           for (const s of sec.steps) html += `<li style="margin-bottom:3px">${esc(s)}</li>`;
           html += '</ul>';
         }
         if (sec.frame_url) html += `<img src="${sec.frame_url}" alt="Step ${i+1}" loading="lazy" style="width:100%;max-width:520px;border-radius:6px;margin-bottom:8px">`;
         if (sec.text && sec.text.length > 50) {
           if (sec.steps && sec.steps.length) {
-            html += `<details style="margin-top:6px"><summary style="font-size:12px;color:var(--muted);cursor:pointer;font-weight:600;text-transform:uppercase;letter-spacing:0.08em">Full transcript</summary><div style="font-size:13px;line-height:1.6;color:var(--muted);margin-top:6px">${esc(sec.text)}</div></details>`;
+            html += `<details style="margin-top:6px"><summary style="font-size:13px;color:var(--muted);cursor:pointer;font-weight:600;text-transform:uppercase;letter-spacing:0.08em">Full transcript</summary><div style="font-size:14px;line-height:1.6;color:var(--muted);margin-top:6px">${esc(sec.text)}</div></details>`;
           } else {
-            html += `<div style="font-size:14px;line-height:1.7;color:var(--fg)">${esc(sec.text)}</div>`;
+            html += `<div style="font-size:15px;line-height:1.7;color:var(--fg)">${esc(sec.text)}</div>`;
           }
         }
         html += '</div>';
@@ -209,7 +295,6 @@ function render(d) {
     }
   }
 
-  // Visual cues (from breakdown_detail)
   if (d.breakdown_detail) {
     const bd = d.breakdown_detail;
     if (bd.visual_cues && bd.visual_cues.length) {
@@ -223,7 +308,7 @@ function render(d) {
     if (bd.instructor_breakdowns && bd.instructor_breakdowns.length) {
       html += '<div class="section-label">What each instructor emphasizes</div>';
       for (const ib of bd.instructor_breakdowns) {
-        html += `<div style="margin-bottom:12px"><div style="font-weight:600;font-size:14px;color:var(--accent);margin-bottom:6px">${esc(ib.instructor)}</div>`;
+        html += `<div style="margin-bottom:12px"><div style="font-weight:600;font-size:15px;color:var(--accent);margin-bottom:6px">${esc(ib.instructor)}</div>`;
         if (ib.tips && ib.tips.length) {
           for (const tip of ib.tips) html += `<div class="detail-card" style="border-left:3px solid var(--border);margin-bottom:4px">${esc(tip)}</div>`;
         }
@@ -232,7 +317,6 @@ function render(d) {
     }
   }
 
-  // Connects to
   if (d.connects_to && d.connects_to.length) {
     html += '<div class="section-label">Builds into</div>';
     for (const c of d.connects_to) {
@@ -244,14 +328,25 @@ function render(d) {
   document.getElementById('app').innerHTML = html;
 }
 
-function toggleVideo(id) {
-  const el = document.getElementById(id);
-  const wasOpen = el.classList.contains('open');
-  el.classList.toggle('open');
-  if (wasOpen) {
-    const vid = el.querySelector('video');
-    if (vid) vid.pause();
-  }
+async function rateSkill(el) {
+  const skillId = el.dataset.skill;
+  const val = parseInt(el.dataset.val);
+  const row = el.closest('.skill-row');
+  const dots = row.querySelectorAll('.skill-dot');
+  dots.forEach((dot, i) => {
+    dot.className = 'skill-dot';
+    if (i < val) dot.classList.add(val <= 2 ? 'filled-weak' : val <= 3 ? 'filled-mid' : 'filled');
+  });
+  // Remove old drill or add new one
+  const nextEl = row.nextElementSibling;
+  if (nextEl && nextEl.classList.contains('skill-drill')) nextEl.remove();
+  try {
+    await fetch('/api/skills/rate', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({ratings: [{skill_id: skillId, rating: val}]}),
+    });
+  } catch {}
 }
 
 function fmtTime(s) { return `${Math.floor(s/60)}:${Math.floor(s%60).toString().padStart(2,'0')}`; }

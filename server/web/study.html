@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Study Guide — Salsa</title>
+<style>
+  :root {
+    --bg:#ffffff; --fg:#1e293b; --muted:#64748b;
+    --accent:#e11d48; --accent-dim:rgba(225,29,72,0.08);
+    --ok:#059669; --ok-dim:rgba(5,150,105,0.08);
+    --purple:#7c3aed; --purple-dim:rgba(124,58,237,0.08);
+    --panel:#f8fafc; --border:#e2e8f0;
+    --warn:#d97706;
+  }
+  * { box-sizing:border-box; }
+  html, body { margin:0; padding:0; background:var(--bg); color:var(--fg); min-height:100vh; }
+  body { font:17px/1.6 -apple-system, BlinkMacSystemFont, system-ui, sans-serif; }
+  a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:underline; }
+
+  nav.top {
+    position:sticky; top:0; z-index:10; display:flex; align-items:center; gap:24px;
+    padding:12px 40px; background:rgba(255,255,255,0.95); backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--border); font-size:15px;
+  }
+  nav.top .brand { font-weight:700; color:var(--accent); font-size:18px; }
+  nav.top a { color:var(--muted); } nav.top a:hover { color:var(--fg); }
+  nav.top .spacer { flex:1; }
+
+  main { max-width:800px; margin:0 auto; padding:40px 24px 100px; }
+  .back { font-size:14px; color:var(--muted); margin-bottom:16px; display:inline-block; }
+  h1 { font-size:28px; font-weight:400; margin:0 0 4px; } h1 em { color:var(--accent); font-style:normal; }
+  .subtitle { color:var(--muted); font-size:15px; margin:0 0 24px; }
+
+  .part-label {
+    font-size:11px; text-transform:uppercase; letter-spacing:0.15em;
+    color:#fff; font-weight:700; background:var(--accent); padding:4px 12px;
+    border-radius:4px; display:inline-block; margin:36px 0 8px;
+  }
+  .section-label {
+    font-size:13px; text-transform:uppercase; letter-spacing:0.12em;
+    color:var(--accent); font-weight:600; margin:28px 0 12px;
+    padding-bottom:6px; border-bottom:1px solid var(--border);
+  }
+  .section-label.purple { color:var(--purple); border-bottom-color:var(--purple); }
+
+  .tech-block { margin-bottom:32px; }
+  .tech-header { display:flex; align-items:baseline; gap:10px; margin-bottom:4px; }
+  .tech-name { font-size:20px; font-weight:600; }
+  .tech-tag { font-size:14px; color:var(--muted); font-style:italic; }
+  .tech-what { font-size:15px; color:var(--fg); margin-bottom:12px; line-height:1.6; }
+
+  .mech-step { display:flex; gap:10px; padding:8px 12px; background:var(--panel); border-radius:6px; margin-bottom:4px; font-size:15px; }
+  .mech-count { font-weight:700; color:var(--accent); min-width:60px; flex-shrink:0; }
+
+  .arm-step { display:flex; gap:10px; padding:6px 12px; background:var(--purple-dim); border-radius:6px; margin-bottom:4px; font-size:14px; }
+  .arm-count { font-weight:700; color:var(--purple); min-width:60px; flex-shrink:0; }
+
+  .quote-block { border-left:3px solid var(--ok); padding:8px 14px; margin:8px 0; background:var(--ok-dim); border-radius:0 6px 6px 0; font-size:15px; font-style:italic; color:var(--fg); }
+
+  .frame-strip { display:flex; gap:8px; overflow-x:auto; padding:8px 0; margin:12px 0; }
+  .frame-card { flex-shrink:0; width:200px; }
+  .frame-card img { width:200px; height:150px; object-fit:cover; border-radius:6px; }
+  .frame-card .fc-cap { font-size:12px; color:var(--muted); margin-top:4px; line-height:1.4; }
+
+  .error-card { background:var(--accent-dim); border-left:3px solid var(--accent); padding:10px 14px; border-radius:0 6px 6px 0; font-size:15px; margin:8px 0; }
+  .error-card .ec-label { font-size:11px; text-transform:uppercase; letter-spacing:0.08em; color:var(--accent); font-weight:700; margin-bottom:2px; }
+
+  .drill-card { background:var(--panel); border:1px solid var(--border); border-radius:8px; padding:14px 18px; margin-bottom:8px; }
+  .drill-card .dc-name { font-weight:600; font-size:15px; margin-bottom:4px; }
+  .drill-card .dc-time { font-size:13px; color:var(--muted); margin-bottom:6px; }
+  .drill-card .dc-text { font-size:15px; line-height:1.6; white-space:pre-wrap; }
+
+  .vid-embed { background:var(--panel); border:1px solid var(--border); border-radius:8px; margin-bottom:10px; overflow:hidden; }
+  .vid-embed iframe { width:100%; aspect-ratio:16/9; border:none; display:block; }
+  .vid-embed .ve-info { padding:10px 14px; }
+  .vid-embed .ve-title { font-weight:600; font-size:14px; }
+  .vid-embed .ve-channel { font-size:13px; color:var(--muted); }
+  .vid-embed .ve-why { font-size:13px; color:var(--ok); margin-top:2px; }
+
+  .choreo-table { width:100%; border-collapse:collapse; margin:12px 0; font-size:14px; }
+  .choreo-table th { text-align:left; padding:8px 10px; background:var(--panel); border-bottom:2px solid var(--border); font-size:12px; text-transform:uppercase; letter-spacing:0.08em; color:var(--muted); }
+  .choreo-table td { padding:8px 10px; border-bottom:1px solid var(--border); vertical-align:top; }
+  .choreo-table td:first-child { font-weight:700; color:var(--accent); white-space:nowrap; }
+  .choreo-table td img { width:80px; height:60px; object-fit:cover; border-radius:4px; }
+
+  .transition-card { background:var(--purple-dim); border-left:3px solid var(--purple); padding:10px 14px; border-radius:0 6px 6px 0; margin-bottom:8px; }
+  .transition-card .tc-label { font-size:12px; font-weight:700; color:var(--purple); text-transform:uppercase; letter-spacing:0.06em; margin-bottom:2px; }
+
+  .key-frames { display:flex; gap:12px; flex-wrap:wrap; margin:12px 0; }
+  .kf-card { width:150px; text-align:center; }
+  .kf-card img { width:150px; height:112px; object-fit:cover; border-radius:6px; border:2px solid var(--border); }
+  .kf-card .kf-label { font-size:13px; font-weight:600; color:var(--accent); margin-top:4px; }
+  .kf-card .kf-desc { font-size:12px; color:var(--muted); }
+
+  .link-bar { display:flex; gap:8px; flex-wrap:wrap; margin:20px 0; }
+  .link-bar a { padding:8px 16px; border-radius:6px; font-size:14px; font-weight:600; background:var(--accent-dim); color:var(--accent); }
+  .link-bar a:hover { background:var(--accent); color:#fff; text-decoration:none; }
+
+  .loading { text-align:center; padding:40px; color:var(--muted); }
+</style>
+</head>
+<body>
+
+<nav class="top">
+  <span class="brand">salsa.</span>
+  <a href="/">Home</a> <a href="/practice">Practice</a> <a href="/quiz">Quiz</a> <a href="/notes">Notes</a> <a href="/classes">Classes</a> <a href="/progress">Progress</a>
+  <span class="spacer"></span>
+</nav>
+
+<main><div id="app"><div class="loading">Loading study guide...</div></div></main>
+
+<script>
+const classDate = location.pathname.split('/').pop();
+
+async function load() {
+  try {
+    const res = await fetch(`/api/study/${classDate}`);
+    if (!res.ok) throw new Error();
+    render(await res.json());
+  } catch {
+    document.getElementById('app').innerHTML = '<p style="color:var(--accent)">Study guide not found.</p>';
+  }
+}
+
+function render(d) {
+  const vs = d.video_slug;
+  let html = `<a class="back" href="/classes/${esc(d.class_date)}">&larr; Class #${d.class_number}</a>`;
+  html += `<h1><em>${esc(d.title)}</em></h1>`;
+  html += `<p class="subtitle">${esc(d.subtitle)}</p>`;
+
+  html += '<div class="link-bar">';
+  html += `<a href="/classes/${esc(d.class_date)}">Class notes</a>`;
+  html += '<a href="/practice">Practice drills</a>';
+  for (const t of d.techniques || []) html += `<a href="/technique/${esc(t.slug)}">${esc(t.name)}</a>`;
+  html += '</div>';
+
+  // Part 1: Techniques
+  html += '<div class="part-label">Part 1</div>';
+  html += '<h2 style="margin:0 0 20px;font-size:22px;font-weight:400">The Techniques</h2>';
+
+  for (const t of d.techniques || []) {
+    html += '<div class="tech-block">';
+    html += `<div class="tech-header"><span class="tech-name">${esc(t.name)}</span><span class="tech-tag">${esc(t.tagline)}</span></div>`;
+    html += `<div class="tech-what">${esc(t.what)}</div>`;
+
+    if (t.mechanics && t.mechanics.length) {
+      html += '<div class="section-label">Mechanics</div>';
+      for (const m of t.mechanics) html += `<div class="mech-step"><span class="mech-count">${esc(m.counts)}</span><span>${esc(m.action)}</span></div>`;
+    }
+
+    if (t.arm_styling && t.arm_styling.length) {
+      html += '<div class="section-label purple">Arm styling</div>';
+      for (const a of t.arm_styling) html += `<div class="arm-step"><span class="arm-count">${esc(a.counts)}</span><span>${esc(a.action)}</span></div>`;
+    }
+
+    if (t.instructor_quotes && t.instructor_quotes.length) {
+      for (const q of t.instructor_quotes) html += `<div class="quote-block">"${esc(q)}"</div>`;
+    }
+
+    if (t.frames && t.frames.length) {
+      html += '<div class="frame-strip">';
+      for (const f of t.frames) {
+        html += `<div class="frame-card"><img src="/api/frames/${vs}/${esc(f.frame)}" loading="lazy" alt="${esc(f.caption)}"><div class="fc-cap">${esc(f.caption)}</div></div>`;
+      }
+      html += '</div>';
+    }
+
+    if (t.common_error) {
+      html += `<div class="error-card"><div class="ec-label">Common mistake</div>${esc(t.common_error)}</div>`;
+    }
+
+    if (t.drill) {
+      html += `<div class="drill-card"><div class="dc-name">Drill</div><div class="dc-text">${esc(t.drill)}</div></div>`;
+    }
+
+    if (t.videos && t.videos.length) {
+      html += '<div style="margin-top:12px">';
+      for (const v of t.videos) {
+        const ytId = v.url?.match(/v=([^&]+)/)?.[1];
+        html += '<div class="vid-embed">';
+        if (ytId) html += `<iframe src="https://www.youtube.com/embed/${ytId}" allowfullscreen loading="lazy"></iframe>`;
+        html += `<div class="ve-info"><div class="ve-title">${esc(v.title)}</div><div class="ve-channel">${esc(v.channel)}</div>`;
+        if (v.why) html += `<div class="ve-why">${esc(v.why)}</div>`;
+        html += '</div></div>';
+      }
+      html += '</div>';
+    }
+
+    html += '</div>';
+  }
+
+  // Part 2: Choreography
+  const ch = d.choreography;
+  if (ch) {
+    html += '<div class="part-label">Part 2</div>';
+    html += '<h2 style="margin:0 0 8px;font-size:22px;font-weight:400">The Choreography — Frame by Frame</h2>';
+    html += `<p style="font-size:14px;color:var(--muted);margin:0 0 16px;font-family:monospace;background:var(--panel);padding:10px 14px;border-radius:6px;overflow-x:auto;white-space:nowrap">${esc(ch.sequence)}</p>`;
+
+    // Render phases
+    for (const phase of ch.phases || []) {
+      html += `<div class="section-label purple">${esc(phase.name)}</div>`;
+      html += `<div style="font-size:13px;color:var(--muted);margin:-8px 0 12px">${esc(phase.time)}</div>`;
+
+      for (const s of phase.steps || []) {
+        html += '<div style="display:flex;gap:14px;padding:12px;background:var(--panel);border:1px solid var(--border);border-radius:8px;margin-bottom:8px">';
+        if (s.frame) html += `<img src="/api/frames/${vs}/${esc(s.frame)}" loading="lazy" style="width:160px;height:120px;object-fit:cover;border-radius:6px;flex-shrink:0">`;
+        html += '<div style="flex:1;min-width:0">';
+        html += `<div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">`;
+        html += `<span style="font-weight:700;font-size:14px;color:var(--accent);background:var(--accent-dim);padding:2px 8px;border-radius:4px">${esc(s.counts)}</span>`;
+        html += `<span style="font-weight:600;font-size:15px">${esc(s.move)}</span>`;
+        html += `<span style="font-size:12px;color:var(--muted)">${esc(s.time)}</span>`;
+        html += '</div>';
+        html += `<div style="font-size:15px;line-height:1.5;margin-top:4px">${esc(s.body)}</div>`;
+        if (s.cue) html += `<div style="font-size:14px;color:var(--ok);margin-top:3px;font-style:italic">"${esc(s.cue)}"</div>`;
+        html += '</div></div>';
+      }
+    }
+
+    // Fallback for old format
+    if (!ch.phases && ch.steps) {
+      html += '<table class="choreo-table"><thead><tr><th>Counts</th><th>Move</th><th>Frame</th><th>Instruction</th></tr></thead><tbody>';
+      for (const s of ch.steps) {
+        html += `<tr><td>${esc(s.counts)}</td><td>${esc(s.move)}</td><td>${s.frame ? '<img src="/api/frames/' + vs + '/' + esc(s.frame) + '" loading="lazy">' : ''}</td><td>${esc(s.instruction)}</td></tr>`;
+      }
+      html += '</tbody></table>';
+    }
+
+    if (ch.hard_transitions && ch.hard_transitions.length) {
+      html += '<div class="section-label purple">Hard transitions</div>';
+      for (const t of ch.hard_transitions) {
+        html += `<div class="transition-card"><div class="tc-label">${esc(t.from)} → ${esc(t.to)} (frames ${esc(t.frames)})</div>${esc(t.why)}</div>`;
+      }
+    }
+  }
+
+  // Part 3: Practice
+  const pr = d.practice;
+  if (pr) {
+    html += '<div class="part-label">Part 3</div>';
+    html += `<h2 style="margin:0 0 16px;font-size:22px;font-weight:400">Practice Drill (${pr.total_minutes} min)</h2>`;
+
+    for (const sec of pr.sections || []) {
+      html += `<div class="section-label">${esc(sec.name)} (${sec.minutes} min)</div>`;
+      for (const dr of sec.drills || []) {
+        html += `<div class="drill-card"><div class="dc-name">${esc(dr.name)}</div>`;
+        if (dr.minutes) html += `<div class="dc-time">${dr.minutes} min</div>`;
+        html += `<div class="dc-text">${esc(dr.instructions)}</div></div>`;
+      }
+    }
+  }
+
+  // Key frames
+  if (d.key_frames && d.key_frames.length) {
+    html += '<div class="section-label">Key frames to study</div>';
+    html += '<div class="key-frames">';
+    for (const kf of d.key_frames) {
+      html += `<div class="kf-card"><img src="/api/frames/${vs}/${esc(kf.frame)}" loading="lazy"><div class="kf-label">${esc(kf.label)}</div><div class="kf-desc">${esc(kf.description)}</div></div>`;
+    }
+    html += '</div>';
+  }
+
+  document.getElementById('app').innerHTML = html;
+}
+
+function esc(s) { if (!s) return ''; const d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+load();
+</script>
+</body>
+</html>

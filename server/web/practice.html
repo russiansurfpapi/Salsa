@@ -6,21 +6,21 @@
 <title>Practice — Salsa</title>
 <style>
   :root {
-    --bg:#1a1a2e; --fg:#e0e0e0; --muted:#8888aa;
-    --accent:#e94560; --accent-dim:rgba(233,69,96,0.15);
-    --ok:#00b894; --panel:#16213e; --border:#2a2a4a;
+    --bg:#ffffff; --fg:#1e293b; --muted:#64748b;
+    --accent:#e11d48; --accent-dim:rgba(225,29,72,0.08);
+    --ok:#059669; --panel:#f8fafc; --border:#e2e8f0;
   }
   * { box-sizing:border-box; }
   html, body { margin:0; padding:0; background:var(--bg); color:var(--fg); min-height:100vh; }
-  body { font:15px/1.55 -apple-system, BlinkMacSystemFont, system-ui, sans-serif; }
+  body { font:17px/1.6 -apple-system, BlinkMacSystemFont, system-ui, sans-serif; }
   a { color:var(--accent); text-decoration:none; }
 
   nav.top {
     position:sticky; top:0; z-index:10; display:flex; align-items:center; gap:24px;
-    padding:12px 40px; background:rgba(26,26,46,0.95); backdrop-filter:blur(8px);
-    border-bottom:1px solid var(--border); font-size:13px;
+    padding:12px 40px; background:rgba(255,255,255,0.95); backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--border); font-size:15px;
   }
-  nav.top .brand { font-weight:700; color:var(--accent); font-size:16px; }
+  nav.top .brand { font-weight:700; color:var(--accent); font-size:18px; }
   nav.top a { color:var(--muted); } nav.top a.active { color:var(--fg); }
   nav.top .spacer { flex:1; }
 
@@ -29,20 +29,31 @@
 
   .session {
     background:var(--panel); border:1px solid var(--border); border-radius:10px;
-    padding:16px 20px; margin-bottom:12px; display:flex; align-items:center; gap:14px;
+    padding:16px 20px; margin-bottom:12px;
   }
   .session.done { opacity:0.5; }
   .session.current { border-color:var(--accent); border-width:2px; }
+  .session-header { display:flex; align-items:center; gap:14px; margin-bottom:8px; }
   .session .day { width:36px; height:36px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:14px; flex-shrink:0; }
   .session.done .day { background:var(--ok); color:#fff; }
   .session.current .day { background:var(--accent); color:#fff; }
   .session .day.upcoming { background:var(--border); color:var(--muted); }
-  .session .info { flex:1; }
-  .session .focus { font-weight:600; font-size:15px; }
-  .session .drill { font-size:13px; color:var(--muted); margin-top:4px; }
-  .session .date { font-size:12px; color:var(--muted); }
+  .session .focus { font-weight:600; font-size:16px; }
+  .session .date { font-size:14px; color:var(--muted); }
+  .session .notes-text { font-size:14px; color:var(--ok); margin-top:4px; }
 
-  .phase-header { margin:24px 0 12px; font-size:12px; text-transform:uppercase; letter-spacing:0.12em; color:var(--accent); font-weight:600; }
+  .drill-section { margin-bottom:10px; }
+  .drill-section .drill-heading { font-weight:700; font-size:15px; color:var(--accent); margin-bottom:4px; }
+  .drill-section ul { margin:0; padding-left:20px; }
+  .drill-section li { margin-bottom:4px; font-size:15px; line-height:1.6; color:var(--fg); }
+  .drill-section p { margin:0 0 4px; font-size:15px; line-height:1.6; }
+
+  .phase-header { margin:24px 0 12px; font-size:13px; text-transform:uppercase; letter-spacing:0.12em; color:var(--accent); font-weight:600; }
+  .session .tech-links { display:flex; gap:6px; flex-wrap:wrap; margin-top:8px; }
+  .session .tech-links a { display:inline-block; padding:3px 10px; border-radius:12px; font-size:13px; font-weight:600; background:rgba(225,29,72,0.08); color:var(--accent); }
+  .session .tech-links a:hover { background:var(--accent); color:#fff; text-decoration:none; }
+  .phase-source { font-size:13px; color:var(--muted); margin-top:2px; }
+  .phase-source a { color:var(--accent); }
 </style>
 </head>
 <body>
@@ -59,6 +70,44 @@
 </main>
 
 <script>
+function formatDrill(text) {
+  if (!text) return '';
+  const sections = text.split(/\n\n+/);
+  let html = '';
+  for (const section of sections) {
+    const lines = section.split('\n').filter(l => l.trim());
+    if (!lines.length) continue;
+    html += '<div class="drill-section">';
+    let i = 0;
+    if (lines[0].match(/^[A-Z].*:$/)) {
+      html += `<div class="drill-heading">${esc(lines[0].replace(/:$/, ''))}</div>`;
+      i = 1;
+    }
+    const bullets = [];
+    const plain = [];
+    for (; i < lines.length; i++) {
+      const line = lines[i].trim();
+      if (line.startsWith('- ')) {
+        bullets.push(line.slice(2));
+      } else if (/^\d+\.\s/.test(line)) {
+        bullets.push(line.replace(/^\d+\.\s*/, ''));
+      } else {
+        plain.push(line);
+      }
+    }
+    if (plain.length) {
+      for (const p of plain) html += `<p>${esc(p)}</p>`;
+    }
+    if (bullets.length) {
+      html += '<ul>';
+      for (const b of bullets) html += `<li>${esc(b)}</li>`;
+      html += '</ul>';
+    }
+    html += '</div>';
+  }
+  return html;
+}
+
 async function load() {
   const res = await fetch('/api/progression');
   const prog = await res.json();
@@ -66,7 +115,12 @@ async function load() {
 
   for (const phase of (prog.phases || [])) {
     html += `<div class="phase-header">Phase ${phase.id + 1}: ${esc(phase.name)}</div>`;
+    if (phase.source) {
+      const classMatch = phase.source.match(/(\d{4}-\d{2}-\d{2})/);
+      html += `<div class="phase-source">${classMatch ? '<a href="/classes/' + classMatch[1] + '">' + esc(phase.source) + '</a>' : esc(phase.source)}</div>`;
+    }
     const sessions = phase.practice_sessions || [];
+    const techniques = phase.techniques || [];
     let foundCurrent = false;
 
     for (let i = 0; i < sessions.length; i++) {
@@ -77,14 +131,28 @@ async function load() {
       const cls = isDone ? 'done' : isCurrent ? 'current' : '';
       const dayCls = isDone ? '' : isCurrent ? '' : 'upcoming';
 
+      let techLinks = '';
+      if (techniques.length) {
+        techLinks = '<div class="tech-links">';
+        for (const t of techniques) {
+          const tslug = t.toLowerCase().replace(/ /g, '_');
+          techLinks += `<a href="/technique/${tslug}">${esc(t)}</a>`;
+        }
+        if (s.video_focus) techLinks += `<a href="/technique/${s.video_focus}" style="background:rgba(5,150,105,0.08);color:var(--ok)">Watch video</a>`;
+        techLinks += '</div>';
+      }
+
       html += `<div class="session ${cls}">
-        <div class="day ${dayCls}">${isDone ? '✓' : i + 1}</div>
-        <div class="info">
-          <div class="focus">${esc(s.focus)}</div>
-          <div class="drill">${esc(s.drill)}</div>
-          ${s.date ? '<div class="date">' + esc(s.date) + '</div>' : ''}
-          ${s.notes ? '<div class="date" style="color:var(--ok)">Notes: ' + esc(s.notes) + '</div>' : ''}
+        <div class="session-header">
+          <div class="day ${dayCls}">${isDone ? '&#10003;' : i + 1}</div>
+          <div>
+            <div class="focus">${esc(s.focus)}</div>
+            ${s.date ? '<div class="date">' + esc(s.date) + '</div>' : ''}
+          </div>
         </div>
+        ${formatDrill(s.drill)}
+        ${techLinks}
+        ${s.notes ? '<div class="notes-text">Notes: ' + esc(s.notes) + '</div>' : ''}
       </div>`;
     }
   }

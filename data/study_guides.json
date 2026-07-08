@@ -1,0 +1,857 @@
+{
+  "2026-05-26": {
+    "title": "Salsa On2 Beginner Breakdown",
+    "subtitle": "Neon Dance Studio \u2014 Class #3 (2026-05-26)",
+    "techniques": [
+      {
+        "slug": "basic_step",
+        "name": "Basic Step",
+        "tagline": "The foundation \u2014 6 steps, two sets of 3",
+        "what": "The On2 basic step is the heartbeat of NY-style salsa. You step on counts 1-2-3 and 5-6-7, with a natural pause (break) on counts 4 and 8. That gives you exactly 6 steps per 8-count phrase. Leaders step forward on 1, followers step back on 1. If you find yourself taking more than 6 steps, you are losing the count \u2014 reset and simplify.",
+        "mechanics": [
+          {
+            "counts": "1",
+            "action": "Step forward (leader) or back (follower) with your left foot"
+          },
+          {
+            "counts": "2",
+            "action": "Step in place or shift weight to right foot"
+          },
+          {
+            "counts": "3",
+            "action": "Step back with left foot, returning toward center"
+          },
+          {
+            "counts": "4",
+            "action": "BREAK \u2014 hold, no step, reset your weight"
+          },
+          {
+            "counts": "5",
+            "action": "Step back with right foot (leader) or forward (follower)"
+          },
+          {
+            "counts": "6",
+            "action": "Step in place or shift weight to left foot"
+          },
+          {
+            "counts": "7",
+            "action": "Step forward with right foot, returning toward center"
+          },
+          {
+            "counts": "8",
+            "action": "BREAK \u2014 hold, no step, reset your weight"
+          }
+        ],
+        "arm_styling": [
+          {
+            "counts": "1-2-3",
+            "action": "Arms relaxed at sides or in partner frame; no exaggerated movement"
+          },
+          {
+            "counts": "5-6-7",
+            "action": "Mirror the opposite side; keep elbows soft and close to body"
+          }
+        ],
+        "instructor_quotes": [
+          "Count 1-2-3-5-6-7 for a basic step. That's 6 steps total. If you're stepping more, you're losing time and the count.",
+          "There's a break between each set of 3 counts: 1-2-3 (break) 5-6-7 (break). Use these breaks to reset and stay on time.",
+          "Followers: don't change your basic step when the leader starts going back with their left foot. Keep your normal pattern until the lead signals otherwise."
+        ],
+        "frames": [
+          {
+            "frame": "hd_001.jpg",
+            "caption": "Opening position \u2014 dancers face forward, weight centered, ready to begin basic step on count 1"
+          },
+          {
+            "frame": "hd_003.jpg",
+            "caption": "Mid-basic: dancers have shifted weight and are moving through counts 2-3, bodies angled slightly toward mirror"
+          },
+          {
+            "frame": "hd_009.jpg",
+            "caption": "Basic step traveling \u2014 all three dancers moving in unison, demonstrating the 5-6-7 half of the phrase"
+          }
+        ],
+        "drill": "Stand alone without music. Say '1-2-3-BREAK-5-6-7-BREAK' out loud while stepping. Do this for 2 full minutes until the pause feels natural. Then add music at half speed.",
+        "common_error": "Taking 8 steps instead of 6 \u2014 students add an extra step on the break counts (4 and 8). If your feet are always moving, you are never resetting. Force yourself to pause and feel the break.",
+        "videos": [
+          {
+            "title": "Salsa Basic Step for NY Style On2 (Beginner Tutorial)",
+            "url": "https://www.youtube.com/watch?v=-FW_9o7SESA",
+            "channel": "TheDanceDojo",
+            "why": "Dedicated beginner tutorial for the On2 basic step. Clear breakdown of leader and follower footwork with counting."
+          },
+          {
+            "title": "SALSA ON2 - Partnerwork Basics Lesson 1 - Basic Step",
+            "url": "https://www.youtube.com/watch?v=z7YqGIuhWVg",
+            "channel": "Salsa On2",
+            "why": "Part of a structured lesson series for NY style On2. Shows partnerwork basic step with leader and follower perspectives."
+          },
+          {
+            "title": "BASIC STEPS - Eddie Torres Instructional Salsa On2",
+            "url": "https://www.youtube.com/watch?v=dbeWlBadrAs",
+            "channel": "Eddie Torres (Mambo On2)",
+            "why": "Eddie Torres, the godfather of NY On2/mambo, teaches the basic step. Authoritative source for proper On2 timing and technique."
+          }
+        ]
+      },
+      {
+        "slug": "prep_step",
+        "name": "Prep Step",
+        "tagline": "Twist right to unlock the left turn",
+        "what": "The prep step is the setup move that signals an upcoming turn. Before a left (inside) turn, you twist your body to the right on counts 1-2. This rightward twist 'loads' your body like a spring \u2014 when you release on count 3, you naturally unwind into the left turn. Without the prep, the turn feels forced and off-balance. Think of it as a conversation with your body: twist right first, then the left turn becomes effortless.",
+        "mechanics": [
+          {
+            "counts": "1",
+            "action": "Step forward as in basic, but begin rotating your torso to the right"
+          },
+          {
+            "counts": "2",
+            "action": "Complete the rightward body twist \u2014 hips and shoulders rotate right, loading the turn"
+          },
+          {
+            "counts": "3",
+            "action": "Release the twist; this is where the turn initiates \u2014 pivot begins here"
+          },
+          {
+            "counts": "5-6-7",
+            "action": "Complete the turn and return to basic step position"
+          }
+        ],
+        "arm_styling": [
+          {
+            "counts": "1-2",
+            "action": "Right arm stays close to body; left arm begins to lift slightly to frame the upcoming turn"
+          },
+          {
+            "counts": "3",
+            "action": "Arms frame the turn \u2014 right hand guides, left hand lifts"
+          }
+        ],
+        "instructor_quotes": [
+          "Before a left turn, twist your body to the right to prepare. This unlocks you from the right twist into the left twist on count 3.",
+          "twist on 2",
+          "prep for the turn"
+        ],
+        "frames": [
+          {
+            "frame": "hd_001.jpg",
+            "caption": "Pre-prep: neutral stance before the body twist begins \u2014 note the upright posture and centered weight"
+          },
+          {
+            "frame": "hd_005.jpg",
+            "caption": "Body twist visible \u2014 torso has rotated, loading the prep before the turn releases on count 3"
+          },
+          {
+            "frame": "hd_007.jpg",
+            "caption": "Prep completing \u2014 weight shifting as the body unwinds, about to initiate the turn"
+          }
+        ],
+        "drill": "Practice the prep step without turning. Step forward, twist right on 2, then just step back on 3 without turning. Feel the coil and release. Do 8 reps, then add the full turn.",
+        "common_error": "Skipping the twist entirely and just stepping forward. Without the rightward body rotation on count 2, the left turn has no momentum and you will feel stuck or have to muscle through it.",
+        "videos": [
+          {
+            "title": "SALSA ON2 - Partnerwork Basics Lesson 8 - Open Break",
+            "url": "https://www.youtube.com/watch?v=uk5xbikyw7Q",
+            "channel": "Salsa On2",
+            "why": "The open break is the standard prep step in NY On2 salsa \u2014 it's how you set up turns and patterns from open position. Essential foundational move."
+          },
+          {
+            "title": "5 Simple Basic Steps For On2 Salsa Beginners - Dance With Rasa",
+            "url": "https://www.youtube.com/watch?v=6WXSRzHUr88",
+            "channel": "Dance With Rasa",
+            "why": "Covers 5 beginner On2 steps including prep/open break mechanics. Rasa Pauzaite is a well-known NY salsa instructor."
+          },
+          {
+            "title": "Salsa's Core Basic Steps (On2 Salsa)",
+            "url": "https://www.youtube.com/watch?v=uhxWRdzZ5-k",
+            "channel": "TheDanceDojo",
+            "why": "Covers the 5 core basics every On2 beginner must learn, including the prep step. Good overview of how the prep step connects to other moves."
+          }
+        ]
+      },
+      {
+        "slug": "inside_turn",
+        "name": "Inside Turn (Left Turn)",
+        "tagline": "Turn on 3, face forward on 6, style with intention",
+        "what": "The inside turn (also called the left turn or traveling left) is the first turn beginners learn in NY On2. The leader signals the turn through the prep step and arm lift; the follower pivots off their right foot on count 3 and completes the rotation to face forward by count 6. The arm styling \u2014 keeping your right arm close to your ear and tracing your body from behind your neck down through count 7 \u2014 is what separates a clean turn from a sloppy one. Every movement should be deliberate, not tentative.",
+        "mechanics": [
+          {
+            "counts": "1-2",
+            "action": "Prep step with rightward body twist; arm begins to lift near right ear"
+          },
+          {
+            "counts": "3",
+            "action": "TURN HAPPENS HERE \u2014 pivot off right foot, left foot swings left, rotation begins"
+          },
+          {
+            "counts": "4",
+            "action": "Break \u2014 complete the rotation, land facing forward"
+          },
+          {
+            "counts": "5",
+            "action": "Right foot steps back (leader) or forward (follower) \u2014 you should be facing forward now"
+          },
+          {
+            "counts": "6",
+            "action": "Face forward \u2014 right leg goes BACK on 6, not forward. Weight stays centered"
+          },
+          {
+            "counts": "7",
+            "action": "Step in place \u2014 just shift weight, don't move the foot. Stay on time."
+          }
+        ],
+        "arm_styling": [
+          {
+            "counts": "1-2-3",
+            "action": "Keep arm close to your RIGHT EAR \u2014 bend it, keep it controlled. Do not let it drift outward"
+          },
+          {
+            "counts": "5",
+            "action": "Arm traces behind your neck \u2014 intentional, not tentative"
+          },
+          {
+            "counts": "6-7",
+            "action": "Arm traces DOWN the body \u2014 from neck to hip, with full intention"
+          },
+          {
+            "counts": "1 (next phrase)",
+            "action": "Arm traces back UP the body \u2014 complete the full trace cycle"
+          }
+        ],
+        "instructor_quotes": [
+          "On count 6, you should be facing forward again after the left turn. Your right leg goes back on 6, not forward\u2014keep your weight centered.",
+          "The turn happens on count 3. Your weight shifts and you pivot, but count 7 stays in place\u2014just shift your weight without moving that foot.",
+          "Keep your arm styling close to your right ear on counts 1-2-3. Don't let it drift outward; bend it and keep it controlled near your body.",
+          "Trace your body with your arm styling from count 5 (behind your neck) through count 7 (down the body) to count 1 (up). Do this with intention, not tentatively.",
+          "face forward",
+          "keep it close to your ear",
+          "trace your body",
+          "with intention"
+        ],
+        "frames": [
+          {
+            "frame": "hd_001.jpg",
+            "caption": "Pre-turn: instructor facing forward, arm position neutral \u2014 this is the reset before the prep begins"
+          },
+          {
+            "frame": "hd_003.jpg",
+            "caption": "Arm lifting near ear on counts 1-2 \u2014 note how the elbow is bent and arm stays close to the head, not drifting out"
+          },
+          {
+            "frame": "hd_005.jpg",
+            "caption": "Count 3 pivot \u2014 weight has shifted, rotation is happening, foot is pivoting"
+          },
+          {
+            "frame": "hd_007.jpg",
+            "caption": "Mid-turn: body rotating through the turn, arm controlled near head"
+          },
+          {
+            "frame": "hd_009.jpg",
+            "caption": "Count 6 \u2014 dancer should be facing forward here; right leg stepping back, weight centered"
+          },
+          {
+            "frame": "hd_011.jpg",
+            "caption": "Count 7 \u2014 weight shift only, foot stays in place; arm beginning to trace down the body"
+          },
+          {
+            "frame": "hd_013.jpg",
+            "caption": "Arm trace in progress \u2014 arm moving from behind neck downward along the body with intention"
+          }
+        ],
+        "drill": "Do the inside turn without a partner. Count out loud: '1-2-PREP-3-TURN-5-6-FACE FORWARD-7-HOLD.' Freeze on count 6 and check: are you facing the mirror? Is your right foot back? Do this 10 times before adding arm styling.",
+        "common_error": "Stepping forward on count 6 instead of back, and letting the arm drift away from the ear during the turn. Both errors throw off your balance and timing. The arm should feel like it's glued near your right ear through counts 1-2-3.",
+        "videos": [
+          {
+            "title": "Inside Turn - Beginner Salsa Turns and Spins On2 | TheDanceDojo",
+            "url": "https://www.youtube.com/watch?v=Ue4sSaY-bsQ",
+            "channel": "TheDanceDojo",
+            "why": "Beginner-focused inside turn tutorial specifically for On2. Clear instructional style with both perspectives shown."
+          },
+          {
+            "title": "SALSA ON2 - Partnerwork Basics Lesson 3 - Traveling Left (Inside Turn)",
+            "url": "https://www.youtube.com/watch?v=MW5sezTGh18",
+            "channel": "Salsa On2",
+            "why": "The Traveling Left Turn is the standard inside turn in NY On2. Part of the structured beginner partnerwork series."
+          },
+          {
+            "title": "Free Spin Inside Turn - Salsa ON2 - Adv Beginner Partnerwork Lesson 9",
+            "url": "https://www.youtube.com/watch?v=2QLSsPGidPA",
+            "channel": "Salsa On2",
+            "why": "Free spin variation of the inside turn. Slightly more advanced but breaks down the mechanics clearly. Good once the basic inside turn is comfortable."
+          }
+        ]
+      },
+      {
+        "slug": "suzy_q",
+        "name": "Suzy Q",
+        "tagline": "Cross, step, cross \u2014 tight, twisted, intentional",
+        "what": "The Suzy Q is a solo shine (footwork pattern) done in place. The pattern is cross-step-cross: your back foot crosses behind your front foot, you step to the side, then cross again. The key is keeping your back foot CLOSE behind your front foot \u2014 you are not passing your front foot, you are staying tight and controlled. Add hip twist for styling: the visual effect of the Suzy Q comes from the hip rotation, not from how wide your legs go. You can prep the Suzy Q by lifting your right leg on counts 5-6-7-1 before starting the pattern.",
+        "mechanics": [
+          {
+            "counts": "5-6-7-1 (prep)",
+            "action": "Lift right leg \u2014 this is the optional prep before starting the Suzy Q pattern"
+          },
+          {
+            "counts": "1",
+            "action": "Cross: back foot crosses CLOSE behind front foot \u2014 stay tight, don't pass the front foot"
+          },
+          {
+            "counts": "2",
+            "action": "Step: step to the side (small step)"
+          },
+          {
+            "counts": "3",
+            "action": "Cross: back foot crosses close behind front foot again"
+          },
+          {
+            "counts": "5",
+            "action": "Quarter beat \u2014 step only on ODD numbers: count 5"
+          },
+          {
+            "counts": "7",
+            "action": "Quarter beat \u2014 step only on ODD numbers: count 7. These are the core beats."
+          }
+        ],
+        "arm_styling": [
+          {
+            "counts": "1-2-3",
+            "action": "Arms can mirror the hip twist \u2014 opposite arm forward as you cross"
+          },
+          {
+            "counts": "5-7",
+            "action": "Arms settle or prep for next move during quarter beats"
+          }
+        ],
+        "instructor_quotes": [
+          "Cross, step, cross\u2014keep your back foot close behind your front foot. Don't pass your front foot; stay tight and controlled.",
+          "When doing Suzy Q, twist your hips for styling. This creates the visual effect of crossing without overextending your legs.",
+          "You can prep a Suzy Q by lifting your right leg on counts 5-6-7-1 before starting the cross-step-cross pattern.",
+          "After Suzy Q (counts 5-6-7-1-2-3), do quarter beats by stepping only on odd numbers: 1 and 3. These are core beats\u2014just the high numbers.",
+          "cross, step, cross",
+          "quarter beats",
+          "core beats",
+          "odd numbers only"
+        ],
+        "frames": [
+          {
+            "frame": "hd_015.jpg",
+            "caption": "Suzy Q cross position \u2014 back foot crossing close behind front foot, hips beginning to twist"
+          },
+          {
+            "frame": "hd_017.jpg",
+            "caption": "Suzy Q step \u2014 side step between the two crosses, weight transferring"
+          },
+          {
+            "frame": "hd_019.jpg",
+            "caption": "Second cross of Suzy Q \u2014 tight footwork, hip twist visible, arms controlled"
+          },
+          {
+            "frame": "hd_021.jpg",
+            "caption": "Quarter beats after Suzy Q \u2014 stepping only on odd counts, body settling into rhythm"
+          }
+        ],
+        "drill": "Stand still and say 'cross-step-cross' out loud while doing the footwork slowly. Check that your back foot never goes past your front foot. Add hip twist only after the footwork feels automatic. Then add the prep lift on 5-6-7-1.",
+        "common_error": "Passing the front foot with the crossing foot, making the pattern too wide. This kills the hip styling and throws off your balance. Keep the cross tight \u2014 your feet should almost touch.",
+        "videos": [
+          {
+            "title": "Salsa Solo - Suzy Q - Lesson 9 (Beginners, NY/On2)",
+            "url": "https://www.youtube.com/watch?v=IVR5x2GyAS0",
+            "channel": "Salsa On2",
+            "why": "Dedicated beginner Suzy Q lesson for NY On2. Part of the same structured lesson series. Covers the cross-step-cross footwork solo."
+          },
+          {
+            "title": "Suzie Q - Salsa Shines On2 | TheDanceDojo.com",
+            "url": "https://www.youtube.com/watch?v=MUEguduSyas",
+            "channel": "TheDanceDojo",
+            "why": "TheDanceDojo's On2 Suzy Q tutorial. Clean breakdown with proper hip styling."
+          },
+          {
+            "title": "Salsa Shines: 7 Suzie Q Variations (On 1 & On 2)",
+            "url": "https://www.youtube.com/watch?v=Nzy-uJBeWpc",
+            "channel": "Salsa On2",
+            "why": "7 variations of the Suzy Q. Watch once you have the basic version down \u2014 good for adding variety."
+          }
+        ]
+      },
+      {
+        "slug": "cross_body_lead",
+        "name": "Cross Body Lead",
+        "tagline": "Guide your follow across your body \u2014 assertive, compact, clear",
+        "what": "The cross body lead (CBL) is the most fundamental partnered move in NY-style salsa. The leader steps forward on 1, then on count 2 adds a subtle hip twist and arm signal to guide the follower across their body. The follower pivots off their right foot while their left foot swings to the left. Leaders: do NOT step into your follow's space \u2014 keep a normal forward step and use body language and touch to communicate direction. Keep your arms at shoulder width around their head \u2014 compact, not wide. Followers: keep your right elbow down to maintain frame, and pivot cleanly off your right foot.",
+        "mechanics": [
+          {
+            "counts": "1",
+            "action": "Leader steps forward with left foot \u2014 normal step, do not invade follow's space"
+          },
+          {
+            "counts": "2",
+            "action": "Leader: subtle hip twist, right hand closer to you, left hand closer to follow \u2014 signal the cross"
+          },
+          {
+            "counts": "3",
+            "action": "Leader steps to the side, creating the lane for the follower to cross through"
+          },
+          {
+            "counts": "5",
+            "action": "Follower pivots off right foot, left foot swings left \u2014 crossing through the lane"
+          },
+          {
+            "counts": "6",
+            "action": "Follower completes the cross, both dancers reestablish connection"
+          },
+          {
+            "counts": "7",
+            "action": "Both return to basic step position, connection restored"
+          }
+        ],
+        "arm_styling": [
+          {
+            "counts": "2",
+            "action": "Leader: twist arm subtly \u2014 right hand in, left hand out toward follow. Not exaggerated."
+          },
+          {
+            "counts": "3-5",
+            "action": "Leader: lift left hand up and out to guide follow through. Keep right hand centered."
+          },
+          {
+            "counts": "5-6",
+            "action": "Arms at shoulder width around follow's head \u2014 compact, controlled, not wide"
+          }
+        ],
+        "instructor_quotes": [
+          "When leading a left turn, twist your arm on count 2 subtly\u2014not exaggerated. Bring your right hand closer to you and your left hand closer to your follow.",
+          "Leaders: don't step into your follow's space. Keep a normal step forward but add hip twist on count 2 to signal the left turn.",
+          "When leading a left turn, keep your right hand centered and lift your left hand up and out. Don't confuse your follow with mixed signals.",
+          "Followers: pivot off your right foot while your left foot swings to the left during a left turn. Keep your right elbow down to maintain frame.",
+          "Leaders must be assertive with direction and guide. Use body language and touch to show your follow where to go\u2014don't let them guess.",
+          "When turning your follow, keep your arms at shoulder width around their head. Don't use wide arms; stay compact and controlled.",
+          "twist on 2",
+          "pivot off your right foot"
+        ],
+        "frames": [
+          {
+            "frame": "hd_039.jpg",
+            "caption": "Partner work begins \u2014 leader and follower in closed/open position, establishing connection before CBL"
+          },
+          {
+            "frame": "hd_041.jpg",
+            "caption": "Count 1-2: leader stepping forward, beginning the subtle arm twist to signal the cross body lead"
+          },
+          {
+            "frame": "hd_043.jpg",
+            "caption": "Count 3: leader creating the lane, left hand lifting to guide follower through"
+          },
+          {
+            "frame": "hd_045.jpg",
+            "caption": "Follower crossing through \u2014 pivoting off right foot, left foot swinging left, right elbow down"
+          },
+          {
+            "frame": "hd_047.jpg",
+            "caption": "CBL completing \u2014 both dancers reestablishing connection, returning to basic step position"
+          }
+        ],
+        "drill": "Leaders: practice the CBL with a wall. Step forward on 1, twist on 2, step to the side on 3. Feel the lane you create. Then add a partner and focus only on count 2 \u2014 make the signal clear but subtle. Followers: practice the pivot alone \u2014 stand on your right foot and swing your left foot to the left on count 5.",
+        "common_error": "Leaders stepping INTO the follower's space on count 1, blocking the lane they need to cross through. Also: using wide arms instead of compact shoulder-width arms around the follow's head \u2014 this confuses the signal and can hit the follower.",
+        "videos": [
+          {
+            "title": "How to do Cross Body Lead (NY On2 Salsa)",
+            "url": "https://www.youtube.com/watch?v=6mc4uGJnmBg",
+            "channel": "TheDanceDojo",
+            "why": "Focused tutorial on the cross body lead as the most fundamental move in NY-style salsa. Clear explanation of leader mechanics."
+          },
+          {
+            "title": "SALSA ON2 - Partnerwork Basics Lesson 2 - Cross Body Lead",
+            "url": "https://www.youtube.com/watch?v=t-W1O6w0FFk",
+            "channel": "Salsa On2",
+            "why": "Part of the structured NY On2 partnerwork series. Lesson 2 covers cross body lead right after the basic step."
+          },
+          {
+            "title": "Cross Body Lead - Beginner Salsa Steps On2 | TheDanceDojo.com",
+            "url": "https://www.youtube.com/watch?v=bWeuEXuZXRA",
+            "channel": "TheDanceDojo",
+            "why": "Another TheDanceDojo tutorial on CBL for On2 beginners. Good complementary perspective to their other CBL video."
+          }
+        ]
+      }
+    ],
+    "choreography": {
+      "sequence": "BASIC STEP -> PREP STEP -> INSIDE TURN (LEFT TURN) -> SUZY Q -> CROSS BODY LEAD (PARTNER WORK)",
+      "phases": [
+        {
+          "name": "Phase 1: Solo Choreo \u2014 Slow Walk-Through",
+          "time": "0:01 - 0:21",
+          "steps": [
+            {
+              "frame": "hd_001.jpg",
+              "time": "0:01",
+              "counts": "Ready position",
+              "move": "Basic Step \u2014 Setup",
+              "body": "Instructor faces forward toward camera/mirror. Weight centered, feet roughly hip-width apart. Arms relaxed at sides. Two other dancers visible behind \u2014 all in starting position.",
+              "cue": "1-2-3-5-6-7"
+            },
+            {
+              "frame": "hd_003.jpg",
+              "time": "0:03",
+              "counts": "2-3",
+              "move": "Basic Step \u2014 Moving",
+              "body": "Dancers have turned to face the mirror (backs to camera). Weight shifting through the basic step. Feet stepping in sequence. Arms relaxed, no styling yet.",
+              "cue": "break between 3s"
+            },
+            {
+              "frame": "hd_005.jpg",
+              "time": "0:05",
+              "counts": "5-6-7",
+              "move": "Basic Step into Prep Step",
+              "body": "Dancers facing mirror, moving through the 5-6-7 half of the basic. Instructor's torso beginning to show slight rightward rotation \u2014 the prep is loading. Right leg visible lifting slightly.",
+              "cue": "prep for the turn"
+            },
+            {
+              "frame": "hd_007.jpg",
+              "time": "0:07",
+              "counts": "1-2",
+              "move": "Prep Step \u2014 Body Twist",
+              "body": "Instructor's body has rotated rightward \u2014 torso twisted, loading the spring for the left turn. Dancers moving in unison. Weight forward on left foot.",
+              "cue": "twist your body \u2014 twist on 2"
+            },
+            {
+              "frame": "hd_009.jpg",
+              "time": "0:09",
+              "counts": "3",
+              "move": "Inside Turn \u2014 Pivot Begins",
+              "body": "Dancers traveling toward the mirror. Instructor beginning the pivot \u2014 weight shifting, foot rotating. The turn is initiating on count 3.",
+              "cue": "The turn happens on count 3"
+            },
+            {
+              "frame": "hd_011.jpg",
+              "time": "0:11",
+              "counts": "5-6",
+              "move": "Inside Turn \u2014 Facing Forward",
+              "body": "Dancers have completed rotation and are now facing toward the mirror/forward. Right leg stepping back on 6. Weight centered. Arm styling visible \u2014 arm tracing near body.",
+              "cue": "On count 6, you should be facing forward again. Your right leg goes back on 6, not forward"
+            },
+            {
+              "frame": "hd_013.jpg",
+              "time": "0:13",
+              "counts": "7",
+              "move": "Inside Turn \u2014 Weight Shift Only",
+              "body": "Dancers in place \u2014 count 7 is a weight shift, not a foot movement. Bodies upright, arms beginning to trace downward along the body.",
+              "cue": "count 7 stays in place\u2014just shift your weight without moving that foot"
+            },
+            {
+              "frame": "hd_015.jpg",
+              "time": "0:15",
+              "counts": "1-2-3",
+              "move": "Suzy Q \u2014 Cross-Step-Cross",
+              "body": "Dancers performing the Suzy Q footwork. Back foot crossing close behind front foot. Hips twisting for styling. Feet tight \u2014 not passing the front foot.",
+              "cue": "cross, step, cross \u2014 keep your back foot close behind your front foot"
+            },
+            {
+              "frame": "hd_017.jpg",
+              "time": "0:17",
+              "counts": "5-7",
+              "move": "Suzy Q \u2014 Quarter Beats",
+              "body": "After the cross-step-cross, dancers stepping only on odd counts. Bodies settling. Hips still showing twist from the Suzy Q.",
+              "cue": "quarter beats \u2014 odd numbers only \u2014 core beats"
+            },
+            {
+              "frame": "hd_019.jpg",
+              "time": "0:19",
+              "counts": "1-2-3",
+              "move": "Suzy Q \u2014 Second Pass",
+              "body": "Suzy Q repeating \u2014 dancers showing the cross pattern again. Hip twist more visible. Arms controlled at sides.",
+              "cue": "twist your hips for styling"
+            },
+            {
+              "frame": "hd_021.jpg",
+              "time": "0:21",
+              "counts": "5-6-7",
+              "move": "Suzy Q into Basic \u2014 Transition",
+              "body": "Dancers transitioning out of Suzy Q back toward basic step. Weight resetting. Bodies returning to neutral position.",
+              "cue": "break between 3s"
+            }
+          ]
+        },
+        {
+          "name": "Phase 2: Full Speed Run-Through",
+          "time": "0:23 - 0:37",
+          "steps": [
+            {
+              "frame": "hd_023.jpg",
+              "time": "0:23",
+              "counts": "1-2-3",
+              "move": "Full Speed \u2014 Basic Step",
+              "body": "Dancers moving at full music tempo. Instructor facing mirror, stepping through basic. Motion blur visible on feet \u2014 speed has increased. Posture upright.",
+              "cue": "1-2-3-5-6-7"
+            },
+            {
+              "frame": "hd_025.jpg",
+              "time": "0:25",
+              "counts": "1-2",
+              "move": "Full Speed \u2014 Prep Step",
+              "body": "At full speed, the prep step is more compressed. Torso twist happening quickly on count 2. Instructor's body angled right, loading the turn.",
+              "cue": "quick, quick, slow \u2014 twist on 2"
+            },
+            {
+              "frame": "hd_027.jpg",
+              "time": "0:27",
+              "counts": "3-5",
+              "move": "Full Speed \u2014 Inside Turn",
+              "body": "Turn happening at full speed. Rotation visible \u2014 instructor pivoting. Arm near ear. The turn is compact and controlled even at tempo.",
+              "cue": "keep it close to your ear"
+            },
+            {
+              "frame": "hd_029.jpg",
+              "time": "0:29",
+              "counts": "6-7",
+              "move": "Full Speed \u2014 Post-Turn Styling",
+              "body": "Turn completed. Instructor facing forward on 6. Arm tracing down the body on 7. Movement intentional and deliberate even at full speed.",
+              "cue": "trace your body \u2014 with intention"
+            },
+            {
+              "frame": "hd_031.jpg",
+              "time": "0:31",
+              "counts": "1-2-3",
+              "move": "Full Speed \u2014 Suzy Q",
+              "body": "Suzy Q at full tempo. Cross-step-cross happening quickly. Hip twist visible. Feet staying tight \u2014 back foot close behind front foot.",
+              "cue": "cross, step, cross"
+            },
+            {
+              "frame": "hd_033.jpg",
+              "time": "0:33",
+              "counts": "5-7",
+              "move": "Full Speed \u2014 Quarter Beats",
+              "body": "Quarter beats after Suzy Q at full speed. Stepping on 5 and 7 only. Bodies bouncing lightly with the music.",
+              "cue": "odd numbers only \u2014 core beats"
+            },
+            {
+              "frame": "hd_035.jpg",
+              "time": "0:35",
+              "counts": "1-2-3",
+              "move": "Full Speed \u2014 Sequence Repeat",
+              "body": "Full sequence repeating at tempo. All three dancers in sync. The choreography is flowing \u2014 basic into prep into turn into Suzy Q.",
+              "cue": "1-2-3-5-6-7"
+            },
+            {
+              "frame": "hd_037.jpg",
+              "time": "0:37",
+              "counts": "5-6-7",
+              "move": "Full Speed \u2014 Closing Pass",
+              "body": "Final pass of the solo sequence at full speed. Dancers completing the phrase. Bodies upright, movement controlled.",
+              "cue": "break between 3s"
+            }
+          ]
+        },
+        {
+          "name": "Phase 3: Partner Work \u2014 Cross Body Lead",
+          "time": "0:39 - 0:47",
+          "steps": [
+            {
+              "frame": "hd_039.jpg",
+              "time": "0:39",
+              "counts": "Ready position",
+              "move": "Partner Work \u2014 Establishing Connection",
+              "body": "Instructor and follower in open position facing each other. Hands connected. Third dancer visible to the right also in partner position. Frame established before the CBL begins.",
+              "cue": "Leaders must be assertive with direction and guide"
+            },
+            {
+              "frame": "hd_041.jpg",
+              "time": "0:41",
+              "counts": "1-2",
+              "move": "Cross Body Lead \u2014 Leader Steps Forward",
+              "body": "Leader stepping forward on 1. On count 2, subtle arm twist visible \u2014 right hand drawing in, left hand extending toward follower. Hip twist signaling the cross. Leader NOT stepping into follower's space.",
+              "cue": "twist your arm on count 2 subtly \u2014 not exaggerated. Keep a normal step forward but add hip twist on count 2"
+            },
+            {
+              "frame": "hd_043.jpg",
+              "time": "0:43",
+              "counts": "3-5",
+              "move": "Cross Body Lead \u2014 Lane Opens",
+              "body": "Leader has stepped to the side, creating the lane. Left hand lifting up and out to guide follower through. Right hand centered. Follower beginning to pivot off right foot.",
+              "cue": "keep your right hand centered and lift your left hand up and out"
+            },
+            {
+              "frame": "hd_045.jpg",
+              "time": "0:45",
+              "counts": "5-6",
+              "move": "Cross Body Lead \u2014 Follower Crosses",
+              "body": "Follower crossing through the lane \u2014 pivoting off right foot, left foot swinging left. Right elbow down maintaining frame. Leader's arms compact at shoulder width around follower's head.",
+              "cue": "pivot off your right foot while your left foot swings to the left. Keep your right elbow down to maintain frame"
+            },
+            {
+              "frame": "hd_047.jpg",
+              "time": "0:47",
+              "counts": "7-1",
+              "move": "Cross Body Lead \u2014 Connection Restored",
+              "body": "CBL completing. Both dancers reestablishing connection. Follower has crossed through, both returning to basic step position. Arms settling back to open position frame.",
+              "cue": "When turning your follow, keep your arms at shoulder width around their head. Don't use wide arms; stay compact and controlled"
+            }
+          ]
+        }
+      ],
+      "hard_transitions": [
+        {
+          "from": "Basic Step",
+          "to": "Prep Step",
+          "frames": "hd_003.jpg -> hd_005.jpg",
+          "why": "Students often miss the prep entirely because it happens within the basic step \u2014 it looks like a basic step but the body twist on count 2 is the signal. If you don't feel the rightward coil loading, you have skipped the prep and the turn will feel forced."
+        },
+        {
+          "from": "Prep Step",
+          "to": "Inside Turn",
+          "frames": "hd_007.jpg -> hd_009.jpg",
+          "why": "The turn initiates on count 3, which is the THIRD beat of the first set \u2014 students often turn too early (on 2) or too late (on 5). The prep twist on 2 must be complete before the pivot begins on 3. Rushing this transition causes the turn to be off-axis."
+        },
+        {
+          "from": "Inside Turn",
+          "to": "Suzy Q",
+          "frames": "hd_013.jpg -> hd_015.jpg",
+          "why": "After the turn, students are often disoriented and lose the count. The Suzy Q starts on count 1 of the next phrase. You must land from the turn, face forward on 6, do the weight-shift-only on 7, and then immediately begin the cross on 1. There is no extra step to recover \u2014 you must be ready."
+        },
+        {
+          "from": "Suzy Q",
+          "to": "Basic Step / Partner Work",
+          "frames": "hd_021.jpg -> hd_023.jpg",
+          "why": "After the quarter beats (stepping only on odd counts 5 and 7), students must return to the full basic step pattern. The rhythm feels different coming out of quarter beats \u2014 you are going from sparse stepping back to 6 steps per phrase. Count out loud to stay on time."
+        }
+      ]
+    },
+    "class_date": "2026-05-26",
+    "class_number": 3,
+    "video_slug": "img-8043-hd",
+    "key_frames": [
+      {
+        "frame": "hd_001.jpg",
+        "label": "Basic Step",
+        "description": "Opening position \u2014 dancers face forward, weight centered, ready to begin basic step on count 1"
+      },
+      {
+        "frame": "hd_015.jpg",
+        "label": "Suzy Q",
+        "description": "Suzy Q cross position \u2014 back foot crossing close behind front foot, hips beginning to twist"
+      },
+      {
+        "frame": "hd_039.jpg",
+        "label": "Cross Body Lead",
+        "description": "Partner work begins \u2014 leader and follower in closed/open position, establishing connection before CBL"
+      },
+      {
+        "frame": "hd_003.jpg",
+        "label": "Basic Step \u2014 Moving",
+        "description": "break between 3s"
+      },
+      {
+        "frame": "hd_005.jpg",
+        "label": "Basic Step into Prep Step",
+        "description": "prep for the turn"
+      },
+      {
+        "frame": "hd_007.jpg",
+        "label": "Prep Step \u2014 Body Twist",
+        "description": "twist your body \u2014 twist on 2"
+      },
+      {
+        "frame": "hd_009.jpg",
+        "label": "Inside Turn \u2014 Pivot Begins",
+        "description": "The turn happens on count 3"
+      },
+      {
+        "frame": "hd_011.jpg",
+        "label": "Inside Turn \u2014 Facing Forward",
+        "description": "On count 6, you should be facing forward again. Your right leg goes back on 6, not forward"
+      },
+      {
+        "frame": "hd_013.jpg",
+        "label": "Inside Turn \u2014 Weight Shift Only",
+        "description": "count 7 stays in place\u2014just shift your weight without moving that foot"
+      },
+      {
+        "frame": "hd_017.jpg",
+        "label": "Suzy Q \u2014 Quarter Beats",
+        "description": "quarter beats \u2014 odd numbers only \u2014 core beats"
+      },
+      {
+        "frame": "hd_019.jpg",
+        "label": "Suzy Q \u2014 Second Pass",
+        "description": "twist your hips for styling"
+      },
+      {
+        "frame": "hd_021.jpg",
+        "label": "Suzy Q into Basic \u2014 Transition",
+        "description": "break between 3s"
+      }
+    ],
+    "practice": {
+      "total_minutes": 25,
+      "sections": [
+        {
+          "name": "Warm-Up: Basic Step Review",
+          "minutes": 5,
+          "drills": [
+            {
+              "name": "Solo Basic",
+              "minutes": 2,
+              "instructions": "Basic step to slow music. Count 1-2-3-5-6-7 out loud. Focus on 'quick, quick, slow' rhythm."
+            },
+            {
+              "name": "Weight Transfer Check",
+              "minutes": 2,
+              "instructions": "Do the basic in front of a mirror. On every step, lift the OTHER foot to confirm full weight transfer."
+            },
+            {
+              "name": "Prep Step Intro",
+              "minutes": 1,
+              "instructions": "From basic position, twist your body right on count 2 \u2014 this is the prep for the left turn. Just the twist, no turn yet."
+            }
+          ]
+        },
+        {
+          "name": "New Material: Left Turn + Suzy Q",
+          "minutes": 12,
+          "drills": [
+            {
+              "name": "Solo Left Turn",
+              "minutes": 4,
+              "instructions": "Prep twist right \u2192 turn left on count 3 \u2192 face forward on count 6. Repeat 16x. Arm stays close to right ear on 1-2-3."
+            },
+            {
+              "name": "Arm Styling Trace",
+              "minutes": 3,
+              "instructions": "Do the left turn but focus ONLY on the arm: count 5 behind neck \u2192 7 down body \u2192 1 up. Trace with intention, not tentatively."
+            },
+            {
+              "name": "Suzy Q Footwork",
+              "minutes": 3,
+              "instructions": "Cross, step, cross \u2014 keep back foot tight behind front foot. Add hip twist for styling. Prep by lifting right leg on 5-6-7-1."
+            },
+            {
+              "name": "Quarter Beats",
+              "minutes": 2,
+              "instructions": "After Suzy Q, step only on odd counts: 1 and 3. These are core beats. Count out loud to lock the timing."
+            }
+          ]
+        },
+        {
+          "name": "Full Combo",
+          "minutes": 8,
+          "drills": [
+            {
+              "name": "Walk Through",
+              "minutes": 3,
+              "instructions": "Basic \u2192 Prep \u2192 Left Turn \u2192 Suzy Q \u2192 Quarter Beats \u2192 Basic. No music, just counting. Get the sequence clean."
+            },
+            {
+              "name": "With Music (Slow)",
+              "minutes": 3,
+              "instructions": "Same sequence to a slow salsa track. Don't rush the transitions \u2014 use the breaks between 3s to reset."
+            },
+            {
+              "name": "With Music (Full Speed)",
+              "minutes": 2,
+              "instructions": "Full speed salsa. If you lose the count, stop, find 1, and restart from basic. Don't fake it through."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

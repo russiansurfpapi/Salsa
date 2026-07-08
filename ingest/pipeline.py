@@ -3,6 +3,7 @@
 Usage:
   python -m ingest.pipeline ~/Desktop/Salsa518.m4a --date 2026-05-18 --class-number 2
   python -m ingest.pipeline                        # process all new .m4a in videos/
+  python -m ingest.pipeline --reanalyze            # re-analyze classes missing rich fields
 """
 from __future__ import annotations
 
@@ -131,8 +132,11 @@ def _update_class_notes_json(doc: dict) -> None:
             {"name": t.replace("_", " ").title(), "slug": t}
             for t in doc.get("techniques_covered", [])
         ],
+        "techniques_covered": doc.get("techniques_covered", []),
         "topics": doc.get("topics", []),
         "extracted_tips": [tp["tip"] for tp in doc.get("teaching_points", [])],
+        "teaching_points": doc.get("teaching_points", []),
+        "class_structure": doc.get("class_structure", []),
         "summary": doc.get("summary", ""),
         "key_phrases": doc.get("key_phrases", []),
     })
@@ -158,14 +162,104 @@ def _update_technique_content_json(teaching_points: list[dict]) -> None:
     tc_file.write_text(json.dumps(tc, indent=2))
 
 
+RICH_FIELDS = ["summary", "key_phrases", "teaching_points", "class_structure"]
+
+
+def _reanalyze_all() -> None:
+    """Re-run LLM analysis on classes missing rich fields."""
+    from server.mongo import classes as classes_coll, class_tips
+
+    all_classes = list(classes_coll().find({}, {"_id": 0}))
+    if not all_classes:
+        notes = json.loads((DATA / "class_notes.json").read_text()) if (DATA / "class_notes.json").exists() else []
+        for n in notes:
+            transcript_file = n.get("transcript_file", "")
+            t_path = DATA / "transcripts" / transcript_file
+            if t_path.exists():
+                all_classes.append({
+                    "class_date": n["class_date"],
+                    "class_number": n.get("class_number"),
+                    "transcript_file": transcript_file,
+                })
+
+    stale = []
+    for doc in all_classes:
+        missing = [f for f in RICH_FIELDS if not doc.get(f)]
+        if missing:
+            stale.append((doc, missing))
+
+    if not stale:
+        print("All classes already have rich analysis fields.")
+        return
+
+    print(f"Found {len(stale)} class(es) needing re-analysis:\n")
+    known = load_known_techniques()
+
+    for doc, missing in stale:
+        date = doc["class_date"]
+        num = doc.get("class_number")
+        tf = doc.get("transcript_file", "")
+        t_path = DATA / "transcripts" / tf
+        if not t_path.exists():
+            print(f"  SKIP {date}: transcript {tf} not found")
+            continue
+
+        print(f"  Re-analyzing class #{num} ({date}) — missing: {', '.join(missing)}")
+        t = json.loads(t_path.read_text())
+        analysis = analyze_class(t["text"], date, known, num)
+        print(f"    {len(analysis.get('teaching_points', []))} teaching points")
+
+        update_doc = {
+            "techniques_covered": analysis.get("techniques_covered", []),
+            "teaching_points": analysis.get("teaching_points", []),
+            "class_structure": analysis.get("class_structure", []),
+            "key_phrases": analysis.get("key_phrases", []),
+            "topics": analysis.get("topics", []),
+            "summary": analysis.get("summary", ""),
+            "reanalyzed_at": datetime.now(timezone.utc).isoformat(),
+        }
+
+        classes_coll().update_one(
+            {"class_date": date},
+            {"$set": update_doc},
+            upsert=True,
+        )
+
+        tips_coll = class_tips()
+        tips_coll.delete_many({"class_date": date})
+        tip_docs = [
+            {
+                "technique": tp.get("technique", ""),
+                "tip": tp.get("tip", ""),
+                "context": tp.get("context", ""),
+                "class_date": date,
+                "class_number": num,
+            }
+            for tp in analysis.get("teaching_points", [])
+        ]
+        if tip_docs:
+            tips_coll.insert_many(tip_docs)
+
+        full_doc = {**doc, **update_doc}
+        full_doc.setdefault("transcript_file", tf)
+        full_doc.setdefault("class_number", num)
+        _update_class_notes_json(full_doc)
+        _update_technique_content_json(analysis.get("teaching_points", []))
+        print(f"    Updated MongoDB + JSON for {date}")
+
+
 def main():
     parser = argparse.ArgumentParser(description="Ingest a salsa class recording")
     parser.add_argument("audio", nargs="?", help="Path to .m4a class recording")
     parser.add_argument("--date", help="Class date (YYYY-MM-DD)")
     parser.add_argument("--class-number", type=int, help="Class number")
+    parser.add_argument("--reanalyze", action="store_true",
+                        help="Re-run LLM analysis on classes missing rich fields")
     args = parser.parse_args()
 
-    if args.audio:
+    if args.reanalyze:
+        _reanalyze_all()
+    elif args.audio:
         audio_path = Path(args.audio).resolve()
         if not audio_path.exists():
             print(f"ERROR: {audio_path} not found")

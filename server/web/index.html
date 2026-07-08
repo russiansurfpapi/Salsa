@@ -6,22 +6,23 @@
 <title>Salsa — Learn</title>
 <style>
   :root {
-    --bg:#1a1a2e; --fg:#e0e0e0; --muted:#8888aa; --muted-2:#6666888;
-    --accent:#e94560; --accent-dim:rgba(233,69,96,0.15);
-    --ok:#00b894; --panel:#16213e; --panel-2:#1a1a3e; --border:#2a2a4a;
-    --gold:#f39c12; --blue:#0984e3;
+    --bg:#ffffff; --fg:#1e293b; --muted:#64748b;
+    --accent:#e11d48; --accent-dim:rgba(225,29,72,0.08);
+    --ok:#059669; --ok-dim:rgba(5,150,105,0.08);
+    --panel:#f8fafc; --panel-2:#f1f5f9; --border:#e2e8f0;
+    --gold:#d97706; --blue:#2563eb;
   }
   * { box-sizing: border-box; }
   html, body { margin:0; padding:0; background:var(--bg); color:var(--fg); min-height:100vh; }
-  body { font: 15px/1.55 -apple-system, BlinkMacSystemFont, 'Inter', system-ui, sans-serif; -webkit-font-smoothing:antialiased; }
+  body { font: 17px/1.6 -apple-system, BlinkMacSystemFont, 'Inter', system-ui, sans-serif; -webkit-font-smoothing:antialiased; }
   a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:underline; }
 
   nav.top {
     position:sticky; top:0; z-index:10; display:flex; align-items:center; gap:24px;
-    padding:12px 40px; background:rgba(26,26,46,0.95); backdrop-filter:blur(8px);
-    border-bottom:1px solid var(--border); font-size:13px;
+    padding:12px 40px; background:rgba(255,255,255,0.95); backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--border); font-size:15px;
   }
-  nav.top .brand { font-weight:700; color:var(--accent); font-size:16px; }
+  nav.top .brand { font-weight:700; color:var(--accent); font-size:18px; }
   nav.top a { color:var(--muted); } nav.top a.active { color:var(--fg); }
   nav.top .spacer { flex:1; }
 
@@ -29,15 +30,14 @@
 
   h1 { font-size:32px; font-weight:400; letter-spacing:-0.02em; margin:0 0 6px; }
   h1 em { color:var(--accent); font-style:normal; }
-  .subtitle { color:var(--muted); font-size:14px; margin:0 0 32px; }
+  .subtitle { color:var(--muted); font-size:15px; margin:0 0 32px; }
 
   .section-label {
-    font-size:11px; text-transform:uppercase; letter-spacing:0.15em;
+    font-size:13px; text-transform:uppercase; letter-spacing:0.12em;
     color:var(--accent); font-weight:600; margin:32px 0 12px;
     padding-bottom:6px; border-bottom:1px solid var(--border);
   }
 
-  /* Today's practice card */
   .practice-card {
     border:2px solid var(--accent); border-radius:12px; background:var(--panel);
     overflow:hidden; margin-bottom:24px;
@@ -47,35 +47,38 @@
     display:flex; align-items:center; gap:12px;
   }
   .practice-card-header .day-badge {
-    background:var(--accent); color:#fff; font-weight:700; font-size:13px;
+    background:var(--accent); color:#fff; font-weight:700; font-size:14px;
     padding:4px 12px; border-radius:20px;
   }
-  .practice-card-header .title { font-weight:600; font-size:16px; }
+  .practice-card-header .title { font-weight:600; font-size:17px; }
   .practice-card-body { padding:16px 20px; }
-  .practice-card-body .drill { font-size:14px; line-height:1.7; color:var(--fg); }
   .practice-card-body .actions { margin-top:16px; display:flex; gap:8px; }
-  .btn { padding:8px 20px; border:none; border-radius:6px; font:600 13px/1 inherit; cursor:pointer; }
+  .btn { padding:8px 20px; border:none; border-radius:6px; font:600 14px/1 inherit; cursor:pointer; }
   .btn-accent { background:var(--accent); color:#fff; } .btn-accent:hover { filter:brightness(1.1); }
   .btn-outline { background:transparent; color:var(--fg); border:1px solid var(--border); }
   .btn-outline:hover { background:var(--panel-2); }
-  .btn-ok { background:var(--ok); color:#fff; } .btn-ok:hover { filter:brightness(1.1); }
+  .btn-ok { background:var(--ok); color:#fff; font-weight:700; } .btn-ok:hover { filter:brightness(1.1); }
 
-  /* Technique grid */
+  .drill-section { margin-bottom:14px; }
+  .drill-section .drill-heading { font-weight:700; font-size:15px; color:var(--accent); margin-bottom:4px; }
+  .drill-section ul { margin:0; padding-left:20px; }
+  .drill-section li { margin-bottom:4px; font-size:15px; line-height:1.6; color:var(--fg); }
+  .drill-section p { margin:0 0 4px; font-size:15px; line-height:1.6; }
+
   .tech-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(240px,1fr)); gap:10px; }
   .tech-card {
     background:var(--panel); border:1px solid var(--border); border-radius:8px;
     padding:14px 16px; cursor:pointer; transition:border-color 0.15s;
   }
   .tech-card:hover { border-color:var(--accent); }
-  .tech-card .tc-name { font-weight:600; font-size:14px; margin-bottom:4px; }
-  .tech-card .tc-cat { font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:0.08em; }
+  .tech-card .tc-name { font-weight:600; font-size:15px; margin-bottom:4px; }
+  .tech-card .tc-cat { font-size:13px; color:var(--muted); text-transform:uppercase; letter-spacing:0.08em; }
   .tech-card.learned { border-left:3px solid var(--ok); }
   .tech-card.has-content .tc-name { color:var(--accent); }
-  .tech-card .tc-badge { font-size:10px; padding:2px 6px; border-radius:8px; font-weight:600; }
-  .tc-badge.done { background:rgba(0,184,148,0.2); color:var(--ok); }
+  .tech-card .tc-badge { font-size:12px; padding:3px 8px; border-radius:8px; font-weight:600; }
+  .tc-badge.done { background:var(--ok-dim); color:var(--ok); }
   .tc-badge.ready { background:var(--accent-dim); color:var(--accent); }
 
-  /* Progress bar */
   .progress-row { display:flex; gap:4px; margin-bottom:24px; }
   .progress-dot {
     flex:1; height:6px; border-radius:3px; background:var(--border);
@@ -90,7 +93,7 @@
   <span class="brand">salsa.</span>
   <a href="/" class="active">Home</a>
   <a href="/practice">Practice</a>
-  <a href="/quiz">Quiz</a> <a href="/notes">Notes</a> <a href="/classes">Classes</a>
+  <a href="/quiz">Quiz</a> <a href="/notes">Notes</a> <a href="/classes">Classes</a> <a href="/progress">Progress</a>
   <span class="spacer"></span>
 </nav>
 
@@ -100,20 +103,59 @@
 
 <script>
 async function load() {
-  const [techRes, progRes] = await Promise.all([
-    fetch('/api/techniques'), fetch('/api/progression')
+  const [techRes, progRes, skillsRes] = await Promise.all([
+    fetch('/api/techniques'), fetch('/api/progression'),
+    fetch('/api/skills').catch(() => null),
   ]);
   const techniques = await techRes.json();
   const prog = await progRes.json();
-  render(techniques, prog);
+  const skills = skillsRes && skillsRes.ok ? await skillsRes.json() : null;
+  render(techniques, prog, skills);
 }
 
-function render(techniques, prog) {
+function formatDrill(text) {
+  if (!text) return '';
+  const sections = text.split(/\n\n+/);
+  let html = '';
+  for (const section of sections) {
+    const lines = section.split('\n').filter(l => l.trim());
+    if (!lines.length) continue;
+    html += '<div class="drill-section">';
+    let i = 0;
+    if (lines[0].match(/^[A-Z].*:$/)) {
+      html += `<div class="drill-heading">${esc(lines[0].replace(/:$/, ''))}</div>`;
+      i = 1;
+    }
+    const bullets = [];
+    const plain = [];
+    for (; i < lines.length; i++) {
+      const line = lines[i].trim();
+      if (line.startsWith('- ')) {
+        bullets.push(line.slice(2));
+      } else if (/^\d+\.\s/.test(line)) {
+        bullets.push(line.replace(/^\d+\.\s*/, ''));
+      } else {
+        plain.push(line);
+      }
+    }
+    if (plain.length) {
+      for (const p of plain) html += `<p>${esc(p)}</p>`;
+    }
+    if (bullets.length) {
+      html += '<ul>';
+      for (const b of bullets) html += `<li>${esc(b)}</li>`;
+      html += '</ul>';
+    }
+    html += '</div>';
+  }
+  return html;
+}
+
+function render(techniques, prog, skills) {
   let html = '';
   html += `<h1><em>Salsa</em> On2</h1>`;
   html += `<p class="subtitle">NY style mambo — ${techniques.techniques?.length || 0} techniques to learn</p>`;
 
-  // Current phase + today's practice
   const phase = prog.phases?.[prog.current_phase];
   if (phase) {
     const nextSession = phase.practice_sessions?.find(s => !s.completed);
@@ -121,9 +163,8 @@ function render(techniques, prog) {
     const totalSessions = phase.practice_sessions?.length || 0;
 
     html += `<div class="section-label">Phase ${prog.current_phase + 1}: ${esc(phase.name)}</div>`;
-    html += `<p style="color:var(--muted);font-size:13px;margin:0 0 12px">${esc(phase.why)}</p>`;
+    html += `<p style="color:var(--muted);font-size:15px;margin:0 0 12px">${esc(phase.why)}</p>`;
 
-    // Progress dots
     html += '<div class="progress-row">';
     for (let i = 0; i < totalSessions; i++) {
       const s = phase.practice_sessions[i];
@@ -139,7 +180,7 @@ function render(techniques, prog) {
           <span class="title">${esc(nextSession.focus)}</span>
         </div>
         <div class="practice-card-body">
-          <div class="drill">${esc(nextSession.drill)}</div>
+          ${formatDrill(nextSession.drill)}
           <div class="actions">
             <button class="btn btn-accent" onclick="location.href='/technique/${esc(nextSession.video_focus)}'">Watch videos</button>
             <button class="btn btn-outline" onclick="location.href='/quiz?t=${esc(nextSession.video_focus)}'">Quiz me</button>
@@ -150,7 +191,28 @@ function render(techniques, prog) {
     }
   }
 
-  // All techniques
+  if (skills && skills.techniques) {
+    const techNames = {basic_step:'Basic Step',right_turn:'Right Turn',inside_turn:'Inside Turn',cross_body_lead:'Cross Body Lead',suzy_q:'Suzy Q',prep_step:'Prep Step'};
+    const hasRatings = Object.values(skills.techniques).some(t => t.avg_rating > 0);
+    if (hasRatings) {
+      html += '<div class="section-label">Skill progress</div>';
+      for (const [slug, tech] of Object.entries(skills.techniques)) {
+        if (tech.avg_rating === 0) continue;
+        const avg = tech.avg_rating;
+        const pct = Math.round((avg / 5) * 100);
+        const color = avg <= 2 ? 'var(--accent)' : avg <= 3 ? '#d97706' : 'var(--ok)';
+        const weak = (tech.sub_skills || []).filter(s => s.rating > 0 && s.rating <= 2).length;
+        html += `<a href="/technique/${esc(slug)}" style="text-decoration:none;color:inherit;display:flex;align-items:center;gap:10px;padding:6px 0">`;
+        html += `<span style="min-width:130px;font-size:14px;font-weight:600">${esc(techNames[slug]||slug)}</span>`;
+        html += `<div style="flex:1;height:8px;background:var(--border);border-radius:4px"><div style="height:100%;width:${pct}%;background:${color};border-radius:4px"></div></div>`;
+        html += `<span style="font-size:13px;font-weight:600;color:${color};min-width:32px;text-align:right">${avg}/5</span>`;
+        if (weak > 0) html += `<span style="font-size:11px;background:var(--accent-dim);color:var(--accent);padding:2px 8px;border-radius:10px;font-weight:600">${weak} weak</span>`;
+        html += '</a>';
+      }
+      html += `<a href="/progress" style="display:inline-block;margin-top:8px;font-size:14px;font-weight:600">View full progress &rarr;</a>`;
+    }
+  }
+
   html += '<div class="section-label">Level 1 — Beginner</div>';
   html += '<div class="tech-grid">';
   for (const t of (techniques.techniques || [])) {

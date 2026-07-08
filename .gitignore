@@ -5,6 +5,7 @@ __pycache__/
 *.log
 .claude/
 videos/
+uploads/
 *.m4a
 *.small.m4a
 .vercel

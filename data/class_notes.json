@@ -4,24 +4,679 @@
     "class_number": 2,
     "transcript_file": "salsa518.json",
     "matched_techniques": [
-      {"name": "Basic Step", "slug": "basic_step"},
-      {"name": "Right Turn", "slug": "right_turn"},
-      {"name": "Inside Turn", "slug": "inside_turn"}
+      {
+        "name": "Basic Step",
+        "slug": "basic_step"
+      },
+      {
+        "name": "Inside Turn",
+        "slug": "inside_turn"
+      },
+      {
+        "name": "Right Turn",
+        "slug": "right_turn"
+      }
     ],
-    "topics": ["timing", "footwork", "lead_follow", "turns", "frame", "posture"],
+    "topics": [
+      "timing",
+      "footwork",
+      "weight distribution",
+      "hand holds and lead-follow",
+      "body mechanics and knee lift",
+      "partner connection",
+      "turns and rotation",
+      "spotting (head control during turns)",
+      "rhythm and musicality",
+      "class structure and levels"
+    ],
     "extracted_tips": [
-      "Basic step rhythm is 'quick, quick, slow' — think of it like a drum beat where every time your foot hits the floor it's a beat.",
+      "Basic step rhythm is 'quick, quick, slow' \u2014 think of it like a drum beat where every time your foot hits the floor it's a beat.",
       "Pick up your feet with knees up ('up, up, up'). Don't flat-foot or you can't move fast enough for the quick steps.",
-      "Every step is a weight change — you take a step and immediately commit your weight so you're ready for the next move.",
-      "Partner hand hold: leaders palms UP, followers palms OVER. Never use thumbs — use 2 fingers (middle + ring, like Spider-Man) to cuff around the follower's fingers. Just relax, don't grip.",
+      "Every step is a weight change \u2014 you take a step and immediately commit your weight so you're ready for the next move.",
+      "Partner hand hold: leaders palms UP, followers palms OVER. Never use thumbs \u2014 use 2 fingers (middle + ring, like Spider-Man) to cuff around the follower's fingers. Just relax, don't grip.",
       "Right turn footwork: forward, forward, turn to the right. The turn happens on the slow count. Always end on the right foot because footwork is always right, left, right.",
-      "Stay on the line when turning right — turn right but don't drift forward off the line. Go right, then come back to center.",
+      "Stay on the line when turning right \u2014 turn right but don't drift forward off the line. Go right, then come back to center.",
       "After the right turn, immediately go into basic: 'ta-ta-po' (back, back, forward). Full pattern is right turn then basic, repeating.",
-      "Leader signals the follower's right turn by lifting/picking up the hand on the second bar. Leader does 3 basics throughout — your forward does not change because you're not turning.",
-      "Use only ONE hand for the right turn — left hand holding follower's right. Do not hold with 2 hands. Signal on count 1, the turn happens on counts 2-3.",
+      "Leader signals the follower's right turn by lifting/picking up the hand on the second bar. Leader does 3 basics throughout \u2014 your forward does not change because you're not turning.",
+      "Use only ONE hand for the right turn \u2014 left hand holding follower's right. Do not hold with 2 hands. Signal on count 1, the turn happens on counts 2-3.",
       "Hand flip trick during the turn: with the 2-finger Spider-Man grip, flip your wrist back as the follower turns, then flip it back down after. Cuff around her fingers, then release and re-catch.",
       "Spotting during turns: pick a target, keep your eyes on it, bring your head right back to that target after rotation.",
       "Leader's own right turn: forward, forward, turn. Left hand comes down, turn around, fingers rotate behind back, switch hand. Follower just keeps doing her basic."
+    ],
+    "summary": "This beginner salsa class (Level 101) focused on mastering the basic step and introducing the right turn. Students learned the foundational forward-forward-back and back-back-forward patterns, practiced proper hand positioning and lead-follow connection, and combined these elements into a 6-count pattern (basic + right turn + basic) for partner dancing. The instructor emphasized timing (quick-quick-slow), knee lift, staying on the line, and maintaining proper hand technique throughout.",
+    "key_phrases": [
+      "quick, quick, slow",
+      "forward, forward, back",
+      "back, back, forward",
+      "right, left, right",
+      "pick up your knees",
+      "pick a foot",
+      "pick a target",
+      "stay on the line",
+      "palms up",
+      "2 fingers",
+      "never use your thumbs",
+      "signal on 1",
+      "turn on 2-3",
+      "ladies' timing",
+      "part 1 and part 2"
+    ],
+    "techniques_covered": [
+      "basic_step",
+      "inside_turn",
+      "right_turn"
+    ],
+    "teaching_points": [
+      {
+        "technique": "basic_step",
+        "tip": "Always move right-left-right in a 3-step pattern: take 2 steps forward, then 1 step back. This is the foundation of all salsa movement.",
+        "context": "Instructor drilled the forward-forward-back pattern repeatedly at the start of class"
+      },
+      {
+        "technique": "basic_step",
+        "tip": "When you have both feet on the ground, you must pick one foot to be in the air\u2014never leave both feet planted.",
+        "context": "Instructor emphasized foot placement and weight distribution during basic step drills"
+      },
+      {
+        "technique": "basic_step",
+        "tip": "Think of your footwork like drumming: every time your foot hits the floor, it's a beat. This helps you stay on rhythm.",
+        "context": "Instructor used the drummer analogy to help students internalize the timing of forward-forward-back, back-back-forward"
+      },
+      {
+        "technique": "basic_step",
+        "tip": "Pick up your knees and move upward (up-up-up) before stepping forward or back. Don't shuffle or drag your feet.",
+        "context": "Instructor corrected students who were not lifting their knees properly, warning that fast songs require this preparation"
+      },
+      {
+        "technique": "basic_step",
+        "tip": "Use the timing 'quick-quick-slow' to internalize the rhythm: two fast steps, then one slower step.",
+        "context": "Instructor introduced quick-quick-slow as a verbal cue for the basic step pattern"
+      },
+      {
+        "technique": "basic_step",
+        "tip": "Part 1 is forward-forward-back; Part 2 is back-back-forward. Together they return you to your starting position.",
+        "context": "Instructor broke down the basic step into two parts and had students practice saying them aloud"
+      },
+      {
+        "technique": "basic_step",
+        "tip": "Don't move before the beat arrives. Stay behind the music and be ready to step on count 5 after finishing count 3.",
+        "context": "Instructor corrected timing issues, emphasizing that students were moving too early"
+      },
+      {
+        "technique": "inside_turn",
+        "tip": "A right turn is: forward-forward-turn. You step forward twice, then rotate 180 degrees to face the opposite direction.",
+        "context": "Instructor demonstrated the right turn as the main technique for the second half of class"
+      },
+      {
+        "technique": "inside_turn",
+        "tip": "Use 'quick-quick-slow' timing for the turn: two quick steps forward, then a slow turn on the third step.",
+        "context": "Instructor taught the timing pattern for executing a smooth right turn"
+      },
+      {
+        "technique": "inside_turn",
+        "tip": "After the turn, immediately continue with a basic step (back-back-forward) to complete the pattern.",
+        "context": "Instructor showed that a right turn is followed by a basic step to create a full 6-count pattern"
+      },
+      {
+        "technique": "inside_turn",
+        "tip": "Leaders: use only one hand (the follower's right hand) to lead the turn. Do not hold with both hands.",
+        "context": "Instructor emphasized single-hand connection for leading turns in partner work"
+      },
+      {
+        "technique": "inside_turn",
+        "tip": "Leaders: give the turn signal on count 1, and the follower turns on counts 2-3. You continue your basic step without turning.",
+        "context": "Instructor explained the leader's role during a right turn\u2014the leader stays in place while signaling the follower to turn"
+      },
+      {
+        "technique": "inside_turn",
+        "tip": "Followers: pick a target (a fixed point) and keep your eyes on it as you turn. Don't let your head spin around the room.",
+        "context": "Instructor gave spotting advice to help followers maintain balance and control during turns"
+      },
+      {
+        "technique": "inside_turn",
+        "tip": "When turning, use a hand flip technique: flip your wrist over and back down using only your middle and ring fingers, not your thumbs.",
+        "context": "Instructor demonstrated the wrist flip for leaders to maintain connection while turning"
+      },
+      {
+        "technique": "basic_step",
+        "tip": "Leaders: hold the follower's hand with palms up (your left hand, her right hand). Followers: place your hand over the leader's with palms down.",
+        "context": "Instructor taught proper hand positioning for partner work"
+      },
+      {
+        "technique": "basic_step",
+        "tip": "Followers: use all 4 fingers in the leader's hand. Leaders: use only 2 fingers (middle and ring) to maintain control without gripping.",
+        "context": "Instructor explained finger placement for proper lead-follow connection"
+      },
+      {
+        "technique": "basic_step",
+        "tip": "Never use your thumbs when holding your partner's hand. This prevents proper lead-follow communication.",
+        "context": "Instructor corrected students who were using their thumbs and encouraged followers to gently slap leaders' hands if they did"
+      },
+      {
+        "technique": "inside_turn",
+        "tip": "Stay on the line (your lane) while turning. Don't step forward or backward during the turn\u2014rotate in place.",
+        "context": "Instructor corrected followers who were moving off their line during turns"
+      },
+      {
+        "technique": "basic_step",
+        "tip": "All students learn steps on ladies' timing (counts 1-2-3, 5-6-7). Leaders switch to their own timing (counts 5-6-7, 1-2-3) only during partner work.",
+        "context": "Instructor explained the timing system used in the class"
+      },
+      {
+        "technique": "inside_turn",
+        "tip": "The pattern is: 1 basic step, 1 right turn, 1 basic step. This 6-count sequence is the foundation for partner dancing.",
+        "context": "Instructor taught the repeating pattern that students would practice with partners"
+      }
+    ],
+    "class_structure": [
+      {
+        "section": "Warm-up and Basic Step Introduction",
+        "description": "Instructor introduced the basic step (forward-forward-back, back-back-forward) and had students drill it repeatedly without music. Emphasized foot placement, weight distribution, and the right-left-right pattern.",
+        "approx_minutes": 15
+      },
+      {
+        "section": "Basic Step Refinement",
+        "description": "Students practiced the basic step with focus on knee lift, timing (quick-quick-slow), and staying behind the beat. Instructor corrected common mistakes like shuffling and moving too early.",
+        "approx_minutes": 10
+      },
+      {
+        "section": "Basic Step with Music",
+        "description": "Students performed the basic step to a slow song, practicing the pattern repeatedly to internalize the rhythm.",
+        "approx_minutes": 5
+      },
+      {
+        "section": "Partner Work Setup and Hand Positioning",
+        "description": "Instructor organized students into lines (leaders and followers), taught proper hand hold (palms up/down, 2 fingers for leaders, 4 for followers), and explained the rotation system.",
+        "approx_minutes": 10
+      },
+      {
+        "section": "Partner Basic Step",
+        "description": "Leaders and followers danced the basic step together with proper hand connection. Instructor emphasized staying on ladies' timing and maintaining the correct hand position.",
+        "approx_minutes": 8
+      },
+      {
+        "section": "Right Turn Introduction",
+        "description": "Instructor demonstrated the right turn (forward-forward-turn) and had students practice it solo, focusing on the quick-quick-slow timing and 180-degree rotation.",
+        "approx_minutes": 10
+      },
+      {
+        "section": "Right Turn with Basic Step",
+        "description": "Students combined the right turn with a basic step to create a 6-count pattern. Practiced multiple times to build muscle memory.",
+        "approx_minutes": 8
+      },
+      {
+        "section": "Right Turn with Partner",
+        "description": "Leaders and followers practiced the right turn pattern together. Instructor taught leaders to use one hand, signal on count 1, and let followers turn on counts 2-3. Followers learned to pick a target and maintain balance.",
+        "approx_minutes": 12
+      },
+      {
+        "section": "Right Turn Refinement and Technique Details",
+        "description": "Instructor focused on wrist flips, staying on the line, head spotting, and the hand switch technique for leaders. Multiple repetitions with and without music.",
+        "approx_minutes": 10
+      },
+      {
+        "section": "Final Song and Cool Down",
+        "description": "Students performed the right turn pattern with a fast song. Instructor explained class levels (101-103 beginner, 7pm intermediate, 8pm advanced) and announced the end of class.",
+        "approx_minutes": 5
+      }
+    ]
+  },
+  {
+    "class_date": "2026-05-26",
+    "class_number": 3,
+    "transcript_file": "nieves-dance-studio.json",
+    "matched_techniques": [
+      {
+        "name": "Basic Step",
+        "slug": "basic_step"
+      },
+      {
+        "name": "Inside Turn",
+        "slug": "inside_turn"
+      },
+      {
+        "name": "Suzy Q",
+        "slug": "suzy_q"
+      },
+      {
+        "name": "Prep Step",
+        "slug": "prep_step"
+      },
+      {
+        "name": "Cross Body Lead",
+        "slug": "cross_body_lead"
+      }
+    ],
+    "topics": [
+      "timing",
+      "footwork",
+      "body mechanics",
+      "arm styling",
+      "partner leading",
+      "partner following",
+      "frame maintenance",
+      "body language",
+      "counting",
+      "weight placement",
+      "hip movement",
+      "turn mechanics",
+      "signal communication",
+      "choreography combination"
+    ],
+    "extracted_tips": [
+      "Before a left turn, twist your body to the right to prepare. This unlocks you from the right twist into the left twist on count 3.",
+      "On count 6, you should be facing forward again after the left turn. Your right leg goes back on 6, not forward\u2014keep your weight centered.",
+      "The turn happens on count 3. Your weight shifts and you pivot, but count 7 stays in place\u2014just shift your weight without moving that foot.",
+      "Keep your arm styling close to your right ear on counts 1-2-3. Don't let it drift outward; bend it and keep it controlled near your body.",
+      "Trace your body with your arm styling from count 5 (behind your neck) through count 7 (down the body) to count 1 (up). Do this with intention, not tentatively.",
+      "Cross, step, cross\u2014keep your back foot close behind your front foot. Don't pass your front foot; stay tight and controlled.",
+      "When doing Suzy Q, twist your hips for styling. This creates the visual effect of crossing without overextending your legs.",
+      "You can prep a Suzy Q by lifting your right leg on counts 5-6-7-1 before starting the cross-step-cross pattern.",
+      "After Suzy Q (counts 5-6-7-1-2-3), do quarter beats by stepping only on odd numbers: 1 and 3. These are core beats\u2014just the high numbers.",
+      "Count 1-2-3-5-6-7 for a basic step. That's 6 steps total. If you're stepping more, you're losing time and the count.",
+      "There's a break between each set of 3 counts: 1-2-3 (break) 5-6-7 (break). Use these breaks to reset and stay on time.",
+      "When leading a left turn, twist your arm on count 2 subtly\u2014not exaggerated. Bring your right hand closer to you and your left hand closer to your follow.",
+      "Leaders: don't step into your follow's space. Keep a normal step forward but add hip twist on count 2 to signal the left turn.",
+      "When leading a left turn, keep your right hand centered and lift your left hand up and out. Don't confuse your follow with mixed signals.",
+      "Followers: pivot off your right foot while your left foot swings to the left during a left turn. Keep your right elbow down to maintain frame.",
+      "Leaders must be assertive with direction and guide. Use body language and touch to show your follow where to go\u2014don't let them guess.",
+      "When turning your follow, keep your arms at shoulder width around their head. Don't use wide arms; stay compact and controlled.",
+      "Followers: don't change your basic step when the leader starts going back with their left foot. Keep your normal pattern until the lead signals otherwise."
+    ],
+    "summary": "This NY On2 salsa class (class #3, beginner level 2) focused on mastering the left turn with detailed breakdowns of prep, execution, and styling, followed by Suzy Q footwork and quarter beats. Students learned a complex combination incorporating these techniques and practiced partner work with emphasis on clear leading signals (especially the count-2 twist) and proper frame maintenance. The class concluded with partner rotations and announcements about upcoming social practice sessions and a semi-annual gala event.",
+    "key_phrases": [
+      "1-2-3-5-6-7",
+      "quick, quick, slow",
+      "prep for the turn",
+      "twist your body",
+      "face forward",
+      "cross, step, cross",
+      "quarter beats",
+      "core beats",
+      "odd numbers only",
+      "break between 3s",
+      "keep it close to your ear",
+      "trace your body",
+      "with intention",
+      "twist on 2",
+      "pivot off your right foot",
+      "keep your frame",
+      "be assertive",
+      "shoulder width",
+      "don't lose time"
+    ],
+    "techniques_covered": [
+      "basic_step",
+      "inside_turn",
+      "suzy_q",
+      "prep_step",
+      "cross_body_lead"
+    ],
+    "teaching_points": [
+      {
+        "technique": "prep_step",
+        "tip": "Before a left turn, twist your body to the right to prepare. This unlocks you from the right twist into the left twist on count 3.",
+        "context": "Instructor demonstrated prep for left turn, explaining the body mechanics needed before executing the turn."
+      },
+      {
+        "technique": "inside_turn",
+        "tip": "On count 6, you should be facing forward again after the left turn. Your right leg goes back on 6, not forward\u2014keep your weight centered.",
+        "context": "Instructor corrected students who were turning aimlessly, emphasizing the goal position after the turn."
+      },
+      {
+        "technique": "inside_turn",
+        "tip": "The turn happens on count 3. Your weight shifts and you pivot, but count 7 stays in place\u2014just shift your weight without moving that foot.",
+        "context": "Breaking down the left turn footwork, showing that 7 is a weight shift, not a step."
+      },
+      {
+        "technique": "inside_turn",
+        "tip": "Keep your arm styling close to your right ear on counts 1-2-3. Don't let it drift outward; bend it and keep it controlled near your body.",
+        "context": "Teaching arm styling for the left turn, emphasizing intentional movement rather than loose gestures."
+      },
+      {
+        "technique": "inside_turn",
+        "tip": "Trace your body with your arm styling from count 5 (behind your neck) through count 7 (down the body) to count 1 (up). Do this with intention, not tentatively.",
+        "context": "Demonstrating the full arm path for left turn styling, emphasizing confident execution."
+      },
+      {
+        "technique": "suzy_q",
+        "tip": "Cross, step, cross\u2014keep your back foot close behind your front foot. Don't pass your front foot; stay tight and controlled.",
+        "context": "Instructor showed the basic Suzy Q footwork, emphasizing the compact nature of the step."
+      },
+      {
+        "technique": "suzy_q",
+        "tip": "When doing Suzy Q, twist your hips for styling. This creates the visual effect of crossing without overextending your legs.",
+        "context": "Teaching hip movement as part of Suzy Q styling, especially for faster music."
+      },
+      {
+        "technique": "suzy_q",
+        "tip": "You can prep a Suzy Q by lifting your right leg on counts 5-6-7-1 before starting the cross-step-cross pattern.",
+        "context": "Showing optional preparation for Suzy Q to add styling and emphasis."
+      },
+      {
+        "technique": "suzy_q",
+        "tip": "After Suzy Q (counts 5-6-7-1-2-3), do quarter beats by stepping only on odd numbers: 1 and 3. These are core beats\u2014just the high numbers.",
+        "context": "Introducing the concept of quarter beats following a Suzy Q, simplifying the footwork."
+      },
+      {
+        "technique": "basic_step",
+        "tip": "Count 1-2-3-5-6-7 for a basic step. That's 6 steps total. If you're stepping more, you're losing time and the count.",
+        "context": "Reinforcing the importance of counting correctly to maintain timing, especially for beginners."
+      },
+      {
+        "technique": "basic_step",
+        "tip": "There's a break between each set of 3 counts: 1-2-3 (break) 5-6-7 (break). Use these breaks to reset and stay on time.",
+        "context": "Teaching the rhythm structure of the basic step to help students understand phrasing."
+      },
+      {
+        "technique": "cross_body_lead",
+        "tip": "When leading a left turn, twist your arm on count 2 subtly\u2014not exaggerated. Bring your right hand closer to you and your left hand closer to your follow.",
+        "context": "Demonstrating the lead mechanics for signaling a left turn to a follow through body twist."
+      },
+      {
+        "technique": "cross_body_lead",
+        "tip": "Leaders: don't step into your follow's space. Keep a normal step forward but add hip twist on count 2 to signal the left turn.",
+        "context": "Correcting common leading mistakes where leaders invade the follow's frame."
+      },
+      {
+        "technique": "cross_body_lead",
+        "tip": "When leading a left turn, keep your right hand centered and lift your left hand up and out. Don't confuse your follow with mixed signals.",
+        "context": "Clarifying hand positioning during the left turn lead to maintain clear communication."
+      },
+      {
+        "technique": "cross_body_lead",
+        "tip": "Followers: pivot off your right foot while your left foot swings to the left during a left turn. Keep your right elbow down to maintain frame.",
+        "context": "Teaching the follow's mechanics for executing a left turn and maintaining proper frame."
+      },
+      {
+        "technique": "cross_body_lead",
+        "tip": "Leaders must be assertive with direction and guide. Use body language and touch to show your follow where to go\u2014don't let them guess.",
+        "context": "Emphasizing leadership responsibility in partner dancing; followers depend on clear signals."
+      },
+      {
+        "technique": "cross_body_lead",
+        "tip": "When turning your follow, keep your arms at shoulder width around their head. Don't use wide arms; stay compact and controlled.",
+        "context": "Correcting arm positioning during partner turns to maintain proper frame and control."
+      },
+      {
+        "technique": "basic_step",
+        "tip": "Followers: don't change your basic step when the leader starts going back with their left foot. Keep your normal pattern until the lead signals otherwise.",
+        "context": "Teaching followers to maintain their own footwork while responding to the leader's direction."
+      }
+    ],
+    "class_structure": [
+      {
+        "section": "Welcome & Orientation",
+        "description": "Instructor introduces the class as a 102 (beginner level 2) session, explains class structure and expectations.",
+        "approx_minutes": 3
+      },
+      {
+        "section": "Basic Step Review",
+        "description": "Students practice the basic step (1-2-3-5-6-7) with counting and footwork emphasis.",
+        "approx_minutes": 5
+      },
+      {
+        "section": "Left Turn Technique",
+        "description": "Detailed breakdown of the left turn including prep, execution, weight placement, and arm styling. Multiple repetitions with corrections.",
+        "approx_minutes": 15
+      },
+      {
+        "section": "Suzy Q Technique",
+        "description": "Introduction and practice of Suzy Q footwork (cross-step-cross), hip styling, prep variations, and quarter beats following the move.",
+        "approx_minutes": 12
+      },
+      {
+        "section": "Combination Choreography",
+        "description": "Students learn and practice a complex combination: left turn, Suzy Q, quarter beats, 3 crosses, 4-beat movement, and basic step finish.",
+        "approx_minutes": 10
+      },
+      {
+        "section": "Partner Work Setup",
+        "description": "Instructor organizes followers and leaders into lines, explains rotation pattern (up-down-up-down), and reviews basic step with partners.",
+        "approx_minutes": 8
+      },
+      {
+        "section": "Partner Left Turn Practice",
+        "description": "Leaders and followers practice left turn with partner, focusing on the twist signal on count 2, frame maintenance, and clear leading.",
+        "approx_minutes": 12
+      },
+      {
+        "section": "Partner Rotation & Social Dancing",
+        "description": "Students rotate through partners, practicing the choreography and combinations learned. Instructor provides feedback on leading and following.",
+        "approx_minutes": 15
+      },
+      {
+        "section": "Announcements & Closing",
+        "description": "Instructor announces Wednesday night socials (free practice sessions) and June 28th semi-annual gala event with details.",
+        "approx_minutes": 3
+      }
+    ]
+  },
+  {
+    "class_date": "2026-07-07",
+    "class_number": 1,
+    "transcript_file": "nieves-dance-studio-7-7.json",
+    "matched_techniques": [
+      {
+        "name": "Suzy Q",
+        "slug": "suzy_q"
+      },
+      {
+        "name": "Basic Step",
+        "slug": "basic_step"
+      },
+      {
+        "name": "Inside Turn",
+        "slug": "inside_turn"
+      },
+      {
+        "name": "Transition Basic",
+        "slug": "transition_basic"
+      }
+    ],
+    "techniques_covered": [
+      "suzy_q",
+      "basic_step",
+      "inside_turn",
+      "transition_basic"
+    ],
+    "topics": [
+      "footwork",
+      "weight distribution",
+      "timing",
+      "hand holds",
+      "partner connection",
+      "spatial awareness",
+      "body mechanics",
+      "leading and following",
+      "turn technique",
+      "combo structure",
+      "practice methodology",
+      "dance philosophy"
+    ],
+    "extracted_tips": [
+      "Always cross in front of your foot, whether crossing over left or right\u2014never behind. This is the standard for Suzy Q.",
+      "Say the pattern aloud as you move: 'cross, step, cross, cross, step, cross.' Saying it helps you execute it correctly.",
+      "Pick up your leg after the cross to prepare for the next step\u2014don't drag your foot.",
+      "For circular Suzy Q, think of four directions: bathroom, wall, door, and mirror. Turn to face each direction as you complete each Suzy Q repetition.",
+      "Create smooth curves and circles rather than sharp corners when transitioning between directions in circular Suzy Q.",
+      "You can reverse the circular Suzy Q by starting with your left foot and going to the right instead of left. The mental pattern stays the same.",
+      "If you struggle with Suzy Q, practice Suzy Q in isolation before attempting the full combo. Master the basic movement first.",
+      "On counts 3 and 7, keep your weight planted and don't move your foot\u2014these are anchor points that stay in place.",
+      "Counts 1 and 2 travel forward; count 3 stays in place. Counts 5 and 6 travel back; count 7 stays in place.",
+      "If you move your 3 or 7, you'll step on your partner. Keep these anchor points stationary to maintain the connection.",
+      "Start turning on count 6, not before. Don't hesitate\u2014commit to the turn at 6.",
+      "The follower turns to the right on count 2. As the leader, raise your hand on count 1 to signal the turn, and guide them to the right.",
+      "Keep your 7 away from your partner, not toward them. This creates space and prevents stepping on each other.",
+      "Don't reach high to grab your partner's hand during a turn. Keep your arm low and grab low to maintain control.",
+      "Use your elbows to activate the switch, not your hands. Keep your arm straight and use elbow engagement to signal the hand switch.",
+      "Don't present your hand slowly\u2014snatch it. Quick, decisive hand movement prevents the follower from reaching for the wrong hand.",
+      "After turning on 6, land on count 8 (a pause), then continue with counts 1, 2, 3. Don't rush the landing.",
+      "Maintain right-to-right hand hold throughout the turn and transition. Don't switch back to the original hand position\u2014keep the connection flowing.",
+      "Take small steps and stay aware of your surroundings, especially when dancing in lines. Stagger slightly if needed to avoid collisions.",
+      "Great dancing is made of connection and simplicity, not complex movements. Practice these fundamentals until they feel smooth and fun."
+    ],
+    "teaching_points": [
+      {
+        "technique": "suzy_q",
+        "tip": "Always cross in front of your foot, whether crossing over left or right\u2014never behind. This is the standard for Suzy Q.",
+        "context": "Instructor emphasized the fundamental cross pattern during basic Suzy Q instruction"
+      },
+      {
+        "technique": "suzy_q",
+        "tip": "Say the pattern aloud as you move: 'cross, step, cross, cross, step, cross.' Saying it helps you execute it correctly.",
+        "context": "Teaching the basic Suzy Q footwork pattern"
+      },
+      {
+        "technique": "suzy_q",
+        "tip": "Pick up your leg after the cross to prepare for the next step\u2014don't drag your foot.",
+        "context": "Demonstrating weight transfer and leg positioning in Suzy Q"
+      },
+      {
+        "technique": "suzy_q",
+        "tip": "For circular Suzy Q, think of four directions: bathroom, wall, door, and mirror. Turn to face each direction as you complete each Suzy Q repetition.",
+        "context": "Introducing circular variation of Suzy Q with spatial orientation"
+      },
+      {
+        "technique": "suzy_q",
+        "tip": "Create smooth curves and circles rather than sharp corners when transitioning between directions in circular Suzy Q.",
+        "context": "Refining the circular Suzy Q to make it flow more smoothly"
+      },
+      {
+        "technique": "suzy_q",
+        "tip": "You can reverse the circular Suzy Q by starting with your left foot and going to the right instead of left. The mental pattern stays the same.",
+        "context": "Teaching variation and flexibility in Suzy Q direction"
+      },
+      {
+        "technique": "suzy_q",
+        "tip": "If you struggle with Suzy Q, practice Suzy Q in isolation before attempting the full combo. Master the basic movement first.",
+        "context": "Instructor's advice on practice priorities for students struggling with the technique"
+      },
+      {
+        "technique": "basic_step",
+        "tip": "On counts 3 and 7, keep your weight planted and don't move your foot\u2014these are anchor points that stay in place.",
+        "context": "Explaining fundamental footwork mechanics of the basic step"
+      },
+      {
+        "technique": "basic_step",
+        "tip": "Counts 1 and 2 travel forward; count 3 stays in place. Counts 5 and 6 travel back; count 7 stays in place.",
+        "context": "Breaking down the weight distribution and movement pattern of basic step"
+      },
+      {
+        "technique": "basic_step",
+        "tip": "If you move your 3 or 7, you'll step on your partner. Keep these anchor points stationary to maintain the connection.",
+        "context": "Explaining why 3 and 7 must stay in place during partner dancing"
+      },
+      {
+        "technique": "inside_turn",
+        "tip": "Start turning on count 6, not before. Don't hesitate\u2014commit to the turn at 6.",
+        "context": "Teaching the timing for leading a right turn in the switch pattern"
+      },
+      {
+        "technique": "inside_turn",
+        "tip": "The follower turns to the right on count 2. As the leader, raise your hand on count 1 to signal the turn, and guide them to the right.",
+        "context": "Explaining the lead and follow mechanics for a right turn"
+      },
+      {
+        "technique": "inside_turn",
+        "tip": "Keep your 7 away from your partner, not toward them. This creates space and prevents stepping on each other.",
+        "context": "Refining turn technique to maintain proper spacing"
+      },
+      {
+        "technique": "inside_turn",
+        "tip": "Don't reach high to grab your partner's hand during a turn. Keep your arm low and grab low to maintain control.",
+        "context": "Teaching proper hand positioning and arm mechanics during turns"
+      },
+      {
+        "technique": "inside_turn",
+        "tip": "Use your elbows to activate the switch, not your hands. Keep your arm straight and use elbow engagement to signal the hand switch.",
+        "context": "Demonstrating body mechanics for leading a smooth hand switch"
+      },
+      {
+        "technique": "inside_turn",
+        "tip": "Don't present your hand slowly\u2014snatch it. Quick, decisive hand movement prevents the follower from reaching for the wrong hand.",
+        "context": "Explaining the difference between a clear lead and a confusing one"
+      },
+      {
+        "technique": "transition_basic",
+        "tip": "After turning on 6, land on count 8 (a pause), then continue with counts 1, 2, 3. Don't rush the landing.",
+        "context": "Teaching the timing and momentum of transitioning from a turn back to basic step"
+      },
+      {
+        "technique": "transition_basic",
+        "tip": "Maintain right-to-right hand hold throughout the turn and transition. Don't switch back to the original hand position\u2014keep the connection flowing.",
+        "context": "Explaining how to maintain continuity in hand holds during combo transitions"
+      },
+      {
+        "technique": "basic_step",
+        "tip": "Take small steps and stay aware of your surroundings, especially when dancing in lines. Stagger slightly if needed to avoid collisions.",
+        "context": "Giving spatial awareness advice during line dancing practice"
+      },
+      {
+        "technique": "suzy_q",
+        "tip": "Great dancing is made of connection and simplicity, not complex movements. Practice these fundamentals until they feel smooth and fun.",
+        "context": "Instructor's closing philosophy on what makes a great dancer"
+      }
+    ],
+    "class_structure": [
+      {
+        "section": "Warm-up and Suzy Q Basics",
+        "description": "Instructor introduced the basic Suzy Q pattern with the cue 'cross, step, cross, cross, step, cross,' emphasizing that crosses always happen in front of the foot. Students practiced the footwork pattern with counting.",
+        "approx_minutes": 8
+      },
+      {
+        "section": "Circular Suzy Q",
+        "description": "Introduced circular variation of Suzy Q, with students turning to face four directions (bathroom, wall, door, mirror) while maintaining the basic Suzy Q pattern. Emphasis on creating smooth curves rather than sharp corners.",
+        "approx_minutes": 10
+      },
+      {
+        "section": "Combo Introduction: Circular Suzy Q + Around the World + Basic Step",
+        "description": "Taught a combination starting with circular Suzy Q (halfway), followed by around the world (half rotation), with anchoring on counts 3 and 7. Introduced reversing the circular Suzy Q to the right.",
+        "approx_minutes": 12
+      },
+      {
+        "section": "Anchor Points and Weight Distribution",
+        "description": "Detailed explanation of why counts 3 and 7 must stay in place during basic step and turns. Demonstrated how moving these anchor points causes partners to step on each other.",
+        "approx_minutes": 5
+      },
+      {
+        "section": "Partner Work: Right Turn and Hand Switch",
+        "description": "Taught the switch pattern with right turn, explaining that leaders turn on count 6 and followers turn on count 2. Covered hand positioning, elbow activation, and maintaining right-to-right hand hold.",
+        "approx_minutes": 12
+      },
+      {
+        "section": "Line Rotation and Spatial Awareness",
+        "description": "Organized students into four lines for partner rotation. Emphasized taking small steps, staying aware of surroundings, and staggering slightly to avoid collisions.",
+        "approx_minutes": 8
+      },
+      {
+        "section": "Full Combo Practice with Music",
+        "description": "Students practiced the full combination (circular Suzy Q, around the world, basic step, and right turn switch) with music. Multiple rotations through partner lines.",
+        "approx_minutes": 15
+      },
+      {
+        "section": "Closing Philosophy and Tips",
+        "description": "Instructor emphasized that great dancing comes from connection and simplicity, not complex movements. Encouraged students to practice fundamentals until they feel smooth and fun.",
+        "approx_minutes": 2
+      }
+    ],
+    "summary": "This NY On2 salsa class focused on mastering Suzy Q and its circular variation, then building a combo that incorporated circular Suzy Q, around the world, and basic step with a right turn switch. The instructor emphasized fundamental techniques like maintaining anchor points on counts 3 and 7, proper hand positioning, and the importance of connection and simplicity over complex movements. Students practiced with partners in rotating lines, learning both lead and follow mechanics for smooth transitions.",
+    "key_phrases": [
+      "cross, step, cross",
+      "always in front",
+      "anchor the 3",
+      "anchor the 7",
+      "circular motion",
+      "around the world",
+      "right to right",
+      "don't bounce",
+      "kill the bouncing",
+      "small steps",
+      "connection and simplicity",
+      "smooth and fun",
+      "snatch, don't present",
+      "keep it low",
+      "elbow activation"
     ]
   }
 ]
