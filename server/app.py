@@ -606,7 +606,10 @@ def get_frame_from_db(slug: str, filename: str) -> Response:
 
 UPLOAD_PIN = os.environ.get("UPLOAD_PIN", "")
 UPLOADS = ROOT / "uploads"
-UPLOADS.mkdir(exist_ok=True)
+try:
+    UPLOADS.mkdir(exist_ok=True)
+except OSError:
+    pass
 
 
 @app.get("/upload", response_class=HTMLResponse)
