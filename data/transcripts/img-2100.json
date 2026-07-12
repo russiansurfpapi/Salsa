@@ -1,0 +1,1305 @@
+{
+  "text": "Basic and 5, 6, 7, 1, 2, 3, 5, 6, 7, 1, 2, 3, little circular, just a circle, full circle, 5, circular and 1, 2, 3, this is for basic and 1, 2, around the world. We go and 12, 9, 6, basic and 1, 2, 3. Now we go combo and card out and 1, 2, 3, 5, 6, 7, around, anchor, 5, 6, 7, 1, 2, around, 5, anchor, 1, 2, 3, part the work And 1, 2, 3, 5, 6, 7. And hold it. 6, 7, 1, 2, 3, 5. Let's go. Right turn. And 5, 6, 7, 1, 2, 3, 6, 7. OK. Can we hold it? 1 more time. 1 right turn. Go. 5, 6, and 1, 2, 3, 4, 5, 6, 7, 8. Ok, come on. 1 more time. 1, 2, 3, 4, 5, 6, 7, 8. 1, 2, 3, 4, 5, 6, 7, 8. 1, 2, 3, 4, 5, 6, 7, 8. Give it up for the ladies! How's it going? Give me a scream! And I'll be the next to be free!",
+  "duration": 78.74,
+  "words": [
+    {
+      "word": "basic",
+      "start": 0.16,
+      "end": 0.65999997,
+      "confidence": 0.47645193,
+      "punctuated_word": "Basic"
+    },
+    {
+      "word": "and",
+      "start": 0.91999996,
+      "end": 1.42,
+      "confidence": 0.66795194,
+      "punctuated_word": "and"
+    },
+    {
+      "word": "5",
+      "start": 2.22,
+      "end": 2.72,
+      "confidence": 0.79287785,
+      "punctuated_word": "5,"
+    },
+    {
+      "word": "6",
+      "start": 2.72,
+      "end": 3.1999998,
+      "confidence": 0.9944101,
+      "punctuated_word": "6,"
+    },
+    {
+      "word": "7",
+      "start": 3.1999998,
+      "end": 3.6999998,
+      "confidence": 0.8978649,
+      "punctuated_word": "7,"
+    },
+    {
+      "word": "1",
+      "start": 4.2,
+      "end": 4.7,
+      "confidence": 0.99263483,
+      "punctuated_word": "1,"
+    },
+    {
+      "word": "2",
+      "start": 4.8199997,
+      "end": 5.2799997,
+      "confidence": 0.99654216,
+      "punctuated_word": "2,"
+    },
+    {
+      "word": "3",
+      "start": 5.2799997,
+      "end": 5.7799997,
+      "confidence": 0.89434487,
+      "punctuated_word": "3,"
+    },
+    {
+      "word": "5",
+      "start": 6.2599998,
+      "end": 6.7599998,
+      "confidence": 0.9951499,
+      "punctuated_word": "5,"
+    },
+    {
+      "word": "6",
+      "start": 6.94,
+      "end": 7.44,
+      "confidence": 0.99716586,
+      "punctuated_word": "6,"
+    },
+    {
+      "word": "7",
+      "start": 7.54,
+      "end": 8.04,
+      "confidence": 0.97901857,
+      "punctuated_word": "7,"
+    },
+    {
+      "word": "1",
+      "start": 8.099999,
+      "end": 8.599999,
+      "confidence": 0.99568176,
+      "punctuated_word": "1,"
+    },
+    {
+      "word": "2",
+      "start": 8.8,
+      "end": 9.24,
+      "confidence": 0.9949851,
+      "punctuated_word": "2,"
+    },
+    {
+      "word": "3",
+      "start": 9.24,
+      "end": 9.74,
+      "confidence": 0.21120216,
+      "punctuated_word": "3,"
+    },
+    {
+      "word": "little",
+      "start": 9.96,
+      "end": 10.46,
+      "confidence": 0.6193296,
+      "punctuated_word": "little"
+    },
+    {
+      "word": "circular",
+      "start": 10.599999,
+      "end": 11.099999,
+      "confidence": 0.79070795,
+      "punctuated_word": "circular,"
+    },
+    {
+      "word": "just",
+      "start": 11.5199995,
+      "end": 11.759999,
+      "confidence": 0.7005341,
+      "punctuated_word": "just"
+    },
+    {
+      "word": "a",
+      "start": 11.759999,
+      "end": 11.92,
+      "confidence": 0.73237956,
+      "punctuated_word": "a"
+    },
+    {
+      "word": "circle",
+      "start": 11.92,
+      "end": 12.42,
+      "confidence": 0.5299855,
+      "punctuated_word": "circle,"
+    },
+    {
+      "word": "full",
+      "start": 12.44,
+      "end": 12.719999,
+      "confidence": 0.48364466,
+      "punctuated_word": "full"
+    },
+    {
+      "word": "circle",
+      "start": 12.719999,
+      "end": 13.219999,
+      "confidence": 0.036537174,
+      "punctuated_word": "circle,"
+    },
+    {
+      "word": "5",
+      "start": 13.78,
+      "end": 14.099999,
+      "confidence": 0.50103545,
+      "punctuated_word": "5,"
+    },
+    {
+      "word": "circular",
+      "start": 14.099999,
+      "end": 14.599999,
+      "confidence": 0.9579469,
+      "punctuated_word": "circular"
+    },
+    {
+      "word": "and",
+      "start": 14.719999,
+      "end": 15.219999,
+      "confidence": 0.9927816,
+      "punctuated_word": "and"
+    },
+    {
+      "word": "1",
+      "start": 15.4,
+      "end": 15.9,
+      "confidence": 0.9938379,
+      "punctuated_word": "1,"
+    },
+    {
+      "word": "2",
+      "start": 15.92,
+      "end": 16.4,
+      "confidence": 0.99870396,
+      "punctuated_word": "2,"
+    },
+    {
+      "word": "3",
+      "start": 16.4,
+      "end": 16.9,
+      "confidence": 0.80154335,
+      "punctuated_word": "3,"
+    },
+    {
+      "word": "this",
+      "start": 17.06,
+      "end": 17.24,
+      "confidence": 0.612763,
+      "punctuated_word": "this"
+    },
+    {
+      "word": "is",
+      "start": 17.24,
+      "end": 17.38,
+      "confidence": 0.84916,
+      "punctuated_word": "is"
+    },
+    {
+      "word": "for",
+      "start": 17.38,
+      "end": 17.66,
+      "confidence": 0.7309152,
+      "punctuated_word": "for"
+    },
+    {
+      "word": "basic",
+      "start": 17.66,
+      "end": 18.16,
+      "confidence": 0.66878563,
+      "punctuated_word": "basic"
+    },
+    {
+      "word": "and",
+      "start": 18.18,
+      "end": 18.68,
+      "confidence": 0.96492374,
+      "punctuated_word": "and"
+    },
+    {
+      "word": "1",
+      "start": 18.9,
+      "end": 19.3,
+      "confidence": 0.98288894,
+      "punctuated_word": "1,"
+    },
+    {
+      "word": "2",
+      "start": 19.3,
+      "end": 19.74,
+      "confidence": 0.8521288,
+      "punctuated_word": "2,"
+    },
+    {
+      "word": "around",
+      "start": 19.74,
+      "end": 20.22,
+      "confidence": 0.81886363,
+      "punctuated_word": "around"
+    },
+    {
+      "word": "the",
+      "start": 20.22,
+      "end": 20.380001,
+      "confidence": 0.3091864,
+      "punctuated_word": "the"
+    },
+    {
+      "word": "world",
+      "start": 20.380001,
+      "end": 20.880001,
+      "confidence": 0.082207076,
+      "punctuated_word": "world."
+    },
+    {
+      "word": "we",
+      "start": 20.94,
+      "end": 21.18,
+      "confidence": 0.6519241,
+      "punctuated_word": "We"
+    },
+    {
+      "word": "go",
+      "start": 21.18,
+      "end": 21.68,
+      "confidence": 0.7602051,
+      "punctuated_word": "go"
+    },
+    {
+      "word": "and",
+      "start": 21.74,
+      "end": 22.24,
+      "confidence": 0.97035766,
+      "punctuated_word": "and"
+    },
+    {
+      "word": "12",
+      "start": 22.54,
+      "end": 23.04,
+      "confidence": 0.7448008,
+      "punctuated_word": "12,"
+    },
+    {
+      "word": "9",
+      "start": 23.56,
+      "end": 24.06,
+      "confidence": 0.9631097,
+      "punctuated_word": "9,"
+    },
+    {
+      "word": "6",
+      "start": 24.439999,
+      "end": 24.939999,
+      "confidence": 0.8616196,
+      "punctuated_word": "6,"
+    },
+    {
+      "word": "basic",
+      "start": 25.26,
+      "end": 25.76,
+      "confidence": 0.95435625,
+      "punctuated_word": "basic"
+    },
+    {
+      "word": "and",
+      "start": 25.76,
+      "end": 26.18,
+      "confidence": 0.99158734,
+      "punctuated_word": "and"
+    },
+    {
+      "word": "1",
+      "start": 26.18,
+      "end": 26.66,
+      "confidence": 0.99295783,
+      "punctuated_word": "1,"
+    },
+    {
+      "word": "2",
+      "start": 26.66,
+      "end": 27.099998,
+      "confidence": 0.99796766,
+      "punctuated_word": "2,"
+    },
+    {
+      "word": "3",
+      "start": 27.099998,
+      "end": 27.599998,
+      "confidence": 0.84502023,
+      "punctuated_word": "3."
+    },
+    {
+      "word": "now",
+      "start": 27.8,
+      "end": 28.3,
+      "confidence": 0.9139572,
+      "punctuated_word": "Now"
+    },
+    {
+      "word": "we",
+      "start": 28.380001,
+      "end": 28.619999,
+      "confidence": 0.7393808,
+      "punctuated_word": "we"
+    },
+    {
+      "word": "go",
+      "start": 28.619999,
+      "end": 29.119999,
+      "confidence": 0.78368294,
+      "punctuated_word": "go"
+    },
+    {
+      "word": "combo",
+      "start": 29.759998,
+      "end": 30.259998,
+      "confidence": 0.0681283,
+      "punctuated_word": "combo"
+    },
+    {
+      "word": "and",
+      "start": 30.54,
+      "end": 31.04,
+      "confidence": 0.41242424,
+      "punctuated_word": "and"
+    },
+    {
+      "word": "card",
+      "start": 31.42,
+      "end": 31.84,
+      "confidence": 0.68049777,
+      "punctuated_word": "card"
+    },
+    {
+      "word": "out",
+      "start": 31.84,
+      "end": 32.24,
+      "confidence": 0.47394976,
+      "punctuated_word": "out"
+    },
+    {
+      "word": "and",
+      "start": 32.24,
+      "end": 32.74,
+      "confidence": 0.5466847,
+      "punctuated_word": "and"
+    },
+    {
+      "word": "1",
+      "start": 32.96,
+      "end": 33.46,
+      "confidence": 0.7138061,
+      "punctuated_word": "1,"
+    },
+    {
+      "word": "2",
+      "start": 33.48,
+      "end": 33.94,
+      "confidence": 0.994785,
+      "punctuated_word": "2,"
+    },
+    {
+      "word": "3",
+      "start": 33.94,
+      "end": 34.44,
+      "confidence": 0.8284864,
+      "punctuated_word": "3,"
+    },
+    {
+      "word": "5",
+      "start": 34.86,
+      "end": 35.28,
+      "confidence": 0.9812717,
+      "punctuated_word": "5,"
+    },
+    {
+      "word": "6",
+      "start": 35.28,
+      "end": 35.68,
+      "confidence": 0.9938461,
+      "punctuated_word": "6,"
+    },
+    {
+      "word": "7",
+      "start": 35.68,
+      "end": 36.18,
+      "confidence": 0.81202483,
+      "punctuated_word": "7,"
+    },
+    {
+      "word": "around",
+      "start": 36.38,
+      "end": 36.88,
+      "confidence": 0.6761208,
+      "punctuated_word": "around,"
+    },
+    {
+      "word": "anchor",
+      "start": 37.48,
+      "end": 37.98,
+      "confidence": 0.9195523,
+      "punctuated_word": "anchor,"
+    },
+    {
+      "word": "5",
+      "start": 38.3,
+      "end": 38.72,
+      "confidence": 0.98894614,
+      "punctuated_word": "5,"
+    },
+    {
+      "word": "6",
+      "start": 38.72,
+      "end": 39.14,
+      "confidence": 0.9930877,
+      "punctuated_word": "6,"
+    },
+    {
+      "word": "7",
+      "start": 39.14,
+      "end": 39.64,
+      "confidence": 0.93386024,
+      "punctuated_word": "7,"
+    },
+    {
+      "word": "1",
+      "start": 39.86,
+      "end": 40.28,
+      "confidence": 0.9919803,
+      "punctuated_word": "1,"
+    },
+    {
+      "word": "2",
+      "start": 40.28,
+      "end": 40.64,
+      "confidence": 0.8921924,
+      "punctuated_word": "2,"
+    },
+    {
+      "word": "around",
+      "start": 40.64,
+      "end": 41.14,
+      "confidence": 0.8227112,
+      "punctuated_word": "around,"
+    },
+    {
+      "word": "5",
+      "start": 41.58,
+      "end": 42.08,
+      "confidence": 0.044737823,
+      "punctuated_word": "5,"
+    },
+    {
+      "word": "anchor",
+      "start": 42.4,
+      "end": 42.9,
+      "confidence": 0.99681735,
+      "punctuated_word": "anchor,"
+    },
+    {
+      "word": "1",
+      "start": 43.14,
+      "end": 43.6,
+      "confidence": 0.99682045,
+      "punctuated_word": "1,"
+    },
+    {
+      "word": "2",
+      "start": 43.6,
+      "end": 44.059998,
+      "confidence": 0.99826235,
+      "punctuated_word": "2,"
+    },
+    {
+      "word": "3",
+      "start": 44.059998,
+      "end": 44.559998,
+      "confidence": 0.6770697,
+      "punctuated_word": "3,"
+    },
+    {
+      "word": "part",
+      "start": 44.72,
+      "end": 45.02,
+      "confidence": 0.6062311,
+      "punctuated_word": "part"
+    },
+    {
+      "word": "the",
+      "start": 45.02,
+      "end": 45.18,
+      "confidence": 0.8151909,
+      "punctuated_word": "the"
+    },
+    {
+      "word": "work",
+      "start": 45.18,
+      "end": 45.68,
+      "confidence": 0.97792006,
+      "punctuated_word": "work"
+    },
+    {
+      "word": "and",
+      "start": 45.86,
+      "end": 46.22,
+      "confidence": 0.6791761,
+      "punctuated_word": "And"
+    },
+    {
+      "word": "1",
+      "start": 46.22,
+      "end": 46.72,
+      "confidence": 0.8925232,
+      "punctuated_word": "1,"
+    },
+    {
+      "word": "2",
+      "start": 46.72,
+      "end": 47.22,
+      "confidence": 0.9966102,
+      "punctuated_word": "2,"
+    },
+    {
+      "word": "3",
+      "start": 47.22,
+      "end": 47.72,
+      "confidence": 0.9080042,
+      "punctuated_word": "3,"
+    },
+    {
+      "word": "5",
+      "start": 47.98,
+      "end": 48.48,
+      "confidence": 0.9924016,
+      "punctuated_word": "5,"
+    },
+    {
+      "word": "6",
+      "start": 48.54,
+      "end": 49.02,
+      "confidence": 0.9892385,
+      "punctuated_word": "6,"
+    },
+    {
+      "word": "7",
+      "start": 49.02,
+      "end": 49.52,
+      "confidence": 0.037416067,
+      "punctuated_word": "7."
+    },
+    {
+      "word": "and",
+      "start": 50.02,
+      "end": 50.46,
+      "confidence": 0.2180763,
+      "punctuated_word": "And"
+    },
+    {
+      "word": "hold",
+      "start": 50.46,
+      "end": 50.739998,
+      "confidence": 0.25001124,
+      "punctuated_word": "hold"
+    },
+    {
+      "word": "it",
+      "start": 50.739998,
+      "end": 51.239998,
+      "confidence": 0.2634541,
+      "punctuated_word": "it."
+    },
+    {
+      "word": "6",
+      "start": 51.6,
+      "end": 52.06,
+      "confidence": 0.99544626,
+      "punctuated_word": "6,"
+    },
+    {
+      "word": "7",
+      "start": 52.06,
+      "end": 52.56,
+      "confidence": 0.9933227,
+      "punctuated_word": "7,"
+    },
+    {
+      "word": "1",
+      "start": 52.58,
+      "end": 53.08,
+      "confidence": 0.99905723,
+      "punctuated_word": "1,"
+    },
+    {
+      "word": "2",
+      "start": 53.2,
+      "end": 53.64,
+      "confidence": 0.9983109,
+      "punctuated_word": "2,"
+    },
+    {
+      "word": "3",
+      "start": 53.64,
+      "end": 54.14,
+      "confidence": 0.97481674,
+      "punctuated_word": "3,"
+    },
+    {
+      "word": "5",
+      "start": 54.239998,
+      "end": 54.739998,
+      "confidence": 0.33125407,
+      "punctuated_word": "5."
+    },
+    {
+      "word": "let's",
+      "start": 54.96,
+      "end": 55.38,
+      "confidence": 0.9086422,
+      "punctuated_word": "Let's"
+    },
+    {
+      "word": "go",
+      "start": 55.38,
+      "end": 55.88,
+      "confidence": 0.66703784,
+      "punctuated_word": "go."
+    },
+    {
+      "word": "right",
+      "start": 56.12,
+      "end": 56.38,
+      "confidence": 0.5062388,
+      "punctuated_word": "Right"
+    },
+    {
+      "word": "turn",
+      "start": 56.38,
+      "end": 56.88,
+      "confidence": 0.68861616,
+      "punctuated_word": "turn."
+    },
+    {
+      "word": "and",
+      "start": 57.18,
+      "end": 57.5,
+      "confidence": 0.9958603,
+      "punctuated_word": "And"
+    },
+    {
+      "word": "5",
+      "start": 57.5,
+      "end": 58.0,
+      "confidence": 0.99949634,
+      "punctuated_word": "5,"
+    },
+    {
+      "word": "6",
+      "start": 58.14,
+      "end": 58.52,
+      "confidence": 0.99938333,
+      "punctuated_word": "6,"
+    },
+    {
+      "word": "7",
+      "start": 58.52,
+      "end": 59.02,
+      "confidence": 0.9985391,
+      "punctuated_word": "7,"
+    },
+    {
+      "word": "1",
+      "start": 59.18,
+      "end": 59.68,
+      "confidence": 0.999617,
+      "punctuated_word": "1,"
+    },
+    {
+      "word": "2",
+      "start": 59.8,
+      "end": 60.239998,
+      "confidence": 0.9990109,
+      "punctuated_word": "2,"
+    },
+    {
+      "word": "3",
+      "start": 60.239998,
+      "end": 60.739998,
+      "confidence": 0.17869054,
+      "punctuated_word": "3,"
+    },
+    {
+      "word": "6",
+      "start": 60.9,
+      "end": 61.4,
+      "confidence": 0.9626811,
+      "punctuated_word": "6,"
+    },
+    {
+      "word": "7",
+      "start": 61.879997,
+      "end": 62.379997,
+      "confidence": 0.69463456,
+      "punctuated_word": "7."
+    },
+    {
+      "word": "ok",
+      "start": 62.379997,
+      "end": 62.62,
+      "confidence": 0.54367435,
+      "punctuated_word": "OK."
+    },
+    {
+      "word": "can",
+      "start": 62.62,
+      "end": 62.86,
+      "confidence": 0.33503574,
+      "punctuated_word": "Can"
+    },
+    {
+      "word": "we",
+      "start": 62.86,
+      "end": 63.0,
+      "confidence": 0.38456893,
+      "punctuated_word": "we"
+    },
+    {
+      "word": "hold",
+      "start": 63.0,
+      "end": 63.14,
+      "confidence": 0.6029995,
+      "punctuated_word": "hold"
+    },
+    {
+      "word": "it",
+      "start": 63.14,
+      "end": 63.64,
+      "confidence": 0.23662502,
+      "punctuated_word": "it?"
+    },
+    {
+      "word": "1",
+      "start": 64.619995,
+      "end": 64.8,
+      "confidence": 0.82154024,
+      "punctuated_word": "1"
+    },
+    {
+      "word": "more",
+      "start": 64.8,
+      "end": 65.06,
+      "confidence": 0.93707705,
+      "punctuated_word": "more"
+    },
+    {
+      "word": "time",
+      "start": 65.06,
+      "end": 65.56,
+      "confidence": 0.7232972,
+      "punctuated_word": "time."
+    },
+    {
+      "word": "1",
+      "start": 65.6,
+      "end": 66.0,
+      "confidence": 0.82310265,
+      "punctuated_word": "1"
+    },
+    {
+      "word": "right",
+      "start": 66.0,
+      "end": 66.22,
+      "confidence": 0.79303813,
+      "punctuated_word": "right"
+    },
+    {
+      "word": "turn",
+      "start": 66.22,
+      "end": 66.619995,
+      "confidence": 0.7443017,
+      "punctuated_word": "turn."
+    },
+    {
+      "word": "go",
+      "start": 66.619995,
+      "end": 67.119995,
+      "confidence": 0.643713,
+      "punctuated_word": "Go."
+    },
+    {
+      "word": "5",
+      "start": 67.74,
+      "end": 67.76956,
+      "confidence": 0.99126995,
+      "punctuated_word": "5,"
+    },
+    {
+      "word": "6",
+      "start": 67.76956,
+      "end": 67.799126,
+      "confidence": 0.6022432,
+      "punctuated_word": "6,"
+    },
+    {
+      "word": "and",
+      "start": 67.799126,
+      "end": 67.8287,
+      "confidence": 0.7387279,
+      "punctuated_word": "and"
+    },
+    {
+      "word": "1",
+      "start": 67.8287,
+      "end": 67.85826,
+      "confidence": 0.70238805,
+      "punctuated_word": "1,"
+    },
+    {
+      "word": "2",
+      "start": 67.85826,
+      "end": 67.887825,
+      "confidence": 0.98842293,
+      "punctuated_word": "2,"
+    },
+    {
+      "word": "3",
+      "start": 67.887825,
+      "end": 67.91739,
+      "confidence": 0.77167135,
+      "punctuated_word": "3,"
+    },
+    {
+      "word": "4",
+      "start": 67.91739,
+      "end": 67.94695,
+      "confidence": 0.9508219,
+      "punctuated_word": "4,"
+    },
+    {
+      "word": "5",
+      "start": 67.94695,
+      "end": 67.97652,
+      "confidence": 0.9703936,
+      "punctuated_word": "5,"
+    },
+    {
+      "word": "6",
+      "start": 67.97652,
+      "end": 68.00609,
+      "confidence": 0.9748999,
+      "punctuated_word": "6,"
+    },
+    {
+      "word": "7",
+      "start": 68.00609,
+      "end": 68.03565,
+      "confidence": 0.3307441,
+      "punctuated_word": "7,"
+    },
+    {
+      "word": "8",
+      "start": 68.03565,
+      "end": 68.065216,
+      "confidence": 0.018970806,
+      "punctuated_word": "8."
+    },
+    {
+      "word": "ok",
+      "start": 68.065216,
+      "end": 68.09478,
+      "confidence": 0.14641555,
+      "punctuated_word": "Ok,"
+    },
+    {
+      "word": "come",
+      "start": 68.09478,
+      "end": 68.124344,
+      "confidence": 0.15190284,
+      "punctuated_word": "come"
+    },
+    {
+      "word": "on",
+      "start": 68.124344,
+      "end": 68.15391,
+      "confidence": 0.37939647,
+      "punctuated_word": "on."
+    },
+    {
+      "word": "1",
+      "start": 68.15391,
+      "end": 68.18348,
+      "confidence": 0.81749976,
+      "punctuated_word": "1"
+    },
+    {
+      "word": "more",
+      "start": 68.18348,
+      "end": 68.21304,
+      "confidence": 0.73179084,
+      "punctuated_word": "more"
+    },
+    {
+      "word": "time",
+      "start": 68.21304,
+      "end": 68.24261,
+      "confidence": 0.844792,
+      "punctuated_word": "time."
+    },
+    {
+      "word": "1",
+      "start": 68.24261,
+      "end": 68.27217,
+      "confidence": 0.26879263,
+      "punctuated_word": "1,"
+    },
+    {
+      "word": "2",
+      "start": 68.27217,
+      "end": 68.301735,
+      "confidence": 0.9515427,
+      "punctuated_word": "2,"
+    },
+    {
+      "word": "3",
+      "start": 68.301735,
+      "end": 68.3313,
+      "confidence": 0.9687572,
+      "punctuated_word": "3,"
+    },
+    {
+      "word": "4",
+      "start": 68.3313,
+      "end": 68.36087,
+      "confidence": 0.9936174,
+      "punctuated_word": "4,"
+    },
+    {
+      "word": "5",
+      "start": 68.36087,
+      "end": 68.390434,
+      "confidence": 0.99358714,
+      "punctuated_word": "5,"
+    },
+    {
+      "word": "6",
+      "start": 68.390434,
+      "end": 68.42,
+      "confidence": 0.91689736,
+      "punctuated_word": "6,"
+    },
+    {
+      "word": "7",
+      "start": 68.42,
+      "end": 68.84,
+      "confidence": 0.9398062,
+      "punctuated_word": "7,"
+    },
+    {
+      "word": "8",
+      "start": 68.84,
+      "end": 69.08,
+      "confidence": 0.22204755,
+      "punctuated_word": "8."
+    },
+    {
+      "word": "1",
+      "start": 69.08,
+      "end": 69.34,
+      "confidence": 0.9861502,
+      "punctuated_word": "1,"
+    },
+    {
+      "word": "2",
+      "start": 69.34,
+      "end": 69.84,
+      "confidence": 0.994663,
+      "punctuated_word": "2,"
+    },
+    {
+      "word": "3",
+      "start": 70.08,
+      "end": 70.16,
+      "confidence": 0.9933735,
+      "punctuated_word": "3,"
+    },
+    {
+      "word": "4",
+      "start": 70.16,
+      "end": 70.52,
+      "confidence": 0.996709,
+      "punctuated_word": "4,"
+    },
+    {
+      "word": "5",
+      "start": 70.52,
+      "end": 70.76,
+      "confidence": 0.9987155,
+      "punctuated_word": "5,"
+    },
+    {
+      "word": "6",
+      "start": 70.76,
+      "end": 71.26,
+      "confidence": 0.9968021,
+      "punctuated_word": "6,"
+    },
+    {
+      "word": "7",
+      "start": 71.38,
+      "end": 71.88,
+      "confidence": 0.9730026,
+      "punctuated_word": "7,"
+    },
+    {
+      "word": "8",
+      "start": 72.04,
+      "end": 72.19,
+      "confidence": 0.3889693,
+      "punctuated_word": "8."
+    },
+    {
+      "word": "1",
+      "start": 72.19,
+      "end": 72.34,
+      "confidence": 0.99662447,
+      "punctuated_word": "1,"
+    },
+    {
+      "word": "2",
+      "start": 72.34,
+      "end": 72.8,
+      "confidence": 0.9937152,
+      "punctuated_word": "2,"
+    },
+    {
+      "word": "3",
+      "start": 72.8,
+      "end": 73.26,
+      "confidence": 0.90806115,
+      "punctuated_word": "3,"
+    },
+    {
+      "word": "4",
+      "start": 73.26,
+      "end": 73.32,
+      "confidence": 0.95148957,
+      "punctuated_word": "4,"
+    },
+    {
+      "word": "5",
+      "start": 73.32,
+      "end": 73.44,
+      "confidence": 0.9956254,
+      "punctuated_word": "5,"
+    },
+    {
+      "word": "6",
+      "start": 73.44,
+      "end": 73.52,
+      "confidence": 0.99314874,
+      "punctuated_word": "6,"
+    },
+    {
+      "word": "7",
+      "start": 73.52,
+      "end": 73.96,
+      "confidence": 0.98043734,
+      "punctuated_word": "7,"
+    },
+    {
+      "word": "8",
+      "start": 73.96,
+      "end": 74.020004,
+      "confidence": 0.35795477,
+      "punctuated_word": "8."
+    },
+    {
+      "word": "give",
+      "start": 74.020004,
+      "end": 74.08,
+      "confidence": 0.8320433,
+      "punctuated_word": "Give"
+    },
+    {
+      "word": "it",
+      "start": 74.08,
+      "end": 74.14,
+      "confidence": 0.6637234,
+      "punctuated_word": "it"
+    },
+    {
+      "word": "up",
+      "start": 74.14,
+      "end": 74.44,
+      "confidence": 0.25409105,
+      "punctuated_word": "up"
+    },
+    {
+      "word": "for",
+      "start": 74.44,
+      "end": 74.57636,
+      "confidence": 0.6328037,
+      "punctuated_word": "for"
+    },
+    {
+      "word": "the",
+      "start": 74.57636,
+      "end": 74.71273,
+      "confidence": 0.58228695,
+      "punctuated_word": "the"
+    },
+    {
+      "word": "ladies",
+      "start": 74.71273,
+      "end": 74.84909,
+      "confidence": 0.39719576,
+      "punctuated_word": "ladies!"
+    },
+    {
+      "word": "how's",
+      "start": 74.84909,
+      "end": 74.98546,
+      "confidence": 0.36494437,
+      "punctuated_word": "How's"
+    },
+    {
+      "word": "it",
+      "start": 74.98546,
+      "end": 75.12182,
+      "confidence": 0.24790363,
+      "punctuated_word": "it"
+    },
+    {
+      "word": "going",
+      "start": 75.12182,
+      "end": 75.25819,
+      "confidence": 0.65756476,
+      "punctuated_word": "going?"
+    },
+    {
+      "word": "give",
+      "start": 75.25819,
+      "end": 75.39455,
+      "confidence": 0.6423205,
+      "punctuated_word": "Give"
+    },
+    {
+      "word": "me",
+      "start": 75.39455,
+      "end": 75.530914,
+      "confidence": 0.13358693,
+      "punctuated_word": "me"
+    },
+    {
+      "word": "a",
+      "start": 75.530914,
+      "end": 75.667274,
+      "confidence": 0.6365556,
+      "punctuated_word": "a"
+    },
+    {
+      "word": "scream",
+      "start": 75.667274,
+      "end": 75.80364,
+      "confidence": 0.6474232,
+      "punctuated_word": "scream!"
+    },
+    {
+      "word": "and",
+      "start": 75.80364,
+      "end": 75.94,
+      "confidence": 0.81648993,
+      "punctuated_word": "And"
+    },
+    {
+      "word": "i'll",
+      "start": 75.94,
+      "end": 76.22,
+      "confidence": 0.6258343,
+      "punctuated_word": "I'll"
+    },
+    {
+      "word": "be",
+      "start": 76.22,
+      "end": 76.38,
+      "confidence": 0.41824028,
+      "punctuated_word": "be"
+    },
+    {
+      "word": "the",
+      "start": 76.38,
+      "end": 76.56,
+      "confidence": 0.35347214,
+      "punctuated_word": "the"
+    },
+    {
+      "word": "next",
+      "start": 76.56,
+      "end": 76.86,
+      "confidence": 0.51752734,
+      "punctuated_word": "next"
+    },
+    {
+      "word": "to",
+      "start": 76.86,
+      "end": 76.98,
+      "confidence": 0.234458,
+      "punctuated_word": "to"
+    },
+    {
+      "word": "be",
+      "start": 76.98,
+      "end": 77.12,
+      "confidence": 0.4731283,
+      "punctuated_word": "be"
+    },
+    {
+      "word": "free",
+      "start": 77.12,
+      "end": 77.62,
+      "confidence": 0.04794425,
+      "punctuated_word": "free!"
+    }
+  ],
+  "sections": [
+    {
+      "start": 0.16,
+      "end": 54.739998,
+      "heading": "Part 1",
+      "text": "Basic and 5, 6, 7, 1, 2, 3, 5, 6, 7, 1, 2, 3, little circular, just a circle, full circle, 5, circular and 1, 2, 3, this is for basic and 1, 2, around the world. We go and 12, 9, 6, basic and 1, 2, 3. Now we go combo and card out and 1, 2, 3, 5, 6, 7, around, anchor, 5, 6, 7, 1, 2, around, 5, anchor, 1, 2, 3, part the work And 1, 2, 3, 5, 6, 7. And hold it. 6, 7, 1, 2, 3, 5."
+    },
+    {
+      "start": 54.96,
+      "end": 63.64,
+      "heading": "Part 2",
+      "text": "Let's go. Right turn. And 5, 6, 7, 1, 2, 3, 6, 7. OK. Can we hold it?"
+    },
+    {
+      "start": 64.619995,
+      "end": 68.15391,
+      "heading": "Part 3",
+      "text": "1 more time. 1 right turn. Go. 5, 6, and 1, 2, 3, 4, 5, 6, 7, 8. Ok, come on."
+    },
+    {
+      "start": 68.15391,
+      "end": 74.84909,
+      "heading": "Part 4",
+      "text": "1 more time. 1, 2, 3, 4, 5, 6, 7, 8. 1, 2, 3, 4, 5, 6, 7, 8. 1, 2, 3, 4, 5, 6, 7, 8. Give it up for the ladies!"
+    },
+    {
+      "start": 74.84909,
+      "end": 77.62,
+      "heading": "Part 5",
+      "text": "How's it going? Give me a scream! And I'll be the next to be free!"
+    }
+  ]
+}

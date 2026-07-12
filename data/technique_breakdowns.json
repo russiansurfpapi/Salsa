@@ -99,9 +99,9 @@
     ],
     "practice_drill": "Start by counting out loud: 1-2-3-hold-5-6-7-hold, clapping on 2 and 6 to internalize the break beats. Then do 20 basics counting aloud with steps, focusing on toe-first contact. Next do 20 basics with the rhythm 'quick-quick-slow, quick-quick-slow' to feel the timing. Finally, put on a salsa song and do 2 full minutes of basics without stopping, finding the 2 in the music before you start stepping.",
     "class_video": {
-      "combo_key": "class_20260526_combo",
-      "frame_slug": "img-8043-hd",
-      "class_date": "2026-05-26"
+      "combo_key": "class_20260707_combo",
+      "frame_slug": "img-2100",
+      "class_date": "2026-07-07"
     }
   },
   "inside_turn": {
@@ -195,9 +195,9 @@
     ],
     "practice_drill": "Solo: Practice the cross body lead footwork 10 times, then add the arm lift on 3 (raise your left hand above your own head as a placeholder). For the turn itself, stand in place and practice a slow left (counterclockwise) turn: step on the ball of your foot, spot a point on the wall, turn 360 degrees and find that point again. Do 10 solo left turns, then combine with the CBL footwork for 10 reps.",
     "class_video": {
-      "combo_key": "class_20260526_combo",
-      "frame_slug": "img-8043-hd",
-      "class_date": "2026-05-26"
+      "combo_key": "class_20260707_combo",
+      "frame_slug": "img-2100",
+      "class_date": "2026-07-07"
     }
   },
   "cross_body_lead": {
@@ -610,9 +610,9 @@
   },
   "suzy_q": {
     "class_video": {
-      "combo_key": "class_20260526_combo",
-      "frame_slug": "img-8043-hd",
-      "class_date": "2026-05-26"
+      "combo_key": "class_20260707_combo",
+      "frame_slug": "img-2100",
+      "class_date": "2026-07-07"
     }
   },
   "class_20260526_combo": {
@@ -887,6 +887,309 @@
           "what_to_watch": ""
         }
       ]
+    }
+  },
+  "class_20260707_combo": {
+    "video_breakdown": {
+      "source": "IMG_2100.MOV",
+      "class_date": "2026-07-07",
+      "frame_slug": "img-2100",
+      "description": "BASIC STEP -> SUZY Q (linear) -> CIRCULAR SUZY Q (around the world) -> BASIC STEP -> COMBO (card out + around + anchor) -> INSIDE TURN (right turn) -> TRANSITION BACK TO BASIC -> PARTNER WORK",
+      "steps": [
+        {
+          "step_number": 1,
+          "timestamp": "0:01",
+          "frame": "frame_001.jpg",
+          "count": "5-6-7",
+          "technique": "basic_step_\u2014_demonstration",
+          "position": "Instructor in black Adidas top faces students. Upright posture, weight centered. Students observe from the sides. The woman in black shorts and man in pink shirt are visible as the primary student group. Instructor holds a conga drum \u2014 this is the pre-fog, clear-visibility phase.",
+          "instruction": "Instructor in black Adidas top faces students. Upright posture, weight centered. Students observe from the sides. The woman in black shorts and man in pink shirt are visible as the primary student group. Instructor holds a conga drum \u2014 this is the pre-fog, clear-visibility phase.",
+          "instructor_tip": "Basic and 5, 6, 7, 1, 2, 3",
+          "what_to_watch": ""
+        },
+        {
+          "step_number": 2,
+          "timestamp": "0:03",
+          "frame": "frame_003.jpg",
+          "count": "1-2-3",
+          "technique": "basic_step_\u2014_students_attempt",
+          "position": "Camera angle shifted \u2014 now behind the student group. Instructor visible at left demonstrating. Woman in black shorts and man in pink shirt attempt the basic step. Feet show small forward travel on counts 1-2. Audience lines the walls watching.",
+          "instruction": "Camera angle shifted \u2014 now behind the student group. Instructor visible at left demonstrating. Woman in black shorts and man in pink shirt attempt the basic step. Feet show small forward travel on counts 1-2. Audience lines the walls watching.",
+          "instructor_tip": "Basic and 1, 2, 3, 5, 6, 7",
+          "what_to_watch": ""
+        },
+        {
+          "step_number": 3,
+          "timestamp": "0:05",
+          "frame": "frame_005.jpg",
+          "count": "5-6-7",
+          "technique": "suzy_q_\u2014_introduction",
+          "position": "Instructor introduces Suzy Q. Students in line \u2014 woman in black shorts shows cross-in-front position. Foot clearly crossing in front of standing foot, not behind. Instructor calls 'little circular, just a circle.' Conga drums visible in background.",
+          "instruction": "Instructor introduces Suzy Q. Students in line \u2014 woman in black shorts shows cross-in-front position. Foot clearly crossing in front of standing foot, not behind. Instructor calls 'little circular, just a circle.' Conga drums visible in background.",
+          "instructor_tip": "little circular, just a circle, full circle",
+          "what_to_watch": ""
+        },
+        {
+          "step_number": 4,
+          "timestamp": "0:07",
+          "frame": "frame_007.jpg",
+          "count": "1-2-3",
+          "technique": "circular_suzy_q_\u2014_around_the_world",
+          "position": "Students attempt circular Suzy Q. The line has begun rotating \u2014 dancers are turning to face different directions (the four walls). Instructor calls 'around the world.' Woman in black shorts shows the cross position mid-rotation. Man in pink shirt follows.",
+          "instruction": "Students attempt circular Suzy Q. The line has begun rotating \u2014 dancers are turning to face different directions (the four walls). Instructor calls 'around the world.' Woman in black shorts shows the cross position mid-rotation. Man in pink shirt follows.",
+          "instructor_tip": "around the world. We go and 12, 9, 6, basic and 1, 2, 3",
+          "what_to_watch": ""
+        },
+        {
+          "step_number": 5,
+          "timestamp": "0:09",
+          "frame": "frame_009.jpg",
+          "count": "5-6-7",
+          "technique": "circular_suzy_q_\u2014_continuing_rotation",
+          "position": "Circular Suzy Q continues. Students have rotated approximately 90 degrees from starting position. The line is staggered \u2014 instructor has called 'small steps.' Woman in black shorts is mid-cross, leg picked up. Man in pink shirt mirrors.",
+          "instruction": "Circular Suzy Q continues. Students have rotated approximately 90 degrees from starting position. The line is staggered \u2014 instructor has called 'small steps.' Woman in black shorts is mid-cross, leg picked up. Man in pink shirt mirrors.",
+          "instructor_tip": "circular and 1, 2, 3, this is for basic and 1, 2, around the world",
+          "what_to_watch": ""
+        },
+        {
+          "step_number": 6,
+          "timestamp": "0:11",
+          "frame": "frame_011.jpg",
+          "count": "1-2-3",
+          "technique": "transition_to_combo_\u2014_fog_begins",
+          "position": "FOG MACHINE ACTIVATES. Visibility drops significantly. Students continue moving \u2014 the combo sequence begins. Instructor calls 'combo and card out.' The woman in black shorts and man in pink shirt are the primary visible dancers. Basic step resumes as the combo starting point.",
+          "instruction": "FOG MACHINE ACTIVATES. Visibility drops significantly. Students continue moving \u2014 the combo sequence begins. Instructor calls 'combo and card out.' The woman in black shorts and man in pink shirt are the primary visible dancers. Basic step resumes as the combo starting point.",
+          "instructor_tip": "Now we go combo and card out and 1, 2, 3, 5, 6, 7",
+          "what_to_watch": ""
+        },
+        {
+          "step_number": 7,
+          "timestamp": "0:13",
+          "frame": "frame_013.jpg",
+          "count": "5-6-7",
+          "technique": "suzy_q_\u2014_full_speed",
+          "position": "Full speed Suzy Q in heavy fog. Woman in black shorts shows the cross position clearly \u2014 foot in front, leg picked up after the cross. Man in pink shirt is in the step position of the cross-step-cross pattern. Both dancers show good 'always in front' technique.",
+          "instruction": "Full speed Suzy Q in heavy fog. Woman in black shorts shows the cross position clearly \u2014 foot in front, leg picked up after the cross. Man in pink shirt is in the step position of the cross-step-cross pattern. Both dancers show good 'always in front' technique.",
+          "instructor_tip": "around, anchor, 5, 6, 7, 1, 2, around, 5, anchor",
+          "what_to_watch": ""
+        },
+        {
+          "step_number": 8,
+          "timestamp": "0:15",
+          "frame": "frame_015.jpg",
+          "count": "1-2-3",
+          "technique": "suzy_q_\u2014_cross_position",
+          "position": "Suzy Q at speed \u2014 both primary dancers show the cross-step-cross pattern simultaneously. The woman's foot is clearly crossing in front. Man in pink shirt mirrors. The fog creates atmospheric effect but footwork is still visible.",
+          "instruction": "Suzy Q at speed \u2014 both primary dancers show the cross-step-cross pattern simultaneously. The woman's foot is clearly crossing in front. Man in pink shirt mirrors. The fog creates atmospheric effect but footwork is still visible.",
+          "instructor_tip": "1, 2, 3, part the work And 1, 2, 3, 5, 6, 7",
+          "what_to_watch": ""
+        },
+        {
+          "step_number": 9,
+          "timestamp": "0:17",
+          "frame": "frame_017.jpg",
+          "count": "5-6-7",
+          "technique": "basic_step_\u2014_anchor_position",
+          "position": "Students in basic step \u2014 the anchor count (7) is visible in the planted foot position of the woman in black shorts. Weight shifted but foot not moved. Man in pink shirt shows the same anchor. This is the 'keep your weight planted' moment.",
+          "instruction": "Students in basic step \u2014 the anchor count (7) is visible in the planted foot position of the woman in black shorts. Weight shifted but foot not moved. Man in pink shirt shows the same anchor. This is the 'keep your weight planted' moment.",
+          "instructor_tip": "And hold it. 6, 7, 1, 2, 3, 5",
+          "what_to_watch": ""
+        },
+        {
+          "step_number": 10,
+          "timestamp": "0:19",
+          "frame": "frame_019.jpg",
+          "count": "1-2",
+          "technique": "basic_step_\u2014_forward_travel",
+          "position": "Forward travel on counts 1-2. Woman in black shorts steps forward, man in pink shirt steps forward. Both show small steps \u2014 no large lunges. The fog is thick but the footwork pattern is clear from the leg positions.",
+          "instruction": "Forward travel on counts 1-2. Woman in black shorts steps forward, man in pink shirt steps forward. Both show small steps \u2014 no large lunges. The fog is thick but the footwork pattern is clear from the leg positions.",
+          "instructor_tip": "Let's go. Right turn. And 5, 6, 7, 1, 2, 3",
+          "what_to_watch": ""
+        },
+        {
+          "step_number": 11,
+          "timestamp": "0:21",
+          "frame": "frame_021.jpg",
+          "count": "5-6",
+          "technique": "basic_step_\u2014_back_travel",
+          "position": "Back travel on counts 5-6. The line of dancers steps back together. Woman in black shorts and man in pink shirt show the backward travel. Fog is at maximum density \u2014 dancers are silhouettes but movement is clear.",
+          "instruction": "Back travel on counts 5-6. The line of dancers steps back together. Woman in black shorts and man in pink shirt show the backward travel. Fog is at maximum density \u2014 dancers are silhouettes but movement is clear.",
+          "instructor_tip": "6, 7. OK. Can we hold it? 1 more time. 1 right turn.",
+          "what_to_watch": ""
+        },
+        {
+          "step_number": 12,
+          "timestamp": "0:23",
+          "frame": "frame_023.jpg",
+          "count": "1-2-3",
+          "technique": "suzy_q_\u2014_cross-step-cross",
+          "position": "Suzy Q cross position \u2014 woman in black shorts shows the cross-in-front clearly. Man in pink shirt is in the step position. The pattern 'cross, step, cross' is visible across the two dancers' positions.",
+          "instruction": "Suzy Q cross position \u2014 woman in black shorts shows the cross-in-front clearly. Man in pink shirt is in the step position. The pattern 'cross, step, cross' is visible across the two dancers' positions.",
+          "instructor_tip": "Go. 5, 6, and 1, 2, 3, 4, 5, 6, 7, 8",
+          "what_to_watch": ""
+        },
+        {
+          "step_number": 13,
+          "timestamp": "0:25",
+          "frame": "frame_025.jpg",
+          "count": "5-6-7",
+          "technique": "suzy_q_\u2014_step_position",
+          "position": "The 'step' in cross-step-cross \u2014 woman in black shorts has her foot out to the side (the step between the two crosses). Man in pink shirt is in the cross position. The alternating pattern between the two dancers shows the timing offset.",
+          "instruction": "The 'step' in cross-step-cross \u2014 woman in black shorts has her foot out to the side (the step between the two crosses). Man in pink shirt is in the cross position. The alternating pattern between the two dancers shows the timing offset.",
+          "instructor_tip": "Ok, come on. 1, 2, 3, 4, 5, 6, 7, 8",
+          "what_to_watch": ""
+        },
+        {
+          "step_number": 14,
+          "timestamp": "0:27",
+          "frame": "frame_027.jpg",
+          "count": "1-2",
+          "technique": "basic_step_\u2014_forward",
+          "position": "Basic step forward travel. The line of dancers moves forward together. Woman in black shorts leads the line, man in pink shirt follows. Small steps visible \u2014 no bouncing in the upper body.",
+          "instruction": "Basic step forward travel. The line of dancers moves forward together. Woman in black shorts leads the line, man in pink shirt follows. Small steps visible \u2014 no bouncing in the upper body.",
+          "instructor_tip": "1, 2, 3, 4, 5, 6, 7, 8",
+          "what_to_watch": ""
+        },
+        {
+          "step_number": 15,
+          "timestamp": "0:29",
+          "frame": "frame_029.jpg",
+          "count": "5-6",
+          "technique": "basic_step_\u2014_back",
+          "position": "Basic step back travel. Dancers step back on counts 5-6. The fog has lightened slightly \u2014 footwork more visible. Woman in black shorts shows the back step with weight fully transferred.",
+          "instruction": "Basic step back travel. Dancers step back on counts 5-6. The fog has lightened slightly \u2014 footwork more visible. Woman in black shorts shows the back step with weight fully transferred.",
+          "instructor_tip": "1, 2, 3, 4, 5, 6, 7, 8",
+          "what_to_watch": ""
+        },
+        {
+          "step_number": 16,
+          "timestamp": "0:31",
+          "frame": "frame_031.jpg",
+          "count": "1-2-3",
+          "technique": "suzy_q_\u2014_cross_in_front",
+          "position": "Suzy Q cross position \u2014 the cross-in-front technique is clearly visible. Woman in black shorts has her crossing foot clearly in front of the standing foot. This is the key teaching moment: 'always in front, never behind.'",
+          "instruction": "Suzy Q cross position \u2014 the cross-in-front technique is clearly visible. Woman in black shorts has her crossing foot clearly in front of the standing foot. This is the key teaching moment: 'always in front, never behind.'",
+          "instructor_tip": "1, 2, 3, 4, 5, 6, 7, 8",
+          "what_to_watch": ""
+        },
+        {
+          "step_number": 17,
+          "timestamp": "0:33",
+          "frame": "frame_033.jpg",
+          "count": "5-6-7",
+          "technique": "suzy_q_\u2014_leg_pickup",
+          "position": "After the cross \u2014 woman in black shorts shows the leg pickup position. The foot is lifted off the floor after the cross, preparing for the next step. This is the 'pick up your leg after the cross \u2014 don't drag your foot' teaching point.",
+          "instruction": "After the cross \u2014 woman in black shorts shows the leg pickup position. The foot is lifted off the floor after the cross, preparing for the next step. This is the 'pick up your leg after the cross \u2014 don't drag your foot' teaching point.",
+          "instructor_tip": "Give it up for the ladies!",
+          "what_to_watch": ""
+        },
+        {
+          "step_number": 18,
+          "timestamp": "0:35",
+          "frame": "frame_035.jpg",
+          "count": "1-2",
+          "technique": "combo_\u2014_card_out",
+          "position": "The combo sequence begins \u2014 'card out' position. Woman in black shorts and man in pink shirt show the card-out arm position. This is the transition from basic step into the combo that leads to the inside turn.",
+          "instruction": "The combo sequence begins \u2014 'card out' position. Woman in black shorts and man in pink shirt show the card-out arm position. This is the transition from basic step into the combo that leads to the inside turn.",
+          "instructor_tip": "combo and card out and 1, 2, 3",
+          "what_to_watch": ""
+        },
+        {
+          "step_number": 19,
+          "timestamp": "0:37",
+          "frame": "frame_037.jpg",
+          "count": "5-6",
+          "technique": "combo_\u2014_around",
+          "position": "The 'around' portion of the combo \u2014 woman in black shorts is moving around the man in pink shirt. This is the 'around the world' element within the combo sequence. Both dancers show the spatial relationship of the around movement.",
+          "instruction": "The 'around' portion of the combo \u2014 woman in black shorts is moving around the man in pink shirt. This is the 'around the world' element within the combo sequence. Both dancers show the spatial relationship of the around movement.",
+          "instructor_tip": "around, anchor, 5, 6, 7",
+          "what_to_watch": ""
+        },
+        {
+          "step_number": 20,
+          "timestamp": "0:39",
+          "frame": "frame_039.jpg",
+          "count": "7",
+          "technique": "combo_\u2014_anchor",
+          "position": "The anchor position within the combo \u2014 woman in black shorts plants her foot on count 7. Man in pink shirt shows the anchor on his side. This is the 'anchor the 7' teaching point applied within the combo context.",
+          "instruction": "The anchor position within the combo \u2014 woman in black shorts plants her foot on count 7. Man in pink shirt shows the anchor on his side. This is the 'anchor the 7' teaching point applied within the combo context.",
+          "instructor_tip": "anchor, 1, 2, 3",
+          "what_to_watch": ""
+        },
+        {
+          "step_number": 21,
+          "timestamp": "0:41",
+          "frame": "frame_041.jpg",
+          "count": "1-2-3",
+          "technique": "inside_turn_\u2014_setup",
+          "position": "Inside turn setup \u2014 man in pink shirt raises his arm on count 1 to signal the turn. Woman in black shorts is preparing to turn to her right. The arm is LOW \u2014 demonstrating 'don't reach high, keep your arm low.'",
+          "instruction": "Inside turn setup \u2014 man in pink shirt raises his arm on count 1 to signal the turn. Woman in black shorts is preparing to turn to her right. The arm is LOW \u2014 demonstrating 'don't reach high, keep your arm low.'",
+          "instructor_tip": "Right turn. And 5, 6, 7, 1, 2, 3",
+          "what_to_watch": ""
+        },
+        {
+          "step_number": 22,
+          "timestamp": "0:43",
+          "frame": "frame_043.jpg",
+          "count": "5-6",
+          "technique": "inside_turn_\u2014_follower_begins_turn",
+          "position": "Follower (woman in black shorts) begins turning to her right on count 6. Leader (man in pink shirt) guides with elbow activation. The turn is just beginning \u2014 'start turning on count 6, not before.'",
+          "instruction": "Follower (woman in black shorts) begins turning to her right on count 6. Leader (man in pink shirt) guides with elbow activation. The turn is just beginning \u2014 'start turning on count 6, not before.'",
+          "instructor_tip": "6, 7. 1 right turn. Go.",
+          "what_to_watch": ""
+        },
+        {
+          "step_number": 23,
+          "timestamp": "0:45",
+          "frame": "frame_045.jpg",
+          "count": "6-7",
+          "technique": "inside_turn_\u2014_mid-turn",
+          "position": "Mid-turn position \u2014 follower is rotating to her right, leader maintains the right-to-right connection. The leader's arm is up but not high \u2014 elbow is the activation point. The follower's momentum carries the turn.",
+          "instruction": "Mid-turn position \u2014 follower is rotating to her right, leader maintains the right-to-right connection. The leader's arm is up but not high \u2014 elbow is the activation point. The follower's momentum carries the turn.",
+          "instructor_tip": "5, 6, and 1, 2, 3, 4, 5, 6, 7, 8",
+          "what_to_watch": ""
+        },
+        {
+          "step_number": 24,
+          "timestamp": "0:47",
+          "frame": "frame_047.jpg",
+          "count": "7-8",
+          "technique": "inside_turn_\u2014_completing_turn",
+          "position": "Turn nearing completion \u2014 follower has rotated approximately 270 degrees. Leader's arm is coming down. The 'keep your 7 away from your partner' principle is visible \u2014 there is space between the dancers, not crowding.",
+          "instruction": "Turn nearing completion \u2014 follower has rotated approximately 270 degrees. Leader's arm is coming down. The 'keep your 7 away from your partner' principle is visible \u2014 there is space between the dancers, not crowding.",
+          "instructor_tip": "Ok, come on. 1, 2, 3, 4, 5, 6, 7, 8",
+          "what_to_watch": ""
+        },
+        {
+          "step_number": 25,
+          "timestamp": "0:49",
+          "frame": "frame_049.jpg",
+          "count": "8",
+          "technique": "inside_turn_\u2014_landing_on_8",
+          "position": "The count-8 landing \u2014 follower plants her foot and absorbs the weight. This is the deliberate pause before continuing with 1-2-3. Leader is in position, right-to-right connection maintained. 'Land on count 8 \u2014 don't rush the landing.'",
+          "instruction": "The count-8 landing \u2014 follower plants her foot and absorbs the weight. This is the deliberate pause before continuing with 1-2-3. Leader is in position, right-to-right connection maintained. 'Land on count 8 \u2014 don't rush the landing.'",
+          "instructor_tip": "1, 2, 3, 4, 5, 6, 7, 8",
+          "what_to_watch": ""
+        },
+        {
+          "step_number": 26,
+          "timestamp": "0:51",
+          "frame": "frame_051.jpg",
+          "count": "1-2",
+          "technique": "transition_back_to_basic",
+          "position": "Transition complete \u2014 both dancers resume basic step on count 1 after the count-8 landing. Right-to-right hand hold maintained. The flow from inside turn back to basic is smooth \u2014 'connection and simplicity.'",
+          "instruction": "Transition complete \u2014 both dancers resume basic step on count 1 after the count-8 landing. Right-to-right hand hold maintained. The flow from inside turn back to basic is smooth \u2014 'connection and simplicity.'",
+          "instructor_tip": "1, 2, 3, 4, 5, 6, 7, 8",
+          "what_to_watch": ""
+        }
+      ]
+    }
+  },
+  "transition_basic": {
+    "class_video": {
+      "combo_key": "class_20260707_combo",
+      "frame_slug": "img-2100",
+      "class_date": "2026-07-07"
     }
   }
 }
