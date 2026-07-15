@@ -1,0 +1,803 @@
+{
+  "text": "123567123, we go left turn. 12356, Susie. 13513, Susie, cue. 12356, basic, 1, 2. We need to just get into the style a little bit and try to get rockin' speed. 1 more time. 5, 6, basic, 1, 2, again. Left turn and 1235. Suzy Q123513, Suzy Q123. Footwork, beat, 867. Fart and work and 123567123, lay, lay, let's go. Forward, beat, 8, 6, 7, 4, and 1, 2, 3, 5, 6, 7, 8, 1, 2, 3, let's go! 6, 7, 1, 2, 3, 5, 6, 7, 4, 3, again, let's turn, 1, 2, 3, 5, 6, 7, 4, 3, again, let's turn, 1, 2, 3, stop, right there. Get ready.",
+  "duration": 69.588,
+  "words": [
+    {
+      "word": "123567123",
+      "start": 0.06,
+      "end": 5.3199997,
+      "confidence": 0.7657054,
+      "punctuated_word": "123567123,"
+    },
+    {
+      "word": "we",
+      "start": 5.38,
+      "end": 5.74,
+      "confidence": 0.3494528,
+      "punctuated_word": "we"
+    },
+    {
+      "word": "go",
+      "start": 5.74,
+      "end": 6.24,
+      "confidence": 0.7515023,
+      "punctuated_word": "go"
+    },
+    {
+      "word": "left",
+      "start": 6.42,
+      "end": 6.8199997,
+      "confidence": 0.823188,
+      "punctuated_word": "left"
+    },
+    {
+      "word": "turn",
+      "start": 6.8199997,
+      "end": 7.3199997,
+      "confidence": 0.27250016,
+      "punctuated_word": "turn."
+    },
+    {
+      "word": "12356",
+      "start": 7.48,
+      "end": 10.62,
+      "confidence": 0.73701775,
+      "punctuated_word": "12356,"
+    },
+    {
+      "word": "susie",
+      "start": 10.679999,
+      "end": 11.179999,
+      "confidence": 0.8433246,
+      "punctuated_word": "Susie."
+    },
+    {
+      "word": "13513",
+      "start": 11.54,
+      "end": 16.8,
+      "confidence": 0.8083625,
+      "punctuated_word": "13513,"
+    },
+    {
+      "word": "susie",
+      "start": 17.52,
+      "end": 18.02,
+      "confidence": 0.25412464,
+      "punctuated_word": "Susie,"
+    },
+    {
+      "word": "cue",
+      "start": 18.3,
+      "end": 18.8,
+      "confidence": 0.7189506,
+      "punctuated_word": "cue."
+    },
+    {
+      "word": "12356",
+      "start": 19.119999,
+      "end": 22.46,
+      "confidence": 0.67981434,
+      "punctuated_word": "12356,"
+    },
+    {
+      "word": "basic",
+      "start": 22.46,
+      "end": 22.94,
+      "confidence": 0.76251584,
+      "punctuated_word": "basic,"
+    },
+    {
+      "word": "1",
+      "start": 22.94,
+      "end": 23.36,
+      "confidence": 0.81826967,
+      "punctuated_word": "1,"
+    },
+    {
+      "word": "2",
+      "start": 23.36,
+      "end": 23.720001,
+      "confidence": 0.319808,
+      "punctuated_word": "2."
+    },
+    {
+      "word": "we",
+      "start": 23.720001,
+      "end": 23.86,
+      "confidence": 0.7961934,
+      "punctuated_word": "We"
+    },
+    {
+      "word": "need",
+      "start": 23.86,
+      "end": 24.14,
+      "confidence": 0.41417122,
+      "punctuated_word": "need"
+    },
+    {
+      "word": "to",
+      "start": 24.14,
+      "end": 24.24,
+      "confidence": 0.2624891,
+      "punctuated_word": "to"
+    },
+    {
+      "word": "just",
+      "start": 24.24,
+      "end": 24.619999,
+      "confidence": 0.22975056,
+      "punctuated_word": "just"
+    },
+    {
+      "word": "get",
+      "start": 24.619999,
+      "end": 24.8,
+      "confidence": 0.5504478,
+      "punctuated_word": "get"
+    },
+    {
+      "word": "into",
+      "start": 24.8,
+      "end": 24.96,
+      "confidence": 0.62123394,
+      "punctuated_word": "into"
+    },
+    {
+      "word": "the",
+      "start": 24.96,
+      "end": 25.119999,
+      "confidence": 0.80600095,
+      "punctuated_word": "the"
+    },
+    {
+      "word": "style",
+      "start": 25.119999,
+      "end": 25.380001,
+      "confidence": 0.7834813,
+      "punctuated_word": "style"
+    },
+    {
+      "word": "a",
+      "start": 25.380001,
+      "end": 25.439999,
+      "confidence": 0.88876957,
+      "punctuated_word": "a"
+    },
+    {
+      "word": "little",
+      "start": 25.439999,
+      "end": 25.64,
+      "confidence": 0.05611375,
+      "punctuated_word": "little"
+    },
+    {
+      "word": "bit",
+      "start": 25.64,
+      "end": 25.96,
+      "confidence": 0.999539,
+      "punctuated_word": "bit"
+    },
+    {
+      "word": "and",
+      "start": 25.96,
+      "end": 26.119999,
+      "confidence": 0.74617434,
+      "punctuated_word": "and"
+    },
+    {
+      "word": "try",
+      "start": 26.119999,
+      "end": 26.279999,
+      "confidence": 0.721105,
+      "punctuated_word": "try"
+    },
+    {
+      "word": "to",
+      "start": 26.279999,
+      "end": 26.4,
+      "confidence": 0.25686562,
+      "punctuated_word": "to"
+    },
+    {
+      "word": "get",
+      "start": 26.4,
+      "end": 26.599998,
+      "confidence": 0.25271213,
+      "punctuated_word": "get"
+    },
+    {
+      "word": "rockin'",
+      "start": 26.599998,
+      "end": 27.04,
+      "confidence": 0.754642,
+      "punctuated_word": "rockin'"
+    },
+    {
+      "word": "speed",
+      "start": 27.04,
+      "end": 27.39,
+      "confidence": 0.05736508,
+      "punctuated_word": "speed."
+    },
+    {
+      "word": "1",
+      "start": 27.39,
+      "end": 27.74,
+      "confidence": 0.8242733,
+      "punctuated_word": "1"
+    },
+    {
+      "word": "more",
+      "start": 27.74,
+      "end": 27.880001,
+      "confidence": 0.7984355,
+      "punctuated_word": "more"
+    },
+    {
+      "word": "time",
+      "start": 27.880001,
+      "end": 28.380001,
+      "confidence": 0.36286595,
+      "punctuated_word": "time."
+    },
+    {
+      "word": "5",
+      "start": 28.779999,
+      "end": 28.939999,
+      "confidence": 0.9168389,
+      "punctuated_word": "5,"
+    },
+    {
+      "word": "6",
+      "start": 28.939999,
+      "end": 29.34,
+      "confidence": 0.8924225,
+      "punctuated_word": "6,"
+    },
+    {
+      "word": "basic",
+      "start": 29.34,
+      "end": 29.84,
+      "confidence": 0.78457016,
+      "punctuated_word": "basic,"
+    },
+    {
+      "word": "1",
+      "start": 30.06,
+      "end": 30.48,
+      "confidence": 0.7690199,
+      "punctuated_word": "1,"
+    },
+    {
+      "word": "2",
+      "start": 30.48,
+      "end": 30.8,
+      "confidence": 0.7605171,
+      "punctuated_word": "2,"
+    },
+    {
+      "word": "again",
+      "start": 30.8,
+      "end": 31.3,
+      "confidence": 0.06153,
+      "punctuated_word": "again."
+    },
+    {
+      "word": "left",
+      "start": 31.78,
+      "end": 32.22,
+      "confidence": 0.55832535,
+      "punctuated_word": "Left"
+    },
+    {
+      "word": "turn",
+      "start": 32.22,
+      "end": 32.72,
+      "confidence": 0.5208928,
+      "punctuated_word": "turn"
+    },
+    {
+      "word": "and",
+      "start": 32.72,
+      "end": 33.22,
+      "confidence": 0.95914686,
+      "punctuated_word": "and"
+    },
+    {
+      "word": "1235",
+      "start": 33.28,
+      "end": 35.52,
+      "confidence": 0.6288053,
+      "punctuated_word": "1235."
+    },
+    {
+      "word": "suzy",
+      "start": 35.739998,
+      "end": 36.1,
+      "confidence": 0.628117,
+      "punctuated_word": "Suzy"
+    },
+    {
+      "word": "q123513",
+      "start": 36.1,
+      "end": 41.54,
+      "confidence": 0.74928963,
+      "punctuated_word": "Q123513,"
+    },
+    {
+      "word": "suzy",
+      "start": 41.84,
+      "end": 42.34,
+      "confidence": 0.99736965,
+      "punctuated_word": "Suzy"
+    },
+    {
+      "word": "q123",
+      "start": 42.72,
+      "end": 44.739998,
+      "confidence": 0.7999788,
+      "punctuated_word": "Q123."
+    },
+    {
+      "word": "footwork",
+      "start": 45.14,
+      "end": 45.64,
+      "confidence": 0.79574025,
+      "punctuated_word": "Footwork,"
+    },
+    {
+      "word": "beat",
+      "start": 46.02,
+      "end": 46.52,
+      "confidence": 0.7049343,
+      "punctuated_word": "beat,"
+    },
+    {
+      "word": "867",
+      "start": 46.84,
+      "end": 48.1,
+      "confidence": 0.5837216,
+      "punctuated_word": "867."
+    },
+    {
+      "word": "fart",
+      "start": 48.22,
+      "end": 48.62,
+      "confidence": 0.25995126,
+      "punctuated_word": "Fart"
+    },
+    {
+      "word": "and",
+      "start": 48.62,
+      "end": 48.82,
+      "confidence": 0.6241614,
+      "punctuated_word": "and"
+    },
+    {
+      "word": "work",
+      "start": 48.82,
+      "end": 49.199997,
+      "confidence": 0.7841996,
+      "punctuated_word": "work"
+    },
+    {
+      "word": "and",
+      "start": 49.199997,
+      "end": 49.699997,
+      "confidence": 0.992785,
+      "punctuated_word": "and"
+    },
+    {
+      "word": "123567123",
+      "start": 49.8,
+      "end": 54.72,
+      "confidence": 0.6614121,
+      "punctuated_word": "123567123,"
+    },
+    {
+      "word": "lay",
+      "start": 54.86,
+      "end": 55.36,
+      "confidence": 0.90138775,
+      "punctuated_word": "lay,"
+    },
+    {
+      "word": "lay",
+      "start": 56.36,
+      "end": 56.434288,
+      "confidence": 0.7083836,
+      "punctuated_word": "lay,"
+    },
+    {
+      "word": "let's",
+      "start": 56.434288,
+      "end": 56.50857,
+      "confidence": 0.91119224,
+      "punctuated_word": "let's"
+    },
+    {
+      "word": "go",
+      "start": 56.50857,
+      "end": 56.58286,
+      "confidence": 0.559279,
+      "punctuated_word": "go."
+    },
+    {
+      "word": "forward",
+      "start": 56.58286,
+      "end": 56.657143,
+      "confidence": 0.41358128,
+      "punctuated_word": "Forward,"
+    },
+    {
+      "word": "beat",
+      "start": 56.657143,
+      "end": 56.73143,
+      "confidence": 0.326385,
+      "punctuated_word": "beat,"
+    },
+    {
+      "word": "8",
+      "start": 56.73143,
+      "end": 56.805714,
+      "confidence": 0.9277457,
+      "punctuated_word": "8,"
+    },
+    {
+      "word": "6",
+      "start": 56.805714,
+      "end": 56.88,
+      "confidence": 0.97128016,
+      "punctuated_word": "6,"
+    },
+    {
+      "word": "7",
+      "start": 56.88,
+      "end": 56.954285,
+      "confidence": 0.55524975,
+      "punctuated_word": "7,"
+    },
+    {
+      "word": "4",
+      "start": 56.954285,
+      "end": 57.028572,
+      "confidence": 0.53637636,
+      "punctuated_word": "4,"
+    },
+    {
+      "word": "and",
+      "start": 57.028572,
+      "end": 57.102856,
+      "confidence": 0.9088786,
+      "punctuated_word": "and"
+    },
+    {
+      "word": "1",
+      "start": 57.102856,
+      "end": 57.177143,
+      "confidence": 0.98494244,
+      "punctuated_word": "1,"
+    },
+    {
+      "word": "2",
+      "start": 57.177143,
+      "end": 57.251427,
+      "confidence": 0.9920969,
+      "punctuated_word": "2,"
+    },
+    {
+      "word": "3",
+      "start": 57.251427,
+      "end": 57.325714,
+      "confidence": 0.9155693,
+      "punctuated_word": "3,"
+    },
+    {
+      "word": "5",
+      "start": 57.325714,
+      "end": 57.399998,
+      "confidence": 0.9803053,
+      "punctuated_word": "5,"
+    },
+    {
+      "word": "6",
+      "start": 57.399998,
+      "end": 57.474285,
+      "confidence": 0.91366255,
+      "punctuated_word": "6,"
+    },
+    {
+      "word": "7",
+      "start": 57.474285,
+      "end": 57.54857,
+      "confidence": 0.36535522,
+      "punctuated_word": "7,"
+    },
+    {
+      "word": "8",
+      "start": 57.54857,
+      "end": 57.622856,
+      "confidence": 0.88173145,
+      "punctuated_word": "8,"
+    },
+    {
+      "word": "1",
+      "start": 57.622856,
+      "end": 57.69714,
+      "confidence": 0.9873504,
+      "punctuated_word": "1,"
+    },
+    {
+      "word": "2",
+      "start": 57.69714,
+      "end": 57.771427,
+      "confidence": 0.98895407,
+      "punctuated_word": "2,"
+    },
+    {
+      "word": "3",
+      "start": 57.771427,
+      "end": 57.84571,
+      "confidence": 0.2313876,
+      "punctuated_word": "3,"
+    },
+    {
+      "word": "let's",
+      "start": 57.84571,
+      "end": 57.92,
+      "confidence": 0.91247547,
+      "punctuated_word": "let's"
+    },
+    {
+      "word": "go",
+      "start": 57.92,
+      "end": 58.42,
+      "confidence": 0.039577384,
+      "punctuated_word": "go!"
+    },
+    {
+      "word": "6",
+      "start": 58.78,
+      "end": 58.98,
+      "confidence": 0.94841635,
+      "punctuated_word": "6,"
+    },
+    {
+      "word": "7",
+      "start": 58.98,
+      "end": 59.48,
+      "confidence": 0.9652995,
+      "punctuated_word": "7,"
+    },
+    {
+      "word": "1",
+      "start": 59.66,
+      "end": 60.16,
+      "confidence": 0.9987117,
+      "punctuated_word": "1,"
+    },
+    {
+      "word": "2",
+      "start": 60.18,
+      "end": 60.68,
+      "confidence": 0.99915993,
+      "punctuated_word": "2,"
+    },
+    {
+      "word": "3",
+      "start": 60.7,
+      "end": 61.2,
+      "confidence": 0.99138135,
+      "punctuated_word": "3,"
+    },
+    {
+      "word": "5",
+      "start": 61.42,
+      "end": 61.92,
+      "confidence": 0.9969721,
+      "punctuated_word": "5,"
+    },
+    {
+      "word": "6",
+      "start": 62.0,
+      "end": 62.32,
+      "confidence": 0.90506756,
+      "punctuated_word": "6,"
+    },
+    {
+      "word": "7",
+      "start": 62.32,
+      "end": 62.68,
+      "confidence": 0.3320251,
+      "punctuated_word": "7,"
+    },
+    {
+      "word": "4",
+      "start": 62.68,
+      "end": 63.18,
+      "confidence": 0.21358234,
+      "punctuated_word": "4,"
+    },
+    {
+      "word": "3",
+      "start": 64.020004,
+      "end": 64.4,
+      "confidence": 0.8520251,
+      "punctuated_word": "3,"
+    },
+    {
+      "word": "again",
+      "start": 64.4,
+      "end": 64.48769,
+      "confidence": 0.52383393,
+      "punctuated_word": "again,"
+    },
+    {
+      "word": "let's",
+      "start": 64.48769,
+      "end": 64.575386,
+      "confidence": 0.6474257,
+      "punctuated_word": "let's"
+    },
+    {
+      "word": "turn",
+      "start": 64.575386,
+      "end": 64.66308,
+      "confidence": 0.97178304,
+      "punctuated_word": "turn,"
+    },
+    {
+      "word": "1",
+      "start": 64.66308,
+      "end": 64.75077,
+      "confidence": 0.8461788,
+      "punctuated_word": "1,"
+    },
+    {
+      "word": "2",
+      "start": 64.75077,
+      "end": 64.83846,
+      "confidence": 0.99673307,
+      "punctuated_word": "2,"
+    },
+    {
+      "word": "3",
+      "start": 64.83846,
+      "end": 64.926155,
+      "confidence": 0.5956644,
+      "punctuated_word": "3,"
+    },
+    {
+      "word": "5",
+      "start": 64.926155,
+      "end": 65.01385,
+      "confidence": 0.9450704,
+      "punctuated_word": "5,"
+    },
+    {
+      "word": "6",
+      "start": 65.01385,
+      "end": 65.10154,
+      "confidence": 0.617231,
+      "punctuated_word": "6,"
+    },
+    {
+      "word": "7",
+      "start": 65.10154,
+      "end": 65.18923,
+      "confidence": 0.3585219,
+      "punctuated_word": "7,"
+    },
+    {
+      "word": "4",
+      "start": 65.18923,
+      "end": 65.276924,
+      "confidence": 0.32711902,
+      "punctuated_word": "4,"
+    },
+    {
+      "word": "3",
+      "start": 65.276924,
+      "end": 65.36462,
+      "confidence": 0.6016478,
+      "punctuated_word": "3,"
+    },
+    {
+      "word": "again",
+      "start": 65.36462,
+      "end": 65.45231,
+      "confidence": 0.30107993,
+      "punctuated_word": "again,"
+    },
+    {
+      "word": "let's",
+      "start": 65.45231,
+      "end": 65.54,
+      "confidence": 0.42632154,
+      "punctuated_word": "let's"
+    },
+    {
+      "word": "turn",
+      "start": 65.54,
+      "end": 66.04,
+      "confidence": 0.92036146,
+      "punctuated_word": "turn,"
+    },
+    {
+      "word": "1",
+      "start": 66.14,
+      "end": 66.64,
+      "confidence": 0.9898011,
+      "punctuated_word": "1,"
+    },
+    {
+      "word": "2",
+      "start": 66.82,
+      "end": 67.12,
+      "confidence": 0.9910794,
+      "punctuated_word": "2,"
+    },
+    {
+      "word": "3",
+      "start": 67.12,
+      "end": 67.62,
+      "confidence": 0.181066,
+      "punctuated_word": "3,"
+    },
+    {
+      "word": "stop",
+      "start": 68.04,
+      "end": 68.3,
+      "confidence": 0.7032421,
+      "punctuated_word": "stop,"
+    },
+    {
+      "word": "right",
+      "start": 68.3,
+      "end": 68.62,
+      "confidence": 0.39760578,
+      "punctuated_word": "right"
+    },
+    {
+      "word": "there",
+      "start": 68.62,
+      "end": 69.02,
+      "confidence": 0.08847589,
+      "punctuated_word": "there."
+    },
+    {
+      "word": "get",
+      "start": 69.02,
+      "end": 69.18,
+      "confidence": 0.50900084,
+      "punctuated_word": "Get"
+    },
+    {
+      "word": "ready",
+      "start": 69.18,
+      "end": 69.68,
+      "confidence": 0.07530478,
+      "punctuated_word": "ready."
+    }
+  ],
+  "sections": [
+    {
+      "start": 0.06,
+      "end": 27.39,
+      "heading": "Part 1",
+      "text": "123567123, we go left turn. 12356, Susie. 13513, Susie, cue. 12356, basic, 1, 2. We need to just get into the style a little bit and try to get rockin' speed."
+    },
+    {
+      "start": 27.39,
+      "end": 48.1,
+      "heading": "Part 2",
+      "text": "1 more time. 5, 6, basic, 1, 2, again. Left turn and 1235. Suzy Q123513, Suzy Q123. Footwork, beat, 867."
+    },
+    {
+      "start": 48.22,
+      "end": 69.68,
+      "heading": "Part 3",
+      "text": "Fart and work and 123567123, lay, lay, let's go. Forward, beat, 8, 6, 7, 4, and 1, 2, 3, 5, 6, 7, 8, 1, 2, 3, let's go! 6, 7, 1, 2, 3, 5, 6, 7, 4, 3, again, let's turn, 1, 2, 3, 5, 6, 7, 4, 3, again, let's turn, 1, 2, 3, stop, right there. Get ready."
+    }
+  ]
+}

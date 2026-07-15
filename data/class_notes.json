@@ -678,5 +678,91 @@
       "keep it low",
       "elbow activation"
     ]
+  },
+  {
+    "class_date": "2026-07-14",
+    "class_number": 4,
+    "transcript_file": "img-2100.json",
+    "matched_techniques": [
+      {
+        "name": "Basic Step",
+        "slug": "basic_step"
+      },
+      {
+        "name": "Inside Turn",
+        "slug": "inside_turn"
+      }
+    ],
+    "techniques_covered": [
+      "basic_step",
+      "inside_turn"
+    ],
+    "topics": [
+      "footwork patterns",
+      "directional movement",
+      "timing and counting",
+      "rotation technique",
+      "weight anchoring"
+    ],
+    "extracted_tips": [
+      "Execute the basic step with a circular motion, creating a full circle pattern with your footwork",
+      "Practice the basic step around the world by moving through all directional angles (12, 9, 6 o'clock positions)",
+      "Anchor your weight properly between basic step repetitions to maintain balance and control",
+      "Execute the right turn with clean, controlled rotation, maintaining your frame and connection",
+      "Count through the full 8-count (5, 6, 7, 1, 2, 3, 4, 5) to complete the right turn with proper timing"
+    ],
+    "teaching_points": [
+      {
+        "technique": "basic_step",
+        "tip": "Execute the basic step with a circular motion, creating a full circle pattern with your footwork",
+        "context": "Instructor demonstrated circular basic step movement"
+      },
+      {
+        "technique": "basic_step",
+        "tip": "Practice the basic step around the world by moving through all directional angles (12, 9, 6 o'clock positions)",
+        "context": "Instructor cued 'around the world' directional variation"
+      },
+      {
+        "technique": "basic_step",
+        "tip": "Anchor your weight properly between basic step repetitions to maintain balance and control",
+        "context": "Instructor emphasized 'anchor' points during combo sequences"
+      },
+      {
+        "technique": "inside_turn",
+        "tip": "Execute the right turn with clean, controlled rotation, maintaining your frame and connection",
+        "context": "Instructor drilled right turn multiple times with 8-count timing"
+      },
+      {
+        "technique": "inside_turn",
+        "tip": "Count through the full 8-count (5, 6, 7, 1, 2, 3, 4, 5) to complete the right turn with proper timing",
+        "context": "Instructor repeated 8-count right turn drill several times for precision"
+      }
+    ],
+    "class_structure": [
+      {
+        "section": "Basic Step Variations",
+        "description": "Instructor drilled basic step with circular motion and directional variations (around the world)",
+        "approx_minutes": 3
+      },
+      {
+        "section": "Combo Sequence",
+        "description": "Combined basic steps with anchoring points and transitions, building a longer choreographed sequence",
+        "approx_minutes": 2
+      },
+      {
+        "section": "Right Turn Drill",
+        "description": "Focused repetition of right turn with 8-count timing, repeated multiple times for muscle memory",
+        "approx_minutes": 2
+      }
+    ],
+    "summary": "Class #4 focused on basic step variations including circular patterns and directional movement (around the world), combined with anchoring techniques in combo sequences. The instructor drilled right turns extensively with 8-count timing to build precision and muscle memory.",
+    "key_phrases": [
+      "circular motion",
+      "full circle",
+      "around the world",
+      "anchor",
+      "right turn",
+      "hold it"
+    ]
   }
 ]

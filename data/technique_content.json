@@ -73,10 +73,9 @@
         }
       ],
       "class_tips": [
-        "On counts 3 and 7, keep your weight planted and don't move your foot\u2014these are anchor points that stay in place.",
-        "Counts 1 and 2 travel forward; count 3 stays in place. Counts 5 and 6 travel back; count 7 stays in place.",
-        "If you move your 3 or 7, you'll step on your partner. Keep these anchor points stationary to maintain the connection.",
-        "Take small steps and stay aware of your surroundings, especially when dancing in lines. Stagger slightly if needed to avoid collisions."
+        "Execute the basic step with a circular motion, creating a full circle pattern with your footwork",
+        "Practice the basic step around the world by moving through all directional angles (12, 9, 6 o'clock positions)",
+        "Anchor your weight properly between basic step repetitions to maintain balance and control"
       ],
       "connects_to": [
         "inside_turn",
@@ -162,12 +161,8 @@
         }
       ],
       "class_tips": [
-        "Start turning on count 6, not before. Don't hesitate\u2014commit to the turn at 6.",
-        "The follower turns to the right on count 2. As the leader, raise your hand on count 1 to signal the turn, and guide them to the right.",
-        "Keep your 7 away from your partner, not toward them. This creates space and prevents stepping on each other.",
-        "Don't reach high to grab your partner's hand during a turn. Keep your arm low and grab low to maintain control.",
-        "Use your elbows to activate the switch, not your hands. Keep your arm straight and use elbow engagement to signal the hand switch.",
-        "Don't present your hand slowly\u2014snatch it. Quick, decisive hand movement prevents the follower from reaching for the wrong hand."
+        "Execute the right turn with clean, controlled rotation, maintaining your frame and connection",
+        "Count through the full 8-count (5, 6, 7, 1, 2, 3, 4, 5) to complete the right turn with proper timing"
       ],
       "connects_to": [
         "basic_step",

@@ -1605,5 +1605,612 @@
         }
       ]
     }
+  },
+  "2026-07-14": {
+    "title": "Salsa On2: Basic Step & Inside Turn",
+    "subtitle": "Nienes Latin Dance Studio \u2014 Class #4 (2026-07-14)",
+    "techniques": [
+      {
+        "slug": "basic_step",
+        "name": "Basic Step (Around the World)",
+        "tagline": "A circular, full-360\u00b0 basic that anchors your weight and travels through 12, 9, and 6 o'clock positions",
+        "what": "The NY On2 basic step is the foundation of all salsa movement. In this class the instructor emphasizes executing it as a 'circular motion' \u2014 rather than stepping straight back and forward, you trace a full circle with your footwork, moving through every directional angle (12, 9, and 6 o'clock positions) so the pattern travels 'around the world.' Weight must be anchored cleanly between repetitions to maintain balance and control before initiating the next direction.",
+        "mechanics": [
+          {
+            "counts": "1",
+            "action": "Step forward (leader) or back (follower) \u2014 initiate the circular arc, weight transfers fully onto the stepping foot"
+          },
+          {
+            "counts": "2",
+            "action": "On2 break: weight settles, hip drops, this is the 'anchor' moment \u2014 hold it here"
+          },
+          {
+            "counts": "3",
+            "action": "Replace weight back to center, feet collect under hips"
+          },
+          {
+            "counts": "5",
+            "action": "Step back (leader) or forward (follower) \u2014 continue the circular arc to the next clock position"
+          },
+          {
+            "counts": "6",
+            "action": "On2 break on the back step, hip drops opposite side"
+          },
+          {
+            "counts": "7",
+            "action": "Replace weight, collect, ready to redirect to next angle"
+          }
+        ],
+        "arm_styling": [
+          {
+            "counts": "1-2-3",
+            "action": "Arms stay relaxed and slightly rounded in front of the body; on the break (count 2) the opposite arm naturally swings forward with the hip drop"
+          },
+          {
+            "counts": "5-6-7",
+            "action": "Arms mirror the opposite side; on the back break (count 6) the lead arm extends slightly to maintain frame and connection with partner"
+          }
+        ],
+        "instructor_quotes": [
+          "Execute the basic step with a circular motion, creating a full circle pattern with your footwork",
+          "Practice the basic step around the world by moving through all directional angles (12, 9, 6 o'clock positions)",
+          "Anchor your weight properly between basic step repetitions to maintain balance and control"
+        ],
+        "frames": [
+          {
+            "frame": "frame_001.jpg",
+            "caption": "Instructor faces mirror, demonstrating solo basic step \u2014 feet hip-width, weight centered, about to initiate the circular arc"
+          },
+          {
+            "frame": "frame_002.jpg",
+            "caption": "Step forward on count 1 \u2014 weight fully transferred, circular arc begins toward 12 o'clock position"
+          },
+          {
+            "frame": "frame_003.jpg",
+            "caption": "On2 break moment \u2014 hip drops, weight anchors, this is the pause the instructor calls 'hold it'"
+          },
+          {
+            "frame": "frame_005.jpg",
+            "caption": "Back step on count 5 \u2014 arc continues toward 6 o'clock, neon shoes show clear foot placement"
+          },
+          {
+            "frame": "frame_007.jpg",
+            "caption": "Knee lift visible \u2014 instructor demonstrating the 'knee on this side' cue, showing hip engagement during the circular basic"
+          },
+          {
+            "frame": "frame_008.jpg",
+            "caption": "Weight collected at center between repetitions \u2014 the anchor position before redirecting to next clock angle"
+          },
+          {
+            "frame": "frame_010.jpg",
+            "caption": "Feet parallel, weight anchored \u2014 clean reset position showing proper balance before the next 'around the world' arc"
+          },
+          {
+            "frame": "frame_011.jpg",
+            "caption": "Instructor begins new directional arc \u2014 body upright, demonstrating 'I stay upright' teaching cue during circular basic"
+          }
+        ],
+        "drill": "Stand alone facing a mirror. Mark 12, 9, and 6 o'clock positions on the floor with tape. Execute your basic step starting at 12 o'clock, then rotate your body so your next basic faces 9 o'clock, then 6 o'clock, completing the full circle. Count aloud: '1-2-3, 5-6-7' and pause on every 2 and 6 to feel the anchor. Do 3 full circles slowly, then 3 at tempo.",
+        "common_error": "Stepping straight back and forward like a pendulum instead of tracing a circular arc. This kills the 'around the world' rotation and makes partner connection rigid. Think of your feet drawing a clock face on the floor, not a straight line.",
+        "videos": [
+          {
+            "title": "Salsa Basic Step for NY Style On2 (Beginner Tutorial)",
+            "url": "https://www.youtube.com/watch?v=-FW_9o7SESA",
+            "channel": "TheDanceDojo",
+            "why": "Dedicated beginner tutorial for the On2 basic step. Clear breakdown of leader and follower footwork with counting."
+          },
+          {
+            "title": "SALSA ON2 - Partnerwork Basics Lesson 1 - Basic Step",
+            "url": "https://www.youtube.com/watch?v=z7YqGIuhWVg",
+            "channel": "Salsa On2",
+            "why": "Part of a structured lesson series for NY style On2. Shows partnerwork basic step with leader and follower perspectives."
+          },
+          {
+            "title": "BASIC STEPS - Eddie Torres Instructional Salsa On2",
+            "url": "https://www.youtube.com/watch?v=dbeWlBadrAs",
+            "channel": "Eddie Torres (Mambo On2)",
+            "why": "Eddie Torres, the godfather of NY On2/mambo, teaches the basic step. Authoritative source for proper On2 timing and technique."
+          }
+        ]
+      },
+      {
+        "slug": "inside_turn",
+        "name": "Inside Turn (Right Turn)",
+        "tagline": "A clean clockwise rotation for the follower, led with a raised right-to-left hand arc on counts 5-6-7",
+        "what": "The inside turn (also called the right turn or traveling left turn in NY On2) sends the follower rotating clockwise under the leader's raised arm. The leader initiates the turn on count 5 by raising the joined right hands and guiding the follower's rotation with a smooth arc overhead. The follower must spot, maintain their frame, and complete the full rotation by count 1 of the next phrase. The instructor counts through the full 8-count (5, 6, 7, 1, 2, 3, 4, 5) to ensure the turn is completed with proper timing and not rushed.",
+        "mechanics": [
+          {
+            "counts": "1-2-3",
+            "action": "Leader and follower execute basic step in open position, establishing connection and timing before the turn"
+          },
+          {
+            "counts": "5",
+            "action": "Leader raises right hand (joined with follower's left) to create the arch; follower begins to rotate clockwise, stepping under the arch"
+          },
+          {
+            "counts": "6",
+            "action": "Follower is mid-rotation \u2014 body turns, spotting begins, frame maintained; leader steps back and guides with the raised arm"
+          },
+          {
+            "counts": "7",
+            "action": "Follower completes the rotation, landing facing the leader; leader lowers the arm and re-establishes connection"
+          },
+          {
+            "counts": "1",
+            "action": "Both partners land on count 1 of the new phrase \u2014 follower faces leader, connection re-established, ready for next move"
+          }
+        ],
+        "arm_styling": [
+          {
+            "counts": "5-6-7",
+            "action": "Leader: right arm raises smoothly in an arc overhead \u2014 not a jerk, a guided lift. Left hand stays low and relaxed. Follower: left arm follows the arc upward, right arm stays in frame close to body during rotation"
+          },
+          {
+            "counts": "1-2-3",
+            "action": "Both partners re-establish open or closed hold after the turn; arms return to neutral frame position with soft elbows"
+          }
+        ],
+        "instructor_quotes": [
+          "Execute the right turn with clean, controlled rotation, maintaining your frame and connection",
+          "Count through the full 8-count (5, 6, 7, 1, 2, 3, 4, 5) to complete the right turn with proper timing"
+        ],
+        "frames": [
+          {
+            "frame": "frame_017.jpg",
+            "caption": "First partner work frame \u2014 leader and follower face each other in open position, establishing connection before the inside turn sequence begins"
+          },
+          {
+            "frame": "frame_018.jpg",
+            "caption": "Leader takes follower's hand in closed/open hold \u2014 connection established, both partners grounded, about to begin the turn prep on count 5"
+          },
+          {
+            "frame": "frame_019.jpg",
+            "caption": "Turn initiation \u2014 leader begins raising the joined hands to create the arch overhead, follower's weight shifts to begin rotation"
+          },
+          {
+            "frame": "frame_020.jpg",
+            "caption": "Arch fully raised \u2014 follower stepping under the leader's arm, mid-rotation clockwise, both maintaining upright posture"
+          },
+          {
+            "frame": "frame_021.jpg",
+            "caption": "Follower mid-turn \u2014 body rotating clockwise, leader's arm guides overhead, follower's frame stays compact"
+          },
+          {
+            "frame": "frame_022.jpg",
+            "caption": "Follower completing rotation \u2014 nearly facing leader again, leader lowering arm to re-establish connection"
+          },
+          {
+            "frame": "frame_024.jpg",
+            "caption": "Turn completed \u2014 both partners face each other, connection re-established, weight anchored on count 2 after the turn"
+          },
+          {
+            "frame": "frame_025.jpg",
+            "caption": "Post-turn transition \u2014 leader raises arm again for a second inside turn repetition, showing the 'get ready, here it comes' cue"
+          },
+          {
+            "frame": "frame_026.jpg",
+            "caption": "Leader's arm fully extended in the turn lead \u2014 clear view of the overhead arch and the follower's response position"
+          },
+          {
+            "frame": "frame_029.jpg",
+            "caption": "Closed hold position \u2014 leader's hand on follower's back, follower's hand on leader's shoulder, demonstrating frame for the transition into cross body"
+          },
+          {
+            "frame": "frame_030.jpg",
+            "caption": "Partner work in open hold \u2014 both stepping in sync, showing the basic step timing that connects inside turn repetitions"
+          },
+          {
+            "frame": "frame_031.jpg",
+            "caption": "Final partner frame \u2014 open hold with clear hand connection, demonstrating the reset position between turn sequences"
+          }
+        ],
+        "drill": "With a partner, practice ONLY the turn lead on counts 5-6-7. Start in open hold. On count 5, raise your right hand slowly and guide your partner under. Freeze on count 7 and check: is your partner facing you? Is your arm back down? Is the connection re-established? Repeat 8 times slowly before adding music.",
+        "common_error": "Rushing the turn by pulling the follower's arm instead of lifting it. The lead is an upward arc, not a horizontal pull. Also: dropping the arm too early (before count 7) which causes the follower to lose their rotation axis and stumble out of the turn.",
+        "videos": [
+          {
+            "title": "Inside Turn - Beginner Salsa Turns and Spins On2 | TheDanceDojo",
+            "url": "https://www.youtube.com/watch?v=Ue4sSaY-bsQ",
+            "channel": "TheDanceDojo",
+            "why": "Beginner-focused inside turn tutorial specifically for On2. Clear instructional style with both perspectives shown."
+          },
+          {
+            "title": "SALSA ON2 - Partnerwork Basics Lesson 3 - Traveling Left (Inside Turn)",
+            "url": "https://www.youtube.com/watch?v=MW5sezTGh18",
+            "channel": "Salsa On2",
+            "why": "The Traveling Left Turn is the standard inside turn in NY On2. Part of the structured beginner partnerwork series."
+          },
+          {
+            "title": "Free Spin Inside Turn - Salsa ON2 - Adv Beginner Partnerwork Lesson 9",
+            "url": "https://www.youtube.com/watch?v=2QLSsPGidPA",
+            "channel": "Salsa On2",
+            "why": "Free spin variation of the inside turn. Slightly more advanced but breaks down the mechanics clearly. Good once the basic inside turn is comfortable."
+          }
+        ]
+      }
+    ],
+    "choreography": {
+      "sequence": "BASIC STEP (solo, slow) -> BASIC STEP (around the world, solo) -> INSIDE TURN (solo demo) -> PARTNER WORK: BASIC + INSIDE TURN -> TRANSITION TO CROSS BODY",
+      "phases": [
+        {
+          "name": "Phase 1: Solo Walk-Through (Slow)",
+          "time": "0:01 - 0:16",
+          "steps": [
+            {
+              "frame": "frame_001.jpg",
+              "time": "0:01",
+              "counts": "Ready position",
+              "move": "Starting Position",
+              "body": "Instructor stands facing the mirror, feet hip-width apart, weight centered, arms relaxed at sides. Cap on backwards, neon shoes visible. Students line the back wall watching.",
+              "cue": "123567123"
+            },
+            {
+              "frame": "frame_002.jpg",
+              "time": "0:02",
+              "counts": "1-2-3",
+              "move": "Basic Step \u2014 Forward Break",
+              "body": "Instructor steps forward, weight fully on front foot, slight hip drop. Body remains upright. Arms swing naturally with the step. Circular arc begins.",
+              "cue": "half and half, we go 12356"
+            },
+            {
+              "frame": "frame_003.jpg",
+              "time": "0:03",
+              "counts": "5-6-7",
+              "move": "Basic Step \u2014 Back Break",
+              "body": "Instructor steps back, weight transfers to back foot. Hip drops on count 6. Feet show clear directional change \u2014 beginning the 'around the world' arc toward 9 o'clock.",
+              "cue": "turn. 1232, thank you, transition"
+            },
+            {
+              "frame": "frame_004.jpg",
+              "time": "0:04",
+              "counts": "1-2-3",
+              "move": "Basic Step \u2014 Circular Arc (12 o'clock)",
+              "body": "Instructor faces slightly left of mirror, demonstrating the directional shift of the circular basic. Knee visible on the stepping side. Body upright. Mouth open \u2014 counting aloud.",
+              "cue": "123567123, face, 6, step, 1235"
+            },
+            {
+              "frame": "frame_005.jpg",
+              "time": "0:05",
+              "counts": "5-6-7",
+              "move": "Basic Step \u2014 Circular Arc (9 o'clock)",
+              "body": "Instructor has rotated body to face a new angle. Back step clearly visible with neon shoe lifted. Weight shifting. The 'around the world' rotation is in progress.",
+              "cue": "anchor"
+            },
+            {
+              "frame": "frame_006.jpg",
+              "time": "0:06",
+              "counts": "1-2-3",
+              "move": "Basic Step \u2014 Anchor Moment",
+              "body": "Instructor faces slightly right, weight anchored on standing foot, opposite knee bent. Arms extended slightly for balance. This is the 'hold it' anchor position between directional changes.",
+              "cue": "hold it"
+            },
+            {
+              "frame": "frame_007.jpg",
+              "time": "0:07",
+              "counts": "5-6-7",
+              "move": "Basic Step \u2014 Knee Engagement",
+              "body": "Instructor demonstrates knee lift on the stepping side \u2014 'knee on this side now.' Body stays upright. Neon shoes show one foot grounded, one lifted. Mouth open counting.",
+              "cue": "Cross body, knee on this side now, I go, I stay upright"
+            },
+            {
+              "frame": "frame_008.jpg",
+              "time": "0:08",
+              "counts": "1",
+              "move": "Basic Step \u2014 Weight Collection",
+              "body": "Instructor collects weight to center, feet nearly together, body upright. This is the reset between 'around the world' repetitions. Clean, balanced, ready to redirect.",
+              "cue": "6, 7, 1, 2, 3, 4, 5, 6, 7, 1, go"
+            },
+            {
+              "frame": "frame_009.jpg",
+              "time": "0:09",
+              "counts": "5-6-7",
+              "move": "Basic Step \u2014 6 o'clock Arc",
+              "body": "Instructor has rotated to face away from mirror (6 o'clock position). Back to camera shows 'COOL PEOPLE PARTY AT 11AM' shirt. Foot lifted mid-step. Completing the full circle.",
+              "cue": "around the world"
+            },
+            {
+              "frame": "frame_010.jpg",
+              "time": "0:10",
+              "counts": "Ready",
+              "move": "Basic Step \u2014 Full Circle Complete",
+              "body": "Instructor stands with feet parallel, weight anchored evenly. Facing mirror again \u2014 full 360\u00b0 circle completed. Students in mirror reflection watching closely.",
+              "cue": "Say, get ready, here it comes!"
+            },
+            {
+              "frame": "frame_011.jpg",
+              "time": "0:11",
+              "counts": "1-2-3",
+              "move": "Basic Step \u2014 Repeat Arc",
+              "body": "Instructor begins another circular basic, stepping to a new angle. Body upright, arms relaxed. Demonstrating the continuous 'around the world' pattern.",
+              "cue": "circular motion, full circle"
+            },
+            {
+              "frame": "frame_012.jpg",
+              "time": "0:12",
+              "counts": "5-6-7",
+              "move": "Basic Step \u2014 Directional Change",
+              "body": "Instructor pivots to new clock position. Neon shoes show foot placement mid-arc. Weight transferring. The circular pattern continues through all angles.",
+              "cue": "anchor your weight properly"
+            },
+            {
+              "frame": "frame_013.jpg",
+              "time": "0:13",
+              "counts": "1-2-3",
+              "move": "Basic Step \u2014 Sustained Arc",
+              "body": "Instructor continues the circular basic, now facing a different wall. Feet show clear step pattern. Body remains upright throughout the rotation.",
+              "cue": "123567123"
+            },
+            {
+              "frame": "frame_014.jpg",
+              "time": "0:14",
+              "counts": "5-6-7",
+              "move": "Inside Turn \u2014 Solo Demo Setup",
+              "body": "Instructor turns to face the room (no longer facing mirror). Arm begins to extend outward \u2014 setting up the inside turn demonstration. Students visible watching from sides.",
+              "cue": "right turn"
+            },
+            {
+              "frame": "frame_015.jpg",
+              "time": "0:15",
+              "counts": "5-6-7",
+              "move": "Inside Turn \u2014 Arm Arc Demo",
+              "body": "Instructor's right arm extends fully to the side, demonstrating the turn lead arc. Body faces room. Mouth open explaining. This is the 'raise the arm' teaching moment.",
+              "cue": "Execute the right turn with clean, controlled rotation"
+            },
+            {
+              "frame": "frame_016.jpg",
+              "time": "0:16",
+              "counts": "1",
+              "move": "Inside Turn \u2014 Full Demo",
+              "body": "Instructor faces room fully, both arms extended in a wide open position \u2014 demonstrating the frame and connection point for the inside turn. Students on both sides watching. Level 3 syllabus visible above.",
+              "cue": "Count through the full 8-count (5, 6, 7, 1, 2, 3, 4, 5)"
+            }
+          ]
+        },
+        {
+          "name": "Phase 2: Partner Work",
+          "time": "0:17 - 0:31",
+          "steps": [
+            {
+              "frame": "frame_017.jpg",
+              "time": "0:17",
+              "counts": "Ready",
+              "move": "Partner Connection \u2014 Open Hold",
+              "body": "Instructor (white shirt, neon shoes) faces female partner (orange top, black shorts, latin heels). Both smiling, stepping in sync. Open hold established \u2014 hands joined, arms relaxed.",
+              "cue": "Lily, with Lily. Lily, Lily."
+            },
+            {
+              "frame": "frame_018.jpg",
+              "time": "0:18",
+              "counts": "1-2-3",
+              "move": "Basic Step \u2014 Partner (Open Hold)",
+              "body": "Both partners step together in basic. Instructor's back to camera shows 'COOL PEOPLE PARTY AT 11AM.' Partner smiling, weight on front foot. Hands joined at waist height.",
+              "cue": "All right, Lily, you got it, now transition, you ready?"
+            },
+            {
+              "frame": "frame_019.jpg",
+              "time": "0:19",
+              "counts": "5-6-7",
+              "move": "Basic Step \u2014 Partner (Back Break)",
+              "body": "Both partners step back simultaneously. Partner's heel visible lifting in latin heels. Instructor's neon shoe steps back. Connection maintained through joined hands. Smiling \u2014 good energy.",
+              "cue": "567, and 12356712351230 yeah"
+            },
+            {
+              "frame": "frame_020.jpg",
+              "time": "0:20",
+              "counts": "5",
+              "move": "Inside Turn \u2014 Turn Initiation",
+              "body": "Instructor begins raising joined right hand to create the arch. Partner's weight shifts as she prepares to step under. Both bodies upright. The turn lead begins on count 5.",
+              "cue": "12345671, go, and 567"
+            },
+            {
+              "frame": "frame_021.jpg",
+              "time": "0:21",
+              "counts": "6",
+              "move": "Inside Turn \u2014 Mid-Rotation",
+              "body": "Partner is mid-rotation clockwise under the arch. Instructor's arm is raised overhead guiding. Partner's body has turned approximately 180\u00b0. Both maintaining frame.",
+              "cue": "right turn"
+            },
+            {
+              "frame": "frame_022.jpg",
+              "time": "0:22",
+              "counts": "7",
+              "move": "Inside Turn \u2014 Completing Rotation",
+              "body": "Partner nearly faces instructor again \u2014 rotation almost complete. Instructor's arm begins to lower. Connection about to be re-established. Partner's feet landing cleanly.",
+              "cue": "hold it"
+            },
+            {
+              "frame": "frame_023.jpg",
+              "time": "0:23",
+              "counts": "1-2-3",
+              "move": "Inside Turn \u2014 Re-connection",
+              "body": "Partner faces instructor, turn complete. Both stepping in basic. Partner laughing \u2014 successful turn. Instructor smiling. Open hold re-established at waist height.",
+              "cue": "123"
+            },
+            {
+              "frame": "frame_024.jpg",
+              "time": "0:24",
+              "counts": "5-6-7",
+              "move": "Basic Step \u2014 Post-Turn Reset",
+              "body": "Both partners in basic step, facing each other. Instructor's back to camera. Partner smiling. Weight anchored. This is the reset between turn repetitions.",
+              "cue": "anchor"
+            },
+            {
+              "frame": "frame_025.jpg",
+              "time": "0:25",
+              "counts": "5",
+              "move": "Inside Turn \u2014 Second Turn Initiation",
+              "body": "Instructor raises arm again for a second inside turn. Partner's arm follows upward. Both bodies upright. The repeated turn sequence demonstrates the 'get ready, here it comes' cue.",
+              "cue": "get ready, here it comes!"
+            },
+            {
+              "frame": "frame_026.jpg",
+              "time": "0:26",
+              "counts": "6",
+              "move": "Inside Turn \u2014 Second Turn Mid-Arc",
+              "body": "Partner rotating clockwise again. Instructor's arm fully extended overhead. Clear view of the turn arch from the side. Partner's body compact during rotation.",
+              "cue": "right turn, clean controlled rotation"
+            },
+            {
+              "frame": "frame_027.jpg",
+              "time": "0:27",
+              "counts": "7-1",
+              "move": "Inside Turn \u2014 Landing",
+              "body": "Instructor faces room, arms extended to re-catch partner. Partner completing rotation. Both stepping. The landing on count 1 is visible \u2014 weight transferring to new position.",
+              "cue": "5, 6, 7, 1, 2, 3, 4, 5"
+            },
+            {
+              "frame": "frame_028.jpg",
+              "time": "0:28",
+              "counts": "1-2-3",
+              "move": "Transition \u2014 Cross Body Lead Setup",
+              "body": "Instructor and partner in a transitional position \u2014 instructor's arm raised high, partner stepping through. This is the cross body lead entry. Instructor's body opens to the side.",
+              "cue": "Cross body, transition"
+            },
+            {
+              "frame": "frame_029.jpg",
+              "time": "0:29",
+              "counts": "5-6-7",
+              "move": "Cross Body Lead \u2014 Partner Passing",
+              "body": "Partner's hand on instructor's back, instructor's hand on partner's back \u2014 closed/cross body position. Both stepping forward. Partner passing across instructor's body line.",
+              "cue": "Cross body, knee on this side now"
+            },
+            {
+              "frame": "frame_030.jpg",
+              "time": "0:30",
+              "counts": "1-2-3",
+              "move": "Partner Work \u2014 Open Hold Reset",
+              "body": "Both partners in open hold, stepping in basic. Partner on instructor's left side. Hands joined. Smiling. Demonstrating the reset position after cross body lead.",
+              "cue": "transition, 123567123"
+            },
+            {
+              "frame": "frame_031.jpg",
+              "time": "0:31",
+              "counts": "5-6-7",
+              "move": "Partner Work \u2014 Final Position",
+              "body": "Both partners in open hold, instructor's back to camera showing full shirt text. Partner facing camera smiling. Clean hand connection visible. Weight anchored on back step.",
+              "cue": "anchor your weight properly"
+            }
+          ]
+        }
+      ],
+      "hard_transitions": [
+        {
+          "from": "Basic Step (Solo)",
+          "to": "Inside Turn (Solo Demo)",
+          "frames": "013 -> 014",
+          "why": "The instructor shifts from facing the mirror (solo basic) to facing the room to demonstrate the turn lead arm. Students must recognize this pivot as the transition from footwork drill to turn mechanics \u2014 the body orientation change signals a new technique is being introduced."
+        },
+        {
+          "from": "Solo Demo",
+          "to": "Partner Work",
+          "frames": "016 -> 017",
+          "why": "The instructor calls 'Lily' and moves from solo demonstration to live partner work. The energy and timing shift significantly \u2014 students must now apply what they watched to an actual partner connection. The hand-join moment (frame 017) is where many beginners lose their timing."
+        },
+        {
+          "from": "Inside Turn",
+          "to": "Cross Body Lead",
+          "frames": "027 -> 028",
+          "why": "After the inside turn lands on count 1, the instructor immediately sets up the cross body lead. This is the hardest transition because the follower is still completing their rotation while the leader must already be opening their body to the side to create the cross body lane. Rushing this causes the follower to collide with the leader."
+        },
+        {
+          "from": "Basic Step (12 o'clock)",
+          "to": "Basic Step (9 o'clock)",
+          "frames": "003 -> 005",
+          "why": "The 'around the world' directional change requires the dancer to redirect their circular arc between repetitions. The anchor on count 3 (frame 003) must be solid before the body can rotate to the new angle. Beginners often skip the anchor and stumble into the next direction."
+        }
+      ]
+    },
+    "practice": {
+      "total_minutes": 25,
+      "sections": [
+        {
+          "name": "Section 1: Solo Basic Step \u2014 Circular Motion",
+          "minutes": 8,
+          "drills": [
+            {
+              "name": "Stationary Basic (On2 Timing)",
+              "minutes": 2,
+              "instructions": "Stand in place, no travel. Count aloud: '1-2-3, 5-6-7.' On every 2 and 6, pause for one full beat and feel your weight anchor into the floor. Do not move to the next step until you feel that anchor. Repeat 16 times."
+            },
+            {
+              "name": "Around the World (3 Positions)",
+              "minutes": 3,
+              "instructions": "Mark 12, 9, and 6 o'clock on the floor with tape or shoes. Execute your basic step facing 12 o'clock for 2 repetitions, then rotate your body to face 9 o'clock for 2 repetitions, then 6 o'clock for 2 repetitions. Complete 3 full circles. Focus on the anchor between each directional change \u2014 do not rush the rotation."
+            },
+            {
+              "name": "Full Circle Continuous",
+              "minutes": 3,
+              "instructions": "Now do the 'around the world' continuously \u2014 rotate a little bit on every anchor so that by the end of 8 repetitions you have completed a full 360\u00b0. Stay upright ('I stay upright'). Add music at 70% tempo. Do 4 full circles."
+            }
+          ]
+        },
+        {
+          "name": "Section 2: Inside Turn \u2014 Solo Mechanics",
+          "minutes": 7,
+          "drills": [
+            {
+              "name": "Arm Arc Drill (No Partner)",
+              "minutes": 2,
+              "instructions": "Stand alone. On count 5, raise your right arm in a smooth arc overhead \u2014 imagine you are lifting a balloon, not pulling a rope. On count 7, lower it back down. Repeat 16 times to counts '5-6-7.' The arc should be smooth and circular, not jerky."
+            },
+            {
+              "name": "Solo Turn Spot",
+              "minutes": 2,
+              "instructions": "Practice spotting for the inside turn. Stand in place, pick a spot on the wall in front of you. On count 5, begin rotating clockwise. Keep your eyes on that spot as long as possible, then whip your head around to find it again. Complete the rotation by count 7. Repeat 12 times."
+            },
+            {
+              "name": "Full 8-Count Turn Sequence",
+              "minutes": 3,
+              "instructions": "Count through the full 8-count as the instructor taught: '5, 6, 7, 1, 2, 3, 4, 5.' On counts 5-6-7 execute the turn. On counts 1-2-3 execute the basic step. On counts 4-5 prepare for the next turn. Add music at 80% tempo. Do 8 repetitions."
+            }
+          ]
+        },
+        {
+          "name": "Section 3: Partner Work \u2014 Basic + Inside Turn",
+          "minutes": 10,
+          "drills": [
+            {
+              "name": "Slow Connection Drill",
+              "minutes": 3,
+              "instructions": "With a partner, stand in open hold. Execute ONLY the basic step together for 2 minutes \u2014 no turns. Focus on matching your weight transfers. On every count 2 and 6, both partners anchor simultaneously. Feel the connection through your joined hands."
+            },
+            {
+              "name": "Turn Lead Freeze Drill",
+              "minutes": 3,
+              "instructions": "Leaders: on count 5, raise your arm and FREEZE. Check: is your arm making a smooth arch? Is your elbow soft? Is your partner able to step under without ducking? Followers: step under and FREEZE mid-rotation. Check: is your frame compact? Are you spotting? Resume on count 7. Repeat 8 times."
+            },
+            {
+              "name": "Full Sequence: Basic + Inside Turn + Transition",
+              "minutes": 4,
+              "instructions": "Execute the full sequence from class: 2 basics in open hold, then inside turn on counts 5-6-7, then 2 basics, then inside turn again. After 4 repetitions, add the cross body lead transition. Count aloud throughout. Add music at full tempo for the final 2 minutes."
+            }
+          ]
+        }
+      ]
+    },
+    "key_frames": [
+      {
+        "frame": "frame_001.jpg",
+        "label": "Starting Position",
+        "description": "The instructor's ready position \u2014 feet hip-width, weight centered, arms relaxed. Study this frame to understand the neutral posture you return to between every move. Body is upright, no tension."
+      },
+      {
+        "frame": "frame_003.jpg",
+        "label": "The Anchor (Count 2)",
+        "description": "This is the most important frame for On2 timing. The instructor's weight is fully settled on the breaking foot, hip drops, and there is a clear pause before the next step. This is what 'anchor your weight properly' looks like \u2014 freeze here and feel it."
+      },
+      {
+        "frame": "frame_007.jpg",
+        "label": "Knee Engagement",
+        "description": "The instructor demonstrates 'knee on this side now' \u2014 the knee lifts naturally as part of the circular basic step. This shows the hip-and-knee connection that gives salsa its characteristic look. The body stays upright while the lower body does the work."
+      },
+      {
+        "frame": "frame_009.jpg",
+        "label": "6 O'Clock Position",
+        "description": "The instructor has rotated to face away from the mirror \u2014 the 6 o'clock position in the 'around the world' circular basic. This frame proves the full 360\u00b0 rotation is happening. Study the foot placement and body angle."
+      }
+    ],
+    "class_date": "2026-07-14",
+    "class_number": 4,
+    "video_slug": "img-8522"
   }
 }

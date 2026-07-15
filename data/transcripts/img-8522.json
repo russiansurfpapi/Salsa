@@ -1,0 +1,503 @@
+{
+  "text": "123567123, half and half, we go 12356, turn. 1232, thank you, transition, 123567123, face, 6, step, 1235. Lily, with Lily. Lily, Lily. All right, Lily, you got it, now transition, you ready? 567, and 12356712351230 yeah, 12345671, go, and 567. Cross body, knee on this side now, I go, I stay upright. 6, 7, 1, 2, 3, 4, 5, 6, 7, 1, go. Say, get ready, here it comes!",
+  "duration": 62.142,
+  "words": [
+    {
+      "word": "123567123",
+      "start": 0.14,
+      "end": 6.08,
+      "confidence": 0.722021,
+      "punctuated_word": "123567123,"
+    },
+    {
+      "word": "half",
+      "start": 6.58,
+      "end": 6.8199997,
+      "confidence": 0.7956411,
+      "punctuated_word": "half"
+    },
+    {
+      "word": "and",
+      "start": 6.8199997,
+      "end": 7.08,
+      "confidence": 0.50664043,
+      "punctuated_word": "and"
+    },
+    {
+      "word": "half",
+      "start": 7.08,
+      "end": 7.58,
+      "confidence": 0.076323956,
+      "punctuated_word": "half,"
+    },
+    {
+      "word": "we",
+      "start": 7.66,
+      "end": 7.8999996,
+      "confidence": 0.6079533,
+      "punctuated_word": "we"
+    },
+    {
+      "word": "go",
+      "start": 7.8999996,
+      "end": 8.4,
+      "confidence": 0.98175585,
+      "punctuated_word": "go"
+    },
+    {
+      "word": "12356",
+      "start": 8.599999,
+      "end": 12.0199995,
+      "confidence": 0.7782779,
+      "punctuated_word": "12356,"
+    },
+    {
+      "word": "turn",
+      "start": 12.099999,
+      "end": 12.599999,
+      "confidence": 0.7425366,
+      "punctuated_word": "turn."
+    },
+    {
+      "word": "1232",
+      "start": 12.92,
+      "end": 15.62,
+      "confidence": 0.4999216,
+      "punctuated_word": "1232,"
+    },
+    {
+      "word": "thank",
+      "start": 15.62,
+      "end": 15.799999,
+      "confidence": 0.6560807,
+      "punctuated_word": "thank"
+    },
+    {
+      "word": "you",
+      "start": 15.799999,
+      "end": 16.16,
+      "confidence": 0.7143027,
+      "punctuated_word": "you,"
+    },
+    {
+      "word": "transition",
+      "start": 16.16,
+      "end": 16.66,
+      "confidence": 0.72400254,
+      "punctuated_word": "transition,"
+    },
+    {
+      "word": "123567123",
+      "start": 17.1,
+      "end": 22.56,
+      "confidence": 0.68626094,
+      "punctuated_word": "123567123,"
+    },
+    {
+      "word": "face",
+      "start": 23.08,
+      "end": 23.4,
+      "confidence": 0.7337733,
+      "punctuated_word": "face,"
+    },
+    {
+      "word": "6",
+      "start": 23.4,
+      "end": 23.84,
+      "confidence": 0.46345717,
+      "punctuated_word": "6,"
+    },
+    {
+      "word": "step",
+      "start": 23.84,
+      "end": 24.34,
+      "confidence": 0.6617656,
+      "punctuated_word": "step,"
+    },
+    {
+      "word": "1235",
+      "start": 24.4,
+      "end": 26.74,
+      "confidence": 0.7680341,
+      "punctuated_word": "1235."
+    },
+    {
+      "word": "lily",
+      "start": 26.92,
+      "end": 27.42,
+      "confidence": 0.52021444,
+      "punctuated_word": "Lily,"
+    },
+    {
+      "word": "with",
+      "start": 27.8,
+      "end": 28.04,
+      "confidence": 0.72391,
+      "punctuated_word": "with"
+    },
+    {
+      "word": "lily",
+      "start": 28.04,
+      "end": 28.54,
+      "confidence": 0.047027487,
+      "punctuated_word": "Lily."
+    },
+    {
+      "word": "lily",
+      "start": 30.9,
+      "end": 31.24,
+      "confidence": 0.41668943,
+      "punctuated_word": "Lily,"
+    },
+    {
+      "word": "lily",
+      "start": 31.24,
+      "end": 31.74,
+      "confidence": 0.59922487,
+      "punctuated_word": "Lily."
+    },
+    {
+      "word": "all",
+      "start": 33.82,
+      "end": 33.84,
+      "confidence": 0.51912534,
+      "punctuated_word": "All"
+    },
+    {
+      "word": "right",
+      "start": 33.84,
+      "end": 34.02,
+      "confidence": 0.74506867,
+      "punctuated_word": "right,"
+    },
+    {
+      "word": "lily",
+      "start": 34.02,
+      "end": 34.260002,
+      "confidence": 0.7806182,
+      "punctuated_word": "Lily,"
+    },
+    {
+      "word": "you",
+      "start": 34.260002,
+      "end": 34.36,
+      "confidence": 0.25019032,
+      "punctuated_word": "you"
+    },
+    {
+      "word": "got",
+      "start": 34.36,
+      "end": 34.5,
+      "confidence": 0.2501068,
+      "punctuated_word": "got"
+    },
+    {
+      "word": "it",
+      "start": 34.5,
+      "end": 34.66,
+      "confidence": 0.23599608,
+      "punctuated_word": "it,"
+    },
+    {
+      "word": "now",
+      "start": 34.66,
+      "end": 34.94,
+      "confidence": 0.49846888,
+      "punctuated_word": "now"
+    },
+    {
+      "word": "transition",
+      "start": 34.94,
+      "end": 35.44,
+      "confidence": 0.5702512,
+      "punctuated_word": "transition,"
+    },
+    {
+      "word": "you",
+      "start": 35.6,
+      "end": 35.82,
+      "confidence": 0.96980155,
+      "punctuated_word": "you"
+    },
+    {
+      "word": "ready",
+      "start": 35.82,
+      "end": 36.32,
+      "confidence": 0.048618402,
+      "punctuated_word": "ready?"
+    },
+    {
+      "word": "567",
+      "start": 36.76,
+      "end": 38.08,
+      "confidence": 0.8195958,
+      "punctuated_word": "567,"
+    },
+    {
+      "word": "and",
+      "start": 38.08,
+      "end": 38.54,
+      "confidence": 0.93685716,
+      "punctuated_word": "and"
+    },
+    {
+      "word": "12356712351230",
+      "start": 38.54,
+      "end": 46.02,
+      "confidence": 0.5990959,
+      "punctuated_word": "12356712351230"
+    },
+    {
+      "word": "yeah",
+      "start": 46.02,
+      "end": 46.239998,
+      "confidence": 0.21575035,
+      "punctuated_word": "yeah,"
+    },
+    {
+      "word": "12345671",
+      "start": 46.239998,
+      "end": 49.559998,
+      "confidence": 0.68566966,
+      "punctuated_word": "12345671,"
+    },
+    {
+      "word": "go",
+      "start": 49.559998,
+      "end": 50.059998,
+      "confidence": 0.74678385,
+      "punctuated_word": "go,"
+    },
+    {
+      "word": "and",
+      "start": 50.22,
+      "end": 50.72,
+      "confidence": 0.96795547,
+      "punctuated_word": "and"
+    },
+    {
+      "word": "567",
+      "start": 51.059998,
+      "end": 52.44,
+      "confidence": 0.77500015,
+      "punctuated_word": "567."
+    },
+    {
+      "word": "cross",
+      "start": 52.559998,
+      "end": 53.059998,
+      "confidence": 0.38926923,
+      "punctuated_word": "Cross"
+    },
+    {
+      "word": "body",
+      "start": 53.14,
+      "end": 53.58,
+      "confidence": 0.35283387,
+      "punctuated_word": "body,"
+    },
+    {
+      "word": "knee",
+      "start": 53.58,
+      "end": 54.08,
+      "confidence": 0.87288755,
+      "punctuated_word": "knee"
+    },
+    {
+      "word": "on",
+      "start": 54.12,
+      "end": 54.34,
+      "confidence": 0.76752925,
+      "punctuated_word": "on"
+    },
+    {
+      "word": "this",
+      "start": 54.34,
+      "end": 54.58,
+      "confidence": 0.8465483,
+      "punctuated_word": "this"
+    },
+    {
+      "word": "side",
+      "start": 54.58,
+      "end": 54.86,
+      "confidence": 0.70228535,
+      "punctuated_word": "side"
+    },
+    {
+      "word": "now",
+      "start": 54.86,
+      "end": 55.36,
+      "confidence": 0.94626844,
+      "punctuated_word": "now,"
+    },
+    {
+      "word": "i",
+      "start": 55.46,
+      "end": 55.64,
+      "confidence": 0.7555401,
+      "punctuated_word": "I"
+    },
+    {
+      "word": "go",
+      "start": 55.64,
+      "end": 56.1,
+      "confidence": 0.92727745,
+      "punctuated_word": "go,"
+    },
+    {
+      "word": "i",
+      "start": 56.1,
+      "end": 56.28,
+      "confidence": 0.76626235,
+      "punctuated_word": "I"
+    },
+    {
+      "word": "stay",
+      "start": 56.28,
+      "end": 56.58,
+      "confidence": 0.8449794,
+      "punctuated_word": "stay"
+    },
+    {
+      "word": "upright",
+      "start": 56.58,
+      "end": 57.08,
+      "confidence": 0.8035533,
+      "punctuated_word": "upright."
+    },
+    {
+      "word": "6",
+      "start": 57.8,
+      "end": 58.26,
+      "confidence": 0.996624,
+      "punctuated_word": "6,"
+    },
+    {
+      "word": "7",
+      "start": 58.26,
+      "end": 58.76,
+      "confidence": 0.9903384,
+      "punctuated_word": "7,"
+    },
+    {
+      "word": "1",
+      "start": 58.78,
+      "end": 59.2,
+      "confidence": 0.99753547,
+      "punctuated_word": "1,"
+    },
+    {
+      "word": "2",
+      "start": 59.2,
+      "end": 59.7,
+      "confidence": 0.99849594,
+      "punctuated_word": "2,"
+    },
+    {
+      "word": "3",
+      "start": 59.7,
+      "end": 60.12,
+      "confidence": 0.23990473,
+      "punctuated_word": "3,"
+    },
+    {
+      "word": "4",
+      "start": 60.12,
+      "end": 60.4,
+      "confidence": 0.49046314,
+      "punctuated_word": "4,"
+    },
+    {
+      "word": "5",
+      "start": 60.4,
+      "end": 60.78,
+      "confidence": 0.91798383,
+      "punctuated_word": "5,"
+    },
+    {
+      "word": "6",
+      "start": 60.78,
+      "end": 60.795998,
+      "confidence": 0.90812093,
+      "punctuated_word": "6,"
+    },
+    {
+      "word": "7",
+      "start": 60.795998,
+      "end": 60.812,
+      "confidence": 0.34959403,
+      "punctuated_word": "7,"
+    },
+    {
+      "word": "1",
+      "start": 60.812,
+      "end": 60.828,
+      "confidence": 0.42793816,
+      "punctuated_word": "1,"
+    },
+    {
+      "word": "go",
+      "start": 60.828,
+      "end": 60.844,
+      "confidence": 0.27860603,
+      "punctuated_word": "go."
+    },
+    {
+      "word": "say",
+      "start": 60.844,
+      "end": 60.86,
+      "confidence": 0.3734361,
+      "punctuated_word": "Say,"
+    },
+    {
+      "word": "get",
+      "start": 60.86,
+      "end": 61.02,
+      "confidence": 0.29481393,
+      "punctuated_word": "get"
+    },
+    {
+      "word": "ready",
+      "start": 61.02,
+      "end": 61.48,
+      "confidence": 0.30354956,
+      "punctuated_word": "ready,"
+    },
+    {
+      "word": "here",
+      "start": 61.48,
+      "end": 61.72,
+      "confidence": 0.7604644,
+      "punctuated_word": "here"
+    },
+    {
+      "word": "it",
+      "start": 61.72,
+      "end": 61.86,
+      "confidence": 0.371196,
+      "punctuated_word": "it"
+    },
+    {
+      "word": "comes",
+      "start": 61.86,
+      "end": 62.36,
+      "confidence": 0.029428544,
+      "punctuated_word": "comes!"
+    }
+  ],
+  "sections": [
+    {
+      "start": 0.14,
+      "end": 36.32,
+      "heading": "Part 1",
+      "text": "123567123, half and half, we go 12356, turn. 1232, thank you, transition, 123567123, face, 6, step, 1235. Lily, with Lily. Lily, Lily. All right, Lily, you got it, now transition, you ready?"
+    },
+    {
+      "start": 36.76,
+      "end": 62.36,
+      "heading": "Part 2",
+      "text": "567, and 12356712351230 yeah, 12345671, go, and 567. Cross body, knee on this side now, I go, I stay upright. 6, 7, 1, 2, 3, 4, 5, 6, 7, 1, go. Say, get ready, here it comes!"
+    }
+  ]
+}
