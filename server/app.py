@@ -61,6 +61,11 @@ def practice_page() -> FileResponse:
     return FileResponse(WEB / "practice.html")
 
 
+@app.get("/techniques", response_class=HTMLResponse)
+def techniques_page() -> FileResponse:
+    return FileResponse(WEB / "techniques-browser.html")
+
+
 @app.get("/quiz", response_class=HTMLResponse)
 def quiz_page() -> FileResponse:
     return FileResponse(WEB / "quiz.html")
@@ -88,6 +93,68 @@ def list_techniques() -> dict:
         t["learned"] = t["name"] in learned
 
     return techniques
+
+
+@app.get("/api/techniques-by-class")
+def techniques_by_class() -> dict:
+    """Aggregate all techniques with their class data, teaching points, and videos."""
+    class_notes = _load_json("class_notes.json") or []
+
+    # Build technique → classes map
+    technique_map = {}
+
+    for cls in class_notes:
+        class_date = cls.get("class_date", "")
+        class_num = cls.get("class_number", 0)
+
+        for tech_slug in cls.get("techniques_covered", []):
+            if tech_slug not in technique_map:
+                technique_map[tech_slug] = {
+                    "slug": tech_slug,
+                    "name": tech_slug.replace("_", " ").title(),
+                    "classes": [],
+                    "teaching_points": [],
+                    "videos": [],
+                    "key_phrases": set()
+                }
+
+            # Add class reference
+            technique_map[tech_slug]["classes"].append({
+                "date": class_date,
+                "number": class_num
+            })
+
+            # Collect teaching points for this technique
+            for tp in cls.get("teaching_points", []):
+                if tp.get("technique") == tech_slug:
+                    technique_map[tech_slug]["teaching_points"].append({
+                        "tip": tp.get("tip", ""),
+                        "context": tp.get("context", ""),
+                        "class_date": class_date
+                    })
+
+            # Collect videos for this technique
+            for vid in cls.get("related_videos", []):
+                if vid.get("technique") == tech_slug:
+                    technique_map[tech_slug]["videos"].append({
+                        "title": vid.get("title", ""),
+                        "url": vid.get("url", ""),
+                        "why": vid.get("why", ""),
+                        "class_date": class_date
+                    })
+
+            # Collect key phrases
+            for phrase in cls.get("key_phrases", []):
+                technique_map[tech_slug]["key_phrases"].add(phrase)
+
+    # Convert key_phrases sets to lists
+    for tech in technique_map.values():
+        tech["key_phrases"] = sorted(list(tech["key_phrases"]))
+
+    return {
+        "techniques": sorted(technique_map.values(), key=lambda t: t["slug"]),
+        "count": len(technique_map)
+    }
 
 
 def _get_content() -> dict:

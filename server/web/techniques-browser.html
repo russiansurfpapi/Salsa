@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salsa Techniques — Browse & Practice</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, #d63031, #e84393);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    header h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+    header p { font-size: 1rem; opacity: 0.9; }
+
+    .container { max-width: 1200px; margin: 2rem auto; padding: 0 1rem; }
+
+    .search-bar {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+    }
+    .search-bar input {
+      flex: 1;
+      min-width: 250px;
+      padding: 0.75rem 1rem;
+      border: 2px solid #ddd;
+      border-radius: 6px;
+      font-size: 1rem;
+      transition: border-color 0.2s;
+    }
+    .search-bar input:focus {
+      outline: none;
+      border-color: #d63031;
+    }
+
+    .filter-buttons {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .filter-btn {
+      padding: 0.6rem 1rem;
+      background: white;
+      border: 2px solid #ddd;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: all 0.2s;
+    }
+    .filter-btn:hover {
+      border-color: #d63031;
+      color: #d63031;
+    }
+    .filter-btn.active {
+      background: #d63031;
+      color: white;
+      border-color: #d63031;
+    }
+
+    .techniques-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .technique-card {
+      background: white;
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      transition: all 0.2s;
+    }
+    .technique-card:hover {
+      box-shadow: 0 6px 16px rgba(214, 48, 49, 0.12);
+      transform: translateY(-2px);
+    }
+
+    .technique-name {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #d63031;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .technique-slug {
+      font-family: 'Monaco', monospace;
+      font-size: 0.8rem;
+      color: #999;
+      background: #f9f9f9;
+      padding: 0.2rem 0.5rem;
+      border-radius: 3px;
+    }
+
+    .classes-section {
+      margin: 1rem 0;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #eee;
+    }
+    .classes-section h4 {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      color: #666;
+      margin-bottom: 0.5rem;
+    }
+    .class-badge {
+      display: inline-block;
+      background: #f0f0f0;
+      padding: 0.3rem 0.7rem;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .class-badge:hover {
+      background: #e0e0e0;
+      text-decoration: underline;
+    }
+
+    .videos-section {
+      margin: 1rem 0;
+    }
+    .videos-section h4 {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      color: #666;
+      margin-bottom: 0.5rem;
+    }
+    .video-link {
+      display: block;
+      font-size: 0.9rem;
+      color: #d63031;
+      text-decoration: none;
+      margin-bottom: 0.5rem;
+      padding: 0.4rem;
+      border-radius: 4px;
+      transition: all 0.2s;
+    }
+    .video-link:hover {
+      background: #ffe0e0;
+      text-decoration: underline;
+    }
+    .video-why {
+      font-size: 0.8rem;
+      color: #999;
+      margin-left: 1rem;
+    }
+
+    .key-phrases {
+      margin: 1rem 0;
+    }
+    .key-phrases h4 {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      color: #666;
+      margin-bottom: 0.5rem;
+    }
+    .phrase {
+      display: inline-block;
+      background: #fff0f0;
+      padding: 0.3rem 0.7rem;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
+      font-style: italic;
+    }
+
+    .teaching-points {
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid #eee;
+    }
+    .teaching-points h4 {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      color: #666;
+      margin-bottom: 0.5rem;
+    }
+    .point {
+      font-size: 0.85rem;
+      margin-bottom: 0.7rem;
+      padding: 0.5rem;
+      background: #f9f9f9;
+      border-left: 3px solid #d63031;
+      border-radius: 2px;
+    }
+    .point strong { color: #d63031; }
+    .point .class-ref {
+      font-size: 0.75rem;
+      color: #999;
+      display: block;
+      margin-top: 0.3rem;
+    }
+
+    .stats {
+      font-size: 0.85rem;
+      color: #999;
+      margin-top: 1rem;
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: #999;
+      font-size: 0.9rem;
+    }
+
+    .no-results {
+      text-align: center;
+      padding: 3rem 1rem;
+      color: #999;
+    }
+
+    @media (max-width: 768px) {
+      header h1 { font-size: 1.5rem; }
+      .techniques-grid { grid-template-columns: 1fr; }
+      .search-bar { flex-direction: column; }
+      .search-bar input { min-width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🎯 Salsa Techniques</h1>
+    <p>Browse all techniques by class • Find teaching cues • Watch videos</p>
+  </header>
+
+  <div class="container">
+    <div class="search-bar">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search techniques... (basic_step, suzy_q, inside_turn, etc.)"
+      >
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="fundamentals">Fundamentals</button>
+        <button class="filter-btn" data-category="turns">Turns</button>
+        <button class="filter-btn" data-category="footwork">Footwork</button>
+        <button class="filter-btn" data-category="partner">Partner Leads</button>
+      </div>
+    </div>
+
+    <div id="techniquesContainer" class="techniques-grid">
+      <div style="text-align: center; padding: 2rem; grid-column: 1/-1;">
+        Loading techniques...
+      </div>
+    </div>
+
+    <div class="stats">
+      Showing <span id="visibleCount">0</span> of <span id="totalCount">0</span> techniques
+    </div>
+  </div>
+
+  <footer>
+    <p>Use <code>/salsa-practice &lt;technique&gt;</code> on Claude to isolate drills for any technique</p>
+    <p style="margin-top: 1rem; opacity: 0.7;">Last updated: <span id="lastUpdate">loading...</span></p>
+  </footer>
+
+  <script>
+    let allTechniques = [];
+    let filteredTechniques = [];
+    let activeCategory = 'all';
+
+    const categories = {
+      fundamentals: ['basic_step', 'side_step', 'back_step', 'prep_step', 'transition_basic'],
+      turns: ['inside_turn', 'left_turn', 'right_turn'],
+      footwork: ['suzy_q', 'fancy_basic', 'check_basic'],
+      partner: ['cross_body_lead', 'she_goes', 'he_goes']
+    };
+
+    async function load() {
+      try {
+        const res = await fetch('/api/techniques-by-class');
+        const data = await res.json();
+        allTechniques = data.techniques || [];
+
+        document.getElementById('totalCount').textContent = allTechniques.length;
+        document.getElementById('lastUpdate').textContent = new Date().toLocaleString();
+
+        render();
+      } catch (err) {
+        console.error('Load error:', err);
+        document.getElementById('techniquesContainer').innerHTML =
+          '<div class="no-results"><p>Error loading techniques. Please refresh.</p></div>';
+      }
+    }
+
+    function getCategory(slug) {
+      for (const [cat, slugs] of Object.entries(categories)) {
+        if (slugs.includes(slug)) return cat;
+      }
+      return 'other';
+    }
+
+    function matches(tech, query, category) {
+      const q = query.toLowerCase();
+      const techCat = getCategory(tech.slug);
+
+      const textMatch =
+        tech.slug.includes(q) ||
+        tech.name.toLowerCase().includes(q) ||
+        tech.key_phrases.some(p => p.toLowerCase().includes(q));
+
+      const catMatch = category === 'all' || techCat === category;
+
+      return textMatch && catMatch;
+    }
+
+    function render() {
+      const query = document.getElementById('searchInput').value;
+
+      filteredTechniques = allTechniques.filter(t =>
+        matches(t, query, activeCategory)
+      );
+
+      document.getElementById('visibleCount').textContent = filteredTechniques.length;
+
+      if (filteredTechniques.length === 0) {
+        document.getElementById('techniquesContainer').innerHTML =
+          '<div class="no-results"><p>No techniques match your search.</p></div>';
+        return;
+      }
+
+      const html = filteredTechniques.map(tech => `
+        <div class="technique-card">
+          <div class="technique-name">
+            ${tech.name}
+            <span class="technique-slug">${tech.slug}</span>
+          </div>
+
+          ${tech.classes.length > 0 ? `
+            <div class="classes-section">
+              <h4>📅 Taught in Classes</h4>
+              ${tech.classes.map(c =>
+                `<span class="class-badge" title="Class #${c.number} on ${c.date}">
+                  Class #${c.number} (${c.date})
+                </span>`
+              ).join('')}
+            </div>
+          ` : ''}
+
+          ${tech.videos.length > 0 ? `
+            <div class="videos-section">
+              <h4>🎥 YouTube Videos</h4>
+              ${tech.videos.slice(0, 2).map(v => `
+                <a href="${v.url}" target="_blank" class="video-link">
+                  ${v.title}
+                  <div class="video-why">${v.why}</div>
+                </a>
+              `).join('')}
+              ${tech.videos.length > 2 ? `<span style="font-size: 0.85rem; color: #999;">+${tech.videos.length - 2} more video(s)</span>` : ''}
+            </div>
+          ` : ''}
+
+          ${tech.key_phrases.length > 0 ? `
+            <div class="key-phrases">
+              <h4>💬 Key Phrases</h4>
+              <div>
+                ${tech.key_phrases.slice(0, 6).map(p =>
+                  `<span class="phrase">${p}</span>`
+                ).join('')}
+              </div>
+            </div>
+          ` : ''}
+
+          ${tech.teaching_points.length > 0 ? `
+            <div class="teaching-points">
+              <h4>💡 Teaching Points (${tech.teaching_points.length})</h4>
+              ${tech.teaching_points.slice(0, 2).map(tp => `
+                <div class="point">
+                  <strong>Tip:</strong> ${tp.tip}
+                  <span class="class-ref">Class ${tp.class_date}</span>
+                </div>
+              `).join('')}
+              ${tech.teaching_points.length > 2 ? `
+                <div style="font-size: 0.85rem; color: #999; margin-top: 0.5rem;">
+                  +${tech.teaching_points.length - 2} more teaching point(s)
+                </div>
+              ` : ''}
+            </div>
+          ` : ''}
+
+          <div class="stats">
+            ${tech.classes.length} class${tech.classes.length !== 1 ? 'es' : ''} •
+            ${tech.teaching_points.length} tip${tech.teaching_points.length !== 1 ? 's' : ''} •
+            ${tech.videos.length} video${tech.videos.length !== 1 ? 's' : ''}
+          </div>
+        </div>
+      `).join('');
+
+      document.getElementById('techniquesContainer').innerHTML = html;
+    }
+
+    document.getElementById('searchInput').addEventListener('input', render);
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        e.target.classList.add('active');
+        activeCategory = e.target.dataset.category;
+        render();
+      });
+    });
+
+    load();
+  </script>
+</body>
+</html>
