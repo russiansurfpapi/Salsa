@@ -7,7 +7,7 @@
   ],
   "routes": [
     { "src": "/api/(.*)", "dest": "api/index.py" },
-    { "src": "/(technique|practice|quiz|notes|classes|study|progress|upload)/?(.*)", "dest": "api/index.py" },
+    { "src": "/(technique|practice|quiz|notes|classes|study|progress|upload|techniques)/?(.*)", "dest": "api/index.py" },
     { "src": "/", "dest": "api/index.py" }
   ]
 }
