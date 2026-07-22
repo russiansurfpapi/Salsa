@@ -23,6 +23,14 @@ FRAMES = DATA / "frames"
 
 from ingest.transcribe import transcribe_video, section_transcript, slugify, DG_KEY
 from ingest.analyze import _load_env
+from server.techniques import (
+    canonicalize_techniques,
+    normalize_study_guide,
+    normalize_teaching_points,
+    normalize_technique_slug,
+    promote_detected_techniques,
+    video_key_for_technique,
+)
 
 _load_env()
 
@@ -95,6 +103,9 @@ def analyze_frames_with_claude(
         })
         frame_list.append(f.name)
 
+    techniques_covered = canonicalize_techniques(techniques_covered)
+    teaching_points = normalize_teaching_points(teaching_points)
+
     # Build the prompt
     techniques_str = ", ".join(techniques_covered)
     tips_str = "\n".join(f"- [{tp.get('technique', '?')}] {tp['tip']}" for tp in teaching_points)
@@ -102,9 +113,8 @@ def analyze_frames_with_claude(
 
     videos_section = ""
     for slug in techniques_covered:
-        vids = videos_data.get(slug, [])
-        if not vids and slug == "inside_turn":
-            vids = videos_data.get("left_turn", [])
+        vkey = video_key_for_technique(slug)
+        vids = videos_data.get(vkey, [])
         if vids:
             videos_section += f"\n{slug}:\n"
             for v in vids[:3]:
@@ -137,6 +147,7 @@ YOUR TASK: Analyze every frame and produce a structured JSON study guide. You mu
 4. Match what you SEE in the frames to the teaching points from the voice memo
 5. Identify the KEY frames — the most important ones to freeze on and study
 6. Note the hard transitions — where one technique ends and the next begins
+7. Create a separate technique entry for each named move or variation taught, not only the parent category
 
 Return ONLY valid JSON with this structure:
 {{
@@ -204,7 +215,10 @@ IMPORTANT:
 - The choreography phases should have the frame for EVERY major position change
 - Include YouTube video info in your analysis but NOT in the JSON (videos are added separately)
 - Write in second person ("you", "your") for instructions
-- Use the instructor's exact phrases as cues"""
+- Use the instructor's exact phrases as cues
+- Use around_the_world when the instructor teaches circular basic / clock-face directional basic
+- Use half_step when the instructor says half step, half of one, or teaches only half of an around-the-world transition
+- Use right_turn for a single/stationary right turn; use inside_turn only for a true inside/traveling left turn"""
 
     content = image_blocks + [{"type": "text", "text": prompt_text}]
 
@@ -239,12 +253,14 @@ IMPORTANT:
         fe = fixed.rfind("}") + 1
         guide = json.loads(fixed[fs:fe])
 
+    guide = normalize_study_guide(guide)
+
     # Add video links from videos.json
     for tech in guide.get("techniques", []):
-        slug = tech.get("slug", "")
-        vids = videos_data.get(slug, [])
-        if not vids and slug == "inside_turn":
-            vids = videos_data.get("left_turn", [])
+        slug = normalize_technique_slug(tech.get("slug", ""))
+        tech["slug"] = slug
+        vkey = video_key_for_technique(slug)
+        vids = videos_data.get(vkey, [])
         tech["videos"] = [
             {
                 "title": v.get("title", ""),
@@ -259,9 +275,20 @@ IMPORTANT:
 
 
 def save_study_guide(guide: dict, class_date: str, class_number: int | None, frame_slug: str) -> None:
+    guide = normalize_study_guide(guide)
     guide["class_date"] = class_date
     guide["class_number"] = class_number
     guide["video_slug"] = frame_slug
+    promote_detected_techniques(
+        DATA,
+        [tech.get("slug", "") for tech in guide.get("techniques", [])],
+        [
+            {"technique": tech.get("slug", ""), "tip": quote}
+            for tech in guide.get("techniques", [])
+            for quote in tech.get("instructor_quotes", [])
+        ],
+        {tech.get("slug", ""): tech.get("name", "") for tech in guide.get("techniques", [])},
+    )
 
     guides_file = DATA / "study_guides.json"
     existing = json.loads(guides_file.read_text()) if guides_file.exists() else {}
@@ -308,7 +335,7 @@ def update_breakdowns(guide: dict, frame_slug: str, class_date: str, video_filen
     for tech in guide.get("techniques", []):
         slug = tech.get("slug", "")
         if slug:
-            technique_slugs.add(slug)
+            technique_slugs.add(normalize_technique_slug(slug))
     for slug in technique_slugs:
         if slug not in breakdowns:
             breakdowns[slug] = {}

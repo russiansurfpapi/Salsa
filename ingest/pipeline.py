@@ -25,6 +25,12 @@ from ingest.transcribe import (
     FRAMES,
 )
 from ingest.analyze import analyze_class, load_known_techniques
+from server.techniques import (
+    display_name_for_slug,
+    normalize_analysis,
+    normalize_technique_slug,
+    promote_detected_techniques,
+)
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
@@ -66,7 +72,12 @@ def _ingest_one(audio_path: Path, class_date: str, class_number: int | None) -> 
     # Step 2: LLM analysis
     print(f"  Analyzing with gpt-4o-mini...")
     known = load_known_techniques()
-    analysis = analyze_class(t["text"], class_date, known, class_number)
+    analysis = normalize_analysis(analyze_class(t["text"], class_date, known, class_number))
+    promote_detected_techniques(
+        DATA,
+        analysis.get("techniques_covered", []),
+        analysis.get("teaching_points", []),
+    )
     print(f"    {len(analysis.get('teaching_points', []))} teaching points extracted")
     print(f"    Techniques: {analysis.get('techniques_covered', [])}")
 
@@ -129,7 +140,7 @@ def _update_class_notes_json(doc: dict) -> None:
         "class_number": doc["class_number"],
         "transcript_file": doc["transcript_file"],
         "matched_techniques": [
-            {"name": t.replace("_", " ").title(), "slug": t}
+            {"name": display_name_for_slug(t), "slug": t}
             for t in doc.get("techniques_covered", [])
         ],
         "techniques_covered": doc.get("techniques_covered", []),
@@ -152,12 +163,15 @@ def _update_technique_content_json(teaching_points: list[dict]) -> None:
 
     by_technique: dict[str, list[str]] = {}
     for tp in teaching_points:
-        slug = tp.get("technique", "")
+        slug = normalize_technique_slug(tp.get("technique", ""))
         if slug and slug in techs:
             by_technique.setdefault(slug, []).append(tp["tip"])
 
     for slug, tips in by_technique.items():
-        techs[slug]["class_tips"] = tips
+        existing = techs[slug].setdefault("class_tips", [])
+        for tip in tips:
+            if tip not in existing:
+                existing.append(tip)
 
     tc_file.write_text(json.dumps(tc, indent=2))
 
@@ -206,7 +220,12 @@ def _reanalyze_all() -> None:
 
         print(f"  Re-analyzing class #{num} ({date}) — missing: {', '.join(missing)}")
         t = json.loads(t_path.read_text())
-        analysis = analyze_class(t["text"], date, known, num)
+        analysis = normalize_analysis(analyze_class(t["text"], date, known, num))
+        promote_detected_techniques(
+            DATA,
+            analysis.get("techniques_covered", []),
+            analysis.get("teaching_points", []),
+        )
         print(f"    {len(analysis.get('teaching_points', []))} teaching points")
 
         update_doc = {

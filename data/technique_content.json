@@ -75,7 +75,16 @@
       "class_tips": [
         "Execute the basic step with a circular motion, creating a full circle pattern with your footwork",
         "Practice the basic step around the world by moving through all directional angles (12, 9, 6 o'clock positions)",
-        "Anchor your weight properly between basic step repetitions to maintain balance and control"
+        "Anchor your weight properly between basic step repetitions to maintain balance and control",
+        "On count 7, bend both knees and drop your weight onto your back foot while maintaining good posture",
+        "Make the transition from 6-7 to 1 smooth and deliberate\u2014this is a priority for clean footwork",
+        "Switch directions cleanly on counts 1-2-3, then again on counts 5-6-7 to maintain the basic step pattern",
+        "Keep your joints relaxed and don't rush your feet\u2014take your time with each count",
+        "bend both knees",
+        "drop on the seven",
+        "switch directions",
+        "keep your joints relaxed and don't rush your feet \u2014 take your time with each count",
+        "make the transition from 6-7 to 1 smooth and deliberate"
       ],
       "connects_to": [
         "inside_turn",
@@ -162,7 +171,13 @@
       ],
       "class_tips": [
         "Execute the right turn with clean, controlled rotation, maintaining your frame and connection",
-        "Count through the full 8-count (5, 6, 7, 1, 2, 3, 4, 5) to complete the right turn with proper timing"
+        "Count through the full 8-count (5, 6, 7, 1, 2, 3, 4, 5) to complete the right turn with proper timing",
+        "Followers turn left on count 3 (1-2-3 is the turn); leaders turn left on count 7 (5-6-7 is the turn)",
+        "For left turns, you should be facing your partner by count 2 (followers) or count 1 (leaders)",
+        "turn to the left",
+        "for left turns, you should be facing your partner by count 2 (followers) or count 1 (leaders)",
+        "facing both",
+        "follow through with that motion"
       ],
       "connects_to": [
         "basic_step",
@@ -348,7 +363,20 @@
         "Hand grip: 2 fingers (middle + ring), not thumbs. Cuff around follower's fingers. Flip wrist back during the turn.",
         "Signal on count 1, turn happens on counts 2-3.",
         "Spotting: pick a target, eyes stay on it, bring head back to target after rotation.",
-        "Leader's own right turn: forward, forward, turn. Left hand comes down, turn around, fingers rotate, switch hand behind back."
+        "Leader's own right turn: forward, forward, turn. Left hand comes down, turn around, fingers rotate, switch hand behind back.",
+        "Count through the full 8-count to complete the right turn with proper timing",
+        "Leaders turn right on count 6 (5-6 is the turn); followers turn right on count 2 (1-2 is the turn)",
+        "Spot your partner by count 2 (followers) or count 1 (leaders)\u2014looking too late means you're not spotting properly",
+        "Keep your right shoulder open as you initiate the turn and follow through with that motion",
+        "After a right turn, your footwork pattern is: forward, forward, back, back, back, forward",
+        "Don't wait until the last minute to turn\u2014initiate the rotation early in your 5-6-7 count",
+        "On count 1 after a right turn, you must be facing your partner again\u2014whip through to complete the rotation",
+        "spot your partner",
+        "turn to the right",
+        "don't wait till the last minute",
+        "keep your right shoulder open as you initiate the turn and follow through with that motion",
+        "on count 1 after a right turn, you must be facing your partner again \u2014 whip through to complete the rotation",
+        "spot your partner by count 2 (followers) or count 1 (leaders) \u2014 looking too late means you're not spotting properly"
       ],
       "connects_to": [
         "basic_step",
@@ -445,6 +473,166 @@
       ],
       "class_tips": [
         "Before a left turn, twist your body to the right to prepare. This unlocks you from the right twist into the left twist on count 3."
+      ]
+    },
+    "around_the_world": {
+      "name": "Around the World",
+      "slug": "around_the_world",
+      "level": 1,
+      "order": 21,
+      "description": "A directional variation of the On2 basic where you keep the same 1-2-3, 5-6-7 timing while rotating through clock-face positions instead of staying on one line.",
+      "breakdown": [
+        "Keep the normal On2 basic rhythm: step 1-2-3, hold 4, step 5-6-7, hold 8.",
+        "Use counts 3 and 7 as anchors. Settle your weight before changing direction.",
+        "Turn your body to the next clock position only after the anchor is stable.",
+        "Keep the steps compact. The rotation comes from controlled redirection, not from traveling far across the floor."
+      ],
+      "common_mistakes": [
+        "Changing direction before the anchor is stable on 3 or 7.",
+        "Making the basic too large and losing balance during the rotation.",
+        "Treating it as a new timing instead of the same basic step redirected through space."
+      ],
+      "key_details": [
+        "The technique is still built from the basic step.",
+        "The important skill is directional control: rotate without losing the count.",
+        "Use the instructor's clock-face cues, such as 12, 9, and 6 o'clock, to know where your body should face next."
+      ],
+      "flashcards": [
+        {
+          "question": "What stays the same during Around the World?",
+          "answer": "The On2 basic timing stays the same: 1-2-3, hold 4, 5-6-7, hold 8.",
+          "type": "recall"
+        },
+        {
+          "question": "Which counts anchor the Around the World direction changes?",
+          "answer": "Counts 3 and 7.",
+          "type": "recall"
+        }
+      ],
+      "class_tips": [
+        "Practice the basic step around the world by moving through all directional angles.",
+        "Anchor counts 3 and 7 before redirecting to the next clock-face position.",
+        "Practice the basic step around the world by moving through all directional angles (12, 9, 6 o'clock positions)"
+      ],
+      "connects_to": [
+        "basic_step",
+        "half_step",
+        "suzy_q"
+      ],
+      "video_keys": [
+        "basic_step"
+      ]
+    },
+    "half_step": {
+      "name": "Half Step",
+      "slug": "half_step",
+      "level": 1,
+      "order": 22,
+      "description": "A shortened Around the World transition where you take only half of the full directional change before anchoring and redirecting into the next phrase.",
+      "breakdown": [
+        "Start from the same compact basic or circular basic base.",
+        "Take only the first half of the Around the World direction change.",
+        "Anchor clearly before continuing. Do not let the half transition drift into the next count.",
+        "Use the half-step as a connector, not as a separate timing system."
+      ],
+      "common_mistakes": [
+        "Skipping the anchor after the half direction change.",
+        "Counting it like a brand-new step instead of a shortened transition.",
+        "Over-rotating and accidentally doing the full Around the World."
+      ],
+      "key_details": [
+        "This is a transition skill attached to Around the World and the basic step.",
+        "The useful practice target is control: stop halfway, anchor, then continue on count.",
+        "If the count gets unstable, return to basic step first, then add the half transition again."
+      ],
+      "flashcards": [
+        {
+          "question": "Is Half Step a new timing or a shortened transition?",
+          "answer": "A shortened transition. Keep the On2 timing and anchor before continuing.",
+          "type": "recall"
+        },
+        {
+          "question": "What should you do immediately after the half direction change?",
+          "answer": "Anchor your weight before redirecting into the next movement.",
+          "type": "recall"
+        }
+      ],
+      "class_tips": [
+        "Treat the half-step as half of the Around the World direction change, then anchor before continuing.",
+        "Practice stopping the rotation halfway without losing the On2 count.",
+        "Take only half of the Around the World direction change, then anchor before continuing",
+        "The half step to the right uses the same timing as the basic (1-2-3, 5-6-7) but you only turn halfway instead of fully",
+        "half and half",
+        "the half step to the right uses the same timing as the basic (1-2-3, 5-6-7) but you only turn halfway instead of fully",
+        "switch directions cleanly"
+      ],
+      "connects_to": [
+        "basic_step",
+        "around_the_world",
+        "suzy_q"
+      ],
+      "video_keys": [
+        "basic_step"
+      ]
+    },
+    "suzy_q": {
+      "name": "Suzy Q",
+      "slug": "suzy_q",
+      "level": 1,
+      "order": 6,
+      "description": "A salsa shine built from a cross-step-cross rhythm. You cross one foot in front, take a small side step, then replace/cross again while keeping the upper body quiet and the weight transfers clear.",
+      "breakdown": [
+        "Start with knees soft and weight centered on the balls of your feet.",
+        "Cross one foot in front of the other and fully transfer weight.",
+        "Take a small side step to reset the base without drifting too wide.",
+        "Cross again cleanly, keeping the crossing foot in front and the rhythm even.",
+        "Repeat to the other side, keeping the action compact and grounded."
+      ],
+      "common_mistakes": [
+        "Letting the side step get too large, which makes the shine hard to reverse.",
+        "Crossing behind instead of in front.",
+        "Twisting the shoulders instead of letting the hip action come from the weight transfer.",
+        "Rushing the three weight changes so the pattern becomes muddy."
+      ],
+      "key_details": [
+        "The useful verbal pattern is cross, step, cross.",
+        "Keep each weight change complete; do not stay split-weight between feet.",
+        "The back foot stays close behind the front foot so the pattern can reverse quickly.",
+        "Hip styling should come naturally from the crosses, not from forcing the upper body."
+      ],
+      "flashcards": [
+        {
+          "question": "What is the basic Suzy Q footwork pattern?",
+          "answer": "Cross, step, cross.",
+          "type": "recall"
+        },
+        {
+          "question": "In Suzy Q, should the crossing foot go in front or behind?",
+          "answer": "In front.",
+          "type": "recall"
+        },
+        {
+          "question": "What common Suzy Q mistake makes the movement hard to reverse?",
+          "answer": "Taking the side step too wide.",
+          "type": "recall"
+        }
+      ],
+      "class_tips": [
+        "Execute the Suzy Q as cross, step, cross with three clear weight changes.",
+        "Keep the side step small and cross in front cleanly.",
+        "Execute the Suzy Q as: out, step, cross\u2014three distinct weight changes with clear direction switches",
+        "On the cross step of the Suzy Q, face forward and cross your feet over cleanly",
+        "execute the Suzy Q as: out, step, cross \u2014 three distinct weight changes with clear direction switches",
+        "on the cross step of the Suzy Q, face forward and cross your feet over cleanly",
+        "face forward"
+      ],
+      "connects_to": [
+        "basic_step",
+        "around_the_world",
+        "half_step"
+      ],
+      "video_keys": [
+        "suzy_q"
       ]
     }
   },

@@ -15,6 +15,12 @@ from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
 from server import mongo
+from server.techniques import (
+    default_technique_content,
+    display_name_for_slug,
+    normalize_technique_slug,
+    video_key_for_technique,
+)
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
@@ -87,7 +93,7 @@ def list_techniques() -> dict:
                     learned.add(t)
 
     for t in techniques.get("techniques", []):
-        slug = t["name"].lower().replace(" ", "_")
+        slug = normalize_technique_slug(t["name"])
         t["slug"] = slug
         t["has_content"] = slug in content
         t["learned"] = t["name"] in learned
@@ -164,22 +170,25 @@ def _get_content() -> dict:
 
 @app.get("/api/technique/{slug}")
 def get_technique(slug: str) -> dict:
+    slug = normalize_technique_slug(slug)
     content = _get_content()
-    if slug not in content:
-        raise HTTPException(404, f"no content for {slug}")
-
-    tech = content[slug]
+    techniques = _load_json("techniques.json") or {}
     videos = _load_json("videos.json") or {}
+    sub_skills = _get_sub_skills()
+
+    if slug not in content:
+        known_slugs = {
+            normalize_technique_slug(t.get("name", ""))
+            for t in techniques.get("techniques", [])
+        }
+        if slug not in known_slugs and slug not in videos and slug not in sub_skills:
+            raise HTTPException(404, f"no content for {slug}")
+        tech = default_technique_content(slug, display_name_for_slug(slug, techniques))
+    else:
+        tech = dict(content[slug])
 
     video_list = []
-    slug_to_video_key = {
-        "basic_step": "basic_step",
-        "inside_turn": "inside_turn",
-        "cross_body_lead": "cross_body_lead",
-        "right_turn": "right_turn",
-        "prep_step": "prep_step",
-    }
-    vkey = slug_to_video_key.get(slug, slug)
+    vkey = video_key_for_technique(slug)
     import urllib.parse
     for v in videos.get(vkey, []):
         local_match = None
@@ -306,6 +315,7 @@ def get_all_cards() -> list:
 
 @app.get("/api/quiz/{slug}")
 def get_quiz(slug: str) -> dict:
+    slug = normalize_technique_slug(slug)
     content = _get_content()
     if slug not in content:
         raise HTTPException(404, f"no content for {slug}")
@@ -463,6 +473,7 @@ def get_class_video_breakdown(class_date: str) -> list:
 
 @app.get("/api/technique/{slug}/class-tips")
 def technique_class_tips(slug: str) -> list:
+    slug = normalize_technique_slug(slug)
     try:
         tips = list(mongo.class_tips().find(
             {"technique": slug}, {"_id": 0}
@@ -566,6 +577,7 @@ def get_skill_progress() -> dict:
 
 @app.get("/api/skills/{technique}")
 def get_skill_detail(technique: str) -> dict:
+    technique = normalize_technique_slug(technique)
     taxonomy = _get_sub_skills()
     if technique not in taxonomy:
         raise HTTPException(404, f"no skills for {technique}")

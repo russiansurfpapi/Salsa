@@ -41,6 +41,7 @@ def _run_audio(job_id: str, audio_path: Path, class_date: str, class_number: Opt
         section_transcript, generate_bullets, update_transcript_steps,
     )
     from ingest.analyze import analyze_class, load_known_techniques
+    from server.techniques import normalize_analysis, promote_detected_techniques
 
     slug = slugify(audio_path.stem)
     transcript_file = TRANSCRIPTS / f"{slug}.json"
@@ -65,7 +66,12 @@ def _run_audio(job_id: str, audio_path: Path, class_date: str, class_number: Opt
 
     _update(job_id, step="analyzing transcript")
     known = load_known_techniques()
-    analysis = analyze_class(t["text"], class_date, known, class_number)
+    analysis = normalize_analysis(analyze_class(t["text"], class_date, known, class_number))
+    promote_detected_techniques(
+        DATA,
+        analysis.get("techniques_covered", []),
+        analysis.get("teaching_points", []),
+    )
 
     _update(job_id, step="saving to database")
     from server.mongo import classes, class_tips
@@ -116,6 +122,7 @@ def _run_video(job_id: str, video_path: Path, class_date: str, class_number: Opt
         analyze_frames_with_claude, save_study_guide,
         update_breakdowns, update_mongo,
     )
+    from server.techniques import promote_detected_techniques
     from ingest.transcribe import (
         TRANSCRIPTS, slugify, transcribe_video, section_transcript,
     )
@@ -171,6 +178,16 @@ def _run_video(job_id: str, video_path: Path, class_date: str, class_number: Opt
 
     _update(job_id, step="saving study guide")
     save_study_guide(guide, class_date, class_number, slug)
+    promote_detected_techniques(
+        DATA,
+        [tech.get("slug", "") for tech in guide.get("techniques", [])],
+        [
+            {"technique": tech.get("slug", ""), "tip": quote}
+            for tech in guide.get("techniques", [])
+            for quote in tech.get("instructor_quotes", [])
+        ],
+        {tech.get("slug", ""): tech.get("name", "") for tech in guide.get("techniques", [])},
+    )
     update_breakdowns(guide, slug, class_date, video_path.name)
     update_mongo(class_date, video_path.name, slug)
 

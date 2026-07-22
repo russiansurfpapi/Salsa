@@ -785,13 +785,23 @@
         "slug": "basic_step"
       },
       {
-        "name": "Inside Turn",
-        "slug": "inside_turn"
+        "name": "Around the World",
+        "slug": "around_the_world"
+      },
+      {
+        "name": "Half Step",
+        "slug": "half_step"
+      },
+      {
+        "name": "Right Turn",
+        "slug": "right_turn"
       }
     ],
     "techniques_covered": [
       "basic_step",
-      "inside_turn"
+      "around_the_world",
+      "half_step",
+      "right_turn"
     ],
     "topics": [
       "footwork patterns",
@@ -804,15 +814,15 @@
       "musical phrasing"
     ],
     "extracted_tips": [
-      "Execute the basic step with a circular motion, creating a full circle pattern with your footwork—this helps you travel smoothly through space.",
-      "Practice the basic step around the world by moving through all directional angles (12, 9, 6 o'clock positions)—a key drill for directional control.",
-      "On counts 3 and 7, plant your weight and hold position—these are anchor points that keep you grounded during transitions.",
+      "Execute the basic step with a circular motion, creating a full circle pattern with your footwork\u2014this helps you travel smoothly through space.",
+      "Practice the basic step around the world by moving through all directional angles (12, 9, 6 o'clock positions)\u2014a key drill for directional control.",
+      "On counts 3 and 7, plant your weight and hold position\u2014these are anchor points that keep you grounded during transitions.",
       "Always anchor after completing your basic step pattern to reset for the next movement. Don't rush into the next combo.",
       "Execute the right turn with clean, controlled rotation, maintaining your frame and connection with your partner.",
-      "Count through the full 8-count (5, 6, 7, 1, 2, 3, 4, 5) to complete the right turn with proper timing—commit fully to each count.",
-      "The full combo sequence: circular basic → around the world basic → right turn with 8-count → hold and reset. Practice each part until muscle memory takes over.",
+      "Count through the full 8-count (5, 6, 7, 1, 2, 3, 4, 5) to complete the right turn with proper timing\u2014commit fully to each count.",
+      "The full combo sequence: circular basic \u2192 around the world basic \u2192 right turn with 8-count \u2192 hold and reset. Practice each part until muscle memory takes over.",
       "When building combos, break them into smaller sections and drill each one. Once sections are solid, string them together smoothly.",
-      "Hold the final position of your turn before starting the next movement—this gives you stability and prevents rushing."
+      "Hold the final position of your turn before starting the next movement\u2014this gives you stability and prevents rushing."
     ],
     "teaching_points": [
       {
@@ -827,7 +837,7 @@
       },
       {
         "technique": "basic_step",
-        "tip": "On counts 3 and 7, plant your weight and stay in place—these are anchor points for stability",
+        "tip": "On counts 3 and 7, plant your weight and stay in place\u2014these are anchor points for stability",
         "context": "Instructor emphasized anchoring at counts 3 and 7 during combo work"
       },
       {
@@ -836,19 +846,29 @@
         "context": "Instructor repeatedly said 'anchor' between combo sequences to reset"
       },
       {
-        "technique": "inside_turn",
+        "technique": "right_turn",
         "tip": "Execute the right turn with clean, controlled rotation, maintaining your frame and connection",
         "context": "Instructor drilled right turn multiple times with clear focus on control"
       },
       {
-        "technique": "inside_turn",
+        "technique": "right_turn",
         "tip": "Count through the full 8-count (5, 6, 7, 1, 2, 3, 4, 5) to complete the right turn with proper timing",
         "context": "Instructor repeated 8-count right turn drill 4 times in succession for precision and muscle memory"
       },
       {
-        "technique": "inside_turn",
-        "tip": "Hold the final position of your turn before starting the next movement—this gives you stability",
+        "technique": "right_turn",
+        "tip": "Hold the final position of your turn before starting the next movement\u2014this gives you stability",
         "context": "Instructor repeatedly said 'hold it' at the end of turns to build commitment"
+      },
+      {
+        "technique": "around_the_world",
+        "tip": "Practice the basic step around the world by moving through all directional angles (12, 9, 6 o'clock positions)",
+        "context": "Instructor cued 'around the world' directional variation as a key drill"
+      },
+      {
+        "technique": "half_step",
+        "tip": "Take only half of the Around the World direction change, then anchor before continuing",
+        "context": "Instructor used the shortened direction change as a connector inside the combo"
       }
     ],
     "class_structure": [
@@ -869,7 +889,7 @@
       },
       {
         "section": "Building the Full Combo",
-        "description": "Combined circular basic → around the world → with anchor points (5, 6, 7 - anchor; 1, 2, 3 - around). Practiced the sequence multiple times.",
+        "description": "Combined circular basic \u2192 around the world \u2192 with anchor points (5, 6, 7 - anchor; 1, 2, 3 - around). Practiced the sequence multiple times.",
         "approx_minutes": 10
       },
       {
@@ -915,17 +935,205 @@
         "why": "Eddie Torres' authoritative breakdown of On2 basics, especially helpful for understanding anchor points"
       },
       {
-        "technique": "inside_turn",
+        "technique": "right_turn",
         "title": "SALSA ON2 - Partnerwork Basics Lesson 4 - Single Right Turn",
         "url": "https://www.youtube.com/watch?v=sx-EKzQ-Dik",
         "why": "Detailed breakdown of the single right turn with 8-count timing that dominated today's class"
       },
       {
-        "technique": "inside_turn",
+        "technique": "right_turn",
         "title": "Salsa Solo - Right Turn - Lesson 5 (Beginners, NY/On2)",
         "url": "https://www.youtube.com/watch?v=03m3cnI1g44",
-        "why": "Solo right turn footwork for On2—perfect for practicing the turn mechanics on your own outside of class"
+        "why": "Solo right turn footwork for On2\u2014perfect for practicing the turn mechanics on your own outside of class"
       }
     ]
+  },
+  {
+    "class_date": "2026-07-21",
+    "class_number": 5,
+    "transcript_file": "nieves-dance-studio-3.json",
+    "matched_techniques": [
+      {
+        "name": "Basic Step",
+        "slug": "basic_step"
+      },
+      {
+        "name": "Suzy Q",
+        "slug": "suzy_q"
+      },
+      {
+        "name": "Right Turn",
+        "slug": "right_turn"
+      },
+      {
+        "name": "Inside Turn",
+        "slug": "inside_turn"
+      },
+      {
+        "name": "Half Step",
+        "slug": "half_step"
+      }
+    ],
+    "techniques_covered": [
+      "basic_step",
+      "suzy_q",
+      "right_turn",
+      "inside_turn",
+      "half_step"
+    ],
+    "topics": [
+      "timing",
+      "footwork",
+      "weight changes",
+      "direction switches",
+      "spotting",
+      "shoulder mechanics",
+      "leader-follower coordination",
+      "turn initiation",
+      "body mechanics"
+    ],
+    "extracted_tips": [
+      "On count 7, bend both knees and drop your weight onto your back foot while maintaining good posture",
+      "Make the transition from 6-7 to 1 smooth and deliberate\u2014this is a priority for clean footwork",
+      "Execute the Suzy Q as: out, step, cross\u2014three distinct weight changes with clear direction switches",
+      "On the cross step of the Suzy Q, face forward and cross your feet over cleanly",
+      "Leaders turn right on count 6 (5-6 is the turn); followers turn right on count 2 (1-2 is the turn)",
+      "Followers turn left on count 3 (1-2-3 is the turn); leaders turn left on count 7 (5-6-7 is the turn)",
+      "Spot your partner by count 2 (followers) or count 1 (leaders)\u2014looking too late means you're not spotting properly",
+      "Keep your right shoulder open as you initiate the turn and follow through with that motion",
+      "The half step to the right uses the same timing as the basic (1-2-3, 5-6-7) but you only turn halfway instead of fully",
+      "After a right turn, your footwork pattern is: forward, forward, back, back, back, forward",
+      "Don't wait until the last minute to turn\u2014initiate the rotation early in your 5-6-7 count",
+      "On count 1 after a right turn, you must be facing your partner again\u2014whip through to complete the rotation",
+      "For left turns, you should be facing your partner by count 2 (followers) or count 1 (leaders)",
+      "Switch directions cleanly on counts 1-2-3, then again on counts 5-6-7 to maintain the basic step pattern",
+      "Keep your joints relaxed and don't rush your feet\u2014take your time with each count"
+    ],
+    "teaching_points": [
+      {
+        "technique": "basic_step",
+        "tip": "On count 7, bend both knees and drop your weight onto your back foot while maintaining good posture",
+        "context": "Instructor emphasized the importance of the 7-count action in the basic step"
+      },
+      {
+        "technique": "basic_step",
+        "tip": "Make the transition from 6-7 to 1 smooth and deliberate\u2014this is a priority for clean footwork",
+        "context": "Instructor drilled the 6-7-1 transition multiple times"
+      },
+      {
+        "technique": "suzy_q",
+        "tip": "Execute the Suzy Q as: out, step, cross\u2014three distinct weight changes with clear direction switches",
+        "context": "Instructor broke down the Suzy Q footwork pattern"
+      },
+      {
+        "technique": "suzy_q",
+        "tip": "On the cross step of the Suzy Q, face forward and cross your feet over cleanly",
+        "context": "Instructor demonstrated the final cross position of the Suzy Q"
+      },
+      {
+        "technique": "right_turn",
+        "tip": "Leaders turn right on count 6 (5-6 is the turn); followers turn right on count 2 (1-2 is the turn)",
+        "context": "Instructor established the fundamental timing for right turns between leader and follower"
+      },
+      {
+        "technique": "inside_turn",
+        "tip": "Followers turn left on count 3 (1-2-3 is the turn); leaders turn left on count 7 (5-6-7 is the turn)",
+        "context": "Instructor established the fundamental timing for left turns between leader and follower"
+      },
+      {
+        "technique": "right_turn",
+        "tip": "Spot your partner by count 2 (followers) or count 1 (leaders)\u2014looking too late means you're not spotting properly",
+        "context": "Instructor corrected timing of when dancers should look at their partner during turns"
+      },
+      {
+        "technique": "right_turn",
+        "tip": "Keep your right shoulder open as you initiate the turn and follow through with that motion",
+        "context": "Instructor demonstrated shoulder mechanics during right turn execution"
+      },
+      {
+        "technique": "half_step",
+        "tip": "The half step to the right uses the same timing as the basic (1-2-3, 5-6-7) but you only turn halfway instead of fully",
+        "context": "Instructor introduced half step as a variation of the basic with partial rotation"
+      },
+      {
+        "technique": "right_turn",
+        "tip": "After a right turn, your footwork pattern is: forward, forward, back, back, back, forward",
+        "context": "Instructor described the weight distribution pattern following a full right turn"
+      },
+      {
+        "technique": "right_turn",
+        "tip": "Don't wait until the last minute to turn\u2014initiate the rotation early in your 5-6-7 count",
+        "context": "Instructor corrected dancers rushing the turn at the end of the count"
+      },
+      {
+        "technique": "right_turn",
+        "tip": "On count 1 after a right turn, you must be facing your partner again\u2014whip through to complete the rotation",
+        "context": "Instructor emphasized finishing the turn completely by count 1"
+      },
+      {
+        "technique": "inside_turn",
+        "tip": "For left turns, you should be facing your partner by count 2 (followers) or count 1 (leaders)",
+        "context": "Instructor established spotting timing for left turns"
+      },
+      {
+        "technique": "basic_step",
+        "tip": "Switch directions cleanly on counts 1-2-3, then again on counts 5-6-7 to maintain the basic step pattern",
+        "context": "Instructor drilled direction changes as the core of the basic step"
+      },
+      {
+        "technique": "basic_step",
+        "tip": "Keep your joints relaxed and don't rush your feet\u2014take your time with each count",
+        "context": "Instructor corrected dancers moving too quickly through the basic step"
+      }
+    ],
+    "class_structure": [
+      {
+        "section": "Basic Step Fundamentals",
+        "description": "Instructor drilled the basic step with emphasis on the 7-count drop and the 6-7-1 transition, establishing clean weight changes and timing",
+        "approx_minutes": 10
+      },
+      {
+        "section": "Suzy Q Introduction",
+        "description": "Instructor taught the Suzy Q as a three-part footwork pattern (out, step, cross) with direction switches and forward-facing cross position",
+        "approx_minutes": 8
+      },
+      {
+        "section": "Right Turn Technique",
+        "description": "Instructor established right turn fundamentals: leaders turn on 5-6, followers turn on 1-2; spotting by count 2/1; shoulder mechanics; and the follow-up footwork pattern",
+        "approx_minutes": 15
+      },
+      {
+        "section": "Left Turn Technique",
+        "description": "Instructor taught left turn timing: followers turn on 1-2-3, leaders turn on 5-6-7; spotting mechanics and facing partner by count 2/1",
+        "approx_minutes": 10
+      },
+      {
+        "section": "Half Step Variation",
+        "description": "Instructor introduced the half step as a partial rotation using basic step timing (1-2-3, 5-6-7) without completing a full turn",
+        "approx_minutes": 5
+      },
+      {
+        "section": "Combination Drills",
+        "description": "Instructor combined basic steps, right turns, and left turns in sequence, drilling the transitions and timing between each element",
+        "approx_minutes": 7
+      }
+    ],
+    "summary": "This class focused on fundamental salsa timing and turn mechanics, drilling the basic step with emphasis on clean 7-count drops and 6-7-1 transitions. The instructor taught right and left turn techniques with specific count-based timing for leaders and followers, including spotting mechanics and shoulder engagement. The class also introduced the Suzy Q footwork pattern and the half step variation, with extensive combination drills to reinforce transitions between elements.",
+    "key_phrases": [
+      "bend both knees",
+      "drop on the seven",
+      "switch directions",
+      "spot your partner",
+      "face forward",
+      "turn to the right",
+      "turn to the left",
+      "half and half",
+      "follow through with that motion",
+      "don't wait till the last minute",
+      "facing both"
+    ],
+    "video_file": "IMG_2212.MOV",
+    "video_frame_slug": "img-2212",
+    "has_video_breakdown": true
   }
 ]

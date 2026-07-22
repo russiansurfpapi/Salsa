@@ -77,6 +77,21 @@
   .link-bar { display:flex; gap:10px; flex-wrap:wrap; margin:16px 0; }
   .link-bar a { display:inline-block; padding:8px 16px; border-radius:6px; font-size:14px; font-weight:600; background:var(--accent-dim); color:var(--accent); }
   .link-bar a:hover { background:var(--accent); color:#fff; text-decoration:none; }
+  .lesson-media { margin-top:24px; }
+  .media-tech { padding:14px; background:var(--panel); border:1px solid var(--border); border-radius:8px; margin-bottom:12px; }
+  .media-tech h3 { margin:0 0 4px; font-size:17px; font-weight:600; }
+  .media-tech .mt-desc { margin:0 0 12px; font-size:14px; color:var(--muted); line-height:1.5; }
+  .frame-strip { display:flex; gap:8px; overflow-x:auto; padding:4px 0 10px; margin-bottom:10px; }
+  .frame-card { flex-shrink:0; width:180px; }
+  .frame-card img { width:180px; height:135px; object-fit:cover; border-radius:6px; display:block; background:var(--border); }
+  .frame-card .fc-cap { font-size:12px; color:var(--muted); line-height:1.35; margin-top:4px; }
+  .video-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:10px; }
+  .video-card { background:#fff; border:1px solid var(--border); border-radius:8px; overflow:hidden; }
+  .video-card iframe { width:100%; aspect-ratio:16/9; border:0; display:block; background:#000; }
+  .video-card .vc-info { padding:10px 12px; }
+  .video-card .vc-title { font-weight:600; font-size:14px; line-height:1.35; }
+  .video-card .vc-channel { color:var(--muted); font-size:13px; margin-top:2px; }
+  .video-card .vc-why { color:var(--ok); font-size:13px; line-height:1.35; margin-top:4px; }
 
   .filter-bar { display:flex; gap:6px; flex-wrap:wrap; margin:0 0 16px; }
   .filter-chip {
@@ -152,9 +167,10 @@ async function loadList() {
 }
 
 async function loadDetail(date) {
-  const [classRes, vbRes] = await Promise.all([
+  const [classRes, vbRes, studyRes] = await Promise.all([
     fetch(`/api/classes/${date}`),
     fetch(`/api/classes/${date}/video-breakdown`).catch(() => null),
+    fetch(`/api/study/${date}`).catch(() => null),
   ]);
   if (!classRes.ok) {
     document.getElementById('app').innerHTML = '<p style="color:var(--accent)">Class not found.</p>';
@@ -162,10 +178,11 @@ async function loadDetail(date) {
   }
   const d = await classRes.json();
   const vbs = vbRes && vbRes.ok ? await vbRes.json() : [];
-  render(d, vbs);
+  const study = studyRes && studyRes.ok ? await studyRes.json() : null;
+  render(d, vbs, study);
 }
 
-function render(d, vbs) {
+function render(d, vbs, study) {
   let html = `<a class="back" href="/classes">&larr; All classes</a>`;
   html += `<h1><em>Class ${d.class_number || ''}</em> — ${d.class_date}</h1>`;
   if (d.summary) html += `<p class="subtitle">${esc(d.summary)}</p>`;
@@ -253,12 +270,84 @@ function render(d, vbs) {
     }
   }
 
+  if (study) {
+    html += renderLessonMedia(study);
+  }
+
   if (d.transcript_text) {
     html += `<details class="transcript-toggle"><summary>Full transcript (${d.transcript_text.length} chars)</summary>`;
     html += `<div class="t-text">${esc(d.transcript_text)}</div></details>`;
   }
 
   document.getElementById('app').innerHTML = html;
+}
+
+function renderLessonMedia(study) {
+  const frameSlug = study.video_slug || '';
+  let html = '<div class="lesson-media">';
+  html += '<div class="section-label">Lesson videos and images</div>';
+  if (study.title) html += `<p class="subtitle" style="margin-bottom:14px">${esc(study.title)}${study.subtitle ? ' — ' + esc(study.subtitle) : ''}</p>`;
+
+  for (const tech of (study.techniques || [])) {
+    const frames = tech.frames || [];
+    const videos = tech.videos || [];
+    if (!frames.length && !videos.length) continue;
+    html += '<div class="media-tech">';
+    html += `<h3>${esc(tech.name || '')}</h3>`;
+    if (tech.tagline || tech.what) html += `<p class="mt-desc">${esc(tech.tagline || tech.what)}</p>`;
+
+    if (frames.length) {
+      html += '<div class="frame-strip">';
+      for (const f of frames) {
+        html += `<div class="frame-card">`;
+        html += `<img src="/api/frames/${esc(frameSlug)}/${esc(f.frame)}" loading="lazy" alt="${esc(f.caption || tech.name || 'Lesson frame')}">`;
+        html += `<div class="fc-cap">${esc(f.caption || '')}</div>`;
+        html += `</div>`;
+      }
+      html += '</div>';
+    }
+
+    if (videos.length) {
+      html += '<div class="video-grid">';
+      for (const v of videos) {
+        const ytId = youtubeId(v.url || '');
+        html += '<div class="video-card">';
+        if (ytId) {
+          html += `<iframe src="https://www.youtube.com/embed/${esc(ytId)}" title="${esc(v.title || 'YouTube video')}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>`;
+        }
+        html += '<div class="vc-info">';
+        html += `<div class="vc-title">${esc(v.title || 'YouTube video')}</div>`;
+        if (v.channel) html += `<div class="vc-channel">${esc(v.channel)}</div>`;
+        if (v.why || v.note) html += `<div class="vc-why">${esc(v.why || v.note)}</div>`;
+        html += '</div></div>';
+      }
+      html += '</div>';
+    }
+
+    html += '</div>';
+  }
+
+  if (study.key_frames && study.key_frames.length) {
+    html += '<div class="media-tech">';
+    html += '<h3>Key frames</h3><div class="frame-strip">';
+    for (const f of study.key_frames) {
+      html += `<div class="frame-card"><img src="/api/frames/${esc(frameSlug)}/${esc(f.frame)}" loading="lazy" alt="${esc(f.label || 'Key frame')}"><div class="fc-cap"><strong>${esc(f.label || '')}</strong><br>${esc(f.description || '')}</div></div>`;
+    }
+    html += '</div></div>';
+  }
+
+  html += '</div>';
+  return html;
+}
+
+function youtubeId(url) {
+  if (!url) return '';
+  const watch = url.match(/[?&]v=([^&]+)/);
+  if (watch) return watch[1];
+  const short = url.match(/youtu\.be\/([^?&]+)/);
+  if (short) return short[1];
+  const embed = url.match(/youtube\.com\/embed\/([^?&]+)/);
+  return embed ? embed[1] : '';
 }
 
 function filterTech(btn, tech) {

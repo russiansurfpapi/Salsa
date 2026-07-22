@@ -99,9 +99,9 @@
     ],
     "practice_drill": "Start by counting out loud: 1-2-3-hold-5-6-7-hold, clapping on 2 and 6 to internalize the break beats. Then do 20 basics counting aloud with steps, focusing on toe-first contact. Next do 20 basics with the rhythm 'quick-quick-slow, quick-quick-slow' to feel the timing. Finally, put on a salsa song and do 2 full minutes of basics without stopping, finding the 2 in the music before you start stepping.",
     "class_video": {
-      "combo_key": "class_20260714_combo",
-      "frame_slug": "img-8522",
-      "class_date": "2026-07-14"
+      "combo_key": "class_20260721_combo",
+      "frame_slug": "img-2212",
+      "class_date": "2026-07-21"
     }
   },
   "inside_turn": {
@@ -195,9 +195,9 @@
     ],
     "practice_drill": "Solo: Practice the cross body lead footwork 10 times, then add the arm lift on 3 (raise your left hand above your own head as a placeholder). For the turn itself, stand in place and practice a slow left (counterclockwise) turn: step on the ball of your foot, spot a point on the wall, turn 360 degrees and find that point again. Do 10 solo left turns, then combine with the CBL footwork for 10 reps.",
     "class_video": {
-      "combo_key": "class_20260714_combo",
-      "frame_slug": "img-8522",
-      "class_date": "2026-07-14"
+      "combo_key": "class_20260721_combo",
+      "frame_slug": "img-2212",
+      "class_date": "2026-07-21"
     }
   },
   "cross_body_lead": {
@@ -375,7 +375,12 @@
       "After the turn, you should be facing the same direction you started, feet under your body",
       "Leader's lead hand: bend wrist like holding a plate; draw a small clockwise halo circle above follower's head"
     ],
-    "practice_drill": "Solo right turn drill: Stand in place, step with left foot and pivot 360 degrees to the right on the ball of your foot. Do 10 turns slowly, spotting a point on the wall. Then add the timing: say '1' (prep), '2' (step and start turn), '3' (complete turn), 'hold', '5-6-7' (basic). Do 10 reps integrating the basic step before and after the turn. Finally, alternate basic-basic-turn-basic-basic-turn for 2 minutes."
+    "practice_drill": "Solo right turn drill: Stand in place, step with left foot and pivot 360 degrees to the right on the ball of your foot. Do 10 turns slowly, spotting a point on the wall. Then add the timing: say '1' (prep), '2' (step and start turn), '3' (complete turn), 'hold', '5-6-7' (basic). Do 10 reps integrating the basic step before and after the turn. Finally, alternate basic-basic-turn-basic-basic-turn for 2 minutes.",
+    "class_video": {
+      "combo_key": "class_20260721_combo",
+      "frame_slug": "img-2212",
+      "class_date": "2026-07-21"
+    }
   },
   "prep_step": {
     "instructor_breakdowns": [
@@ -610,9 +615,9 @@
   },
   "suzy_q": {
     "class_video": {
-      "combo_key": "class_20260707_combo",
-      "frame_slug": "img-2100",
-      "class_date": "2026-07-07"
+      "combo_key": "class_20260721_combo",
+      "frame_slug": "img-2212",
+      "class_date": "2026-07-21"
     }
   },
   "class_20260526_combo": {
@@ -1197,7 +1202,7 @@
       "source": "IMG_8522.MOV",
       "class_date": "2026-07-14",
       "frame_slug": "img-8522",
-      "description": "BASIC STEP (solo, slow) -> BASIC STEP (around the world, solo) -> INSIDE TURN (solo demo) -> PARTNER WORK: BASIC + INSIDE TURN -> TRANSITION TO CROSS BODY",
+      "description": "BASIC STEP -> AROUND THE WORLD -> HALF STEP CONNECTOR -> RIGHT TURN -> PARTNER WORK RESET",
       "steps": [
         {
           "step_number": 1,
@@ -1538,6 +1543,327 @@
           "position": "Both partners in open hold, instructor's back to camera showing full shirt text. Partner facing camera smiling. Clean hand connection visible. Weight anchored on back step.",
           "instruction": "Both partners in open hold, instructor's back to camera showing full shirt text. Partner facing camera smiling. Clean hand connection visible. Weight anchored on back step.",
           "instructor_tip": "anchor your weight properly",
+          "what_to_watch": ""
+        }
+      ]
+    }
+  },
+  "around_the_world": {
+    "class_video": {
+      "combo_key": "class_20260714_combo",
+      "frame_slug": "img-8522",
+      "class_date": "2026-07-14"
+    }
+  },
+  "half_step": {
+    "class_video": {
+      "combo_key": "class_20260721_combo",
+      "frame_slug": "img-2212",
+      "class_date": "2026-07-21"
+    }
+  },
+  "class_20260721_combo": {
+    "video_breakdown": {
+      "source": "IMG_2212.MOV",
+      "class_date": "2026-07-21",
+      "frame_slug": "img-2212",
+      "description": "BASIC STEP -> SUZY Q -> BASIC STEP -> HANDS IN AIR + DRUM ROLL -> SUZY Q -> TURN AROUND -> SUZY Q -> BASIC STEP -> PARTNER WORK: LEFT TURN -> RIGHT TURN -> LEFT TURN -> RIGHT TURN -> STOP",
+      "steps": [
+        {
+          "step_number": 1,
+          "timestamp": "0:01",
+          "frame": "frame_001.jpg",
+          "count": "prep",
+          "technique": "introduction_/_setup",
+          "position": "Instructor in pink shirt faces the follower (black outfit) with back to camera. Both are standing in neutral position near the mirror. Instructor is gesturing with one finger raised, explaining the fundamentals before starting. Audience watches from the sides.",
+          "instruction": "Instructor in pink shirt faces the follower (black outfit) with back to camera. Both are standing in neutral position near the mirror. Instructor is gesturing with one finger raised, explaining the fundamentals before starting. Audience watches from the sides.",
+          "instructor_tip": "1st up, the fundamentals, yeah? So you're 2 shines, 0.5 and 0.5",
+          "what_to_watch": ""
+        },
+        {
+          "step_number": 2,
+          "timestamp": "0:03",
+          "frame": "frame_003.jpg",
+          "count": "prep",
+          "technique": "basic_step_/_half_step_setup",
+          "position": "Both dancers now face the mirror side by side. Leader (pink) has arms slightly out, follower (black) has arms in front. Both in neutral stance preparing to demonstrate the basic step and half step. Audience visible in mirror reflection.",
+          "instruction": "Both dancers now face the mirror side by side. Leader (pink) has arms slightly out, follower (black) has arms in front. Both in neutral stance preparing to demonstrate the basic step and half step. Audience visible in mirror reflection.",
+          "instructor_tip": "half and half, let's go",
+          "what_to_watch": ""
+        },
+        {
+          "step_number": 3,
+          "timestamp": "0:05",
+          "frame": "frame_005.jpg",
+          "count": "1-2-3",
+          "technique": "basic_step_\u2014_forward_half",
+          "position": "Both dancers stepping forward together \u2014 leader's left foot forward, follower's right foot forward. Weight transferring onto the forward foot. Arms relaxed at sides. Bodies slightly angled toward the mirror.",
+          "instruction": "Both dancers stepping forward together \u2014 leader's left foot forward, follower's right foot forward. Weight transferring onto the forward foot. Arms relaxed at sides. Bodies slightly angled toward the mirror.",
+          "instructor_tip": "and 1-2-3-5, basic, 1-2-3",
+          "what_to_watch": ""
+        },
+        {
+          "step_number": 4,
+          "timestamp": "0:07",
+          "frame": "frame_007.jpg",
+          "count": "5-6-7",
+          "technique": "basic_step_\u2014_back_half",
+          "position": "Both dancers stepping back \u2014 weight shifting to the back foot. Leader stepping back with right foot, follower with left. Knees slightly bent on count 7. Bodies upright with good posture. Both facing mirror.",
+          "instruction": "Both dancers stepping back \u2014 weight shifting to the back foot. Leader stepping back with right foot, follower with left. Knees slightly bent on count 7. Bodies upright with good posture. Both facing mirror.",
+          "instructor_tip": "drop on the seven, switch directions",
+          "what_to_watch": ""
+        },
+        {
+          "step_number": 5,
+          "timestamp": "0:09",
+          "frame": "frame_009.jpg",
+          "count": "1-2-3",
+          "technique": "basic_step_into_suzy_q",
+          "position": "Both dancers mid-basic step, stepping forward. Leader's left foot forward, follower's right foot forward. Weight clearly on the forward foot. Arms beginning to lift slightly \u2014 transitioning toward the Suzy Q arm styling.",
+          "instruction": "Both dancers mid-basic step, stepping forward. Leader's left foot forward, follower's right foot forward. Weight clearly on the forward foot. Arms beginning to lift slightly \u2014 transitioning toward the Suzy Q arm styling.",
+          "instructor_tip": "Suzy Q, and 1-2-3-5",
+          "what_to_watch": ""
+        },
+        {
+          "step_number": 6,
+          "timestamp": "0:11",
+          "frame": "frame_011.jpg",
+          "count": "1",
+          "technique": "suzy_q_\u2014_out_step",
+          "position": "Both dancers stepping out to the side \u2014 feet opening outward. Leader stepping right, follower stepping left. Weight shifting laterally. Hips beginning to rotate. Arms starting to rise for the 'hands in the air' styling.",
+          "instruction": "Both dancers stepping out to the side \u2014 feet opening outward. Leader stepping right, follower stepping left. Weight shifting laterally. Hips beginning to rotate. Arms starting to rise for the 'hands in the air' styling.",
+          "instructor_tip": "out, step, cross \u2014 three distinct weight changes",
+          "what_to_watch": ""
+        },
+        {
+          "step_number": 7,
+          "timestamp": "0:13",
+          "frame": "frame_013.jpg",
+          "count": "2-3",
+          "technique": "suzy_q_\u2014_cross_step",
+          "position": "Both dancers in the cross position of the Suzy Q \u2014 feet crossed cleanly, chests facing forward toward the mirror. Follower's feet clearly crossed. Leader showing the cross with hips rotated but chest forward. Arms elevated.",
+          "instruction": "Both dancers in the cross position of the Suzy Q \u2014 feet crossed cleanly, chests facing forward toward the mirror. Follower's feet clearly crossed. Leader showing the cross with hips rotated but chest forward. Arms elevated.",
+          "instructor_tip": "on the cross step of the Suzy Q, face forward and cross your feet over cleanly",
+          "what_to_watch": ""
+        },
+        {
+          "step_number": 8,
+          "timestamp": "0:15",
+          "frame": "frame_015.jpg",
+          "count": "5-6-7",
+          "technique": "suzy_q_\u2014_second_half",
+          "position": "Both dancers executing the second half of the Suzy Q \u2014 stepping out to the opposite side. Weight shifting back the other direction. Follower showing clear lateral movement. Arms still elevated for styling.",
+          "instruction": "Both dancers executing the second half of the Suzy Q \u2014 stepping out to the opposite side. Weight shifting back the other direction. Follower showing clear lateral movement. Arms still elevated for styling.",
+          "instructor_tip": "face forward, half and half",
+          "what_to_watch": ""
+        },
+        {
+          "step_number": 9,
+          "timestamp": "0:17",
+          "frame": "frame_017.jpg",
+          "count": "1-2-3",
+          "technique": "hands_in_air_+_drum_roll",
+          "position": "Both dancers with arms raised overhead \u2014 the 'hands in the air' moment from the combo. Leader's arms up, follower's arms up. Both stepping through the basic timing while maintaining the arm styling. Audience watching from mirror reflection.",
+          "instruction": "Both dancers with arms raised overhead \u2014 the 'hands in the air' moment from the combo. Leader's arms up, follower's arms up. Both stepping through the basic timing while maintaining the arm styling. Audience watching from mirror reflection.",
+          "instructor_tip": "hands in the air, 6-7-2, drum roll, 7",
+          "what_to_watch": ""
+        },
+        {
+          "step_number": 10,
+          "timestamp": "0:19",
+          "frame": "frame_019.jpg",
+          "count": "5-6-7",
+          "technique": "suzy_q_into_turn_around",
+          "position": "Both dancers mid-Suzy Q, transitioning toward the 'turn around' section. Leader stepping through the cross, follower beginning to rotate. Bodies starting to face away from the mirror in preparation for the turn-around.",
+          "instruction": "Both dancers mid-Suzy Q, transitioning toward the 'turn around' section. Leader stepping through the cross, follower beginning to rotate. Bodies starting to face away from the mirror in preparation for the turn-around.",
+          "instructor_tip": "and Suzy Q, turn around, turn around",
+          "what_to_watch": ""
+        },
+        {
+          "step_number": 11,
+          "timestamp": "0:21",
+          "frame": "frame_021.jpg",
+          "count": "1-2-3",
+          "technique": "turn_around_\u2014_facing_away",
+          "position": "Both dancers now facing away from the mirror \u2014 the 'turn around' position. Leader and follower side by side, backs to camera/mirror. Executing the basic step or Suzy Q while facing the opposite direction. Clear 180-degree rotation from starting position.",
+          "instruction": "Both dancers now facing away from the mirror \u2014 the 'turn around' position. Leader and follower side by side, backs to camera/mirror. Executing the basic step or Suzy Q while facing the opposite direction. Clear 180-degree rotation from starting position.",
+          "instructor_tip": "turn around, 1-2-3, Suzy Q",
+          "what_to_watch": ""
+        },
+        {
+          "step_number": 12,
+          "timestamp": "0:23",
+          "frame": "frame_023.jpg",
+          "count": "5-6-7",
+          "technique": "suzy_q_(facing_away)_into_basic",
+          "position": "Both dancers executing Suzy Q while facing away from mirror. Follower's feet showing the cross step clearly from this angle. Leader stepping through the pattern. Both about to rotate back to face the mirror.",
+          "instruction": "Both dancers executing Suzy Q while facing away from mirror. Follower's feet showing the cross step clearly from this angle. Leader stepping through the pattern. Both about to rotate back to face the mirror.",
+          "instructor_tip": "Suzy Q, basic, 1",
+          "what_to_watch": ""
+        },
+        {
+          "step_number": 13,
+          "timestamp": "0:25",
+          "frame": "frame_025.jpg",
+          "count": "1-2-3",
+          "technique": "basic_step_\u2014_return_to_front",
+          "position": "Both dancers back to facing the mirror, executing the basic step. Leader and follower side by side. Weight on forward foot, arms relaxed. Transitioning from solo shines into partner work setup.",
+          "instruction": "Both dancers back to facing the mirror, executing the basic step. Leader and follower side by side. Weight on forward foot, arms relaxed. Transitioning from solo shines into partner work setup.",
+          "instructor_tip": "basic, 1, partner work",
+          "what_to_watch": ""
+        },
+        {
+          "step_number": 14,
+          "timestamp": "0:27",
+          "frame": "frame_027.jpg",
+          "count": "5-6-7",
+          "technique": "partner_work_\u2014_basic_step_in_hold",
+          "position": "Leader and follower now in partner hold \u2014 leader's right hand on follower's back, left hand connected. Both executing the basic step together. Follower facing leader. Both moving in sync. Audience watching from the sides.",
+          "instruction": "Leader and follower now in partner hold \u2014 leader's right hand on follower's back, left hand connected. Both executing the basic step together. Follower facing leader. Both moving in sync. Audience watching from the sides.",
+          "instructor_tip": "partner work, 5-6-7-2-3-5-6-7, we go",
+          "what_to_watch": ""
+        },
+        {
+          "step_number": 15,
+          "timestamp": "0:29",
+          "frame": "frame_029.jpg",
+          "count": "1-2-3",
+          "technique": "partner_basic_\u2014_forward_break",
+          "position": "Both in partner hold, leader stepping forward on 1, follower stepping back. Clear opposition in footwork. Leader's left hand raised slightly, right hand on follower's back. Both maintaining upright posture.",
+          "instruction": "Both in partner hold, leader stepping forward on 1, follower stepping back. Clear opposition in footwork. Leader's left hand raised slightly, right hand on follower's back. Both maintaining upright posture.",
+          "instructor_tip": "5-6-7-2-3-5-6-7",
+          "what_to_watch": ""
+        },
+        {
+          "step_number": 16,
+          "timestamp": "0:31",
+          "frame": "frame_031.jpg",
+          "count": "5-6-7",
+          "technique": "partner_basic_\u2014_back_break",
+          "position": "Leader stepping back on 5, follower stepping forward. Partner hold maintained. Leader's knees bending on count 7. Both showing the back half of the basic step in partner work. Audience visible in mirror.",
+          "instruction": "Leader stepping back on 5, follower stepping forward. Partner hold maintained. Leader's knees bending on count 7. Both showing the back half of the basic step in partner work. Audience visible in mirror.",
+          "instructor_tip": "left turn for me, 6-7-1",
+          "what_to_watch": ""
+        },
+        {
+          "step_number": 17,
+          "timestamp": "0:33",
+          "frame": "frame_033.jpg",
+          "count": "5-6-7",
+          "technique": "left_turn_(inside_turn)_\u2014_setup",
+          "position": "Leader beginning to raise left hand to create the inside turn frame. Follower stepping forward, about to go under the raised arm. Leader's right hand releasing from follower's back. Both transitioning from basic into the inside turn.",
+          "instruction": "Leader beginning to raise left hand to create the inside turn frame. Follower stepping forward, about to go under the raised arm. Leader's right hand releasing from follower's back. Both transitioning from basic into the inside turn.",
+          "instructor_tip": "left turn for me, 6-7-1",
+          "what_to_watch": ""
+        },
+        {
+          "step_number": 18,
+          "timestamp": "0:35",
+          "frame": "frame_035.jpg",
+          "count": "1-2-3",
+          "technique": "inside_turn_\u2014_follower_turning_left",
+          "position": "Follower mid-left-turn under leader's raised arm. Leader's left arm elevated creating the arch. Follower's body rotating left, hair swinging with the momentum. Leader stepping through basic footwork while maintaining the frame.",
+          "instruction": "Follower mid-left-turn under leader's raised arm. Leader's left arm elevated creating the arch. Follower's body rotating left, hair swinging with the momentum. Leader stepping through basic footwork while maintaining the frame.",
+          "instructor_tip": "left turn, 2, right turn, 6-7-4-3",
+          "what_to_watch": ""
+        },
+        {
+          "step_number": 19,
+          "timestamp": "0:37",
+          "frame": "frame_037.jpg",
+          "count": "3-5",
+          "technique": "inside_turn_\u2014_landing_and_reconnect",
+          "position": "Follower completing the left turn and landing facing the leader. Leader's arm coming down to reconnect. Both about to return to partner hold. Follower's feet landing cleanly after the rotation.",
+          "instruction": "Follower completing the left turn and landing facing the leader. Leader's arm coming down to reconnect. Both about to return to partner hold. Follower's feet landing cleanly after the rotation.",
+          "instructor_tip": "facing both, follow through with that motion",
+          "what_to_watch": ""
+        },
+        {
+          "step_number": 20,
+          "timestamp": "0:39",
+          "frame": "frame_039.jpg",
+          "count": "5-6-7",
+          "technique": "right_turn_\u2014_leader_initiating",
+          "position": "Leader beginning the right turn \u2014 right shoulder opening, weight shifting to initiate the rotation on count 5-6. Follower stepping through basic. Leader's body beginning to rotate right. Connected hands visible.",
+          "instruction": "Leader beginning the right turn \u2014 right shoulder opening, weight shifting to initiate the rotation on count 5-6. Follower stepping through basic. Leader's body beginning to rotate right. Connected hands visible.",
+          "instructor_tip": "right turn for me, 6, don't wait till the last minute",
+          "what_to_watch": ""
+        },
+        {
+          "step_number": 21,
+          "timestamp": "0:41",
+          "frame": "frame_041.jpg",
+          "count": "6-7",
+          "technique": "right_turn_\u2014_mid_rotation",
+          "position": "Leader mid-right-turn, body halfway through the 360-degree rotation. Right shoulder leading the turn. Follower maintaining basic step. Leader spotting to find partner. Both showing clear separation in their patterns.",
+          "instruction": "Leader mid-right-turn, body halfway through the 360-degree rotation. Right shoulder leading the turn. Follower maintaining basic step. Leader spotting to find partner. Both showing clear separation in their patterns.",
+          "instructor_tip": "spot your partner, turn to the right, keep your right shoulder open",
+          "what_to_watch": ""
+        },
+        {
+          "step_number": 22,
+          "timestamp": "0:43",
+          "frame": "frame_043.jpg",
+          "count": "1",
+          "technique": "right_turn_\u2014_landing_facing_partner",
+          "position": "Leader completing the right turn and landing facing the follower by count 1. Follower facing leader. Both reconnecting to partner hold. Leader's feet in the post-turn position: forward, forward, back.",
+          "instruction": "Leader completing the right turn and landing facing the follower by count 1. Follower facing leader. Both reconnecting to partner hold. Leader's feet in the post-turn position: forward, forward, back.",
+          "instructor_tip": "on count 1 after a right turn, you must be facing your partner again \u2014 whip through to complete the rotation",
+          "what_to_watch": ""
+        },
+        {
+          "step_number": 23,
+          "timestamp": "0:45",
+          "frame": "frame_045.jpg",
+          "count": "1-2-3",
+          "technique": "partner_basic_\u2014_post_turn_recovery",
+          "position": "Both dancers back in partner hold after the right turn. Leader and follower facing each other, executing the basic step together. Both smiling \u2014 the combo is flowing. Audience watching attentively.",
+          "instruction": "Both dancers back in partner hold after the right turn. Leader and follower facing each other, executing the basic step together. Both smiling \u2014 the combo is flowing. Audience watching attentively.",
+          "instructor_tip": "the combo that was supposed to be, 5-6",
+          "what_to_watch": ""
+        },
+        {
+          "step_number": 24,
+          "timestamp": "0:47",
+          "frame": "frame_047.jpg",
+          "count": "5-6-7",
+          "technique": "left_turn_\u2014_second_pass",
+          "position": "Leader raising arm again for a second inside turn. Follower stepping forward to go under the arch. Leader's left hand elevated. Both executing the inside turn pattern for a second time in the combo.",
+          "instruction": "Leader raising arm again for a second inside turn. Follower stepping forward to go under the arch. Leader's left hand elevated. Both executing the inside turn pattern for a second time in the combo.",
+          "instructor_tip": "left turn, 2",
+          "what_to_watch": ""
+        },
+        {
+          "step_number": 25,
+          "timestamp": "0:49",
+          "frame": "frame_049.jpg",
+          "count": "1-2-3",
+          "technique": "inside_turn_\u2014_follower_under_arch",
+          "position": "Follower mid-left-turn under leader's raised arm. Leader's arm creating a clear arch overhead. Follower's body rotating left. Both showing the inside turn in partner work clearly from this angle.",
+          "instruction": "Follower mid-left-turn under leader's raised arm. Leader's arm creating a clear arch overhead. Follower's body rotating left. Both showing the inside turn in partner work clearly from this angle.",
+          "instructor_tip": "turn to the left, facing your partner by count 2",
+          "what_to_watch": ""
+        },
+        {
+          "step_number": 26,
+          "timestamp": "0:51",
+          "frame": "frame_051.jpg",
+          "count": "5-6-7",
+          "technique": "right_turn_\u2014_second_pass",
+          "position": "Leader initiating the second right turn of the combo. Right shoulder opening. Follower in basic step. Leader beginning rotation. Both in close proximity showing the partner work dynamic.",
+          "instruction": "Leader initiating the second right turn of the combo. Right shoulder opening. Follower in basic step. Leader beginning rotation. Both in close proximity showing the partner work dynamic.",
+          "instructor_tip": "right turn, 6-7-4-3, stop right there",
+          "what_to_watch": ""
+        },
+        {
+          "step_number": 27,
+          "timestamp": "0:53",
+          "frame": "frame_053.jpg",
+          "count": "end",
+          "technique": "final_stop_\u2014_give_her_a_hand",
+          "position": "Both dancers stopped in a finishing position. Leader and follower facing each other, close together. The combo has ended. Audience visible in mirror applauding. Instructor calling for applause for the follower.",
+          "instruction": "Both dancers stopped in a finishing position. Leader and follower facing each other, close together. The combo has ended. Audience visible in mirror applauding. Instructor calling for applause for the follower.",
+          "instructor_tip": "stop right there. Give her a hand!",
           "what_to_watch": ""
         }
       ]

@@ -9,6 +9,8 @@ import os
 import re
 from pathlib import Path
 
+from server.techniques import normalize_technique_slug
+
 ROOT = Path(__file__).resolve().parent.parent
 
 
@@ -54,6 +56,10 @@ Rules for teaching_points:
 - Tag each tip with the correct technique slug
 - Extract 10-20 tips from a typical 50-minute class
 - Include hand hold details, footwork patterns, timing cues, body mechanics
+- Identify every distinct technique or named variation taught in class, not only the parent category
+- Use around_the_world when the instructor teaches circular basic / clock-face directional basic
+- Use half_step when the instructor says half step, half of one, or teaches only half of an around-the-world transition
+- Use right_turn for a single/stationary right turn; use inside_turn only for a true inside/traveling left turn
 """
 
 
@@ -122,6 +128,6 @@ def load_known_techniques() -> list[str]:
         return []
     data = json.loads(tech_file.read_text())
     return [
-        t["name"].lower().replace(" ", "_")
+        normalize_technique_slug(t["name"])
         for t in data.get("techniques", [])
     ]

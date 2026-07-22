@@ -163,6 +163,8 @@ def update_transcript_steps(slug: str, bullets: list[list[str]], technique: str 
 
 TECHNIQUE_KEYWORDS = {
     "basic_step": ["basic-step", "basic-steps", "eddie-torres", "core-basic"],
+    "around_the_world": ["around-the-world", "circular-basic"],
+    "half_step": ["half-step", "half-of-one", "half-of-1"],
     "inside_turn": ["inside-turn", "traveling-left", "free-spin"],
     "cross_body_lead": ["cross-body-lead"],
     "right_turn": ["right-turn", "single-right"],
