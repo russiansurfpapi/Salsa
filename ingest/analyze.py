@@ -9,6 +9,7 @@ import os
 import re
 from pathlib import Path
 
+from server.salsa_context import salsa_style_context
 from server.techniques import normalize_technique_slug
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -29,8 +30,12 @@ def _load_env() -> None:
 _load_env()
 
 
-SYSTEM_PROMPT = """\
-You are analyzing the transcript of a NY On2 salsa dance class.
+SYSTEM_PROMPT = (
+    "You are analyzing the transcript of a New York-style salsa (NY On2) "
+    "dance class.\n"
+    + salsa_style_context()
+    + """
+
 The transcript was auto-generated from a recording with loud music,
 so expect noise: repeated counting (1-2-3, 5-6-7), song lyrics, cross-talk.
 Focus ONLY on the instructor's teaching content. Ignore counting reps,
@@ -61,6 +66,7 @@ Rules for teaching_points:
 - Use half_step when the instructor says half step, half of one, or teaches only half of an around-the-world transition
 - Use right_turn for a single/stationary right turn; use inside_turn only for a true inside/traveling left turn
 """
+)
 
 
 def _analyze_anthropic(user_prompt: str) -> dict:

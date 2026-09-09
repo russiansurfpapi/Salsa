@@ -1,7 +1,7 @@
 {
   "level": 1,
   "name": "Beginner",
-  "style": "NY On2",
+  "style": "New York-style salsa (NY On2 / Eddie Torres-style mambo)",
   "techniques": [
     {
       "id": 1,
@@ -121,6 +121,42 @@
       "name": "Right Turn",
       "category": "stationary_turns",
       "description": "Right Turn was detected in a class upload. This page collects class tips, lesson images, drills, and related videos as they are added."
+    },
+    {
+      "id": 24,
+      "name": "Zig Zag",
+      "category": "lesson_techniques",
+      "description": "Zig Zag was detected in a class upload. This page collects class tips, lesson images, drills, and related videos as they are added."
+    },
+    {
+      "id": 25,
+      "name": "Combo",
+      "category": "lesson_techniques",
+      "description": "Combo was detected in a class upload. This page collects class tips, lesson images, drills, and related videos as they are added."
+    },
+    {
+      "id": 26,
+      "name": "Hip Walk",
+      "category": "lesson_techniques",
+      "description": "Hip Walk was detected in a class upload. This page collects class tips, lesson images, drills, and related videos as they are added."
+    },
+    {
+      "id": 27,
+      "name": "Chord Beat",
+      "category": "lesson_techniques",
+      "description": "Chord Beat was detected in a class upload. This page collects class tips, lesson images, drills, and related videos as they are added."
+    },
+    {
+      "id": 28,
+      "name": "Left Turn",
+      "category": "lesson_techniques",
+      "description": "Left Turn was detected in a class upload. This page collects class tips, lesson images, drills, and related videos as they are added."
+    },
+    {
+      "id": 29,
+      "name": "Comb",
+      "category": "lesson_techniques",
+      "description": "Comb was detected in a class upload. This page collects class tips, lesson images, drills, and related videos as they are added."
     }
   ],
   "learned_today": [

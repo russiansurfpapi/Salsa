@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
 <title>Classes — Salsa</title>
 <style>
   :root {
@@ -112,7 +113,7 @@
 
 <nav class="top">
   <span class="brand">salsa.</span>
-  <a href="/">Home</a> <a href="/practice">Practice</a> <a href="/quiz">Quiz</a>
+  <a href="/">Home</a> <a href="/practice">Practice</a> <a href="/video-lectures">Video lectures</a> <a href="/quiz">Quiz</a>
   <a href="/notes">Notes</a> <a href="/classes" class="active">Classes</a> <a href="/progress">Progress</a>
   <span class="spacer"></span>
 </nav>
@@ -152,7 +153,7 @@ async function loadList() {
   for (const c of classes) {
     html += `<div class="class-card" onclick="location.href='/classes/${c.class_date}'">`;
     html += `<div class="cc-header">`;
-    html += `<span class="cc-date">${c.class_date}</span>`;
+    html += `<span class="cc-date">${c.session_label || c.class_date}</span>`;
     if (c.class_number) html += `<span class="cc-num">Class #${c.class_number}</span>`;
     html += `<span class="tip-count">${c.teaching_point_count || c.extracted_tips?.length || 0} tips</span>`;
     html += `</div>`;
@@ -184,7 +185,7 @@ async function loadDetail(date) {
 
 function render(d, vbs, study) {
   let html = `<a class="back" href="/classes">&larr; All classes</a>`;
-  html += `<h1><em>Class ${d.class_number || ''}</em> — ${d.class_date}</h1>`;
+  html += `<h1><em>Class ${d.class_number || ''}</em> — ${d.session_label || d.class_date}</h1>`;
   if (d.summary) html += `<p class="subtitle">${esc(d.summary)}</p>`;
 
   html += '<div style="margin-bottom:20px">';
@@ -196,7 +197,8 @@ function render(d, vbs, study) {
 
   html += '<div class="link-bar">';
   html += `<a href="/study/${esc(d.class_date)}" style="background:var(--accent);color:#fff">Study guide</a>`;
-  html += '<a href="/practice">Practice drills</a>';
+  html += `<a href="/practice?class_date=${encodeURIComponent(d.class_date)}">Practice class techniques</a>`;
+  html += `<a href="/video-lectures?class_date=${encodeURIComponent(d.class_date)}">Tagged video parts</a>`;
   html += '<a href="/quiz">Quiz yourself</a>';
   for (const t of techs) html += `<a href="/technique/${t}">Study ${esc(t.replace(/_/g, ' '))}</a>`;
   html += '</div>';
@@ -259,7 +261,10 @@ function render(d, vbs, study) {
         html += '<div>';
         html += `<div style="display:flex;align-items:center;gap:8px">`;
         html += `<span class="vb-num">${s.step_number}</span>`;
-        html += `<span style="font-weight:600;font-size:15px">${esc(s.technique?.replace(/_/g, ' ') || '')}</span>`;
+        const partTechniques = s.techniques?.length ? s.techniques : (s.technique ? [s.technique] : []);
+        for (const technique of partTechniques) {
+          html += `<a href="/video-lectures?technique=${encodeURIComponent(technique)}" class="tech-chip" style="font-size:11px">${esc(technique.replace(/_/g, ' '))}</a>`;
+        }
         html += `<span class="vb-time">${esc(s.timestamp)} — count ${esc(s.count)}</span>`;
         html += '</div>';
         html += `<div class="vb-instr">${esc(s.instruction)}</div>`;

@@ -1135,5 +1135,1140 @@
     "video_file": "IMG_2212.MOV",
     "video_frame_slug": "img-2212",
     "has_video_breakdown": true
+  },
+  {
+    "class_date": "2026-07-28",
+    "class_number": 6,
+    "transcript_file": "img-0008.json",
+    "matched_techniques": [
+      {
+        "name": "Side To Side",
+        "slug": "side_to_side"
+      },
+      {
+        "name": "Basic Step",
+        "slug": "basic_step"
+      },
+      {
+        "name": "Right Turn",
+        "slug": "right_turn"
+      },
+      {
+        "name": "Inside Turn",
+        "slug": "inside_turn"
+      },
+      {
+        "name": "Cross Body Lead",
+        "slug": "cross_body_lead"
+      }
+    ],
+    "techniques_covered": [
+      "side_to_side",
+      "basic_step",
+      "right_turn",
+      "inside_turn",
+      "cross_body_lead"
+    ],
+    "topics": [
+      "timing",
+      "footwork",
+      "partner_connection",
+      "frame",
+      "turns",
+      "weight_transfer"
+    ],
+    "extracted_tips": [
+      "On count 5, step side; on 6-7, return to center with a quick-quick-slow rhythm",
+      "Step forward on 1, rock back on 2, recover on 3; then step back on 5, rock forward on 6, recover on 7",
+      "Use a hip walk action during the basic step to maintain Cuban motion and connection",
+      "Practice side-to-side before combining it with other movements to lock in the weight transfer",
+      "Execute a right turn on count 1, maintaining frame and partner connection throughout the rotation",
+      "Lead a left turn (inside turn) with clear frame and timing; follower rotates while staying in the slot",
+      "From a cross-body lead position, maintain connection and clear hand signals for the follower's direction",
+      "Chain multiple right turns in sequence while keeping the follower centered and responsive",
+      "Return to closed position after turns or directional changes to reset the basic step timing"
+    ],
+    "teaching_points": [
+      {
+        "technique": "side_to_side",
+        "tip": "On count 5, step side; on 6-7, return to center with a quick-quick-slow rhythm",
+        "context": "Instructor introduced side-to-side as a fundamental movement before the basic step"
+      },
+      {
+        "technique": "basic_step",
+        "tip": "Step forward on 1, rock back on 2, recover on 3; then step back on 5, rock forward on 6, recover on 7",
+        "context": "Core NY On2 timing: 1-2-3 forward, 5-6-7 back, with breaks on counts 2 and 6"
+      },
+      {
+        "technique": "basic_step",
+        "tip": "Use a hip walk action during the basic step to maintain Cuban motion and connection",
+        "context": "Instructor cued 'hip walk' as part of the basic step mechanics"
+      },
+      {
+        "technique": "side_to_side",
+        "tip": "Practice side-to-side before combining it with other movements to lock in the weight transfer",
+        "context": "Instructor taught side-to-side as the first fundamental before building the combo"
+      },
+      {
+        "technique": "right_turn",
+        "tip": "Execute a right turn on count 1, maintaining frame and partner connection throughout the rotation",
+        "context": "Instructor called out 'turn' on 1 as part of the combination sequence"
+      },
+      {
+        "technique": "inside_turn",
+        "tip": "Lead a left turn (inside turn) with clear frame and timing; follower rotates while staying in the slot",
+        "context": "Instructor referenced 'left turn' in the progression from 101\u2013103 curriculum"
+      },
+      {
+        "technique": "cross_body_lead",
+        "tip": "From a cross-body lead position, maintain connection and clear hand signals for the follower's direction",
+        "context": "Instructor listed cross-body lead as a key technique reviewed from earlier levels"
+      },
+      {
+        "technique": "right_turn",
+        "tip": "Chain multiple right turns in sequence while keeping the follower centered and responsive",
+        "context": "Instructor called 'right turn, right turn' in the combo, indicating back-to-back rotations"
+      },
+      {
+        "technique": "basic_step",
+        "tip": "Return to closed position after turns or directional changes to reset the basic step timing",
+        "context": "Instructor mentioned 'closed position' as a checkpoint in the 101\u2013103 progression"
+      }
+    ],
+    "class_structure": [
+      {
+        "section": "Fundamental Movements",
+        "description": "Instructor introduced side-to-side and basic step with hip walk action, establishing NY On2 timing (1-2-3, 5-6-7)",
+        "approx_minutes": 10
+      },
+      {
+        "section": "Combination Building",
+        "description": "Instructor combined side-to-side, basic step, and hip walk into a repeating pattern with turns",
+        "approx_minutes": 8
+      },
+      {
+        "section": "Curriculum Review (101\u2013103)",
+        "description": "Instructor reviewed key techniques from earlier levels: cross-body lead, left turn, right turns, switches, and closed-position mechanics",
+        "approx_minutes": 5
+      }
+    ],
+    "summary": "Class #6 reinforced NY On2 fundamentals (side-to-side, basic step with hip walk) and built a combination using right turns and directional changes. The instructor reviewed key techniques from levels 101\u2013103, including cross-body leads, left turns, and closed-position mechanics, emphasizing the 1-2-3, 5-6-7 timing structure.",
+    "key_phrases": [
+      "1, 2, 3, 5, 6, 7",
+      "side to side",
+      "basic step",
+      "hip walk",
+      "turn",
+      "closed position",
+      "cross body lead"
+    ]
+  },
+  {
+    "class_date": "2026-08-11",
+    "class_number": 7,
+    "transcript_file": "nieves-dance-studio-4.json",
+    "matched_techniques": [
+      {
+        "name": "Basic Step",
+        "slug": "basic_step"
+      },
+      {
+        "name": "Suzy Q",
+        "slug": "suzy_q"
+      },
+      {
+        "name": "Right Turn",
+        "slug": "right_turn"
+      }
+    ],
+    "techniques_covered": [
+      "basic_step",
+      "suzy_q",
+      "right_turn"
+    ],
+    "topics": [
+      "timing",
+      "footwork",
+      "weight placement",
+      "spacing and connection",
+      "directional awareness",
+      "body rotation",
+      "partner connection",
+      "pattern transitions"
+    ],
+    "extracted_tips": [
+      "On counts 5\u20136\u20137, step forward with your right foot, then step back with your left. On 1\u20132\u20133, step forward with your right, then back with your left, then forward with your right.",
+      "Keep your weight clear and grounded on each step so your partner can feel where you are in the pattern.",
+      "After the core beat (5\u20136\u20137), execute the Suzy Q on counts 1\u20133: cross your right foot over, step to the side with your left, then cross your right foot back over.",
+      "Travel forward with the Suzy Q; do not let your crossing foot go too far to the left, right, or back, or you will create too much gap between you and your partner.",
+      "After completing a Suzy Q to your left, cross over with your left foot and execute another Suzy Q to your right (counts 5\u20136\u20137, 1\u20133) to create a criss-cross pattern.",
+      "End each Suzy Q with your weight on the foot that is NOT crossing; this ensures you are grounded and ready for the next movement.",
+      "Use hip walks (a smooth, grounded weight transfer) to lead into the Suzy Q pattern for a fluid transition.",
+      "To turn right, cross your left foot over on count 7, then step forward with your right foot on count 1 while rotating your body to face forward.",
+      "Step into the turn on count 1 (do not just pivot in place); this makes your weight placement clear and prevents ambiguity about which foot is grounded.",
+      "After crossing on 7 and stepping on 1, continue the basic step pattern: forward on 2, back on 3, then 5\u20136\u20137 core beat, 1\u20132\u20133 basic."
+    ],
+    "teaching_points": [
+      {
+        "technique": "basic_step",
+        "tip": "On counts 5\u20136\u20137, step forward with your right foot, then step back with your left. On 1\u20132\u20133, step forward with your right, then back with your left, then forward with your right.",
+        "context": "Instructor established the foundational NY On2 basic timing and footwork pattern."
+      },
+      {
+        "technique": "basic_step",
+        "tip": "Keep your weight clear and grounded on each step so your partner can feel where you are in the pattern.",
+        "context": "Instructor emphasized weight clarity when teaching the basic."
+      },
+      {
+        "technique": "suzy_q",
+        "tip": "After the core beat (5\u20136\u20137), execute the Suzy Q on counts 1\u20133: cross your right foot over, step to the side with your left, then cross your right foot back over.",
+        "context": "Instructor taught the Suzy Q as a 3-count footwork pattern following the core beat."
+      },
+      {
+        "technique": "suzy_q",
+        "tip": "Travel forward with the Suzy Q; do not let your crossing foot go too far to the left, right, or back, or you will create too much gap between you and your partner.",
+        "context": "Instructor corrected common spacing errors during Suzy Q practice."
+      },
+      {
+        "technique": "suzy_q",
+        "tip": "After completing a Suzy Q to your left, cross over with your left foot and execute another Suzy Q to your right (counts 5\u20136\u20137, 1\u20133) to create a criss-cross pattern.",
+        "context": "Instructor taught the alternating Suzy Q pattern, switching direction each time."
+      },
+      {
+        "technique": "suzy_q",
+        "tip": "End each Suzy Q with your weight on the foot that is NOT crossing; this ensures you are grounded and ready for the next movement.",
+        "context": "Instructor clarified weight placement at the end of the Suzy Q to maintain connection and clarity."
+      },
+      {
+        "technique": "basic_step",
+        "tip": "Use hip walks (a smooth, grounded weight transfer) to lead into the Suzy Q pattern for a fluid transition.",
+        "context": "Instructor combined the basic step with hip walks before introducing the Suzy Q."
+      },
+      {
+        "technique": "right_turn",
+        "tip": "To turn right, cross your left foot over on count 7, then step forward with your right foot on count 1 while rotating your body to face forward.",
+        "context": "Instructor taught the right turn as a cross-and-step-into-rotation movement."
+      },
+      {
+        "technique": "right_turn",
+        "tip": "Step into the turn on count 1 (do not just pivot in place); this makes your weight placement clear and prevents ambiguity about which foot is grounded.",
+        "context": "Instructor corrected the common error of pivoting without stepping, emphasizing the importance of a clear weight transfer."
+      },
+      {
+        "technique": "right_turn",
+        "tip": "After crossing on 7 and stepping on 1, continue the basic step pattern: forward on 2, back on 3, then 5\u20136\u20137 core beat, 1\u20132\u20133 basic.",
+        "context": "Instructor showed how the right turn integrates into the ongoing basic step pattern."
+      }
+    ],
+    "class_structure": [
+      {
+        "section": "Basic Step Review & Orientation",
+        "description": "Instructor reviewed the NY On2 basic step (5\u20136\u20137, 1\u20132\u20133) with students facing the door instead of the mirror to reinforce directional awareness.",
+        "approx_minutes": 8
+      },
+      {
+        "section": "Suzy Q Introduction & Footwork",
+        "description": "Instructor taught the Suzy Q as a 3-count pattern (cross, step, cross) following the core beat. Emphasized traveling with the pattern and maintaining proper spacing to avoid gaps.",
+        "approx_minutes": 12
+      },
+      {
+        "section": "Criss-Cross Suzy Q Pattern",
+        "description": "Instructor taught alternating Suzy Qs to the left and right, creating a criss-cross pattern. Students practiced the transition between directions and weight placement.",
+        "approx_minutes": 8
+      },
+      {
+        "section": "Right Turn Technique",
+        "description": "Instructor taught the right turn: cross left foot on 7, step forward with right foot on 1 while rotating. Emphasized stepping into the turn (not just pivoting) to clarify weight placement.",
+        "approx_minutes": 10
+      },
+      {
+        "section": "Combination: Basic + Hip Walk + Suzy Q + Turn",
+        "description": "Instructor combined the basic step, hip walks, criss-cross Suzy Q pattern, and right turn into a full combination. Students practiced with music and repeated the sequence.",
+        "approx_minutes": 12
+      }
+    ],
+    "summary": "Class #7 focused on the Suzy Q footwork pattern and the right turn, building on the NY On2 basic step. Instructor emphasized traveling with the Suzy Q, maintaining proper spacing, and stepping into turns (rather than pivoting) to ensure clear weight placement. Students combined these techniques with hip walks into a full combination performed with music.",
+    "key_phrases": [
+      "5, 6, 7, 1, 2, 3",
+      "core beat",
+      "Suzy Q",
+      "cross, step, cross",
+      "traveling with the Suzy",
+      "criss-cross",
+      "hip walk",
+      "step into the turn",
+      "grounded feet",
+      "weight on your left foot"
+    ]
+  },
+  {
+    "class_date": "2026-08-18",
+    "class_number": 8,
+    "transcript_file": "nieves-dance-studio-6.json",
+    "matched_techniques": [
+      {
+        "name": "Basic Step",
+        "slug": "basic_step"
+      },
+      {
+        "name": "Right Turn",
+        "slug": "right_turn"
+      },
+      {
+        "name": "Zig Zag",
+        "slug": "zig_zag"
+      },
+      {
+        "name": "Suzy Q",
+        "slug": "suzy_q"
+      },
+      {
+        "name": "Combo",
+        "slug": "combo"
+      }
+    ],
+    "techniques_covered": [
+      "basic_step",
+      "right_turn",
+      "zig_zag",
+      "suzy_q",
+      "combo"
+    ],
+    "topics": [
+      "timing",
+      "footwork",
+      "weight transfer",
+      "body mechanics",
+      "partner connection",
+      "hand position",
+      "frame",
+      "lead/follow dynamics",
+      "counting",
+      "momentum",
+      "social dance etiquette"
+    ],
+    "extracted_tips": [
+      "When pivoting, step into the pivot with the opposite foot pushing off. Every pivot requires a real weight transfer\u2014don't stay flat or neutral.",
+      "Keep your upper body angled, not fully rotated. Let your hips do the talking rather than turning your whole torso.",
+      "The zig-zag is a full count: 1-2-3, 5-6-7. Don't rush or compress it into a half count. Maintain consistent timing.",
+      "Step into the zig-zag with clear weight transfers on each count. Don't skip or glide through the steps.",
+      "Suzy Q always starts with a cross on count 1. The pattern is: cross (1), step (2), cross (3), cross (5), step (6), cross (7).",
+      "When crossing, keep your foot slightly behind the front foot\u2014don't step out further than your front foot.",
+      "If starting a Suzy Q with your left foot, you must cross on 6-7 first (not step forward). Cross, step, cross is the only pattern.",
+      "A right turn follows the pattern: forward (1), turn (2), step in place (3). This is the foundational structure.",
+      "Don't stop the flow of your turn. Keep your body turning to the right continuously through counts 2-3 rather than stopping between steps.",
+      "On count 3 of a right turn, step forward (not back). Your weight should land on your right foot after the turn.",
+      "Leaders: turn on count 6 (not 2) when dancing with a partner. Timing changes when you're in lead/follow mode versus solo.",
+      "Leaders: raise your left hand (arm, not just hand) on count 7, bring it up on 1, and turn your follow on 2. The motion is in-and-out, not a straight lift.",
+      "Leaders: turn under your arm, not under your hand. Keep your elbow lower and arm bent so your follow's frame stays relaxed and low.",
+      "Followers: hold the turn before landing. Don't land immediately on count 3. Hold it like you hold a basic step, then land on 4.",
+      "Leaders: practice turning under both your left and right hands. Don't get comfortable with only one hand\u2014you need both for social dancing.",
+      "Leaders: keep your follow's arm closer to their shoulders when raising it for a turn. Don't extend it too far away, or you'll break their balance and frame.",
+      "The basic step counts are 1-2-3, 5-6-7. Counts 4 and 8 are held/weight-bearing counts. Don't step on 4 or 8.",
+      "The beginner combo is: basic (1-2-3), right turn (5-6-7, leader turns on 6), zig-zag (1-2-3, opening toward the door), right turn (5-6-7), Suzy Q (1-2-3, 5-6-7).",
+      "Leaders: don't announce the turn. You already know what you're doing. Followers don't need verbal cues\u2014they follow your frame and body direction.",
+      "Leaders: you can turn yourself on 1-2-3, but when leading a follow into a turn, you turn on 6 and they turn on 2. The timing is offset by one count."
+    ],
+    "teaching_points": [
+      {
+        "technique": "basic_step",
+        "tip": "When pivoting, step into the pivot with the opposite foot pushing off. Every pivot requires a real weight transfer\u2014don't stay flat or neutral.",
+        "context": "Instructor corrected students who weren't showing clear weight on one leg during the basic step."
+      },
+      {
+        "technique": "basic_step",
+        "tip": "Keep your upper body angled, not fully rotated. Let your hips do the talking rather than turning your whole torso.",
+        "context": "Instructor demonstrated how a full 180\u00b0 turn of the upper body slows down transitions between directions."
+      },
+      {
+        "technique": "zig_zag",
+        "tip": "The zig-zag is a full count: 1-2-3, 5-6-7. Don't rush or compress it into a half count. Maintain consistent timing.",
+        "context": "Students were inconsistent with zig-zag timing; instructor clarified it's always a full count, not 1.5."
+      },
+      {
+        "technique": "zig_zag",
+        "tip": "Step into the zig-zag with clear weight transfers on each count. Don't skip or glide through the steps.",
+        "context": "Instructor emphasized stepping on 5, 6, 7 with deliberate foot placement."
+      },
+      {
+        "technique": "suzy_q",
+        "tip": "Suzy Q always starts with a cross on count 1. The pattern is: cross (1), step (2), cross (3), cross (5), step (6), cross (7).",
+        "context": "Instructor taught the universal Suzy Q pattern and corrected students who were stepping forward instead of crossing."
+      },
+      {
+        "technique": "suzy_q",
+        "tip": "When crossing, keep your foot slightly behind the front foot\u2014don't step out further than your front foot.",
+        "context": "Instructor demonstrated proper foot placement to maintain compact frame and balance."
+      },
+      {
+        "technique": "suzy_q",
+        "tip": "If starting a Suzy Q with your left foot, you must cross on 6-7 first (not step forward). Cross, step, cross is the only pattern.",
+        "context": "Instructor corrected students who were stepping forward on 6-7 instead of crossing."
+      },
+      {
+        "technique": "right_turn",
+        "tip": "A right turn follows the pattern: forward (1), turn (2), step in place (3). This is the foundational structure.",
+        "context": "Instructor taught the basic mechanics of a right turn as forward, turn, step-in-place."
+      },
+      {
+        "technique": "right_turn",
+        "tip": "Don't stop the flow of your turn. Keep your body turning to the right continuously through counts 2-3 rather than stopping between steps.",
+        "context": "Instructor corrected students who were pausing between the turn and step-in-place, breaking the momentum."
+      },
+      {
+        "technique": "right_turn",
+        "tip": "On count 3 of a right turn, step forward (not back). Your weight should land on your right foot after the turn.",
+        "context": "Instructor corrected multiple students who were stepping backward on 3 instead of forward."
+      },
+      {
+        "technique": "right_turn",
+        "tip": "Leaders: turn on count 6 (not 2) when dancing with a partner. Timing changes when you're in lead/follow mode versus solo.",
+        "context": "Instructor clarified that solo right turns happen on 1-2-3, but with a partner, leaders turn on 6."
+      },
+      {
+        "technique": "right_turn",
+        "tip": "Leaders: raise your left hand (arm, not just hand) on count 7, bring it up on 1, and turn your follow on 2. The motion is in-and-out, not a straight lift.",
+        "context": "Instructor demonstrated the hand-raising cue for leading a follow into a right turn."
+      },
+      {
+        "technique": "right_turn",
+        "tip": "Leaders: turn under your arm, not under your hand. Keep your elbow lower and arm bent so your follow's frame stays relaxed and low.",
+        "context": "Instructor corrected leaders who were raising their hands too high, which broke the follow's frame."
+      },
+      {
+        "technique": "right_turn",
+        "tip": "Followers: hold the turn before landing. Don't land immediately on count 3. Hold it like you hold a basic step, then land on 4.",
+        "context": "Instructor explained that followers often land too quickly on 3, which throws off timing and adds an extra count."
+      },
+      {
+        "technique": "right_turn",
+        "tip": "Leaders: practice turning under both your left and right hands. Don't get comfortable with only one hand\u2014you need both for social dancing.",
+        "context": "Instructor noted that some leaders were only turning under their left hand and needed to develop ambidexterity."
+      },
+      {
+        "technique": "right_turn",
+        "tip": "Leaders: keep your follow's arm closer to their shoulders when raising it for a turn. Don't extend it too far away, or you'll break their balance and frame.",
+        "context": "Instructor demonstrated how extending the arm too far ruins the follow's frame and balance."
+      },
+      {
+        "technique": "basic_step",
+        "tip": "The basic step counts are 1-2-3, 5-6-7. Counts 4 and 8 are held/weight-bearing counts. Don't step on 4 or 8.",
+        "context": "Instructor emphasized the importance of understanding the count structure before adding music."
+      },
+      {
+        "technique": "combo",
+        "tip": "The beginner combo is: basic (1-2-3), right turn (5-6-7, leader turns on 6), zig-zag (1-2-3, opening toward the door), right turn (5-6-7), Suzy Q (1-2-3, 5-6-7).",
+        "context": "Instructor taught the full sequence and had students practice it multiple times with and without music."
+      },
+      {
+        "technique": "right_turn",
+        "tip": "Leaders: don't announce the turn. You already know what you're doing. Followers don't need verbal cues\u2014they follow your frame and body direction.",
+        "context": "Instructor answered a student question about whether leaders signal turns in advance."
+      },
+      {
+        "technique": "right_turn",
+        "tip": "Leaders: you can turn yourself on 1-2-3, but when leading a follow into a turn, you turn on 6 and they turn on 2. The timing is offset by one count.",
+        "context": "Instructor clarified the difference between solo and partner timing for right turns."
+      }
+    ],
+    "class_structure": [
+      {
+        "section": "Warm-up and Basic Step Review",
+        "description": "Instructor reviewed the basic step (1-2-3, 5-6-7) with emphasis on weight transfer, pivoting, and body angle. Corrected students on keeping upper body angled and letting hips lead.",
+        "approx_minutes": 8
+      },
+      {
+        "section": "Zig-Zag Technique",
+        "description": "Taught the zig-zag as a full-count movement (1-2-3, 5-6-7) with clear stepping and weight transfer. Clarified that it's not a half-count and must be consistent.",
+        "approx_minutes": 6
+      },
+      {
+        "section": "Suzy Q Technique",
+        "description": "Introduced the Suzy Q pattern (cross, step, cross, cross, step, cross) and emphasized that it always starts with a cross on count 1. Corrected foot placement to keep steps compact.",
+        "approx_minutes": 7
+      },
+      {
+        "section": "Right Turn Solo",
+        "description": "Taught the right turn structure (forward, turn, step in place) and emphasized continuous flow without stopping. Corrected students on stepping forward (not back) on count 3.",
+        "approx_minutes": 8
+      },
+      {
+        "section": "Combo Assembly (Solo)",
+        "description": "Combined basic, zig-zag, and right turn into a sequence. Practiced with counting and without music to build muscle memory.",
+        "approx_minutes": 5
+      },
+      {
+        "section": "Partner Positioning and Line Rotation",
+        "description": "Explained the line rotation system (5 lines, leaders rotate through followers). Emphasized compact stepping for crowded social dance environments.",
+        "approx_minutes": 4
+      },
+      {
+        "section": "Basic Step with Partner",
+        "description": "Practiced the basic step (1-2-3, 5-6-7) with a partner. Leaders started with left foot back. Focused on connection and timing.",
+        "approx_minutes": 5
+      },
+      {
+        "section": "Right Turn with Partner (Lead Timing)",
+        "description": "Taught leaders to turn on count 6 (not 2). Demonstrated hand-raising cue (count 7), bringing arm up (count 1), and turning follow (count 2). Emphasized arm position and frame.",
+        "context": "Instructor corrected hand height, arm extension, and timing. Addressed back-leading by followers.",
+        "approx_minutes": 12
+      },
+      {
+        "section": "Combo with Partner and Music",
+        "description": "Practiced the full combo (basic, right turn, zig-zag, right turn, Suzy Q) with a partner and music. Rotated through multiple partners. Emphasized leader decision-making on when to turn.",
+        "approx_minutes": 10
+      }
+    ],
+    "summary": "Class #8 focused on mastering the right turn, zig-zag, and Suzy Q techniques, then combining them into a beginner combo. Instructor emphasized proper weight transfer, continuous flow (no stopping between steps), and the distinction between solo timing (turn on 1-2-3) and partner/lead timing (leader turns on 6, follow turns on 2). Key corrections included stepping forward (not back) on count 3 of a right turn, keeping the upper body angled, and maintaining compact footwork for social dance environments.",
+    "key_phrases": [
+      "1-2-3, 5-6-7",
+      "don't be flat",
+      "step into the pivot",
+      "keep turning",
+      "don't stop the flow",
+      "cross, step, cross",
+      "forward, turn, step in place",
+      "turn under your arm, not your hand",
+      "hold the turn",
+      "lead timing",
+      "in and out",
+      "keep it compact",
+      "let your hips do the talking"
+    ]
+  },
+  {
+    "class_date": "2026-08-25",
+    "class_number": 9,
+    "transcript_file": "nieves-dance-studio-7.json",
+    "matched_techniques": [
+      {
+        "name": "Basic Step",
+        "slug": "basic_step"
+      },
+      {
+        "name": "Right Turn",
+        "slug": "right_turn"
+      },
+      {
+        "name": "Suzy Q",
+        "slug": "suzy_q"
+      },
+      {
+        "name": "Side To Side",
+        "slug": "side_to_side"
+      },
+      {
+        "name": "Combo",
+        "slug": "combo"
+      }
+    ],
+    "techniques_covered": [
+      "basic_step",
+      "right_turn",
+      "suzy_q",
+      "side_to_side",
+      "combo"
+    ],
+    "topics": [
+      "timing",
+      "footwork",
+      "body mechanics",
+      "partner connection",
+      "lead/follow",
+      "shines",
+      "hand holds",
+      "frame control",
+      "posture",
+      "social dancing etiquette",
+      "arm extension",
+      "weight transfer",
+      "verbal cueing",
+      "back-leading",
+      "turn direction",
+      "signaling"
+    ],
+    "extracted_tips": [
+      "Say the footwork pattern aloud: 'Forward, forward, back, back, back, forward.' Don't think it\u2014say it out loud so you can hear yourself. This builds muscle memory faster than mental counting.",
+      "Keep the structure: forward, forward, turn, back, back, forward. The turn happens on count 2 (the On2 break), not on count 3.",
+      "Curve your body slightly on count 1 as if starting a turn, but keep your upper body facing forward. Don't rotate your shoulders too much\u2014just a subtle curve.",
+      "The follower turns on count 2, not count 1. Leaders must lead the turn by raising the arm on counts 5\u20136\u20137 (the second half of the previous basic), signaling the turn to come.",
+      "As a leader, maintain a slightly bent arm (not fully locked) to keep control and balance during the turn. A fully extended arm pushes the follower away and breaks frame.",
+      "As a follower, don't turn by yourself when you feel the arm raise. Wait for the leader to guide you in a direction. Turning on your own is back-leading and prevents the leader from leading other directions.",
+      "Followers: keep your legs closed and tight during the turn to stay centered and balanced. Don't let your legs splay open.",
+      "The structure is: cross, step, cross, cross, step, cross. Say it aloud to lock in the pattern. The first cross is on count 1.",
+      "On count 1, cross your right foot in front. On count 2, step your left foot slightly behind the front foot (not to the side)\u2014keep it tight and close. On count 3, cross again.",
+      "Anchor your weight on your right foot at the start. Lift your left foot and begin the cross-step-cross pattern with your left. Don't shuffle or do a quick-quick-slow on counts 1\u20132.",
+      "Don't look down at your feet while doing the Suzy Q. Look forward and be confident. Looking down is a bad habit that carries into social dancing and performances.",
+      "The beginning is similar to Suzy Q: cross on count 1. But on count 2, step to the side (not behind). On count 3, step in place or cross again.",
+      "On count 3, push your weight into that foot; don't move the foot itself. Keep it planted and transfer weight into it.",
+      "Repeat the side-to-side on both sides: counts 1\u20132\u20133 to one side, then counts 5\u20136\u20137 to the other side. It's a bilateral shine.",
+      "When combining moves (e.g., right turn into Suzy Q into side-to-side), practice each move individually first. Don't memorize the combo; master the individual techniques, then link them.",
+      "In partner dancing, minimize arm movement. Don't swing your arms forward and back excessively. Keep your arms relatively still and let your back and core drive the movement.",
+      "Take tight, compact steps (heel-to-toe) when dancing in close quarters or in a social setting. Avoid large, sprawling steps that invade others' space.",
+      "Leaders: you are the protector. If a follower is about to step on someone, guide them forward to safety. Followers: don't rely entirely on the lead; if you sense a collision, hold your step.",
+      "When holding hands with a partner, leaders use only the middle and ring fingers (not the whole hand). Followers hook onto those fingers. Don't squeeze; connection should be light and through the fingers only.",
+      "Leaders: raise your arm on counts 5\u20136\u20137 (slowly, not suddenly) to signal the turn. The arm raise is centered, not out to the side. This is the signal; the direction of the turn is determined by your frame on counts 1\u20132\u20133."
+    ],
+    "teaching_points": [
+      {
+        "technique": "basic_step",
+        "tip": "Say the footwork pattern aloud: 'Forward, forward, back, back, back, forward.' Don't think it\u2014say it out loud so you can hear yourself. This builds muscle memory faster than mental counting.",
+        "context": "Instructor emphasized verbal cueing over mental focus when learning the basic step structure."
+      },
+      {
+        "technique": "basic_step",
+        "tip": "Keep the structure: forward, forward, turn, back, back, forward. The turn happens on count 2 (the On2 break), not on count 3.",
+        "context": "Instructor corrected the placement of the turn within the basic step to maintain NY On2 timing."
+      },
+      {
+        "technique": "basic_step",
+        "tip": "Curve your body slightly on count 1 as if starting a turn, but keep your upper body facing forward. Don't rotate your shoulders too much\u2014just a subtle curve.",
+        "context": "Instructor demonstrated proper body positioning to avoid over-rotating on the first step of the basic."
+      },
+      {
+        "technique": "right_turn",
+        "tip": "The follower turns on count 2, not count 1. Leaders must lead the turn by raising the arm on counts 5\u20136\u20137 (the second half of the previous basic), signaling the turn to come.",
+        "context": "Instructor corrected timing and emphasized that the leader's arm raise is a signal, not the turn itself. The actual turn direction is determined by the leader's frame on counts 1\u20132\u20133."
+      },
+      {
+        "technique": "right_turn",
+        "tip": "As a leader, maintain a slightly bent arm (not fully locked) to keep control and balance during the turn. A fully extended arm pushes the follower away and breaks frame.",
+        "context": "Instructor demonstrated how wingspan and arm extension affect follower balance and control."
+      },
+      {
+        "technique": "right_turn",
+        "tip": "As a follower, don't turn by yourself when you feel the arm raise. Wait for the leader to guide you in a direction. Turning on your own is back-leading and prevents the leader from leading other directions.",
+        "context": "Instructor explained that 99% of lead/follow issues are the leader's responsibility, but followers must avoid anticipating and back-leading."
+      },
+      {
+        "technique": "right_turn",
+        "tip": "Followers: keep your legs closed and tight during the turn to stay centered and balanced. Don't let your legs splay open.",
+        "context": "Instructor emphasized compact footwork to maintain control during rotations."
+      },
+      {
+        "technique": "suzy_q",
+        "tip": "The structure is: cross, step, cross, cross, step, cross. Say it aloud to lock in the pattern. The first cross is on count 1.",
+        "context": "Instructor taught the Suzy Q as a foundational shine with a specific three-step repeating pattern."
+      },
+      {
+        "technique": "suzy_q",
+        "tip": "On count 1, cross your right foot in front. On count 2, step your left foot slightly behind the front foot (not to the side)\u2014keep it tight and close. On count 3, cross again.",
+        "context": "Instructor emphasized keeping the Suzy Q compact and tight, not spreading the feet wide."
+      },
+      {
+        "technique": "suzy_q",
+        "tip": "Anchor your weight on your right foot at the start. Lift your left foot and begin the cross-step-cross pattern with your left. Don't shuffle or do a quick-quick-slow on counts 1\u20132.",
+        "context": "Instructor corrected a common beginner mistake of rushing or shuffling the first two counts."
+      },
+      {
+        "technique": "suzy_q",
+        "tip": "Don't look down at your feet while doing the Suzy Q. Look forward and be confident. Looking down is a bad habit that carries into social dancing and performances.",
+        "context": "Instructor addressed posture and eye contact as part of building confidence in shines."
+      },
+      {
+        "technique": "side_to_side",
+        "tip": "The beginning is similar to Suzy Q: cross on count 1. But on count 2, step to the side (not behind). On count 3, step in place or cross again.",
+        "context": "Instructor distinguished side-to-side from Suzy Q by the width of the second step."
+      },
+      {
+        "technique": "side_to_side",
+        "tip": "On count 3, push your weight into that foot; don't move the foot itself. Keep it planted and transfer weight into it.",
+        "context": "Instructor corrected the common error of moving the foot on count 3 instead of anchoring weight."
+      },
+      {
+        "technique": "side_to_side",
+        "tip": "Repeat the side-to-side on both sides: counts 1\u20132\u20133 to one side, then counts 5\u20136\u20137 to the other side. It's a bilateral shine.",
+        "context": "Instructor explained that beginner shines are repetitive, mirroring the pattern on both sides of the body."
+      },
+      {
+        "technique": "combo",
+        "tip": "When combining moves (e.g., right turn into Suzy Q into side-to-side), practice each move individually first. Don't memorize the combo; master the individual techniques, then link them.",
+        "context": "Instructor emphasized that combos are optional and that individual technique mastery is the priority."
+      },
+      {
+        "technique": "basic_step",
+        "tip": "In partner dancing, minimize arm movement. Don't swing your arms forward and back excessively. Keep your arms relatively still and let your back and core drive the movement.",
+        "context": "Instructor taught that excessive arm movement is a bad signal and creates poor habits; beginners should be slightly stiffer in the arms."
+      },
+      {
+        "technique": "basic_step",
+        "tip": "Take tight, compact steps (heel-to-toe) when dancing in close quarters or in a social setting. Avoid large, sprawling steps that invade others' space.",
+        "context": "Instructor explained that social dancing requires awareness of surroundings and smaller step sizes."
+      },
+      {
+        "technique": "basic_step",
+        "tip": "Leaders: you are the protector. If a follower is about to step on someone, guide them forward to safety. Followers: don't rely entirely on the lead; if you sense a collision, hold your step.",
+        "context": "Instructor taught defensive dancing etiquette and shared responsibility for safety in crowded social settings."
+      },
+      {
+        "technique": "basic_step",
+        "tip": "When holding hands with a partner, leaders use only the middle and ring fingers (not the whole hand). Followers hook onto those fingers. Don't squeeze; connection should be light and through the fingers only.",
+        "context": "Instructor demonstrated proper hand-hold mechanics for partner work."
+      },
+      {
+        "technique": "right_turn",
+        "tip": "Leaders: raise your arm on counts 5\u20136\u20137 (slowly, not suddenly) to signal the turn. The arm raise is centered, not out to the side. This is the signal; the direction of the turn is determined by your frame on counts 1\u20132\u20133.",
+        "context": "Instructor taught the leader's signaling technique and clarified that the arm raise alone does not determine turn direction."
+      }
+    ],
+    "class_structure": [
+      {
+        "section": "Basic Step Review & Right Turn",
+        "description": "Instructor reviewed the basic step structure (forward, forward, back, back, back, forward) and the On2 right turn. Emphasis on verbal cueing, body curve on count 1, and the turn placement on count 2. Repeated drilling with counting.",
+        "approx_minutes": 12
+      },
+      {
+        "section": "Suzy Q Shine",
+        "description": "Taught the Suzy Q pattern (cross, step, cross, cross, step, cross) with emphasis on keeping it tight, anchoring weight, and avoiding shuffles. Addressed posture and eye contact.",
+        "approx_minutes": 8
+      },
+      {
+        "section": "Side-to-Side Shine",
+        "description": "Introduced side-to-side as a variation of Suzy Q with a wider second step. Taught bilateral repetition (counts 1\u20132\u20133 and 5\u20136\u20137). Corrected weight transfer on count 3.",
+        "approx_minutes": 6
+      },
+      {
+        "section": "Combo Drilling (Solo)",
+        "description": "Combined right turn, Suzy Q, and side-to-side into a sequence. Instructor emphasized practicing individual moves first, then linking them. Repeated drilling with music and rotation.",
+        "approx_minutes": 10
+      },
+      {
+        "section": "Partner Work Setup & Basic Step",
+        "description": "Organized students into leader and follower lines. Taught hand-hold mechanics (two-finger connection). Drilled basic step in partner frame with counting. Addressed rotation logistics and partner etiquette.",
+        "approx_minutes": 8
+      },
+      {
+        "section": "Right Turn with Partner (Lead/Follow Mechanics)",
+        "description": "Taught the leader's arm-raise signal on counts 5\u20136\u20137 and the follower's turn on count 2. Addressed back-leading, frame control, arm extension, and leg closure during turns. Repeated drilling with corrections.",
+        "approx_minutes": 12
+      },
+      {
+        "section": "Partner Drilling with Music",
+        "description": "Applied right turn pattern to music with repeated rotations. Instructor provided real-time feedback on frame, arm extension, follower responsiveness, and turn timing.",
+        "approx_minutes": 8
+      }
+    ],
+    "summary": "Class #9 focused on mastering the basic step, right turn, and two foundational shines (Suzy Q and side-to-side) in both solo and partner contexts. The instructor emphasized verbal cueing, compact footwork, proper hand-hold mechanics, and the critical distinction between the leader's signal (arm raise on 5\u20136\u20137) and the actual turn direction (determined by frame on 1\u20132\u20133). Partner work drilled the follower's turn on count 2 and addressed common issues like back-leading, over-extension, and frame control.",
+    "key_phrases": [
+      "Forward, forward, back, back, back, forward",
+      "1, 2, 3, 5, 6, 7",
+      "Cross, step, cross",
+      "Say it out loud, don't think it",
+      "Curve your body",
+      "On2 break",
+      "Right turn on 2",
+      "Arm raise is a signal",
+      "Don't back-lead",
+      "Heel to toe",
+      "Gentle giant",
+      "Defensive dancing",
+      "Keep it tight",
+      "Two-finger connection",
+      "Slightly bent arm",
+      "Close your legs",
+      "Draw a halo"
+    ]
+  },
+  {
+    "class_date": "2026-09-08",
+    "class_number": 10,
+    "transcript_file": "nieves-dance-studio-9.json",
+    "matched_techniques": [
+      {
+        "name": "Basic Step",
+        "slug": "basic_step"
+      },
+      {
+        "name": "Side Step",
+        "slug": "side_step"
+      },
+      {
+        "name": "Hip Walk",
+        "slug": "hip_walk"
+      },
+      {
+        "name": "Chord Beat",
+        "slug": "chord_beat"
+      },
+      {
+        "name": "Right Turn",
+        "slug": "right_turn"
+      },
+      {
+        "name": "Left Turn",
+        "slug": "left_turn"
+      },
+      {
+        "name": "Cross Body Lead",
+        "slug": "cross_body_lead"
+      },
+      {
+        "name": "Comb",
+        "slug": "comb"
+      }
+    ],
+    "techniques_covered": [
+      "basic_step",
+      "side_step",
+      "hip_walk",
+      "chord_beat",
+      "right_turn",
+      "left_turn",
+      "cross_body_lead",
+      "comb"
+    ],
+    "topics": [
+      "timing",
+      "footwork",
+      "hand connection",
+      "frame control",
+      "weight transfer",
+      "body rotation",
+      "leader-follower mechanics",
+      "counting and rhythm",
+      "directional awareness",
+      "partner positioning"
+    ],
+    "extracted_tips": [
+      "Listen to yourself say the pattern aloud\u2014'forward, forward, back, back, back, forward'\u2014rather than mimicking the instructor. This activates your muscle memory and timing.",
+      "End each basic step with your right foot and left foot in front. If you end with both feet on the same side, you've made an error.",
+      "Hip walk structure: step, tap, step, step, tap, step. The right foot leads toward your intended direction; the left foot taps and returns to center.",
+      "When performing a hip walk, look toward the direction you want to turn (not at your feet). This helps your body commit to the direction and improves weight transfer.",
+      "You can perform a hip walk to the right or left, but if you want to reverse direction, you must start with the opposite foot. Starting with your left foot creates the same visual pattern when moving right.",
+      "Chord beats use only odd-numbered counts: 1, 3, 5, 7. Step only on these counts, skipping every other beat. Do not step on 2, 4, or 6.",
+      "When stepping chord beats to the right, you have two options: cross the second step or perform a crab walk (stepping 1-3-5-7 in a circular pattern).",
+      "Track which foot has your weight after each chord beat sequence. If your weight ends on your left foot, start the next chord beat with your right foot, not your left.",
+      "Keep chord beat steps small and uniform. Avoid exaggerating step size or taking wide steps; this makes the pattern harder to control and less visually clean.",
+      "Chord beats are a timing concept, not a specific move. You can walk chord beats in any direction or pattern; the key is stepping only on odd counts (1-3-5-7).",
+      "For a right turn from home position, step back on 7, lift your left foot, and land toward the door on 1. Continue turning by stepping forward on 3.",
+      "For a left turn, start on 7 by stepping back and lifting your left foot. Land toward the door on 1, then step forward on 3 to complete the turn.",
+      "Leaders: raise your left arm to lead the follower into a left turn. The follower turns under your left arm on counts 1-2-3.",
+      "Cross-body lead is one of the five fundamental moves leaders must master. It transitions from home position and requires proper hand positioning and frame control.",
+      "Comb position: raise your right arm with palm up and elbow in, bring your hand to center, then move it up and behind the follower's neck. This is like brushing hair, not rotating the follower's frame.",
+      "Leaders: when combing, keep your palm facing up and your elbow in. Move your hand from center upward and behind the follower's neck in one smooth motion.",
+      "Followers: do not break your connection during a comb. Keep your hand connected to the leader's fingertips throughout the movement. The leader is responsible for disconnecting, not you.",
+      "Combing is essential for transitioning into cross-hand position without hand-switching. Use combs strategically to flow into open positions rather than simply switching hands.",
+      "When dancing with a partner, leaders step back on counts 1-2-3 and 5-6-7. Followers mirror this timing but move in the opposite direction.",
+      "Keep counting even when music plays. Do not stop counting just because you feel comfortable; counting helps you stay on rhythm and understand the timing of each move."
+    ],
+    "teaching_points": [
+      {
+        "technique": "basic_step",
+        "tip": "Listen to yourself say the pattern aloud\u2014'forward, forward, back, back, back, forward'\u2014rather than mimicking the instructor. This activates your muscle memory and timing.",
+        "context": "Instructor emphasized that new students should attend 101 classes for basic step fundamentals, and that listening to the pattern is more effective than visual mimicry."
+      },
+      {
+        "technique": "basic_step",
+        "tip": "End each basic step with your right foot and left foot in front. If you end with both feet on the same side, you've made an error.",
+        "context": "Instructor used this as a checkpoint to verify correct basic step execution."
+      },
+      {
+        "technique": "hip_walk",
+        "tip": "Hip walk structure: step, tap, step, step, tap, step. The right foot leads toward your intended direction; the left foot taps and returns to center.",
+        "context": "Instructor deconstructed the hip walk as a foundational move (move #11) using side-to-side motion before adding turns."
+      },
+      {
+        "technique": "hip_walk",
+        "tip": "When performing a hip walk, look toward the direction you want to turn (not at your feet). This helps your body commit to the direction and improves weight transfer.",
+        "context": "Instructor corrected students who were looking down or at the mirror instead of toward their intended direction."
+      },
+      {
+        "technique": "hip_walk",
+        "tip": "You can perform a hip walk to the right or left, but if you want to reverse direction, you must start with the opposite foot. Starting with your left foot creates the same visual pattern when moving right.",
+        "context": "Instructor explained that reversing direction requires a different entry foot to maintain the same aesthetic."
+      },
+      {
+        "technique": "chord_beat",
+        "tip": "Chord beats use only odd-numbered counts: 1, 3, 5, 7. Step only on these counts, skipping every other beat. Do not step on 2, 4, or 6.",
+        "context": "Instructor taught chord beats as a timing concept where students count 1-2-3-4 but only step on 1, 3, and skip 2, 4."
+      },
+      {
+        "technique": "chord_beat",
+        "tip": "When stepping chord beats to the right, you have two options: cross the second step or perform a crab walk (stepping 1-3-5-7 in a circular pattern).",
+        "context": "Instructor demonstrated both crossing and crab-walk variations for chord beat directional changes."
+      },
+      {
+        "technique": "chord_beat",
+        "tip": "Track which foot has your weight after each chord beat sequence. If your weight ends on your left foot, start the next chord beat with your right foot, not your left.",
+        "context": "Instructor corrected students who were reusing the same foot, emphasizing weight transfer awareness."
+      },
+      {
+        "technique": "chord_beat",
+        "tip": "Keep chord beat steps small and uniform. Avoid exaggerating step size or taking wide steps; this makes the pattern harder to control and less visually clean.",
+        "context": "Instructor observed students taking overly large steps and encouraged smaller, more controlled movements."
+      },
+      {
+        "technique": "chord_beat",
+        "tip": "Chord beats are a timing concept, not a specific move. You can walk chord beats in any direction or pattern; the key is stepping only on odd counts (1-3-5-7).",
+        "context": "Instructor clarified that chord beats are a rhythmic framework that can be applied to various movements and directions."
+      },
+      {
+        "technique": "right_turn",
+        "tip": "For a right turn from home position, step back on 7, lift your left foot, and land toward the door on 1. Continue turning by stepping forward on 3.",
+        "context": "Instructor taught the right turn as a fundamental move (move #1) that leaders must master before advancing."
+      },
+      {
+        "technique": "left_turn",
+        "tip": "For a left turn, start on 7 by stepping back and lifting your left foot. Land toward the door on 1, then step forward on 3 to complete the turn.",
+        "context": "Instructor taught the left turn as move #14, emphasizing the same entry mechanics as the right turn but with opposite body rotation."
+      },
+      {
+        "technique": "left_turn",
+        "tip": "Leaders: raise your left arm to lead the follower into a left turn. The follower turns under your left arm on counts 1-2-3.",
+        "context": "Instructor demonstrated the arm lead for left turns during partner work, showing how the raised left arm guides the follower's rotation."
+      },
+      {
+        "technique": "cross_body_lead",
+        "tip": "Cross-body lead is one of the five fundamental moves leaders must master. It transitions from home position and requires proper hand positioning and frame control.",
+        "context": "Instructor listed cross-body lead as a required fundamental move alongside basic, right turn, left turn, and homing."
+      },
+      {
+        "technique": "comb",
+        "tip": "Comb position: raise your right arm with palm up and elbow in, bring your hand to center, then move it up and behind the follower's neck. This is like brushing hair, not rotating the follower's frame.",
+        "context": "Instructor emphasized that combing should not cause the follower to turn; it should keep them moving forward while you prepare for the next move."
+      },
+      {
+        "technique": "comb",
+        "tip": "Leaders: when combing, keep your palm facing up and your elbow in. Move your hand from center upward and behind the follower's neck in one smooth motion.",
+        "context": "Instructor demonstrated the correct hand path for combing, contrasting it with incorrect outside-in motions that cause unwanted frame rotation."
+      },
+      {
+        "technique": "comb",
+        "tip": "Followers: do not break your connection during a comb. Keep your hand connected to the leader's fingertips throughout the movement. The leader is responsible for disconnecting, not you.",
+        "context": "Instructor stressed that 99% of connection breaks are the leader's fault; followers should maintain contact unless the leader explicitly releases."
+      },
+      {
+        "technique": "comb",
+        "tip": "Combing is essential for transitioning into cross-hand position without hand-switching. Use combs strategically to flow into open positions rather than simply switching hands.",
+        "context": "Instructor explained that combing is a building block for more advanced combinations and helps leaders develop smoother transitions."
+      },
+      {
+        "technique": "basic_step",
+        "tip": "When dancing with a partner, leaders step back on counts 1-2-3 and 5-6-7. Followers mirror this timing but move in the opposite direction.",
+        "context": "Instructor taught the leader-follower basic step during partner work, emphasizing synchronized timing on the same counts."
+      },
+      {
+        "technique": "side_step",
+        "tip": "Keep counting even when music plays. Do not stop counting just because you feel comfortable; counting helps you stay on rhythm and understand the timing of each move.",
+        "context": "Instructor gave a final tip about maintaining internal counting throughout the class and during social dancing to ensure consistent timing."
+      }
+    ],
+    "class_structure": [
+      {
+        "section": "Introduction & Basic Step Review",
+        "description": "Instructor explained that basic step (move #1) is taught in 101 classes and will not be covered in detail. Class focuses on moves 1-20 (beginner level). Students reviewed the basic step pattern: forward, forward, back, back, back, forward.",
+        "approx_minutes": 5
+      },
+      {
+        "section": "Hip Walk (Move #11) Instruction",
+        "description": "Instructor taught the hip walk as a foundational move using the pattern: step, tap, step, step, tap, step. Emphasized looking toward the direction of travel and explained how to reverse direction by changing the entry foot.",
+        "approx_minutes": 8
+      },
+      {
+        "section": "Chord Beat (Move #14) Instruction",
+        "description": "Instructor taught chord beats as a timing concept using only odd counts (1-3-5-7). Demonstrated stepping patterns, weight transfer awareness, and directional variations (crossing vs. crab walk). Emphasized keeping steps small and uniform.",
+        "approx_minutes": 12
+      },
+      {
+        "section": "Chord Beat Combination with Turn",
+        "description": "Instructor combined chord beats (1-3-5-7) with a basic step (1-2-3, 5-6-7). Taught the hook-and-turn technique: hook the right foot behind the left on 7, turn the body, step toward the mirror on 3, then return to basic step.",
+        "approx_minutes": 10
+      },
+      {
+        "section": "Music Practice & Counting Emphasis",
+        "description": "Students practiced the hip walk and chord beat combination with music. Instructor emphasized the importance of continuous counting even when music plays, and explained that counting helps maintain rhythm and timing.",
+        "approx_minutes": 8
+      },
+      {
+        "section": "Partner Lineup & Rotation Explanation",
+        "description": "Instructor organized leaders and followers into lines and explained the rotation system. Leaders rotate up and down the line while followers stay in place. Emphasized that this is the most challenging logistical part of the class.",
+        "approx_minutes": 5
+      },
+      {
+        "section": "Partner Basic Step & Hand Connection",
+        "description": "Leaders and followers practiced the basic step together. Instructor taught hand connection technique: leaders use only middle and ring fingers, creating a 'cuff' for the follower to hook onto. Followers maintain wrist alignment with arm and avoid breaking wrists.",
+        "approx_minutes": 5
+      },
+      {
+        "section": "Combing Technique Instruction",
+        "description": "Instructor taught the comb as a foundational move. Emphasized correct hand path (palm up, elbow in, center, up, behind neck) and explained that combing should not cause the follower to turn. Stressed that followers must maintain connection throughout.",
+        "approx_minutes": 8
+      },
+      {
+        "section": "Left Turn Instruction",
+        "description": "Instructor taught the left turn as move #14. Demonstrated the entry on 7 (step back, lift left foot), landing on 1 (toward door), and completing on 3 (step forward). Taught the arm lead (raise left arm) for partner work.",
+        "approx_minutes": 6
+      },
+      {
+        "section": "Partner Practice with Music",
+        "description": "Leaders and followers practiced the basic step, left turn, and comb combination with music. Instructor provided real-time corrections on timing, frame, and connection.",
+        "approx_minutes": 8
+      }
+    ],
+    "summary": "Class #10 focused on beginner-level moves 1-20, specifically teaching the hip walk (move #11) and chord beat timing (move #14), along with a combination that incorporates a hook-and-turn. The instructor emphasized the importance of continuous counting, proper hand connection (leaders using only middle and ring fingers), and the comb technique as a foundational move. Partner work included basic step review, left turn instruction, and real-time corrections on frame and connection, with the instructor stressing that 99% of connection issues are the leader's responsibility.",
+    "key_phrases": [
+      "forward, forward, back, back, back, forward",
+      "step, tap, step, step, tap, step",
+      "1, 3, 5, 7",
+      "odd numbers only",
+      "hook and turn",
+      "pizza pie position",
+      "cuff motion",
+      "hand aligned with wrist, aligned with arm",
+      "keep counting",
+      "don't break connection",
+      "99% leader's fault, 1% follower's fault",
+      "moves 1-20 are the most important",
+      "five fundamentals: basic, right turn, left turn, cross body, homing"
+    ]
+  },
+  {
+    "class_date": "2026-09-08-advanced",
+    "class_number": 11,
+    "transcript_file": "nieves-music-academy-2.json",
+    "matched_techniques": [
+      {
+        "name": "Left Turn",
+        "slug": "left_turn"
+      },
+      {
+        "name": "Comb",
+        "slug": "comb"
+      },
+      {
+        "name": "Combo",
+        "slug": "combo"
+      },
+      {
+        "name": "Basic Step",
+        "slug": "basic_step"
+      }
+    ],
+    "techniques_covered": [
+      "left_turn",
+      "comb",
+      "combo",
+      "basic_step"
+    ],
+    "topics": [
+      "timing",
+      "hand positioning",
+      "partner control",
+      "directional awareness",
+      "arm mechanics",
+      "combo sequencing",
+      "leader-follower connection"
+    ],
+    "extracted_tips": [
+      "Step back on count 7 and turn to the left; do not turn on count 6. Ensure you're stepping back on 7 before initiating the turn (5-6-7-step-turn-1).",
+      "Comb the follower when you are moving towards them (counts 1-2-3), not when they are coming towards you, to reduce risk and maintain control.",
+      "Comb with your right hand on counts 1-2-3, then turn with your left hand on count 7, followed by combing with your left hand on counts 1-2.",
+      "Keep your other hand forward while combing with one hand only; this reduces the likelihood of the follower turning unintentionally.",
+      "Do not comb using only one hand; always keep the other hand forward to guide and control the follower's movement.",
+      "When turning on 7-1-2, the follower is already in a 'peace' position; simply pull them over without flipping or excessive switching of hand positions.",
+      "Raise your left hand (elbow in, centered, arm up and behind) when executing the left turn to guide the follower smoothly.",
+      "Execute the full sequence: basic step (1-2-3), comb towards the follower (5-6-7), left turn (7-1-2), then comb again with the left hand (5-6-7).",
+      "Counts 5-6-7 are your basic step before the comb and turn sequence begins."
+    ],
+    "teaching_points": [
+      {
+        "technique": "left_turn",
+        "tip": "Step back on count 7 and turn to the left; do not turn on count 6. Ensure you're stepping back on 7 before initiating the turn (5-6-7-step-turn-1).",
+        "context": "Instructor corrected timing of the left turn, emphasizing the importance of the 7 count step-back before the turn begins."
+      },
+      {
+        "technique": "comb",
+        "tip": "Comb the follower when you are moving towards them (counts 1-2-3), not when they are coming towards you, to reduce risk and maintain control.",
+        "context": "Instructor explained the strategic timing of the comb technique in relation to partner movement direction."
+      },
+      {
+        "technique": "comb",
+        "tip": "Comb with your right hand on counts 1-2-3, then turn with your left hand on count 7, followed by combing with your left hand on counts 1-2.",
+        "context": "Instructor demonstrated the hand alternation pattern within the combo sequence."
+      },
+      {
+        "technique": "comb",
+        "tip": "Keep your other hand forward while combing with one hand only; this reduces the likelihood of the follower turning unintentionally.",
+        "context": "Instructor explained hand positioning strategy to maintain follower control during the comb."
+      },
+      {
+        "technique": "comb",
+        "tip": "Do not comb using only one hand; always keep the other hand forward to guide and control the follower's movement.",
+        "context": "Instructor emphasized the importance of two-hand positioning for safety and control."
+      },
+      {
+        "technique": "left_turn",
+        "tip": "When turning on 7-1-2, the follower is already in a 'peace' position; simply pull them over without flipping or excessive switching of hand positions.",
+        "context": "Instructor demonstrated efficient hand mechanics during the left turn, avoiding unnecessary arm movements."
+      },
+      {
+        "technique": "left_turn",
+        "tip": "Raise your left hand (elbow in, centered, arm up and behind) when executing the left turn to guide the follower smoothly.",
+        "context": "Instructor gave specific arm positioning cues for the leader's left turn mechanics."
+      },
+      {
+        "technique": "combo",
+        "tip": "Execute the full sequence: basic step (1-2-3), comb towards the follower (5-6-7), left turn (7-1-2), then comb again with the left hand (5-6-7).",
+        "context": "Instructor taught the complete combo structure and its timing within the 8-count phrase."
+      },
+      {
+        "technique": "basic_step",
+        "tip": "Counts 5-6-7 are your basic step before the comb and turn sequence begins.",
+        "context": "Instructor referenced the basic step as the foundation leading into the comb-turn-comb combo."
+      }
+    ],
+    "class_structure": [
+      {
+        "section": "Timing Correction: Left Turn on 7",
+        "description": "Instructor corrected students on the timing of the left turn, emphasizing that the step back must occur on count 7, not count 6, to avoid premature turning.",
+        "approx_minutes": 3
+      },
+      {
+        "section": "Comb Technique: Direction & Strategy",
+        "description": "Instructor explained when to comb (moving towards follower on 1-2-3) versus when not to comb (when follower is coming towards you), and the reasoning behind this directional choice.",
+        "approx_minutes": 4
+      },
+      {
+        "section": "Combo Breakdown: Comb-Turn-Comb",
+        "description": "Instructor taught the full combo sequence: basic step (1-2-3), comb with right hand (5-6-7), left turn (7-1-2), comb with left hand (5-6-7), with hand alternation and positioning details.",
+        "approx_minutes": 5
+      },
+      {
+        "section": "Hand Positioning & Control",
+        "description": "Instructor demonstrated proper two-hand positioning during combs, keeping one hand forward to prevent unintended follower rotation and maintain control.",
+        "approx_minutes": 4
+      },
+      {
+        "section": "Left Turn Mechanics",
+        "description": "Instructor showed arm positioning (left hand up, elbow in, centered) and explained that the follower is already in 'peace' position on 7-1-2, so the leader simply pulls without excessive switching.",
+        "approx_minutes": 3
+      },
+      {
+        "section": "Full Combo Practice with Music",
+        "description": "Students practiced the complete comb-turn-comb combo sequence multiple times with music, with instructor providing real-time feedback and corrections.",
+        "approx_minutes": 15
+      },
+      {
+        "section": "Announcements",
+        "description": "Instructor reminded students about the Salsa Fiesta event the following day.",
+        "approx_minutes": 1
+      }
+    ],
+    "summary": "This advanced class focused on a comb-turn-comb combo sequence with emphasis on precise timing (step back on 7, turn on 7-1-2) and strategic hand positioning. The instructor taught that combs should be executed when moving towards the follower (counts 1-2-3) rather than when they approach, and demonstrated proper two-hand control to prevent unintended follower rotation. Students practiced the full sequence with music, incorporating right-hand combs, left turns, and left-hand combs within the 8-count phrase.",
+    "key_phrases": [
+      "step back on 7",
+      "turn to the left",
+      "towards them",
+      "comb them",
+      "peace position",
+      "pull with the left",
+      "keep the other hand forward",
+      "elbow in, center",
+      "arm up and behind",
+      "1-2-3, 5-6-7"
+    ],
+    "session_label": "2026-09-08 \u00b7 later class",
+    "actual_date": "2026-09-08",
+    "venue": "Nieves Music Academy"
   }
 ]

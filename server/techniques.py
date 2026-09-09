@@ -29,10 +29,10 @@ TECHNIQUE_ALIASES = {
     "single_right_turn": "right_turn",
 }
 
-VIDEO_KEYS = {
-    "around_the_world": "basic_step",
-    "half_step": "basic_step",
-}
+# Tutorial catalogs are keyed by the exact technique slug. Missing techniques
+# are populated by ingest.youtube_tutorials using LLM-generated searches and
+# LLM candidate ranking; do not silently substitute a parent technique.
+VIDEO_KEYS: dict[str, str] = {}
 
 DEFAULT_NAMES = {
     "around_the_world": "Around the World",
@@ -86,7 +86,7 @@ DEFAULT_CONTENT = {
             "Anchor counts 3 and 7 before redirecting to the next clock-face position.",
         ],
         "connects_to": ["basic_step", "half_step", "suzy_q"],
-        "video_keys": ["basic_step"],
+        "video_keys": ["around_the_world"],
     },
     "half_step": {
         "name": "Half Step",
@@ -127,7 +127,7 @@ DEFAULT_CONTENT = {
             "Practice stopping the rotation halfway without losing the On2 count.",
         ],
         "connects_to": ["basic_step", "around_the_world", "suzy_q"],
-        "video_keys": ["basic_step"],
+        "video_keys": ["half_step"],
     },
     "suzy_q": {
         "name": "Suzy Q",

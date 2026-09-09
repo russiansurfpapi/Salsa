@@ -15,12 +15,16 @@ from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
 from server import mongo
+from server.practice_library import build_practice_library
+from server.practice_llm import PracticeLLMError, generate_practice_plan
+from server.salsa_context import SALSA_STYLE_NAME
 from server.techniques import (
     default_technique_content,
     display_name_for_slug,
     normalize_technique_slug,
     video_key_for_technique,
 )
+from server.video_lectures import build_video_lecture_library
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
@@ -70,6 +74,11 @@ def practice_page() -> FileResponse:
 @app.get("/techniques", response_class=HTMLResponse)
 def techniques_page() -> FileResponse:
     return FileResponse(WEB / "techniques-browser.html")
+
+
+@app.get("/video-lectures", response_class=HTMLResponse)
+def video_lectures_page() -> FileResponse:
+    return FileResponse(WEB / "video-lectures.html")
 
 
 @app.get("/quiz", response_class=HTMLResponse)
@@ -255,7 +264,11 @@ def get_technique(slug: str) -> dict:
         if vb:
             frame_slug = vb.get("frame_slug", "")
             steps = vb.get("steps", [])
-            relevant = [s for s in steps if s.get("technique") == slug]
+            relevant = [
+                s
+                for s in steps
+                if slug in s.get("techniques", [s.get("technique")])
+            ]
             for s in relevant:
                 s["frame_url"] = f"/api/frames/{frame_slug}/{s['frame']}"
             tech["class_video_breakdown"] = {
@@ -275,6 +288,176 @@ def get_technique(slug: str) -> dict:
 @app.get("/api/progression")
 def get_progression() -> dict:
     return _load_json("progression.json") or {}
+
+
+@app.get("/api/practices")
+def list_premade_practices() -> dict:
+    """Return one deterministic, class-linked practice per detected technique."""
+    lecture_library = build_video_lecture_library(
+        _load_json("technique_breakdowns.json") or {},
+        _load_json("study_guides.json") or {},
+        _load_json("class_notes.json") or [],
+    )
+    return build_practice_library(
+        _load_json("class_notes.json") or [],
+        _load_json("techniques.json") or {},
+        lecture_library,
+    )
+
+
+@app.get("/api/practices/{slug}")
+def get_premade_practice(slug: str) -> dict:
+    slug = normalize_technique_slug(slug)
+    library = list_premade_practices()
+    practice = next(
+        (
+            item
+            for item in library.get("practices", [])
+            if item.get("technique") == slug
+        ),
+        None,
+    )
+    if not practice:
+        raise HTTPException(404, f"no class practice for {slug}")
+    return practice
+
+
+@app.get("/api/video-lectures")
+def list_video_lectures(technique: str = "", class_date: str = "") -> dict:
+    """Return the centralized lecture index, optionally filtered by tag/date."""
+    library = build_video_lecture_library(
+        _load_json("technique_breakdowns.json") or {},
+        _load_json("study_guides.json") or {},
+        _load_json("class_notes.json") or [],
+    )
+    technique = normalize_technique_slug(technique) if technique else ""
+    if not technique and not class_date:
+        return library
+
+    lectures = []
+    for lecture in library.get("lectures", []):
+        if class_date and lecture.get("class_date") != class_date:
+            continue
+        filtered_parts = [
+            part
+            for part in lecture.get("parts", [])
+            if not technique or technique in part.get("techniques", [])
+        ]
+        if technique and not filtered_parts:
+            continue
+        lectures.append(
+            {
+                **lecture,
+                "parts": filtered_parts,
+                "part_count": len(filtered_parts),
+            }
+        )
+    return {
+        **library,
+        "lecture_count": len(lectures),
+        "part_count": sum(lecture["part_count"] for lecture in lectures),
+        "active_technique": technique,
+        "active_class_date": class_date,
+        "lectures": lectures,
+    }
+
+
+@app.get("/api/video-lectures/{lecture_id}")
+def get_video_lecture(lecture_id: str) -> dict:
+    library = list_video_lectures()
+    lecture = next(
+        (
+            item
+            for item in library.get("lectures", [])
+            if item.get("id") == lecture_id
+        ),
+        None,
+    )
+    if not lecture:
+        raise HTTPException(404, f"no video lecture for {lecture_id}")
+    return lecture
+
+
+class PracticeGenerateReq(BaseModel):
+    prompt: str = ""
+    minutes: int = 25
+
+
+def _practice_evidence() -> dict:
+    """Collect concise local evidence for personalized LLM practice."""
+    progression = _load_json("progression.json") or {}
+    phases = progression.get("phases", [])
+    phase_idx = progression.get("current_phase", 0)
+    current_phase = phases[phase_idx] if 0 <= phase_idx < len(phases) else {}
+    next_session = next(
+        (
+            session
+            for session in current_phase.get("practice_sessions", [])
+            if not session.get("completed")
+        ),
+        None,
+    )
+
+    class_notes = _load_json("class_notes.json") or []
+    latest_class = max(
+        class_notes,
+        key=lambda note: note.get("class_date", ""),
+        default={},
+    )
+
+    ratings = (_load_json("skill_ratings.json") or {}).get("ratings", {})
+    weak_skills = [
+        {
+            "skill_id": skill_id,
+            "rating": row.get("rating", 0),
+            "notes": row.get("notes", ""),
+        }
+        for skill_id, row in ratings.items()
+        if 0 < row.get("rating", 0) <= 2
+    ]
+
+    return {
+        "curriculum_style": progression.get("style", SALSA_STYLE_NAME),
+        "student_perspective": "leader unless the request says otherwise",
+        "latest_class": {
+            "date": latest_class.get("class_date", ""),
+            "number": latest_class.get("class_number"),
+            "summary": latest_class.get("summary", ""),
+            "techniques": latest_class.get("techniques_covered", []),
+            "teaching_points": latest_class.get("teaching_points", [])[:20],
+            "key_phrases": latest_class.get("key_phrases", [])[:15],
+        },
+        "current_curriculum_phase": {
+            "name": current_phase.get("name", ""),
+            "why": current_phase.get("why", ""),
+            "techniques": current_phase.get("techniques", []),
+            "next_scheduled_session": next_session,
+        },
+        "weak_skills": weak_skills[:10],
+    }
+
+
+@app.post("/api/practice/generate")
+def generate_practice(req: PracticeGenerateReq) -> dict:
+    prompt = req.prompt.strip() or (
+        "Build today's most useful practice from my latest class, prioritizing "
+        "the newest technique and the instructor cues I most need to retain."
+    )
+    minutes = max(10, min(req.minutes, 60))
+    try:
+        plan, model = generate_practice_plan(
+            prompt,
+            minutes,
+            _practice_evidence(),
+        )
+    except PracticeLLMError as exc:
+        raise HTTPException(503, str(exc)) from exc
+    return {
+        "prompt": prompt,
+        "style": SALSA_STYLE_NAME,
+        "generated_by": model,
+        "plan": plan,
+    }
 
 
 class PracticeCompleteReq(BaseModel):

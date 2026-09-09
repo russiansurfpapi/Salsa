@@ -1,0 +1,741 @@
+{
+  "text": "And 123567123, hip walk, just a regular hip walk. 123, basic step, and 1, 2, core beat in place, 67135, repeating it, and 135, basic step, and 1, 2. So these are the ones that you can practice, not the combo. But now if you want the combo, here comes the domino hip walk and 1235. Ho, and 13571. Partner work, 56712367. We go 23I forgot, ho, and 12356, turn, 1, 2, boom. 4, cross-body lean on this side, 2, 3, 6, 7, I'm going to go, 2, 3, 2, 3, 5, 6, 7, 1, 2, 3, 5, stop, break. Make some noise!",
+  "duration": 68.905,
+  "words": [
+    {
+      "word": "and",
+      "start": 0.06,
+      "end": 0.48,
+      "confidence": 0.90238917,
+      "punctuated_word": "And"
+    },
+    {
+      "word": "123567123",
+      "start": 0.48,
+      "end": 6.54,
+      "confidence": 0.74245954,
+      "punctuated_word": "123567123,"
+    },
+    {
+      "word": "hip",
+      "start": 6.66,
+      "end": 6.98,
+      "confidence": 0.79545075,
+      "punctuated_word": "hip"
+    },
+    {
+      "word": "walk",
+      "start": 6.98,
+      "end": 7.3599997,
+      "confidence": 0.705765,
+      "punctuated_word": "walk,"
+    },
+    {
+      "word": "just",
+      "start": 7.3599997,
+      "end": 7.54,
+      "confidence": 0.9115292,
+      "punctuated_word": "just"
+    },
+    {
+      "word": "a",
+      "start": 7.54,
+      "end": 7.68,
+      "confidence": 0.89844495,
+      "punctuated_word": "a"
+    },
+    {
+      "word": "regular",
+      "start": 7.68,
+      "end": 8.04,
+      "confidence": 0.7293213,
+      "punctuated_word": "regular"
+    },
+    {
+      "word": "hip",
+      "start": 8.04,
+      "end": 8.26,
+      "confidence": 0.56912416,
+      "punctuated_word": "hip"
+    },
+    {
+      "word": "walk",
+      "start": 8.26,
+      "end": 8.76,
+      "confidence": 0.2710203,
+      "punctuated_word": "walk."
+    },
+    {
+      "word": "123",
+      "start": 8.94,
+      "end": 10.62,
+      "confidence": 0.69706327,
+      "punctuated_word": "123,"
+    },
+    {
+      "word": "basic",
+      "start": 10.92,
+      "end": 11.42,
+      "confidence": 0.5313249,
+      "punctuated_word": "basic"
+    },
+    {
+      "word": "step",
+      "start": 11.48,
+      "end": 11.98,
+      "confidence": 0.5597974,
+      "punctuated_word": "step,"
+    },
+    {
+      "word": "and",
+      "start": 12.04,
+      "end": 12.54,
+      "confidence": 0.97339135,
+      "punctuated_word": "and"
+    },
+    {
+      "word": "1",
+      "start": 12.799999,
+      "end": 13.299999,
+      "confidence": 0.75763077,
+      "punctuated_word": "1,"
+    },
+    {
+      "word": "2",
+      "start": 13.38,
+      "end": 13.88,
+      "confidence": 0.27937442,
+      "punctuated_word": "2,"
+    },
+    {
+      "word": "core",
+      "start": 14.059999,
+      "end": 14.44,
+      "confidence": 0.799912,
+      "punctuated_word": "core"
+    },
+    {
+      "word": "beat",
+      "start": 14.44,
+      "end": 14.719999,
+      "confidence": 0.8346651,
+      "punctuated_word": "beat"
+    },
+    {
+      "word": "in",
+      "start": 14.719999,
+      "end": 14.96,
+      "confidence": 0.9176886,
+      "punctuated_word": "in"
+    },
+    {
+      "word": "place",
+      "start": 14.96,
+      "end": 15.46,
+      "confidence": 0.8453843,
+      "punctuated_word": "place,"
+    },
+    {
+      "word": "67135",
+      "start": 15.58,
+      "end": 19.359999,
+      "confidence": 0.6294569,
+      "punctuated_word": "67135,"
+    },
+    {
+      "word": "repeating",
+      "start": 19.359999,
+      "end": 19.859999,
+      "confidence": 0.5786713,
+      "punctuated_word": "repeating"
+    },
+    {
+      "word": "it",
+      "start": 19.88,
+      "end": 20.14,
+      "confidence": 0.8625918,
+      "punctuated_word": "it,"
+    },
+    {
+      "word": "and",
+      "start": 20.14,
+      "end": 20.64,
+      "confidence": 0.9968966,
+      "punctuated_word": "and"
+    },
+    {
+      "word": "135",
+      "start": 21.02,
+      "end": 23.42,
+      "confidence": 0.5955753,
+      "punctuated_word": "135,"
+    },
+    {
+      "word": "basic",
+      "start": 23.46,
+      "end": 23.9,
+      "confidence": 0.86522317,
+      "punctuated_word": "basic"
+    },
+    {
+      "word": "step",
+      "start": 23.9,
+      "end": 24.34,
+      "confidence": 0.88050675,
+      "punctuated_word": "step,"
+    },
+    {
+      "word": "and",
+      "start": 24.34,
+      "end": 24.84,
+      "confidence": 0.9155479,
+      "punctuated_word": "and"
+    },
+    {
+      "word": "1",
+      "start": 24.84,
+      "end": 25.2,
+      "confidence": 0.7851215,
+      "punctuated_word": "1,"
+    },
+    {
+      "word": "2",
+      "start": 25.2,
+      "end": 25.439999,
+      "confidence": 0.13588414,
+      "punctuated_word": "2."
+    },
+    {
+      "word": "so",
+      "start": 25.439999,
+      "end": 25.58,
+      "confidence": 0.8913626,
+      "punctuated_word": "So"
+    },
+    {
+      "word": "these",
+      "start": 25.58,
+      "end": 25.76,
+      "confidence": 0.81721354,
+      "punctuated_word": "these"
+    },
+    {
+      "word": "are",
+      "start": 25.76,
+      "end": 25.9,
+      "confidence": 0.7991584,
+      "punctuated_word": "are"
+    },
+    {
+      "word": "the",
+      "start": 25.9,
+      "end": 26.0,
+      "confidence": 0.61824894,
+      "punctuated_word": "the"
+    },
+    {
+      "word": "ones",
+      "start": 26.0,
+      "end": 26.18,
+      "confidence": 0.8691514,
+      "punctuated_word": "ones"
+    },
+    {
+      "word": "that",
+      "start": 26.18,
+      "end": 26.32,
+      "confidence": 0.5404065,
+      "punctuated_word": "that"
+    },
+    {
+      "word": "you",
+      "start": 26.32,
+      "end": 26.48,
+      "confidence": 0.749977,
+      "punctuated_word": "you"
+    },
+    {
+      "word": "can",
+      "start": 26.48,
+      "end": 26.68,
+      "confidence": 0.721309,
+      "punctuated_word": "can"
+    },
+    {
+      "word": "practice",
+      "start": 26.68,
+      "end": 27.18,
+      "confidence": 0.13325845,
+      "punctuated_word": "practice,"
+    },
+    {
+      "word": "not",
+      "start": 27.18,
+      "end": 27.380001,
+      "confidence": 0.44119474,
+      "punctuated_word": "not"
+    },
+    {
+      "word": "the",
+      "start": 27.380001,
+      "end": 27.7,
+      "confidence": 0.8174633,
+      "punctuated_word": "the"
+    },
+    {
+      "word": "combo",
+      "start": 27.7,
+      "end": 28.2,
+      "confidence": 0.11771597,
+      "punctuated_word": "combo."
+    },
+    {
+      "word": "but",
+      "start": 28.2,
+      "end": 28.34,
+      "confidence": 0.39379624,
+      "punctuated_word": "But"
+    },
+    {
+      "word": "now",
+      "start": 28.34,
+      "end": 28.52,
+      "confidence": 0.8868621,
+      "punctuated_word": "now"
+    },
+    {
+      "word": "if",
+      "start": 28.52,
+      "end": 28.66,
+      "confidence": 0.6902453,
+      "punctuated_word": "if"
+    },
+    {
+      "word": "you",
+      "start": 28.66,
+      "end": 28.779999,
+      "confidence": 0.48027444,
+      "punctuated_word": "you"
+    },
+    {
+      "word": "want",
+      "start": 28.779999,
+      "end": 28.939999,
+      "confidence": 0.7817776,
+      "punctuated_word": "want"
+    },
+    {
+      "word": "the",
+      "start": 28.939999,
+      "end": 29.06,
+      "confidence": 0.9096369,
+      "punctuated_word": "the"
+    },
+    {
+      "word": "combo",
+      "start": 29.06,
+      "end": 29.439999,
+      "confidence": 0.2325018,
+      "punctuated_word": "combo,"
+    },
+    {
+      "word": "here",
+      "start": 29.439999,
+      "end": 29.68,
+      "confidence": 0.7853607,
+      "punctuated_word": "here"
+    },
+    {
+      "word": "comes",
+      "start": 29.68,
+      "end": 29.86,
+      "confidence": 0.26728854,
+      "punctuated_word": "comes"
+    },
+    {
+      "word": "the",
+      "start": 29.86,
+      "end": 29.98,
+      "confidence": 0.90734905,
+      "punctuated_word": "the"
+    },
+    {
+      "word": "domino",
+      "start": 29.98,
+      "end": 30.4,
+      "confidence": 0.56369233,
+      "punctuated_word": "domino"
+    },
+    {
+      "word": "hip",
+      "start": 30.4,
+      "end": 30.7,
+      "confidence": 0.27112776,
+      "punctuated_word": "hip"
+    },
+    {
+      "word": "walk",
+      "start": 30.7,
+      "end": 31.2,
+      "confidence": 0.99848914,
+      "punctuated_word": "walk"
+    },
+    {
+      "word": "and",
+      "start": 31.24,
+      "end": 31.74,
+      "confidence": 0.9889713,
+      "punctuated_word": "and"
+    },
+    {
+      "word": "1235",
+      "start": 32.12,
+      "end": 34.4,
+      "confidence": 0.6795852,
+      "punctuated_word": "1235."
+    },
+    {
+      "word": "ho",
+      "start": 34.4,
+      "end": 34.9,
+      "confidence": 0.35348925,
+      "punctuated_word": "Ho,"
+    },
+    {
+      "word": "and",
+      "start": 35.0,
+      "end": 35.5,
+      "confidence": 0.99133533,
+      "punctuated_word": "and"
+    },
+    {
+      "word": "13571",
+      "start": 35.739998,
+      "end": 39.64,
+      "confidence": 0.6814213,
+      "punctuated_word": "13571."
+    },
+    {
+      "word": "partner",
+      "start": 39.68,
+      "end": 40.12,
+      "confidence": 0.82364905,
+      "punctuated_word": "Partner"
+    },
+    {
+      "word": "work",
+      "start": 40.12,
+      "end": 40.62,
+      "confidence": 0.7982573,
+      "punctuated_word": "work,"
+    },
+    {
+      "word": "56712367",
+      "start": 40.760002,
+      "end": 45.52,
+      "confidence": 0.7528082,
+      "punctuated_word": "56712367."
+    },
+    {
+      "word": "we",
+      "start": 45.54,
+      "end": 45.72,
+      "confidence": 0.47066516,
+      "punctuated_word": "We"
+    },
+    {
+      "word": "go",
+      "start": 45.72,
+      "end": 46.22,
+      "confidence": 0.9775237,
+      "punctuated_word": "go"
+    },
+    {
+      "word": "23i",
+      "start": 46.239998,
+      "end": 47.28,
+      "confidence": 0.7378497,
+      "punctuated_word": "23I"
+    },
+    {
+      "word": "forgot",
+      "start": 47.28,
+      "end": 47.78,
+      "confidence": 0.27130777,
+      "punctuated_word": "forgot,"
+    },
+    {
+      "word": "ho",
+      "start": 47.86,
+      "end": 48.3,
+      "confidence": 0.655847,
+      "punctuated_word": "ho,"
+    },
+    {
+      "word": "and",
+      "start": 48.3,
+      "end": 48.8,
+      "confidence": 0.99093926,
+      "punctuated_word": "and"
+    },
+    {
+      "word": "12356",
+      "start": 48.96,
+      "end": 51.72,
+      "confidence": 0.8481673,
+      "punctuated_word": "12356,"
+    },
+    {
+      "word": "turn",
+      "start": 51.72,
+      "end": 52.22,
+      "confidence": 0.81223553,
+      "punctuated_word": "turn,"
+    },
+    {
+      "word": "1",
+      "start": 52.34,
+      "end": 52.84,
+      "confidence": 0.81583667,
+      "punctuated_word": "1,"
+    },
+    {
+      "word": "2",
+      "start": 52.98,
+      "end": 53.42,
+      "confidence": 0.37232986,
+      "punctuated_word": "2,"
+    },
+    {
+      "word": "boom",
+      "start": 53.42,
+      "end": 53.44,
+      "confidence": 0.14942184,
+      "punctuated_word": "boom."
+    },
+    {
+      "word": "4",
+      "start": 53.44,
+      "end": 53.94,
+      "confidence": 0.09259727,
+      "punctuated_word": "4,"
+    },
+    {
+      "word": "cross-body",
+      "start": 54.28,
+      "end": 54.78,
+      "confidence": 0.113026515,
+      "punctuated_word": "cross-body"
+    },
+    {
+      "word": "lean",
+      "start": 54.96,
+      "end": 55.2,
+      "confidence": 0.79596996,
+      "punctuated_word": "lean"
+    },
+    {
+      "word": "on",
+      "start": 55.2,
+      "end": 55.36,
+      "confidence": 0.81504154,
+      "punctuated_word": "on"
+    },
+    {
+      "word": "this",
+      "start": 55.36,
+      "end": 55.6,
+      "confidence": 0.9134914,
+      "punctuated_word": "this"
+    },
+    {
+      "word": "side",
+      "start": 55.6,
+      "end": 56.1,
+      "confidence": 0.9613788,
+      "punctuated_word": "side,"
+    },
+    {
+      "word": "2",
+      "start": 56.12,
+      "end": 56.54,
+      "confidence": 0.99675155,
+      "punctuated_word": "2,"
+    },
+    {
+      "word": "3",
+      "start": 56.54,
+      "end": 57.04,
+      "confidence": 0.9788054,
+      "punctuated_word": "3,"
+    },
+    {
+      "word": "6",
+      "start": 57.62,
+      "end": 58.04,
+      "confidence": 0.9861427,
+      "punctuated_word": "6,"
+    },
+    {
+      "word": "7",
+      "start": 58.04,
+      "end": 58.34,
+      "confidence": 0.21122648,
+      "punctuated_word": "7,"
+    },
+    {
+      "word": "i'm",
+      "start": 58.34,
+      "end": 58.52,
+      "confidence": 0.37311345,
+      "punctuated_word": "I'm"
+    },
+    {
+      "word": "going",
+      "start": 58.52,
+      "end": 58.66,
+      "confidence": 0.27012876,
+      "punctuated_word": "going"
+    },
+    {
+      "word": "to",
+      "start": 58.66,
+      "end": 58.78,
+      "confidence": 0.48135096,
+      "punctuated_word": "to"
+    },
+    {
+      "word": "go",
+      "start": 58.78,
+      "end": 59.2,
+      "confidence": 0.7530292,
+      "punctuated_word": "go,"
+    },
+    {
+      "word": "2",
+      "start": 59.2,
+      "end": 59.58,
+      "confidence": 0.9488847,
+      "punctuated_word": "2,"
+    },
+    {
+      "word": "3",
+      "start": 59.58,
+      "end": 60.08,
+      "confidence": 0.3016317,
+      "punctuated_word": "3,"
+    },
+    {
+      "word": "2",
+      "start": 60.08,
+      "end": 60.58,
+      "confidence": 0.36309472,
+      "punctuated_word": "2,"
+    },
+    {
+      "word": "3",
+      "start": 61.62,
+      "end": 62.12,
+      "confidence": 0.49564674,
+      "punctuated_word": "3,"
+    },
+    {
+      "word": "5",
+      "start": 63.54,
+      "end": 64.04,
+      "confidence": 0.99196494,
+      "punctuated_word": "5,"
+    },
+    {
+      "word": "6",
+      "start": 64.14,
+      "end": 64.64,
+      "confidence": 0.98670703,
+      "punctuated_word": "6,"
+    },
+    {
+      "word": "7",
+      "start": 64.66,
+      "end": 65.14,
+      "confidence": 0.9691657,
+      "punctuated_word": "7,"
+    },
+    {
+      "word": "1",
+      "start": 65.14,
+      "end": 65.64,
+      "confidence": 0.99717253,
+      "punctuated_word": "1,"
+    },
+    {
+      "word": "2",
+      "start": 65.64,
+      "end": 66.14,
+      "confidence": 0.99681085,
+      "punctuated_word": "2,"
+    },
+    {
+      "word": "3",
+      "start": 66.14,
+      "end": 66.619995,
+      "confidence": 0.96543425,
+      "punctuated_word": "3,"
+    },
+    {
+      "word": "5",
+      "start": 66.619995,
+      "end": 67.06,
+      "confidence": 0.70522034,
+      "punctuated_word": "5,"
+    },
+    {
+      "word": "stop",
+      "start": 67.06,
+      "end": 67.4,
+      "confidence": 0.40488663,
+      "punctuated_word": "stop,"
+    },
+    {
+      "word": "break",
+      "start": 67.4,
+      "end": 67.9,
+      "confidence": 0.29329324,
+      "punctuated_word": "break."
+    },
+    {
+      "word": "make",
+      "start": 68.18,
+      "end": 68.22,
+      "confidence": 0.8510128,
+      "punctuated_word": "Make"
+    },
+    {
+      "word": "some",
+      "start": 68.22,
+      "end": 68.7,
+      "confidence": 0.56726813,
+      "punctuated_word": "some"
+    },
+    {
+      "word": "noise",
+      "start": 68.7,
+      "end": 69.2,
+      "confidence": 0.3404966,
+      "punctuated_word": "noise!"
+    }
+  ],
+  "sections": [
+    {
+      "start": 0.06,
+      "end": 39.64,
+      "heading": "Part 1",
+      "text": "And 123567123, hip walk, just a regular hip walk. 123, basic step, and 1, 2, core beat in place, 67135, repeating it, and 135, basic step, and 1, 2. So these are the ones that you can practice, not the combo. But now if you want the combo, here comes the domino hip walk and 1235. Ho, and 13571."
+    },
+    {
+      "start": 39.68,
+      "end": 69.2,
+      "heading": "Part 2",
+      "text": "Partner work, 56712367. We go 23I forgot, ho, and 12356, turn, 1, 2, boom. 4, cross-body lean on this side, 2, 3, 6, 7, I'm going to go, 2, 3, 2, 3, 5, 6, 7, 1, 2, 3, 5, stop, break. Make some noise!"
+    }
+  ]
+}

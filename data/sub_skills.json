@@ -220,7 +220,7 @@
       "name": "Class Notes",
       "description": "Technique was detected from a lesson upload. Rate this after reviewing the class notes and lesson frames.",
       "drill_template": "Review the class page, pick one instructor cue, and drill it slowly for 5 minutes before adding music.",
-      "video_focus": "basic_step"
+      "video_focus": "around_the_world"
     }
   ],
   "half_step": [
@@ -229,7 +229,79 @@
       "name": "Class Notes",
       "description": "Technique was detected from a lesson upload. Rate this after reviewing the class notes and lesson frames.",
       "drill_template": "Review the class page, pick one instructor cue, and drill it slowly for 5 minutes before adding music.",
-      "video_focus": "basic_step"
+      "video_focus": "half_step"
+    }
+  ],
+  "side_to_side": [
+    {
+      "id": "class_notes",
+      "name": "Class Notes",
+      "description": "Technique was detected from a lesson upload. Rate this after reviewing the class notes and lesson frames.",
+      "drill_template": "Review the class page, pick one instructor cue, and drill it slowly for 5 minutes before adding music.",
+      "video_focus": "side_to_side"
+    }
+  ],
+  "zig_zag": [
+    {
+      "id": "class_notes",
+      "name": "Class Notes",
+      "description": "Technique was detected from a lesson upload. Rate this after reviewing the class notes and lesson frames.",
+      "drill_template": "Review the class page, pick one instructor cue, and drill it slowly for 5 minutes before adding music.",
+      "video_focus": "zig_zag"
+    }
+  ],
+  "combo": [
+    {
+      "id": "class_notes",
+      "name": "Class Notes",
+      "description": "Technique was detected from a lesson upload. Rate this after reviewing the class notes and lesson frames.",
+      "drill_template": "Review the class page, pick one instructor cue, and drill it slowly for 5 minutes before adding music.",
+      "video_focus": "combo"
+    }
+  ],
+  "side_step": [
+    {
+      "id": "class_notes",
+      "name": "Class Notes",
+      "description": "Technique was detected from a lesson upload. Rate this after reviewing the class notes and lesson frames.",
+      "drill_template": "Review the class page, pick one instructor cue, and drill it slowly for 5 minutes before adding music.",
+      "video_focus": "side_step"
+    }
+  ],
+  "hip_walk": [
+    {
+      "id": "class_notes",
+      "name": "Class Notes",
+      "description": "Technique was detected from a lesson upload. Rate this after reviewing the class notes and lesson frames.",
+      "drill_template": "Review the class page, pick one instructor cue, and drill it slowly for 5 minutes before adding music.",
+      "video_focus": "hip_walk"
+    }
+  ],
+  "chord_beat": [
+    {
+      "id": "class_notes",
+      "name": "Class Notes",
+      "description": "Technique was detected from a lesson upload. Rate this after reviewing the class notes and lesson frames.",
+      "drill_template": "Review the class page, pick one instructor cue, and drill it slowly for 5 minutes before adding music.",
+      "video_focus": "chord_beat"
+    }
+  ],
+  "left_turn": [
+    {
+      "id": "class_notes",
+      "name": "Class Notes",
+      "description": "Technique was detected from a lesson upload. Rate this after reviewing the class notes and lesson frames.",
+      "drill_template": "Review the class page, pick one instructor cue, and drill it slowly for 5 minutes before adding music.",
+      "video_focus": "left_turn"
+    }
+  ],
+  "comb": [
+    {
+      "id": "class_notes",
+      "name": "Class Notes",
+      "description": "Technique was detected from a lesson upload. Rate this after reviewing the class notes and lesson frames.",
+      "drill_template": "Review the class page, pick one instructor cue, and drill it slowly for 5 minutes before adding music.",
+      "video_focus": "comb"
     }
   ]
 }

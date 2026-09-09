@@ -158,5 +158,87 @@
       "channel": "Unknown",
       "note": "Covers Suzy Q with flow back to basic salsa steps \u2014 footwork, arm work, and transitions."
     }
+  ],
+  "half_step": [
+    {
+      "title": "Salsa On1 and On2 Half Turns | Footwork Lesson",
+      "url": "https://www.youtube.com/watch?v=5vNN_LHYTMw",
+      "channel": "Krambo Dance",
+      "note": "Explicitly titled 'Salsa On1 and On2 Half Turns | Footwork Lesson' with direct focus on half turns as a distinct footwork technique. Matches the Half Step as a partial rotation variation with clear instructional breakdown.",
+      "match_method": "llm",
+      "matched_technique": "half_step"
+    },
+    {
+      "title": "SalsAnalysis - Beginner Social Combo - Guy Half Turn/Girl Walking Left Turn",
+      "url": "https://www.youtube.com/watch?v=AKZLdxzFtLs",
+      "channel": "Salsa Josh",
+      "note": "Titled 'SalsAnalysis - Beginner Social Combo - Guy Half Turn/Girl Walking Left Turn' with explicit 'Half Turn' in metadata. Demonstrates half turn mechanics in On2 context as a transition element within combinations.",
+      "match_method": "llm",
+      "matched_technique": "half_step"
+    }
+  ],
+  "side_step": [
+    {
+      "title": "How to dance Salsa On2 | The Side Step | Episode 003",
+      "url": "https://www.youtube.com/watch?v=FmiXf11GQPA",
+      "channel": "Densflix",
+      "note": "Densflix's 'How to dance Salsa On2 | The Side Step | Episode 003' directly teaches the Side Step in On2 timing. The title explicitly names the technique, the channel specializes in On2 instruction, and the episode structure suggests systematic progression through foundational moves\u2014matching the beginner level (moves 1-20) of the student's class.",
+      "match_method": "llm",
+      "matched_technique": "side_step"
+    },
+    {
+      "title": "19 On2 Beginner   Basic, Side And Back Steps",
+      "url": "https://www.youtube.com/watch?v=Z1KnPElLl98",
+      "channel": "abanicosalsa",
+      "note": "abanicosalsa's '19 On2 Beginner \u2013 Basic, Side And Back Steps' covers the Side Step as part of beginner On2 footwork. The video explicitly includes 'Side' steps in the title and is labeled beginner level, aligning with the class focus on moves 1-20 and the emphasis on counting and timing.",
+      "match_method": "llm",
+      "matched_technique": "side_step"
+    },
+    {
+      "title": "Salsa On2:  Level 1: Series 1: Part 1 of 3: Salsa Basic Step",
+      "url": "https://www.youtube.com/watch?v=K2B5wAIEQAc",
+      "channel": "Piel Canela Dancers",
+      "note": "Piel Canela Dancers' 'Salsa On2: Level 1: Series 1: Part 1 of 3: Salsa Basic Step' by Joe Burgos (NYC-based instructor) provides foundational On2 mechanics. While focused on the basic step, it establishes the 1-2-3, 5-6-7 counting and NY On2 frame/connection principles that underpin the Side Step, supporting the class's emphasis on continuous counting and proper hand connection.",
+      "match_method": "llm",
+      "matched_technique": "side_step"
+    }
+  ],
+  "hip_walk": [
+    {
+      "title": "Lesson 5 | Learn Footwork Side to Side/Front Back/Hip Walk in 2 Mins | Beginner Salsa Lesson",
+      "url": "https://www.youtube.com/watch?v=xWhd8aMz3ug",
+      "channel": "Fania Presents We Love To See You Dance",
+      "note": "Explicitly titled 'Learn Footwork Side to Side/Front Back/Hip Walk' and credited to Fania Presents with instructors Erika and Edwin Rivera teaching New York-style salsa. Directly addresses hip walk as a beginner foundational move, matching the class context (move #11, beginner level, side-to-side motion emphasis).",
+      "match_method": "llm",
+      "matched_technique": "hip_walk"
+    },
+    {
+      "title": "Salsa dance lessons Brooklyn Salsa Shines Hip Walks",
+      "url": "https://www.youtube.com/watch?v=2YEuU1EtAPY",
+      "channel": "Francis Teri",
+      "note": "Titled 'Salsa dance lessons Brooklyn Salsa Shines Hip Walks' by Francis Teri at Dance Fever Studios. Explicitly teaches hip walks as a shine/solo footwork element in a New York context (Brooklyn-based studio), aligning with the class's foundational shine and hip walk instruction.",
+      "match_method": "llm",
+      "matched_technique": "hip_walk"
+    }
+  ],
+  "chord_beat": [
+    {
+      "title": "Salsa Timing: Chord Beat & Slow Pivot (On2 and On1)",
+      "url": "https://www.youtube.com/watch?v=x3dr-VRvH7A",
+      "channel": "Wietske Welten",
+      "note": "Title explicitly names 'Chord Beat' timing concept with On2 emphasis. Wietske Welten teaches NY-style salsa mechanics. Video directly addresses the timing framework (stepping on odd counts vs. basic 1-2-3, 5-6-7) that the class defines as chord beats. Matches the instructor's framing of chord beats as a timing concept applicable to various movements.",
+      "match_method": "llm",
+      "matched_technique": "chord_beat"
+    }
+  ],
+  "combo": [
+    {
+      "title": "3 Levels of the Famous TITANIC Salsa Combo",
+      "url": "https://www.youtube.com/watch?v=W0J03PmRms4",
+      "channel": "Baila Productions Salsa Dance School",
+      "note": "Teaches a named salsa combo (Titanic) with 3 levels of progression, directly matching the class focus on combining moves sequentially. The title and description indicate structured combo instruction suitable for building from basics to more complex sequences, which aligns with the beginner combo teaching approach (basic \u2192 right turn \u2192 zig-zag \u2192 right turn \u2192 Suzy Q).",
+      "match_method": "llm",
+      "matched_technique": "combo"
+    }
   ]
 }

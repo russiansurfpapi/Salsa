@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
 <title>Practice — Salsa</title>
 <style>
   :root {
@@ -26,6 +27,85 @@
 
   main { max-width:700px; margin:0 auto; padding:40px 24px 100px; }
   h1 { font-size:28px; font-weight:400; margin:0 0 6px; } h1 em { color:var(--accent); font-style:normal; }
+  h2 { font-size:20px; margin:34px 0 4px; }
+  .lede { margin:0 0 24px; color:var(--muted); font-size:15px; }
+
+  .library {
+    border:1px solid rgba(225,29,72,0.32); border-radius:14px;
+    padding:22px; background:linear-gradient(145deg, #fff 0%, #fff7f9 100%);
+    box-shadow:0 12px 36px rgba(15,23,42,0.06);
+  }
+  .library-head { display:flex; align-items:flex-start; justify-content:space-between; gap:16px; margin-bottom:14px; }
+  .library h2 { margin:0; font-size:21px; }
+  .library-copy { margin:3px 0 0; color:var(--muted); font-size:14px; }
+  .style-badge {
+    flex-shrink:0; border-radius:999px; padding:5px 10px; background:var(--accent-dim);
+    color:var(--accent); font-size:12px; font-weight:700; letter-spacing:0.02em;
+  }
+  .library-status { color:var(--muted); font-size:13px; }
+  .library-error {
+    margin-top:14px; padding:10px 12px; border-radius:8px;
+    background:#fff1f2; color:#be123c; font-size:14px;
+  }
+  .class-filter-note {
+    display:flex; align-items:center; justify-content:space-between; gap:12px;
+    margin:12px 0; padding:9px 11px; border-radius:8px; background:#fff;
+    border:1px solid var(--border); color:var(--muted); font-size:13px;
+  }
+  .class-filter-note a { font-weight:700; }
+  .practice-picker { display:flex; flex-wrap:wrap; gap:8px; margin:14px 0 18px; }
+  .technique-choice {
+    position:relative; border:1px solid var(--border); border-radius:9px; padding:9px 11px;
+    background:#fff; color:var(--fg); text-align:left; font:600 13px/1.3 inherit; cursor:pointer;
+  }
+  .technique-choice:hover { border-color:var(--accent); color:var(--accent); }
+  .technique-choice[aria-pressed="true"] {
+    border-color:var(--accent); background:var(--accent); color:#fff;
+  }
+  .technique-choice small {
+    display:block; margin-top:2px; color:var(--muted); font-size:10px;
+    font-weight:700; text-transform:uppercase; letter-spacing:0.06em;
+  }
+  .technique-choice[aria-pressed="true"] small { color:rgba(255,255,255,0.78); }
+
+  .premade-plan { margin-top:4px; border-top:1px solid var(--border); padding-top:18px; }
+  .premade-plan[hidden] { display:none; }
+  .practice-source {
+    display:flex; flex-wrap:wrap; gap:7px; align-items:center; margin-bottom:14px;
+    color:var(--muted); font-size:12px;
+  }
+  .practice-source a {
+    padding:3px 7px; border-radius:5px; background:#fff; border:1px solid var(--border);
+    font-weight:700;
+  }
+  .plan-title { display:flex; align-items:flex-start; justify-content:space-between; gap:12px; }
+  .plan-title h3 { margin:0; font-size:22px; line-height:1.25; }
+  .minute-pill { flex-shrink:0; border-radius:999px; background:var(--fg); color:#fff; padding:4px 9px; font-size:12px; font-weight:700; }
+  .plan-summary { margin:5px 0 3px; font-weight:600; }
+  .evidence-note { margin:8px 0 18px; padding:9px 11px; border-left:3px solid #7c3aed; background:#fff; color:var(--muted); font-size:13px; }
+  .plan-block { margin:12px 0; padding:14px; border:1px solid var(--border); border-radius:10px; background:#fff; }
+  .plan-block h4 { margin:0 0 7px; font-size:15px; }
+  .plan-block ul { margin:0; padding-left:19px; }
+  .plan-block li { margin-bottom:5px; font-size:14px; line-height:1.5; }
+  .drill-meta { display:flex; flex-wrap:wrap; gap:6px; margin:-2px 0 8px; }
+  .drill-meta span { border-radius:5px; padding:2px 6px; background:var(--panel); color:var(--muted); font-size:12px; }
+  .success-check { margin-top:9px; padding-top:8px; border-top:1px solid var(--border); color:var(--ok); font-size:13px; }
+  .plan-details { margin-top:14px; }
+  .plan-details summary { cursor:pointer; color:var(--muted); font-size:13px; font-weight:700; }
+  .plan-details ul { margin:7px 0 0; padding-left:19px; color:var(--muted); font-size:13px; }
+  .cue-list { display:grid; gap:7px; margin-top:9px; }
+  .cue {
+    padding:9px 11px; background:#fff; border-left:3px solid #7c3aed;
+    border-radius:0 7px 7px 0; color:var(--fg); font-size:13px;
+  }
+  .cue a { display:block; margin-top:3px; color:var(--muted); font-size:11px; font-weight:700; }
+  .provenance-note { margin-top:12px; color:var(--muted); font-size:11px; }
+  .technique-page-link { display:inline-block; margin-top:12px; font-size:13px; font-weight:700; }
+  .video-parts { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px; margin-top:9px; }
+  .video-part { display:flex; gap:9px; padding:8px; border:1px solid var(--border); border-radius:8px; background:#fff; }
+  .video-part img { width:84px; height:62px; object-fit:cover; border-radius:5px; flex-shrink:0; }
+  .video-part strong { display:block; font-size:12px; line-height:1.35; }
+  .video-part span { display:block; color:var(--muted); font-size:10px; margin-top:2px; }
 
   .session {
     background:var(--panel); border:1px solid var(--border); border-radius:10px;
@@ -54,22 +134,204 @@
   .session .tech-links a:hover { background:var(--accent); color:#fff; text-decoration:none; }
   .phase-source { font-size:13px; color:var(--muted); margin-top:2px; }
   .phase-source a { color:var(--accent); }
+
+  @media (max-width:640px) {
+    nav.top { padding:10px 16px; gap:14px; overflow-x:auto; }
+    main { padding:28px 16px 80px; }
+    .library { padding:16px; }
+    .library-head { display:block; }
+    .style-badge { display:inline-block; margin-top:9px; }
+    .technique-choice { flex:1 1 calc(50% - 8px); }
+    .video-parts { grid-template-columns:1fr; }
+  }
 </style>
 </head>
 <body>
 
 <nav class="top">
   <span class="brand">salsa.</span>
-  <a href="/">Home</a> <a href="/practice" class="active">Practice</a> <a href="/quiz">Quiz</a> <a href="/notes">Notes</a> <a href="/classes">Classes</a>
+  <a href="/">Home</a> <a href="/practice" class="active">Practice</a> <a href="/video-lectures">Video lectures</a> <a href="/quiz">Quiz</a> <a href="/notes">Notes</a> <a href="/classes">Classes</a>
   <span class="spacer"></span>
 </nav>
 
 <main>
-  <h1><em>Practice</em> schedule</h1>
-  <div id="app"><p style="color:var(--muted)">Loading...</p></div>
+  <h1><em>Practice</em> your NYC Salsa classes</h1>
+  <p class="lede">Every technique identified in class has a ready-to-use New York On2 session built from your instructor’s recorded cues.</p>
+
+  <section class="library" aria-labelledby="library-title">
+    <div class="library-head">
+      <div>
+        <h2 id="library-title">Premade technique practices</h2>
+        <p class="library-copy" id="library-copy">Loading the techniques found in your classes…</p>
+      </div>
+      <span class="style-badge">PREMADE · NY SALSA ON2</span>
+    </div>
+
+    <div class="class-filter-note" id="class-filter-note" hidden></div>
+    <div class="practice-picker" id="practice-picker" aria-label="Choose a technique practice"></div>
+    <div class="library-status" id="library-status" aria-live="polite">Reading class notes…</div>
+    <div class="library-error" id="library-error" hidden></div>
+    <div class="premade-plan" id="premade-plan" hidden aria-live="polite"></div>
+  </section>
+
+  <h2>Scheduled practice</h2>
+  <p class="lede">Your longer curriculum schedule remains below the class-technique library.</p>
+  <div id="app"><p style="color:var(--muted)">Loading schedule...</p></div>
 </main>
 
 <script>
+const pageParams = new URLSearchParams(location.search);
+const requestedTechnique = pageParams.get('technique') || '';
+const requestedClassDate = pageParams.get('class_date') || '';
+let practiceLibrary = null;
+
+function listHtml(items) {
+  const safeItems = Array.isArray(items) ? items.filter(Boolean) : [];
+  if (!safeItems.length) return '';
+  return `<ul>${safeItems.map(item => `<li>${esc(String(item))}</li>`).join('')}</ul>`;
+}
+
+function classLabel(source) {
+  const number = source && source.number ? `Class #${source.number} · ` : '';
+  return `${number}${source && source.date ? source.date : 'Class note'}`;
+}
+
+function renderPremade(plan) {
+  const warmup = plan.warmup || {};
+  const music = plan.music_round || {};
+  const drills = Array.isArray(plan.drills) ? plan.drills : [];
+  const drillHtml = drills.map(drill => `
+    <div class="plan-block">
+      <h4>${esc(drill.name || 'Practice drill')}</h4>
+      <div class="drill-meta">
+        ${drill.minutes ? `<span>${esc(String(drill.minutes))} min</span>` : ''}
+        ${drill.counts ? `<span>Counts: ${esc(String(drill.counts))}</span>` : ''}
+        ${drill.class_date ? `<span>From ${esc(String(drill.class_date))}</span>` : ''}
+      </div>
+      ${listHtml(drill.instructions)}
+      ${drill.success_check ? `<div class="success-check"><strong>Success check:</strong> ${esc(String(drill.success_check))}</div>` : ''}
+    </div>
+  `).join('');
+
+  const selfChecks = listHtml(plan.self_checks);
+  const sourceHtml = (plan.class_sources || []).map(source => (
+    `<a href="/classes/${encodeURIComponent(source.date || '')}">${esc(classLabel(source))}</a>`
+  )).join('');
+  const cueHtml = (plan.class_cues || []).map(cue => `
+    <div class="cue">
+      ${esc(cue.tip || '')}
+      <a href="/classes/${encodeURIComponent(cue.class_date || '')}">${esc(classLabel({date:cue.class_date, number:cue.class_number}))}</a>
+    </div>
+  `).join('');
+  const videoPartsHtml = (plan.video_parts || []).map(part => `
+    <a class="video-part" href="/video-lectures?technique=${encodeURIComponent(plan.technique || '')}#${encodeURIComponent(part.id || '')}">
+      ${part.frame_url ? `<img src="${esc(part.frame_url)}" alt="" loading="lazy">` : ''}
+      <span>
+        <strong>Part ${esc(String(part.part_number || ''))} · ${esc(part.instruction || part.technique_label || '')}</strong>
+        <span>${esc(classLabel({date:part.class_date, number:part.class_number}))}${part.timestamp ? ` · ${esc(part.timestamp)}` : ''}</span>
+      </span>
+    </a>
+  `).join('');
+  const html = `
+    <div class="practice-source"><strong>Built from:</strong>${sourceHtml}</div>
+    <div class="plan-title">
+      <h3>${esc(plan.title || 'Class practice')}</h3>
+      <span class="minute-pill">${esc(String(plan.total_minutes || ''))} MIN</span>
+    </div>
+    ${plan.focus_summary ? `<p class="plan-summary">${esc(plan.focus_summary)}</p>` : ''}
+    ${plan.evidence_note ? `<div class="evidence-note">${esc(plan.evidence_note)}</div>` : ''}
+    <div class="plan-block">
+      <h4>Warm-up${warmup.minutes ? ` · ${esc(String(warmup.minutes))} min` : ''}</h4>
+      ${listHtml(warmup.instructions)}
+    </div>
+    ${drillHtml}
+    <div class="plan-block">
+      <h4>Music round${music.minutes ? ` · ${esc(String(music.minutes))} min` : ''}</h4>
+      ${listHtml(music.instructions)}
+    </div>
+    ${videoPartsHtml ? `<details class="plan-details" open><summary>Tagged class-video parts for this technique</summary><div class="video-parts">${videoPartsHtml}</div></details>` : ''}
+    ${selfChecks ? `<details class="plan-details"><summary>Self-checks</summary>${selfChecks}</details>` : ''}
+    ${cueHtml ? `<details class="plan-details" open><summary>Exact cues from your classes</summary><div class="cue-list">${cueHtml}</div></details>` : ''}
+    <a class="technique-page-link" href="/technique/${encodeURIComponent(plan.technique || '')}">Study ${esc(plan.technique_name || 'this technique')} →</a>
+    <div class="provenance-note">Premade from NYC Salsa class notes. No model call or API key is needed to open this practice.</div>
+  `;
+  const target = document.getElementById('premade-plan');
+  target.innerHTML = html;
+  target.hidden = false;
+}
+
+function choosePractice(slug, updateUrl = true) {
+  if (!practiceLibrary) return;
+  const plan = (practiceLibrary.practices || []).find(item => item.technique === slug);
+  if (!plan) return;
+  document.querySelectorAll('.technique-choice').forEach(button => {
+    button.setAttribute('aria-pressed', button.dataset.technique === slug ? 'true' : 'false');
+  });
+  renderPremade(plan);
+  if (updateUrl) {
+    const next = new URL(location.href);
+    next.searchParams.set('technique', slug);
+    history.replaceState({}, '', next);
+  }
+}
+
+function renderPracticePicker(library) {
+  let practices = [...(library.practices || [])];
+  if (requestedClassDate) {
+    practices.sort((a, b) => {
+      const aMatch = (a.class_sources || []).some(source => source.date === requestedClassDate);
+      const bMatch = (b.class_sources || []).some(source => source.date === requestedClassDate);
+      return Number(bMatch) - Number(aMatch);
+    });
+    const note = document.getElementById('class-filter-note');
+    note.innerHTML = `<span>Practices from <a href="/classes/${encodeURIComponent(requestedClassDate)}">${esc(requestedClassDate)}</a> are first.</span><a href="/practice">Show latest class first</a>`;
+    note.hidden = false;
+  }
+
+  document.getElementById('practice-picker').innerHTML = practices.map(practice => {
+    const fromRequestedClass = requestedClassDate && (practice.class_sources || []).some(source => source.date === requestedClassDate);
+    const context = fromRequestedClass
+      ? 'From this class'
+      : practice.is_latest_class_technique
+        ? 'Latest class'
+        : `Last seen ${practice.latest_class?.date || ''}`;
+    return `
+      <button class="technique-choice" type="button" data-technique="${esc(practice.technique)}" aria-pressed="false">
+        ${esc(practice.technique_name)}
+        <small>${esc(context)}</small>
+      </button>`;
+  }).join('');
+
+  document.querySelectorAll('.technique-choice').forEach(button => {
+    button.addEventListener('click', () => choosePractice(button.dataset.technique));
+  });
+}
+
+async function loadPracticeLibrary() {
+  const status = document.getElementById('library-status');
+  const error = document.getElementById('library-error');
+  try {
+    const response = await fetch('/api/practices');
+    if (!response.ok) throw new Error('The premade class practices could not be loaded.');
+    practiceLibrary = await response.json();
+    const practices = practiceLibrary.practices || [];
+    document.getElementById('library-copy').textContent = `${practices.length} techniques identified across your classes. Latest-class techniques appear first.`;
+    renderPracticePicker(practiceLibrary);
+
+    let selected = practices.find(item => item.technique === requestedTechnique);
+    if (!selected && requestedClassDate) {
+      selected = practices.find(item => (item.class_sources || []).some(source => source.date === requestedClassDate));
+    }
+    selected = selected || practices[0];
+    if (selected) choosePractice(selected.technique, false);
+    status.textContent = selected ? '' : 'No identified class techniques yet.';
+  } catch (err) {
+    error.textContent = err.message || 'The premade class practices could not be loaded.';
+    error.hidden = false;
+    status.textContent = '';
+  }
+}
+
 function formatDrill(text) {
   if (!text) return '';
   const sections = text.split(/\n\n+/);
@@ -161,6 +423,7 @@ async function load() {
 }
 
 function esc(s) { if (!s) return ''; const d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+loadPracticeLibrary();
 load();
 </script>
 </body>

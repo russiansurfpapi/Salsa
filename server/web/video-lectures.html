@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
+<title>Video Lectures — Salsa</title>
+<style>
+  :root {
+    --bg:#fff; --fg:#1e293b; --muted:#64748b; --accent:#e11d48;
+    --accent-dim:rgba(225,29,72,0.08); --purple:#7c3aed;
+    --panel:#f8fafc; --border:#e2e8f0; --ok:#059669;
+  }
+  * { box-sizing:border-box; }
+  html, body { margin:0; min-height:100%; background:var(--bg); color:var(--fg); }
+  body { font:16px/1.55 -apple-system, BlinkMacSystemFont, system-ui, sans-serif; }
+  a { color:var(--accent); text-decoration:none; }
+  nav.top {
+    position:sticky; top:0; z-index:10; display:flex; align-items:center; gap:24px;
+    padding:12px 40px; background:rgba(255,255,255,0.95); backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--border); font-size:15px;
+  }
+  nav.top .brand { color:var(--accent); font-size:18px; font-weight:700; }
+  nav.top a { color:var(--muted); } nav.top a.active { color:var(--fg); }
+  nav.top .spacer { flex:1; }
+  main { max-width:1040px; margin:0 auto; padding:40px 24px 100px; }
+  h1 { margin:0; font-size:30px; font-weight:400; } h1 em { color:var(--accent); font-style:normal; }
+  .lede { margin:5px 0 22px; max-width:760px; color:var(--muted); }
+  .summary {
+    display:flex; flex-wrap:wrap; gap:8px; margin-bottom:18px;
+  }
+  .summary span { padding:5px 9px; border-radius:999px; background:var(--panel); color:var(--muted); font-size:12px; font-weight:700; }
+  .filters {
+    display:flex; flex-wrap:wrap; gap:7px; padding:14px; border:1px solid var(--border);
+    border-radius:12px; background:var(--panel); margin-bottom:24px;
+  }
+  .filter {
+    padding:6px 10px; border:1px solid var(--border); border-radius:999px;
+    background:#fff; color:var(--fg); font:600 12px/1.2 inherit; cursor:pointer;
+  }
+  .filter:hover, .filter.active { border-color:var(--accent); color:var(--accent); background:var(--accent-dim); }
+  .clear-filter { margin-left:auto; align-self:center; color:var(--muted); font-size:12px; font-weight:700; }
+  .lecture {
+    margin:0 0 28px; border:1px solid var(--border); border-radius:14px;
+    background:#fff; overflow:hidden; box-shadow:0 8px 28px rgba(15,23,42,0.05);
+  }
+  .lecture-head { padding:18px 20px; background:linear-gradient(135deg,#fff,#faf5ff); border-bottom:1px solid var(--border); }
+  .lecture-kicker { color:var(--purple); font-size:11px; text-transform:uppercase; letter-spacing:0.1em; font-weight:800; }
+  .lecture h2 { margin:3px 0 2px; font-size:21px; }
+  .lecture-meta { color:var(--muted); font-size:12px; }
+  .lecture-desc { margin:7px 0 0; color:var(--muted); font-size:13px; }
+  .parts { display:grid; gap:0; }
+  .part {
+    display:grid; grid-template-columns:180px 1fr; gap:16px; padding:16px 20px;
+    border-bottom:1px solid var(--border); scroll-margin-top:70px;
+  }
+  .part:last-child { border-bottom:0; }
+  .part:target, .part.targeted { background:#fff7f9; outline:2px solid var(--accent); outline-offset:-2px; }
+  .part img { width:180px; height:124px; object-fit:cover; border-radius:8px; background:var(--panel); }
+  .part-top { display:flex; flex-wrap:wrap; align-items:center; gap:7px; margin-bottom:6px; }
+  .part-number {
+    display:inline-flex; width:25px; height:25px; align-items:center; justify-content:center;
+    border-radius:50%; background:var(--fg); color:#fff; font-size:11px; font-weight:800;
+  }
+  .time, .count { color:var(--muted); font-size:12px; }
+  .tags { display:flex; flex-wrap:wrap; gap:5px; }
+  .tag { padding:3px 7px; border-radius:999px; background:var(--accent-dim); color:var(--accent); font-size:11px; font-weight:800; }
+  .instruction { margin:5px 0; font-size:14px; }
+  .cue { margin-top:7px; padding:7px 9px; border-left:3px solid var(--ok); background:var(--panel); color:var(--ok); font-size:13px; }
+  .label { margin-top:6px; color:var(--muted); font-size:11px; }
+  .empty, .loading { padding:48px 12px; color:var(--muted); text-align:center; }
+  @media (max-width:680px) {
+    nav.top { padding:10px 16px; gap:14px; overflow-x:auto; }
+    main { padding:28px 14px 80px; }
+    .part { grid-template-columns:1fr; padding:14px; }
+    .part img { width:100%; height:auto; aspect-ratio:16/10; }
+    .clear-filter { width:100%; margin-left:0; }
+  }
+</style>
+</head>
+<body>
+<nav class="top">
+  <span class="brand">salsa.</span>
+  <a href="/">Home</a> <a href="/practice">Practice</a> <a href="/video-lectures" class="active">Video lectures</a>
+  <a href="/classes">Classes</a> <a href="/progress">Progress</a>
+  <span class="spacer"></span>
+</nav>
+
+<main>
+  <h1><em>Video lectures</em>, centralized</h1>
+  <p class="lede">Every saved class-video part is indexed here with canonical technique tags. Combined transitions can belong to more than one technique.</p>
+  <div class="summary" id="summary"></div>
+  <div class="filters" id="filters"><span style="color:var(--muted);font-size:13px">Loading technique tags…</span></div>
+  <div id="app"><div class="loading">Loading class-video breakdowns…</div></div>
+</main>
+
+<script>
+const params = new URLSearchParams(location.search);
+const activeTechnique = params.get('technique') || '';
+const activeClassDate = params.get('class_date') || '';
+
+async function load() {
+  const query = new URLSearchParams();
+  if (activeTechnique) query.set('technique', activeTechnique);
+  if (activeClassDate) query.set('class_date', activeClassDate);
+  const response = await fetch(`/api/video-lectures${query.toString() ? '?' + query : ''}`);
+  if (!response.ok) {
+    document.getElementById('app').innerHTML = '<div class="empty">Video lectures could not be loaded.</div>';
+    return;
+  }
+  const data = await response.json();
+  renderFilters(data.techniques || []);
+  render(data);
+}
+
+function renderFilters(techniques) {
+  let html = `<a class="filter ${!activeTechnique ? 'active' : ''}" href="${classUrl('')}">All techniques</a>`;
+  for (const technique of techniques) {
+    const active = technique.slug === activeTechnique ? 'active' : '';
+    html += `<a class="filter ${active}" href="${classUrl(technique.slug)}">${esc(technique.name)} · ${technique.part_count}</a>`;
+  }
+  if (activeTechnique || activeClassDate) html += '<a class="clear-filter" href="/video-lectures">Clear filters</a>';
+  document.getElementById('filters').innerHTML = html;
+}
+
+function classUrl(technique) {
+  const query = new URLSearchParams();
+  if (technique) query.set('technique', technique);
+  if (activeClassDate) query.set('class_date', activeClassDate);
+  return `/video-lectures${query.toString() ? '?' + query : ''}`;
+}
+
+function render(data) {
+  document.getElementById('summary').innerHTML = `
+    <span>${data.lecture_count || 0} video lectures</span>
+    <span>${data.part_count || 0} tagged parts</span>
+    ${activeTechnique ? `<span>Technique: ${esc(activeTechnique.replace(/_/g, ' '))}</span>` : ''}
+    ${activeClassDate ? `<span>Class: ${esc(activeClassDate)}</span>` : ''}`;
+
+  const lectures = data.lectures || [];
+  if (!lectures.length) {
+    document.getElementById('app').innerHTML = '<div class="empty">No tagged video parts match these filters.</div>';
+    return;
+  }
+  document.getElementById('app').innerHTML = lectures.map(lecture => `
+    <section class="lecture">
+      <div class="lecture-head">
+        <div class="lecture-kicker"><a href="/classes/${encodeURIComponent(lecture.class_date || '')}">${esc(classLabel(lecture))}</a></div>
+        <h2>${esc(lecture.title || 'Class video')}</h2>
+        <div class="lecture-meta">${esc(lecture.source_video || '')} · ${lecture.part_count || 0} tagged parts</div>
+        ${lecture.description ? `<p class="lecture-desc">${esc(lecture.description)}</p>` : ''}
+      </div>
+      <div class="parts">
+        ${(lecture.parts || []).map(partHtml).join('')}
+      </div>
+    </section>
+  `).join('');
+  focusLinkedPart();
+}
+
+function partHtml(part) {
+  const tags = (part.techniques || []).map(technique => (
+    `<a class="tag" href="/video-lectures?technique=${encodeURIComponent(technique)}">${esc(technique.replace(/_/g, ' '))}</a>`
+  )).join('');
+  return `
+    <article class="part" id="${esc(part.id || '')}">
+      ${part.frame_url ? `<img src="${esc(part.frame_url)}" alt="Part ${esc(String(part.part_number || ''))}" loading="lazy">` : '<div></div>'}
+      <div>
+        <div class="part-top">
+          <span class="part-number">${esc(String(part.part_number || ''))}</span>
+          ${part.timestamp ? `<span class="time">${esc(part.timestamp)}</span>` : ''}
+          ${part.count ? `<span class="count">Count ${esc(part.count)}</span>` : ''}
+          <span class="tags">${tags}</span>
+        </div>
+        <div class="instruction">${esc(part.instruction || part.position || '')}</div>
+        ${part.instructor_tip ? `<div class="cue">“${esc(part.instructor_tip)}”</div>` : ''}
+        ${part.technique_label ? `<div class="label">Original breakdown label: ${esc(part.technique_label)}</div>` : ''}
+      </div>
+    </article>`;
+}
+
+function classLabel(lecture) {
+  const number = lecture.class_number ? `Class #${lecture.class_number} · ` : '';
+  return `${number}${lecture.class_date || 'Class video'}`;
+}
+
+function focusLinkedPart() {
+  if (!location.hash) return;
+  const id = decodeURIComponent(location.hash.slice(1));
+  const target = document.getElementById(id);
+  if (!target) return;
+  target.classList.add('targeted');
+  target.scrollIntoView({block:'center'});
+}
+
+function esc(value) {
+  if (value === null || value === undefined) return '';
+  const div = document.createElement('div');
+  div.textContent = String(value);
+  return div.innerHTML;
+}
+
+load();
+</script>
+</body>
+</html>

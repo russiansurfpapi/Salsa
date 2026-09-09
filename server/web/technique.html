@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
 <title>Technique — Salsa</title>
 <style>
   :root {
@@ -27,6 +28,13 @@
   main { max-width:840px; margin:0 auto; padding:40px 24px 100px; }
   .back { font-size:14px; color:var(--muted); margin-bottom:16px; display:inline-block; }
   h1 { font-size:28px; font-weight:400; margin:0 0 6px; } h1 em { color:var(--accent); font-style:normal; }
+  .action-row { display:flex; flex-wrap:wrap; gap:8px; margin:10px 0 18px; }
+  .action-link {
+    display:inline-block; padding:7px 11px; border-radius:7px; background:var(--accent);
+    color:#fff; font-size:13px; font-weight:700;
+  }
+  .action-link.secondary { background:var(--accent-dim); color:var(--accent); }
+  .action-link:hover { text-decoration:none; filter:brightness(0.96); }
 
   .section-label {
     font-size:13px; text-transform:uppercase; letter-spacing:0.12em;
@@ -119,7 +127,7 @@
 
 <nav class="top">
   <span class="brand">salsa.</span>
-  <a href="/">Home</a> <a href="/practice">Practice</a> <a href="/quiz">Quiz</a> <a href="/notes">Notes</a> <a href="/classes">Classes</a> <a href="/progress">Progress</a>
+  <a href="/">Home</a> <a href="/practice">Practice</a> <a href="/video-lectures">Video lectures</a> <a href="/quiz">Quiz</a> <a href="/notes">Notes</a> <a href="/classes">Classes</a> <a href="/progress">Progress</a>
   <span class="spacer"></span>
 </nav>
 
@@ -148,6 +156,10 @@ async function load() {
 function render(d, classTips, skills) {
   let html = `<a class="back" href="/">&larr; All techniques</a>`;
   html += `<h1><em>${esc(d.name)}</em></h1>`;
+  html += `<div class="action-row">
+    <a class="action-link" href="/practice?technique=${encodeURIComponent(slug)}">Open premade class practice</a>
+    <a class="action-link secondary" href="/video-lectures?technique=${encodeURIComponent(slug)}">All tagged video parts</a>
+  </div>`;
 
   if (d.breakdown && d.breakdown.length) {
     html += '<div class="section-label">Step by step</div>';
@@ -178,7 +190,7 @@ function render(d, classTips, skills) {
       for (let i = 1; i <= 5; i++) {
         let cls = 'skill-dot';
         if (i <= r) cls += r <= 2 ? ' filled-weak' : r <= 3 ? ' filled-mid' : ' filled';
-        html += `<div class="${cls}" data-skill="${esc(s.skill_id)}" data-val="${i}" onclick="rateSkill(this)" title="${['','Haven\\'t tried','Know but can\\'t execute','Getting it sometimes','Feels natural','Automatic'][i]}"></div>`;
+        html += `<div class="${cls}" data-skill="${esc(s.skill_id)}" data-val="${i}" onclick="rateSkill(this)" title="${["","Haven't tried","Know but can't execute","Getting it sometimes","Feels natural","Automatic"][i]}"></div>`;
       }
       html += '</div></div>';
       if (r > 0 && r <= 2 && s.drill_template) {

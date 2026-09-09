@@ -23,6 +23,7 @@ FRAMES = DATA / "frames"
 
 from ingest.transcribe import transcribe_video, section_transcript, slugify, DG_KEY
 from ingest.analyze import _load_env
+from server.salsa_context import SALSA_STYLE_NAME, salsa_style_context
 from server.techniques import (
     canonicalize_techniques,
     normalize_study_guide,
@@ -31,8 +32,49 @@ from server.techniques import (
     promote_detected_techniques,
     video_key_for_technique,
 )
+from server.video_lectures import normalize_video_part
 
 _load_env()
+
+
+def _json_object_text(text: str) -> str:
+    """Extract the outer JSON object from a model response."""
+    start = text.find("{")
+    end = text.rfind("}") + 1
+    if start < 0 or end <= start:
+        raise ValueError("Model response did not contain a JSON object")
+    return text[start:end]
+
+
+def _parse_model_json(text: str) -> dict:
+    """Parse model JSON, tolerating common punctuation/closure mistakes."""
+    raw_json = _json_object_text(text)
+    try:
+        parsed = json.loads(raw_json)
+    except json.JSONDecodeError as direct_error:
+        try:
+            from json_repair import repair_json
+        except ImportError:
+            raise direct_error
+        parsed = repair_json(raw_json, return_objects=True)
+    if not isinstance(parsed, dict):
+        raise ValueError("Model JSON must be an object")
+    return parsed
+
+
+def _validate_guide_shape(guide: dict) -> None:
+    """Reject incomplete responses before they can overwrite a saved guide."""
+    required_collections = (
+        ("techniques", guide.get("techniques")),
+        ("choreography.phases", guide.get("choreography", {}).get("phases")),
+        ("practice.sections", guide.get("practice", {}).get("sections")),
+        ("key_frames", guide.get("key_frames")),
+    )
+    missing = [name for name, value in required_collections if not value]
+    if missing:
+        raise ValueError(
+            "Model study guide is incomplete; missing " + ", ".join(missing)
+        )
 
 
 def extract_dense_frames(video_path: Path, frame_dir: Path, fps: float = 1.0) -> int:
@@ -122,7 +164,9 @@ def analyze_frames_with_claude(
                 if v.get("note"):
                     videos_section += f"    Note: {v['note']}\n"
 
-    prompt_text = f"""You are analyzing a salsa dance class video frame-by-frame. The video is from Class #{class_number or '?'} on {class_date}.
+    prompt_text = f"""You are analyzing a {SALSA_STYLE_NAME} dance class video frame-by-frame. The video is from Class #{class_number or '?'} on {class_date}.
+
+{salsa_style_context()}
 
 AUDIO TRANSCRIPT (instructor counting over music):
 {transcript_text[:800]}
@@ -148,6 +192,7 @@ YOUR TASK: Analyze every frame and produce a structured JSON study guide. You mu
 5. Identify the KEY frames — the most important ones to freeze on and study
 6. Note the hard transitions — where one technique ends and the next begins
 7. Create a separate technique entry for each named move or variation taught, not only the parent category
+8. Keep the complete JSON under 10,000 output tokens. Use concise descriptions and no repeated prose.
 
 Return ONLY valid JSON with this structure:
 {{
@@ -225,33 +270,40 @@ IMPORTANT:
     print(f"  Sending {len(sampled)} frames to Claude for analysis...")
     resp = client.messages.create(
         model="claude-sonnet-4-6",
-        max_tokens=8000,
+        max_tokens=16000,
         messages=[{"role": "user", "content": content}],
         temperature=0.2,
     )
 
     text = resp.content[0].text
-    start = text.find("{")
-    end = text.rfind("}") + 1
-    if start < 0:
-        raise RuntimeError("Claude did not return JSON")
-
-    raw_json = text[start:end]
     try:
-        guide = json.loads(raw_json)
-    except json.JSONDecodeError:
+        if getattr(resp, "stop_reason", "") == "max_tokens":
+            raise ValueError("Claude response reached the output-token limit")
+        guide = _parse_model_json(text)
+        _validate_guide_shape(guide)
+    except (json.JSONDecodeError, ValueError) as first_error:
         # Ask Claude to fix the JSON
-        print("  JSON parse failed, requesting repair...")
+        print(f"  JSON validation failed ({first_error}); requesting repair...")
         fix_resp = client.messages.create(
-            model="claude-haiku-4-5-20251001",
-            max_tokens=8000,
-            messages=[{"role": "user", "content": f"Fix this broken JSON so it parses. Return ONLY valid JSON, nothing else:\n\n{raw_json}"}],
+            model="claude-sonnet-4-6",
+            max_tokens=16000,
+            messages=[{
+                "role": "user",
+                "content": (
+                    "Repair this study-guide response. Return ONLY one complete, "
+                    "concise JSON object under 10,000 tokens. Preserve the evidence, "
+                    "ensure techniques, choreography.phases, practice.sections, and "
+                    "key_frames are all non-empty, close every object and array, and "
+                    "remove any invalid punctuation:\n\n"
+                    f"{text}"
+                ),
+            }],
             temperature=0,
         )
-        fixed = fix_resp.content[0].text
-        fs = fixed.find("{")
-        fe = fixed.rfind("}") + 1
-        guide = json.loads(fixed[fs:fe])
+        if getattr(fix_resp, "stop_reason", "") == "max_tokens":
+            raise RuntimeError("Claude JSON repair reached the output-token limit")
+        guide = _parse_model_json(fix_resp.content[0].text)
+        _validate_guide_shape(guide)
 
     guide = normalize_study_guide(guide)
 
@@ -303,22 +355,32 @@ def update_breakdowns(guide: dict, frame_slug: str, class_date: str, video_filen
 
     combo_key = f"class_{class_date.replace('-', '')}_combo"
     choreo = guide.get("choreography", {})
+    class_techniques = [
+        normalize_technique_slug(tech.get("slug", ""))
+        for tech in guide.get("techniques", [])
+        if tech.get("slug")
+    ]
 
     # Build flat steps list from phases
     all_steps = []
     for phase in choreo.get("phases", []):
         for i, step in enumerate(phase.get("steps", [])):
-            all_steps.append({
-                "step_number": len(all_steps) + 1,
-                "timestamp": step.get("time", ""),
-                "frame": step.get("frame", ""),
-                "count": step.get("counts", ""),
-                "technique": step.get("move", "").lower().replace(" ", "_"),
-                "position": step.get("body", ""),
-                "instruction": step.get("body", ""),
-                "instructor_tip": step.get("cue", ""),
-                "what_to_watch": "",
-            })
+            all_steps.append(
+                normalize_video_part(
+                    {
+                        "step_number": len(all_steps) + 1,
+                        "timestamp": step.get("time", ""),
+                        "frame": step.get("frame", ""),
+                        "count": step.get("counts", ""),
+                        "technique": step.get("move", "").lower().replace(" ", "_"),
+                        "position": step.get("body", ""),
+                        "instruction": step.get("body", ""),
+                        "instructor_tip": step.get("cue", ""),
+                        "what_to_watch": "",
+                    },
+                    class_techniques,
+                )
+            )
 
     breakdowns[combo_key] = {
         "video_breakdown": {
@@ -326,16 +388,13 @@ def update_breakdowns(guide: dict, frame_slug: str, class_date: str, video_filen
             "class_date": class_date,
             "frame_slug": frame_slug,
             "description": choreo.get("sequence", ""),
+            "techniques": class_techniques,
             "steps": all_steps,
         }
     }
 
     # Cross-reference from individual techniques
-    technique_slugs = set()
-    for tech in guide.get("techniques", []):
-        slug = tech.get("slug", "")
-        if slug:
-            technique_slugs.add(normalize_technique_slug(slug))
+    technique_slugs = set(class_techniques)
     for slug in technique_slugs:
         if slug not in breakdowns:
             breakdowns[slug] = {}
@@ -490,6 +549,12 @@ def main():
 
     # Load videos
     videos_data = json.loads((DATA / "videos.json").read_text()) if (DATA / "videos.json").exists() else {}
+    from ingest.youtube_tutorials import ensure_tutorials_for_techniques
+    videos_data = ensure_tutorials_for_techniques(
+        videos_data,
+        class_doc.get("techniques_covered", []),
+        class_date=class_date,
+    )
 
     # Analyze with Claude Vision
     print("  Analyzing frames with Claude Vision...")

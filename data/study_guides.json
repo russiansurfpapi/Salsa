@@ -2751,22 +2751,18 @@
         "common_error": "Accidentally doing a full basic step \u2014 students forget to stop at the halfway point and complete the full rotation, losing the 'half and half' quality the instructor is building.",
         "videos": [
           {
-            "title": "Salsa Basic Step for NY Style On2 (Beginner Tutorial)",
-            "url": "https://www.youtube.com/watch?v=-FW_9o7SESA",
-            "channel": "TheDanceDojo",
-            "why": "Dedicated beginner tutorial for the On2 basic step. Clear breakdown of leader and follower footwork with counting."
+            "title": "Salsa On1 and On2 Half Turns | Footwork Lesson",
+            "url": "https://www.youtube.com/watch?v=5vNN_LHYTMw",
+            "channel": "Krambo Dance",
+            "why": "Explicitly titled 'Salsa On1 and On2 Half Turns | Footwork Lesson' with direct focus on half turns as a distinct footwork technique. Matches the Half Step as a partial rotation variation with clear instructional breakdown.",
+            "match_method": "llm"
           },
           {
-            "title": "SALSA ON2 - Partnerwork Basics Lesson 1 - Basic Step",
-            "url": "https://www.youtube.com/watch?v=z7YqGIuhWVg",
-            "channel": "Salsa On2",
-            "why": "Part of a structured lesson series for NY style On2. Shows partnerwork basic step with leader and follower perspectives."
-          },
-          {
-            "title": "BASIC STEPS - Eddie Torres Instructional Salsa On2",
-            "url": "https://www.youtube.com/watch?v=dbeWlBadrAs",
-            "channel": "Eddie Torres (Mambo On2)",
-            "why": "Eddie Torres, the godfather of NY On2/mambo, teaches the basic step. Authoritative source for proper On2 timing and technique."
+            "title": "SalsAnalysis - Beginner Social Combo - Guy Half Turn/Girl Walking Left Turn",
+            "url": "https://www.youtube.com/watch?v=AKZLdxzFtLs",
+            "channel": "Salsa Josh",
+            "why": "Titled 'SalsAnalysis - Beginner Social Combo - Guy Half Turn/Girl Walking Left Turn' with explicit 'Half Turn' in metadata. Demonstrates half turn mechanics in On2 context as a transition element within combinations.",
+            "match_method": "llm"
           }
         ]
       }
@@ -3081,5 +3077,2794 @@
         "description": "Inside turn mid-point \u2014 follower mid-left-turn under the leader's raised arm, count 2 position"
       }
     ]
+  },
+  "2026-07-28": {
+    "title": "NY On2 Mambo: Side-to-Side, Basic Step, Turns & Cross Body Lead",
+    "subtitle": "Class #6 \u2014 2026-07-28 | NY Style On2 / Eddie Torres Mambo",
+    "techniques": [
+      {
+        "slug": "side_to_side",
+        "name": "Side-to-Side",
+        "tagline": "First fundamental: lateral weight transfer on the slot",
+        "what": "Step to the side on count 5, then return to center with a quick-quick-slow (6-7) rhythm. Both partners mirror the lateral shift, establishing the On2 slot and grounding the hip walk before any turns are added.",
+        "mechanics": [
+          {
+            "counts": "5",
+            "action": "Step directly to the side \u2014 right for leader, left for follower"
+          },
+          {
+            "counts": "6",
+            "action": "Quick step back toward center, weight transfers"
+          },
+          {
+            "counts": "7",
+            "action": "Slow recover/close, settle hip over standing leg"
+          },
+          {
+            "counts": "1-2-3",
+            "action": "Repeat to opposite side; break/change-of-direction on 2"
+          }
+        ],
+        "arm_styling": [
+          {
+            "counts": "5",
+            "action": "Arms open slightly with the lateral step, maintaining frame width"
+          },
+          {
+            "counts": "6-7",
+            "action": "Arms return to neutral as weight recovers to center"
+          }
+        ],
+        "instructor_quotes": [
+          "On count 5, step side; on 6-7, return to center with a quick-quick-slow rhythm",
+          "Practice side-to-side before combining it with other movements to lock in the weight transfer",
+          "side to side, 5, we go, and 123"
+        ],
+        "frames": [
+          {
+            "frame": "frame_001.jpg",
+            "caption": "Both dancers face mirror, side-by-side \u2014 start position before side-to-side"
+          },
+          {
+            "frame": "frame_002.jpg",
+            "caption": "Lateral step initiated \u2014 weight shifting to the side on count 5"
+          },
+          {
+            "frame": "frame_003.jpg",
+            "caption": "Quick-quick recovery step (count 6), bodies returning toward center"
+          },
+          {
+            "frame": "frame_004.jpg",
+            "caption": "Slow recover (count 7), hip settling over standing leg"
+          },
+          {
+            "frame": "frame_005.jpg",
+            "caption": "Opposite side step begins \u2014 count 1 of next phrase, break on 2 visible"
+          }
+        ],
+        "drill": "Stand alone facing the mirror. Count aloud: '5-6-7, 1-2-3.' Step side on 5, quick-quick back on 6-7, then break the other direction on 1, rock on 2, recover on 3. Do 4 repetitions without music, then add music at 50% speed.",
+        "common_error": "Stepping too wide and losing the slot \u2014 keep the side step compact (one foot-width) so the quick-quick return stays controlled.",
+        "videos": []
+      },
+      {
+        "slug": "basic_step",
+        "name": "Basic Step (Hip Walk)",
+        "tagline": "Core On2 footwork with Cuban hip motion",
+        "what": "The NY On2 basic step breaks on count 2 (forward rock) and count 6 (back rock). The instructor layers in a 'hip walk' action \u2014 each weight transfer drives the hip over the standing leg, creating the characteristic mambo body motion. Return to closed position after turns to reset this timing.",
+        "mechanics": [
+          {
+            "counts": "1",
+            "action": "Step forward (leader left foot), hip walks over that leg"
+          },
+          {
+            "counts": "2",
+            "action": "Rock/break forward \u2014 On2 change of direction, weight shifts back"
+          },
+          {
+            "counts": "3",
+            "action": "Recover, weight returns to center"
+          },
+          {
+            "counts": "5",
+            "action": "Step back (leader right foot), hip walks over that leg"
+          },
+          {
+            "counts": "6",
+            "action": "Rock/break back \u2014 On2 change of direction, weight shifts forward"
+          },
+          {
+            "counts": "7",
+            "action": "Recover, weight returns to center"
+          }
+        ],
+        "arm_styling": [
+          {
+            "counts": "1-2-3",
+            "action": "Arms in closed or open position; leader's right hand maintains back connection"
+          },
+          {
+            "counts": "5-6-7",
+            "action": "Frame holds steady; follower's left hand rests on leader's upper arm"
+          }
+        ],
+        "instructor_quotes": [
+          "Step forward on 1, rock back on 2, recover on 3; then step back on 5, rock forward on 6, recover on 7",
+          "Use a hip walk action during the basic step to maintain Cuban motion and connection",
+          "Return to closed position after turns or directional changes to reset the basic step timing",
+          "hip walk, just a hip walk, and go"
+        ],
+        "frames": [
+          {
+            "frame": "frame_006.jpg",
+            "caption": "Forward step on count 1 \u2014 leader's weight over front foot, hip engaged"
+          },
+          {
+            "frame": "frame_007.jpg",
+            "caption": "On2 break (count 2) \u2014 direction reverses, rock back visible in body lean"
+          },
+          {
+            "frame": "frame_008.jpg",
+            "caption": "Recovery count 3 \u2014 weight centers, preparing back step"
+          },
+          {
+            "frame": "frame_009.jpg",
+            "caption": "Back step count 5 \u2014 hip walk action on opposite side"
+          },
+          {
+            "frame": "frame_010.jpg",
+            "caption": "On6 break \u2014 forward rock, change of direction on back half of phrase"
+          }
+        ],
+        "drill": "Solo hip walk drill: walk forward 4 steps counting '1-2-3-5' (skip 4), letting each step drive the hip. Then add the rock-back on 2 and rock-forward on 6. Record yourself from the side to check hip over standing leg.",
+        "common_error": "Breaking on count 1 instead of count 2 \u2014 this is On1/LA timing. In NY On2, the forward rock happens ON 2, not on 1.",
+        "videos": [
+          {
+            "title": "Salsa Basic Step for NY Style On2 (Beginner Tutorial)",
+            "url": "https://www.youtube.com/watch?v=-FW_9o7SESA",
+            "channel": "TheDanceDojo",
+            "why": "Dedicated beginner tutorial for the On2 basic step. Clear breakdown of leader and follower footwork with counting."
+          },
+          {
+            "title": "SALSA ON2 - Partnerwork Basics Lesson 1 - Basic Step",
+            "url": "https://www.youtube.com/watch?v=z7YqGIuhWVg",
+            "channel": "Salsa On2",
+            "why": "Part of a structured lesson series for NY style On2. Shows partnerwork basic step with leader and follower perspectives."
+          },
+          {
+            "title": "BASIC STEPS - Eddie Torres Instructional Salsa On2",
+            "url": "https://www.youtube.com/watch?v=dbeWlBadrAs",
+            "channel": "Eddie Torres (Mambo On2)",
+            "why": "Eddie Torres, the godfather of NY On2/mambo, teaches the basic step. Authoritative source for proper On2 timing and technique."
+          }
+        ]
+      },
+      {
+        "slug": "right_turn",
+        "name": "Right Turn",
+        "tagline": "Stationary single right turn maintaining frame",
+        "what": "The leader executes a right turn (turning to the right) on count 1, completing the rotation through counts 2-3 while maintaining frame and partner connection. The instructor chains multiple right turns in sequence. The follower stays centered in the slot while the leader rotates around the shared axis.",
+        "mechanics": [
+          {
+            "counts": "1",
+            "action": "Initiate right turn \u2014 pivot on ball of foot, right shoulder leads back"
+          },
+          {
+            "counts": "2",
+            "action": "On2 break mid-turn \u2014 weight transfers as rotation continues"
+          },
+          {
+            "counts": "3",
+            "action": "Complete rotation, land facing original direction, recover weight"
+          },
+          {
+            "counts": "5-6-7",
+            "action": "Basic step or preparation for next turn in chain"
+          }
+        ],
+        "arm_styling": [
+          {
+            "counts": "1",
+            "action": "Frame compacts slightly as turn initiates; connection hand stays at follower's back"
+          },
+          {
+            "counts": "2-3",
+            "action": "Arms return to open/closed frame as rotation completes"
+          }
+        ],
+        "instructor_quotes": [
+          "Execute a right turn on count 1, maintaining frame and partner connection throughout the rotation",
+          "Chain multiple right turns in sequence while keeping the follower centered and responsive",
+          "turn, 3, 5. Repeat, 1235"
+        ],
+        "frames": [
+          {
+            "frame": "frame_011.jpg",
+            "caption": "Right turn initiation \u2014 leader pivoting right, follower tracking in slot"
+          },
+          {
+            "frame": "frame_012.jpg",
+            "caption": "Mid-turn on count 2 \u2014 On2 break visible in weight shift during rotation"
+          },
+          {
+            "frame": "frame_013.jpg",
+            "caption": "Turn completion count 3 \u2014 landing back in slot, frame re-establishing"
+          },
+          {
+            "frame": "frame_014.jpg",
+            "caption": "Chained right turn \u2014 second rotation beginning on count 1 of next phrase"
+          }
+        ],
+        "drill": "Solo: mark a spot on the floor. Practice right turns staying on that spot \u2014 count '1-2-3' per turn. Do 4 in a row without drifting. Then add a partner and check that the follower doesn't have to move to accommodate your rotation.",
+        "common_error": "Drifting forward during the turn instead of rotating in place \u2014 the right turn is stationary; your standing foot is the axis.",
+        "videos": [
+          {
+            "title": "SALSA ON2 - Partnerwork Basics Lesson 4 - Single Right Turn",
+            "url": "https://www.youtube.com/watch?v=sx-EKzQ-Dik",
+            "channel": "Salsa On2",
+            "why": "Single stationary right turn for NY On2. Part of the structured lesson series; covers leader's lead technique and follower's turn."
+          },
+          {
+            "title": "Salsa Solo - Right Turn - Lesson 5 (Beginners, NY/On2)",
+            "url": "https://www.youtube.com/watch?v=03m3cnI1g44",
+            "channel": "Salsa On2",
+            "why": "Solo right turn footwork for On2. Good for practicing the turn mechanics on your own before partnerwork."
+          },
+          {
+            "title": "FUNDAMENTAL SALSA ON2 MAMBO SHINE: Basic Steps / Four Corners / Right Turn / Hook Step",
+            "url": "https://www.youtube.com/watch?v=tGviVuqpSpY",
+            "channel": "Unknown (Mambo/On2 instructor)",
+            "why": "Covers the right turn as part of fundamental On2 mambo shines. Also includes basic steps, four corners, and hook step \u2014 good overview video."
+          }
+        ]
+      },
+      {
+        "slug": "inside_turn",
+        "name": "Inside Turn (Traveling Left Turn)",
+        "tagline": "Follower rotates left through the slot on leader's lead",
+        "what": "The inside turn (also called Traveling Left in NY On2 terminology) sends the follower rotating to the left while traveling through the slot. The leader provides a clear frame and timing cue; the follower rotates while staying in the slot. This is distinct from a right turn \u2014 the follower turns toward the leader's right side.",
+        "mechanics": [
+          {
+            "counts": "1",
+            "action": "Leader steps back/side to open the slot; follower receives left-turn lead"
+          },
+          {
+            "counts": "2",
+            "action": "On2 break \u2014 follower's rotation initiates, leader's hand raises to guide"
+          },
+          {
+            "counts": "3",
+            "action": "Follower completes rotation through the slot, lands facing leader"
+          },
+          {
+            "counts": "5-6-7",
+            "action": "Both return to basic or closed position"
+          }
+        ],
+        "arm_styling": [
+          {
+            "counts": "1-2",
+            "action": "Leader raises left hand to create arch; right hand releases follower's back"
+          },
+          {
+            "counts": "3",
+            "action": "Leader lowers hand as follower completes turn, re-establishes connection"
+          }
+        ],
+        "instructor_quotes": [
+          "Lead a left turn (inside turn) with clear frame and timing; follower rotates while staying in the slot",
+          "123I turn, I ask, 123"
+        ],
+        "frames": [
+          {
+            "frame": "frame_019.jpg",
+            "caption": "Inside turn lead \u2014 leader's hand raised, follower beginning left rotation"
+          },
+          {
+            "frame": "frame_020.jpg",
+            "caption": "Follower mid-rotation through slot, leader stepping to open space"
+          },
+          {
+            "frame": "frame_021.jpg",
+            "caption": "Follower completing inside turn, both reconnecting in slot"
+          }
+        ],
+        "drill": "With a partner: practice the inside turn lead 8 times in a row. Leader focus: raise the hand BEFORE count 2, not on it. Follower focus: spot the mirror wall and complete the turn on count 3, not after.",
+        "common_error": "Leader leading too late (on 2 instead of before 2) \u2014 the follower needs the signal on count 1 to initiate rotation so the break lands on 2.",
+        "videos": [
+          {
+            "title": "Inside Turn - Beginner Salsa Turns and Spins On2 | TheDanceDojo",
+            "url": "https://www.youtube.com/watch?v=Ue4sSaY-bsQ",
+            "channel": "TheDanceDojo",
+            "why": "Beginner-focused inside turn tutorial specifically for On2. Clear instructional style with both perspectives shown."
+          },
+          {
+            "title": "SALSA ON2 - Partnerwork Basics Lesson 3 - Traveling Left (Inside Turn)",
+            "url": "https://www.youtube.com/watch?v=MW5sezTGh18",
+            "channel": "Salsa On2",
+            "why": "The Traveling Left Turn is the standard inside turn in NY On2. Part of the structured beginner partnerwork series."
+          },
+          {
+            "title": "Free Spin Inside Turn - Salsa ON2 - Adv Beginner Partnerwork Lesson 9",
+            "url": "https://www.youtube.com/watch?v=2QLSsPGidPA",
+            "channel": "Salsa On2",
+            "why": "Free spin variation of the inside turn. Slightly more advanced but breaks down the mechanics clearly. Good once the basic inside turn is comfortable."
+          }
+        ]
+      },
+      {
+        "slug": "cross_body_lead",
+        "name": "Cross Body Lead (CBL)",
+        "tagline": "Fundamental NY slot move \u2014 follower crosses leader's body",
+        "what": "The cross body lead is the most fundamental move in NY-style salsa. The leader steps out of the slot on count 1, allowing the follower to travel across on counts 2-3, then the leader steps into the slot on counts 5-6-7. Clear hand signals direct the follower's path. The instructor sequences this with turns: cross body left turn, cross body right turn.",
+        "mechanics": [
+          {
+            "counts": "1",
+            "action": "Leader steps forward and to the left, clearing the slot for follower"
+          },
+          {
+            "counts": "2",
+            "action": "On2 break \u2014 leader's weight shifts, follower begins crossing"
+          },
+          {
+            "counts": "3",
+            "action": "Follower passes through slot, leader pivots 90\u00b0 to face new direction"
+          },
+          {
+            "counts": "5",
+            "action": "Leader steps into slot behind follower"
+          },
+          {
+            "counts": "6",
+            "action": "On6 break \u2014 both settle into new positions"
+          },
+          {
+            "counts": "7",
+            "action": "Recover, re-establish connection in closed or open position"
+          }
+        ],
+        "arm_styling": [
+          {
+            "counts": "1-2",
+            "action": "Leader's left hand guides follower's right hand forward through the slot"
+          },
+          {
+            "counts": "3",
+            "action": "Leader's right hand may redirect follower's shoulder for turn variation"
+          },
+          {
+            "counts": "5-6-7",
+            "action": "Hands reconnect in closed position to reset"
+          }
+        ],
+        "instructor_quotes": [
+          "From a cross-body lead position, maintain connection and clear hand signals for the follower's direction",
+          "Cross bodies, left turn, right turn, right turn, switch, combing, sink, comb left, closed position, cross body left turn",
+          "closed position, cross body left turn"
+        ],
+        "frames": [
+          {
+            "frame": "frame_022.jpg",
+            "caption": "CBL setup \u2014 leader stepping left to clear slot, hand connection visible"
+          },
+          {
+            "frame": "frame_023.jpg",
+            "caption": "Follower crossing through slot on counts 2-3, leader pivoting"
+          },
+          {
+            "frame": "frame_024.jpg",
+            "caption": "CBL completion \u2014 both in new positions, re-establishing closed frame"
+          },
+          {
+            "frame": "frame_025.jpg",
+            "caption": "CBL with left turn variation \u2014 follower rotating as she crosses"
+          },
+          {
+            "frame": "frame_026.jpg",
+            "caption": "Partner work CBL \u2014 clear hand signal directing follower's path"
+          },
+          {
+            "frame": "frame_027.jpg",
+            "caption": "Closed position reset after CBL sequence \u2014 basic step timing re-established"
+          }
+        ],
+        "drill": "Walk the CBL without music: leader steps left on '1', says 'cross' on '2-3', steps in on '5'. Do 10 reps focusing only on the leader's footpath \u2014 a perfect L-shape. Then add the follower.",
+        "common_error": "Leader not fully clearing the slot on count 1 \u2014 if you don't step far enough left, the follower has nowhere to travel and the CBL collapses into a bump.",
+        "videos": [
+          {
+            "title": "How to do Cross Body Lead (NY On2 Salsa)",
+            "url": "https://www.youtube.com/watch?v=6mc4uGJnmBg",
+            "channel": "TheDanceDojo",
+            "why": "Focused tutorial on the cross body lead as the most fundamental move in NY-style salsa. Clear explanation of leader mechanics."
+          },
+          {
+            "title": "SALSA ON2 - Partnerwork Basics Lesson 2 - Cross Body Lead",
+            "url": "https://www.youtube.com/watch?v=t-W1O6w0FFk",
+            "channel": "Salsa On2",
+            "why": "Part of the structured NY On2 partnerwork series. Lesson 2 covers cross body lead right after the basic step."
+          },
+          {
+            "title": "Cross Body Lead - Beginner Salsa Steps On2 | TheDanceDojo.com",
+            "url": "https://www.youtube.com/watch?v=bWeuEXuZXRA",
+            "channel": "TheDanceDojo",
+            "why": "Another TheDanceDojo tutorial on CBL for On2 beginners. Good complementary perspective to their other CBL video."
+          }
+        ]
+      }
+    ],
+    "choreography": {
+      "sequence": "SIDE-TO-SIDE -> BASIC STEP (HIP WALK) -> SIDE-TO-SIDE + RIGHT TURN -> COMBO (SIDE-TO-SIDE + TURN + BASIC) -> CROSS BODY LEAD -> CBL + LEFT TURN -> CBL + RIGHT TURN -> CLOSED POSITION RESET",
+      "phases": [
+        {
+          "name": "Phase 1: Solo Walk-Through (slow)",
+          "time": "0:01 - 0:14",
+          "steps": [
+            {
+              "frame": "frame_001.jpg",
+              "time": "0:01",
+              "counts": "ready",
+              "move": "Start Position",
+              "body": "Both dancers face mirror, standing side-by-side, weight centered, arms at sides",
+              "cue": "1st 2 fundamental movements"
+            },
+            {
+              "frame": "frame_002.jpg",
+              "time": "0:02",
+              "counts": "5",
+              "move": "Side-to-Side",
+              "body": "Lateral step to the side, weight shifting, slight hip engagement",
+              "cue": "On count 5, step side"
+            },
+            {
+              "frame": "frame_003.jpg",
+              "time": "0:03",
+              "counts": "6",
+              "move": "Side-to-Side",
+              "body": "Quick step returning toward center, bodies moving back to slot",
+              "cue": "6-7, return to center with a quick-quick-slow rhythm"
+            },
+            {
+              "frame": "frame_004.jpg",
+              "time": "0:04",
+              "counts": "7",
+              "move": "Side-to-Side",
+              "body": "Slow recover, hip settling over standing leg, weight centered",
+              "cue": "and 123"
+            },
+            {
+              "frame": "frame_005.jpg",
+              "time": "0:05",
+              "counts": "1-2-3",
+              "move": "Side-to-Side (opposite)",
+              "body": "Opposite lateral step, break on 2 visible in body lean",
+              "cue": "side to side, 5, we go, and 123"
+            },
+            {
+              "frame": "frame_006.jpg",
+              "time": "0:06",
+              "counts": "1",
+              "move": "Basic Step \u2014 Forward",
+              "body": "Forward step, weight over front foot, hip walk action beginning",
+              "cue": "hip walk, just a hip walk, and go"
+            },
+            {
+              "frame": "frame_007.jpg",
+              "time": "0:07",
+              "counts": "2",
+              "move": "Basic Step \u2014 On2 Break",
+              "body": "Rock back on 2, On2 change of direction, body lean shifts",
+              "cue": "rock back on 2"
+            },
+            {
+              "frame": "frame_008.jpg",
+              "time": "0:08",
+              "counts": "3",
+              "move": "Basic Step \u2014 Recover",
+              "body": "Weight recovers to center, preparing back step",
+              "cue": "recover on 3"
+            },
+            {
+              "frame": "frame_009.jpg",
+              "time": "0:09",
+              "counts": "5",
+              "move": "Basic Step \u2014 Back",
+              "body": "Back step, hip walk on opposite side, weight over back foot",
+              "cue": "step back on 5"
+            },
+            {
+              "frame": "frame_010.jpg",
+              "time": "0:10",
+              "counts": "6",
+              "move": "Basic Step \u2014 On6 Break",
+              "body": "Forward rock on 6, On2 back-half break, direction reverses",
+              "cue": "rock forward on 6"
+            },
+            {
+              "frame": "frame_011.jpg",
+              "time": "0:11",
+              "counts": "1",
+              "move": "Right Turn \u2014 Initiation",
+              "body": "Pivot begins on count 1, right shoulder leading back, weight on ball of foot",
+              "cue": "turn, 3, 5"
+            },
+            {
+              "frame": "frame_012.jpg",
+              "time": "0:12",
+              "counts": "2",
+              "move": "Right Turn \u2014 On2 Break Mid-Turn",
+              "body": "Mid-rotation, On2 break visible in weight shift, frame compact",
+              "cue": "1235"
+            },
+            {
+              "frame": "frame_013.jpg",
+              "time": "0:13",
+              "counts": "3",
+              "move": "Right Turn \u2014 Completion",
+              "body": "Landing back in slot facing original direction, frame re-establishing",
+              "cue": "Repeat, 1235"
+            },
+            {
+              "frame": "frame_014.jpg",
+              "time": "0:14",
+              "counts": "1",
+              "move": "Combo \u2014 Side-to-Side into Turn",
+              "body": "Transition from side-to-side into turn sequence, bodies moving laterally then pivoting",
+              "cue": "Now the combo, side to side, and 1, turn, 3, 5"
+            }
+          ]
+        },
+        {
+          "name": "Phase 2: Full Speed Solo + Combo",
+          "time": "0:15 - 0:22",
+          "steps": [
+            {
+              "frame": "frame_015.jpg",
+              "time": "0:15",
+              "counts": "1-2-3",
+              "move": "Combo \u2014 Full Speed",
+              "body": "Both dancers now facing audience/camera, full speed execution, arms more active",
+              "cue": "Hip, and 123, basic step, 1235"
+            },
+            {
+              "frame": "frame_016.jpg",
+              "time": "0:16",
+              "counts": "5-6-7",
+              "move": "Combo \u2014 Hip Walk into Turn",
+              "body": "Hip walk action visible, transitioning into turn on next count 1",
+              "cue": "your pattern, 123I turn"
+            },
+            {
+              "frame": "frame_017.jpg",
+              "time": "0:17",
+              "counts": "1",
+              "move": "Inside Turn \u2014 Lead",
+              "body": "Leader's hand raising to create arch, follower beginning left rotation",
+              "cue": "I ask, 123"
+            },
+            {
+              "frame": "frame_018.jpg",
+              "time": "0:18",
+              "counts": "2-3",
+              "move": "Inside Turn \u2014 Follower Rotating",
+              "body": "Follower mid-rotation through slot, leader stepping to open space, hand connection maintained",
+              "cue": "Lead a left turn with clear frame and timing"
+            },
+            {
+              "frame": "frame_019.jpg",
+              "time": "0:19",
+              "counts": "5-6-7",
+              "move": "Inside Turn \u2014 Completion",
+              "body": "Follower completing rotation, both reconnecting, hands visible at connection point",
+              "cue": "follower rotates while staying in the slot"
+            },
+            {
+              "frame": "frame_020.jpg",
+              "time": "0:20",
+              "counts": "1-2-3",
+              "move": "Cross Body Lead \u2014 Setup",
+              "body": "Leader stepping left to clear slot, hand connection guiding follower forward",
+              "cue": "Cross bodies, left turn, right turn"
+            },
+            {
+              "frame": "frame_021.jpg",
+              "time": "0:21",
+              "counts": "5-6-7",
+              "move": "Cross Body Lead \u2014 Follower Crossing",
+              "body": "Follower traveling through slot, leader pivoting 90\u00b0, clear slot visible",
+              "cue": "cross body left turn"
+            },
+            {
+              "frame": "frame_022.jpg",
+              "time": "0:22",
+              "counts": "1-2-3",
+              "move": "CBL + Left Turn",
+              "body": "CBL with inside turn variation \u2014 follower rotating as she crosses, leader's hand raised",
+              "cue": "switch, combing, sink, comb left"
+            }
+          ]
+        },
+        {
+          "name": "Phase 3: Partner Work",
+          "time": "0:23 - 0:34",
+          "steps": [
+            {
+              "frame": "frame_023.jpg",
+              "time": "0:23",
+              "counts": "ready",
+              "move": "Closed Position \u2014 Partner Connect",
+              "body": "Partners facing each other in closed position, hands connected, frame established",
+              "cue": "closed position"
+            },
+            {
+              "frame": "frame_024.jpg",
+              "time": "0:24",
+              "counts": "1-2-3",
+              "move": "Partner Basic Step",
+              "body": "Both in closed position executing basic step, hip walk visible on both dancers",
+              "cue": "Return to closed position after turns to reset the basic step timing"
+            },
+            {
+              "frame": "frame_025.jpg",
+              "time": "0:25",
+              "counts": "5-6-7",
+              "move": "Partner Basic \u2014 Back Half",
+              "body": "Back step with hip walk, On6 break, connection maintained through frame",
+              "cue": "1, 2, 3, 5, 6, 7"
+            },
+            {
+              "frame": "frame_026.jpg",
+              "time": "0:26",
+              "counts": "1-2-3",
+              "move": "Partner CBL",
+              "body": "Leader clearing slot, follower beginning to cross, hand signal directing path",
+              "cue": "maintain connection and clear hand signals for the follower's direction"
+            },
+            {
+              "frame": "frame_027.jpg",
+              "time": "0:27",
+              "counts": "5-6-7",
+              "move": "Partner CBL \u2014 Completion",
+              "body": "Follower through slot, both in new positions, re-establishing closed frame",
+              "cue": "closed position, cross body left turn"
+            },
+            {
+              "frame": "frame_028.jpg",
+              "time": "0:28",
+              "counts": "1-2-3",
+              "move": "CBL + Right Turn",
+              "body": "CBL with right turn variation, leader guiding follower's right rotation through slot",
+              "cue": "right turn, right turn, switch"
+            },
+            {
+              "frame": "frame_029.jpg",
+              "time": "0:29",
+              "counts": "5-6-7",
+              "move": "Comb / Styling",
+              "body": "Combing action \u2014 leader's hand passing over follower's head, follower's arm styling",
+              "cue": "combing, sink, comb left"
+            },
+            {
+              "frame": "frame_030.jpg",
+              "time": "0:30",
+              "counts": "1-2-3",
+              "move": "Sink + Comb Left",
+              "body": "Both dancers lowering center of gravity (sink), then comb to the left",
+              "cue": "sink, comb left"
+            },
+            {
+              "frame": "frame_031.jpg",
+              "time": "0:31",
+              "counts": "5-6-7",
+              "move": "Closed Position Reset",
+              "body": "Returning to closed position, frame re-established, basic step timing reset",
+              "cue": "closed position"
+            },
+            {
+              "frame": "frame_032.jpg",
+              "time": "0:32",
+              "counts": "1-2-3",
+              "move": "CBL + Left Turn (Final)",
+              "body": "Final cross body lead with left turn, follower rotating through slot with momentum",
+              "cue": "cross body left turn"
+            },
+            {
+              "frame": "frame_033.jpg",
+              "time": "0:33",
+              "counts": "5-6-7",
+              "move": "Ending Sequence",
+              "body": "Both dancers separating slightly, shines position, applause from audience beginning",
+              "cue": "Bye, give her a hand"
+            },
+            {
+              "frame": "frame_034.jpg",
+              "time": "0:34",
+              "counts": "end",
+              "move": "Final Position",
+              "body": "Dancers apart, facing audience, sequence complete, crowd applauding",
+              "cue": "give her a hand"
+            }
+          ]
+        }
+      ],
+      "hard_transitions": [
+        {
+          "from": "Side-to-Side",
+          "to": "Basic Step (Hip Walk)",
+          "frames": "005 -> 006",
+          "why": "The side-to-side ends on count 3 (slow recover); the basic step begins on count 1 of the next phrase. Beginners rush the transition and lose the On2 break. Wait for the full slow on 3 before stepping forward on 1."
+        },
+        {
+          "from": "Basic Step",
+          "to": "Right Turn",
+          "frames": "010 -> 011",
+          "why": "The turn initiates on count 1 \u2014 the same count as the forward step in the basic. Beginners often take the forward step AND then try to turn, creating a late pivot. The pivot IS the count-1 step."
+        },
+        {
+          "from": "Right Turn",
+          "to": "Inside Turn (CBL)",
+          "frames": "013 -> 014",
+          "why": "After chaining right turns, the leader must re-establish the slot and frame before leading the inside turn. Rushing from the right turn directly into the CBL causes the follower to lose orientation."
+        },
+        {
+          "from": "Inside Turn",
+          "to": "Cross Body Lead",
+          "frames": "019 -> 020",
+          "why": "The inside turn ends with the follower facing the leader; the CBL immediately sends her across. The leader must lower the hand and re-establish connection on counts 5-6-7 before the CBL begins on count 1."
+        },
+        {
+          "from": "CBL",
+          "to": "Closed Position Reset",
+          "frames": "031 -> 032",
+          "why": "After multiple CBL variations (left turn, right turn, comb), returning to closed position requires the leader to actively bring the follower in \u2014 not wait for her. The reset happens on counts 5-6-7."
+        }
+      ]
+    },
+    "practice": {
+      "total_minutes": 25,
+      "sections": [
+        {
+          "name": "Footwork Foundation (Solo)",
+          "minutes": 8,
+          "drills": [
+            {
+              "name": "Side-to-Side Metronome",
+              "minutes": 2,
+              "instructions": "Set metronome to 60 BPM. Count '5-6-7-1-2-3' aloud. Step side on 5, quick-quick on 6-7, break opposite on 1, rock on 2, recover on 3. No music yet \u2014 feel the On2 break on 2 and 6."
+            },
+            {
+              "name": "Hip Walk Basic",
+              "minutes": 3,
+              "instructions": "Walk forward 4 steps counting '1-2-3-5'. Each step drives the hip over the standing leg. Add the rock-back on 2 and rock-forward on 6. Record from the side \u2014 check hip over standing leg, not swinging side to side."
+            },
+            {
+              "name": "Right Turn Spot Drill",
+              "minutes": 3,
+              "instructions": "Mark an X on the floor. Practice right turns staying on the X \u2014 count '1-2-3' per turn. Do 4 in a row. The pivot IS the count-1 step. Check: are you drifting forward? If yes, your weight is too far forward at initiation."
+            }
+          ]
+        },
+        {
+          "name": "Combo Building (Solo then Partner)",
+          "minutes": 10,
+          "drills": [
+            {
+              "name": "Side-to-Side + Turn Combo",
+              "minutes": 3,
+              "instructions": "Solo: side-to-side (5-6-7, 1-2-3), then right turn (1-2-3), then basic step (5-6-7). Repeat 8 times. Instructor sequence: 'side to side, and 1, turn, 3, 5. Repeat, 1235.'"
+            },
+            {
+              "name": "CBL Walk-Through",
+              "minutes": 4,
+              "instructions": "With partner, no music: leader steps left on '1' (say it aloud), says 'cross' on '2-3', steps in on '5'. Do 10 reps. Leader focus: L-shaped footpath. Follower focus: travel straight through the slot, don't curve."
+            },
+            {
+              "name": "Inside Turn Timing",
+              "minutes": 3,
+              "instructions": "With partner: leader raises hand BEFORE count 2 (on count 1). Follower: spot the mirror and complete turn ON count 3. Do 8 reps. Common fix: leader, your signal must arrive on 1, not on 2."
+            }
+          ]
+        },
+        {
+          "name": "Full Sequence with Music",
+          "minutes": 7,
+          "drills": [
+            {
+              "name": "Instructor Sequence (Slow Music)",
+              "minutes": 4,
+              "instructions": "With partner at 70% speed: BASIC -> SIDE-TO-SIDE -> RIGHT TURN -> BASIC -> CBL -> CBL+LEFT TURN -> CBL+RIGHT TURN -> CLOSED POSITION. Use instructor's phrase: 'Cross bodies, left turn, right turn, right turn, switch, combing, sink, comb left, closed position, cross body left turn.'"
+            },
+            {
+              "name": "Full Speed Social Practice",
+              "minutes": 3,
+              "instructions": "Full speed music. Leader: only use moves from today's class. Focus on returning to closed position after every sequence to reset timing. Follower: maintain slot discipline \u2014 don't drift outside the line."
+            }
+          ]
+        }
+      ]
+    },
+    "key_frames": [
+      {
+        "frame": "frame_001.jpg",
+        "label": "Start Position",
+        "description": "Both dancers face mirror side-by-side \u2014 reference for neutral stance before any movement begins. Check: weight centered, knees soft, arms relaxed."
+      },
+      {
+        "frame": "frame_002.jpg",
+        "label": "Side-to-Side Count 5",
+        "description": "The lateral step on count 5 \u2014 first fundamental movement. Shows the compact step width and initial hip engagement."
+      },
+      {
+        "frame": "frame_007.jpg",
+        "label": "On2 Break (Count 2)",
+        "description": "The defining moment of NY On2 \u2014 the forward rock/break on count 2. Body lean shows the change of direction. This is what separates On2 from On1."
+      },
+      {
+        "frame": "frame_010.jpg",
+        "label": "On6 Break (Count 6)",
+        "description": "The back-half On2 break on count 6. Mirror of the count-2 break. Both breaks together define the mambo timing phrase."
+      },
+      {
+        "frame": "frame_011.jpg",
+        "label": "Right Turn Initiation",
+        "description": "Pivot beginning on count 1 \u2014 the turn IS the count-1 step, not a step then a turn. Critical timing distinction."
+      },
+      {
+        "frame": "frame_015.jpg",
+        "label": "Full Speed \u2014 Facing Camera",
+        "description": "First frame where dancers face the camera \u2014 transition from slow walk-through to full speed. Compare body positions to earlier slow frames."
+      },
+      {
+        "frame": "frame_017.jpg",
+        "label": "Inside Turn Lead",
+        "description": "Leader's hand raising to create arch on count 1 \u2014 the signal must arrive BEFORE count 2. Shows correct timing of the inside turn lead."
+      },
+      {
+        "frame": "frame_020.jpg",
+        "label": "CBL \u2014 Leader Clears Slot",
+        "description": "Leader stepping left to clear the slot on count 1. Shows the L-shaped footpath that makes the CBL work. Leader must fully clear or follower has nowhere to travel."
+      },
+      {
+        "frame": "frame_023.jpg",
+        "label": "Closed Position \u2014 Partner Connect",
+        "description": "Transition to partner work phase. Shows correct closed position frame: leader's right hand on follower's back, left hand extended, follower's left hand on leader's upper arm."
+      },
+      {
+        "frame": "frame_026.jpg",
+        "label": "Partner CBL \u2014 Hand Signal",
+        "description": "Clear hand signal directing follower's path through the slot. Shows the connection point and how the leader communicates direction without verbal cues."
+      },
+      {
+        "frame": "frame_029.jpg",
+        "label": "Comb Styling",
+        "description": "Combing action \u2014 leader's hand passing over follower's head. Shows the arm styling element of the sequence: 'combing, sink, comb left.'"
+      },
+      {
+        "frame": "frame_031.jpg",
+        "label": "Closed Position Reset",
+        "description": "Return to closed position after the full sequence. Critical reset point \u2014 this is where timing is re-established before the next CBL. Shows the 'Return to closed position after turns' teaching point."
+      },
+      {
+        "frame": "frame_027.jpg",
+        "label": "CBL Completion \u2014 New Positions",
+        "description": "Both dancers in new positions after CBL, re-establishing frame. Shows the 90\u00b0 pivot the leader makes and the follower's landing position in the slot."
+      },
+      {
+        "frame": "frame_034.jpg",
+        "label": "Final Position \u2014 Sequence End",
+        "description": "Dancers apart facing audience, sequence complete. Reference for the ending position of the full class combination."
+      }
+    ],
+    "class_date": "2026-07-28",
+    "class_number": 6,
+    "video_slug": "img-0008"
+  },
+  "2026-09-08": {
+    "title": "NY On2 Mambo: Hip Walk, Chord Beat & Partner Work",
+    "subtitle": "Class #10 \u2014 2026-09-08 | NY Style On2 / Eddie Torres Mambo",
+    "techniques": [
+      {
+        "slug": "basic_step",
+        "name": "Basic Step (On2)",
+        "tagline": "The foundation \u2014 break on 2 and 6, not 1 and 5",
+        "what": "The NY On2 basic step breaks direction on counts 2 and 6. Leaders step back on 1-2-3 and forward on 5-6-7; followers mirror. Say aloud 'forward, forward, back, back, back, forward' to activate muscle memory rather than mimicking visually.",
+        "mechanics": [
+          {
+            "counts": "1",
+            "action": "Leader steps back (left foot); follower steps forward (right foot)"
+          },
+          {
+            "counts": "2",
+            "action": "Break/change of direction \u2014 weight transfers, On2 accent"
+          },
+          {
+            "counts": "3",
+            "action": "Leader closes right foot; follower closes left foot"
+          },
+          {
+            "counts": "5",
+            "action": "Leader steps forward (right foot); follower steps back (left foot)"
+          },
+          {
+            "counts": "6",
+            "action": "Break/change of direction \u2014 second On2 accent"
+          },
+          {
+            "counts": "7",
+            "action": "Leader closes left foot; follower closes right foot"
+          }
+        ],
+        "arm_styling": [
+          {
+            "counts": "1-2-3",
+            "action": "Frame stays compact; leader's left hand holds follower's right at chest height"
+          },
+          {
+            "counts": "5-6-7",
+            "action": "Maintain frame; no arm break on the forward half"
+          }
+        ],
+        "instructor_quotes": [
+          "forward, forward, back, back, back, forward",
+          "End each basic step with your right foot and left foot in front",
+          "When dancing with a partner, leaders step back on counts 1-2-3 and 5-6-7"
+        ],
+        "frames": [
+          {
+            "frame": "frame_001.jpg",
+            "caption": "Solo demo \u2014 both dancers facing mirror, establishing basic step rhythm before hip walk"
+          },
+          {
+            "frame": "frame_002.jpg",
+            "caption": "Instructor cues basic step transition after hip walk: 'basic step, and 1, 2'"
+          },
+          {
+            "frame": "frame_012.jpg",
+            "caption": "Return to basic after chord beat sequence \u2014 weight check moment"
+          }
+        ],
+        "drill": "Stand alone, say 'forward, forward, back, back, back, forward' aloud on each count. Do 8 repetitions without music, then add music. Check: do your feet end with right and left foot in front? If both feet are on the same side, restart.",
+        "common_error": "Breaking on count 1 (On1 habit) instead of count 2. The weight transfer and direction change must land on 2 and 6.",
+        "videos": [
+          {
+            "title": "Salsa Basic Step for NY Style On2 (Beginner Tutorial)",
+            "url": "https://www.youtube.com/watch?v=-FW_9o7SESA",
+            "channel": "TheDanceDojo",
+            "why": "Dedicated beginner tutorial for the On2 basic step. Clear breakdown of leader and follower footwork with counting."
+          },
+          {
+            "title": "SALSA ON2 - Partnerwork Basics Lesson 1 - Basic Step",
+            "url": "https://www.youtube.com/watch?v=z7YqGIuhWVg",
+            "channel": "Salsa On2",
+            "why": "Part of a structured lesson series for NY style On2. Shows partnerwork basic step with leader and follower perspectives."
+          },
+          {
+            "title": "BASIC STEPS - Eddie Torres Instructional Salsa On2",
+            "url": "https://www.youtube.com/watch?v=dbeWlBadrAs",
+            "channel": "Eddie Torres (Mambo On2)",
+            "why": "Eddie Torres, the godfather of NY On2/mambo, teaches the basic step. Authoritative source for proper On2 timing and technique."
+          }
+        ]
+      },
+      {
+        "slug": "hip_walk",
+        "name": "Hip Walk",
+        "tagline": "Step, tap, step \u2014 look where you're going, not at your feet",
+        "what": "The hip walk is a traveling shine moving side-to-side. The pattern is step-tap-step on each half (1-2-3 and 5-6-7). The lead foot steps toward the direction of travel; the trailing foot taps and returns to center. Eyes look in the direction of travel, not down.",
+        "mechanics": [
+          {
+            "counts": "1",
+            "action": "Step right foot toward direction of travel"
+          },
+          {
+            "counts": "2",
+            "action": "Tap left foot (no weight transfer) \u2014 hip accent"
+          },
+          {
+            "counts": "3",
+            "action": "Step left foot back to center"
+          },
+          {
+            "counts": "5",
+            "action": "Step left foot toward opposite direction"
+          },
+          {
+            "counts": "6",
+            "action": "Tap right foot (no weight transfer) \u2014 hip accent"
+          },
+          {
+            "counts": "7",
+            "action": "Step right foot back to center"
+          }
+        ],
+        "arm_styling": [
+          {
+            "counts": "1-2-3",
+            "action": "Arms relaxed at sides or in shine position; body faces forward"
+          },
+          {
+            "counts": "5-6-7",
+            "action": "Same \u2014 arms follow natural hip sway, no forced arm movement"
+          }
+        ],
+        "instructor_quotes": [
+          "step, tap, step, step, tap, step",
+          "look toward the direction you want to turn, not at your feet",
+          "if you want to reverse direction, you must start with the opposite foot"
+        ],
+        "frames": [
+          {
+            "frame": "frame_001.jpg",
+            "caption": "Hip walk in progress \u2014 both dancers side by side, arms loose, moving laterally"
+          },
+          {
+            "frame": "frame_002.jpg",
+            "caption": "Hip walk continuing \u2014 instructor cues 'hip walk, just a regular hip walk'"
+          },
+          {
+            "frame": "frame_003.jpg",
+            "caption": "Hip walk \u2014 note lateral weight shift, feet stepping side not forward"
+          },
+          {
+            "frame": "frame_004.jpg",
+            "caption": "Hip walk tap moment \u2014 trailing foot taps, hip accent visible"
+          },
+          {
+            "frame": "frame_005.jpg",
+            "caption": "Follower (red top) turns to face forward \u2014 hip walk direction change cue"
+          },
+          {
+            "frame": "frame_006.jpg",
+            "caption": "Domino hip walk begins \u2014 instructor cues 'domino hip walk and 1235'"
+          },
+          {
+            "frame": "frame_007.jpg",
+            "caption": "Domino hip walk continuation \u2014 both dancers offset timing (domino effect)"
+          }
+        ],
+        "drill": "Mark the pattern without music: step right, tap left, step left, step left, tap right, step right. Say 'step, tap, step' aloud. Add: look RIGHT when stepping right, look LEFT when stepping left. Never look down. Run 4 repetitions each direction.",
+        "common_error": "Transferring weight on the tap count (2 or 6). The tap foot must stay light \u2014 no weight. Also: looking at feet instead of the direction of travel kills the hip accent.",
+        "videos": [
+          {
+            "title": "Lesson 5 | Learn Footwork Side to Side/Front Back/Hip Walk in 2 Mins | Beginner Salsa Lesson",
+            "url": "https://www.youtube.com/watch?v=xWhd8aMz3ug",
+            "channel": "Fania Presents We Love To See You Dance",
+            "why": "Explicitly titled 'Learn Footwork Side to Side/Front Back/Hip Walk' and credited to Fania Presents with instructors Erika and Edwin Rivera teaching New York-style salsa. Directly addresses hip walk as a beginner foundational move, matching the class context (move #11, beginner level, side-to-side motion emphasis)."
+          },
+          {
+            "title": "Salsa dance lessons Brooklyn Salsa Shines Hip Walks",
+            "url": "https://www.youtube.com/watch?v=2YEuU1EtAPY",
+            "channel": "Francis Teri",
+            "why": "Titled 'Salsa dance lessons Brooklyn Salsa Shines Hip Walks' by Francis Teri at Dance Fever Studios. Explicitly teaches hip walks as a shine/solo footwork element in a New York context (Brooklyn-based studio), aligning with the class's foundational shine and hip walk instruction."
+          }
+        ]
+      },
+      {
+        "slug": "chord_beat",
+        "name": "Chord Beat",
+        "tagline": "Odd numbers only \u2014 1, 3, 5, 7 \u2014 skip every even count",
+        "what": "Chord beats are a timing concept, not a fixed move. You step only on odd counts (1-3-5-7), skipping 2, 4, 6, and 8. You can walk chord beats in any direction. Two options when moving right: cross the second step, or crab walk (circular 1-3-5-7 pattern). Keep steps small and uniform.",
+        "mechanics": [
+          {
+            "counts": "1",
+            "action": "Step (any direction) \u2014 odd count only"
+          },
+          {
+            "counts": "2",
+            "action": "HOLD \u2014 no step, no weight transfer"
+          },
+          {
+            "counts": "3",
+            "action": "Step \u2014 odd count only"
+          },
+          {
+            "counts": "4",
+            "action": "HOLD \u2014 no step"
+          },
+          {
+            "counts": "5",
+            "action": "Step \u2014 odd count only"
+          },
+          {
+            "counts": "6",
+            "action": "HOLD \u2014 no step"
+          },
+          {
+            "counts": "7",
+            "action": "Step \u2014 odd count only"
+          },
+          {
+            "counts": "8",
+            "action": "HOLD \u2014 no step"
+          }
+        ],
+        "arm_styling": [
+          {
+            "counts": "1-3-5-7",
+            "action": "Arms in shine position; body stays upright, no arm swing on holds"
+          },
+          {
+            "counts": "2-4-6-8",
+            "action": "Stillness \u2014 no compensating arm movement to fill the held beat"
+          }
+        ],
+        "instructor_quotes": [
+          "1, 3, 5, 7",
+          "odd numbers only",
+          "Track which foot has your weight after each chord beat sequence",
+          "Keep chord beat steps small and uniform"
+        ],
+        "frames": [
+          {
+            "frame": "frame_008.jpg",
+            "caption": "Chord beat sequence \u2014 instructor counting '135' \u2014 note compact step size"
+          },
+          {
+            "frame": "frame_009.jpg",
+            "caption": "Chord beat hold moment \u2014 weight on one foot, other foot light"
+          },
+          {
+            "frame": "frame_010.jpg",
+            "caption": "Chord beat traveling \u2014 small uniform steps, body upright"
+          },
+          {
+            "frame": "frame_011.jpg",
+            "caption": "End of chord beat \u2014 weight check before returning to basic"
+          }
+        ],
+        "drill": "Clap on 1-3-5-7 only for 2 bars. Then walk forward one step per clap. Say '1-hold-3-hold-5-hold-7-hold' aloud. After 4 bars, check: which foot holds your weight? Start next sequence with the opposite foot.",
+        "common_error": "Stepping on even counts (especially 2 and 6) to fill the silence. The hold is intentional \u2014 resist the urge to step on every beat.",
+        "videos": [
+          {
+            "title": "Salsa Timing: Chord Beat & Slow Pivot (On2 and On1)",
+            "url": "https://www.youtube.com/watch?v=x3dr-VRvH7A",
+            "channel": "Wietske Welten",
+            "why": "Title explicitly names 'Chord Beat' timing concept with On2 emphasis. Wietske Welten teaches NY-style salsa mechanics. Video directly addresses the timing framework (stepping on odd counts vs. basic 1-2-3, 5-6-7) that the class defines as chord beats. Matches the instructor's framing of chord beats as a timing concept applicable to various movements."
+          }
+        ]
+      },
+      {
+        "slug": "right_turn",
+        "name": "Right Turn (Solo Shine)",
+        "tagline": "Step back on 7, lift, land toward the door on 1",
+        "what": "The solo right turn in NY On2 initiates on count 7 with a back step, then the left foot lifts and lands on count 1 facing the new direction (toward the door/mirror). Count 3 completes the turn with a forward step. Keep the turn compact and on the slot.",
+        "mechanics": [
+          {
+            "counts": "7",
+            "action": "Step back (right foot), lift left foot \u2014 initiate rotation"
+          },
+          {
+            "counts": "1",
+            "action": "Land left foot toward the door \u2014 180\u00b0 rotation complete"
+          },
+          {
+            "counts": "2",
+            "action": "On2 break \u2014 weight transfer"
+          },
+          {
+            "counts": "3",
+            "action": "Step forward to complete turn and return to basic"
+          }
+        ],
+        "arm_styling": [
+          {
+            "counts": "7-1",
+            "action": "Arms stay close to body during spin \u2014 no flailing"
+          },
+          {
+            "counts": "3",
+            "action": "Return arms to shine or partner frame position"
+          }
+        ],
+        "instructor_quotes": [
+          "step back on 7, lift your left foot, and land toward the door on 1",
+          "Continue turning by stepping forward on 3",
+          "hook and turn"
+        ],
+        "frames": [
+          {
+            "frame": "frame_013.jpg",
+            "caption": "Right turn setup \u2014 back step visible, body beginning rotation"
+          },
+          {
+            "frame": "frame_014.jpg",
+            "caption": "Mid-turn \u2014 left foot lifted, body rotating toward mirror/door"
+          }
+        ],
+        "drill": "Without music: say '7-1-2-3' aloud. On 7 step back, on 1 land facing mirror, on 3 step forward. Repeat 8 times. Add music only after the footwork is automatic.",
+        "common_error": "Turning on count 1 instead of initiating on 7. The back step on 7 is what creates the rotation \u2014 skipping it makes the turn late and off-balance.",
+        "videos": [
+          {
+            "title": "SALSA ON2 - Partnerwork Basics Lesson 4 - Single Right Turn",
+            "url": "https://www.youtube.com/watch?v=sx-EKzQ-Dik",
+            "channel": "Salsa On2",
+            "why": "Single stationary right turn for NY On2. Part of the structured lesson series; covers leader's lead technique and follower's turn."
+          },
+          {
+            "title": "Salsa Solo - Right Turn - Lesson 5 (Beginners, NY/On2)",
+            "url": "https://www.youtube.com/watch?v=03m3cnI1g44",
+            "channel": "Salsa On2",
+            "why": "Solo right turn footwork for On2. Good for practicing the turn mechanics on your own before partnerwork."
+          },
+          {
+            "title": "FUNDAMENTAL SALSA ON2 MAMBO SHINE: Basic Steps / Four Corners / Right Turn / Hook Step",
+            "url": "https://www.youtube.com/watch?v=tGviVuqpSpY",
+            "channel": "Unknown (Mambo/On2 instructor)",
+            "why": "Covers the right turn as part of fundamental On2 mambo shines. Also includes basic steps, four corners, and hook step \u2014 good overview video."
+          }
+        ]
+      },
+      {
+        "slug": "left_turn",
+        "name": "Left Turn (Solo & Partner)",
+        "tagline": "Same 7-1-3 initiation as right turn, opposite rotation",
+        "what": "The left turn also initiates on count 7 with a back step and left foot lift, lands on 1, and completes on 3. In partner work, the leader raises the left arm on counts 1-2-3 to guide the follower under the arm. The follower turns under the leader's left arm on 1-2-3.",
+        "mechanics": [
+          {
+            "counts": "7",
+            "action": "Step back, lift left foot \u2014 initiate left rotation"
+          },
+          {
+            "counts": "1",
+            "action": "Land facing new direction \u2014 left turn"
+          },
+          {
+            "counts": "2",
+            "action": "On2 break"
+          },
+          {
+            "counts": "3",
+            "action": "Step forward, turn complete"
+          }
+        ],
+        "arm_styling": [
+          {
+            "counts": "1-2-3",
+            "action": "Leader: raise LEFT arm, palm up, to guide follower under. Follower turns under arm."
+          },
+          {
+            "counts": "5-6-7",
+            "action": "Return to frame after follower completes turn"
+          }
+        ],
+        "instructor_quotes": [
+          "Leaders: raise your left arm to lead the follower into a left turn",
+          "The follower turns under your left arm on counts 1-2-3",
+          "arm styling: close to ear, trace body"
+        ],
+        "frames": [
+          {
+            "frame": "frame_015.jpg",
+            "caption": "Left turn \u2014 leader's left arm raised, follower beginning rotation under arm"
+          },
+          {
+            "frame": "frame_016.jpg",
+            "caption": "Left turn mid-point \u2014 follower under leader's arm, both on count 1-2"
+          }
+        ],
+        "drill": "Solo: practice the 7-1-3 footwork left 8 times. Partner: leader raises left arm on 5-6-7 prep, follower turns on 1-2-3. Follower: keep fingertip connection throughout the turn.",
+        "common_error": "Leader drops the arm during the follower's turn, or rotates the follower's frame instead of letting them turn under. The arm is a frame, not a steering wheel.",
+        "videos": [
+          {
+            "title": "Salsa Solo - Left Turn - Lesson 6 (Beginners, NY/On2)",
+            "url": "https://www.youtube.com/watch?v=eJEiEhBtoqk",
+            "channel": "Salsa On2",
+            "why": "Solo left turn for NY On2 beginners. Covers the footwork and body mechanics without a partner."
+          },
+          {
+            "title": "Left Turn - Salsa Shines On2 | TheDanceDojo.com",
+            "url": "https://www.youtube.com/watch?v=z0a_6fC01rI",
+            "channel": "TheDanceDojo",
+            "why": "TheDanceDojo's left turn shine. Clean breakdown of the solo footwork."
+          },
+          {
+            "title": "How to style a Salsa LEFT Turn like a PRO",
+            "url": "https://www.youtube.com/watch?v=IREL70jWWZE",
+            "channel": "Unknown",
+            "why": "Arm styling for the left turn \u2014 close to ear, trace body. Exactly what your instructor taught."
+          }
+        ]
+      },
+      {
+        "slug": "cross_body_lead",
+        "name": "Cross Body Lead (CBL)",
+        "tagline": "One of the five fundamentals \u2014 transition from home position across the slot",
+        "what": "The cross body lead moves the follower across the leader's body from one side of the slot to the other. The leader steps out of the slot on 1-2-3 to create space, then guides the follower through on 5-6-7. Proper hand positioning and frame control are essential. This is one of the five fundamental moves every leader must master.",
+        "mechanics": [
+          {
+            "counts": "1-2-3",
+            "action": "Leader steps back and to the side, opening the slot for the follower"
+          },
+          {
+            "counts": "5",
+            "action": "Leader steps forward, guiding follower into the slot"
+          },
+          {
+            "counts": "6",
+            "action": "On2 break \u2014 follower crosses through"
+          },
+          {
+            "counts": "7",
+            "action": "Leader closes, follower arrives on opposite side"
+          }
+        ],
+        "arm_styling": [
+          {
+            "counts": "1-2-3",
+            "action": "Leader maintains left hand connection, right hand releases to open slot"
+          },
+          {
+            "counts": "5-6-7",
+            "action": "Leader's right hand guides follower's back through the slot \u2014 light touch"
+          }
+        ],
+        "instructor_quotes": [
+          "Cross-body lead is one of the five fundamental moves leaders must master",
+          "five fundamentals: basic, right turn, left turn, cross body, homing",
+          "hand aligned with wrist, aligned with arm"
+        ],
+        "frames": [
+          {
+            "frame": "frame_022.jpg",
+            "caption": "CBL setup \u2014 leader and follower facing each other, leader opening slot"
+          },
+          {
+            "frame": "frame_023.jpg",
+            "caption": "CBL in progress \u2014 follower crossing through the slot, leader stepping aside"
+          },
+          {
+            "frame": "frame_024.jpg",
+            "caption": "CBL completion \u2014 follower arriving on opposite side, both reconnecting frame"
+          },
+          {
+            "frame": "frame_025.jpg",
+            "caption": "Post-CBL \u2014 partners reconnected, returning to basic step"
+          }
+        ],
+        "drill": "Leaders: practice the footwork alone \u2014 step back-side on 1-2-3, step forward on 5-6-7. Add a partner: focus on opening the slot cleanly on 1-2-3 before guiding on 5. Follower: walk straight through, do not turn until led.",
+        "common_error": "Leader fails to fully clear the slot on 1-2-3, causing a collision. The leader must step completely out of the follower's path before count 5.",
+        "videos": [
+          {
+            "title": "How to do Cross Body Lead (NY On2 Salsa)",
+            "url": "https://www.youtube.com/watch?v=6mc4uGJnmBg",
+            "channel": "TheDanceDojo",
+            "why": "Focused tutorial on the cross body lead as the most fundamental move in NY-style salsa. Clear explanation of leader mechanics."
+          },
+          {
+            "title": "SALSA ON2 - Partnerwork Basics Lesson 2 - Cross Body Lead",
+            "url": "https://www.youtube.com/watch?v=t-W1O6w0FFk",
+            "channel": "Salsa On2",
+            "why": "Part of the structured NY On2 partnerwork series. Lesson 2 covers cross body lead right after the basic step."
+          },
+          {
+            "title": "Cross Body Lead - Beginner Salsa Steps On2 | TheDanceDojo.com",
+            "url": "https://www.youtube.com/watch?v=bWeuEXuZXRA",
+            "channel": "TheDanceDojo",
+            "why": "Another TheDanceDojo tutorial on CBL for On2 beginners. Good complementary perspective to their other CBL video."
+          }
+        ]
+      },
+      {
+        "slug": "comb",
+        "name": "Comb",
+        "tagline": "Palm up, elbow in \u2014 brush hair, don't rotate the frame",
+        "what": "The comb is a styling/transition move where the leader raises the right arm (palm up, elbow in), brings the hand to center, then moves it up and behind the follower's neck \u2014 like brushing hair. It transitions into cross-hand position without hand-switching. The follower maintains fingertip connection throughout; the leader is responsible for disconnecting.",
+        "mechanics": [
+          {
+            "counts": "1-2-3",
+            "action": "Leader raises right arm, palm up, elbow in \u2014 hand moves to center"
+          },
+          {
+            "counts": "5",
+            "action": "Leader's hand moves upward toward follower's neck"
+          },
+          {
+            "counts": "6-7",
+            "action": "Hand passes behind follower's neck \u2014 comb complete, cross-hand position established"
+          }
+        ],
+        "arm_styling": [
+          {
+            "counts": "1-2-3",
+            "action": "Right arm: palm UP, elbow IN \u2014 not rotating follower's frame"
+          },
+          {
+            "counts": "5-6-7",
+            "action": "Smooth upward arc behind follower's neck \u2014 'cuff motion'"
+          }
+        ],
+        "instructor_quotes": [
+          "raise your right arm with palm up and elbow in, bring your hand to center, then move it up and behind the follower's neck",
+          "This is like brushing hair, not rotating the follower's frame",
+          "Followers: do not break your connection during a comb",
+          "cuff motion",
+          "don't break connection"
+        ],
+        "frames": [
+          {
+            "frame": "frame_026.jpg",
+            "caption": "Comb initiation \u2014 leader's right arm rising, palm up, elbow in"
+          },
+          {
+            "frame": "frame_027.jpg",
+            "caption": "Comb mid-point \u2014 hand at center, moving toward follower's neck"
+          },
+          {
+            "frame": "frame_028.jpg",
+            "caption": "Comb completion \u2014 hand behind follower's neck, cross-hand position established"
+          },
+          {
+            "frame": "frame_029.jpg",
+            "caption": "Post-comb \u2014 partners in cross-hand position, follower maintaining connection"
+          }
+        ],
+        "drill": "Leaders: practice the arm motion alone \u2014 palm up, elbow in, arc upward and behind an imaginary neck. Say 'palm up, elbow in, brush' on each repetition. With partner: slow motion only until follower can maintain fingertip connection throughout.",
+        "common_error": "Leader rotates the follower's frame instead of passing the hand behind the neck. The comb is a hand path, not a body rotation. Also: follower breaking connection anticipating the move.",
+        "videos": []
+      }
+    ],
+    "choreography": {
+      "sequence": "HIP WALK (solo) -> BASIC STEP -> CHORD BEAT -> HIP WALK (domino) -> BASIC STEP -> RIGHT TURN -> LEFT TURN -> PARTNER WORK: BASIC -> CROSS BODY LEAD -> COMB -> BREAK",
+      "phases": [
+        {
+          "name": "Phase 1: Solo Shines \u2014 Slow Walk-Through",
+          "time": "0:01 - 0:15",
+          "steps": [
+            {
+              "frame": "frame_001.jpg",
+              "time": "0:01",
+              "counts": "1-2-3",
+              "move": "Hip Walk",
+              "body": "Both dancers side by side facing mirror. Instructor (white tee, 'Medellin' shirt) and follower (red crop top, black skirt) moving laterally. Arms loose at sides. Weight shifting side to side.",
+              "cue": "hip walk, just a regular hip walk"
+            },
+            {
+              "frame": "frame_002.jpg",
+              "time": "0:02",
+              "counts": "5-6-7",
+              "move": "Hip Walk",
+              "body": "Continuing lateral hip walk. Follower's left foot tapping \u2014 tap moment visible. Bodies upright, eyes forward not down.",
+              "cue": "step, tap, step"
+            },
+            {
+              "frame": "frame_003.jpg",
+              "time": "0:03",
+              "counts": "1-2-3",
+              "move": "Basic Step",
+              "body": "Transition from hip walk to basic step. Both dancers squaring up to mirror. Weight centering.",
+              "cue": "basic step, and 1, 2"
+            },
+            {
+              "frame": "frame_004.jpg",
+              "time": "0:04",
+              "counts": "2",
+              "move": "Basic Step \u2014 On2 Break",
+              "body": "On2 break moment \u2014 weight transfer visible. Instructor's body shows direction change. Core engaged.",
+              "cue": "core beat in place"
+            },
+            {
+              "frame": "frame_005.jpg",
+              "time": "0:05",
+              "counts": "5-6-7",
+              "move": "Basic Step",
+              "body": "Second half of basic. Follower now visible from front \u2014 red top, black skirt. Forward step on 5.",
+              "cue": "67135, repeating it"
+            },
+            {
+              "frame": "frame_006.jpg",
+              "time": "0:06",
+              "counts": "1-3-5",
+              "move": "Chord Beat",
+              "body": "Chord beat sequence begins. Steps are small and compact. Instructor stepping on odd counts only \u2014 visible pause on even counts.",
+              "cue": "1, 3, 5, 7 \u2014 odd numbers only"
+            },
+            {
+              "frame": "frame_007.jpg",
+              "time": "0:07",
+              "counts": "5-7",
+              "move": "Chord Beat",
+              "body": "Chord beat continuing. Both dancers showing hold on even counts \u2014 stillness between steps.",
+              "cue": "Track which foot has your weight after each chord beat sequence"
+            },
+            {
+              "frame": "frame_008.jpg",
+              "time": "0:08",
+              "counts": "1-2-3",
+              "move": "Chord Beat \u2014 Weight Check",
+              "body": "End of chord beat. Instructor pausing to demonstrate weight check before next sequence.",
+              "cue": "Keep chord beat steps small and uniform"
+            },
+            {
+              "frame": "frame_009.jpg",
+              "time": "0:09",
+              "counts": "1-2-3",
+              "move": "Hip Walk (Domino)",
+              "body": "Domino hip walk begins \u2014 instructor and follower offset by one count. Creates staggered visual effect.",
+              "cue": "domino hip walk and 1235"
+            },
+            {
+              "frame": "frame_010.jpg",
+              "time": "0:10",
+              "counts": "5-6-7",
+              "move": "Hip Walk (Domino)",
+              "body": "Domino effect visible \u2014 follower's step follows instructor's by one beat. Both moving laterally.",
+              "cue": "Ho, and 13571"
+            },
+            {
+              "frame": "frame_011.jpg",
+              "time": "0:11",
+              "counts": "1-2-3",
+              "move": "Basic Step",
+              "body": "Return to basic after domino hip walk. Both dancers re-centering. Instructor counting aloud.",
+              "cue": "basic step, and 1, 2"
+            },
+            {
+              "frame": "frame_012.jpg",
+              "time": "0:12",
+              "counts": "5-6-7",
+              "move": "Basic Step",
+              "body": "Basic step second half. Feet ending in correct position \u2014 right and left foot in front.",
+              "cue": "End each basic step with your right foot and left foot in front"
+            }
+          ]
+        },
+        {
+          "name": "Phase 2: Turns \u2014 Full Speed Solo",
+          "time": "0:13 - 0:20",
+          "steps": [
+            {
+              "frame": "frame_013.jpg",
+              "time": "0:13",
+              "counts": "7",
+              "move": "Right Turn \u2014 Initiation",
+              "body": "Back step on 7. Left foot lifting. Body beginning clockwise rotation. Instructor demonstrating solo right turn.",
+              "cue": "step back on 7, lift your left foot"
+            },
+            {
+              "frame": "frame_014.jpg",
+              "time": "0:14",
+              "counts": "1",
+              "move": "Right Turn \u2014 Landing",
+              "body": "Landing on count 1 facing new direction (toward door/mirror). Rotation approximately 180\u00b0. Arms compact.",
+              "cue": "land toward the door on 1"
+            },
+            {
+              "frame": "frame_015.jpg",
+              "time": "0:15",
+              "counts": "1-2-3",
+              "move": "Left Turn \u2014 Solo",
+              "body": "Left turn in progress. Same 7-1-3 initiation, opposite rotation. Body turning counterclockwise.",
+              "cue": "hook and turn"
+            },
+            {
+              "frame": "frame_016.jpg",
+              "time": "0:16",
+              "counts": "3",
+              "move": "Left Turn \u2014 Completion",
+              "body": "Left turn completing on count 3. Forward step. Both dancers now facing audience/camera.",
+              "cue": "Continue turning by stepping forward on 3"
+            }
+          ]
+        },
+        {
+          "name": "Phase 3: Partner Work \u2014 Full Speed",
+          "time": "0:20 - 0:34",
+          "steps": [
+            {
+              "frame": "frame_020.jpg",
+              "time": "0:20",
+              "counts": "5-6-7",
+              "move": "Partner Connection \u2014 Setup",
+              "body": "Leader extending hand to follower. Both approaching each other. Frame being established. Audience watching.",
+              "cue": "Partner work, 56712367"
+            },
+            {
+              "frame": "frame_021.jpg",
+              "time": "0:21",
+              "counts": "1-2-3",
+              "move": "Partner Basic Step",
+              "body": "Partners now connected. Leader stepping back on 1. Follower stepping forward. Frame established.",
+              "cue": "leaders step back on counts 1-2-3"
+            },
+            {
+              "frame": "frame_022.jpg",
+              "time": "0:22",
+              "counts": "5-6-7",
+              "move": "Partner Basic Step",
+              "body": "Second half of partner basic. Both dancers visible from side. Connection maintained through frame.",
+              "cue": "We go 23"
+            },
+            {
+              "frame": "frame_023.jpg",
+              "time": "0:23",
+              "counts": "1-2-3",
+              "move": "Cross Body Lead \u2014 Setup",
+              "body": "Leader beginning to open slot. Stepping back-side on 1-2-3. Follower preparing to cross.",
+              "cue": "turn, 1, 2, boom"
+            },
+            {
+              "frame": "frame_024.jpg",
+              "time": "0:24",
+              "counts": "5-6",
+              "move": "Cross Body Lead \u2014 Follower Crossing",
+              "body": "Follower crossing through slot. Leader stepped aside. Both visible \u2014 leader on left, follower crossing right.",
+              "cue": "cross-body lean on this side, 2, 3"
+            },
+            {
+              "frame": "frame_025.jpg",
+              "time": "0:25",
+              "counts": "7-1",
+              "move": "Cross Body Lead \u2014 Completion",
+              "body": "Follower arriving on opposite side. Leader closing. Frame re-establishing.",
+              "cue": "5, 6, 7, 1, 2, 3"
+            },
+            {
+              "frame": "frame_026.jpg",
+              "time": "0:26",
+              "counts": "1-2-3",
+              "move": "Comb \u2014 Initiation",
+              "body": "Leader's right arm rising. Palm up, elbow in. Follower maintaining connection. Comb beginning.",
+              "cue": "raise your right arm with palm up and elbow in"
+            },
+            {
+              "frame": "frame_027.jpg",
+              "time": "0:27",
+              "counts": "5",
+              "move": "Comb \u2014 Arc",
+              "body": "Leader's hand at center, moving upward toward follower's neck. Smooth arc visible. Follower's head tilting slightly.",
+              "cue": "cuff motion"
+            },
+            {
+              "frame": "frame_028.jpg",
+              "time": "0:28",
+              "counts": "6-7",
+              "move": "Comb \u2014 Behind Neck",
+              "body": "Leader's hand passing behind follower's neck. Cross-hand position being established. Follower maintaining fingertip connection.",
+              "cue": "don't break connection"
+            },
+            {
+              "frame": "frame_029.jpg",
+              "time": "0:29",
+              "counts": "1-2-3",
+              "move": "Post-Comb Basic",
+              "body": "Partners in cross-hand position. Continuing basic step. Follower's connection maintained.",
+              "cue": "5, stop, break"
+            },
+            {
+              "frame": "frame_030.jpg",
+              "time": "0:30",
+              "counts": "5-6-7",
+              "move": "Partner Basic \u2014 Traveling",
+              "body": "Partners moving together in slot. Basic step with cross-hand connection. Audience applauding.",
+              "cue": "2, 3, 5, 6, 7"
+            },
+            {
+              "frame": "frame_031.jpg",
+              "time": "0:31",
+              "counts": "1-2",
+              "move": "Break Moment",
+              "body": "Instructor calling break. Partners slowing. On2 break accent on count 2 visible in body position.",
+              "cue": "stop, break"
+            },
+            {
+              "frame": "frame_032.jpg",
+              "time": "0:32",
+              "counts": "\u2014",
+              "move": "End of Sequence",
+              "body": "Sequence ending. Both dancers facing audience. Crowd visible in mirror applauding.",
+              "cue": "Make some noise!"
+            },
+            {
+              "frame": "frame_033.jpg",
+              "time": "0:33",
+              "counts": "\u2014",
+              "move": "Applause / Reset",
+              "body": "Instructor and follower acknowledging crowd. Large audience visible \u2014 many filming on phones.",
+              "cue": "Make some noise!"
+            },
+            {
+              "frame": "frame_034.jpg",
+              "time": "0:34",
+              "counts": "\u2014",
+              "move": "Final Position",
+              "body": "Both dancers in final position. Crowd applauding. Class complete.",
+              "cue": "Make some noise!"
+            }
+          ]
+        }
+      ],
+      "hard_transitions": [
+        {
+          "from": "Hip Walk",
+          "to": "Basic Step",
+          "frames": "003 -> 004",
+          "why": "Hip walk ends on a tap (no weight), so you must confirm which foot holds weight before stepping into the basic. If you tap on the wrong foot, your basic will start on the wrong side."
+        },
+        {
+          "from": "Basic Step",
+          "to": "Chord Beat",
+          "frames": "005 -> 006",
+          "why": "Basic step uses every count (1-2-3, 5-6-7); chord beat skips even counts. The rhythm feel changes dramatically. Count aloud to avoid filling in the held beats."
+        },
+        {
+          "from": "Chord Beat",
+          "to": "Domino Hip Walk",
+          "frames": "008 -> 009",
+          "why": "Chord beat ends on an odd count; domino hip walk must start with the correct foot. Track your weight at the end of chord beat \u2014 start domino hip walk with the opposite foot."
+        },
+        {
+          "from": "Solo Shines",
+          "to": "Partner Work",
+          "frames": "019 -> 020",
+          "why": "Transitioning from solo to partner requires establishing frame and connection before the first count. Leaders must offer hand on 5-6-7 prep so both partners are synchronized on count 1."
+        },
+        {
+          "from": "Cross Body Lead",
+          "to": "Comb",
+          "frames": "025 -> 026",
+          "why": "CBL ends with follower on opposite side; comb must begin immediately on the next 1-2-3. Leader must switch to right hand connection during CBL completion to set up the comb arm path."
+        }
+      ]
+    },
+    "practice": {
+      "total_minutes": 25,
+      "sections": [
+        {
+          "name": "Section 1: Solo Footwork",
+          "minutes": 10,
+          "drills": [
+            {
+              "name": "Hip Walk \u2014 Eyes Up",
+              "minutes": 3,
+              "instructions": "Mark hip walk without music. Say 'step, tap, step' aloud. Look RIGHT when stepping right, LEFT when stepping left. Never look down. 4 reps each direction. Add music at 50% speed."
+            },
+            {
+              "name": "Chord Beat \u2014 Odd Counts Only",
+              "minutes": 3,
+              "instructions": "Clap on 1-3-5-7 only for 2 bars. Then walk one step per clap. Say '1-hold-3-hold-5-hold-7-hold.' After 4 bars, check weight foot. Start next sequence with opposite foot."
+            },
+            {
+              "name": "Domino Hip Walk",
+              "minutes": 4,
+              "instructions": "With a partner or mirror: one person starts hip walk on count 1, second person starts on count 3 (one beat offset). Maintain the offset for 4 full phrases. Switch who leads the timing."
+            }
+          ]
+        },
+        {
+          "name": "Section 2: Turns",
+          "minutes": 7,
+          "drills": [
+            {
+              "name": "Right Turn \u2014 7-1-3 Footwork",
+              "minutes": 3,
+              "instructions": "Without music: say '7-1-2-3' aloud. On 7 step back, on 1 land facing mirror, on 3 step forward. 8 repetitions. Add music only after footwork is automatic."
+            },
+            {
+              "name": "Left Turn \u2014 Solo then Partner",
+              "minutes": 4,
+              "instructions": "Solo: 8 left turns using 7-1-3 footwork. Partner: leader raises left arm on 5-6-7 prep, follower turns on 1-2-3. Follower: maintain fingertip connection throughout. 8 reps each."
+            }
+          ]
+        },
+        {
+          "name": "Section 3: Partner Work",
+          "minutes": 8,
+          "drills": [
+            {
+              "name": "Cross Body Lead \u2014 Slot Clearing",
+              "minutes": 3,
+              "instructions": "Leaders: practice footwork alone \u2014 step back-side on 1-2-3, step forward on 5-6-7. Add partner: focus on clearing the slot completely on 1-2-3 before guiding on 5. Follower walks straight through."
+            },
+            {
+              "name": "Comb \u2014 Slow Motion",
+              "minutes": 3,
+              "instructions": "Leaders: practice arm motion alone \u2014 palm up, elbow in, arc upward. Say 'palm up, elbow in, brush.' With partner: slow motion only. Follower: maintain fingertip connection, do not anticipate."
+            },
+            {
+              "name": "Full Combo Run",
+              "minutes": 2,
+              "instructions": "Run the full sequence at tempo: Basic -> CBL -> Comb -> Basic. Focus on smooth transitions, not speed. If a transition breaks, stop and drill that transition alone for 4 reps before continuing."
+            }
+          ]
+        }
+      ]
+    },
+    "key_frames": [
+      {
+        "frame": "frame_001.jpg",
+        "label": "Hip Walk \u2014 Lateral Step",
+        "description": "Shows the lateral weight shift of the hip walk. Both dancers moving side-to-side, arms loose, eyes forward. Reference for correct body position during hip walk."
+      },
+      {
+        "frame": "frame_004.jpg",
+        "label": "On2 Break \u2014 Count 2",
+        "description": "The critical On2 break moment. Weight transfer and direction change on count 2. This is the defining characteristic of NY On2 vs. On1 \u2014 study this frame to understand where the accent lives."
+      },
+      {
+        "frame": "frame_006.jpg",
+        "label": "Chord Beat \u2014 Odd Count Step",
+        "description": "First chord beat step. Note the compact step size and the stillness about to happen on count 2. Compare to basic step to see the rhythm difference."
+      },
+      {
+        "frame": "frame_009.jpg",
+        "label": "Domino Hip Walk \u2014 Offset Timing",
+        "description": "Domino effect visible \u2014 two dancers offset by one count. Shows how the same hip walk pattern creates a visual cascade when staggered. Key for understanding timing independence."
+      },
+      {
+        "frame": "frame_013.jpg",
+        "label": "Right Turn \u2014 Count 7 Back Step",
+        "description": "The initiation of the right turn on count 7. Back step and left foot lifting. This is the moment most beginners miss \u2014 the turn starts on 7, not on 1."
+      },
+      {
+        "frame": "frame_016.jpg",
+        "label": "Left Turn \u2014 Count 3 Completion",
+        "description": "Left turn completing on count 3 with a forward step. Shows the full arc of the 7-1-3 turn structure. Compare to right turn initiation in frame_013."
+      },
+      {
+        "frame": "frame_020.jpg",
+        "label": "Partner Connection \u2014 Frame Setup",
+        "description": "Leader extending hand to follower before partner work begins. Shows the transition from solo to partner \u2014 frame must be established before count 1."
+      },
+      {
+        "frame": "frame_024.jpg",
+        "label": "Cross Body Lead \u2014 Follower Crossing",
+        "description": "Follower crossing through the slot. Leader has stepped completely aside. This is the key moment \u2014 leader must be fully out of the way before the follower crosses."
+      },
+      {
+        "frame": "frame_026.jpg",
+        "label": "Comb \u2014 Palm Up, Elbow In",
+        "description": "Comb initiation. Leader's right arm rising with palm up and elbow in. This is the exact arm position the instructor emphasizes \u2014 not rotating the frame, just raising the hand."
+      },
+      {
+        "frame": "frame_028.jpg",
+        "label": "Comb \u2014 Hand Behind Neck",
+        "description": "Comb completion \u2014 leader's hand passing behind follower's neck. Cross-hand position being established. Follower maintaining fingertip connection. The 'brushing hair' moment."
+      },
+      {
+        "frame": "frame_031.jpg",
+        "label": "Break \u2014 On2 Accent",
+        "description": "Instructor calling break. The body position shows the On2 accent \u2014 weight transfer on count 2 is visible even in the stopping motion. Good reference for what the break feels like."
+      },
+      {
+        "frame": "frame_005.jpg",
+        "label": "Follower Front View \u2014 Basic Step",
+        "description": "Rare front-facing view of the follower in red top. Shows correct follower posture during basic step \u2014 upright, arms in frame, weight clearly on one foot."
+      }
+    ],
+    "class_date": "2026-09-08",
+    "class_number": 10,
+    "video_slug": "img-0289"
+  },
+  "2026-08-18": {
+    "title": "NY On2 Mambo: Basic, Right Turn, Zig-Zag, Suzy Q & Combo",
+    "subtitle": "Nieves Latin Dance Studio \u2014 Class #8 (2026-08-18)",
+    "techniques": [
+      {
+        "slug": "basic_step",
+        "name": "Basic Step (On2)",
+        "tagline": "The foundation: 1-2-3, 5-6-7 with real weight transfers",
+        "what": "The NY On2 basic step breaks on counts 2 and 6. Leaders step forward on 1, break back on 2, replace on 3, hold 4; step back on 5, break forward on 6, replace on 7, hold 8. Every count requires a committed weight transfer \u2014 no flat or neutral standing.",
+        "mechanics": [
+          {
+            "counts": "1",
+            "action": "Leader steps forward (left foot). Follower steps back (right foot)."
+          },
+          {
+            "counts": "2",
+            "action": "Break/change of direction \u2014 leader steps back (right foot), follower steps forward (left foot). This is the On2 accent."
+          },
+          {
+            "counts": "3",
+            "action": "Replace weight in place. Hold 4."
+          },
+          {
+            "counts": "5",
+            "action": "Leader steps back (right foot). Follower steps forward (left foot)."
+          },
+          {
+            "counts": "6",
+            "action": "Break forward \u2014 leader steps forward (left foot), follower steps back (right foot). Second On2 accent."
+          },
+          {
+            "counts": "7",
+            "action": "Replace weight in place. Hold 8."
+          }
+        ],
+        "arm_styling": [
+          {
+            "counts": "1-2-3",
+            "action": "Arms relaxed, elbows slightly bent. Upper body angled, not fully rotated. Hips lead the movement."
+          },
+          {
+            "counts": "5-6-7",
+            "action": "Mirror the forward/back weight shift with a subtle counter-rotation of the torso. Keep it compact."
+          }
+        ],
+        "instructor_quotes": [
+          "don't be flat",
+          "step into the pivot with the opposite foot pushing off",
+          "let your hips do the talking rather than turning your whole torso",
+          "1-2-3, 5-6-7",
+          "Counts 4 and 8 are held/weight-bearing counts. Don't step on 4 or 8."
+        ],
+        "frames": [
+          {
+            "frame": "frame_001.jpg",
+            "caption": "Starting position \u2014 both dancers face mirror, weight centered, preparing to begin basic on count 5-6-7 cue."
+          },
+          {
+            "frame": "frame_008.jpg",
+            "caption": "Basic step in progress \u2014 both dancers side by side, compact stance, weight clearly shifted to one side."
+          },
+          {
+            "frame": "frame_009.jpg",
+            "caption": "Hold/replace moment \u2014 feet close, upper body angled, hips settled into the weight transfer."
+          }
+        ],
+        "drill": "Stand alone, no music. Say '1-2-3, hold, 5-6-7, hold' aloud. On each count, fully commit your weight \u2014 feel the floor under your standing foot. Add hip movement only after the footwork is automatic.",
+        "common_error": "Stepping on count 4 or 8, or staying flat/neutral between counts instead of committing weight on every step.",
+        "videos": [
+          {
+            "title": "Salsa Basic Step for NY Style On2 (Beginner Tutorial)",
+            "url": "https://www.youtube.com/watch?v=-FW_9o7SESA",
+            "channel": "TheDanceDojo",
+            "why": "Dedicated beginner tutorial for the On2 basic step. Clear breakdown of leader and follower footwork with counting."
+          },
+          {
+            "title": "SALSA ON2 - Partnerwork Basics Lesson 1 - Basic Step",
+            "url": "https://www.youtube.com/watch?v=z7YqGIuhWVg",
+            "channel": "Salsa On2",
+            "why": "Part of a structured lesson series for NY style On2. Shows partnerwork basic step with leader and follower perspectives."
+          },
+          {
+            "title": "BASIC STEPS - Eddie Torres Instructional Salsa On2",
+            "url": "https://www.youtube.com/watch?v=dbeWlBadrAs",
+            "channel": "Eddie Torres (Mambo On2)",
+            "why": "Eddie Torres, the godfather of NY On2/mambo, teaches the basic step. Authoritative source for proper On2 timing and technique."
+          }
+        ]
+      },
+      {
+        "slug": "right_turn",
+        "name": "Right Turn (Solo & Lead/Follow)",
+        "tagline": "Forward (1), turn (2), step in place (3) \u2014 keep turning, don't stop the flow",
+        "what": "The right turn in NY On2 follows a 1-2-3 structure: step forward on 1, pivot/turn right on 2 (the On2 break), and step in place on 3. The key error is stopping between steps \u2014 the body must keep rotating continuously through 2-3. In partner work, the leader turns on count 6 (not 2) and raises the left arm on 7, brings it up on 1, and sends the follower on 2.",
+        "mechanics": [
+          {
+            "counts": "1",
+            "action": "Step forward (left foot for leader). Begin initiating the rightward rotation."
+          },
+          {
+            "counts": "2",
+            "action": "Pivot/turn right \u2014 this is the On2 break. Body continues rotating. Don't stop here."
+          },
+          {
+            "counts": "3",
+            "action": "Step forward (right foot) to complete the turn. Weight lands on right foot. Do NOT step back."
+          },
+          {
+            "counts": "5-6-7 (leader in partnerwork)",
+            "action": "Leader turns on 6. Raise left arm on 7, bring up on 1, send follower on 2. Motion is in-and-out, not a straight lift."
+          }
+        ],
+        "arm_styling": [
+          {
+            "counts": "7",
+            "action": "Leader raises left arm (the whole arm, not just the hand) to frame the follower's turn."
+          },
+          {
+            "counts": "1",
+            "action": "Leader brings arm up \u2014 in-and-out motion. Turn under your arm, not under your hand."
+          },
+          {
+            "counts": "2",
+            "action": "Follower enters the turn. Leader keeps elbow lower and arm bent so follower's frame stays relaxed."
+          },
+          {
+            "counts": "3-4",
+            "action": "Follower holds the turn before landing \u2014 don't land immediately on 3. Hold it, then land on 4."
+          }
+        ],
+        "instructor_quotes": [
+          "forward, turn, step in place",
+          "don't stop the flow",
+          "keep your body turning to the right continuously through counts 2-3",
+          "on count 3 of a right turn, step forward (not back)",
+          "leaders: turn on count 6 (not 2) when dancing with a partner",
+          "raise your left hand (arm, not just hand) on count 7",
+          "turn under your arm, not under your hand",
+          "hold the turn before landing",
+          "over rotate"
+        ],
+        "frames": [
+          {
+            "frame": "frame_002.jpg",
+            "caption": "Right turn initiated \u2014 both dancers moving forward, rotation beginning, bodies leaning into the turn direction."
+          },
+          {
+            "frame": "frame_003.jpg",
+            "caption": "Mid-turn \u2014 weight transferring, upper body rotating right, feet crossing through the pivot."
+          },
+          {
+            "frame": "frame_004.jpg",
+            "caption": "Turn completing \u2014 leader's arm raised, follower spinning, continuous rotation visible."
+          },
+          {
+            "frame": "frame_011.jpg",
+            "caption": "Solo right turn \u2014 clear forward step on 1, body angled right, arms framing the rotation."
+          },
+          {
+            "frame": "frame_012.jpg",
+            "caption": "Partner right turn \u2014 leader's left arm up, follower turning under, compact frame maintained."
+          },
+          {
+            "frame": "frame_025.jpg",
+            "caption": "Partnerwork right turn \u2014 leader facing follower, hands connected, follower mid-spin."
+          },
+          {
+            "frame": "frame_026.jpg",
+            "caption": "Right turn completion \u2014 leader and follower reconnecting, follower landing weight on right foot."
+          }
+        ],
+        "drill": "Solo: walk through 1-2-3 saying 'forward, turn, step in place' on each count. On 2, keep your body spinning \u2014 don't pause. On 3, land forward, not back. Then add a partner: leader practices raising the arm on 7 and sending on 2 without announcing the turn verbally.",
+        "common_error": "Stopping the rotation between counts 2 and 3, or stepping back on count 3 instead of forward. Leaders: lifting only the hand instead of the whole arm, or announcing the turn verbally.",
+        "videos": [
+          {
+            "title": "SALSA ON2 - Partnerwork Basics Lesson 4 - Single Right Turn",
+            "url": "https://www.youtube.com/watch?v=sx-EKzQ-Dik",
+            "channel": "Salsa On2",
+            "why": "Single stationary right turn for NY On2. Part of the structured lesson series; covers leader's lead technique and follower's turn."
+          },
+          {
+            "title": "Salsa Solo - Right Turn - Lesson 5 (Beginners, NY/On2)",
+            "url": "https://www.youtube.com/watch?v=03m3cnI1g44",
+            "channel": "Salsa On2",
+            "why": "Solo right turn footwork for On2. Good for practicing the turn mechanics on your own before partnerwork."
+          },
+          {
+            "title": "FUNDAMENTAL SALSA ON2 MAMBO SHINE: Basic Steps / Four Corners / Right Turn / Hook Step",
+            "url": "https://www.youtube.com/watch?v=tGviVuqpSpY",
+            "channel": "Unknown (Mambo/On2 instructor)",
+            "why": "Covers the right turn as part of fundamental On2 mambo shines. Also includes basic steps, four corners, and hook step \u2014 good overview video."
+          }
+        ]
+      },
+      {
+        "slug": "zig_zag",
+        "name": "Zig-Zag",
+        "tagline": "Full 1-2-3, 5-6-7 \u2014 clear weight transfers, open toward the door",
+        "what": "The zig-zag is a traveling pattern that opens the dancer toward the door/audience. It occupies a full 1-2-3, 5-6-7 phrase \u2014 never compressed into a half count. Each step requires a clear, committed weight transfer. The pattern alternates direction (zig then zag) with the body opening on the 1-2-3 phrase.",
+        "mechanics": [
+          {
+            "counts": "1",
+            "action": "Step diagonally forward-left (opening toward the door). Full weight transfer."
+          },
+          {
+            "counts": "2",
+            "action": "Step diagonally forward-right. On2 break direction. Full weight transfer."
+          },
+          {
+            "counts": "3",
+            "action": "Step to close or continue the diagonal. Hold 4."
+          },
+          {
+            "counts": "5",
+            "action": "Step diagonally back-right (reversing the zig). Full weight transfer."
+          },
+          {
+            "counts": "6",
+            "action": "Step diagonally back-left. On2 break. Full weight transfer."
+          },
+          {
+            "counts": "7",
+            "action": "Step to close or continue. Hold 8."
+          }
+        ],
+        "arm_styling": [
+          {
+            "counts": "1-2-3",
+            "action": "Arms travel with the body's diagonal opening. Keep upper body angled, not fully rotated."
+          },
+          {
+            "counts": "5-6-7",
+            "action": "Arms mirror the reverse diagonal. Stay compact \u2014 no wide arm swings."
+          }
+        ],
+        "instructor_quotes": [
+          "The zig-zag is a full count: 1-2-3, 5-6-7. Don't rush or compress it into a half count.",
+          "Step into the zig-zag with clear weight transfers on each count. Don't skip or glide through the steps.",
+          "opening toward the door",
+          "keep it compact"
+        ],
+        "frames": [
+          {
+            "frame": "frame_005.jpg",
+            "caption": "Zig-zag opening \u2014 both dancers stepping diagonally, bodies angling toward the mirror/door."
+          },
+          {
+            "frame": "frame_006.jpg",
+            "caption": "Zig-zag mid-phrase \u2014 weight clearly on one foot, opposite foot stepping through the diagonal."
+          },
+          {
+            "frame": "frame_007.jpg",
+            "caption": "Zig-zag completing \u2014 body opened toward door, weight settled, preparing to transition."
+          }
+        ],
+        "drill": "Mark the zig-zag in place first: step L-R-L (1-2-3), hold, step R-L-R (5-6-7), hold. Then add the diagonal travel. Say 'zig' on 1 and 'zag' on 5 to reinforce the full phrase timing.",
+        "common_error": "Rushing the zig-zag into a half-count or gliding through steps without committing weight. The pattern must feel like six distinct steps, not a slide.",
+        "videos": []
+      },
+      {
+        "slug": "suzy_q",
+        "name": "Suzy Q",
+        "tagline": "Cross (1), step (2), cross (3) \u2014 always start with a cross",
+        "what": "The Suzy Q is a crossing footwork pattern in NY On2. The pattern is: cross (1), step (2), cross (3), cross (5), step (6), cross (7). It always begins with a cross on count 1. When starting with the left foot, you must cross on 6-7 first (not step forward). The crossing foot stays slightly behind the front foot \u2014 never step out further than your front foot.",
+        "mechanics": [
+          {
+            "counts": "1",
+            "action": "Cross left foot over right (or right over left). Foot lands slightly behind the front foot."
+          },
+          {
+            "counts": "2",
+            "action": "Step to the side (uncross). Weight transfers fully."
+          },
+          {
+            "counts": "3",
+            "action": "Cross again. Same foot crosses. Hold 4."
+          },
+          {
+            "counts": "5",
+            "action": "Cross (opposite foot). Mirror of counts 1-3."
+          },
+          {
+            "counts": "6",
+            "action": "Step to the side (uncross)."
+          },
+          {
+            "counts": "7",
+            "action": "Cross again. Hold 8."
+          }
+        ],
+        "arm_styling": [
+          {
+            "counts": "1-2-3",
+            "action": "Arms can frame the crossing motion \u2014 subtle counter-rotation of shoulders with each cross."
+          },
+          {
+            "counts": "5-6-7",
+            "action": "Mirror the arm styling. Keep it compact and stylized, not exaggerated."
+          }
+        ],
+        "instructor_quotes": [
+          "Suzy Q always starts with a cross on count 1",
+          "cross, step, cross",
+          "keep your foot slightly behind the front foot \u2014 don't step out further than your front foot",
+          "if starting a Suzy Q with your left foot, you must cross on 6-7 first (not step forward)"
+        ],
+        "frames": [
+          {
+            "frame": "frame_013.jpg",
+            "caption": "Suzy Q entry \u2014 cross on count 1 visible, foot landing slightly behind front foot."
+          },
+          {
+            "frame": "frame_014.jpg",
+            "caption": "Suzy Q step (count 2) \u2014 uncrossing to the side, weight fully transferred."
+          },
+          {
+            "frame": "frame_015.jpg",
+            "caption": "Suzy Q cross (count 3) \u2014 second cross, body compact, hips engaged."
+          },
+          {
+            "frame": "frame_016.jpg",
+            "caption": "Suzy Q second phrase (count 5) \u2014 opposite foot crossing, mirror of the first phrase."
+          }
+        ],
+        "drill": "Stand still, no music. Say 'cross, step, cross' three times slowly. Feel the foot landing slightly behind the front foot on each cross. Then add counts: 'cross (1), step (2), cross (3), hold (4), cross (5), step (6), cross (7), hold (8).'",
+        "common_error": "Stepping the crossing foot out further than the front foot, or starting with a step instead of a cross. If you start with the left foot, you must cross on 6-7 first.",
+        "videos": [
+          {
+            "title": "Salsa Solo - Suzy Q - Lesson 9 (Beginners, NY/On2)",
+            "url": "https://www.youtube.com/watch?v=IVR5x2GyAS0",
+            "channel": "Salsa On2",
+            "why": "Dedicated beginner Suzy Q lesson for NY On2. Part of the same structured lesson series. Covers the cross-step-cross footwork solo."
+          },
+          {
+            "title": "Suzie Q - Salsa Shines On2 | TheDanceDojo.com",
+            "url": "https://www.youtube.com/watch?v=MUEguduSyas",
+            "channel": "TheDanceDojo",
+            "why": "TheDanceDojo's On2 Suzy Q tutorial. Clean breakdown with proper hip styling."
+          },
+          {
+            "title": "Salsa Shines: 7 Suzie Q Variations (On 1 & On 2)",
+            "url": "https://www.youtube.com/watch?v=Nzy-uJBeWpc",
+            "channel": "Salsa On2",
+            "why": "7 variations of the Suzy Q. Watch once you have the basic version down \u2014 good for adding variety."
+          }
+        ]
+      },
+      {
+        "slug": "combo",
+        "name": "Beginner Combo",
+        "tagline": "Basic \u2192 Right Turn \u2192 Zig-Zag \u2192 Right Turn \u2192 Suzy Q",
+        "what": "The beginner combo chains all five techniques into one continuous phrase. The sequence is: basic step (1-2-3), right turn (5-6-7, leader turns on 6), zig-zag (1-2-3, opening toward the door), right turn (5-6-7), Suzy Q (1-2-3, 5-6-7). In partner work, the leader can switch hands during the combo \u2014 'I switch the hands turn' \u2014 to set up the next move without breaking connection.",
+        "mechanics": [
+          {
+            "counts": "1-2-3",
+            "action": "Basic step \u2014 forward break on 2."
+          },
+          {
+            "counts": "5-6-7",
+            "action": "Right turn \u2014 leader turns on 6, follower turns on 2 of next phrase."
+          },
+          {
+            "counts": "1-2-3",
+            "action": "Zig-zag \u2014 open toward the door."
+          },
+          {
+            "counts": "5-6-7",
+            "action": "Right turn \u2014 second turn in the combo."
+          },
+          {
+            "counts": "1-2-3, 5-6-7",
+            "action": "Suzy Q \u2014 full two-phrase crossing pattern to close the combo."
+          }
+        ],
+        "arm_styling": [
+          {
+            "counts": "5-6-7 (right turn)",
+            "action": "Leader raises left arm on 7, brings up on 1, sends follower on 2. In-and-out motion."
+          },
+          {
+            "counts": "1-2-3 (zig-zag)",
+            "action": "Arms open with the body toward the door. Compact, not wide."
+          },
+          {
+            "counts": "1-2-3, 5-6-7 (Suzy Q)",
+            "action": "Arms frame the crossing. Subtle shoulder counter-rotation."
+          }
+        ],
+        "instructor_quotes": [
+          "basic step, combo, we go",
+          "right turn, and 1, 2, over rotate",
+          "right turn completed. Suzy, basic",
+          "I switch the hands turn",
+          "leads, right turn for me, 23672"
+        ],
+        "frames": [
+          {
+            "frame": "frame_020.jpg",
+            "caption": "Combo in progress \u2014 partner work, leader and follower side by side, transitioning between moves."
+          },
+          {
+            "frame": "frame_021.jpg",
+            "caption": "Combo right turn \u2014 leader's arm up, follower spinning, continuous flow between zig-zag and turn."
+          },
+          {
+            "frame": "frame_022.jpg",
+            "caption": "Combo zig-zag to right turn transition \u2014 bodies opening, weight shifting to set up the next turn."
+          },
+          {
+            "frame": "frame_028.jpg",
+            "caption": "Combo partnerwork \u2014 hands connected, leader guiding follower through the sequence."
+          },
+          {
+            "frame": "frame_029.jpg",
+            "caption": "Combo Suzy Q entry \u2014 leader raising arm, follower crossing, combo nearing completion."
+          },
+          {
+            "frame": "frame_030.jpg",
+            "caption": "Combo full partnerwork \u2014 both dancers in frame, connected, flowing through the sequence."
+          },
+          {
+            "frame": "frame_031.jpg",
+            "caption": "Combo right turn with hand switch \u2014 leader switching hands mid-combo to set up Suzy Q."
+          },
+          {
+            "frame": "frame_032.jpg",
+            "caption": "Combo Suzy Q \u2014 crossing pattern visible, both dancers compact and connected."
+          },
+          {
+            "frame": "frame_033.jpg",
+            "caption": "Combo near completion \u2014 Suzy Q second phrase, bodies settling into the final cross."
+          },
+          {
+            "frame": "frame_034.jpg",
+            "caption": "Combo closing \u2014 leg hook/wrap visible, leader and follower in close connection at combo end."
+          },
+          {
+            "frame": "frame_035.jpg",
+            "caption": "Combo final position \u2014 both dancers arms raised, crowd watching, combo complete."
+          },
+          {
+            "frame": "frame_036.jpg",
+            "caption": "Combo reset \u2014 dancers returning to basic, ready to repeat the sequence."
+          }
+        ],
+        "drill": "Walk through the combo at half speed with a partner, counting aloud: 'basic (1-2-3), turn (5-6-7), zig-zag (1-2-3), turn (5-6-7), Suzy Q (1-2-3, 5-6-7).' Leader: practice the hand switch before adding music. Then run it at full speed.",
+        "common_error": "Losing the On2 timing between moves \u2014 especially rushing the zig-zag or landing the right turn on the wrong count. The combo only works if every transition respects the 1-2-3, 5-6-7 phrase.",
+        "videos": [
+          {
+            "title": "3 Levels of the Famous TITANIC Salsa Combo",
+            "url": "https://www.youtube.com/watch?v=W0J03PmRms4",
+            "channel": "Baila Productions Salsa Dance School",
+            "why": "Teaches a named salsa combo (Titanic) with 3 levels of progression, directly matching the class focus on combining moves sequentially. The title and description indicate structured combo instruction suitable for building from basics to more complex sequences, which aligns with the beginner combo teaching approach (basic \u2192 right turn \u2192 zig-zag \u2192 right turn \u2192 Suzy Q)."
+          }
+        ]
+      }
+    ],
+    "choreography": {
+      "sequence": "BASIC STEP -> RIGHT TURN -> ZIG-ZAG -> RIGHT TURN -> SUZY Q (repeat)",
+      "phases": [
+        {
+          "name": "Phase 1: Solo Walk-Through (slow)",
+          "time": "0:00 - 0:10",
+          "steps": [
+            {
+              "frame": "frame_001.jpg",
+              "time": "0:01",
+              "counts": "prep",
+              "move": "Starting Position",
+              "body": "Both dancers face mirror, backs to camera, weight centered, hands clasped behind back (follower) and relaxed at sides (leader). Feet together.",
+              "cue": "567, and 123567123567"
+            },
+            {
+              "frame": "frame_002.jpg",
+              "time": "0:02",
+              "counts": "1-2-3",
+              "move": "Basic Step",
+              "body": "Both stepping forward, bodies beginning to shift weight. Leader left foot forward, follower right foot back. Upper bodies angled, not fully rotated.",
+              "cue": "1st your fundamentals"
+            },
+            {
+              "frame": "frame_003.jpg",
+              "time": "0:03",
+              "counts": "5-6-7",
+              "move": "Basic Step / Right Turn Entry",
+              "body": "Both moving, weight transferring back. Bodies compact. Leader beginning to initiate rightward rotation for the right turn.",
+              "cue": "right turn, we go"
+            },
+            {
+              "frame": "frame_004.jpg",
+              "time": "0:04",
+              "counts": "1-2-3",
+              "move": "Right Turn",
+              "body": "Both dancers mid-turn, bodies rotating right. Leader's arm beginning to rise. Continuous rotation \u2014 no stopping between counts.",
+              "cue": "123, close, 671"
+            },
+            {
+              "frame": "frame_005.jpg",
+              "time": "0:05",
+              "counts": "5-6-7",
+              "move": "Right Turn Completing / Zig-Zag Entry",
+              "body": "Turn completing, bodies opening toward the door/mirror. Weight landing forward. Transitioning into diagonal travel.",
+              "cue": "zigzag, 671235"
+            },
+            {
+              "frame": "frame_006.jpg",
+              "time": "0:06",
+              "counts": "1-2-3",
+              "move": "Zig-Zag",
+              "body": "Both stepping diagonally, bodies angled toward the door. Clear weight transfer on each step. Upper body angled, hips leading.",
+              "cue": "don't rush or compress it into a half count"
+            },
+            {
+              "frame": "frame_007.jpg",
+              "time": "0:07",
+              "counts": "5-6-7",
+              "move": "Zig-Zag",
+              "body": "Zig-zag second phrase \u2014 stepping back diagonally. Weight committed on each count. Bodies compact.",
+              "cue": "basic, 3rd, and a basic"
+            },
+            {
+              "frame": "frame_008.jpg",
+              "time": "0:08",
+              "counts": "1-2-3",
+              "move": "Basic Step",
+              "body": "Returning to basic. Both dancers side by side, weight clearly on one foot, compact stance. Hips engaged.",
+              "cue": "1, 2, 3, close, 6, 7, 1"
+            },
+            {
+              "frame": "frame_009.jpg",
+              "time": "0:09",
+              "counts": "5-6-7",
+              "move": "Basic Step",
+              "body": "Basic step second phrase. Feet close, upper body angled, hips settled into weight transfer. Hold visible on count 8.",
+              "cue": "2nd 1, zigzag, 6, 7, 1, 2, 3, 5"
+            },
+            {
+              "frame": "frame_010.jpg",
+              "time": "0:10",
+              "counts": "1-2-3",
+              "move": "Right Turn (second pass)",
+              "body": "Right turn initiated again. Forward step on 1, rotation beginning. Bodies leaning into the turn.",
+              "cue": "basic, 3rd, and, basic, 1, 2, 3"
+            }
+          ]
+        },
+        {
+          "name": "Phase 2: Full Speed Solo / Combo Drill",
+          "time": "0:11 - 0:23",
+          "steps": [
+            {
+              "frame": "frame_011.jpg",
+              "time": "0:11",
+              "counts": "5-6-7",
+              "move": "Right Turn (full speed)",
+              "body": "Both dancers in full-speed right turn. Bodies rotating continuously, no pause between counts. Arms framing the rotation.",
+              "cue": "basic step, combo, we go"
+            },
+            {
+              "frame": "frame_012.jpg",
+              "time": "0:12",
+              "counts": "1-2-3",
+              "move": "Right Turn Completing",
+              "body": "Turn completing at full speed. Leader's arm up, follower spinning under. Compact frame. Weight landing forward on 3.",
+              "cue": "right turn, and 1, 2, over rotate"
+            },
+            {
+              "frame": "frame_013.jpg",
+              "time": "0:13",
+              "counts": "5-6-7",
+              "move": "Suzy Q Entry",
+              "body": "Transitioning into Suzy Q. Cross on count 5 visible \u2014 foot landing slightly behind front foot. Body compact.",
+              "cue": "Suzy, cue! 67123"
+            },
+            {
+              "frame": "frame_014.jpg",
+              "time": "0:14",
+              "counts": "1-2-3",
+              "move": "Suzy Q",
+              "body": "Suzy Q in progress. Cross (1), step (2), cross (3) pattern visible. Hips engaged, upper body angled.",
+              "cue": "cross, step, cross"
+            },
+            {
+              "frame": "frame_015.jpg",
+              "time": "0:15",
+              "counts": "5-6-7",
+              "move": "Suzy Q (second phrase)",
+              "body": "Suzy Q second phrase. Opposite foot crossing. Mirror of first phrase. Bodies compact, feet not overstepping.",
+              "cue": "cross, step, cross is the only pattern"
+            },
+            {
+              "frame": "frame_016.jpg",
+              "time": "0:16",
+              "counts": "1-2-3",
+              "move": "Right Turn (combo)",
+              "body": "Right turn in combo context. Leader's arm rising on 7, body rotating. Continuous flow from Suzy Q.",
+              "cue": "6, 7, right turn, completed"
+            },
+            {
+              "frame": "frame_017.jpg",
+              "time": "0:17",
+              "counts": "5-6-7",
+              "move": "Zig-Zag (combo)",
+              "body": "Zig-zag in combo. Diagonal travel opening toward door. Full weight transfers on each count.",
+              "cue": "We go, right turn for them, up, turn, 3"
+            },
+            {
+              "frame": "frame_018.jpg",
+              "time": "0:18",
+              "counts": "1-2-3",
+              "move": "Zig-Zag (combo, second phrase)",
+              "body": "Zig-zag second phrase. Reversing diagonal. Bodies compact, weight committed.",
+              "cue": "step into the zig-zag with clear weight transfers"
+            },
+            {
+              "frame": "frame_019.jpg",
+              "time": "0:19",
+              "counts": "5-6-7",
+              "move": "Basic Step (combo reset)",
+              "body": "Returning to basic after zig-zag. Both dancers side by side, weight settling. Preparing for next right turn.",
+              "cue": "Leads, right turn for me, 23672"
+            },
+            {
+              "frame": "frame_020.jpg",
+              "time": "0:20",
+              "counts": "1-2-3",
+              "move": "Right Turn (leader solo practice)",
+              "body": "Leader practicing right turn solo. Forward step on 1, pivot on 2, step forward on 3. Continuous rotation.",
+              "cue": "forward, turn, step in place"
+            },
+            {
+              "frame": "frame_021.jpg",
+              "time": "0:21",
+              "counts": "5-6-7",
+              "move": "Right Turn (leader, full speed)",
+              "body": "Leader mid-turn at full speed. Body rotating right, arm framing. No pause between counts 2 and 3.",
+              "cue": "don't stop the flow"
+            },
+            {
+              "frame": "frame_022.jpg",
+              "time": "0:22",
+              "counts": "1-2-3",
+              "move": "Combo transition (zig-zag to right turn)",
+              "body": "Transitioning from zig-zag into right turn. Bodies opening, weight shifting. Critical transition point.",
+              "cue": "combo, we can go like this"
+            },
+            {
+              "frame": "frame_023.jpg",
+              "time": "0:23",
+              "counts": "5-6-7",
+              "move": "Right Turn (hand switch setup)",
+              "body": "Leader setting up hand switch. Arm position changing mid-combo. Follower tracking the lead.",
+              "cue": "I switch the hands turn"
+            }
+          ]
+        },
+        {
+          "name": "Phase 3: Partner Work (full speed)",
+          "time": "0:24 - 0:36",
+          "steps": [
+            {
+              "frame": "frame_024.jpg",
+              "time": "0:24",
+              "counts": "1-2-3",
+              "move": "Partner Connection / Basic",
+              "body": "Leader and follower facing each other, hands connected. Basic step in partner frame. Both bodies angled, compact.",
+              "cue": "123I switch the hands turn"
+            },
+            {
+              "frame": "frame_025.jpg",
+              "time": "0:25",
+              "counts": "5-6-7",
+              "move": "Partner Right Turn (follower spinning)",
+              "body": "Follower mid-spin under leader's raised arm. Leader's left arm up, elbow bent. Follower's frame relaxed and low.",
+              "cue": "turn under your arm, not under your hand"
+            },
+            {
+              "frame": "frame_026.jpg",
+              "time": "0:26",
+              "counts": "1-2-3",
+              "move": "Partner Right Turn (completing)",
+              "body": "Follower landing from turn. Leader reconnecting. Follower's weight landing on right foot after holding the turn.",
+              "cue": "hold the turn before landing"
+            },
+            {
+              "frame": "frame_027.jpg",
+              "time": "0:27",
+              "counts": "5-6-7",
+              "move": "Partner Basic / Zig-Zag Entry",
+              "body": "Both in partner frame, transitioning. Leader guiding follower into zig-zag direction. Hands connected.",
+              "cue": "keep your follow's arm closer to their shoulders"
+            },
+            {
+              "frame": "frame_028.jpg",
+              "time": "0:28",
+              "counts": "1-2-3",
+              "move": "Partner Zig-Zag",
+              "body": "Both stepping diagonally in partner frame. Bodies opening toward door. Clear weight transfers.",
+              "cue": "opening toward the door"
+            },
+            {
+              "frame": "frame_029.jpg",
+              "time": "0:29",
+              "counts": "5-6-7",
+              "move": "Partner Right Turn (second in combo)",
+              "body": "Leader raising arm for second right turn. Follower preparing to spin. In-and-out arm motion visible.",
+              "cue": "in and out, not a straight lift"
+            },
+            {
+              "frame": "frame_030.jpg",
+              "time": "0:30",
+              "counts": "1-2-3",
+              "move": "Partner Suzy Q Entry",
+              "body": "Both entering Suzy Q in partner frame. Cross on 1 visible. Hands connected, bodies compact.",
+              "cue": "Suzy Q always starts with a cross on count 1"
+            },
+            {
+              "frame": "frame_031.jpg",
+              "time": "0:31",
+              "counts": "5-6-7",
+              "move": "Partner Suzy Q (second phrase)",
+              "body": "Suzy Q second phrase in partner work. Opposite foot crossing. Leader and follower mirroring the pattern.",
+              "cue": "cross, step, cross"
+            },
+            {
+              "frame": "frame_032.jpg",
+              "time": "0:32",
+              "counts": "1-2-3",
+              "move": "Combo Right Turn with Hand Switch",
+              "body": "Leader switching hands mid-combo. Follower tracking the change. Arm position transitioning smoothly.",
+              "cue": "I switch the hands turn 23567"
+            },
+            {
+              "frame": "frame_033.jpg",
+              "time": "0:33",
+              "counts": "5-6-7",
+              "move": "Partner Right Turn (hand switch completing)",
+              "body": "Turn completing after hand switch. New hand connection established. Both dancers flowing through the transition.",
+              "cue": "don't announce the turn"
+            },
+            {
+              "frame": "frame_034.jpg",
+              "time": "0:34",
+              "counts": "1-2-3",
+              "move": "Combo Closing Move (leg hook/wrap)",
+              "body": "Leader and follower in close connection. Follower's leg hooking/wrapping. Bodies close, frame intimate. Crowd watching.",
+              "cue": "keep it compact"
+            },
+            {
+              "frame": "frame_035.jpg",
+              "time": "0:35",
+              "counts": "5-6-7",
+              "move": "Combo Final Position",
+              "body": "Both dancers arms raised, facing each other. Combo complete. Crowd applauding. Bodies open, celebratory position.",
+              "cue": "combo complete"
+            },
+            {
+              "frame": "frame_036.jpg",
+              "time": "0:36",
+              "counts": "prep",
+              "move": "Reset / Repeat",
+              "body": "Dancers returning to starting position. Crowd still watching. Ready to repeat the combo from the top.",
+              "cue": "let's do it again"
+            }
+          ]
+        }
+      ],
+      "hard_transitions": [
+        {
+          "from": "Right Turn",
+          "to": "Zig-Zag",
+          "frames": "004 -> 005",
+          "why": "The right turn lands on count 3 (forward, not back), and the zig-zag must begin immediately on count 5 opening toward the door. If you land the turn on the wrong foot or step back on 3, you'll be on the wrong foot for the zig-zag entry."
+        },
+        {
+          "from": "Zig-Zag",
+          "to": "Right Turn",
+          "frames": "007 -> 008",
+          "why": "The zig-zag closes on count 7, and the right turn begins on count 1. The body must stop traveling diagonally and redirect into the forward step of the right turn. Rushing the zig-zag's last step causes the turn to start late."
+        },
+        {
+          "from": "Right Turn",
+          "to": "Suzy Q",
+          "frames": "012 -> 013",
+          "why": "The Suzy Q must start with a cross on count 1. If the right turn doesn't complete cleanly (weight on right foot, forward), the crossing foot will be wrong and the Suzy Q will start with a step instead of a cross."
+        },
+        {
+          "from": "Basic Step",
+          "to": "Right Turn (leader in partnerwork)",
+          "frames": "019 -> 020",
+          "why": "In solo, the leader turns on count 2. In partner work, the leader turns on count 6. This timing shift is the most common error when moving from solo practice to partner work."
+        },
+        {
+          "from": "Right Turn",
+          "to": "Right Turn (hand switch)",
+          "frames": "023 -> 024",
+          "why": "Switching hands mid-combo requires the leader to change the connection without breaking the follower's frame or telegraphing the switch. The hand switch happens on 1-2-3 while the follower is still tracking the lead."
+        }
+      ]
+    },
+    "practice": {
+      "total_minutes": 25,
+      "sections": [
+        {
+          "name": "Section 1: Footwork Foundation",
+          "minutes": 8,
+          "drills": [
+            {
+              "name": "Basic Step Count-Out",
+              "minutes": 3,
+              "instructions": "No music. Say '1-2-3, hold, 5-6-7, hold' aloud. Fully commit weight on every count. Feel the floor under your standing foot. Add hip movement only after footwork is automatic. Never step on 4 or 8."
+            },
+            {
+              "name": "Zig-Zag Isolation",
+              "minutes": 3,
+              "instructions": "Mark the zig-zag in place: step L-R-L (1-2-3), hold, step R-L-R (5-6-7), hold. Then add diagonal travel. Say 'zig' on 1 and 'zag' on 5. Each step must feel distinct \u2014 no gliding."
+            },
+            {
+              "name": "Suzy Q Cross Pattern",
+              "minutes": 2,
+              "instructions": "Stand still. Say 'cross, step, cross' three times slowly. Feel the foot landing slightly behind the front foot on each cross. Add counts: cross (1), step (2), cross (3), hold (4), cross (5), step (6), cross (7), hold (8)."
+            }
+          ]
+        },
+        {
+          "name": "Section 2: Right Turn Mechanics",
+          "minutes": 7,
+          "drills": [
+            {
+              "name": "Solo Right Turn Walk-Through",
+              "minutes": 3,
+              "instructions": "Say 'forward (1), turn (2), step in place (3)' on each count. On 2, keep your body spinning \u2014 don't pause. On 3, land forward, not back. Repeat 10 times, then add music at half speed."
+            },
+            {
+              "name": "Continuous Rotation Drill",
+              "minutes": 2,
+              "instructions": "Practice the right turn focusing only on counts 2-3. Start the rotation on 2 and don't stop until you've completed the full turn on 3. The key phrase: 'don't stop the flow.' Do 20 repetitions."
+            },
+            {
+              "name": "Leader Arm Timing (partnerwork)",
+              "minutes": 2,
+              "instructions": "Without a partner, practice: raise left arm on 7, bring up on 1 (in-and-out motion), send on 2. Repeat 10 times. Then add a partner and practice without announcing the turn verbally."
+            }
+          ]
+        },
+        {
+          "name": "Section 3: Combo Integration",
+          "minutes": 10,
+          "drills": [
+            {
+              "name": "Combo Walk-Through (half speed)",
+              "minutes": 4,
+              "instructions": "With a partner, walk through the full combo at half speed counting aloud: 'basic (1-2-3), turn (5-6-7), zig-zag (1-2-3), turn (5-6-7), Suzy Q (1-2-3, 5-6-7).' Leader: practice the hand switch before adding music."
+            },
+            {
+              "name": "Transition Drilling",
+              "minutes": 3,
+              "instructions": "Isolate the two hardest transitions: (1) right turn \u2192 zig-zag and (2) zig-zag \u2192 right turn. Run each transition 10 times at half speed, then 10 times at full speed. Focus on foot placement at the landing of each turn."
+            },
+            {
+              "name": "Full Combo at Music Speed",
+              "minutes": 3,
+              "instructions": "Run the full combo to music: basic \u2192 right turn \u2192 zig-zag \u2192 right turn \u2192 Suzy Q. Repeat 5 times without stopping. If you lose the timing, don't stop \u2014 find the next count 1 and re-enter."
+            }
+          ]
+        }
+      ]
+    },
+    "key_frames": [
+      {
+        "frame": "frame_001.jpg",
+        "label": "Starting Position",
+        "description": "Both dancers in starting position before the combo begins. Study the body angle, foot placement, and relaxed arm position \u2014 this is the neutral you return to between combos."
+      },
+      {
+        "frame": "frame_002.jpg",
+        "label": "Basic Step Forward Break",
+        "description": "The On2 forward break on count 2 \u2014 the defining moment of NY On2 timing. The weight shift here is what separates On2 from On1. Study the body angle and hip position."
+      },
+      {
+        "frame": "frame_004.jpg",
+        "label": "Right Turn Mid-Rotation",
+        "description": "The continuous rotation through counts 2-3 of the right turn. The body is still spinning \u2014 this is the 'don't stop the flow' moment. Freeze here to see what correct continuous rotation looks like."
+      },
+      {
+        "frame": "frame_006.jpg",
+        "label": "Zig-Zag Weight Transfer",
+        "description": "Clear weight transfer on a zig-zag count. Each step is distinct and committed. This frame shows what 'don't skip or glide through the steps' means in practice."
+      },
+      {
+        "frame": "frame_011.jpg",
+        "label": "Right Turn Forward Step (count 1)",
+        "description": "The forward step on count 1 of the right turn \u2014 the setup for the pivot. Body is angled right, weight moving forward. This is 'forward' in 'forward, turn, step in place.'"
+      },
+      {
+        "frame": "frame_013.jpg",
+        "label": "Suzy Q Cross (count 1)",
+        "description": "The Suzy Q always starts with a cross on count 1. Study the foot position \u2014 the crossing foot lands slightly behind the front foot, not further out. This is the most common error point."
+      },
+      {
+        "frame": "frame_025.jpg",
+        "label": "Partner Right Turn \u2014 Follower Mid-Spin",
+        "description": "Follower mid-spin under leader's raised arm. Leader's elbow is bent and lower \u2014 'turn under your arm, not under your hand.' Follower's frame is relaxed. Critical frame for leaders to study arm position."
+      },
+      {
+        "frame": "frame_026.jpg",
+        "label": "Follower Landing from Turn",
+        "description": "Follower landing after holding the turn. Weight lands on right foot. This is the 'hold the turn before landing' moment \u2014 the follower doesn't land immediately on count 3."
+      },
+      {
+        "frame": "frame_029.jpg",
+        "label": "Leader Arm In-and-Out Motion",
+        "description": "Leader raising arm for the right turn in partner work. The in-and-out motion (not a straight lift) is visible. This is the correct arm path for sending the follower into a turn."
+      },
+      {
+        "frame": "frame_031.jpg",
+        "label": "Combo Hand Switch",
+        "description": "Leader switching hands mid-combo. The transition happens without breaking the follower's frame. Study how the leader's arm position changes while maintaining connection."
+      },
+      {
+        "frame": "frame_034.jpg",
+        "label": "Combo Closing \u2014 Close Connection",
+        "description": "The combo's closing move with the follower's leg hook/wrap. Both dancers in close frame. This is the 'keep it compact' principle at its most visible \u2014 no wasted space or energy."
+      },
+      {
+        "frame": "frame_035.jpg",
+        "label": "Combo Complete \u2014 Final Position",
+        "description": "Both dancers with arms raised, combo complete. Study the body positions \u2014 this is the natural end of the phrase. The crowd's reaction confirms the energy of a well-executed combo."
+      }
+    ],
+    "class_date": "2026-08-18",
+    "class_number": 8,
+    "video_slug": "img-0131"
   }
 }
