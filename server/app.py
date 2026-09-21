@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import json
+import logging
 import os
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -41,6 +42,37 @@ if VIDEOS.exists():
 # Frames served via /api/frames/{slug}/{filename} endpoint (disk + MongoDB fallback)
 if WEB.exists():
     app.mount("/web", StaticFiles(directory=WEB), name="web")
+
+
+logger = logging.getLogger("salsa")
+
+_mongo_warned: set[str] = set()
+
+
+def _mongo_unavailable(where: str, exc: BaseException) -> None:
+    """Record that a Mongo read failed and we are serving JSON instead.
+
+    These fallbacks used to swallow the exception entirely, so a deployment
+    with no MONGODB_URI looked healthy while quietly serving stale, partial
+    data from data/*.json. Warn once per call site so the cause is visible in
+    the logs without flooding them on every request.
+    """
+    if where not in _mongo_warned:
+        _mongo_warned.add(where)
+        logger.warning(
+            "MongoDB unavailable in %s (%s: %s) - falling back to data/*.json. "
+            "Fields that live only in Mongo will be missing.",
+            where, type(exc).__name__, exc,
+        )
+
+
+def _class_sort_key(row: dict) -> str:
+    """Newest first, whatever the source.
+
+    The Mongo query sorts server-side; class_notes.json is in append order, so
+    the fallback used to render the class list oldest-first.
+    """
+    return str(row.get("class_date", ""))
 
 
 def _load_json(name: str) -> Any:
@@ -602,9 +634,12 @@ def list_classes() -> list:
             r.pop("words", None)
             r["teaching_point_count"] = len(r.get("teaching_points", []))
         return rows
-    except Exception:
+    except Exception as exc:
+        _mongo_unavailable("list_classes", exc)
         notes = _load_json("class_notes.json") or []
-        return notes
+        for n in notes:
+            n.setdefault("teaching_point_count", len(n.get("teaching_points", [])))
+        return sorted(notes, key=_class_sort_key, reverse=True)
 
 
 @app.get("/api/classes/{class_date}")
@@ -613,8 +648,8 @@ def get_class(class_date: str) -> dict:
         doc = mongo.classes().find_one({"class_date": class_date}, {"_id": 0})
         if doc:
             return doc
-    except Exception:
-        pass
+    except Exception as exc:
+        _mongo_unavailable("get_class", exc)
     notes = _load_json("class_notes.json") or []
     match = next((n for n in notes if n.get("class_date") == class_date), None)
     if not match:

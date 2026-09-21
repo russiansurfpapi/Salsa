@@ -427,6 +427,26 @@ def update_breakdowns(guide: dict, frame_slug: str, class_date: str, video_filen
     print(f"  Updated technique_breakdowns.json ({len(technique_slugs)} techniques)")
 
 
+def _update_class_notes_video(class_date: str, video_filename: str, frame_slug: str) -> None:
+    """Mirror the video fields into class_notes.json.
+
+    Deployments without MONGODB_URI serve class_notes.json directly, so video
+    metadata written only to Mongo is invisible there.
+    """
+    notes_file = DATA / "class_notes.json"
+    if not notes_file.exists():
+        return
+    notes = json.loads(notes_file.read_text())
+    for n in notes:
+        if n.get("class_date") == class_date:
+            n["video_file"] = video_filename
+            n["video_frame_slug"] = frame_slug
+            n["has_video_breakdown"] = True
+            notes_file.write_text(json.dumps(notes, indent=2))
+            print(f"  Updated class_notes.json video fields for {class_date}")
+            return
+
+
 def update_mongo(class_date: str, video_filename: str, frame_slug: str) -> None:
     from server.mongo import classes
     result = classes().update_one(
@@ -437,6 +457,7 @@ def update_mongo(class_date: str, video_filename: str, frame_slug: str) -> None:
             "has_video_breakdown": True,
         }},
     )
+    _update_class_notes_video(class_date, video_filename, frame_slug)
     if result.matched_count:
         print(f"  Updated MongoDB for {class_date}")
     else:
