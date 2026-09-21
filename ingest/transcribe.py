@@ -8,6 +8,7 @@ from __future__ import annotations
 import json
 import os
 import re
+import time
 import subprocess
 from pathlib import Path
 
@@ -53,6 +54,18 @@ def transcribe_video(video_path: Path, model: str = "nova-2") -> dict:
     if model.startswith("nova"):
         params["paragraphs"] = "true"
 
+    return _post_with_fallback(audio_path, params)
+
+
+# Deepgram's hosted Whisper models drop the connection without a response on a
+# large share of requests (observed ~2 in 3 on 2026-09-21), while the nova
+# models answer every time. Retry the requested model, then fall back rather
+# than losing a class recording to a flaky endpoint.
+DG_FALLBACK_MODEL = "nova-3"
+DG_ATTEMPTS = 3
+
+
+def _post_once(audio_path: Path, params: dict) -> dict:
     with open(audio_path, "rb") as f:
         resp = requests.post(
             DG_URL,
@@ -63,6 +76,38 @@ def transcribe_video(video_path: Path, model: str = "nova-2") -> dict:
         )
     resp.raise_for_status()
     return resp.json()
+
+
+def _post_with_fallback(audio_path: Path, params: dict) -> dict:
+    models = [params.get("model")]
+    if models[0] != DG_FALLBACK_MODEL:
+        models.append(DG_FALLBACK_MODEL)
+
+    last_error = None
+    for model in models:
+        attempt_params = dict(params, model=model)
+        # nova models support paragraphs; whisper does not.
+        if model.startswith("nova"):
+            attempt_params["paragraphs"] = "true"
+        else:
+            attempt_params.pop("paragraphs", None)
+
+        for attempt in range(1, DG_ATTEMPTS + 1):
+            try:
+                result = _post_once(audio_path, attempt_params)
+                if model != params.get("model"):
+                    print(f"    (fell back to {model} after {params.get('model')} failed)")
+                return result
+            except (requests.exceptions.ConnectionError,
+                    requests.exceptions.Timeout) as exc:
+                last_error = exc
+                print(f"    {model} attempt {attempt}/{DG_ATTEMPTS} dropped the connection")
+                if attempt < DG_ATTEMPTS:
+                    time.sleep(2 * attempt)
+
+    raise RuntimeError(
+        f"Deepgram failed for every model tried ({', '.join(m for m in models)}): {last_error}"
+    )
 
 
 def section_transcript(result: dict) -> list[dict]:

@@ -113,7 +113,11 @@
         "step into the pivot with the opposite foot pushing off",
         "let your hips do the talking rather than turning your whole torso",
         "1-2-3, 5-6-7",
-        "Counts 4 and 8 are held/weight-bearing counts. Don't step on 4 or 8."
+        "Counts 4 and 8 are held/weight-bearing counts. Don't step on 4 or 8.",
+        "base it, 123567",
+        "basic, 123, basic step",
+        "a little bit of hips",
+        "5, 6, 7, 1, 2, 3"
       ],
       "connects_to": [
         "inside_turn",
@@ -449,7 +453,8 @@
         "raise your left hand (arm, not just hand) on count 7",
         "turn under your arm, not under your hand",
         "hold the turn before landing",
-        "over rotate"
+        "over rotate",
+        "Step into the turn on count 1 (do not just pivot in place); this makes your weight placement clear."
       ],
       "connects_to": [
         "basic_step",
@@ -585,7 +590,10 @@
       "class_tips": [
         "Practice the basic step around the world by moving through all directional angles.",
         "Anchor counts 3 and 7 before redirecting to the next clock-face position.",
-        "Practice the basic step around the world by moving through all directional angles (12, 9, 6 o'clock positions)"
+        "Practice the basic step around the world by moving through all directional angles (12, 9, 6 o'clock positions)",
+        "1, 2, 09:00, 5, 6, 06:00, 1, 2, 03:00, base it",
+        "1st the individual movement",
+        "side base it together"
       ],
       "connects_to": [
         "basic_step",
@@ -712,7 +720,10 @@
         "Suzy Q always starts with a cross on count 1",
         "cross, step, cross",
         "keep your foot slightly behind the front foot \u2014 don't step out further than your front foot",
-        "if starting a Suzy Q with your left foot, you must cross on 6-7 first (not step forward)"
+        "if starting a Suzy Q with your left foot, you must cross on 6-7 first (not step forward)",
+        "123, Susie Q, we go, 123, basic step",
+        "End each Suzy Q with your weight on the foot that is NOT crossing.",
+        "After completing a Suzy Q to your left, cross over with your left foot and execute another Suzy Q to your right to create a criss-cross pattern."
       ],
       "connects_to": [
         "basic_step",
@@ -1010,6 +1021,28 @@
       ],
       "video_keys": [
         "comb"
+      ]
+    },
+    "partner_work_tension_hold": {
+      "name": "Partner Work \u2014 Tension & Hold",
+      "slug": "partner_work_tension_hold",
+      "level": 1,
+      "order": 99,
+      "description": "Partner Work \u2014 Tension & Hold was detected in a class upload. This page collects class tips, lesson images, drills, and related videos as they are added.",
+      "breakdown": [],
+      "common_mistakes": [],
+      "key_details": [],
+      "flashcards": [],
+      "class_tips": [
+        "6712367, tension, hold",
+        "5, side, basic, 23",
+        "partner work, 6, 7, 1, 2, 3, 6, 7, tension, hold"
+      ],
+      "connects_to": [
+        "basic_step"
+      ],
+      "video_keys": [
+        "partner_work_tension_hold"
       ]
     }
   },

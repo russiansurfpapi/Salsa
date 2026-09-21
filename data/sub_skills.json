@@ -303,5 +303,14 @@
       "drill_template": "Review the class page, pick one instructor cue, and drill it slowly for 5 minutes before adding music.",
       "video_focus": "comb"
     }
+  ],
+  "partner_work_tension_hold": [
+    {
+      "id": "class_notes",
+      "name": "Class Notes",
+      "description": "Technique was detected from a lesson upload. Rate this after reviewing the class notes and lesson frames.",
+      "drill_template": "Review the class page, pick one instructor cue, and drill it slowly for 5 minutes before adding music.",
+      "video_focus": "partner_work_tension_hold"
+    }
   ]
 }

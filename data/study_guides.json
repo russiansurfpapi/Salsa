@@ -5866,5 +5866,1392 @@
     "class_date": "2026-08-18",
     "class_number": 8,
     "video_slug": "img-0131"
+  },
+  "2026-09-15": {
+    "title": "NY On2 Salsa: Basic, Clock-Face Directional Basic & Suzy Q",
+    "subtitle": "Nieves Dance Studio \u2014 Class #12 (2026-09-15)",
+    "techniques": [
+      {
+        "slug": "basic_step",
+        "name": "Basic Step (On2)",
+        "tagline": "Foundation forward-back mambo break on counts 2 and 6",
+        "what": "The NY On2 basic is a 6-step pattern across two 4-count bars. Leader breaks forward on count 2 (left foot), recovers on 3, closes on 4 (no weight); breaks back on count 6 (right foot), recovers on 7, closes on 8. The break/change-of-direction happens ON 2 and ON 6 \u2014 never on 1 or 5. Weight stays compact, knees soft, hips follow the weight transfer naturally.",
+        "mechanics": [
+          {
+            "counts": "1",
+            "action": "Prep \u2014 slight weight shift, body settles"
+          },
+          {
+            "counts": "2",
+            "action": "Break forward (leader L foot) \u2014 ON2 change of direction"
+          },
+          {
+            "counts": "3",
+            "action": "Replace weight back to right"
+          },
+          {
+            "counts": "4-and",
+            "action": "Close left foot, no weight (tap or collect)"
+          },
+          {
+            "counts": "5",
+            "action": "Prep \u2014 body settles opposite direction"
+          },
+          {
+            "counts": "6",
+            "action": "Break back (leader R foot) \u2014 ON2 change of direction"
+          },
+          {
+            "counts": "7",
+            "action": "Replace weight forward to left"
+          },
+          {
+            "counts": "8-and",
+            "action": "Close right foot, no weight (tap or collect)"
+          }
+        ],
+        "arm_styling": [
+          {
+            "counts": "2",
+            "action": "Arms relaxed at sides or in partner frame; no pumping"
+          },
+          {
+            "counts": "6",
+            "action": "Same \u2014 frame stays quiet, hips absorb the break"
+          }
+        ],
+        "instructor_quotes": [
+          "base it, 123567",
+          "basic, 123, basic step",
+          "a little bit of hips"
+        ],
+        "frames": [
+          {
+            "frame": "frame_001.jpg",
+            "caption": "Instructor demonstrates basic from behind \u2014 both dancers in slot, arms relaxed"
+          },
+          {
+            "frame": "frame_008.jpg",
+            "caption": "Side-by-side basic \u2014 compact weight transfer, soft knees visible"
+          },
+          {
+            "frame": "frame_009.jpg",
+            "caption": "Basic step traveling \u2014 follower mirrors leader's break timing"
+          }
+        ],
+        "drill": "Stand alone. Count aloud: '1-2-3, 5-6-7.' On 2 step forward, on 6 step back. Do NOT move on 1 or 5 \u2014 those are prep counts. Add hips only after footwork is automatic.",
+        "common_error": "Breaking on count 1 instead of 2 (On1 habit). Listen for the clave and feel the 2 before you step.",
+        "videos": [
+          {
+            "title": "Salsa Basic Step for NY Style On2 (Beginner Tutorial)",
+            "url": "https://www.youtube.com/watch?v=-FW_9o7SESA",
+            "channel": "TheDanceDojo",
+            "why": "Dedicated beginner tutorial for the On2 basic step. Clear breakdown of leader and follower footwork with counting."
+          },
+          {
+            "title": "SALSA ON2 - Partnerwork Basics Lesson 1 - Basic Step",
+            "url": "https://www.youtube.com/watch?v=z7YqGIuhWVg",
+            "channel": "Salsa On2",
+            "why": "Part of a structured lesson series for NY style On2. Shows partnerwork basic step with leader and follower perspectives."
+          },
+          {
+            "title": "BASIC STEPS - Eddie Torres Instructional Salsa On2",
+            "url": "https://www.youtube.com/watch?v=dbeWlBadrAs",
+            "channel": "Eddie Torres (Mambo On2)",
+            "why": "Eddie Torres, the godfather of NY On2/mambo, teaches the basic step. Authoritative source for proper On2 timing and technique."
+          }
+        ]
+      },
+      {
+        "slug": "around_the_world",
+        "name": "Directional Basic / Clock-Face Basic",
+        "tagline": "Basic step rotated to face 12, 9, 6, and 3 o'clock positions",
+        "what": "The instructor uses clock-face cues (09:00, 06:00, 03:00) to rotate the basic step around a fixed point. Each direction change happens on the prep count (1 or 5) so the break still lands on 2 or 6. The slot/line shifts but the On2 timing never changes. This is the 'around the world' / circular basic \u2014 the dancer pivots their facing direction while keeping the same 1-2-3 / 5-6-7 footwork.",
+        "mechanics": [
+          {
+            "counts": "1-2-3",
+            "action": "Basic facing 12:00 (front)"
+          },
+          {
+            "counts": "5-6-7",
+            "action": "Pivot to face 09:00 (left); break on 6 in new direction"
+          },
+          {
+            "counts": "1-2-3",
+            "action": "Pivot to face 06:00 (back); break on 2 in new direction"
+          },
+          {
+            "counts": "5-6-7",
+            "action": "Pivot to face 03:00 (right); break on 6 in new direction"
+          },
+          {
+            "counts": "1-2-3",
+            "action": "Return to 12:00; 'base it together'"
+          }
+        ],
+        "arm_styling": [
+          {
+            "counts": "pivot prep",
+            "action": "Arms stay relaxed; no swing \u2014 pivot is in the feet and hips only"
+          }
+        ],
+        "instructor_quotes": [
+          "1, 2, 09:00, 5, 6, 06:00, 1, 2, 03:00, base it",
+          "1st the individual movement",
+          "side base it together"
+        ],
+        "frames": [
+          {
+            "frame": "frame_002.jpg",
+            "caption": "Dancers rotating \u2014 body angled toward 09:00, basic continues in new slot"
+          },
+          {
+            "frame": "frame_003.jpg",
+            "caption": "Facing approximately 06:00 (back wall) \u2014 break on 2 away from mirror"
+          },
+          {
+            "frame": "frame_004.jpg",
+            "caption": "Transition toward 03:00 \u2014 pivot visible in foot placement"
+          },
+          {
+            "frame": "frame_005.jpg",
+            "caption": "Returning to front \u2014 completing the clock-face circuit"
+          }
+        ],
+        "drill": "Mark four spots on the floor like a compass. Basic 2 bars at each compass point. Pivot on the prep count (1 or 5). Keep the break on 2 and 6 regardless of direction.",
+        "common_error": "Pivoting ON the break count (2 or 6) instead of on the prep. The direction change must be set up BEFORE the break.",
+        "videos": []
+      },
+      {
+        "slug": "suzy_q",
+        "name": "Suzy Q",
+        "tagline": "Heel-toe rocking shine with hip punctuation",
+        "what": "The Suzy Q is a stationary shine (solo footwork) done in place. Both feet rock heel-toe in alternating directions \u2014 right heel drops as left toe lifts, then switch. In NY On2 context it fits into the 1-2-3 / 5-6-7 phrase. The instructor cues it after the basic, suggesting it replaces or follows a basic phrase. Hips accent each rock naturally from the weight shift.",
+        "mechanics": [
+          {
+            "counts": "1",
+            "action": "Right heel drops right, left toe lifts \u2014 body tilts right"
+          },
+          {
+            "counts": "2",
+            "action": "Weight transfers \u2014 left heel drops left, right toe lifts"
+          },
+          {
+            "counts": "3",
+            "action": "Continue rock or hold/collect"
+          },
+          {
+            "counts": "5-6-7",
+            "action": "Mirror the 1-2-3 pattern on opposite side"
+          }
+        ],
+        "arm_styling": [
+          {
+            "counts": "1-2-3",
+            "action": "Arms can frame out to sides or stay relaxed \u2014 instructor keeps them low in this class"
+          },
+          {
+            "counts": "5-6-7",
+            "action": "Same \u2014 no overhead styling shown in these frames"
+          }
+        ],
+        "instructor_quotes": [
+          "123, Susie Q, we go, 123, basic step"
+        ],
+        "frames": [
+          {
+            "frame": "frame_006.jpg",
+            "caption": "Suzy Q position \u2014 leader bending forward, feet in heel-toe rock, 'OPTIC' jersey visible"
+          },
+          {
+            "frame": "frame_007.jpg",
+            "caption": "Suzy Q mid-rock \u2014 weight shifting, hips engaged, follower mirrors"
+          },
+          {
+            "frame": "frame_021.jpg",
+            "caption": "Suzy Q at full speed \u2014 both dancers in sync, compact footwork"
+          }
+        ],
+        "drill": "Stand in place. Rock R heel / L toe on 1, L heel / R toe on 2, collect on 3. Repeat 5-6-7. Add music at 60 BPM before going to tempo.",
+        "common_error": "Rocking too wide \u2014 keep feet close together, the rock is small and controlled, not a lunge.",
+        "videos": [
+          {
+            "title": "Salsa Solo - Suzy Q - Lesson 9 (Beginners, NY/On2)",
+            "url": "https://www.youtube.com/watch?v=IVR5x2GyAS0",
+            "channel": "Salsa On2",
+            "why": "Dedicated beginner Suzy Q lesson for NY On2. Part of the same structured lesson series. Covers the cross-step-cross footwork solo."
+          },
+          {
+            "title": "Suzie Q - Salsa Shines On2 | TheDanceDojo.com",
+            "url": "https://www.youtube.com/watch?v=MUEguduSyas",
+            "channel": "TheDanceDojo",
+            "why": "TheDanceDojo's On2 Suzy Q tutorial. Clean breakdown with proper hip styling."
+          },
+          {
+            "title": "Salsa Shines: 7 Suzie Q Variations (On 1 & On 2)",
+            "url": "https://www.youtube.com/watch?v=Nzy-uJBeWpc",
+            "channel": "Salsa On2",
+            "why": "7 variations of the Suzy Q. Watch once you have the basic version down \u2014 good for adding variety."
+          }
+        ]
+      },
+      {
+        "slug": "partner_work_tension_hold",
+        "name": "Partner Work \u2014 Tension & Hold",
+        "tagline": "Connected basic with elastic tension through the frame",
+        "what": "After solo shines, the instructor brings partners together and introduces 'tension, hold' \u2014 a cue for maintaining elastic resistance through the handhold so leader and follower can feel each other's weight and timing. In NY On2 the connection is especially important on the break counts (2 and 6) because that is when the lead/follow signal is transmitted. 'Side basic' in partner work means the basic step done side-by-side or in open position.",
+        "mechanics": [
+          {
+            "counts": "6-7-1",
+            "action": "Re-establish hold; feel tension through arms before break"
+          },
+          {
+            "counts": "2",
+            "action": "Leader breaks forward \u2014 tension pulls follower into her back break simultaneously"
+          },
+          {
+            "counts": "3",
+            "action": "Replace \u2014 tension releases slightly"
+          },
+          {
+            "counts": "6",
+            "action": "Leader breaks back \u2014 tension cues follower's forward break"
+          },
+          {
+            "counts": "7",
+            "action": "Replace \u2014 frame resets"
+          }
+        ],
+        "arm_styling": [
+          {
+            "counts": "2 and 6",
+            "action": "Elbows stay down; wrists firm but not rigid \u2014 'tension, hold' means elastic, not locked"
+          }
+        ],
+        "instructor_quotes": [
+          "6712367, tension, hold",
+          "5, side, basic, 23",
+          "partner work, 6, 7, 1, 2, 3, 6, 7, tension, hold"
+        ],
+        "frames": [
+          {
+            "frame": "frame_025.jpg",
+            "caption": "Partner work \u2014 open hold, both facing each other, tension visible in connected arms"
+          },
+          {
+            "frame": "frame_026.jpg",
+            "caption": "Leader raises arm \u2014 spin/turn lead initiated from tension"
+          },
+          {
+            "frame": "frame_027.jpg",
+            "caption": "Close partner position \u2014 frame maintained through turn"
+          },
+          {
+            "frame": "frame_028.jpg",
+            "caption": "Follower spinning \u2014 leader's frame holds tension as she rotates"
+          },
+          {
+            "frame": "frame_029.jpg",
+            "caption": "Post-turn recovery \u2014 both returning to basic, tension re-established"
+          },
+          {
+            "frame": "frame_030.jpg",
+            "caption": "Deep dip/lean \u2014 tension and hold at maximum, follower trusts leader's frame"
+          },
+          {
+            "frame": "frame_031.jpg",
+            "caption": "Recovery from dip \u2014 weight returns, basic resumes"
+          },
+          {
+            "frame": "frame_032.jpg",
+            "caption": "Final position \u2014 both smiling, 'give her a hand guys' moment"
+          },
+          {
+            "frame": "frame_033.jpg",
+            "caption": "End of sequence \u2014 side-by-side bow/finish, crowd applauding"
+          }
+        ],
+        "drill": "With a partner: hold both hands in open position. Do basic On2 and focus ONLY on feeling the break on 2 and 6 through the hands \u2014 no turns yet. Say 'tension' on 2, 'hold' on 6.",
+        "common_error": "Dropping the frame between counts \u2014 tension must be continuous, not only on the break. Limp arms kill the lead/follow signal.",
+        "videos": []
+      }
+    ],
+    "choreography": {
+      "sequence": "SOLO BASIC -> CLOCK-FACE DIRECTIONAL BASIC (09/06/03) -> SUZY Q -> BASIC -> PARTNER WORK (TENSION/HOLD) -> SIDE BASIC -> PARTNER TURNS/DIP -> FINISH",
+      "phases": [
+        {
+          "name": "Phase 1: Solo Individual Movement (slow walk-through)",
+          "time": "0:01 - 0:07",
+          "steps": [
+            {
+              "frame": "frame_001.jpg",
+              "time": "0:01",
+              "counts": "5-6-7",
+              "move": "Basic Step \u2014 Demo Start",
+              "body": "Instructor faces mirror, follower to his left. Both in slot. Arms relaxed at sides. Weight centered.",
+              "cue": "base it, 123567 \u2014 1st the individual movement"
+            },
+            {
+              "frame": "frame_002.jpg",
+              "time": "0:02",
+              "counts": "1-2-3",
+              "move": "Directional Basic \u2014 Rotating to 09:00",
+              "body": "Bodies angling left (toward 09:00). Leader's left foot steps forward-left. Follower mirrors.",
+              "cue": "1, 2, 09:00"
+            },
+            {
+              "frame": "frame_003.jpg",
+              "time": "0:03",
+              "counts": "5-6-7",
+              "move": "Directional Basic \u2014 Facing 06:00",
+              "body": "Both dancers now facing back wall (06:00). Basic continues in reversed direction. Mirror behind them.",
+              "cue": "5, 6, 06:00"
+            },
+            {
+              "frame": "frame_004.jpg",
+              "time": "0:04",
+              "counts": "1-2-3",
+              "move": "Directional Basic \u2014 Rotating to 03:00",
+              "body": "Pivot toward right side (03:00). Feet stepping in new slot. Hips follow weight transfer.",
+              "cue": "1, 2, 03:00"
+            },
+            {
+              "frame": "frame_005.jpg",
+              "time": "0:05",
+              "counts": "5-6-7",
+              "move": "Directional Basic \u2014 Returning to 12:00",
+              "body": "Completing clock circuit, returning to front. Both dancers side by side, weight transferring.",
+              "cue": "base it, 123, side base it together"
+            },
+            {
+              "frame": "frame_006.jpg",
+              "time": "0:06",
+              "counts": "1-2-3",
+              "move": "Suzy Q \u2014 Entry",
+              "body": "Leader bends forward slightly, feet in heel-toe rock position. 'OPTIC' jersey visible. Follower to left beginning same.",
+              "cue": "123, Susie Q, we go"
+            },
+            {
+              "frame": "frame_007.jpg",
+              "time": "0:07",
+              "counts": "5-6-7",
+              "move": "Suzy Q \u2014 Mid Rock",
+              "body": "Weight shifting in heel-toe rock. Both dancers compact, hips engaged. Feet close together.",
+              "cue": "123, basic step"
+            }
+          ]
+        },
+        {
+          "name": "Phase 2: Full Speed Solo (with music)",
+          "time": "0:08 - 0:16",
+          "steps": [
+            {
+              "frame": "frame_008.jpg",
+              "time": "0:08",
+              "counts": "1-2-3",
+              "move": "Basic Step \u2014 Full Speed",
+              "body": "Both dancers in slot, side by side. Compact weight transfer. Soft knees. Arms relaxed.",
+              "cue": "1, partner work \u2014 transitioning from solo to partner"
+            },
+            {
+              "frame": "frame_009.jpg",
+              "time": "0:09",
+              "counts": "5-6-7",
+              "move": "Basic Step \u2014 Traveling",
+              "body": "Dancers moving slightly forward together. Break on 6 visible in foot placement.",
+              "cue": "6712367"
+            },
+            {
+              "frame": "frame_010.jpg",
+              "time": "0:10",
+              "counts": "1-2-3",
+              "move": "Basic Step \u2014 Hips",
+              "body": "Side view \u2014 hip movement visible on weight transfer. Knees soft. Feet parallel.",
+              "cue": "a little bit of hips"
+            },
+            {
+              "frame": "frame_011.jpg",
+              "time": "0:11",
+              "counts": "5-6-7",
+              "move": "Basic with Arm Raise",
+              "body": "Leader raises right arm \u2014 beginning of turn lead. Follower responding to frame change.",
+              "cue": "5, 6, 7, 1, partner work"
+            },
+            {
+              "frame": "frame_012.jpg",
+              "time": "0:12",
+              "counts": "1-2-3",
+              "move": "Basic \u2014 Open Position",
+              "body": "Dancers slightly apart, both traveling forward. Arm connection visible.",
+              "cue": "6, 7, 1, 2, 3, 6, 7"
+            },
+            {
+              "frame": "frame_013.jpg",
+              "time": "0:13",
+              "counts": "5-6-7",
+              "move": "Basic \u2014 Traveling Together",
+              "body": "Both moving in same direction, follower slightly behind leader. Footwork in sync.",
+              "cue": "tension, hold"
+            },
+            {
+              "frame": "frame_014.jpg",
+              "time": "0:14",
+              "counts": "1-2-3",
+              "move": "Arm Raise / Turn Prep",
+              "body": "Leader's right arm raised high. Follower beginning to turn under. Weight on balls of feet.",
+              "cue": "5, side, basic, 2, 3"
+            },
+            {
+              "frame": "frame_015.jpg",
+              "time": "0:15",
+              "counts": "5-6-7",
+              "move": "Follower Turn",
+              "body": "Follower spinning left under raised arm. Leader's frame stable. Both on balls of feet.",
+              "cue": "a little bit of hips, 2, 3, side, basic"
+            },
+            {
+              "frame": "frame_016.jpg",
+              "time": "0:16",
+              "counts": "1-2-3",
+              "move": "Basic \u2014 Reset After Turn",
+              "body": "Both returning to basic. Wider shot shows full studio. Crowd visible in mirror.",
+              "cue": "2, 3, give her a hand guys"
+            }
+          ]
+        },
+        {
+          "name": "Phase 3: Partner Work (full speed with connection)",
+          "time": "0:17 - 0:33",
+          "steps": [
+            {
+              "frame": "frame_017.jpg",
+              "time": "0:17",
+              "counts": "5-6-7",
+              "move": "Partner Basic \u2014 Close Hold",
+              "body": "Dancers in close open hold. Both facing each other. Frame established. Crowd watching.",
+              "cue": "partner work, 6, 7, 1, 2, 3"
+            },
+            {
+              "frame": "frame_018.jpg",
+              "time": "0:18",
+              "counts": "1-2-3",
+              "move": "Suzy Q \u2014 Partner Version",
+              "body": "Leader in Suzy Q, 'OPTIC' jersey. Follower doing same shine beside him. Synchronized.",
+              "cue": "123, ta-da!"
+            },
+            {
+              "frame": "frame_019.jpg",
+              "time": "0:19",
+              "counts": "5-6-7",
+              "move": "Suzy Q \u2014 Full Speed",
+              "body": "Both dancers in heel-toe rock. Side by side. Energy high. Crowd engaged.",
+              "cue": "67623"
+            },
+            {
+              "frame": "frame_020.jpg",
+              "time": "0:20",
+              "counts": "1-2-3",
+              "move": "Basic \u2014 Transition Out of Suzy Q",
+              "body": "Returning to basic footwork. Leader looking down at feet briefly. Follower tracking.",
+              "cue": "basic step, 1"
+            },
+            {
+              "frame": "frame_021.jpg",
+              "time": "0:21",
+              "counts": "5-6-7",
+              "move": "Suzy Q \u2014 Repeat",
+              "body": "Back into Suzy Q. Both compact, feet close. Hip rock visible.",
+              "cue": "Susie Q"
+            },
+            {
+              "frame": "frame_022.jpg",
+              "time": "0:22",
+              "counts": "1-2-3",
+              "move": "Basic \u2014 Open Hold",
+              "body": "Open hold re-established. Both facing each other. Arms connected at one hand.",
+              "cue": "tension, hold"
+            },
+            {
+              "frame": "frame_023.jpg",
+              "time": "0:23",
+              "counts": "5-6-7",
+              "move": "Basic \u2014 Traveling Together",
+              "body": "Moving across floor together. Follower slightly behind. Frame maintained.",
+              "cue": "side, basic, 2, 3"
+            },
+            {
+              "frame": "frame_024.jpg",
+              "time": "0:24",
+              "counts": "1-2-3",
+              "move": "Basic \u2014 Break On2",
+              "body": "Clear break visible \u2014 leader stepping forward on 2. Follower stepping back simultaneously.",
+              "cue": "6, 7, tension, hold"
+            },
+            {
+              "frame": "frame_025.jpg",
+              "time": "0:25",
+              "counts": "5-6-7",
+              "move": "Partner Work \u2014 Open Hold",
+              "body": "Both facing each other in open hold. Arms extended with elastic tension. Smiling.",
+              "cue": "tension, hold"
+            },
+            {
+              "frame": "frame_026.jpg",
+              "time": "0:26",
+              "counts": "1-2-3",
+              "move": "Turn Lead \u2014 Arm Raise",
+              "body": "Leader raises right arm to initiate follower turn. Follower's weight shifting to turn.",
+              "cue": "5, side, basic"
+            },
+            {
+              "frame": "frame_027.jpg",
+              "time": "0:27",
+              "counts": "5-6-7",
+              "move": "Follower Turn \u2014 Under Arm",
+              "body": "Follower spinning under raised arm. Leader's frame stable. Close proximity.",
+              "cue": "6712367"
+            },
+            {
+              "frame": "frame_028.jpg",
+              "time": "0:28",
+              "counts": "1-2-3",
+              "move": "Turn \u2014 Mid Spin",
+              "body": "Follower mid-rotation. Leader holding frame. Both on balls of feet.",
+              "cue": "tension, hold"
+            },
+            {
+              "frame": "frame_029.jpg",
+              "time": "0:29",
+              "counts": "5-6-7",
+              "move": "Post-Turn Basic",
+              "body": "Follower completing turn, returning to basic. Leader guiding with frame.",
+              "cue": "side, basic, 2, 3"
+            },
+            {
+              "frame": "frame_030.jpg",
+              "time": "0:30",
+              "counts": "1-2-3",
+              "move": "Dip / Deep Lean",
+              "body": "Leader supporting follower in deep lean/dip. Maximum tension and hold. Crowd reacting.",
+              "cue": "tension, hold \u2014 give her a hand guys"
+            },
+            {
+              "frame": "frame_031.jpg",
+              "time": "0:31",
+              "counts": "5-6-7",
+              "move": "Recovery from Dip",
+              "body": "Both recovering upright. Weight returning to center. Basic resuming.",
+              "cue": "123, ta-da!"
+            },
+            {
+              "frame": "frame_032.jpg",
+              "time": "0:32",
+              "counts": "1-2-3",
+              "move": "Final Basic \u2014 Finish",
+              "body": "Side by side, both smiling/laughing. Crowd applauding. 'OPTIC' jersey visible.",
+              "cue": "give her a hand, guys!"
+            },
+            {
+              "frame": "frame_033.jpg",
+              "time": "0:33",
+              "counts": "end",
+              "move": "Finish / Bow",
+              "body": "Both standing together, crowd clapping. End of demonstration.",
+              "cue": "give her a hand, guys!"
+            }
+          ]
+        }
+      ],
+      "hard_transitions": [
+        {
+          "from": "Directional Basic (03:00)",
+          "to": "Basic Step (12:00 reset)",
+          "frames": "004 -> 005",
+          "why": "After completing the clock circuit you must re-orient to the front slot without losing the On2 timing. The pivot happens on the prep count \u2014 if you pivot late you break on the wrong count."
+        },
+        {
+          "from": "Basic Step",
+          "to": "Suzy Q",
+          "frames": "005 -> 006",
+          "why": "The Suzy Q is stationary but the entry must land on count 1 so the heel-toe rocks align with 1-2-3. Entering late puts the rocks off-phrase."
+        },
+        {
+          "from": "Suzy Q",
+          "to": "Basic Step",
+          "frames": "007 -> 008",
+          "why": "Exiting Suzy Q back to basic requires collecting your feet on count 3 or 7 so you are ready to break on the next 2 or 6. Rushing the exit causes a missed break."
+        },
+        {
+          "from": "Solo Shines",
+          "to": "Partner Work (Tension/Hold)",
+          "frames": "015 -> 016",
+          "why": "Re-establishing the frame after shines must happen before the next break count. If you grab hands ON count 2 you lose the lead signal for that break."
+        },
+        {
+          "from": "Partner Basic",
+          "to": "Turn Lead",
+          "frames": "025 -> 026",
+          "why": "The arm raise for the turn lead must begin on count 1 (or 5) so the follower has time to read the lead and begin her turn on 2 (or 6). Late arm raises produce rushed, off-balance turns."
+        }
+      ]
+    },
+    "practice": {
+      "total_minutes": 25,
+      "sections": [
+        {
+          "name": "Solo Footwork",
+          "minutes": 8,
+          "drills": [
+            {
+              "name": "On2 Basic \u2014 Count Aloud",
+              "minutes": 3,
+              "instructions": "No music. Count '1-2-3, 5-6-7' aloud. Step forward on 2, back on 6. Freeze on 2 and 6 to confirm weight is fully transferred before continuing."
+            },
+            {
+              "name": "Clock-Face Basic",
+              "minutes": 3,
+              "instructions": "Mark 4 compass points. Basic 2 bars at each point. Pivot on prep count (1 or 5). Keep break on 2 and 6. Go: 12:00 \u2192 9:00 \u2192 6:00 \u2192 3:00 \u2192 12:00."
+            },
+            {
+              "name": "Suzy Q Isolation",
+              "minutes": 2,
+              "instructions": "Stationary. Heel-toe rock: R heel / L toe on 1, L heel / R toe on 2, collect on 3. Repeat 5-6-7. Keep feet close. Add hips only after footwork is clean."
+            }
+          ]
+        },
+        {
+          "name": "Combination Drill",
+          "minutes": 7,
+          "drills": [
+            {
+              "name": "Basic \u2192 Suzy Q \u2192 Basic Loop",
+              "minutes": 4,
+              "instructions": "2 bars basic, 1 bar Suzy Q, 2 bars basic. Loop continuously. Use a metronome at 80 BPM. The Suzy Q must start on count 1 and exit on count 3 or 7."
+            },
+            {
+              "name": "Clock-Face + Suzy Q",
+              "minutes": 3,
+              "instructions": "Do one full clock circuit (4 directions \u00d7 2 bars), then drop into Suzy Q for 1 bar, then reset to 12:00 basic. This mirrors the class choreography sequence."
+            }
+          ]
+        },
+        {
+          "name": "Partner Work",
+          "minutes": 10,
+          "drills": [
+            {
+              "name": "Tension/Hold Basic",
+              "minutes": 4,
+              "instructions": "Both hands connected, open position. Basic On2 only \u2014 no turns. Focus: feel the break on 2 and 6 through the hands. Say 'tension' on 2, 'hold' on 6 aloud."
+            },
+            {
+              "name": "Side Basic with Hips",
+              "minutes": 3,
+              "instructions": "Side by side (not facing), one hand connected. Basic On2. Add hip movement \u2014 let hips follow the weight transfer naturally, do not force them."
+            },
+            {
+              "name": "Turn Lead from Basic",
+              "minutes": 3,
+              "instructions": "From open hold basic, leader raises arm on count 1 (or 5) to lead follower turn. Follower turns on 2 (or 6). Leader maintains frame throughout. Repeat 4\u00d7 then switch."
+            }
+          ]
+        }
+      ]
+    },
+    "key_frames": [
+      {
+        "frame": "frame_001.jpg",
+        "label": "Basic \u2014 Starting Position",
+        "description": "Shows the neutral starting position: slot alignment, relaxed arms, weight centered. Reference this before every practice session."
+      },
+      {
+        "frame": "frame_002.jpg",
+        "label": "Clock-Face Pivot to 09:00",
+        "description": "First directional change in the clock-face basic. Body angling left while maintaining On2 timing \u2014 the pivot is in the feet, not the whole body at once."
+      },
+      {
+        "frame": "frame_003.jpg",
+        "label": "Facing 06:00 (Back Wall)",
+        "description": "Most disorienting position in the clock-face drill. Confirms that On2 timing works in ALL directions \u2014 the break still lands on 2 even when facing away from the mirror."
+      },
+      {
+        "frame": "frame_006.jpg",
+        "label": "Suzy Q \u2014 Entry Position",
+        "description": "Clear heel-toe rock entry. Leader's forward lean and foot position show the compact, close-together footwork required. Do NOT spread feet wide."
+      },
+      {
+        "frame": "frame_007.jpg",
+        "label": "Suzy Q \u2014 Mid Rock",
+        "description": "Weight mid-transfer in the Suzy Q. Hip engagement visible as a result of the weight shift \u2014 hips are not forced, they follow the feet."
+      },
+      {
+        "frame": "frame_008.jpg",
+        "label": "Basic \u2014 Full Speed Side View",
+        "description": "Best frame for checking knee softness and compact weight transfer at tempo. Compare your own video to this frame."
+      },
+      {
+        "frame": "frame_021.jpg",
+        "label": "Suzy Q \u2014 Full Speed Sync",
+        "description": "Both dancers in Suzy Q simultaneously at full speed. Shows what synchronized shine timing looks like \u2014 use this as the target for partner Suzy Q."
+      },
+      {
+        "frame": "frame_024.jpg",
+        "label": "On2 Break \u2014 Partner Version",
+        "description": "Clearest frame showing the simultaneous On2 break in partner work: leader forward, follower back, happening at the same moment on count 2."
+      },
+      {
+        "frame": "frame_025.jpg",
+        "label": "Tension/Hold \u2014 Open Frame",
+        "description": "Shows the elastic arm connection in open hold. Arms are extended but not rigid \u2014 this is the 'tension, hold' position the instructor cues repeatedly."
+      },
+      {
+        "frame": "frame_026.jpg",
+        "label": "Turn Lead \u2014 Arm Raise",
+        "description": "Leader's arm raises on the prep count to initiate follower turn. The lead must be UP before the break count \u2014 this frame shows the correct timing."
+      },
+      {
+        "frame": "frame_030.jpg",
+        "label": "Dip \u2014 Maximum Tension/Hold",
+        "description": "The 'tension, hold' concept at its most extreme \u2014 leader's frame fully supporting follower. Shows why continuous frame maintenance throughout the dance matters."
+      },
+      {
+        "frame": "frame_032.jpg",
+        "label": "Finish \u2014 End of Demo",
+        "description": "Final position after the full sequence. Both dancers upright, crowd applauding. Reference for the emotional energy and confidence the sequence should project."
+      }
+    ],
+    "class_date": "2026-09-15",
+    "class_number": 12,
+    "video_slug": "img-0337"
+  },
+  "2026-08-11": {
+    "title": "NY On2 Mambo: Basic Step, Suzy Q & Right Turn",
+    "subtitle": "Nieves Latin Dance Studio \u2014 Class #7 (2026-08-11)",
+    "techniques": [
+      {
+        "slug": "basic_step",
+        "name": "Basic Step (On2)",
+        "tagline": "The foundational 1-2-3 / 5-6-7 weight transfer in NY slot",
+        "what": "The NY On2 basic step breaks on counts 2 and 6. On 5-6-7 you step forward (right), side/back (left), then close. On 1-2-3 you step forward (right), break back (left), then close. Weight must be clear and grounded on every count so your partner can feel your position in the phrase.",
+        "mechanics": [
+          {
+            "counts": "5",
+            "action": "Step forward with right foot"
+          },
+          {
+            "counts": "6",
+            "action": "Break / step back with left foot (On2 change of direction)"
+          },
+          {
+            "counts": "7",
+            "action": "Close / shift weight to right"
+          },
+          {
+            "counts": "1",
+            "action": "Step forward with right foot"
+          },
+          {
+            "counts": "2",
+            "action": "Break back with left foot (On2 change of direction)"
+          },
+          {
+            "counts": "3",
+            "action": "Close / shift weight to right"
+          }
+        ],
+        "arm_styling": [
+          {
+            "counts": "5-6-7",
+            "action": "Arms relaxed at sides, slight natural swing with body rotation"
+          },
+          {
+            "counts": "1-2-3",
+            "action": "Arms follow torso; keep elbows soft and frame compact"
+          }
+        ],
+        "instructor_quotes": [
+          "Keep your weight clear and grounded on each step so your partner can feel where you are in the pattern.",
+          "Use hip walks (a smooth, grounded weight transfer) to lead into the Suzy Q pattern for a fluid transition.",
+          "5, 6, 7, 1, 2, 3"
+        ],
+        "frames": [
+          {
+            "frame": "frame_001.jpg",
+            "caption": "Instructor facing mirror, weight on left foot \u2014 ready position before 5-6-7"
+          },
+          {
+            "frame": "frame_003.jpg",
+            "caption": "Mid-walk toward mirror, right foot stepping forward \u2014 count 5"
+          },
+          {
+            "frame": "frame_009.jpg",
+            "caption": "Traveling basic, arms loose, grounded weight transfer visible"
+          }
+        ],
+        "drill": "Stand alone, no music. Say '5-6-7, 1-2-3' aloud. On each count, transfer your full weight so the non-weighted foot is light enough to lift. Repeat 8 phrases, then add music at 50% speed.",
+        "common_error": "Stepping on count 1 without a clear break on 2 \u2014 the On2 change of direction gets swallowed. Slow down and feel the pause/break on 2 and 6.",
+        "videos": [
+          {
+            "title": "Salsa Basic Step for NY Style On2 (Beginner Tutorial)",
+            "url": "https://www.youtube.com/watch?v=-FW_9o7SESA",
+            "channel": "TheDanceDojo",
+            "why": "Dedicated beginner tutorial for the On2 basic step. Clear breakdown of leader and follower footwork with counting."
+          },
+          {
+            "title": "SALSA ON2 - Partnerwork Basics Lesson 1 - Basic Step",
+            "url": "https://www.youtube.com/watch?v=z7YqGIuhWVg",
+            "channel": "Salsa On2",
+            "why": "Part of a structured lesson series for NY style On2. Shows partnerwork basic step with leader and follower perspectives."
+          },
+          {
+            "title": "BASIC STEPS - Eddie Torres Instructional Salsa On2",
+            "url": "https://www.youtube.com/watch?v=dbeWlBadrAs",
+            "channel": "Eddie Torres (Mambo On2)",
+            "why": "Eddie Torres, the godfather of NY On2/mambo, teaches the basic step. Authoritative source for proper On2 timing and technique."
+          }
+        ]
+      },
+      {
+        "slug": "suzy_q",
+        "name": "Suzy Q",
+        "tagline": "Cross-step-cross shine that travels forward in the slot",
+        "what": "The Suzy Q is a NY On2 shine executed on counts 1-3 (or 5-7) after a 'core beat' setup. The footwork is cross-right, step-left, cross-right (or mirror image). Critically, the move must travel forward \u2014 not sideways or backward \u2014 so you stay connected in the slot. End with weight on the non-crossing foot so you are grounded for the next phrase.",
+        "mechanics": [
+          {
+            "counts": "5-6-7",
+            "action": "Core beat: hip walk / weight transfer to set up Suzy Q"
+          },
+          {
+            "counts": "1",
+            "action": "Cross right foot over left (traveling forward)"
+          },
+          {
+            "counts": "2",
+            "action": "Step left foot to the side"
+          },
+          {
+            "counts": "3",
+            "action": "Cross right foot back over \u2014 weight ends on left"
+          },
+          {
+            "counts": "5-6-7",
+            "action": "Mirror: cross left over right, step right, cross left back \u2014 weight ends on right"
+          },
+          {
+            "counts": "1-3",
+            "action": "Repeat to create criss-cross pattern"
+          }
+        ],
+        "arm_styling": [
+          {
+            "counts": "1",
+            "action": "Arms open slightly as right foot crosses \u2014 natural counterbalance"
+          },
+          {
+            "counts": "3",
+            "action": "Arms settle as weight lands on left \u2014 prepare for next cross"
+          }
+        ],
+        "instructor_quotes": [
+          "After the core beat (5\u20136\u20137), execute the Suzy Q on counts 1\u20133: cross your right foot over, step to the side with your left, then cross your right foot back over.",
+          "Travel forward with the Suzy Q; do not let your crossing foot go too far to the left, right, or back, or you will create too much gap between you and your partner.",
+          "End each Suzy Q with your weight on the foot that is NOT crossing.",
+          "After completing a Suzy Q to your left, cross over with your left foot and execute another Suzy Q to your right to create a criss-cross pattern.",
+          "cross, step, cross"
+        ],
+        "frames": [
+          {
+            "frame": "frame_007.jpg",
+            "caption": "Core beat complete, weight shifting \u2014 about to initiate Suzy Q cross on 1"
+          },
+          {
+            "frame": "frame_011.jpg",
+            "caption": "Right foot crossing over left \u2014 count 1 of Suzy Q"
+          },
+          {
+            "frame": "frame_013.jpg",
+            "caption": "Left foot stepping to side \u2014 count 2 of Suzy Q"
+          },
+          {
+            "frame": "frame_015.jpg",
+            "caption": "Right foot crossing back \u2014 count 3, weight ending on left"
+          },
+          {
+            "frame": "frame_017.jpg",
+            "caption": "Mirror Suzy Q begins \u2014 left foot crossing over right on count 5"
+          },
+          {
+            "frame": "frame_019.jpg",
+            "caption": "Criss-cross pattern mid-execution, forward travel visible in slot"
+          }
+        ],
+        "drill": "Mark the floor with tape in a straight line. Practice Suzy Q so your crossing foot always lands on or ahead of the tape \u2014 never behind it. Say 'cross-step-cross' aloud on each count. Do 4 reps solo, then 4 reps with eyes closed to feel the weight transfer.",
+        "common_error": "Letting the crossing foot drift sideways or backward, creating a gap with your partner. Keep the cross traveling forward along the slot line.",
+        "videos": [
+          {
+            "title": "Salsa Solo - Suzy Q - Lesson 9 (Beginners, NY/On2)",
+            "url": "https://www.youtube.com/watch?v=IVR5x2GyAS0",
+            "channel": "Salsa On2",
+            "why": "Dedicated beginner Suzy Q lesson for NY On2. Part of the same structured lesson series. Covers the cross-step-cross footwork solo."
+          },
+          {
+            "title": "Suzie Q - Salsa Shines On2 | TheDanceDojo.com",
+            "url": "https://www.youtube.com/watch?v=MUEguduSyas",
+            "channel": "TheDanceDojo",
+            "why": "TheDanceDojo's On2 Suzy Q tutorial. Clean breakdown with proper hip styling."
+          },
+          {
+            "title": "Salsa Shines: 7 Suzie Q Variations (On 1 & On 2)",
+            "url": "https://www.youtube.com/watch?v=Nzy-uJBeWpc",
+            "channel": "Salsa On2",
+            "why": "7 variations of the Suzy Q. Watch once you have the basic version down \u2014 good for adding variety."
+          }
+        ]
+      },
+      {
+        "slug": "right_turn",
+        "name": "Right Turn",
+        "tagline": "Single stationary right turn with On2 cross-step entry on 7",
+        "what": "The NY On2 right turn is set up by crossing the left foot over on count 7, then stepping forward with the right foot on count 1 while rotating the body to face forward. The key is to step INTO the turn on count 1 \u2014 not just pivot in place \u2014 so your weight placement is unambiguous. After the turn, resume the basic step: forward on 2, back on 3, then 5-6-7 core beat.",
+        "mechanics": [
+          {
+            "counts": "5-6",
+            "action": "Core beat / hip walk to prepare turn"
+          },
+          {
+            "counts": "7",
+            "action": "Cross left foot over right \u2014 initiate rotation"
+          },
+          {
+            "counts": "1",
+            "action": "Step forward with right foot while rotating body to face front"
+          },
+          {
+            "counts": "2",
+            "action": "Break back with left foot \u2014 On2 change of direction"
+          },
+          {
+            "counts": "3",
+            "action": "Close, resume basic"
+          },
+          {
+            "counts": "5-6-7",
+            "action": "Continue basic step pattern"
+          }
+        ],
+        "arm_styling": [
+          {
+            "counts": "7",
+            "action": "Left arm sweeps across body as left foot crosses \u2014 helps initiate rotation"
+          },
+          {
+            "counts": "1",
+            "action": "Arms open to frame as right foot steps forward into turn completion"
+          }
+        ],
+        "instructor_quotes": [
+          "To turn right, cross your left foot over on count 7, then step forward with your right foot on count 1 while rotating your body to face forward.",
+          "Step into the turn on count 1 (do not just pivot in place); this makes your weight placement clear.",
+          "After crossing on 7 and stepping on 1, continue the basic step pattern: forward on 2, back on 3, then 5\u20136\u20137 core beat, 1\u20132\u20133 basic."
+        ],
+        "frames": [
+          {
+            "frame": "frame_021.jpg",
+            "caption": "Count 7: left foot crossing over right, rotation beginning \u2014 right turn entry"
+          },
+          {
+            "frame": "frame_023.jpg",
+            "caption": "Count 1: right foot stepping forward, body rotating to face front \u2014 partner work begins"
+          },
+          {
+            "frame": "frame_025.jpg",
+            "caption": "Turn complete, resuming basic with partner \u2014 weight grounded on right"
+          }
+        ],
+        "drill": "Solo: mark a spot on the floor. On count 7 cross left over right, on count 1 step forward with right and land facing your original direction. Repeat 8 times. Check: did you step forward or just spin? Your right foot should land 6\u20138 inches ahead of where it started.",
+        "common_error": "Pivoting in place on count 1 instead of stepping forward. This makes your weight ambiguous and breaks partner connection. Drive the right foot forward as you rotate.",
+        "videos": [
+          {
+            "title": "SALSA ON2 - Partnerwork Basics Lesson 4 - Single Right Turn",
+            "url": "https://www.youtube.com/watch?v=sx-EKzQ-Dik",
+            "channel": "Salsa On2",
+            "why": "Single stationary right turn for NY On2. Part of the structured lesson series; covers leader's lead technique and follower's turn."
+          },
+          {
+            "title": "Salsa Solo - Right Turn - Lesson 5 (Beginners, NY/On2)",
+            "url": "https://www.youtube.com/watch?v=03m3cnI1g44",
+            "channel": "Salsa On2",
+            "why": "Solo right turn footwork for On2. Good for practicing the turn mechanics on your own before partnerwork."
+          },
+          {
+            "title": "FUNDAMENTAL SALSA ON2 MAMBO SHINE: Basic Steps / Four Corners / Right Turn / Hook Step",
+            "url": "https://www.youtube.com/watch?v=tGviVuqpSpY",
+            "channel": "Unknown (Mambo/On2 instructor)",
+            "why": "Covers the right turn as part of fundamental On2 mambo shines. Also includes basic steps, four corners, and hook step \u2014 good overview video."
+          }
+        ]
+      }
+    ],
+    "choreography": {
+      "sequence": "BASIC STEP (solo) -> CORE BEAT -> SUZY Q (solo) -> CRISS-CROSS SUZY Q -> RIGHT TURN -> PARTNER WORK (basic + Suzy Q + right turn)",
+      "phases": [
+        {
+          "name": "Phase 1: Solo Walk-Through (slow)",
+          "time": "0:01 - 0:21",
+          "steps": [
+            {
+              "frame": "frame_001.jpg",
+              "time": "0:01",
+              "counts": "ready",
+              "move": "Ready Position",
+              "body": "Instructor facing mirror, back to camera, weight on left foot, feet together, arms relaxed at sides",
+              "cue": "My weight's on my left foot"
+            },
+            {
+              "frame": "frame_003.jpg",
+              "time": "0:03",
+              "counts": "5",
+              "move": "Basic Step \u2014 Forward",
+              "body": "Right foot stepping forward, left foot trailing, slight forward lean, arms loose",
+              "cue": "5, 6, 7, 1, 2, 3"
+            },
+            {
+              "frame": "frame_005.jpg",
+              "time": "0:05",
+              "counts": "6-7",
+              "move": "Basic Step \u2014 Core Beat",
+              "body": "Weight transferring back to left, right foot closing, torso upright, facing mirror",
+              "cue": "core beat"
+            },
+            {
+              "frame": "frame_007.jpg",
+              "time": "0:07",
+              "counts": "1",
+              "move": "Suzy Q \u2014 Cross Entry",
+              "body": "Right foot beginning to cross over left, slight hip rotation left, arms starting to open",
+              "cue": "cross, step, cross"
+            },
+            {
+              "frame": "frame_009.jpg",
+              "time": "0:09",
+              "counts": "2",
+              "move": "Suzy Q \u2014 Side Step",
+              "body": "Left foot stepping to side, weight on left, right foot lifted slightly, traveling forward in slot",
+              "cue": "Travel forward with the Suzy Q"
+            },
+            {
+              "frame": "frame_011.jpg",
+              "time": "0:11",
+              "counts": "3",
+              "move": "Suzy Q \u2014 Cross Back",
+              "body": "Right foot crossing back over, weight ending on left foot, body squared, arms settling",
+              "cue": "End each Suzy Q with your weight on the foot that is NOT crossing"
+            },
+            {
+              "frame": "frame_013.jpg",
+              "time": "0:13",
+              "counts": "5",
+              "move": "Criss-Cross Suzy Q \u2014 Mirror Cross",
+              "body": "Left foot crossing over right, initiating mirror Suzy Q, hip rotation to right",
+              "cue": "After completing a Suzy Q to your left, cross over with your left foot"
+            },
+            {
+              "frame": "frame_015.jpg",
+              "time": "0:15",
+              "counts": "6-7",
+              "move": "Criss-Cross Suzy Q \u2014 Side & Cross",
+              "body": "Right foot stepping to side then left crossing back, weight on right, criss-cross pattern visible",
+              "cue": "criss-cross"
+            },
+            {
+              "frame": "frame_017.jpg",
+              "time": "0:17",
+              "counts": "7",
+              "move": "Right Turn \u2014 Cross Entry",
+              "body": "Left foot crossing over right on count 7, body beginning to rotate right, arms sweeping",
+              "cue": "cross your left foot over on count 7"
+            },
+            {
+              "frame": "frame_019.jpg",
+              "time": "0:19",
+              "counts": "1",
+              "move": "Right Turn \u2014 Step Forward",
+              "body": "Right foot stepping forward, body rotating to face front, weight driving forward not pivoting in place",
+              "cue": "step into the turn on count 1"
+            },
+            {
+              "frame": "frame_021.jpg",
+              "time": "0:21",
+              "counts": "2-3",
+              "move": "Right Turn \u2014 Resume Basic",
+              "body": "Turn complete, facing front, left foot breaking back on 2, weight grounded, arms open to frame",
+              "cue": "After crossing on 7 and stepping on 1, continue the basic step pattern"
+            }
+          ]
+        },
+        {
+          "name": "Phase 2: Full Speed Solo",
+          "time": "0:23 - 0:35",
+          "steps": [
+            {
+              "frame": "frame_023.jpg",
+              "time": "0:23",
+              "counts": "5-6-7",
+              "move": "Basic Step \u2014 Full Speed",
+              "body": "Instructor at full tempo, right foot forward, clear weight transfer, slot maintained, arms natural",
+              "cue": "grounded feet"
+            },
+            {
+              "frame": "frame_025.jpg",
+              "time": "0:25",
+              "counts": "1-2-3",
+              "move": "Suzy Q \u2014 Full Speed Entry",
+              "body": "Cross-step-cross at tempo, forward travel in slot, hips engaged, weight landing cleanly on left",
+              "cue": "5, 6, Corby, and 1, 3, Suzy Q"
+            },
+            {
+              "frame": "frame_027.jpg",
+              "time": "0:27",
+              "counts": "5-6-7",
+              "move": "Suzy Q \u2014 Criss-Cross Full Speed",
+              "body": "Mirror Suzy Q at tempo, left crossing over right, hip styling visible, slot line maintained",
+              "cue": "criss-cross"
+            },
+            {
+              "frame": "frame_029.jpg",
+              "time": "0:29",
+              "counts": "7",
+              "move": "Right Turn \u2014 Full Speed Entry",
+              "body": "Left foot crossing on 7 at full tempo, rotation initiated, body compact",
+              "cue": "step into the turn"
+            },
+            {
+              "frame": "frame_031.jpg",
+              "time": "0:31",
+              "counts": "1-2-3",
+              "move": "Right Turn \u2014 Full Speed Completion",
+              "body": "Right foot stepping forward on 1, turn complete, resuming basic at tempo",
+              "cue": "forward on 2, back on 3"
+            }
+          ]
+        },
+        {
+          "name": "Phase 3: Partner Work",
+          "time": "0:33 - 0:41",
+          "steps": [
+            {
+              "frame": "frame_033.jpg",
+              "time": "0:33",
+              "counts": "5-6-7",
+              "move": "Partner Basic Step",
+              "body": "Leader and follower in open hold, both stepping basic, leader's right hand at follower's left, frame maintained",
+              "cue": "Keep your weight clear and grounded so your partner can feel where you are"
+            },
+            {
+              "frame": "frame_035.jpg",
+              "time": "0:35",
+              "counts": "1-2-3",
+              "move": "Partner Suzy Q Lead",
+              "body": "Leader initiating Suzy Q, follower mirroring, leader's left hand raised to lead follower's turn/styling",
+              "cue": "Travel forward with the Suzy Q"
+            },
+            {
+              "frame": "frame_037.jpg",
+              "time": "0:37",
+              "counts": "5-6-7",
+              "move": "Partner Right Turn Lead",
+              "body": "Leader crossing on 7, right hand guiding follower, follower beginning to turn, both in slot",
+              "cue": "cross your left foot over on count 7"
+            },
+            {
+              "frame": "frame_039.jpg",
+              "time": "0:39",
+              "counts": "1",
+              "move": "Partner Right Turn \u2014 Count 1 Step",
+              "body": "Leader stepping forward on 1, follower completing turn, connection maintained through hand frame",
+              "cue": "step into the turn on count 1"
+            },
+            {
+              "frame": "frame_041.jpg",
+              "time": "0:41",
+              "counts": "2-3",
+              "move": "Partner Resume Basic",
+              "body": "Both dancers resuming basic step after turn, open hold, slot re-established, weight grounded",
+              "cue": "5, 6, 7, 1, 2, 3"
+            }
+          ]
+        }
+      ],
+      "hard_transitions": [
+        {
+          "from": "Basic Step (core beat)",
+          "to": "Suzy Q",
+          "frames": "005 -> 007",
+          "why": "The core beat on 5-6-7 must fully complete with weight on left before the right foot crosses on 1. Rushing the core beat causes the cross to land early and off-timing."
+        },
+        {
+          "from": "Suzy Q (first direction)",
+          "to": "Criss-Cross Suzy Q (mirror)",
+          "frames": "011 -> 013",
+          "why": "Weight must end on the non-crossing foot (left) at count 3 before the left foot crosses on 5. If weight is ambiguous, the mirror cross is late and the criss-cross pattern collapses."
+        },
+        {
+          "from": "Suzy Q / Core Beat",
+          "to": "Right Turn",
+          "frames": "015 -> 017",
+          "why": "The right turn entry requires crossing the LEFT foot on count 7 \u2014 opposite of the Suzy Q cross. Students often cross the wrong foot because the Suzy Q pattern is still in muscle memory."
+        },
+        {
+          "from": "Right Turn Cross (count 7)",
+          "to": "Step Forward (count 1)",
+          "frames": "017 -> 019",
+          "why": "The most common error: pivoting in place on 1 instead of stepping forward. The right foot must travel forward 6-8 inches to make weight placement clear for partner connection."
+        }
+      ]
+    },
+    "practice": {
+      "total_minutes": 25,
+      "sections": [
+        {
+          "name": "Section 1: Basic Step Isolation",
+          "minutes": 5,
+          "drills": [
+            {
+              "name": "Slow Count Basic",
+              "minutes": 3,
+              "instructions": "No music. Say '5-6-7, 1-2-3' aloud. On every count, transfer full weight so the free foot is light enough to lift. Feel the On2 break on counts 2 and 6. Do 8 phrases."
+            },
+            {
+              "name": "Hip Walk Entry",
+              "minutes": 2,
+              "instructions": "Add a smooth hip walk on 5-6-7 before each basic. Focus on grounded, fluid weight transfer. This is the setup for the Suzy Q transition."
+            }
+          ]
+        },
+        {
+          "name": "Section 2: Suzy Q Solo",
+          "minutes": 10,
+          "drills": [
+            {
+              "name": "Tape Line Suzy Q",
+              "minutes": 4,
+              "instructions": "Put tape on the floor. Practice cross-step-cross so the crossing foot always lands on or ahead of the tape. Say 'cross-step-cross' on each count. 4 reps eyes open, 4 reps eyes closed."
+            },
+            {
+              "name": "Criss-Cross Pattern",
+              "minutes": 3,
+              "instructions": "After Suzy Q left (counts 1-3), immediately cross left foot on 5 for mirror Suzy Q right. Repeat 8 times. Check: weight ends on non-crossing foot each time."
+            },
+            {
+              "name": "Core Beat to Suzy Q",
+              "minutes": 3,
+              "instructions": "Full phrase: 5-6-7 core beat (hip walk), then 1-3 Suzy Q. Add music at 70% speed. Focus on the transition \u2014 core beat must fully complete before the cross on 1."
+            }
+          ]
+        },
+        {
+          "name": "Section 3: Right Turn",
+          "minutes": 5,
+          "drills": [
+            {
+              "name": "Cross-and-Step Isolation",
+              "minutes": 3,
+              "instructions": "Mark a spot. On 7 cross left over right. On 1 step right foot forward 6-8 inches while rotating to face front. Repeat 8 times. Check: did your right foot travel forward or just pivot?"
+            },
+            {
+              "name": "Turn to Basic Resume",
+              "minutes": 2,
+              "instructions": "After the right turn (counts 7, 1), continue: break left on 2, close on 3, then full 5-6-7 basic. Repeat the full phrase 8 times with music."
+            }
+          ]
+        },
+        {
+          "name": "Section 4: Full Sequence",
+          "minutes": 5,
+          "drills": [
+            {
+              "name": "Solo Full Sequence",
+              "minutes": 2,
+              "instructions": "Basic (5-6-7, 1-2-3) -> Core Beat -> Suzy Q -> Criss-Cross Suzy Q -> Right Turn -> Resume Basic. Repeat with music at full speed."
+            },
+            {
+              "name": "Partner Run-Through",
+              "minutes": 3,
+              "instructions": "With a partner in open hold, run the full sequence. Leader: keep weight clear on every count. Follower: mirror the Suzy Q and respond to the right turn lead through the hand frame."
+            }
+          ]
+        }
+      ]
+    },
+    "key_frames": [
+      {
+        "frame": "frame_001.jpg",
+        "label": "Ready Position \u2014 Weight on Left",
+        "description": "Shows the starting position before 5-6-7. Weight clearly on left foot, right foot free. This is the reference for 'my weight's on my left foot' \u2014 the ground state before every phrase."
+      },
+      {
+        "frame": "frame_005.jpg",
+        "label": "Core Beat Complete",
+        "description": "5-6-7 core beat finished, weight settled. This is the exact moment before the Suzy Q cross on 1. Freeze here to check: is your weight fully on the left? If not, the cross will be off-balance."
+      },
+      {
+        "frame": "frame_007.jpg",
+        "label": "Suzy Q \u2014 Count 1 Cross",
+        "description": "Right foot crossing over left on count 1. Shows the forward travel direction \u2014 the cross is moving toward the mirror, not sideways. Key frame for the 'travel forward' teaching point."
+      },
+      {
+        "frame": "frame_011.jpg",
+        "label": "Suzy Q \u2014 Count 3 End Position",
+        "description": "Right foot crossing back, weight ending on left. This is the critical end-of-Suzy-Q position. Weight must be on the non-crossing foot (left) to be ready for the criss-cross mirror on count 5."
+      },
+      {
+        "frame": "frame_013.jpg",
+        "label": "Criss-Cross \u2014 Mirror Cross Entry",
+        "description": "Left foot crossing over right on count 5, beginning the mirror Suzy Q. Shows the seamless transition from Suzy Q left to Suzy Q right \u2014 the criss-cross pattern in action."
+      },
+      {
+        "frame": "frame_017.jpg",
+        "label": "Right Turn \u2014 Count 7 Cross",
+        "description": "Left foot crossing over right on count 7 to set up the right turn. This is the most commonly confused moment \u2014 students cross the wrong foot. Freeze here: it's the LEFT foot crossing, not the right."
+      },
+      {
+        "frame": "frame_019.jpg",
+        "label": "Right Turn \u2014 Count 1 Step Forward",
+        "description": "Right foot stepping forward on count 1 while rotating to face front. Shows the 'step into the turn' principle \u2014 the foot travels forward, not just pivots. Critical for clear weight placement."
+      },
+      {
+        "frame": "frame_023.jpg",
+        "label": "Full Speed \u2014 Basic Step",
+        "description": "Basic step at full tempo. Shows the compact, grounded NY slot mechanics at speed \u2014 no excess movement, weight transfers clean, slot line maintained."
+      },
+      {
+        "frame": "frame_027.jpg",
+        "label": "Full Speed \u2014 Criss-Cross Suzy Q",
+        "description": "Mirror Suzy Q at full tempo. Hip styling visible, forward travel in slot maintained. Compare to slow walk-through frames to see how the mechanics compress at speed."
+      },
+      {
+        "frame": "frame_033.jpg",
+        "label": "Partner Work \u2014 Open Hold Basic",
+        "description": "Leader and follower in open hold doing basic step together. Shows the frame and connection point \u2014 leader's right hand at follower's left, both grounded, slot shared."
+      },
+      {
+        "frame": "frame_035.jpg",
+        "label": "Partner Work \u2014 Suzy Q Lead",
+        "description": "Leader initiating Suzy Q with follower. Leader's left hand raised to guide follower's styling. Shows how the forward travel of the Suzy Q is communicated through the frame."
+      },
+      {
+        "frame": "frame_039.jpg",
+        "label": "Partner Work \u2014 Right Turn Count 1",
+        "description": "Leader stepping forward on count 1 of right turn, follower completing turn. Shows the connection maintained through the hand frame during the turn \u2014 the step forward keeps the lead clear."
+      },
+      {
+        "frame": "frame_041.jpg",
+        "label": "Partner Work \u2014 Resume Basic After Turn",
+        "description": "Both dancers back in basic step after right turn. Shows the full sequence landing \u2014 slot re-established, weight grounded, ready to repeat the phrase."
+      }
+    ],
+    "class_date": "2026-08-11",
+    "class_number": 7,
+    "video_slug": "img-0100"
   }
 }

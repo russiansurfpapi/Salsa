@@ -157,6 +157,12 @@
       "name": "Comb",
       "category": "lesson_techniques",
       "description": "Comb was detected in a class upload. This page collects class tips, lesson images, drills, and related videos as they are added."
+    },
+    {
+      "id": 30,
+      "name": "Partner Work \u2014 Tension & Hold",
+      "category": "lesson_techniques",
+      "description": "Partner Work \u2014 Tension & Hold was detected in a class upload. This page collects class tips, lesson images, drills, and related videos as they are added."
     }
   ],
   "learned_today": [

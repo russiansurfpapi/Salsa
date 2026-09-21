@@ -2270,5 +2270,123 @@
     "session_label": "2026-09-08 \u00b7 later class",
     "actual_date": "2026-09-08",
     "venue": "Nieves Music Academy"
+  },
+  {
+    "class_date": "2026-09-15",
+    "class_number": 12,
+    "transcript_file": "img-0337.json",
+    "matched_techniques": [
+      {
+        "name": "Basic Step",
+        "slug": "basic_step"
+      },
+      {
+        "name": "Around the World",
+        "slug": "around_the_world"
+      },
+      {
+        "name": "Suzy Q",
+        "slug": "suzy_q"
+      },
+      {
+        "name": "Partner Work Tension Hold",
+        "slug": "partner_work_tension_hold"
+      }
+    ],
+    "techniques_covered": [
+      "basic_step",
+      "around_the_world",
+      "suzy_q",
+      "partner_work_tension_hold"
+    ],
+    "topics": [
+      "clock-face direction",
+      "On2 timing",
+      "partner work",
+      "shines"
+    ],
+    "extracted_tips": [
+      "The NY On2 basic is a 6-step pattern across two 4-count bars.",
+      "Breaking on count 1 instead of 2 (On1 habit). Listen for the clave and feel the 2 before you step.",
+      "The instructor uses clock-face cues (09:00, 06:00, 03:00) to rotate the basic step around a fixed point.",
+      "Pivoting ON the break count (2 or 6) instead of on the prep. The direction change must be set up BEFORE the break.",
+      "The Suzy Q is a stationary shine (solo footwork) done in place.",
+      "Rocking too wide \u2014 keep feet close together, the rock is small and controlled, not a lunge.",
+      "After solo shines, the instructor brings partners together and introduces 'tension, hold' \u2014 a cue for maintaining elastic resistance through the handhold so leader and follower can feel each other's weight and timing.",
+      "Dropping the frame between counts \u2014 tension must be continuous, not only on the break. Limp arms kill the lead/follow signal."
+    ],
+    "teaching_points": [
+      {
+        "technique": "basic_step",
+        "tip": "The NY On2 basic is a 6-step pattern across two 4-count bars.",
+        "context": "Foundation forward-back mambo break on counts 2 and 6"
+      },
+      {
+        "technique": "basic_step",
+        "tip": "Breaking on count 1 instead of 2 (On1 habit). Listen for the clave and feel the 2 before you step.",
+        "context": "Common error called out in class"
+      },
+      {
+        "technique": "around_the_world",
+        "tip": "The instructor uses clock-face cues (09:00, 06:00, 03:00) to rotate the basic step around a fixed point.",
+        "context": "Basic step rotated to face 12, 9, 6, and 3 o'clock positions"
+      },
+      {
+        "technique": "around_the_world",
+        "tip": "Pivoting ON the break count (2 or 6) instead of on the prep. The direction change must be set up BEFORE the break.",
+        "context": "Common error called out in class"
+      },
+      {
+        "technique": "suzy_q",
+        "tip": "The Suzy Q is a stationary shine (solo footwork) done in place.",
+        "context": "Heel-toe rocking shine with hip punctuation"
+      },
+      {
+        "technique": "suzy_q",
+        "tip": "Rocking too wide \u2014 keep feet close together, the rock is small and controlled, not a lunge.",
+        "context": "Common error called out in class"
+      },
+      {
+        "technique": "partner_work_tension_hold",
+        "tip": "After solo shines, the instructor brings partners together and introduces 'tension, hold' \u2014 a cue for maintaining elastic resistance through the handhold so leader and follower can feel each other's weight and timing.",
+        "context": "Connected basic with elastic tension through the frame"
+      },
+      {
+        "technique": "partner_work_tension_hold",
+        "tip": "Dropping the frame between counts \u2014 tension must be continuous, not only on the break. Limp arms kill the lead/follow signal.",
+        "context": "Common error called out in class"
+      }
+    ],
+    "class_structure": [
+      {
+        "section": "Phase 1: Solo Individual Movement (slow walk-through)",
+        "description": "",
+        "approx_minutes": null
+      },
+      {
+        "section": "Phase 2: Full Speed Solo (with music)",
+        "description": "",
+        "approx_minutes": null
+      },
+      {
+        "section": "Phase 3: Partner Work (full speed with connection)",
+        "description": "",
+        "approx_minutes": null
+      }
+    ],
+    "summary": "Class #12 is reconstructed from the class video only \u2014 no full audio recording was made for this session, so the notes cover the filmed segment rather than the whole class. The instructor ran the basic step into a clock-face directional basic (cueing 9:00, 6:00 and 3:00), then a Suzy Q, then moved into partner work built around a tension hold and a side basic with hip motion.",
+    "key_phrases": [
+      "base it, 123567",
+      "basic, 123, basic step",
+      "a little bit of hips",
+      "1, 2, 09:00, 5, 6, 06:00, 1, 2, 03:00, base it",
+      "1st the individual movement",
+      "side base it together",
+      "123, Susie Q, we go, 123, basic step",
+      "6712367, tension, hold",
+      "5, side, basic, 23",
+      "partner work, 6, 7, 1, 2, 3, 6, 7, tension, hold"
+    ],
+    "source": "video_only"
   }
 ]

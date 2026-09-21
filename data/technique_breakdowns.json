@@ -99,9 +99,9 @@
     ],
     "practice_drill": "Start by counting out loud: 1-2-3-hold-5-6-7-hold, clapping on 2 and 6 to internalize the break beats. Then do 20 basics counting aloud with steps, focusing on toe-first contact. Next do 20 basics with the rhythm 'quick-quick-slow, quick-quick-slow' to feel the timing. Finally, put on a salsa song and do 2 full minutes of basics without stopping, finding the 2 in the music before you start stepping.",
     "class_video": {
-      "combo_key": "class_20260818_combo",
-      "frame_slug": "img-0131",
-      "class_date": "2026-08-18"
+      "combo_key": "class_20260811_combo",
+      "frame_slug": "img-0100",
+      "class_date": "2026-08-11"
     }
   },
   "inside_turn": {
@@ -377,9 +377,9 @@
     ],
     "practice_drill": "Solo right turn drill: Stand in place, step with left foot and pivot 360 degrees to the right on the ball of your foot. Do 10 turns slowly, spotting a point on the wall. Then add the timing: say '1' (prep), '2' (step and start turn), '3' (complete turn), 'hold', '5-6-7' (basic). Do 10 reps integrating the basic step before and after the turn. Finally, alternate basic-basic-turn-basic-basic-turn for 2 minutes.",
     "class_video": {
-      "combo_key": "class_20260818_combo",
-      "frame_slug": "img-0131",
-      "class_date": "2026-08-18"
+      "combo_key": "class_20260811_combo",
+      "frame_slug": "img-0100",
+      "class_date": "2026-08-11"
     }
   },
   "prep_step": {
@@ -663,14 +663,14 @@
   },
   "suzy_q": {
     "class_video": {
-      "combo_key": "class_20260818_combo",
-      "frame_slug": "img-0131",
-      "class_date": "2026-08-18"
+      "combo_key": "class_20260811_combo",
+      "frame_slug": "img-0100",
+      "class_date": "2026-08-11"
     }
   },
   "class_20260526_combo": {
     "video_breakdown": {
-      "source": "img-8043-hd.mp4",
+      "source": "IMG_8043.MOV",
       "class_date": "2026-05-26",
       "frame_slug": "img-8043-hd",
       "description": "BASIC STEP -> PREP STEP -> INSIDE TURN (LEFT TURN) -> SUZY Q -> CROSS BODY LEAD (PARTNER WORK)",
@@ -1982,9 +1982,9 @@
   },
   "around_the_world": {
     "class_video": {
-      "combo_key": "class_20260714_combo",
-      "frame_slug": "img-8522",
-      "class_date": "2026-07-14"
+      "combo_key": "class_20260915_combo",
+      "frame_slug": "img-0337",
+      "class_date": "2026-09-15"
     }
   },
   "half_step": {
@@ -4057,6 +4057,855 @@
       "combo_key": "class_20260818_combo",
       "frame_slug": "img-0131",
       "class_date": "2026-08-18"
+    }
+  },
+  "class_20260915_combo": {
+    "video_breakdown": {
+      "source": "img-0337.mp4",
+      "class_date": "2026-09-15",
+      "frame_slug": "img-0337",
+      "description": "SOLO BASIC -> CLOCK-FACE DIRECTIONAL BASIC (09/06/03) -> SUZY Q -> BASIC -> PARTNER WORK (TENSION/HOLD) -> SIDE BASIC -> PARTNER TURNS/DIP -> FINISH",
+      "techniques": [
+        "basic_step",
+        "around_the_world",
+        "suzy_q",
+        "partner_work_tension_hold"
+      ],
+      "steps": [
+        {
+          "step_number": 1,
+          "timestamp": "0:01",
+          "frame": "frame_001.jpg",
+          "count": "5-6-7",
+          "technique": "basic_step",
+          "position": "Instructor faces mirror, follower to his left. Both in slot. Arms relaxed at sides. Weight centered.",
+          "instruction": "Instructor faces mirror, follower to his left. Both in slot. Arms relaxed at sides. Weight centered.",
+          "instructor_tip": "base it, 123567 \u2014 1st the individual movement",
+          "what_to_watch": "",
+          "technique_label": "basic_step_\u2014_demo_start",
+          "techniques": [
+            "basic_step"
+          ]
+        },
+        {
+          "step_number": 2,
+          "timestamp": "0:02",
+          "frame": "frame_002.jpg",
+          "count": "1-2-3",
+          "technique": "general",
+          "position": "Bodies angling left (toward 09:00). Leader's left foot steps forward-left. Follower mirrors.",
+          "instruction": "Bodies angling left (toward 09:00). Leader's left foot steps forward-left. Follower mirrors.",
+          "instructor_tip": "1, 2, 09:00",
+          "what_to_watch": "",
+          "technique_label": "directional_basic_\u2014_rotating_to_09:00",
+          "techniques": [
+            "general"
+          ]
+        },
+        {
+          "step_number": 3,
+          "timestamp": "0:03",
+          "frame": "frame_003.jpg",
+          "count": "5-6-7",
+          "technique": "general",
+          "position": "Both dancers now facing back wall (06:00). Basic continues in reversed direction. Mirror behind them.",
+          "instruction": "Both dancers now facing back wall (06:00). Basic continues in reversed direction. Mirror behind them.",
+          "instructor_tip": "5, 6, 06:00",
+          "what_to_watch": "",
+          "technique_label": "directional_basic_\u2014_facing_06:00",
+          "techniques": [
+            "general"
+          ]
+        },
+        {
+          "step_number": 4,
+          "timestamp": "0:04",
+          "frame": "frame_004.jpg",
+          "count": "1-2-3",
+          "technique": "general",
+          "position": "Pivot toward right side (03:00). Feet stepping in new slot. Hips follow weight transfer.",
+          "instruction": "Pivot toward right side (03:00). Feet stepping in new slot. Hips follow weight transfer.",
+          "instructor_tip": "1, 2, 03:00",
+          "what_to_watch": "",
+          "technique_label": "directional_basic_\u2014_rotating_to_03:00",
+          "techniques": [
+            "general"
+          ]
+        },
+        {
+          "step_number": 5,
+          "timestamp": "0:05",
+          "frame": "frame_005.jpg",
+          "count": "5-6-7",
+          "technique": "general",
+          "position": "Completing clock circuit, returning to front. Both dancers side by side, weight transferring.",
+          "instruction": "Completing clock circuit, returning to front. Both dancers side by side, weight transferring.",
+          "instructor_tip": "base it, 123, side base it together",
+          "what_to_watch": "",
+          "technique_label": "directional_basic_\u2014_returning_to_12:00",
+          "techniques": [
+            "general"
+          ]
+        },
+        {
+          "step_number": 6,
+          "timestamp": "0:06",
+          "frame": "frame_006.jpg",
+          "count": "1-2-3",
+          "technique": "suzy_q",
+          "position": "Leader bends forward slightly, feet in heel-toe rock position. 'OPTIC' jersey visible. Follower to left beginning same.",
+          "instruction": "Leader bends forward slightly, feet in heel-toe rock position. 'OPTIC' jersey visible. Follower to left beginning same.",
+          "instructor_tip": "123, Susie Q, we go",
+          "what_to_watch": "",
+          "technique_label": "suzy_q_\u2014_entry",
+          "techniques": [
+            "suzy_q"
+          ]
+        },
+        {
+          "step_number": 7,
+          "timestamp": "0:07",
+          "frame": "frame_007.jpg",
+          "count": "5-6-7",
+          "technique": "suzy_q",
+          "position": "Weight shifting in heel-toe rock. Both dancers compact, hips engaged. Feet close together.",
+          "instruction": "Weight shifting in heel-toe rock. Both dancers compact, hips engaged. Feet close together.",
+          "instructor_tip": "123, basic step",
+          "what_to_watch": "",
+          "technique_label": "suzy_q_\u2014_mid_rock",
+          "techniques": [
+            "suzy_q"
+          ]
+        },
+        {
+          "step_number": 8,
+          "timestamp": "0:08",
+          "frame": "frame_008.jpg",
+          "count": "1-2-3",
+          "technique": "basic_step",
+          "position": "Both dancers in slot, side by side. Compact weight transfer. Soft knees. Arms relaxed.",
+          "instruction": "Both dancers in slot, side by side. Compact weight transfer. Soft knees. Arms relaxed.",
+          "instructor_tip": "1, partner work \u2014 transitioning from solo to partner",
+          "what_to_watch": "",
+          "technique_label": "basic_step_\u2014_full_speed",
+          "techniques": [
+            "basic_step"
+          ]
+        },
+        {
+          "step_number": 9,
+          "timestamp": "0:09",
+          "frame": "frame_009.jpg",
+          "count": "5-6-7",
+          "technique": "basic_step",
+          "position": "Dancers moving slightly forward together. Break on 6 visible in foot placement.",
+          "instruction": "Dancers moving slightly forward together. Break on 6 visible in foot placement.",
+          "instructor_tip": "6712367",
+          "what_to_watch": "",
+          "technique_label": "basic_step_\u2014_traveling",
+          "techniques": [
+            "basic_step"
+          ]
+        },
+        {
+          "step_number": 10,
+          "timestamp": "0:10",
+          "frame": "frame_010.jpg",
+          "count": "1-2-3",
+          "technique": "basic_step",
+          "position": "Side view \u2014 hip movement visible on weight transfer. Knees soft. Feet parallel.",
+          "instruction": "Side view \u2014 hip movement visible on weight transfer. Knees soft. Feet parallel.",
+          "instructor_tip": "a little bit of hips",
+          "what_to_watch": "",
+          "technique_label": "basic_step_\u2014_hips",
+          "techniques": [
+            "basic_step"
+          ]
+        },
+        {
+          "step_number": 11,
+          "timestamp": "0:11",
+          "frame": "frame_011.jpg",
+          "count": "5-6-7",
+          "technique": "general",
+          "position": "Leader raises right arm \u2014 beginning of turn lead. Follower responding to frame change.",
+          "instruction": "Leader raises right arm \u2014 beginning of turn lead. Follower responding to frame change.",
+          "instructor_tip": "5, 6, 7, 1, partner work",
+          "what_to_watch": "",
+          "technique_label": "basic_with_arm_raise",
+          "techniques": [
+            "general"
+          ]
+        },
+        {
+          "step_number": 12,
+          "timestamp": "0:12",
+          "frame": "frame_012.jpg",
+          "count": "1-2-3",
+          "technique": "general",
+          "position": "Dancers slightly apart, both traveling forward. Arm connection visible.",
+          "instruction": "Dancers slightly apart, both traveling forward. Arm connection visible.",
+          "instructor_tip": "6, 7, 1, 2, 3, 6, 7",
+          "what_to_watch": "",
+          "technique_label": "basic_\u2014_open_position",
+          "techniques": [
+            "general"
+          ]
+        },
+        {
+          "step_number": 13,
+          "timestamp": "0:13",
+          "frame": "frame_013.jpg",
+          "count": "5-6-7",
+          "technique": "general",
+          "position": "Both moving in same direction, follower slightly behind leader. Footwork in sync.",
+          "instruction": "Both moving in same direction, follower slightly behind leader. Footwork in sync.",
+          "instructor_tip": "tension, hold",
+          "what_to_watch": "",
+          "technique_label": "basic_\u2014_traveling_together",
+          "techniques": [
+            "general"
+          ]
+        },
+        {
+          "step_number": 14,
+          "timestamp": "0:14",
+          "frame": "frame_014.jpg",
+          "count": "1-2-3",
+          "technique": "general",
+          "position": "Leader's right arm raised high. Follower beginning to turn under. Weight on balls of feet.",
+          "instruction": "Leader's right arm raised high. Follower beginning to turn under. Weight on balls of feet.",
+          "instructor_tip": "5, side, basic, 2, 3",
+          "what_to_watch": "",
+          "technique_label": "arm_raise_/_turn_prep",
+          "techniques": [
+            "general"
+          ]
+        },
+        {
+          "step_number": 15,
+          "timestamp": "0:15",
+          "frame": "frame_015.jpg",
+          "count": "5-6-7",
+          "technique": "general",
+          "position": "Follower spinning left under raised arm. Leader's frame stable. Both on balls of feet.",
+          "instruction": "Follower spinning left under raised arm. Leader's frame stable. Both on balls of feet.",
+          "instructor_tip": "a little bit of hips, 2, 3, side, basic",
+          "what_to_watch": "",
+          "technique_label": "follower_turn",
+          "techniques": [
+            "general"
+          ]
+        },
+        {
+          "step_number": 16,
+          "timestamp": "0:16",
+          "frame": "frame_016.jpg",
+          "count": "1-2-3",
+          "technique": "general",
+          "position": "Both returning to basic. Wider shot shows full studio. Crowd visible in mirror.",
+          "instruction": "Both returning to basic. Wider shot shows full studio. Crowd visible in mirror.",
+          "instructor_tip": "2, 3, give her a hand guys",
+          "what_to_watch": "",
+          "technique_label": "basic_\u2014_reset_after_turn",
+          "techniques": [
+            "general"
+          ]
+        },
+        {
+          "step_number": 17,
+          "timestamp": "0:17",
+          "frame": "frame_017.jpg",
+          "count": "5-6-7",
+          "technique": "basic_step",
+          "position": "Dancers in close open hold. Both facing each other. Frame established. Crowd watching.",
+          "instruction": "Dancers in close open hold. Both facing each other. Frame established. Crowd watching.",
+          "instructor_tip": "partner work, 6, 7, 1, 2, 3",
+          "what_to_watch": "",
+          "technique_label": "partner_basic_\u2014_close_hold",
+          "techniques": [
+            "basic_step"
+          ]
+        },
+        {
+          "step_number": 18,
+          "timestamp": "0:18",
+          "frame": "frame_018.jpg",
+          "count": "1-2-3",
+          "technique": "suzy_q",
+          "position": "Leader in Suzy Q, 'OPTIC' jersey. Follower doing same shine beside him. Synchronized.",
+          "instruction": "Leader in Suzy Q, 'OPTIC' jersey. Follower doing same shine beside him. Synchronized.",
+          "instructor_tip": "123, ta-da!",
+          "what_to_watch": "",
+          "technique_label": "suzy_q_\u2014_partner_version",
+          "techniques": [
+            "suzy_q"
+          ]
+        },
+        {
+          "step_number": 19,
+          "timestamp": "0:19",
+          "frame": "frame_019.jpg",
+          "count": "5-6-7",
+          "technique": "suzy_q",
+          "position": "Both dancers in heel-toe rock. Side by side. Energy high. Crowd engaged.",
+          "instruction": "Both dancers in heel-toe rock. Side by side. Energy high. Crowd engaged.",
+          "instructor_tip": "67623",
+          "what_to_watch": "",
+          "technique_label": "suzy_q_\u2014_full_speed",
+          "techniques": [
+            "suzy_q"
+          ]
+        },
+        {
+          "step_number": 20,
+          "timestamp": "0:20",
+          "frame": "frame_020.jpg",
+          "count": "1-2-3",
+          "technique": "suzy_q",
+          "position": "Returning to basic footwork. Leader looking down at feet briefly. Follower tracking.",
+          "instruction": "Returning to basic footwork. Leader looking down at feet briefly. Follower tracking.",
+          "instructor_tip": "basic step, 1",
+          "what_to_watch": "",
+          "technique_label": "basic_\u2014_transition_out_of_suzy_q",
+          "techniques": [
+            "suzy_q"
+          ]
+        },
+        {
+          "step_number": 21,
+          "timestamp": "0:21",
+          "frame": "frame_021.jpg",
+          "count": "5-6-7",
+          "technique": "suzy_q",
+          "position": "Back into Suzy Q. Both compact, feet close. Hip rock visible.",
+          "instruction": "Back into Suzy Q. Both compact, feet close. Hip rock visible.",
+          "instructor_tip": "Susie Q",
+          "what_to_watch": "",
+          "technique_label": "suzy_q_\u2014_repeat",
+          "techniques": [
+            "suzy_q"
+          ]
+        },
+        {
+          "step_number": 22,
+          "timestamp": "0:22",
+          "frame": "frame_022.jpg",
+          "count": "1-2-3",
+          "technique": "general",
+          "position": "Open hold re-established. Both facing each other. Arms connected at one hand.",
+          "instruction": "Open hold re-established. Both facing each other. Arms connected at one hand.",
+          "instructor_tip": "tension, hold",
+          "what_to_watch": "",
+          "technique_label": "basic_\u2014_open_hold",
+          "techniques": [
+            "general"
+          ]
+        },
+        {
+          "step_number": 23,
+          "timestamp": "0:23",
+          "frame": "frame_023.jpg",
+          "count": "5-6-7",
+          "technique": "general",
+          "position": "Moving across floor together. Follower slightly behind. Frame maintained.",
+          "instruction": "Moving across floor together. Follower slightly behind. Frame maintained.",
+          "instructor_tip": "side, basic, 2, 3",
+          "what_to_watch": "",
+          "technique_label": "basic_\u2014_traveling_together",
+          "techniques": [
+            "general"
+          ]
+        },
+        {
+          "step_number": 24,
+          "timestamp": "0:24",
+          "frame": "frame_024.jpg",
+          "count": "1-2-3",
+          "technique": "general",
+          "position": "Clear break visible \u2014 leader stepping forward on 2. Follower stepping back simultaneously.",
+          "instruction": "Clear break visible \u2014 leader stepping forward on 2. Follower stepping back simultaneously.",
+          "instructor_tip": "6, 7, tension, hold",
+          "what_to_watch": "",
+          "technique_label": "basic_\u2014_break_on2",
+          "techniques": [
+            "general"
+          ]
+        },
+        {
+          "step_number": 25,
+          "timestamp": "0:25",
+          "frame": "frame_025.jpg",
+          "count": "5-6-7",
+          "technique": "general",
+          "position": "Both facing each other in open hold. Arms extended with elastic tension. Smiling.",
+          "instruction": "Both facing each other in open hold. Arms extended with elastic tension. Smiling.",
+          "instructor_tip": "tension, hold",
+          "what_to_watch": "",
+          "technique_label": "partner_work_\u2014_open_hold",
+          "techniques": [
+            "general"
+          ]
+        },
+        {
+          "step_number": 26,
+          "timestamp": "0:26",
+          "frame": "frame_026.jpg",
+          "count": "1-2-3",
+          "technique": "general",
+          "position": "Leader raises right arm to initiate follower turn. Follower's weight shifting to turn.",
+          "instruction": "Leader raises right arm to initiate follower turn. Follower's weight shifting to turn.",
+          "instructor_tip": "5, side, basic",
+          "what_to_watch": "",
+          "technique_label": "turn_lead_\u2014_arm_raise",
+          "techniques": [
+            "general"
+          ]
+        },
+        {
+          "step_number": 27,
+          "timestamp": "0:27",
+          "frame": "frame_027.jpg",
+          "count": "5-6-7",
+          "technique": "general",
+          "position": "Follower spinning under raised arm. Leader's frame stable. Close proximity.",
+          "instruction": "Follower spinning under raised arm. Leader's frame stable. Close proximity.",
+          "instructor_tip": "6712367",
+          "what_to_watch": "",
+          "technique_label": "follower_turn_\u2014_under_arm",
+          "techniques": [
+            "general"
+          ]
+        },
+        {
+          "step_number": 28,
+          "timestamp": "0:28",
+          "frame": "frame_028.jpg",
+          "count": "1-2-3",
+          "technique": "general",
+          "position": "Follower mid-rotation. Leader holding frame. Both on balls of feet.",
+          "instruction": "Follower mid-rotation. Leader holding frame. Both on balls of feet.",
+          "instructor_tip": "tension, hold",
+          "what_to_watch": "",
+          "technique_label": "turn_\u2014_mid_spin",
+          "techniques": [
+            "general"
+          ]
+        },
+        {
+          "step_number": 29,
+          "timestamp": "0:29",
+          "frame": "frame_029.jpg",
+          "count": "5-6-7",
+          "technique": "inside_turn",
+          "position": "Follower completing turn, returning to basic. Leader guiding with frame.",
+          "instruction": "Follower completing turn, returning to basic. Leader guiding with frame.",
+          "instructor_tip": "side, basic, 2, 3",
+          "what_to_watch": "",
+          "technique_label": "post-turn_basic",
+          "techniques": [
+            "inside_turn"
+          ]
+        },
+        {
+          "step_number": 30,
+          "timestamp": "0:30",
+          "frame": "frame_030.jpg",
+          "count": "1-2-3",
+          "technique": "general",
+          "position": "Leader supporting follower in deep lean/dip. Maximum tension and hold. Crowd reacting.",
+          "instruction": "Leader supporting follower in deep lean/dip. Maximum tension and hold. Crowd reacting.",
+          "instructor_tip": "tension, hold \u2014 give her a hand guys",
+          "what_to_watch": "",
+          "technique_label": "dip_/_deep_lean",
+          "techniques": [
+            "general"
+          ]
+        },
+        {
+          "step_number": 31,
+          "timestamp": "0:31",
+          "frame": "frame_031.jpg",
+          "count": "5-6-7",
+          "technique": "general",
+          "position": "Both recovering upright. Weight returning to center. Basic resuming.",
+          "instruction": "Both recovering upright. Weight returning to center. Basic resuming.",
+          "instructor_tip": "123, ta-da!",
+          "what_to_watch": "",
+          "technique_label": "recovery_from_dip",
+          "techniques": [
+            "general"
+          ]
+        },
+        {
+          "step_number": 32,
+          "timestamp": "0:32",
+          "frame": "frame_032.jpg",
+          "count": "1-2-3",
+          "technique": "general",
+          "position": "Side by side, both smiling/laughing. Crowd applauding. 'OPTIC' jersey visible.",
+          "instruction": "Side by side, both smiling/laughing. Crowd applauding. 'OPTIC' jersey visible.",
+          "instructor_tip": "give her a hand, guys!",
+          "what_to_watch": "",
+          "technique_label": "final_basic_\u2014_finish",
+          "techniques": [
+            "general"
+          ]
+        },
+        {
+          "step_number": 33,
+          "timestamp": "0:33",
+          "frame": "frame_033.jpg",
+          "count": "end",
+          "technique": "general",
+          "position": "Both standing together, crowd clapping. End of demonstration.",
+          "instruction": "Both standing together, crowd clapping. End of demonstration.",
+          "instructor_tip": "give her a hand, guys!",
+          "what_to_watch": "",
+          "technique_label": "finish_/_bow",
+          "techniques": [
+            "general"
+          ]
+        }
+      ]
+    }
+  },
+  "partner_work_tension_hold": {
+    "class_video": {
+      "combo_key": "class_20260915_combo",
+      "frame_slug": "img-0337",
+      "class_date": "2026-09-15"
+    }
+  },
+  "class_20260811_combo": {
+    "video_breakdown": {
+      "source": "IMG_0100.MOV",
+      "class_date": "2026-08-11",
+      "frame_slug": "img-0100",
+      "description": "BASIC STEP (solo) -> CORE BEAT -> SUZY Q (solo) -> CRISS-CROSS SUZY Q -> RIGHT TURN -> PARTNER WORK (basic + Suzy Q + right turn)",
+      "techniques": [
+        "basic_step",
+        "suzy_q",
+        "right_turn"
+      ],
+      "steps": [
+        {
+          "step_number": 1,
+          "timestamp": "0:01",
+          "frame": "frame_001.jpg",
+          "count": "ready",
+          "technique": "general",
+          "position": "Instructor facing mirror, back to camera, weight on left foot, feet together, arms relaxed at sides",
+          "instruction": "Instructor facing mirror, back to camera, weight on left foot, feet together, arms relaxed at sides",
+          "instructor_tip": "My weight's on my left foot",
+          "what_to_watch": "",
+          "technique_label": "ready_position",
+          "techniques": [
+            "general"
+          ]
+        },
+        {
+          "step_number": 2,
+          "timestamp": "0:03",
+          "frame": "frame_003.jpg",
+          "count": "5",
+          "technique": "basic_step",
+          "position": "Right foot stepping forward, left foot trailing, slight forward lean, arms loose",
+          "instruction": "Right foot stepping forward, left foot trailing, slight forward lean, arms loose",
+          "instructor_tip": "5, 6, 7, 1, 2, 3",
+          "what_to_watch": "",
+          "technique_label": "basic_step_\u2014_forward",
+          "techniques": [
+            "basic_step"
+          ]
+        },
+        {
+          "step_number": 3,
+          "timestamp": "0:05",
+          "frame": "frame_005.jpg",
+          "count": "6-7",
+          "technique": "basic_step",
+          "position": "Weight transferring back to left, right foot closing, torso upright, facing mirror",
+          "instruction": "Weight transferring back to left, right foot closing, torso upright, facing mirror",
+          "instructor_tip": "core beat",
+          "what_to_watch": "",
+          "technique_label": "basic_step_\u2014_core_beat",
+          "techniques": [
+            "basic_step"
+          ]
+        },
+        {
+          "step_number": 4,
+          "timestamp": "0:07",
+          "frame": "frame_007.jpg",
+          "count": "1",
+          "technique": "suzy_q",
+          "position": "Right foot beginning to cross over left, slight hip rotation left, arms starting to open",
+          "instruction": "Right foot beginning to cross over left, slight hip rotation left, arms starting to open",
+          "instructor_tip": "cross, step, cross",
+          "what_to_watch": "",
+          "technique_label": "suzy_q_\u2014_cross_entry",
+          "techniques": [
+            "suzy_q"
+          ]
+        },
+        {
+          "step_number": 5,
+          "timestamp": "0:09",
+          "frame": "frame_009.jpg",
+          "count": "2",
+          "technique": "suzy_q",
+          "position": "Left foot stepping to side, weight on left, right foot lifted slightly, traveling forward in slot",
+          "instruction": "Left foot stepping to side, weight on left, right foot lifted slightly, traveling forward in slot",
+          "instructor_tip": "Travel forward with the Suzy Q",
+          "what_to_watch": "",
+          "technique_label": "suzy_q_\u2014_side_step",
+          "techniques": [
+            "suzy_q",
+            "side_to_side"
+          ]
+        },
+        {
+          "step_number": 6,
+          "timestamp": "0:11",
+          "frame": "frame_011.jpg",
+          "count": "3",
+          "technique": "suzy_q",
+          "position": "Right foot crossing back over, weight ending on left foot, body squared, arms settling",
+          "instruction": "Right foot crossing back over, weight ending on left foot, body squared, arms settling",
+          "instructor_tip": "End each Suzy Q with your weight on the foot that is NOT crossing",
+          "what_to_watch": "",
+          "technique_label": "suzy_q_\u2014_cross_back",
+          "techniques": [
+            "suzy_q"
+          ]
+        },
+        {
+          "step_number": 7,
+          "timestamp": "0:13",
+          "frame": "frame_013.jpg",
+          "count": "5",
+          "technique": "suzy_q",
+          "position": "Left foot crossing over right, initiating mirror Suzy Q, hip rotation to right",
+          "instruction": "Left foot crossing over right, initiating mirror Suzy Q, hip rotation to right",
+          "instructor_tip": "After completing a Suzy Q to your left, cross over with your left foot",
+          "what_to_watch": "",
+          "technique_label": "criss-cross_suzy_q_\u2014_mirror_cross",
+          "techniques": [
+            "suzy_q"
+          ]
+        },
+        {
+          "step_number": 8,
+          "timestamp": "0:15",
+          "frame": "frame_015.jpg",
+          "count": "6-7",
+          "technique": "suzy_q",
+          "position": "Right foot stepping to side then left crossing back, weight on right, criss-cross pattern visible",
+          "instruction": "Right foot stepping to side then left crossing back, weight on right, criss-cross pattern visible",
+          "instructor_tip": "criss-cross",
+          "what_to_watch": "",
+          "technique_label": "criss-cross_suzy_q_\u2014_side_&_cross",
+          "techniques": [
+            "suzy_q"
+          ]
+        },
+        {
+          "step_number": 9,
+          "timestamp": "0:17",
+          "frame": "frame_017.jpg",
+          "count": "7",
+          "technique": "right_turn",
+          "position": "Left foot crossing over right on count 7, body beginning to rotate right, arms sweeping",
+          "instruction": "Left foot crossing over right on count 7, body beginning to rotate right, arms sweeping",
+          "instructor_tip": "cross your left foot over on count 7",
+          "what_to_watch": "",
+          "technique_label": "right_turn_\u2014_cross_entry",
+          "techniques": [
+            "right_turn"
+          ]
+        },
+        {
+          "step_number": 10,
+          "timestamp": "0:19",
+          "frame": "frame_019.jpg",
+          "count": "1",
+          "technique": "right_turn",
+          "position": "Right foot stepping forward, body rotating to face front, weight driving forward not pivoting in place",
+          "instruction": "Right foot stepping forward, body rotating to face front, weight driving forward not pivoting in place",
+          "instructor_tip": "step into the turn on count 1",
+          "what_to_watch": "",
+          "technique_label": "right_turn_\u2014_step_forward",
+          "techniques": [
+            "right_turn"
+          ]
+        },
+        {
+          "step_number": 11,
+          "timestamp": "0:21",
+          "frame": "frame_021.jpg",
+          "count": "2-3",
+          "technique": "right_turn",
+          "position": "Turn complete, facing front, left foot breaking back on 2, weight grounded, arms open to frame",
+          "instruction": "Turn complete, facing front, left foot breaking back on 2, weight grounded, arms open to frame",
+          "instructor_tip": "After crossing on 7 and stepping on 1, continue the basic step pattern",
+          "what_to_watch": "",
+          "technique_label": "right_turn_\u2014_resume_basic",
+          "techniques": [
+            "right_turn"
+          ]
+        },
+        {
+          "step_number": 12,
+          "timestamp": "0:23",
+          "frame": "frame_023.jpg",
+          "count": "5-6-7",
+          "technique": "basic_step",
+          "position": "Instructor at full tempo, right foot forward, clear weight transfer, slot maintained, arms natural",
+          "instruction": "Instructor at full tempo, right foot forward, clear weight transfer, slot maintained, arms natural",
+          "instructor_tip": "grounded feet",
+          "what_to_watch": "",
+          "technique_label": "basic_step_\u2014_full_speed",
+          "techniques": [
+            "basic_step"
+          ]
+        },
+        {
+          "step_number": 13,
+          "timestamp": "0:25",
+          "frame": "frame_025.jpg",
+          "count": "1-2-3",
+          "technique": "suzy_q",
+          "position": "Cross-step-cross at tempo, forward travel in slot, hips engaged, weight landing cleanly on left",
+          "instruction": "Cross-step-cross at tempo, forward travel in slot, hips engaged, weight landing cleanly on left",
+          "instructor_tip": "5, 6, Corby, and 1, 3, Suzy Q",
+          "what_to_watch": "",
+          "technique_label": "suzy_q_\u2014_full_speed_entry",
+          "techniques": [
+            "suzy_q"
+          ]
+        },
+        {
+          "step_number": 14,
+          "timestamp": "0:27",
+          "frame": "frame_027.jpg",
+          "count": "5-6-7",
+          "technique": "suzy_q",
+          "position": "Mirror Suzy Q at tempo, left crossing over right, hip styling visible, slot line maintained",
+          "instruction": "Mirror Suzy Q at tempo, left crossing over right, hip styling visible, slot line maintained",
+          "instructor_tip": "criss-cross",
+          "what_to_watch": "",
+          "technique_label": "suzy_q_\u2014_criss-cross_full_speed",
+          "techniques": [
+            "suzy_q"
+          ]
+        },
+        {
+          "step_number": 15,
+          "timestamp": "0:29",
+          "frame": "frame_029.jpg",
+          "count": "7",
+          "technique": "right_turn",
+          "position": "Left foot crossing on 7 at full tempo, rotation initiated, body compact",
+          "instruction": "Left foot crossing on 7 at full tempo, rotation initiated, body compact",
+          "instructor_tip": "step into the turn",
+          "what_to_watch": "",
+          "technique_label": "right_turn_\u2014_full_speed_entry",
+          "techniques": [
+            "right_turn"
+          ]
+        },
+        {
+          "step_number": 16,
+          "timestamp": "0:31",
+          "frame": "frame_031.jpg",
+          "count": "1-2-3",
+          "technique": "right_turn",
+          "position": "Right foot stepping forward on 1, turn complete, resuming basic at tempo",
+          "instruction": "Right foot stepping forward on 1, turn complete, resuming basic at tempo",
+          "instructor_tip": "forward on 2, back on 3",
+          "what_to_watch": "",
+          "technique_label": "right_turn_\u2014_full_speed_completion",
+          "techniques": [
+            "right_turn"
+          ]
+        },
+        {
+          "step_number": 17,
+          "timestamp": "0:33",
+          "frame": "frame_033.jpg",
+          "count": "5-6-7",
+          "technique": "basic_step",
+          "position": "Leader and follower in open hold, both stepping basic, leader's right hand at follower's left, frame maintained",
+          "instruction": "Leader and follower in open hold, both stepping basic, leader's right hand at follower's left, frame maintained",
+          "instructor_tip": "Keep your weight clear and grounded so your partner can feel where you are",
+          "what_to_watch": "",
+          "technique_label": "partner_basic_step",
+          "techniques": [
+            "basic_step"
+          ]
+        },
+        {
+          "step_number": 18,
+          "timestamp": "0:35",
+          "frame": "frame_035.jpg",
+          "count": "1-2-3",
+          "technique": "suzy_q",
+          "position": "Leader initiating Suzy Q, follower mirroring, leader's left hand raised to lead follower's turn/styling",
+          "instruction": "Leader initiating Suzy Q, follower mirroring, leader's left hand raised to lead follower's turn/styling",
+          "instructor_tip": "Travel forward with the Suzy Q",
+          "what_to_watch": "",
+          "technique_label": "partner_suzy_q_lead",
+          "techniques": [
+            "suzy_q"
+          ]
+        },
+        {
+          "step_number": 19,
+          "timestamp": "0:37",
+          "frame": "frame_037.jpg",
+          "count": "5-6-7",
+          "technique": "right_turn",
+          "position": "Leader crossing on 7, right hand guiding follower, follower beginning to turn, both in slot",
+          "instruction": "Leader crossing on 7, right hand guiding follower, follower beginning to turn, both in slot",
+          "instructor_tip": "cross your left foot over on count 7",
+          "what_to_watch": "",
+          "technique_label": "partner_right_turn_lead",
+          "techniques": [
+            "right_turn"
+          ]
+        },
+        {
+          "step_number": 20,
+          "timestamp": "0:39",
+          "frame": "frame_039.jpg",
+          "count": "1",
+          "technique": "right_turn",
+          "position": "Leader stepping forward on 1, follower completing turn, connection maintained through hand frame",
+          "instruction": "Leader stepping forward on 1, follower completing turn, connection maintained through hand frame",
+          "instructor_tip": "step into the turn on count 1",
+          "what_to_watch": "",
+          "technique_label": "partner_right_turn_\u2014_count_1_step",
+          "techniques": [
+            "right_turn"
+          ]
+        },
+        {
+          "step_number": 21,
+          "timestamp": "0:41",
+          "frame": "frame_041.jpg",
+          "count": "2-3",
+          "technique": "basic_step",
+          "position": "Both dancers resuming basic step after turn, open hold, slot re-established, weight grounded",
+          "instruction": "Both dancers resuming basic step after turn, open hold, slot re-established, weight grounded",
+          "instructor_tip": "5, 6, 7, 1, 2, 3",
+          "what_to_watch": "",
+          "technique_label": "partner_resume_basic",
+          "techniques": [
+            "basic_step"
+          ]
+        }
+      ]
     }
   }
 }

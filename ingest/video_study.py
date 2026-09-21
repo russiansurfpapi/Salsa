@@ -100,6 +100,25 @@ def load_frame_as_base64(frame_path: Path) -> str:
         return base64.standard_b64encode(f.read()).decode("utf-8")
 
 
+def _create_streaming(client, *, max_tokens: int, messages: list, temperature: float | None = None):
+    """Run a long vision generation over a streaming connection.
+
+    A 16k-token completion on a multi-megabyte image payload keeps a
+    non-streaming request open long enough that the connection gets dropped
+    (surfacing as anthropic.APIConnectionError). Streaming keeps data moving,
+    and get_final_message() returns the same Message shape callers expect.
+    """
+    kwargs = {
+        "model": "claude-sonnet-4-6",
+        "max_tokens": max_tokens,
+        "messages": messages,
+    }
+    if temperature is not None:
+        kwargs["temperature"] = temperature
+    with client.messages.stream(**kwargs) as stream:
+        return stream.get_final_message()
+
+
 def analyze_frames_with_claude(
     frame_dir: Path,
     frame_slug: str,
@@ -268,8 +287,8 @@ IMPORTANT:
     content = image_blocks + [{"type": "text", "text": prompt_text}]
 
     print(f"  Sending {len(sampled)} frames to Claude for analysis...")
-    resp = client.messages.create(
-        model="claude-sonnet-4-6",
+    resp = _create_streaming(
+        client,
         max_tokens=16000,
         messages=[{"role": "user", "content": content}],
         temperature=0.2,
@@ -284,8 +303,8 @@ IMPORTANT:
     except (json.JSONDecodeError, ValueError) as first_error:
         # Ask Claude to fix the JSON
         print(f"  JSON validation failed ({first_error}); requesting repair...")
-        fix_resp = client.messages.create(
-            model="claude-sonnet-4-6",
+        fix_resp = _create_streaming(
+            client,
             max_tokens=16000,
             messages=[{
                 "role": "user",
@@ -410,7 +429,7 @@ def update_breakdowns(guide: dict, frame_slug: str, class_date: str, video_filen
 
 def update_mongo(class_date: str, video_filename: str, frame_slug: str) -> None:
     from server.mongo import classes
-    classes().update_one(
+    result = classes().update_one(
         {"class_date": class_date},
         {"$set": {
             "video_file": video_filename,
@@ -418,7 +437,17 @@ def update_mongo(class_date: str, video_filename: str, frame_slug: str) -> None:
             "has_video_breakdown": True,
         }},
     )
-    print(f"  Updated MongoDB for {class_date}")
+    if result.matched_count:
+        print(f"  Updated MongoDB for {class_date}")
+    else:
+        # No upsert here on purpose: a doc created from video fields alone would
+        # have no summary or teaching points and would render as a blank card.
+        print(
+            f"  WARNING: no class doc for {class_date}, so video_file was NOT "
+            f"recorded. The study guide exists but /classes will not list this "
+            f"class until a class doc is created (ingest the audio, or build one "
+            f"from the study guide)."
+        )
 
 
 def main():
@@ -449,8 +478,18 @@ def main():
             print(f"ERROR: {frame_dir} not found")
             return
         slug = frame_dir.name
-        video_path = None
-        video_filename = f"{slug}.mp4"
+        video_path = Path(args.video).resolve() if args.video else None
+        if video_path is not None and video_path.exists():
+            # --frames only skips re-extraction; the real file still names the video.
+            video_filename = video_path.name
+        else:
+            # Fall back to a copy already in videos/ before guessing an extension,
+            # so the stored video_file is not a dangling reference.
+            match = next(
+                (f for f in sorted(VIDEOS.glob("*")) if slugify(f.stem) == slug),
+                None,
+            )
+            video_filename = match.name if match else f"{slug}.mp4"
         n_frames = len(list(frame_dir.glob("*.jpg")))
         print(f"\nFrames: {frame_dir} ({n_frames} frames)")
         print(f"Class: #{class_number} on {class_date}")
