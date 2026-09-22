@@ -1906,10 +1906,6 @@
         "slug": "basic_step"
       },
       {
-        "name": "Side Step",
-        "slug": "side_step"
-      },
-      {
         "name": "Hip Walk",
         "slug": "hip_walk"
       },
@@ -1936,7 +1932,6 @@
     ],
     "techniques_covered": [
       "basic_step",
-      "side_step",
       "hip_walk",
       "chord_beat",
       "right_turn",
@@ -2075,7 +2070,7 @@
         "context": "Instructor taught the leader-follower basic step during partner work, emphasizing synchronized timing on the same counts."
       },
       {
-        "technique": "side_step",
+        "technique": "basic_step",
         "tip": "Keep counting even when music plays. Do not stop counting just because you feel comfortable; counting helps you stay on rhythm and understand the timing of each move.",
         "context": "Instructor gave a final tip about maintaining internal counting throughout the class and during social dancing to ensure consistent timing."
       }

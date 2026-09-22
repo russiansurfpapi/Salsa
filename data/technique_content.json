@@ -117,7 +117,8 @@
         "base it, 123567",
         "basic, 123, basic step",
         "a little bit of hips",
-        "5, 6, 7, 1, 2, 3"
+        "5, 6, 7, 1, 2, 3",
+        "Keep counting even when music plays. Do not stop counting just because you feel comfortable; counting helps you stay on rhythm and understand the timing of each move."
       ],
       "connects_to": [
         "inside_turn",
@@ -868,8 +869,8 @@
       "name": "Combo",
       "slug": "combo",
       "level": 1,
-      "order": 99,
-      "description": "Combo was detected in a class upload. This page collects class tips, lesson images, drills, and related videos as they are added.",
+      "order": 98,
+      "description": "Not a single move: this collects the combinations built in class, where known techniques get chained together. Each class's own combo is broken down on that class's study guide. The standing advice is to master the individual moves first and link them afterwards, rather than memorising the sequence.",
       "breakdown": [],
       "common_mistakes": [],
       "key_details": [],
@@ -891,36 +892,53 @@
         "combo"
       ]
     },
-    "side_step": {
-      "name": "Side Step",
-      "slug": "side_step",
-      "level": 1,
-      "order": 99,
-      "description": "Side Step was detected in a class upload. This page collects class tips, lesson images, drills, and related videos as they are added.",
-      "breakdown": [],
-      "common_mistakes": [],
-      "key_details": [],
-      "flashcards": [],
-      "class_tips": [
-        "Keep counting even when music plays. Do not stop counting just because you feel comfortable; counting helps you stay on rhythm and understand the timing of each move."
-      ],
-      "connects_to": [
-        "basic_step"
-      ],
-      "video_keys": [
-        "side_step"
-      ]
-    },
     "hip_walk": {
       "name": "Hip Walk",
       "slug": "hip_walk",
       "level": 1,
-      "order": 99,
-      "description": "Hip Walk was detected in a class upload. This page collects class tips, lesson images, drills, and related videos as they are added.",
-      "breakdown": [],
-      "common_mistakes": [],
-      "key_details": [],
-      "flashcards": [],
+      "order": 11,
+      "description": "A travelling pattern on a step-tap-step rhythm. The leading foot steps towards where you are going, the other taps and returns to centre, and the hips carry the movement. Move #11 in the class's numbered list.",
+      "breakdown": [
+        "Step, tap, step \u2014 then step, tap, step again.",
+        "The right foot leads towards the direction you intend to travel.",
+        "The left foot taps and returns to centre rather than taking weight.",
+        "Look towards the direction you are going, not down at your feet.",
+        "To go the other way, start the pattern on the opposite foot."
+      ],
+      "common_mistakes": [
+        "Watching your feet, so the body never commits to the direction.",
+        "Trying to reverse without changing the starting foot \u2014 the pattern will not read.",
+        "Letting the tapping foot take weight, which kills the travel.",
+        "Driving it from the shoulders instead of letting the hips do the work."
+      ],
+      "key_details": [
+        "The verbal pattern is step, tap, step \u2014 step, tap, step.",
+        "Leading foot goes towards your intended direction; the other only taps.",
+        "Looking where you are going is what makes the weight transfer work.",
+        "Starting on the left foot produces the same look when travelling right."
+      ],
+      "flashcards": [
+        {
+          "question": "What is the rhythm of the hip walk?",
+          "answer": "Step, tap, step \u2014 step, tap, step.",
+          "type": "recall"
+        },
+        {
+          "question": "Where should you be looking during a hip walk?",
+          "answer": "Towards the direction you want to go, not at your feet.",
+          "type": "recall"
+        },
+        {
+          "question": "How do you reverse the direction of a hip walk?",
+          "answer": "Start with the opposite foot.",
+          "type": "recall"
+        },
+        {
+          "question": "Does the tapping foot take weight?",
+          "answer": "No \u2014 it taps and returns to centre.",
+          "type": "recall"
+        }
+      ],
       "class_tips": [
         "Hip walk structure: step, tap, step, step, tap, step. The right foot leads toward your intended direction; the left foot taps and returns to center.",
         "When performing a hip walk, look toward the direction you want to turn (not at your feet). This helps your body commit to the direction and improves weight transfer.",
@@ -930,7 +948,9 @@
         "if you want to reverse direction, you must start with the opposite foot"
       ],
       "connects_to": [
-        "basic_step"
+        "basic_step",
+        "suzy_q",
+        "chord_beat"
       ],
       "video_keys": [
         "hip_walk"
@@ -940,12 +960,49 @@
       "name": "Chord Beat",
       "slug": "chord_beat",
       "level": 1,
-      "order": 99,
-      "description": "Chord Beat was detected in a class upload. This page collects class tips, lesson images, drills, and related videos as they are added.",
-      "breakdown": [],
-      "common_mistakes": [],
-      "key_details": [],
-      "flashcards": [],
+      "order": 12,
+      "description": "A timing idea rather than a move: you step only on the odd counts \u2014 1, 3, 5, 7 \u2014 and skip every other beat. You can walk chord beats in any direction or shape; what makes it a chord beat is which beats you land on. Move #14 in the class's numbered list.",
+      "breakdown": [
+        "Step on 1, 3, 5 and 7 only. Nothing lands on 2, 4 or 6.",
+        "Keep every step small and the same size as the last.",
+        "Travelling right, either cross on the second step or crab-walk the four steps round.",
+        "At the end of the sequence, notice which foot your weight finished on.",
+        "Begin the next sequence on the other foot so the pattern stays even."
+      ],
+      "common_mistakes": [
+        "Stepping on the even counts and losing the whole point of the exercise.",
+        "Taking wide, exaggerated steps, which makes it hard to control and untidy to watch.",
+        "Not tracking the finishing weight, then starting the next set on the same foot.",
+        "Treating it as a fixed move instead of a timing you can apply to any direction."
+      ],
+      "key_details": [
+        "Odd numbers only: 1-3-5-7.",
+        "If your weight ends on the left foot, start the next one on the right.",
+        "Small and uniform beats big and showy here.",
+        "It is a timing concept, so it layers onto patterns you already know."
+      ],
+      "flashcards": [
+        {
+          "question": "Which counts do you step on in a chord beat?",
+          "answer": "The odd ones \u2014 1, 3, 5, 7. You skip 2, 4 and 6.",
+          "type": "recall"
+        },
+        {
+          "question": "Is the chord beat a move?",
+          "answer": "No, it is a timing concept \u2014 you can walk it in any direction or pattern.",
+          "type": "recall"
+        },
+        {
+          "question": "Why track which foot your weight ends on?",
+          "answer": "So you start the next sequence on the opposite foot and the pattern stays even.",
+          "type": "recall"
+        },
+        {
+          "question": "Two ways to take chord beats to the right?",
+          "answer": "Cross on the second step, or crab-walk the 1-3-5-7 round in a circle.",
+          "type": "recall"
+        }
+      ],
       "class_tips": [
         "Chord beats use only odd-numbered counts: 1, 3, 5, 7. Step only on these counts, skipping every other beat. Do not step on 2, 4, or 6.",
         "When stepping chord beats to the right, you have two options: cross the second step or perform a crab walk (stepping 1-3-5-7 in a circular pattern).",
@@ -958,7 +1015,8 @@
         "Keep chord beat steps small and uniform"
       ],
       "connects_to": [
-        "basic_step"
+        "basic_step",
+        "hip_walk"
       ],
       "video_keys": [
         "chord_beat"
@@ -968,12 +1026,49 @@
       "name": "Left Turn",
       "slug": "left_turn",
       "level": 1,
-      "order": 99,
-      "description": "Left Turn was detected in a class upload. This page collects class tips, lesson images, drills, and related videos as they are added.",
-      "breakdown": [],
-      "common_mistakes": [],
-      "key_details": [],
-      "flashcards": [],
+      "order": 10,
+      "description": "A turn entered on count 7 rather than 6. You step back on 7, turn to your left, land towards the door on 1 and step forward on 3. As a lead, the raised left arm sends the follower under it on 1-2-3.",
+      "breakdown": [
+        "On 7, step back and lift your left foot \u2014 the turn starts here, not on 6.",
+        "Turn to your left as you come off that back step.",
+        "Land facing towards the door on count 1.",
+        "Step forward on 3 to close the turn and recover the basic.",
+        "Leading it: raise your left hand \u2014 elbow in, centred, arm up and behind \u2014 and the follower turns under it on 1-2-3."
+      ],
+      "common_mistakes": [
+        "Turning on 6. The count is 5-6-7-step-turn-1; the back step has to land on 7 first.",
+        "Flipping or re-switching the hand when the follower is already in the peace position \u2014 just pull her over.",
+        "Letting the elbow drift out, which pushes the follower off her slot instead of up and around.",
+        "Skipping the forward step on 3, so the turn never resolves back into the basic."
+      ],
+      "key_details": [
+        "Entry is on 7; the landing is on 1 towards the door.",
+        "Leader's left arm is the lead \u2014 close to the ear, tracing the body.",
+        "On 7-1-2 the follower is already set up; no extra hand work is needed.",
+        "Elbow in and centred keeps the frame over her own axis."
+      ],
+      "flashcards": [
+        {
+          "question": "Which count does the left turn start on?",
+          "answer": "7 \u2014 you step back and lift the left foot. Not 6.",
+          "type": "recall"
+        },
+        {
+          "question": "Where do you land on count 1?",
+          "answer": "Towards the door, then step forward on 3 to finish.",
+          "type": "recall"
+        },
+        {
+          "question": "Which arm leads the follower's left turn, and on what counts?",
+          "answer": "The leader's left arm, raised; she turns under it on 1-2-3.",
+          "type": "recall"
+        },
+        {
+          "question": "The follower is already in the peace position on 7-1-2. What should you not do?",
+          "answer": "Flip or switch hands \u2014 simply pull her over.",
+          "type": "recall"
+        }
+      ],
       "class_tips": [
         "For a left turn, start on 7 by stepping back and lifting your left foot. Land toward the door on 1, then step forward on 3 to complete the turn.",
         "Leaders: raise your left arm to lead the follower into a left turn. The follower turns under your left arm on counts 1-2-3.",
@@ -985,7 +1080,9 @@
         "arm styling: close to ear, trace body"
       ],
       "connects_to": [
-        "basic_step"
+        "basic_step",
+        "comb",
+        "right_turn"
       ],
       "video_keys": [
         "left_turn"
@@ -995,12 +1092,55 @@
       "name": "Comb",
       "slug": "comb",
       "level": 1,
-      "order": 99,
-      "description": "Comb was detected in a class upload. This page collects class tips, lesson images, drills, and related videos as they are added.",
-      "breakdown": [],
-      "common_mistakes": [],
-      "key_details": [],
-      "flashcards": [],
+      "order": 9,
+      "description": "A lead that passes the leader's hand up and behind the follower's neck \u2014 like brushing hair, not rotating her frame. It is the way into cross-hand and open positions without switching hands, so combos can flow instead of resetting.",
+      "breakdown": [
+        "Raise your right arm with the palm up and the elbow in.",
+        "Bring your hand to centre, between you and your partner.",
+        "Move it up and behind the follower's neck in one smooth motion \u2014 the cuff motion.",
+        "Keep your other hand forward throughout so the follower has a reference and does not turn.",
+        "Come out into cross-hand position; you now have a new hand to lead from."
+      ],
+      "common_mistakes": [
+        "Rotating the follower's frame instead of brushing past it \u2014 a comb is not a turn.",
+        "Combing with one hand only and dropping the other, which makes the follower turn unintentionally.",
+        "Combing while the follower is travelling towards you, which leaves no room and adds risk.",
+        "Followers breaking the connection mid-comb \u2014 the leader disconnects, not the follower."
+      ],
+      "key_details": [
+        "Palm up, elbow in \u2014 that shape is what makes the hand pass cleanly.",
+        "Comb while you are moving towards the follower, on counts 1-2-3.",
+        "The class sequence is: comb with the right on 1-2-3, turn with the left on 7, comb with the left on 1-2.",
+        "Followers keep their hand connected to the leader's fingertips the whole way through.",
+        "Use combs to reach open positions rather than switching hands."
+      ],
+      "flashcards": [
+        {
+          "question": "What is the shape of the leader's arm at the start of a comb?",
+          "answer": "Right arm raised, palm up, elbow in, hand brought to centre.",
+          "type": "recall"
+        },
+        {
+          "question": "A comb is like brushing hair. What does that rule out?",
+          "answer": "Rotating the follower's frame \u2014 the hand passes behind her neck, it does not turn her.",
+          "type": "recall"
+        },
+        {
+          "question": "When in the phrase should you comb, and why?",
+          "answer": "On 1-2-3, while moving towards the follower \u2014 combing as she comes towards you is riskier and cramped.",
+          "type": "recall"
+        },
+        {
+          "question": "Why keep the other hand forward during a comb?",
+          "answer": "It guides her and stops an unintended turn.",
+          "type": "recall"
+        },
+        {
+          "question": "Whose job is it to break the connection in a comb?",
+          "answer": "The leader's. The follower stays connected to his fingertips.",
+          "type": "recall"
+        }
+      ],
       "class_tips": [
         "Comb position: raise your right arm with palm up and elbow in, bring your hand to center, then move it up and behind the follower's neck. This is like brushing hair, not rotating the follower's frame.",
         "Leaders: when combing, keep your palm facing up and your elbow in. Move your hand from center upward and behind the follower's neck in one smooth motion.",
@@ -1017,7 +1157,9 @@
         "don't break connection"
       ],
       "connects_to": [
-        "basic_step"
+        "basic_step",
+        "left_turn",
+        "cross_body_lead"
       ],
       "video_keys": [
         "comb"
@@ -1027,19 +1169,53 @@
       "name": "Partner Work \u2014 Tension & Hold",
       "slug": "partner_work_tension_hold",
       "level": 1,
-      "order": 99,
-      "description": "Partner Work \u2014 Tension & Hold was detected in a class upload. This page collects class tips, lesson images, drills, and related videos as they are added.",
-      "breakdown": [],
-      "common_mistakes": [],
-      "key_details": [],
-      "flashcards": [],
+      "order": 13,
+      "description": "The connected basic, with elastic tension carried through the handhold so leader and follower can feel each other's weight and timing. The cue is \"tension, hold\". It matters most on the break counts, 2 and 6, because that is when the lead is actually transmitted.",
+      "breakdown": [
+        "On 6-7-1, re-establish the hold and feel the tension through both arms before the break.",
+        "On 2, the leader breaks forward; the tension draws the follower into her back break at the same moment.",
+        "On 3, replace \u2014 the tension eases slightly.",
+        "On 6, the leader breaks back, which cues the follower's forward break.",
+        "On 7, replace and let the frame reset."
+      ],
+      "common_mistakes": [
+        "Locking the arms. \"Tension, hold\" means elastic, not rigid.",
+        "Letting the elbows lift, so the signal never reaches the follower.",
+        "Going slack between breaks, which leaves her guessing on 2 and 6.",
+        "Leading with the hands alone instead of letting bodyweight travel through the frame."
+      ],
+      "key_details": [
+        "Counts 2 and 6 are where the lead/follow signal lives in On2.",
+        "Elbows down, wrists firm but not stiff.",
+        "\"Side basic\" in partner work means the basic danced side by side or in open position.",
+        "Both partners should be able to feel the other's weight change without looking."
+      ],
+      "flashcards": [
+        {
+          "question": "On which counts does the connection matter most in On2 partner work?",
+          "answer": "2 and 6 \u2014 the break counts, where the lead is transmitted.",
+          "type": "recall"
+        },
+        {
+          "question": "What does the cue \"tension, hold\" actually ask for?",
+          "answer": "Elastic resistance through the handhold \u2014 firm but not locked.",
+          "type": "recall"
+        },
+        {
+          "question": "What does \"side basic\" mean in partner work?",
+          "answer": "The basic step danced side by side or in open position rather than facing.",
+          "type": "recall"
+        }
+      ],
       "class_tips": [
         "6712367, tension, hold",
         "5, side, basic, 23",
         "partner work, 6, 7, 1, 2, 3, 6, 7, tension, hold"
       ],
       "connects_to": [
-        "basic_step"
+        "basic_step",
+        "left_turn",
+        "comb"
       ],
       "video_keys": [
         "partner_work_tension_hold"

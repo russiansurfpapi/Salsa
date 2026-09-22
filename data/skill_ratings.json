@@ -1,1 +1,16 @@
-{"ratings": {}, "history": []}
+{
+  "ratings": {
+    "basic_step.timing": {
+      "rating": 3,
+      "notes": "verify",
+      "updated_at": "2026-09-22T02:06:08.272813+00:00"
+    }
+  },
+  "history": [
+    {
+      "skill_id": "basic_step.timing",
+      "rating": 3,
+      "rated_at": "2026-09-22T02:06:08.272813+00:00"
+    }
+  ]
+}

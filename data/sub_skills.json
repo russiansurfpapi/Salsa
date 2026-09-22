@@ -216,100 +216,217 @@
   ],
   "around_the_world": [
     {
-      "id": "class_notes",
-      "name": "Class Notes",
-      "description": "Technique was detected from a lesson upload. Rate this after reviewing the class notes and lesson frames.",
-      "drill_template": "Review the class page, pick one instructor cue, and drill it slowly for 5 minutes before adding music.",
+      "id": "clock_cues",
+      "name": "Clock-Face Positions",
+      "description": "The instructor cues directions as clock positions \u2014 12, then 9:00, 6:00, 3:00 \u2014 and you rotate the basic to face each one. The footwork never changes; only your facing does.",
+      "drill_template": "Stand facing 12. Basic to 12, then 9, then 6, then 3, then back to 12 \u2014 one full circuit, 4 times. Say the clock position out loud as you land on it.",
+      "video_focus": "around_the_world"
+    },
+    {
+      "id": "anchors",
+      "name": "Anchor On 3 and 7",
+      "description": "Counts 3 and 7 are the anchors. Settle your weight there before turning to the next position; rotating before the anchor is stable is what loses the count.",
+      "drill_template": "Do a full circuit pausing deliberately on every 3 and 7. If you cannot pause without wobbling, you are turning too early.",
+      "video_focus": "around_the_world"
+    },
+    {
+      "id": "timing_holds",
+      "name": "Timing Survives the Turn",
+      "description": "The break still lands on 2 and 6 no matter which way you are facing. The slot moves; the On2 timing does not.",
+      "drill_template": "Circuit once with music, counting aloud. Key check: are you still breaking on 2 and 6 when facing 6:00 \u2014 the most disorienting position, since the break lands away from the mirror?",
       "video_focus": "around_the_world"
     }
   ],
   "half_step": [
     {
-      "id": "class_notes",
-      "name": "Class Notes",
-      "description": "Technique was detected from a lesson upload. Rate this after reviewing the class notes and lesson frames.",
-      "drill_template": "Review the class page, pick one instructor cue, and drill it slowly for 5 minutes before adding music.",
+      "id": "stop_halfway",
+      "name": "Stopping Halfway",
+      "description": "Take only the first half of an Around the World direction change, then anchor. The skill is stopping cleanly rather than letting the half turn drift onward.",
+      "drill_template": "From 12, half-step towards 9 and stop. Anchor, then continue. 8 reps. Key check: can you hold the halfway facing for a full count without drifting?",
+      "video_focus": "half_step"
+    },
+    {
+      "id": "connector",
+      "name": "Used as a Connector",
+      "description": "The half step joins phrases together; it is not its own timing system. Treat it as a link between two known moves.",
+      "drill_template": "Basic, half-step, basic \u2014 8 times. The half step should feel like a comma, not a sentence.",
+      "video_focus": "half_step"
+    },
+    {
+      "id": "recovery",
+      "name": "Recovering the Count",
+      "description": "If the count destabilises, drop back to a plain basic step, re-establish 1-2-3 / 5-6-7, and only then add the half transition again.",
+      "drill_template": "Deliberately rush one half step until the count breaks, then practise the reset: 4 clean basics, then reintroduce it.",
       "video_focus": "half_step"
     }
   ],
   "side_to_side": [
     {
-      "id": "class_notes",
-      "name": "Class Notes",
-      "description": "Technique was detected from a lesson upload. Rate this after reviewing the class notes and lesson frames.",
-      "drill_template": "Review the class page, pick one instructor cue, and drill it slowly for 5 minutes before adding music.",
+      "id": "step_out",
+      "name": "Stepping Out vs Staying Tight",
+      "description": "This starts exactly like a Suzy Q with a cross on 1, but on 2 you step out to the side. The Suzy Q stays compact; the side-to-side travels. That contrast is the whole move.",
+      "drill_template": "Alternate 4 Suzy Qs and 4 side-to-sides with no music. Key check: is the side-to-side visibly wider? If they look the same, you are not stepping out.",
+      "video_focus": "side_to_side"
+    },
+    {
+      "id": "weight_push",
+      "name": "Count 3 Is a Push, Not a Step",
+      "description": "On count 3 you push your weight into the foot without moving it. Moving the foot on 3 is the most common error the instructor corrects.",
+      "drill_template": "Do 8 reps watching only your third step in a mirror. The foot should stay planted while your body weight arrives over it.",
+      "video_focus": "side_to_side"
+    },
+    {
+      "id": "bilateral",
+      "name": "Both Sides",
+      "description": "It is a bilateral shine \u2014 1-2-3 to one side, then 5-6-7 to the other. Dancing it only one way leaves it unfinished.",
+      "drill_template": "8 full reps, counting both halves out loud. If you only ever say 1-2-3, you are dancing half the shine.",
       "video_focus": "side_to_side"
     }
   ],
   "zig_zag": [
     {
-      "id": "class_notes",
-      "name": "Class Notes",
-      "description": "Technique was detected from a lesson upload. Rate this after reviewing the class notes and lesson frames.",
-      "drill_template": "Review the class page, pick one instructor cue, and drill it slowly for 5 minutes before adding music.",
+      "id": "timing",
+      "name": "Full-Count Timing",
+      "description": "The zig-zag takes a full count \u2014 1-2-3 then 5-6-7. It is not a half count and not one-and-a-half. Each of the six steps gets a complete weight transfer.",
+      "drill_template": "Count out loud, 1-2-3, 5-6-7, and do 8 zig-zags with no music. Key check: are you saying six numbers per zig-zag? If you are saying four, you are compressing it.",
+      "video_focus": "zig_zag"
+    },
+    {
+      "id": "partial_pivot",
+      "name": "Angled, Not Squared",
+      "description": "Pivot only part way. A full half turn takes too long to recover from, so the next change of direction lands late. Keep the upper body angled to the new direction rather than square to it.",
+      "drill_template": "Face a wall. Zig-zag 8 times and glance up each time you land. If you are ever square to a new wall, you over-rotated. Aim to stay at roughly 45 degrees off your start.",
+      "video_focus": "zig_zag"
+    },
+    {
+      "id": "hip_lead",
+      "name": "Hip Leads the Step",
+      "description": "Lengthen the hip and let it do the talking \u2014 the push of the opposite foot sends you across, not a shoulder turn. Add the drop-and-rise for styling once the timing is solid.",
+      "drill_template": "Zig-zag 8 reps with hands on hips, feeling which hip lengthens on each pivot. Then 8 more adding a small drop on the zig-zag and coming back up.",
       "video_focus": "zig_zag"
     }
   ],
   "combo": [
     {
-      "id": "class_notes",
-      "name": "Class Notes",
-      "description": "Technique was detected from a lesson upload. Rate this after reviewing the class notes and lesson frames.",
-      "drill_template": "Review the class page, pick one instructor cue, and drill it slowly for 5 minutes before adding music.",
+      "id": "linking",
+      "name": "Linking, Not Memorising",
+      "description": "A combo is known moves chained together. The instructor's standing advice is to master each move on its own and then link them, rather than memorising the sequence as one block.",
+      "drill_template": "Pick the two moves either side of a transition you keep losing. Drill just that join 8 times, then run the full combo once.",
       "video_focus": "combo"
-    }
-  ],
-  "side_step": [
-    {
-      "id": "class_notes",
-      "name": "Class Notes",
-      "description": "Technique was detected from a lesson upload. Rate this after reviewing the class notes and lesson frames.",
-      "drill_template": "Review the class page, pick one instructor cue, and drill it slowly for 5 minutes before adding music.",
-      "video_focus": "side_step"
     }
   ],
   "hip_walk": [
     {
-      "id": "class_notes",
-      "name": "Class Notes",
-      "description": "Technique was detected from a lesson upload. Rate this after reviewing the class notes and lesson frames.",
-      "drill_template": "Review the class page, pick one instructor cue, and drill it slowly for 5 minutes before adding music.",
+      "id": "rhythm",
+      "name": "Step, Tap, Step",
+      "description": "The pattern is step, tap, step \u2014 step, tap, step. The leading foot travels; the other only taps and returns to centre without taking weight.",
+      "drill_template": "Say 'step, tap, step' out loud for 16 reps with no music. Key check: if the tapping foot takes weight, you will stop travelling.",
+      "video_focus": "hip_walk"
+    },
+    {
+      "id": "eyes",
+      "name": "Look Where You Are Going",
+      "description": "Look towards the direction you want to travel, not down at your feet. The head commits the body and cleans up the weight transfer.",
+      "drill_template": "Hip walk across the room twice looking at a point on the far wall. Then once looking at your feet, and feel the difference.",
+      "video_focus": "hip_walk"
+    },
+    {
+      "id": "reversing",
+      "name": "Reversing Direction",
+      "description": "To go the other way you must start on the opposite foot. Starting on the left produces the same look when travelling right.",
+      "drill_template": "4 hip walks right starting left, then 4 left starting right. If it feels wrong, you kept the same starting foot.",
       "video_focus": "hip_walk"
     }
   ],
   "chord_beat": [
     {
-      "id": "class_notes",
-      "name": "Class Notes",
-      "description": "Technique was detected from a lesson upload. Rate this after reviewing the class notes and lesson frames.",
-      "drill_template": "Review the class page, pick one instructor cue, and drill it slowly for 5 minutes before adding music.",
+      "id": "odd_counts",
+      "name": "Odd Counts Only",
+      "description": "Step on 1, 3, 5 and 7 and nothing else. Skipping 2, 4 and 6 is the entire idea \u2014 it is a timing, not a shape.",
+      "drill_template": "Count 1-2-3-4-5-6-7-8 out loud and step only on the odd numbers. 8 phrases. Key check: any step on an even count means start again.",
+      "video_focus": "chord_beat"
+    },
+    {
+      "id": "step_size",
+      "name": "Small and Uniform",
+      "description": "Keep every step the same modest size. Wide or exaggerated steps make the pattern hard to control and untidy to watch.",
+      "drill_template": "Chord-beat along a floorboard for 8 phrases, keeping each step within one board width.",
+      "video_focus": "chord_beat"
+    },
+    {
+      "id": "weight_tracking",
+      "name": "Track the Finishing Foot",
+      "description": "Notice which foot holds your weight at the end of each sequence and begin the next one on the other foot, so the pattern stays even.",
+      "drill_template": "After each 1-3-5-7, say out loud which foot you are on. Then start the next set on the other one. 8 sets.",
       "video_focus": "chord_beat"
     }
   ],
   "left_turn": [
     {
-      "id": "class_notes",
-      "name": "Class Notes",
-      "description": "Technique was detected from a lesson upload. Rate this after reviewing the class notes and lesson frames.",
-      "drill_template": "Review the class page, pick one instructor cue, and drill it slowly for 5 minutes before adding music.",
+      "id": "entry_on_7",
+      "name": "Enter On 7, Not 6",
+      "description": "Step back and lift the left foot on 7, then turn. The count is 5-6-7-step-turn-1. Turning on 6 is the error the instructor calls out.",
+      "drill_template": "Count 5-6-7 out loud and only start turning as you say 7. Do 8 solo left turns. Key check: if you are already rotating on 6, reset.",
+      "video_focus": "left_turn"
+    },
+    {
+      "id": "landing",
+      "name": "Land Towards the Door, Step Forward On 3",
+      "description": "You land facing the door on 1 and step forward on 3 to close the turn back into the basic. Missing the forward step leaves it unresolved.",
+      "drill_template": "Pick a fixed reference in the room as 'the door'. 8 turns, landing on it every time, then a clear forward step on 3.",
+      "video_focus": "left_turn"
+    },
+    {
+      "id": "arm_lead",
+      "name": "Left Arm Lead",
+      "description": "Raise the left hand with the elbow in and centred, arm up and behind, close to the ear and tracing the body. The follower turns under the arm on 1-2-3. If she is already in the peace position, just pull her over \u2014 do not flip or re-switch.",
+      "drill_template": "Shadow 8 arm raises in a mirror. The hand should pass close to your own ear, not out to the side.",
       "video_focus": "left_turn"
     }
   ],
   "comb": [
     {
-      "id": "class_notes",
-      "name": "Class Notes",
-      "description": "Technique was detected from a lesson upload. Rate this after reviewing the class notes and lesson frames.",
-      "drill_template": "Review the class page, pick one instructor cue, and drill it slowly for 5 minutes before adding music.",
+      "id": "hand_shape",
+      "name": "Palm Up, Elbow In",
+      "description": "Raise the right arm palm up with the elbow in, bring the hand to centre, then up and behind the follower's neck. Like brushing hair \u2014 the hand passes her frame, it does not rotate it.",
+      "drill_template": "Shadow the motion 16 times with no partner, watching your elbow in a mirror. If the elbow swings out, the hand will catch rather than pass.",
+      "video_focus": "comb"
+    },
+    {
+      "id": "other_hand",
+      "name": "Keep the Other Hand Forward",
+      "description": "Comb with one hand while the other stays forward. Dropping it is what makes the follower turn when you did not ask her to.",
+      "drill_template": "Practise 8 combs with a doorframe or chair back as the 'follower'. Keep the free hand forward the whole time; notice how much more stable the shape feels.",
+      "video_focus": "comb"
+    },
+    {
+      "id": "timing_direction",
+      "name": "Comb On the Way In",
+      "description": "Comb on 1-2-3, while you are travelling towards the follower \u2014 not while she is coming towards you. Combing into her arrival is cramped and riskier.",
+      "drill_template": "Count 1-2-3 / 5-6-7 and place the comb only on 1-2-3 for 8 phrases. Say 'towards' on each comb so the direction sticks.",
       "video_focus": "comb"
     }
   ],
   "partner_work_tension_hold": [
     {
-      "id": "class_notes",
-      "name": "Class Notes",
-      "description": "Technique was detected from a lesson upload. Rate this after reviewing the class notes and lesson frames.",
-      "drill_template": "Review the class page, pick one instructor cue, and drill it slowly for 5 minutes before adding music.",
+      "id": "elastic_tension",
+      "name": "Elastic, Not Locked",
+      "description": "'Tension, hold' asks for elastic resistance through the handhold \u2014 firm wrists, elbows down, never rigid. Locked arms transmit nothing.",
+      "drill_template": "With a partner or a resistance band, hold the frame and take 8 basics feeling the give. If your arms could not absorb a small pull, you are locked.",
+      "video_focus": "partner_work_tension_hold"
+    },
+    {
+      "id": "break_counts",
+      "name": "Connection On 2 and 6",
+      "description": "The lead is transmitted on the break counts. On 2 the leader breaks forward and the tension draws the follower into her back break; on 6 it reverses.",
+      "drill_template": "8 partnered basics saying 'two' and 'six' out loud, checking you can feel the other person's weight change on exactly those counts.",
+      "video_focus": "partner_work_tension_hold"
+    },
+    {
+      "id": "frame_reset",
+      "name": "Reset On 3 and 7",
+      "description": "Tension eases on the replace steps so the frame resets before the next break. Staying slack between breaks leaves the follower guessing.",
+      "drill_template": "8 basics deliberately easing on 3 and 7 and re-establishing on 6-7-1. The cycle should feel like breathing, not gripping.",
       "video_focus": "partner_work_tension_hold"
     }
   ]
