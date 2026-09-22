@@ -66,6 +66,20 @@ def _mongo_unavailable(where: str, exc: BaseException) -> None:
         )
 
 
+def _mongo_write_dropped(where: str, exc: BaseException) -> None:
+    """A write that could not reach Mongo. Logged every time, not once.
+
+    Reads degrade to the JSON files, but a lost write is lost data — on a
+    deployment with no MONGODB_URI this is the difference between "the page
+    looks fine" and "nothing the user recorded was saved".
+    """
+    logger.error(
+        "MongoDB write dropped in %s (%s: %s) - the change was NOT persisted to "
+        "Mongo. Check MONGODB_URI.",
+        where, type(exc).__name__, exc,
+    )
+
+
 def _class_sort_key(row: dict) -> str:
     """Newest first, whatever the source.
 
@@ -697,7 +711,8 @@ def technique_class_tips(slug: str) -> list:
             {"technique": slug}, {"_id": 0}
         ).sort("class_date", -1))
         return tips
-    except Exception:
+    except Exception as exc:
+        _mongo_unavailable("technique_class_tips", exc)
         content = _get_content()
         if slug in content:
             return [{"tip": t, "technique": slug} for t in content[slug].get("class_tips", [])]
@@ -728,7 +743,8 @@ def list_skills() -> dict:
     taxonomy = _get_sub_skills()
     try:
         ratings = {r["skill_id"]: r for r in mongo.skill_ratings().find({}, {"_id": 0})}
-    except Exception:
+    except Exception as exc:
+        _mongo_unavailable("list_skills", exc)
         sr = _get_skill_ratings_json()
         ratings = {k: {"rating": v["rating"], "notes": v.get("notes", ""), "updated_at": v.get("updated_at", "")} for k, v in sr.get("ratings", {}).items()}
 
@@ -758,7 +774,8 @@ def get_weak_skills() -> dict:
     taxonomy = _get_sub_skills()
     try:
         weak_docs = list(mongo.skill_ratings().find({"rating": {"$lte": 2}}, {"_id": 0}))
-    except Exception:
+    except Exception as exc:
+        _mongo_unavailable("get_weak_skills", exc)
         sr = _get_skill_ratings_json()
         weak_docs = [{"skill_id": k, "rating": v["rating"], "notes": v.get("notes", "")} for k, v in sr.get("ratings", {}).items() if v["rating"] <= 2]
 
@@ -787,7 +804,8 @@ def get_weak_skills() -> dict:
 def get_skill_progress() -> dict:
     try:
         history = list(mongo.skill_rating_history().find({}, {"_id": 0}).sort("rated_at", 1))
-    except Exception:
+    except Exception as exc:
+        _mongo_unavailable("get_skill_progress", exc)
         sr = _get_skill_ratings_json()
         history = sr.get("history", [])
     return {"history": history}
@@ -803,13 +821,15 @@ def get_skill_detail(technique: str) -> dict:
     skills = taxonomy[technique]
     try:
         ratings = {r["skill_id"]: r for r in mongo.skill_ratings().find({"technique": technique}, {"_id": 0})}
-    except Exception:
+    except Exception as exc:
+        _mongo_unavailable("get_skill_detail:ratings", exc)
         sr = _get_skill_ratings_json()
         ratings = {k: {"rating": v["rating"], "notes": v.get("notes", ""), "updated_at": v.get("updated_at", "")} for k, v in sr.get("ratings", {}).items() if k.startswith(f"{technique}.")}
 
     try:
         tips = list(mongo.class_tips().find({"technique": technique}, {"_id": 0}))
-    except Exception:
+    except Exception as exc:
+        _mongo_unavailable("get_skill_detail:tips", exc)
         tips = []
 
     sub_skills = []
@@ -872,8 +892,8 @@ def rate_skills(req: RateRequest) -> dict:
             mongo.skill_rating_history().insert_one({
                 **doc, "rated_at": now,
             })
-        except Exception:
-            pass
+        except Exception as exc:
+            _mongo_write_dropped("rate_skills", exc)
 
         sr["ratings"][r.skill_id] = {"rating": r.rating, "notes": r.notes, "updated_at": now}
         sr["history"].append({"skill_id": r.skill_id, "rating": r.rating, "rated_at": now})
@@ -894,8 +914,8 @@ def get_frame_from_db(slug: str, filename: str) -> Response:
         if doc:
             data = base64.b64decode(doc["data"])
             return Response(content=data, media_type="image/jpeg")
-    except Exception:
-        pass
+    except Exception as exc:
+        _mongo_unavailable("get_frame_from_db", exc)
     raise HTTPException(404, "Frame not found")
 
 
